@@ -4,7 +4,7 @@
 
 ### StreamLiveInput <a name="StreamLiveInput" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input cloudflare_stream_live_input}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer"></a>
 
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetLiveInputIdentifier">ResetLiveInputIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetMeta">ResetMeta</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetPreferLowLatency">ResetPreferLowLatency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetRecording">ResetRecording</a></code> | *No description.* |
 
 ---
@@ -435,6 +436,12 @@ private void ResetLiveInputIdentifier()
 private void ResetMeta()
 ```
 
+##### `ResetPreferLowLatency` <a name="ResetPreferLowLatency" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetPreferLowLatency"></a>
+
+```csharp
+private void ResetPreferLowLatency()
+```
+
 ##### `ResetRecording` <a name="ResetRecording" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetRecording"></a>
 
 ```csharp
@@ -544,7 +551,7 @@ The construct id used in the generated config for the StreamLiveInput to import.
 
 The id of the existing StreamLiveInput that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,6 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.created">Created</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.keysRotatedAt">KeysRotatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.modified">Modified</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.recording">Recording</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference">StreamLiveInputRecordingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.rtmps">Rtmps</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsOutputReference">StreamLiveInputRtmpsOutputReference</a></code> | *No description.* |
@@ -591,6 +599,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.enabledInput">EnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.liveInputIdentifierInput">LiveInputIdentifierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.metaInput">MetaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.preferLowLatencyInput">PreferLowLatencyInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.recordingInput">RecordingInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecording">StreamLiveInputRecording</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.defaultCreator">DefaultCreator</a></code> | <code>string</code> | *No description.* |
@@ -598,6 +607,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.liveInputIdentifier">LiveInputIdentifier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.meta">Meta</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.preferLowLatency">PreferLowLatency</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -747,6 +757,16 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ```csharp
 public string Created { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeysRotatedAt`<sup>Required</sup> <a name="KeysRotatedAt" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.keysRotatedAt"></a>
+
+```csharp
+public string KeysRotatedAt { get; }
 ```
 
 - *Type:* string
@@ -913,6 +933,16 @@ public string MetaInput { get; }
 
 ---
 
+##### `PreferLowLatencyInput`<sup>Optional</sup> <a name="PreferLowLatencyInput" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.preferLowLatencyInput"></a>
+
+```csharp
+public bool|IResolvable PreferLowLatencyInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `RecordingInput`<sup>Optional</sup> <a name="RecordingInput" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.recordingInput"></a>
 
 ```csharp
@@ -983,6 +1013,16 @@ public string Meta { get; }
 
 ---
 
+##### `PreferLowLatency`<sup>Required</sup> <a name="PreferLowLatency" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.preferLowLatency"></a>
+
+```csharp
+public bool|IResolvable PreferLowLatency { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1024,6 +1064,7 @@ new StreamLiveInputConfig {
     bool|IResolvable Enabled = null,
     string LiveInputIdentifier = null,
     string Meta = null,
+    bool|IResolvable PreferLowLatency = null,
     StreamLiveInputRecording Recording = null
 };
 ```
@@ -1045,6 +1086,7 @@ new StreamLiveInputConfig {
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Indicates whether the live input is enabled and can accept streams. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.liveInputIdentifier">LiveInputIdentifier</a></code> | <code>string</code> | A unique identifier for a live input. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.meta">Meta</a></code> | <code>string</code> | A user modifiable key-value store used to reference other systems of record for managing live inputs. |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.preferLowLatency">PreferLowLatency</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When enabled, the live stream is delivered using Low-Latency HLS (LL-HLS), reducing glass-to-glass latency for viewers at the cost of reduced player compatibility. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.recording">Recording</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecording">StreamLiveInputRecording</a></code> | Records the input to a Cloudflare Stream video. |
 
 ---
@@ -1129,7 +1171,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
 
 ---
 
@@ -1143,7 +1185,7 @@ public string DefaultCreator { get; set; }
 
 Sets the creator ID asssociated with this live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
 
 ---
 
@@ -1159,7 +1201,7 @@ Indicates the number of days after which the live inputs recordings will be dele
 
 When a stream completes and the recording is ready, the value is used to calculate a scheduled deletion date for that recording. Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
 
 ---
 
@@ -1173,7 +1215,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Indicates whether the live input is enabled and can accept streams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#enabled StreamLiveInput#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#enabled StreamLiveInput#enabled}
 
 ---
 
@@ -1187,7 +1229,7 @@ public string LiveInputIdentifier { get; set; }
 
 A unique identifier for a live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
 
 ---
 
@@ -1201,7 +1243,21 @@ public string Meta { get; set; }
 
 A user modifiable key-value store used to reference other systems of record for managing live inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#meta StreamLiveInput#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
+
+---
+
+##### `PreferLowLatency`<sup>Optional</sup> <a name="PreferLowLatency" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.preferLowLatency"></a>
+
+```csharp
+public bool|IResolvable PreferLowLatency { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+When enabled, the live stream is delivered using Low-Latency HLS (LL-HLS), reducing glass-to-glass latency for viewers at the cost of reduced player compatibility.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#prefer_low_latency StreamLiveInput#prefer_low_latency}
 
 ---
 
@@ -1217,7 +1273,7 @@ Records the input to a Cloudflare Stream video.
 
 Behavior depends on the mode. In most cases, the video will initially be viewable as a live video and transition to on-demand after a condition is satisfied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#recording StreamLiveInput#recording}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
 
 ---
 
@@ -1261,7 +1317,7 @@ Lists the origins allowed to display videos created with this input.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. An empty array allows videos to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
 
 ---
 
@@ -1275,7 +1331,7 @@ public bool|IResolvable HideLiveViewerCount { get; set; }
 
 Disables reporting the number of live viewers when this property is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
 
 ---
 
@@ -1292,7 +1348,7 @@ Specifies the recording behavior for the live input.
 Set this value to `off` to prevent a recording. Set the value to `automatic` to begin a recording and transition to on-demand after Stream Live stops receiving input.
 Available values: "off", "automatic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#mode StreamLiveInput#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
 
 ---
 
@@ -1308,7 +1364,7 @@ Indicates if a video using the live input has the `requireSignedURLs` property s
 
 Also enforces access controls on any video recording of the livestream with the live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
 
 ---
 
@@ -1324,7 +1380,7 @@ Determines the amount of time a live input configured in `automatic` mode should
 
 `0` is recommended for most use cases and indicates the platform default should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
 
 ---
 

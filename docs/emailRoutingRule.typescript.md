@@ -4,7 +4,7 @@
 
 ### EmailRoutingRule <a name="EmailRoutingRule" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer"></a>
 
@@ -78,7 +78,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.putMatchers">putMatchers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetOwnerWorkerTag">resetOwnerWorkerTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetPriority">resetPriority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetSource">resetSource</a></code> | *No description.* |
 
 ---
 
@@ -427,10 +429,22 @@ public resetEnabled(): void
 public resetName(): void
 ```
 
+##### `resetOwnerWorkerTag` <a name="resetOwnerWorkerTag" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetOwnerWorkerTag"></a>
+
+```typescript
+public resetOwnerWorkerTag(): void
+```
+
 ##### `resetPriority` <a name="resetPriority" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetPriority"></a>
 
 ```typescript
 public resetPriority(): void
+```
+
+##### `resetSource` <a name="resetSource" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetSource"></a>
+
+```typescript
+public resetSource(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -536,7 +550,7 @@ The construct id used in the generated config for the EmailRoutingRule to import
 
 The id of the existing EmailRoutingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -574,11 +588,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.matchersInput">matchersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatchers">EmailRoutingRuleMatchers</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.ownerWorkerTagInput">ownerWorkerTagInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.ownerWorkerTag">ownerWorkerTag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.priority">priority</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -805,6 +823,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `ownerWorkerTagInput`<sup>Optional</sup> <a name="ownerWorkerTagInput" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.ownerWorkerTagInput"></a>
+
+```typescript
+public readonly ownerWorkerTagInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `priorityInput`<sup>Optional</sup> <a name="priorityInput" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.priorityInput"></a>
 
 ```typescript
@@ -812,6 +840,16 @@ public readonly priorityInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.sourceInput"></a>
+
+```typescript
+public readonly sourceInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -845,6 +883,16 @@ public readonly name: string;
 
 ---
 
+##### `ownerWorkerTag`<sup>Required</sup> <a name="ownerWorkerTag" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.ownerWorkerTag"></a>
+
+```typescript
+public readonly ownerWorkerTag: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `priority`<sup>Required</sup> <a name="priority" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.priority"></a>
 
 ```typescript
@@ -852,6 +900,16 @@ public readonly priority: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -900,7 +958,7 @@ const emailRoutingRuleActions: emailRoutingRule.EmailRoutingRuleActions = { ... 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions.property.type">type</a></code> | <code>string</code> | Type of supported action. Available values: "drop", "forward", "worker". |
-| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions.property.value">value</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#value EmailRoutingRule#value}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions.property.value">value</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}. |
 
 ---
 
@@ -914,7 +972,7 @@ public readonly type: string;
 
 Type of supported action. Available values: "drop", "forward", "worker".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
 
 ---
 
@@ -926,7 +984,7 @@ public readonly value: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#value EmailRoutingRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}.
 
 ---
 
@@ -956,7 +1014,9 @@ const emailRoutingRuleConfig: emailRoutingRule.EmailRoutingRuleConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Routing rule status. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.name">name</a></code> | <code>string</code> | Routing rule name. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.ownerWorkerTag">ownerWorkerTag</a></code> | <code>string</code> | Public tag (script_tag) of the Worker that owns this rule. Required when `source` is `wrangler`. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.priority">priority</a></code> | <code>number</code> | Priority of the routing rule. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.source">source</a></code> | <code>string</code> | Who manages the rule. |
 
 ---
 
@@ -1040,7 +1100,7 @@ public readonly actions: IResolvable | EmailRoutingRuleActions[];
 
 List actions patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#actions EmailRoutingRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#actions EmailRoutingRule#actions}
 
 ---
 
@@ -1054,7 +1114,7 @@ public readonly matchers: IResolvable | EmailRoutingRuleMatchers[];
 
 Matching patterns to forward to your actions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#matchers EmailRoutingRule#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#matchers EmailRoutingRule#matchers}
 
 ---
 
@@ -1068,7 +1128,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
 
 ---
 
@@ -1082,7 +1142,7 @@ public readonly enabled: boolean | IResolvable;
 
 Routing rule status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
 
 ---
 
@@ -1096,7 +1156,21 @@ public readonly name: string;
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#name EmailRoutingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
+
+---
+
+##### `ownerWorkerTag`<sup>Optional</sup> <a name="ownerWorkerTag" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.ownerWorkerTag"></a>
+
+```typescript
+public readonly ownerWorkerTag: string;
+```
+
+- *Type:* string
+
+Public tag (script_tag) of the Worker that owns this rule. Required when `source` is `wrangler`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#owner_worker_tag EmailRoutingRule#owner_worker_tag}
 
 ---
 
@@ -1110,7 +1184,26 @@ public readonly priority: number;
 
 Priority of the routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
+
+---
+
+##### `source`<sup>Optional</sup> <a name="source" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* string
+
+Who manages the rule.
+
+`api` covers dashboard, generic API, and Terraform;
+`wrangler` means the rule is managed by a Worker's wrangler.jsonc. Defaults
+to `api` when omitted on write.
+Available values: "api", "wrangler".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#source EmailRoutingRule#source}
 
 ---
 
@@ -1144,7 +1237,7 @@ public readonly type: string;
 
 Type of matcher. Available values: "all", "literal".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
 
 ---
 
@@ -1158,7 +1251,7 @@ public readonly field: string;
 
 Field for type matcher. Available values: "to".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#field EmailRoutingRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
 
 ---
 
@@ -1172,7 +1265,7 @@ public readonly value: string;
 
 Value for matcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
 
 ---
 

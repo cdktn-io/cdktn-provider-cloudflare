@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/worker_versions
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/worker_versions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareWorkerVersionsConfig extends cdktn.TerraformMetaA
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/worker_versions#account_id DataCloudflareWorkerVersions#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/worker_versions#account_id DataCloudflareWorkerVersions#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/worker_versions#max_items DataCloudflareWorkerVersions#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/worker_versions#max_items DataCloudflareWorkerVersions#max_items}
   */
   readonly maxItems?: number;
   /**
   * Identifier for the Worker, which can be ID or name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/worker_versions#worker_id DataCloudflareWorkerVersions#worker_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/worker_versions#worker_id DataCloudflareWorkerVersions#worker_id}
   */
   readonly workerId: string;
 }
@@ -763,6 +763,65 @@ export class DataCloudflareWorkerVersionsResultBindingsList extends cdktn.Comple
   */
   public get(index: number): DataCloudflareWorkerVersionsResultBindingsOutputReference {
     return new DataCloudflareWorkerVersionsResultBindingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataCloudflareWorkerVersionsResultCacheOptions {
+}
+
+export function dataCloudflareWorkerVersionsResultCacheOptionsToTerraform(struct?: DataCloudflareWorkerVersionsResultCacheOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareWorkerVersionsResultCacheOptionsToHclTerraform(struct?: DataCloudflareWorkerVersionsResultCacheOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareWorkerVersionsResultCacheOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareWorkerVersionsResultCacheOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareWorkerVersionsResultCacheOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cross_version_cache - computed: true, optional: false, required: false
+  public get crossVersionCache() {
+    return this.getBooleanAttribute('cross_version_cache');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
   }
 }
 export interface DataCloudflareWorkerVersionsResultContainers {
@@ -1503,6 +1562,91 @@ export class DataCloudflareWorkerVersionsResultModulesList extends cdktn.Complex
     return new DataCloudflareWorkerVersionsResultModulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataCloudflareWorkerVersionsResultPackageDependencies {
+}
+
+export function dataCloudflareWorkerVersionsResultPackageDependenciesToTerraform(struct?: DataCloudflareWorkerVersionsResultPackageDependencies): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareWorkerVersionsResultPackageDependenciesToHclTerraform(struct?: DataCloudflareWorkerVersionsResultPackageDependencies): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareWorkerVersionsResultPackageDependenciesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataCloudflareWorkerVersionsResultPackageDependencies | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareWorkerVersionsResultPackageDependencies | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // installed_version - computed: true, optional: false, required: false
+  public get installedVersion() {
+    return this.getStringAttribute('installed_version');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // package_json_version - computed: true, optional: false, required: false
+  public get packageJsonVersion() {
+    return this.getStringAttribute('package_json_version');
+  }
+}
+
+export class DataCloudflareWorkerVersionsResultPackageDependenciesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataCloudflareWorkerVersionsResultPackageDependenciesOutputReference {
+    return new DataCloudflareWorkerVersionsResultPackageDependenciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataCloudflareWorkerVersionsResultPlacementTarget {
 }
 
@@ -1732,6 +1876,12 @@ export class DataCloudflareWorkerVersionsResultOutputReference extends cdktn.Com
     return this._bindings;
   }
 
+  // cache_options - computed: true, optional: false, required: false
+  private _cacheOptions = new DataCloudflareWorkerVersionsResultCacheOptionsOutputReference(this, "cache_options");
+  public get cacheOptions() {
+    return this._cacheOptions;
+  }
+
   // compatibility_date - computed: true, optional: false, required: false
   public get compatibilityDate() {
     return this.getStringAttribute('compatibility_date');
@@ -1796,6 +1946,12 @@ export class DataCloudflareWorkerVersionsResultOutputReference extends cdktn.Com
     return this.getNumberAttribute('number');
   }
 
+  // package_dependencies - computed: true, optional: false, required: false
+  private _packageDependencies = new DataCloudflareWorkerVersionsResultPackageDependenciesList(this, "package_dependencies", false);
+  public get packageDependencies() {
+    return this._packageDependencies;
+  }
+
   // placement - computed: true, optional: false, required: false
   private _placement = new DataCloudflareWorkerVersionsResultPlacementOutputReference(this, "placement");
   public get placement() {
@@ -1843,7 +1999,7 @@ export class DataCloudflareWorkerVersionsResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/worker_versions cloudflare_worker_versions}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/worker_versions cloudflare_worker_versions}
 */
 export class DataCloudflareWorkerVersions extends cdktn.TerraformDataSource {
 
@@ -1859,7 +2015,7 @@ export class DataCloudflareWorkerVersions extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareWorkerVersions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWorkerVersions to import
-  * @param importFromId The id of the existing DataCloudflareWorkerVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/worker_versions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWorkerVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/worker_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWorkerVersions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1871,7 +2027,7 @@ export class DataCloudflareWorkerVersions extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/worker_versions cloudflare_worker_versions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/worker_versions cloudflare_worker_versions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1882,7 +2038,7 @@ export class DataCloudflareWorkerVersions extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_worker_versions',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.21.1',
+        providerVersion: '5.22.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
