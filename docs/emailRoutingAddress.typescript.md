@@ -4,7 +4,7 @@
 
 ### EmailRoutingAddress <a name="EmailRoutingAddress" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address cloudflare_email_routing_address}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.resetStatus">resetStatus</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +387,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetStatus` <a name="resetStatus" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.resetStatus"></a>
+
+```typescript
+public resetStatus(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +496,7 @@ The construct id used in the generated config for the EmailRoutingAddress to imp
 
 The id of the existing EmailRoutingAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -526,8 +533,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.verified">verified</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.email">email</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.status">status</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -743,6 +752,16 @@ public readonly emailInput: string;
 
 ---
 
+##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.statusInput"></a>
+
+```typescript
+public readonly statusInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.accountId"></a>
 
 ```typescript
@@ -757,6 +776,16 @@ public readonly accountId: string;
 
 ```typescript
 public readonly email: string;
+```
+
+- *Type:* string
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.status"></a>
+
+```typescript
+public readonly status: string;
 ```
 
 - *Type:* string
@@ -806,6 +835,7 @@ const emailRoutingAddressConfig: emailRoutingAddress.EmailRoutingAddressConfig =
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.email">email</a></code> | <code>string</code> | The contact email address of the user. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.status">status</a></code> | <code>string</code> | Destination address status. |
 
 ---
 
@@ -889,7 +919,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
 
 ---
 
@@ -903,7 +933,24 @@ public readonly email: string;
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+
+---
+
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+Destination address status.
+
+Non-admin callers may only set verified addresses back to unverified; setting to verified requires admin privileges.
+Available values: "unverified", "verified".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#status EmailRoutingAddress#status}
 
 ---
 

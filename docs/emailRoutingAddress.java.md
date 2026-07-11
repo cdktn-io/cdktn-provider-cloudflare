@@ -4,7 +4,7 @@
 
 ### EmailRoutingAddress <a name="EmailRoutingAddress" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address cloudflare_email_routing_address}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer"></a>
 
@@ -21,6 +21,7 @@ EmailRoutingAddress.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .email(java.lang.String)
+//  .status(java.lang.String)
     .build();
 ```
 
@@ -37,6 +38,7 @@ EmailRoutingAddress.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | The contact email address of the user. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Destination address status. |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
 
 ---
 
@@ -116,7 +118,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+
+---
+
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer.parameter.status"></a>
+
+- *Type:* java.lang.String
+
+Destination address status.
+
+Non-admin callers may only set verified addresses back to unverified; setting to verified requires admin privileges.
+Available values: "unverified", "verified".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#status EmailRoutingAddress#status}
 
 ---
 
@@ -148,6 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.resetStatus">resetStatus</a></code> | *No description.* |
 
 ---
 
@@ -462,6 +478,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetStatus` <a name="resetStatus" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.resetStatus"></a>
+
+```java
+public void resetStatus()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -565,7 +587,7 @@ The construct id used in the generated config for the EmailRoutingAddress to imp
 
 The id of the existing EmailRoutingAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -602,8 +624,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.verified">verified</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.statusInput">statusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -819,6 +843,16 @@ public java.lang.String getEmailInput();
 
 ---
 
+##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.statusInput"></a>
+
+```java
+public java.lang.String getStatusInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.accountId"></a>
 
 ```java
@@ -833,6 +867,16 @@ public java.lang.String getAccountId();
 
 ```java
 public java.lang.String getEmail();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.property.status"></a>
+
+```java
+public java.lang.String getStatus();
 ```
 
 - *Type:* java.lang.String
@@ -876,6 +920,7 @@ EmailRoutingAddressConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .email(java.lang.String)
+//  .status(java.lang.String)
     .build();
 ```
 
@@ -892,6 +937,7 @@ EmailRoutingAddressConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.email">email</a></code> | <code>java.lang.String</code> | The contact email address of the user. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.status">status</a></code> | <code>java.lang.String</code> | Destination address status. |
 
 ---
 
@@ -975,7 +1021,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
 
 ---
 
@@ -989,7 +1035,24 @@ public java.lang.String getEmail();
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+
+---
+
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.property.status"></a>
+
+```java
+public java.lang.String getStatus();
+```
+
+- *Type:* java.lang.String
+
+Destination address status.
+
+Non-admin callers may only set verified addresses back to unverified; setting to verified requires admin privileges.
+Available values: "unverified", "verified".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#status EmailRoutingAddress#status}
 
 ---
 

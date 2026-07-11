@@ -4,7 +4,7 @@
 
 ### DataCloudflareDnsRecord <a name="DataCloudflareDnsRecord" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record cloudflare_dns_record}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record cloudflare_dns_record}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.Initializer"></a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.putFilter">putFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.resetDnsRecordId">resetDnsRecordId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.resetFilter">resetFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.resetIncludeShadowMetadata">resetIncludeShadowMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
@@ -312,6 +313,12 @@ public resetDnsRecordId(): void
 public resetFilter(): void
 ```
 
+##### `resetIncludeShadowMetadata` <a name="resetIncludeShadowMetadata" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.resetIncludeShadowMetadata"></a>
+
+```typescript
+public resetIncludeShadowMetadata(): void
+```
+
 ##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.resetZoneId"></a>
 
 ```typescript
@@ -421,7 +428,7 @@ The construct id used in the generated config for the DataCloudflareDnsRecord to
 
 The id of the existing DataCloudflareDnsRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -456,7 +463,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.data">data</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordDataOutputReference">DataCloudflareDnsRecordDataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference">DataCloudflareDnsRecordFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.meta">meta</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.meta">meta</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference">DataCloudflareDnsRecordMetaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.modifiedOn">modifiedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.priority">priority</a></code> | <code>number</code> | *No description.* |
@@ -470,8 +477,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.dnsRecordIdInput">dnsRecordIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.filterInput">filterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter">DataCloudflareDnsRecordFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.includeShadowMetadataInput">includeShadowMetadataInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.dnsRecordId">dnsRecordId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.includeShadowMetadata">includeShadowMetadata</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -671,10 +680,10 @@ public readonly id: string;
 ##### `meta`<sup>Required</sup> <a name="meta" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.meta"></a>
 
 ```typescript
-public readonly meta: string;
+public readonly meta: DataCloudflareDnsRecordMetaOutputReference;
 ```
 
-- *Type:* string
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference">DataCloudflareDnsRecordMetaOutputReference</a>
 
 ---
 
@@ -808,6 +817,16 @@ public readonly filterInput: IResolvable | DataCloudflareDnsRecordFilter;
 
 ---
 
+##### `includeShadowMetadataInput`<sup>Optional</sup> <a name="includeShadowMetadataInput" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.includeShadowMetadataInput"></a>
+
+```typescript
+public readonly includeShadowMetadataInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.zoneIdInput"></a>
 
 ```typescript
@@ -825,6 +844,16 @@ public readonly dnsRecordId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `includeShadowMetadata`<sup>Required</sup> <a name="includeShadowMetadata" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.property.includeShadowMetadata"></a>
+
+```typescript
+public readonly includeShadowMetadata: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -880,7 +909,8 @@ const dataCloudflareDnsRecordConfig: dataCloudflareDnsRecord.DataCloudflareDnsRe
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.property.dnsRecordId">dnsRecordId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter">DataCloudflareDnsRecordFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter">DataCloudflareDnsRecordFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.property.includeShadowMetadata">includeShadowMetadata</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to include shadow metadata in the `meta` field of each record in the response. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
@@ -965,7 +995,7 @@ public readonly dnsRecordId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
 
 ---
 
@@ -977,7 +1007,21 @@ public readonly filter: DataCloudflareDnsRecordFilter;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter">DataCloudflareDnsRecordFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}.
+
+---
+
+##### `includeShadowMetadata`<sup>Optional</sup> <a name="includeShadowMetadata" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.property.includeShadowMetadata"></a>
+
+```typescript
+public readonly includeShadowMetadata: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Whether to include shadow metadata in the `meta` field of each record in the response. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#include_shadow_metadata DataCloudflareDnsRecord#include_shadow_metadata}
 
 ---
 
@@ -991,7 +1035,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
 
 ---
 
@@ -1020,15 +1064,17 @@ const dataCloudflareDnsRecordFilter: dataCloudflareDnsRecord.DataCloudflareDnsRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.comment">comment</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterComment">DataCloudflareDnsRecordFilterComment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.content">content</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterContent">DataCloudflareDnsRecordFilterContent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#content DataCloudflareDnsRecord#content}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.comment">comment</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterComment">DataCloudflareDnsRecordFilterComment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.content">content</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterContent">DataCloudflareDnsRecordFilterContent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#content DataCloudflareDnsRecord#content}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.direction">direction</a></code> | <code>string</code> | Direction to order DNS records in. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.match">match</a></code> | <code>string</code> | Whether to match all search requirements or at least one (any). |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterName">DataCloudflareDnsRecordFilterName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#name DataCloudflareDnsRecord#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterName">DataCloudflareDnsRecordFilterName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#name DataCloudflareDnsRecord#name}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.order">order</a></code> | <code>string</code> | Field to order DNS records by. Available values: "type", "name", "content", "ttl", "proxied". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.proxied">proxied</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the record is receiving the performance and security benefits of Cloudflare. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.search">search</a></code> | <code>string</code> | Allows searching in multiple properties of a DNS record simultaneously. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.tag">tag</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTag">DataCloudflareDnsRecordFilterTag</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#tag DataCloudflareDnsRecord#tag}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.shadowedByName">shadowedByName</a></code> | <code>string</code> | Filters to records at or below the given NS delegation name, excluding the NS records that form the delegation itself. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.shadowingName">shadowingName</a></code> | <code>string</code> | Returns NS records that shadow the given name, searching at the name itself and each of its ancestor names within the zone, excluding the zone apex. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.tag">tag</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTag">DataCloudflareDnsRecordFilterTag</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#tag DataCloudflareDnsRecord#tag}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.tagMatch">tagMatch</a></code> | <code>string</code> | Whether to match all tag search requirements or at least one (any). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.type">type</a></code> | <code>string</code> | Record type. |
 
@@ -1042,7 +1088,7 @@ public readonly comment: DataCloudflareDnsRecordFilterComment;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterComment">DataCloudflareDnsRecordFilterComment</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}.
 
 ---
 
@@ -1054,7 +1100,7 @@ public readonly content: DataCloudflareDnsRecordFilterContent;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterContent">DataCloudflareDnsRecordFilterContent</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#content DataCloudflareDnsRecord#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#content DataCloudflareDnsRecord#content}.
 
 ---
 
@@ -1068,7 +1114,7 @@ public readonly direction: string;
 
 Direction to order DNS records in. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#direction DataCloudflareDnsRecord#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#direction DataCloudflareDnsRecord#direction}
 
 ---
 
@@ -1085,7 +1131,7 @@ Whether to match all search requirements or at least one (any).
 If set to `all`, acts like a logical AND between filters. If set to `any`, acts like a logical OR instead. Note that the interaction between tag filters is controlled by the `tag-match` parameter instead.
 Available values: "any", "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#match DataCloudflareDnsRecord#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#match DataCloudflareDnsRecord#match}
 
 ---
 
@@ -1097,7 +1143,7 @@ public readonly name: DataCloudflareDnsRecordFilterName;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterName">DataCloudflareDnsRecordFilterName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#name DataCloudflareDnsRecord#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#name DataCloudflareDnsRecord#name}.
 
 ---
 
@@ -1111,7 +1157,7 @@ public readonly order: string;
 
 Field to order DNS records by. Available values: "type", "name", "content", "ttl", "proxied".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#order DataCloudflareDnsRecord#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#order DataCloudflareDnsRecord#order}
 
 ---
 
@@ -1125,7 +1171,7 @@ public readonly proxied: boolean | IResolvable;
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#proxied DataCloudflareDnsRecord#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#proxied DataCloudflareDnsRecord#proxied}
 
 ---
 
@@ -1141,7 +1187,39 @@ Allows searching in multiple properties of a DNS record simultaneously.
 
 This parameter is intended for human users, not automation. Its exact behavior is intentionally left unspecified and is subject to change in the future. This parameter works independently of the `match` setting. For automated searches, please use the other available parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#search DataCloudflareDnsRecord#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#search DataCloudflareDnsRecord#search}
+
+---
+
+##### `shadowedByName`<sup>Optional</sup> <a name="shadowedByName" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.shadowedByName"></a>
+
+```typescript
+public readonly shadowedByName: string;
+```
+
+- *Type:* string
+
+Filters to records at or below the given NS delegation name, excluding the NS records that form the delegation itself.
+
+The value must be a subdomain of the zone; the zone apex is not accepted. Requires `include_shadow_metadata=true`. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#shadowed_by_name DataCloudflareDnsRecord#shadowed_by_name}
+
+---
+
+##### `shadowingName`<sup>Optional</sup> <a name="shadowingName" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.property.shadowingName"></a>
+
+```typescript
+public readonly shadowingName: string;
+```
+
+- *Type:* string
+
+Returns NS records that shadow the given name, searching at the name itself and each of its ancestor names within the zone, excluding the zone apex.
+
+The value must be a subdomain of the zone; the zone apex is not accepted. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#shadowing_name DataCloudflareDnsRecord#shadowing_name}
 
 ---
 
@@ -1153,7 +1231,7 @@ public readonly tag: DataCloudflareDnsRecordFilterTag;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTag">DataCloudflareDnsRecordFilterTag</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#tag DataCloudflareDnsRecord#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#tag DataCloudflareDnsRecord#tag}.
 
 ---
 
@@ -1170,7 +1248,7 @@ Whether to match all tag search requirements or at least one (any).
 If set to `all`, acts like a logical AND between tag filters. If set to `any`, acts like a logical OR instead. Note that the regular `match` parameter is still used to combine the resulting condition with other filters that aren't related to tags.
 Available values: "any", "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#tag_match DataCloudflareDnsRecord#tag_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#tag_match DataCloudflareDnsRecord#tag_match}
 
 ---
 
@@ -1186,7 +1264,7 @@ Record type.
 
 Available values: "A", "AAAA", "CAA", "CERT", "CNAME", "DNSKEY", "DS", "HTTPS", "LOC", "MX", "NAPTR", "NS", "OPENPGPKEY", "PTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TLSA", "TXT", "URI".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#type DataCloudflareDnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#type DataCloudflareDnsRecord#type}
 
 ---
 
@@ -1223,7 +1301,7 @@ public readonly absent: string;
 
 If this parameter is present, only records *without* a comment are returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
 
 ---
 
@@ -1237,7 +1315,7 @@ public readonly contains: string;
 
 Substring of the DNS record comment. Comment filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
 
 ---
 
@@ -1251,7 +1329,7 @@ public readonly endswith: string;
 
 Suffix of the DNS record comment. Comment filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
 
 ---
 
@@ -1265,7 +1343,7 @@ public readonly exact: string;
 
 Exact value of the DNS record comment. Comment filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
 
 ---
 
@@ -1279,7 +1357,7 @@ public readonly present: string;
 
 If this parameter is present, only records *with* a comment are returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
 
 ---
 
@@ -1293,7 +1371,7 @@ public readonly startswith: string;
 
 Prefix of the DNS record comment. Comment filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
 
 ---
 
@@ -1328,7 +1406,7 @@ public readonly contains: string;
 
 Substring of the DNS record content. Content filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
 
 ---
 
@@ -1342,7 +1420,7 @@ public readonly endswith: string;
 
 Suffix of the DNS record content. Content filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
 
 ---
 
@@ -1356,7 +1434,7 @@ public readonly exact: string;
 
 Exact value of the DNS record content. Content filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
 
 ---
 
@@ -1370,7 +1448,7 @@ public readonly startswith: string;
 
 Prefix of the DNS record content. Content filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
 
 ---
 
@@ -1405,7 +1483,7 @@ public readonly contains: string;
 
 Substring of the DNS record name. Name filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
 
 ---
 
@@ -1419,7 +1497,7 @@ public readonly endswith: string;
 
 Suffix of the DNS record name. Name filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
 
 ---
 
@@ -1433,7 +1511,7 @@ public readonly exact: string;
 
 Exact value of the DNS record name. Name filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
 
 ---
 
@@ -1447,7 +1525,7 @@ public readonly startswith: string;
 
 Prefix of the DNS record name. Name filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
 
 ---
 
@@ -1484,7 +1562,7 @@ public readonly absent: string;
 
 Name of a tag which must *not* be present on the DNS record. Tag filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
 
 ---
 
@@ -1500,7 +1578,7 @@ A tag and value, of the form `<tag-name>:<tag-value>`.
 
 The API will only return DNS records that have a tag named `<tag-name>` whose value contains `<tag-value>`. Tag filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
 
 ---
 
@@ -1516,7 +1594,7 @@ A tag and value, of the form `<tag-name>:<tag-value>`.
 
 The API will only return DNS records that have a tag named `<tag-name>` whose value ends with `<tag-value>`. Tag filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
 
 ---
 
@@ -1532,7 +1610,7 @@ A tag and value, of the form `<tag-name>:<tag-value>`.
 
 The API will only return DNS records that have a tag named `<tag-name>` whose value is `<tag-value>`. Tag filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
 
 ---
 
@@ -1546,7 +1624,7 @@ public readonly present: string;
 
 Name of a tag which must be present on the DNS record. Tag filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
 
 ---
 
@@ -1562,9 +1640,20 @@ A tag and value, of the form `<tag-name>:<tag-value>`.
 
 The API will only return DNS records that have a tag named `<tag-name>` whose value starts with `<tag-value>`. Tag filters are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
 
 ---
+
+### DataCloudflareDnsRecordMeta <a name="DataCloudflareDnsRecordMeta" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMeta"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMeta.Initializer"></a>
+
+```typescript
+import { dataCloudflareDnsRecord } from '@cdktn/provider-cloudflare'
+
+const dataCloudflareDnsRecordMeta: dataCloudflareDnsRecord.DataCloudflareDnsRecordMeta = { ... }
+```
+
 
 ### DataCloudflareDnsRecordSettings <a name="DataCloudflareDnsRecordSettings" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordSettings"></a>
 
@@ -3439,6 +3528,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetOrder">resetOrder</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetProxied">resetProxied</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetSearch">resetSearch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetShadowedByName">resetShadowedByName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetShadowingName">resetShadowingName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetTag">resetTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetTagMatch">resetTagMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetType">resetType</a></code> | *No description.* |
@@ -3691,6 +3782,18 @@ public resetProxied(): void
 public resetSearch(): void
 ```
 
+##### `resetShadowedByName` <a name="resetShadowedByName" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetShadowedByName"></a>
+
+```typescript
+public resetShadowedByName(): void
+```
+
+##### `resetShadowingName` <a name="resetShadowingName" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetShadowingName"></a>
+
+```typescript
+public resetShadowingName(): void
+```
+
 ##### `resetTag` <a name="resetTag" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.resetTag"></a>
 
 ```typescript
@@ -3728,6 +3831,8 @@ public resetType(): void
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.orderInput">orderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.proxiedInput">proxiedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.searchInput">searchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.shadowedByNameInput">shadowedByNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.shadowingNameInput">shadowingNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.tagInput">tagInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTag">DataCloudflareDnsRecordFilterTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.tagMatchInput">tagMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
@@ -3736,6 +3841,8 @@ public resetType(): void
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.order">order</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.proxied">proxied</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.search">search</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.shadowedByName">shadowedByName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.shadowingName">shadowingName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.tagMatch">tagMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter">DataCloudflareDnsRecordFilter</a></code> | *No description.* |
@@ -3886,6 +3993,26 @@ public readonly searchInput: string;
 
 ---
 
+##### `shadowedByNameInput`<sup>Optional</sup> <a name="shadowedByNameInput" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.shadowedByNameInput"></a>
+
+```typescript
+public readonly shadowedByNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `shadowingNameInput`<sup>Optional</sup> <a name="shadowingNameInput" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.shadowingNameInput"></a>
+
+```typescript
+public readonly shadowingNameInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagInput`<sup>Optional</sup> <a name="tagInput" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.tagInput"></a>
 
 ```typescript
@@ -3960,6 +4087,26 @@ public readonly proxied: boolean | IResolvable;
 
 ```typescript
 public readonly search: string;
+```
+
+- *Type:* string
+
+---
+
+##### `shadowedByName`<sup>Required</sup> <a name="shadowedByName" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.shadowedByName"></a>
+
+```typescript
+public readonly shadowedByName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `shadowingName`<sup>Required</sup> <a name="shadowingName" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.property.shadowingName"></a>
+
+```typescript
+public readonly shadowingName: string;
 ```
 
 - *Type:* string
@@ -4416,6 +4563,299 @@ public readonly internalValue: IResolvable | DataCloudflareDnsRecordFilterTag;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTag">DataCloudflareDnsRecordFilterTag</a>
+
+---
+
+
+### DataCloudflareDnsRecordMetaOutputReference <a name="DataCloudflareDnsRecordMetaOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.Initializer"></a>
+
+```typescript
+import { dataCloudflareDnsRecord } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.deadGlue">deadGlue</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.isGlue">isGlue</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.shadowedBy">shadowedBy</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.shadowedRecordsCount">shadowedRecordsCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMeta">DataCloudflareDnsRecordMeta</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deadGlue`<sup>Required</sup> <a name="deadGlue" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.deadGlue"></a>
+
+```typescript
+public readonly deadGlue: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `isGlue`<sup>Required</sup> <a name="isGlue" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.isGlue"></a>
+
+```typescript
+public readonly isGlue: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `shadowedBy`<sup>Required</sup> <a name="shadowedBy" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.shadowedBy"></a>
+
+```typescript
+public readonly shadowedBy: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `shadowedRecordsCount`<sup>Required</sup> <a name="shadowedRecordsCount" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.shadowedRecordsCount"></a>
+
+```typescript
+public readonly shadowedRecordsCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataCloudflareDnsRecordMeta;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMeta">DataCloudflareDnsRecordMeta</a>
 
 ---
 

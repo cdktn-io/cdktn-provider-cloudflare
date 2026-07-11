@@ -4,7 +4,7 @@
 
 ### ManagedTransforms <a name="ManagedTransforms" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms cloudflare_managed_transforms}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms cloudflare_managed_transforms}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer"></a>
 
@@ -21,9 +21,9 @@ managedTransforms.ManagedTransforms(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  managed_request_headers: IResolvable | typing.List[ManagedTransformsManagedRequestHeaders],
-  managed_response_headers: IResolvable | typing.List[ManagedTransformsManagedResponseHeaders],
-  zone_id: str
+  zone_id: str,
+  managed_request_headers: IResolvable | typing.List[ManagedTransformsManagedRequestHeaders] = None,
+  managed_response_headers: IResolvable | typing.List[ManagedTransformsManagedResponseHeaders] = None
 )
 ```
 
@@ -38,9 +38,9 @@ managedTransforms.ManagedTransforms(
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The unique ID of the zone. |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.managedRequestHeaders">managed_request_headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders">ManagedTransformsManagedRequestHeaders</a>]</code> | The list of Managed Request Transforms. |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.managedResponseHeaders">managed_response_headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders">ManagedTransformsManagedResponseHeaders</a>]</code> | The list of Managed Response Transforms. |
-| <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The unique ID of the zone. |
 
 ---
 
@@ -104,33 +104,33 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `managed_request_headers`<sup>Required</sup> <a name="managed_request_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.managedRequestHeaders"></a>
-
-- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders">ManagedTransformsManagedRequestHeaders</a>]
-
-The list of Managed Request Transforms.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
-
----
-
-##### `managed_response_headers`<sup>Required</sup> <a name="managed_response_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.managedResponseHeaders"></a>
-
-- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders">ManagedTransformsManagedResponseHeaders</a>]
-
-The list of Managed Response Transforms.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
-
----
-
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
+
+---
+
+##### `managed_request_headers`<sup>Optional</sup> <a name="managed_request_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.managedRequestHeaders"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders">ManagedTransformsManagedRequestHeaders</a>]
+
+The list of Managed Request Transforms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
+
+---
+
+##### `managed_response_headers`<sup>Optional</sup> <a name="managed_response_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer.parameter.managedResponseHeaders"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders">ManagedTransformsManagedResponseHeaders</a>]
+
+The list of Managed Response Transforms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
 
 ---
 
@@ -164,6 +164,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.putManagedRequestHeaders">put_managed_request_headers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.putManagedResponseHeaders">put_managed_response_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.resetManagedRequestHeaders">reset_managed_request_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.resetManagedResponseHeaders">reset_managed_response_headers</a></code> | *No description.* |
 
 ---
 
@@ -543,6 +545,18 @@ def put_managed_response_headers(
 
 ---
 
+##### `reset_managed_request_headers` <a name="reset_managed_request_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.resetManagedRequestHeaders"></a>
+
+```python
+def reset_managed_request_headers() -> None
+```
+
+##### `reset_managed_response_headers` <a name="reset_managed_response_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.resetManagedResponseHeaders"></a>
+
+```python
+def reset_managed_response_headers() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -657,7 +671,7 @@ The construct id used in the generated config for the ManagedTransforms to impor
 
 The id of the existing ManagedTransforms that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -944,9 +958,9 @@ managedTransforms.ManagedTransformsConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  managed_request_headers: IResolvable | typing.List[ManagedTransformsManagedRequestHeaders],
-  managed_response_headers: IResolvable | typing.List[ManagedTransformsManagedResponseHeaders],
-  zone_id: str
+  zone_id: str,
+  managed_request_headers: IResolvable | typing.List[ManagedTransformsManagedRequestHeaders] = None,
+  managed_response_headers: IResolvable | typing.List[ManagedTransformsManagedResponseHeaders] = None
 )
 ```
 
@@ -961,9 +975,9 @@ managedTransforms.ManagedTransformsConfig(
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The unique ID of the zone. |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.managedRequestHeaders">managed_request_headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders">ManagedTransformsManagedRequestHeaders</a>]</code> | The list of Managed Request Transforms. |
 | <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.managedResponseHeaders">managed_response_headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders">ManagedTransformsManagedResponseHeaders</a>]</code> | The list of Managed Response Transforms. |
-| <code><a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The unique ID of the zone. |
 
 ---
 
@@ -1037,34 +1051,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `managed_request_headers`<sup>Required</sup> <a name="managed_request_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.managedRequestHeaders"></a>
-
-```python
-managed_request_headers: IResolvable | typing.List[ManagedTransformsManagedRequestHeaders]
-```
-
-- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders">ManagedTransformsManagedRequestHeaders</a>]
-
-The list of Managed Request Transforms.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
-
----
-
-##### `managed_response_headers`<sup>Required</sup> <a name="managed_response_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.managedResponseHeaders"></a>
-
-```python
-managed_response_headers: IResolvable | typing.List[ManagedTransformsManagedResponseHeaders]
-```
-
-- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders">ManagedTransformsManagedResponseHeaders</a>]
-
-The list of Managed Response Transforms.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
-
----
-
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.zoneId"></a>
 
 ```python
@@ -1075,7 +1061,35 @@ zone_id: str
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
+
+---
+
+##### `managed_request_headers`<sup>Optional</sup> <a name="managed_request_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.managedRequestHeaders"></a>
+
+```python
+managed_request_headers: IResolvable | typing.List[ManagedTransformsManagedRequestHeaders]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders">ManagedTransformsManagedRequestHeaders</a>]
+
+The list of Managed Request Transforms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
+
+---
+
+##### `managed_response_headers`<sup>Optional</sup> <a name="managed_response_headers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.property.managedResponseHeaders"></a>
+
+```python
+managed_response_headers: IResolvable | typing.List[ManagedTransformsManagedResponseHeaders]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders">ManagedTransformsManagedResponseHeaders</a>]
+
+The list of Managed Response Transforms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
 
 ---
 
@@ -1111,7 +1125,7 @@ enabled: bool | IResolvable
 
 Whether the Managed Transform is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
 
 ---
 
@@ -1125,7 +1139,7 @@ id: str
 
 The human-readable identifier of the Managed Transform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#id ManagedTransforms#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#id ManagedTransforms#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1164,7 +1178,7 @@ enabled: bool | IResolvable
 
 Whether the Managed Transform is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
 
 ---
 
@@ -1178,7 +1192,7 @@ id: str
 
 The human-readable identifier of the Managed Transform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/managed_transforms#id ManagedTransforms#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/managed_transforms#id ManagedTransforms#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

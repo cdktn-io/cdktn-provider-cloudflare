@@ -4,7 +4,7 @@
 
 ### EmailRoutingCatchAll <a name="EmailRoutingCatchAll" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer"></a>
 
@@ -24,6 +24,8 @@ EmailRoutingCatchAll.Builder.create(Construct scope, java.lang.String id)
     .zoneId(java.lang.String)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
+//  .ownerWorkerTag(java.lang.String)
+//  .source(java.lang.String)
     .build();
 ```
 
@@ -43,6 +45,8 @@ EmailRoutingCatchAll.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Routing rule status. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Routing rule name. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer.parameter.ownerWorkerTag">ownerWorkerTag</a></code> | <code>java.lang.String</code> | Public tag (script_tag) of the Worker that owns this rule. Required when `source` is `wrangler`. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer.parameter.source">source</a></code> | <code>java.lang.String</code> | Who manages the rule. |
 
 ---
 
@@ -112,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 List actions for the catch-all routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
 
 ---
 
@@ -122,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of matchers for the catch-all routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
 
 ---
 
@@ -132,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
 
 ---
 
@@ -142,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Routing rule status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
 
 ---
 
@@ -152,7 +156,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+
+---
+
+##### `ownerWorkerTag`<sup>Optional</sup> <a name="ownerWorkerTag" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer.parameter.ownerWorkerTag"></a>
+
+- *Type:* java.lang.String
+
+Public tag (script_tag) of the Worker that owns this rule. Required when `source` is `wrangler`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#owner_worker_tag EmailRoutingCatchAll#owner_worker_tag}
+
+---
+
+##### `source`<sup>Optional</sup> <a name="source" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer.parameter.source"></a>
+
+- *Type:* java.lang.String
+
+Who manages the rule.
+
+`api` covers dashboard, generic API, and Terraform;
+`wrangler` means the rule is managed by a Worker's wrangler.jsonc. Defaults
+to `api` when omitted on write.
+Available values: "api", "wrangler".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#source EmailRoutingCatchAll#source}
 
 ---
 
@@ -188,6 +217,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.putMatchers">putMatchers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.resetOwnerWorkerTag">resetOwnerWorkerTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.resetSource">resetSource</a></code> | *No description.* |
 
 ---
 
@@ -538,6 +569,18 @@ public void resetEnabled()
 public void resetName()
 ```
 
+##### `resetOwnerWorkerTag` <a name="resetOwnerWorkerTag" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.resetOwnerWorkerTag"></a>
+
+```java
+public void resetOwnerWorkerTag()
+```
+
+##### `resetSource` <a name="resetSource" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.resetSource"></a>
+
+```java
+public void resetSource()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -641,7 +684,7 @@ The construct id used in the generated config for the EmailRoutingCatchAll to im
 
 The id of the existing EmailRoutingCatchAll that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,9 +722,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.matchersInput">matchersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchers">EmailRoutingCatchAllMatchers</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.ownerWorkerTagInput">ownerWorkerTagInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.sourceInput">sourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.ownerWorkerTag">ownerWorkerTag</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -908,6 +955,26 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `ownerWorkerTagInput`<sup>Optional</sup> <a name="ownerWorkerTagInput" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.ownerWorkerTagInput"></a>
+
+```java
+public java.lang.String getOwnerWorkerTagInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.sourceInput"></a>
+
+```java
+public java.lang.String getSourceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.zoneIdInput"></a>
 
 ```java
@@ -932,6 +999,26 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ownerWorkerTag`<sup>Required</sup> <a name="ownerWorkerTag" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.ownerWorkerTag"></a>
+
+```java
+public java.lang.String getOwnerWorkerTag();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.property.source"></a>
+
+```java
+public java.lang.String getSource();
 ```
 
 - *Type:* java.lang.String
@@ -986,7 +1073,7 @@ EmailRoutingCatchAllActions.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions.property.type">type</a></code> | <code>java.lang.String</code> | Type of action for catch-all rule. Available values: "drop", "forward", "worker". |
-| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions.property.value">value</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions.property.value">value</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}. |
 
 ---
 
@@ -1000,7 +1087,7 @@ public java.lang.String getType();
 
 Type of action for catch-all rule. Available values: "drop", "forward", "worker".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
 
 ---
 
@@ -1012,7 +1099,7 @@ public java.util.List<java.lang.String> getValue();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}.
 
 ---
 
@@ -1036,6 +1123,8 @@ EmailRoutingCatchAllConfig.builder()
     .zoneId(java.lang.String)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
+//  .ownerWorkerTag(java.lang.String)
+//  .source(java.lang.String)
     .build();
 ```
 
@@ -1055,6 +1144,8 @@ EmailRoutingCatchAllConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Routing rule status. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.name">name</a></code> | <code>java.lang.String</code> | Routing rule name. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.ownerWorkerTag">ownerWorkerTag</a></code> | <code>java.lang.String</code> | Public tag (script_tag) of the Worker that owns this rule. Required when `source` is `wrangler`. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.source">source</a></code> | <code>java.lang.String</code> | Who manages the rule. |
 
 ---
 
@@ -1138,7 +1229,7 @@ public IResolvable|java.util.List<EmailRoutingCatchAllActions> getActions();
 
 List actions for the catch-all routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
 
 ---
 
@@ -1152,7 +1243,7 @@ public IResolvable|java.util.List<EmailRoutingCatchAllMatchers> getMatchers();
 
 List of matchers for the catch-all routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
 
 ---
 
@@ -1166,7 +1257,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
 
 ---
 
@@ -1180,7 +1271,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Routing rule status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
 
 ---
 
@@ -1194,7 +1285,40 @@ public java.lang.String getName();
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+
+---
+
+##### `ownerWorkerTag`<sup>Optional</sup> <a name="ownerWorkerTag" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.ownerWorkerTag"></a>
+
+```java
+public java.lang.String getOwnerWorkerTag();
+```
+
+- *Type:* java.lang.String
+
+Public tag (script_tag) of the Worker that owns this rule. Required when `source` is `wrangler`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#owner_worker_tag EmailRoutingCatchAll#owner_worker_tag}
+
+---
+
+##### `source`<sup>Optional</sup> <a name="source" id="@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.source"></a>
+
+```java
+public java.lang.String getSource();
+```
+
+- *Type:* java.lang.String
+
+Who manages the rule.
+
+`api` covers dashboard, generic API, and Terraform;
+`wrangler` means the rule is managed by a Worker's wrangler.jsonc. Defaults
+to `api` when omitted on write.
+Available values: "api", "wrangler".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#source EmailRoutingCatchAll#source}
 
 ---
 
@@ -1228,7 +1352,7 @@ public java.lang.String getType();
 
 Type of matcher. Default is 'all'. Available values: "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
 
 ---
 
