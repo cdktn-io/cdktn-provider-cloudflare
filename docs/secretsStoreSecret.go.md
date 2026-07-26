@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstoresecret"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstoresecret"
 
 secretsstoresecret.NewSecretsStoreSecret(scope Construct, id *string, config SecretsStoreSecretConfig) SecretsStoreSecret
 ```
@@ -407,7 +407,7 @@ func ResetComment()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstoresecret"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstoresecret"
 
 secretsstoresecret.SecretsStoreSecret_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstoresecret"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstoresecret"
 
 secretsstoresecret.SecretsStoreSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ secretsstoresecret.SecretsStoreSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstoresecret"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstoresecret"
 
 secretsstoresecret.SecretsStoreSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ secretsstoresecret.SecretsStoreSecret_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstoresecret"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstoresecret"
 
 secretsstoresecret.SecretsStoreSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstoresecret"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstoresecret"
 
 &secretsstoresecret.SecretsStoreSecretConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudforceonerequest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequest"
 
 cloudforceonerequest.NewCloudforceOneRequest(scope Construct, id *string, config CloudforceOneRequestConfig) CloudforceOneRequest
 ```
@@ -435,7 +435,7 @@ func ResetTlp()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudforceonerequest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequest"
 
 cloudforceonerequest.CloudforceOneRequest_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudforceonerequest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequest"
 
 cloudforceonerequest.CloudforceOneRequest_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ cloudforceonerequest.CloudforceOneRequest_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudforceonerequest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequest"
 
 cloudforceonerequest.CloudforceOneRequest_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ cloudforceonerequest.CloudforceOneRequest_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudforceonerequest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequest"
 
 cloudforceonerequest.CloudforceOneRequest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -955,7 +955,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudforceonerequest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequest"
 
 &cloudforceonerequest.CloudforceOneRequestConfig {
 	Connection: interface{},

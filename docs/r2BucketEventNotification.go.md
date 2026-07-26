@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotification(scope Construct, id *string, config R2BucketEventNotificationConfig) R2BucketEventNotification
 ```
@@ -420,7 +420,7 @@ func ResetJurisdiction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 r2bucketeventnotification.R2BucketEventNotification_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 r2bucketeventnotification.R2BucketEventNotification_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ r2bucketeventnotification.R2BucketEventNotification_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 r2bucketeventnotification.R2BucketEventNotification_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ r2bucketeventnotification.R2BucketEventNotification_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 r2bucketeventnotification.R2BucketEventNotification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 &r2bucketeventnotification.R2BucketEventNotificationConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 &r2bucketeventnotification.R2BucketEventNotificationRules {
 	Actions: *[]*string,
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotificationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) R2BucketEventNotificationRulesList
 ```
@@ -1256,7 +1256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketeventnotification"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotificationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) R2BucketEventNotificationRulesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.NewZeroTrustDevicePostureRule(scope Construct, id *string, config ZeroTrustDevicePostureRuleConfig) ZeroTrustDevicePostureRule
 ```
@@ -468,7 +468,7 @@ func ResetSchedule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.ZeroTrustDevicePostureRule_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.ZeroTrustDevicePostureRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ zerotrustdeviceposturerule.ZeroTrustDevicePostureRule_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.ZeroTrustDevicePostureRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ zerotrustdeviceposturerule.ZeroTrustDevicePostureRule_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.ZeroTrustDevicePostureRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 &zerotrustdeviceposturerule.ZeroTrustDevicePostureRuleConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrus
 	Type: *string,
 	Description: *string,
 	Expiration: *string,
-	Input: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInput,
+	Input: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInput,
 	Match: interface{},
 	Name: *string,
 	Schedule: *string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 &zerotrustdeviceposturerule.ZeroTrustDevicePostureRuleInput {
 	ActiveThreats: *f64,
@@ -1198,7 +1198,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrus
 	IsActive: interface{},
 	IssueCount: *string,
 	LastSeen: *string,
-	Locations: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputLocations,
+	Locations: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputLocations,
 	NetworkStatus: *string,
 	OperatingSystem: *string,
 	OperationalState: *string,
@@ -1889,7 +1889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 &zerotrustdeviceposturerule.ZeroTrustDevicePostureRuleInputLocations {
 	Paths: *[]*string,
@@ -1939,7 +1939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 &zerotrustdeviceposturerule.ZeroTrustDevicePostureRuleMatch {
 	Platform: *string,
@@ -1975,7 +1975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.NewZeroTrustDevicePostureRuleInputLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDevicePostureRuleInputLocationsOutputReference
 ```
@@ -2282,7 +2282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.NewZeroTrustDevicePostureRuleInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDevicePostureRuleInputOutputReference
 ```
@@ -3791,7 +3791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.NewZeroTrustDevicePostureRuleMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDevicePostureRuleMatchList
 ```
@@ -3951,7 +3951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdeviceposturerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceposturerule"
 
 zerotrustdeviceposturerule.NewZeroTrustDevicePostureRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDevicePostureRuleMatchOutputReference
 ```
