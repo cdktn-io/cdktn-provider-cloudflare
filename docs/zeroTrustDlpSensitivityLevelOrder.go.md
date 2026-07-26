@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevelOrder.ZeroTrustDlpSensitivityLevelOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpsensitivitylevelorder"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpsensitivitylevelorder"
 
 zerotrustdlpsensitivitylevelorder.NewZeroTrustDlpSensitivityLevelOrder(scope Construct, id *string, config ZeroTrustDlpSensitivityLevelOrderConfig) ZeroTrustDlpSensitivityLevelOrder
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevelOrder.ZeroTrustDlpSensitivityLevelOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpsensitivitylevelorder"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpsensitivitylevelorder"
 
 zerotrustdlpsensitivitylevelorder.ZeroTrustDlpSensitivityLevelOrder_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevelOrder.ZeroTrustDlpSensitivityLevelOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpsensitivitylevelorder"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpsensitivitylevelorder"
 
 zerotrustdlpsensitivitylevelorder.ZeroTrustDlpSensitivityLevelOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ zerotrustdlpsensitivitylevelorder.ZeroTrustDlpSensitivityLevelOrder_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevelOrder.ZeroTrustDlpSensitivityLevelOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpsensitivitylevelorder"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpsensitivitylevelorder"
 
 zerotrustdlpsensitivitylevelorder.ZeroTrustDlpSensitivityLevelOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ zerotrustdlpsensitivitylevelorder.ZeroTrustDlpSensitivityLevelOrder_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevelOrder.ZeroTrustDlpSensitivityLevelOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpsensitivitylevelorder"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpsensitivitylevelorder"
 
 zerotrustdlpsensitivitylevelorder.ZeroTrustDlpSensitivityLevelOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevelOrder.ZeroTrustDlpSensitivityLevelOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpsensitivitylevelorder"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpsensitivitylevelorder"
 
 &zerotrustdlpsensitivitylevelorder.ZeroTrustDlpSensitivityLevelOrderConfig {
 	Connection: interface{},

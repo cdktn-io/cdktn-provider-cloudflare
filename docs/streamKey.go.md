@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamKey.StreamKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamkey"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamkey"
 
 streamkey.NewStreamKey(scope Construct, id *string, config StreamKeyConfig) StreamKey
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.streamKey.StreamKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamkey"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamkey"
 
 streamkey.StreamKey_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.streamKey.StreamKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamkey"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamkey"
 
 streamkey.StreamKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ streamkey.StreamKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.streamKey.StreamKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamkey"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamkey"
 
 streamkey.StreamKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ streamkey.StreamKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.streamKey.StreamKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamkey"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamkey"
 
 streamkey.StreamKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamKey.StreamKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamkey"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamkey"
 
 &streamkey.StreamKeyConfig {
 	Connection: interface{},

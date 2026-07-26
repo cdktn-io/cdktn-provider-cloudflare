@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.Share.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.NewShare(scope Construct, id *string, config ShareConfig) Share
 ```
@@ -426,7 +426,7 @@ func PutResources(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.share.Share.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.Share_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.share.Share.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.Share_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ share.Share_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.share.Share.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.Share_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ share.Share_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.share.Share.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.Share_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.share.ShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 &share.ShareConfig {
 	Connection: interface{},
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.share.ShareRecipients.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 &share.ShareRecipients {
 	OrganizationId: *string,
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.share.ShareResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 &share.ShareResources {
 	Meta: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.ShareRecipientsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.NewShareRecipientsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ShareRecipientsList
 ```
@@ -1391,7 +1391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.ShareRecipientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.NewShareRecipientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ShareRecipientsOutputReference
 ```
@@ -1716,7 +1716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.ShareResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.NewShareResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ShareResourcesList
 ```
@@ -1876,7 +1876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.ShareResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/share"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 
 share.NewShareResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ShareResourcesOutputReference
 ```

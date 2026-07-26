@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 snippetrules.NewSnippetRules(scope Construct, id *string, config SnippetRulesConfig) SnippetRules
 ```
@@ -413,7 +413,7 @@ func PutRules(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.snippetRules.SnippetRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 snippetrules.SnippetRules_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.snippetRules.SnippetRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 snippetrules.SnippetRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ snippetrules.SnippetRules_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.snippetRules.SnippetRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 snippetrules.SnippetRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ snippetrules.SnippetRules_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.snippetRules.SnippetRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 snippetrules.SnippetRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 &snippetrules.SnippetRulesConfig {
 	Connection: interface{},
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 &snippetrules.SnippetRulesRules {
 	Expression: *string,
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippetRules.SnippetRulesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 snippetrules.NewSnippetRulesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SnippetRulesRulesList
 ```
@@ -1135,7 +1135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/snippetrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules"
 
 snippetrules.NewSnippetRulesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SnippetRulesRulesOutputReference
 ```

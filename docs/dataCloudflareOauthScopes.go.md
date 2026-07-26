@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 datacloudflareoauthscopes.NewDataCloudflareOauthScopes(scope Construct, id *string, config DataCloudflareOauthScopesConfig) DataCloudflareOauthScopes
 ```
@@ -305,7 +305,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 datacloudflareoauthscopes.DataCloudflareOauthScopes_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 datacloudflareoauthscopes.DataCloudflareOauthScopes_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflareoauthscopes.DataCloudflareOauthScopes_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 datacloudflareoauthscopes.DataCloudflareOauthScopes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflareoauthscopes.DataCloudflareOauthScopes_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 datacloudflareoauthscopes.DataCloudflareOauthScopes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 &datacloudflareoauthscopes.DataCloudflareOauthScopesConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 &datacloudflareoauthscopes.DataCloudflareOauthScopesResult {
 
@@ -738,7 +738,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 datacloudflareoauthscopes.NewDataCloudflareOauthScopesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareOauthScopesResultList
 ```
@@ -887,7 +887,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareoauthscopes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthscopes"
 
 datacloudflareoauthscopes.NewDataCloudflareOauthScopesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareOauthScopesResultOutputReference
 ```
