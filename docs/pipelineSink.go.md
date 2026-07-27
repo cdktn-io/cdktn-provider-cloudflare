@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSink(scope Construct, id *string, config PipelineSinkConfig) PipelineSink
 ```
@@ -460,7 +460,7 @@ func ResetSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.PipelineSink_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.PipelineSink_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ pipelinesink.PipelineSink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.PipelineSink_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ pipelinesink.PipelineSink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.PipelineSink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -914,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkConfig {
 	Connection: interface{},
@@ -927,9 +927,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipeline
 	AccountId: *string,
 	Name: *string,
 	Type: *string,
-	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineSink.PipelineSinkConfigA,
-	Format: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineSink.PipelineSinkFormat,
-	Schema: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineSink.PipelineSinkSchema,
+	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineSink.PipelineSinkConfigA,
+	Format: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineSink.PipelineSinkFormat,
+	Schema: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineSink.PipelineSinkSchema,
 }
 ```
 
@@ -1108,18 +1108,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkConfigA {
 	AccountId: *string,
 	Bucket: *string,
-	Credentials: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineSink.PipelineSinkConfigCredentials,
-	FileNaming: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineSink.PipelineSinkConfigFileNaming,
+	Credentials: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineSink.PipelineSinkConfigCredentials,
+	FileNaming: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineSink.PipelineSinkConfigFileNaming,
 	Jurisdiction: *string,
 	Namespace: *string,
-	Partitioning: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineSink.PipelineSinkConfigPartitioning,
+	Partitioning: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineSink.PipelineSinkConfigPartitioning,
 	Path: *string,
-	RollingPolicy: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineSink.PipelineSinkConfigRollingPolicy,
+	RollingPolicy: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineSink.PipelineSinkConfigRollingPolicy,
 	TableName: *string,
 	Token: *string,
 }
@@ -1300,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkConfigCredentials {
 	AccessKeyId: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigFileNaming.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkConfigFileNaming {
 	Prefix: *string,
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigPartitioning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkConfigPartitioning {
 	TimePattern: *string,
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigRollingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkConfigRollingPolicy {
 	FileSizeBytes: *f64,
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkFormat {
 	Type: *string,
@@ -1626,11 +1626,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkSchema {
 	Fields: interface{},
-	Format: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineSink.PipelineSinkSchemaFormat,
+	Format: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineSink.PipelineSinkSchemaFormat,
 	Inferred: interface{},
 }
 ```
@@ -1686,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkSchemaFields {
 	Type: *string,
@@ -1792,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 &pipelinesink.PipelineSinkSchemaFormat {
 	Type: *string,
@@ -1904,7 +1904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineSinkConfigAOutputReference
 ```
@@ -2510,7 +2510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkConfigCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineSinkConfigCredentialsOutputReference
 ```
@@ -2803,7 +2803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigFileNamingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkConfigFileNamingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineSinkConfigFileNamingOutputReference
 ```
@@ -3139,7 +3139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigPartitioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkConfigPartitioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineSinkConfigPartitioningOutputReference
 ```
@@ -3417,7 +3417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigRollingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkConfigRollingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineSinkConfigRollingPolicyOutputReference
 ```
@@ -3753,7 +3753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineSinkFormatOutputReference
 ```
@@ -4169,7 +4169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkSchemaFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineSinkSchemaFieldsList
 ```
@@ -4329,7 +4329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkSchemaFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineSinkSchemaFieldsOutputReference
 ```
@@ -4763,7 +4763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkSchemaFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineSinkSchemaFormatOutputReference
 ```
@@ -5179,7 +5179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinesink"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinesink"
 
 pipelinesink.NewPipelineSinkSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineSinkSchemaOutputReference
 ```

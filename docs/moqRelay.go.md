@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.moqRelay.MoqRelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.NewMoqRelay(scope Construct, id *string, config MoqRelayConfig) MoqRelay
 ```
@@ -420,7 +420,7 @@ func ResetConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.moqRelay.MoqRelay.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.MoqRelay_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.moqRelay.MoqRelay.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.MoqRelay_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ moqrelay.MoqRelay_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.moqRelay.MoqRelay.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.MoqRelay_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ moqrelay.MoqRelay_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.moqRelay.MoqRelay.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.MoqRelay_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -852,7 +852,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 &moqrelay.MoqRelayConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Name: *string,
-	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.moqRelay.MoqRelayConfigA,
+	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.moqRelay.MoqRelayConfigA,
 }
 ```
 
@@ -1002,11 +1002,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 &moqrelay.MoqRelayConfigA {
-	LingeringSubscribe: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.moqRelay.MoqRelayConfigLingeringSubscribe,
-	Upstreams: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.moqRelay.MoqRelayConfigUpstreams,
+	LingeringSubscribe: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.moqRelay.MoqRelayConfigLingeringSubscribe,
+	Upstreams: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.moqRelay.MoqRelayConfigUpstreams,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigLingeringSubscribe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 &moqrelay.MoqRelayConfigLingeringSubscribe {
 	Enabled: interface{},
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigUpstreams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 &moqrelay.MoqRelayConfigUpstreams {
 	Enabled: interface{},
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigUpstreamsUpstreams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 &moqrelay.MoqRelayConfigUpstreamsUpstreams {
 	Url: *string,
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.NewMoqRelayConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MoqRelayConfigAOutputReference
 ```
@@ -1519,7 +1519,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigLingeringSubscribeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.NewMoqRelayConfigLingeringSubscribeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MoqRelayConfigLingeringSubscribeOutputReference
 ```
@@ -1826,7 +1826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigUpstreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.NewMoqRelayConfigUpstreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MoqRelayConfigUpstreamsOutputReference
 ```
@@ -2146,7 +2146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigUpstreamsUpstreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.NewMoqRelayConfigUpstreamsUpstreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MoqRelayConfigUpstreamsUpstreamsList
 ```
@@ -2306,7 +2306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.moqRelay.MoqRelayConfigUpstreamsUpstreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/moqrelay"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/moqrelay"
 
 moqrelay.NewMoqRelayConfigUpstreamsUpstreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MoqRelayConfigUpstreamsUpstreamsOutputReference
 ```
