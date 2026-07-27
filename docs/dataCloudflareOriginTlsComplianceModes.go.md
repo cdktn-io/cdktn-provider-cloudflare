@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOriginTlsComplianceModes.DataCloudflareOriginTlsComplianceModes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareorigintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareorigintlscompliancemodes"
 
 datacloudflareorigintlscompliancemodes.NewDataCloudflareOriginTlsComplianceModes(scope Construct, id *string, config DataCloudflareOriginTlsComplianceModesConfig) DataCloudflareOriginTlsComplianceModes
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareOriginTlsComplianceModes.DataCloudflareOriginTlsComplianceModes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareorigintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareorigintlscompliancemodes"
 
 datacloudflareorigintlscompliancemodes.DataCloudflareOriginTlsComplianceModes_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareOriginTlsComplianceModes.DataCloudflareOriginTlsComplianceModes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareorigintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareorigintlscompliancemodes"
 
 datacloudflareorigintlscompliancemodes.DataCloudflareOriginTlsComplianceModes_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflareorigintlscompliancemodes.DataCloudflareOriginTlsComplianceModes_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareOriginTlsComplianceModes.DataCloudflareOriginTlsComplianceModes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareorigintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareorigintlscompliancemodes"
 
 datacloudflareorigintlscompliancemodes.DataCloudflareOriginTlsComplianceModes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflareorigintlscompliancemodes.DataCloudflareOriginTlsComplianceModes_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareOriginTlsComplianceModes.DataCloudflareOriginTlsComplianceModes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareorigintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareorigintlscompliancemodes"
 
 datacloudflareorigintlscompliancemodes.DataCloudflareOriginTlsComplianceModes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareOriginTlsComplianceModes.DataCloudflareOriginTlsComplianceModesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareorigintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareorigintlscompliancemodes"
 
 &datacloudflareorigintlscompliancemodes.DataCloudflareOriginTlsComplianceModesConfig {
 	Connection: interface{},

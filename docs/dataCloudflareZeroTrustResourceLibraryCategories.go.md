@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 datacloudflarezerotrustresourcelibrarycategories.NewDataCloudflareZeroTrustResourceLibraryCategories(scope Construct, id *string, config DataCloudflareZeroTrustResourceLibraryCategoriesConfig) DataCloudflareZeroTrustResourceLibraryCategories
 ```
@@ -319,7 +319,7 @@ func ResetOffset()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategories.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 datacloudflarezerotrustresourcelibrarycategories.DataCloudflareZeroTrustResourceLibraryCategories_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 datacloudflarezerotrustresourcelibrarycategories.DataCloudflareZeroTrustResourceLibraryCategories_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflarezerotrustresourcelibrarycategories.DataCloudflareZeroTrustResource
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 datacloudflarezerotrustresourcelibrarycategories.DataCloudflareZeroTrustResourceLibraryCategories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datacloudflarezerotrustresourcelibrarycategories.DataCloudflareZeroTrustResource
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 datacloudflarezerotrustresourcelibrarycategories.DataCloudflareZeroTrustResourceLibraryCategories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 &datacloudflarezerotrustresourcelibrarycategories.DataCloudflareZeroTrustResourceLibraryCategoriesConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategoriesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 &datacloudflarezerotrustresourcelibrarycategories.DataCloudflareZeroTrustResourceLibraryCategoriesResult {
 
@@ -864,7 +864,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategoriesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 datacloudflarezerotrustresourcelibrarycategories.NewDataCloudflareZeroTrustResourceLibraryCategoriesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustResourceLibraryCategoriesResultList
 ```
@@ -1013,7 +1013,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryCategories.DataCloudflareZeroTrustResourceLibraryCategoriesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibrarycategories"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustresourcelibrarycategories"
 
 datacloudflarezerotrustresourcelibrarycategories.NewDataCloudflareZeroTrustResourceLibraryCategoriesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustResourceLibraryCategoriesResultOutputReference
 ```

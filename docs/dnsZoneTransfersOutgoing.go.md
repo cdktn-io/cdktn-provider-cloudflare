@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.NewDnsZoneTransfersOutgoing(scope Construct, id *string, config DnsZoneTransfersOutgoingConfig) DnsZoneTransfersOutgoing
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonetransfersoutgoing"
 
 &dnszonetransfersoutgoing.DnsZoneTransfersOutgoingConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfile(scope Construct, id *string, config ZeroTrustDeviceCustomProfileConfig) ZeroTrustDeviceCustomProfile
 ```
@@ -619,7 +619,7 @@ func ResetVirtualNetworks()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsConstruct(x interface{}) *bool
 ```
@@ -651,7 +651,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -665,7 +665,7 @@ zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1524,7 +1524,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileConfig {
 	Connection: interface{},
@@ -1554,11 +1554,11 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 	Precedence: *f64,
 	RegisterInterfaceIpWithDns: interface{},
 	SccmVpnBoundarySupport: interface{},
-	ServiceModeV2: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2,
+	ServiceModeV2: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2,
 	SupportUrl: *string,
 	SwitchLocked: interface{},
 	TunnelProtocol: *string,
-	VirtualNetworks: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileVirtualNetworks,
+	VirtualNetworks: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileVirtualNetworks,
 }
 ```
 
@@ -2034,7 +2034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileDnsSearchSuffixes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileDnsSearchSuffixes {
 	Suffix: *string,
@@ -2084,7 +2084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileExclude {
 	Address: *string,
@@ -2150,7 +2150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileFallbackDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileFallbackDomains {
 
@@ -2163,7 +2163,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileInclude {
 	Address: *string,
@@ -2229,7 +2229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileServiceModeV2 {
 	Mode: *string,
@@ -2279,7 +2279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileTargetTests.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileTargetTests {
 
@@ -2292,7 +2292,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileVirtualNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileVirtualNetworks {
 	Allowed: *[]*string,
@@ -2346,7 +2346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileDnsSearchSuffixesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileDnsSearchSuffixesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileDnsSearchSuffixesList
 ```
@@ -2506,7 +2506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileDnsSearchSuffixesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileDnsSearchSuffixesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileDnsSearchSuffixesOutputReference
 ```
@@ -2824,7 +2824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileExcludeList
 ```
@@ -2984,7 +2984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileExcludeOutputReference
 ```
@@ -3338,7 +3338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileFallbackDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileFallbackDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileFallbackDomainsList
 ```
@@ -3487,7 +3487,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileFallbackDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference
 ```
@@ -3787,7 +3787,7 @@ func InternalValue() ZeroTrustDeviceCustomProfileFallbackDomains
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileIncludeList
 ```
@@ -3947,7 +3947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileIncludeOutputReference
 ```
@@ -4301,7 +4301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileServiceModeV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDeviceCustomProfileServiceModeV2OutputReference
 ```
@@ -4608,7 +4608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileTargetTestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileTargetTestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileTargetTestsList
 ```
@@ -4757,7 +4757,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileTargetTestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileTargetTestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileTargetTestsOutputReference
 ```
@@ -5046,7 +5046,7 @@ func InternalValue() ZeroTrustDeviceCustomProfileTargetTests
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileVirtualNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicecustomprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileVirtualNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDeviceCustomProfileVirtualNetworksOutputReference
 ```

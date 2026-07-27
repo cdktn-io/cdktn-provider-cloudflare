@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 r2bucketlock.NewR2BucketLock(scope Construct, id *string, config R2BucketLockConfig) R2BucketLock
 ```
@@ -427,7 +427,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 r2bucketlock.R2BucketLock_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 r2bucketlock.R2BucketLock_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ r2bucketlock.R2BucketLock_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 r2bucketlock.R2BucketLock_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ r2bucketlock.R2BucketLock_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 r2bucketlock.R2BucketLock_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 &r2bucketlock.R2BucketLockConfig {
 	Connection: interface{},
@@ -968,10 +968,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 &r2bucketlock.R2BucketLockRules {
-	Condition: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.r2BucketLock.R2BucketLockRulesCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.r2BucketLock.R2BucketLockRulesCondition,
 	Enabled: interface{},
 	Id: *string,
 	Prefix: *string,
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 &r2bucketlock.R2BucketLockRulesCondition {
 	Type: *string,
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 r2bucketlock.NewR2BucketLockRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2BucketLockRulesConditionOutputReference
 ```
@@ -1446,7 +1446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 r2bucketlock.NewR2BucketLockRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) R2BucketLockRulesList
 ```
@@ -1606,7 +1606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketlock"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketlock"
 
 r2bucketlock.NewR2BucketLockRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) R2BucketLockRulesOutputReference
 ```

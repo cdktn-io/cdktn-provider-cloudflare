@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettings(scope Construct, id *string, config ZeroTrustGatewaySettingsConfig) ZeroTrustGatewaySettings
 ```
@@ -420,7 +420,7 @@ func ResetSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.ZeroTrustGatewaySettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsConfig {
 	Connection: interface{},
@@ -797,7 +797,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettings,
 }
 ```
 
@@ -918,24 +918,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettings {
-	ActivityLog: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsActivityLog,
-	Antivirus: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirus,
-	BlockPage: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBlockPage,
-	BodyScanning: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBodyScanning,
-	BrowserIsolation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBrowserIsolation,
-	Certificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCertificate,
-	CustomCertificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCustomCertificate,
-	ExtendedEmailMatching: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsExtendedEmailMatching,
-	Fips: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsFips,
-	HostSelector: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsHostSelector,
-	Inspection: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsInspection,
+	ActivityLog: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsActivityLog,
+	Antivirus: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirus,
+	BlockPage: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBlockPage,
+	BodyScanning: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBodyScanning,
+	BrowserIsolation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBrowserIsolation,
+	Certificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCertificate,
+	CustomCertificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCustomCertificate,
+	ExtendedEmailMatching: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsExtendedEmailMatching,
+	Fips: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsFips,
+	HostSelector: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsHostSelector,
+	Inspection: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsInspection,
 	MaxTtlSecs: *f64,
-	ProtocolDetection: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsProtocolDetection,
-	Sandbox: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsSandbox,
-	TlsDecrypt: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsTlsDecrypt,
+	ProtocolDetection: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsProtocolDetection,
+	Sandbox: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsSandbox,
+	TlsDecrypt: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsTlsDecrypt,
 }
 ```
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsActivityLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsActivityLog {
 	Enabled: interface{},
@@ -1214,13 +1214,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsAntivirus {
 	EnabledDownloadPhase: interface{},
 	EnabledUploadPhase: interface{},
 	FailClosed: interface{},
-	NotificationSettings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings,
+	NotificationSettings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings,
 }
 ```
 
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings {
 	Enabled: interface{},
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBlockPage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsBlockPage {
 	BackgroundColor: *string,
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBodyScanning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsBodyScanning {
 	InspectionMode: *string,
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBrowserIsolation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsBrowserIsolation {
 	NonIdentityEnabled: interface{},
@@ -1720,7 +1720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsCertificate {
 	Id: *string,
@@ -1759,7 +1759,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCustomCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsCustomCertificate {
 	Enabled: interface{},
@@ -1842,7 +1842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsExtendedEmailMatching.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsExtendedEmailMatching {
 	Enabled: interface{},
@@ -1878,7 +1878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsFips.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsFips {
 	Tls: interface{},
@@ -1912,7 +1912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsHostSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsHostSelector {
 	Enabled: interface{},
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsInspection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsInspection {
 	Mode: *string,
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsProtocolDetection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsProtocolDetection {
 	Enabled: interface{},
@@ -2017,7 +2017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsSandbox.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsSandbox {
 	Enabled: interface{},
@@ -2067,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsTlsDecrypt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSettingsTlsDecrypt {
 	Enabled: interface{},
@@ -2103,7 +2103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsActivityLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsActivityLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsActivityLogOutputReference
 ```
@@ -2381,7 +2381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference
 ```
@@ -2746,7 +2746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsAntivirusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsAntivirusOutputReference
 ```
@@ -3124,7 +3124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBlockPageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsBlockPageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsBlockPageOutputReference
 ```
@@ -3808,7 +3808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBodyScanningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsBodyScanningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsBodyScanningOutputReference
 ```
@@ -4086,7 +4086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference
 ```
@@ -4393,7 +4393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsCertificateOutputReference
 ```
@@ -4664,7 +4664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference
 ```
@@ -5022,7 +5022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference
 ```
@@ -5333,7 +5333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsFipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsFipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsFipsOutputReference
 ```
@@ -5611,7 +5611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsHostSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference
 ```
@@ -5889,7 +5889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsInspectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsInspectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsInspectionOutputReference
 ```
@@ -6167,7 +6167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsOutputReference
 ```
@@ -7033,7 +7033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference
 ```
@@ -7311,7 +7311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsSandboxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsSandboxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsSandboxOutputReference
 ```
@@ -7618,7 +7618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsTlsDecryptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSettingsTlsDecryptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsTlsDecryptOutputReference
 ```

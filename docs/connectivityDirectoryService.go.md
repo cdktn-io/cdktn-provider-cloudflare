@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.NewConnectivityDirectoryService(scope Construct, id *string, config ConnectivityDirectoryServiceConfig) ConnectivityDirectoryService
 ```
@@ -461,7 +461,7 @@ func ResetTlsSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.ConnectivityDirectoryService_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.ConnectivityDirectoryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ connectivitydirectoryservice.ConnectivityDirectoryService_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.ConnectivityDirectoryService_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ connectivitydirectoryservice.ConnectivityDirectoryService_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.ConnectivityDirectoryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -992,7 +992,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 &connectivitydirectoryservice.ConnectivityDirectoryServiceConfig {
 	Connection: interface{},
@@ -1003,14 +1003,14 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connecti
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Host: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.connectivityDirectoryService.ConnectivityDirectoryServiceHost,
+	Host: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.connectivityDirectoryService.ConnectivityDirectoryServiceHost,
 	Name: *string,
 	Type: *string,
 	AppProtocol: *string,
 	HttpPort: *f64,
 	HttpsPort: *f64,
 	TcpPort: *f64,
-	TlsSettings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings,
+	TlsSettings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings,
 }
 ```
 
@@ -1230,14 +1230,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 &connectivitydirectoryservice.ConnectivityDirectoryServiceHost {
 	Hostname: *string,
 	Ipv4: *string,
 	Ipv6: *string,
-	Network: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetwork,
-	ResolverNetwork: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork,
+	Network: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetwork,
+	ResolverNetwork: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork,
 }
 ```
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 &connectivitydirectoryservice.ConnectivityDirectoryServiceHostNetwork {
 	TunnelId: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 &connectivitydirectoryservice.ConnectivityDirectoryServiceHostResolverNetwork {
 	TunnelId: *string,
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 &connectivitydirectoryservice.ConnectivityDirectoryServiceTlsSettings {
 	CertVerificationMode: *string,
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.NewConnectivityDirectoryServiceHostNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectivityDirectoryServiceHostNetworkOutputReference
 ```
@@ -1707,7 +1707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.NewConnectivityDirectoryServiceHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectivityDirectoryServiceHostOutputReference
 ```
@@ -2127,7 +2127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.NewConnectivityDirectoryServiceHostResolverNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectivityDirectoryServiceHostResolverNetworkOutputReference
 ```
@@ -2427,7 +2427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/connectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice"
 
 connectivitydirectoryservice.NewConnectivityDirectoryServiceTlsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectivityDirectoryServiceTlsSettingsOutputReference
 ```

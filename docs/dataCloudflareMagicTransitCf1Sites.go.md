@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1Sites.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 datacloudflaremagictransitcf1sites.NewDataCloudflareMagicTransitCf1Sites(scope Construct, id *string, config DataCloudflareMagicTransitCf1SitesConfig) DataCloudflareMagicTransitCf1Sites
 ```
@@ -305,7 +305,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1Sites.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1Sites_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1Sites.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1Sites_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1Sites_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1Sites.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1Sites_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1Sites_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1Sites.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1Sites_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1SitesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 &datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1SitesConfig {
 	Connection: interface{},
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1SitesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 &datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1SitesResult {
 
@@ -774,7 +774,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1SitesResultLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 &datacloudflaremagictransitcf1sites.DataCloudflareMagicTransitCf1SitesResultLocation {
 
@@ -789,7 +789,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1SitesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 datacloudflaremagictransitcf1sites.NewDataCloudflareMagicTransitCf1SitesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareMagicTransitCf1SitesResultList
 ```
@@ -938,7 +938,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1SitesResultLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 datacloudflaremagictransitcf1sites.NewDataCloudflareMagicTransitCf1SitesResultLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicTransitCf1SitesResultLocationOutputReference
 ```
@@ -1220,7 +1220,7 @@ func InternalValue() DataCloudflareMagicTransitCf1SitesResultLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicTransitCf1Sites.DataCloudflareMagicTransitCf1SitesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagictransitcf1sites"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitcf1sites"
 
 datacloudflaremagictransitcf1sites.NewDataCloudflareMagicTransitCf1SitesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareMagicTransitCf1SitesResultOutputReference
 ```

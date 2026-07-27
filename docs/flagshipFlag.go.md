@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.NewFlagshipFlag(scope Construct, id *string, config FlagshipFlagConfig) FlagshipFlag
 ```
@@ -434,7 +434,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.FlagshipFlag_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.FlagshipFlag_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ flagshipflag.FlagshipFlag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.FlagshipFlag_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ flagshipflag.FlagshipFlag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.FlagshipFlag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -965,7 +965,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 &flagshipflag.FlagshipFlagConfig {
 	Connection: interface{},
@@ -1232,13 +1232,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 &flagshipflag.FlagshipFlagRules {
 	Conditions: interface{},
 	Priority: *f64,
 	ServeVariation: *string,
-	Rollout: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.flagshipFlag.FlagshipFlagRulesRollout,
+	Rollout: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.flagshipFlag.FlagshipFlagRulesRollout,
 }
 ```
 
@@ -1312,7 +1312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 &flagshipflag.FlagshipFlagRulesConditions {
 	Attribute: *string,
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 &flagshipflag.FlagshipFlagRulesConditionsClauses {
 	Attribute: *string,
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesRollout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 &flagshipflag.FlagshipFlagRulesRollout {
 	Percentage: *f64,
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClausesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.NewFlagshipFlagRulesConditionsClausesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FlagshipFlagRulesConditionsClausesList
 ```
@@ -1718,7 +1718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClausesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.NewFlagshipFlagRulesConditionsClausesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FlagshipFlagRulesConditionsClausesOutputReference
 ```
@@ -2143,7 +2143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.NewFlagshipFlagRulesConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FlagshipFlagRulesConditionsList
 ```
@@ -2303,7 +2303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.NewFlagshipFlagRulesConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FlagshipFlagRulesConditionsOutputReference
 ```
@@ -2728,7 +2728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.NewFlagshipFlagRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FlagshipFlagRulesList
 ```
@@ -2888,7 +2888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.NewFlagshipFlagRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FlagshipFlagRulesOutputReference
 ```
@@ -3276,7 +3276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesRolloutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagshipflag"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/flagshipflag"
 
 flagshipflag.NewFlagshipFlagRulesRolloutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlagshipFlagRulesRolloutOutputReference
 ```

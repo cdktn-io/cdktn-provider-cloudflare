@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customCsr.CustomCsr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customcsr"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customcsr"
 
 customcsr.NewCustomCsr(scope Construct, id *string, config CustomCsrConfig) CustomCsr
 ```
@@ -442,7 +442,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.customCsr.CustomCsr.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customcsr"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customcsr"
 
 customcsr.CustomCsr_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.customCsr.CustomCsr.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customcsr"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customcsr"
 
 customcsr.CustomCsr_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ customcsr.CustomCsr_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.customCsr.CustomCsr.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customcsr"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customcsr"
 
 customcsr.CustomCsr_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ customcsr.CustomCsr_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.customCsr.CustomCsr.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customcsr"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customcsr"
 
 customcsr.CustomCsr_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1039,7 +1039,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.customCsr.CustomCsrConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customcsr"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customcsr"
 
 &customcsr.CustomCsrConfig {
 	Connection: interface{},

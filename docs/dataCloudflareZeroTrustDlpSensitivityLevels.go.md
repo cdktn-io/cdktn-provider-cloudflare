@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 datacloudflarezerotrustdlpsensitivitylevels.NewDataCloudflareZeroTrustDlpSensitivityLevels(scope Construct, id *string, config DataCloudflareZeroTrustDlpSensitivityLevelsConfig) DataCloudflareZeroTrustDlpSensitivityLevels
 ```
@@ -305,7 +305,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevels.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 datacloudflarezerotrustdlpsensitivitylevels.DataCloudflareZeroTrustDlpSensitivityLevels_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 datacloudflarezerotrustdlpsensitivitylevels.DataCloudflareZeroTrustDlpSensitivityLevels_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflarezerotrustdlpsensitivitylevels.DataCloudflareZeroTrustDlpSensitivit
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevels.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 datacloudflarezerotrustdlpsensitivitylevels.DataCloudflareZeroTrustDlpSensitivityLevels_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflarezerotrustdlpsensitivitylevels.DataCloudflareZeroTrustDlpSensitivit
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 datacloudflarezerotrustdlpsensitivitylevels.DataCloudflareZeroTrustDlpSensitivityLevels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 &datacloudflarezerotrustdlpsensitivitylevels.DataCloudflareZeroTrustDlpSensitivityLevelsConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevelsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 &datacloudflarezerotrustdlpsensitivitylevels.DataCloudflareZeroTrustDlpSensitivityLevelsResult {
 
@@ -810,7 +810,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevelsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 datacloudflarezerotrustdlpsensitivitylevels.NewDataCloudflareZeroTrustDlpSensitivityLevelsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustDlpSensitivityLevelsResultList
 ```
@@ -959,7 +959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevels.DataCloudflareZeroTrustDlpSensitivityLevelsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpsensitivitylevels"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpsensitivitylevels"
 
 datacloudflarezerotrustdlpsensitivitylevels.NewDataCloudflareZeroTrustDlpSensitivityLevelsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustDlpSensitivityLevelsResultOutputReference
 ```

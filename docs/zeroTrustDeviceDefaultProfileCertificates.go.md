@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.NewZeroTrustDeviceDefaultProfileCertificates(scope Construct, id *string, config ZeroTrustDeviceDefaultProfileCertificatesConfig) ZeroTrustDeviceDefaultProfileCertificates
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificates_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificates_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertifica
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificates_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertifica
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedefaultprofilecertificates"
 
 &zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig {
 	Connection: interface{},

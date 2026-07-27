@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 zerotrustdevicedeploymentgroups.NewZeroTrustDeviceDeploymentGroups(scope Construct, id *string, config ZeroTrustDeviceDeploymentGroupsConfig) ZeroTrustDeviceDeploymentGroups
 ```
@@ -420,7 +420,7 @@ func ResetPolicyIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 zerotrustdevicedeploymentgroups.ZeroTrustDeviceDeploymentGroups_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 zerotrustdevicedeploymentgroups.ZeroTrustDeviceDeploymentGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ zerotrustdevicedeploymentgroups.ZeroTrustDeviceDeploymentGroups_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroups.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 zerotrustdevicedeploymentgroups.ZeroTrustDeviceDeploymentGroups_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ zerotrustdevicedeploymentgroups.ZeroTrustDeviceDeploymentGroups_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 zerotrustdevicedeploymentgroups.ZeroTrustDeviceDeploymentGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 &zerotrustdevicedeploymentgroups.ZeroTrustDeviceDeploymentGroupsConfig {
 	Connection: interface{},
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroupsVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 &zerotrustdevicedeploymentgroups.ZeroTrustDeviceDeploymentGroupsVersionConfig {
 	TargetEnvironment: *string,
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroupsVersionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 zerotrustdevicedeploymentgroups.NewZeroTrustDeviceDeploymentGroupsVersionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceDeploymentGroupsVersionConfigList
 ```
@@ -1206,7 +1206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceDeploymentGroups.ZeroTrustDeviceDeploymentGroupsVersionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicedeploymentgroups"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicedeploymentgroups"
 
 zerotrustdevicedeploymentgroups.NewZeroTrustDeviceDeploymentGroupsVersionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceDeploymentGroupsVersionConfigOutputReference
 ```
