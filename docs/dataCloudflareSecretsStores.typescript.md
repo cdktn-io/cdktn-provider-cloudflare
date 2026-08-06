@@ -4,7 +4,7 @@
 
 ### DataCloudflareSecretsStores <a name="DataCloudflareSecretsStores" id="@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStores"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_stores cloudflare_secrets_stores}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_stores cloudflare_secrets_stores}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStores.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareSecretsStore
 
 The id of the existing DataCloudflareSecretsStores that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_stores#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_stores#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -702,9 +702,9 @@ const dataCloudflareSecretsStoresConfig: dataCloudflareSecretsStores.DataCloudfl
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStoresConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStoresConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStoresConfig.property.accountId">accountId</a></code> | <code>string</code> | Account Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStoresConfig.property.direction">direction</a></code> | <code>string</code> | Direction to sort objects Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStoresConfig.property.direction">direction</a></code> | <code>string</code> | Direction to sort objects. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStoresConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStoresConfig.property.order">order</a></code> | <code>string</code> | Order secrets by values in the given field Available values: "name", "comment", "created", "modified", "status". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStores.DataCloudflareSecretsStoresConfig.property.order">order</a></code> | <code>string</code> | Order stores by values in the given field. Available values: "name", "created", "modified". |
 
 ---
 
@@ -788,7 +788,7 @@ public readonly accountId: string;
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_stores#account_id DataCloudflareSecretsStores#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_stores#account_id DataCloudflareSecretsStores#account_id}
 
 ---
 
@@ -800,9 +800,9 @@ public readonly direction: string;
 
 - *Type:* string
 
-Direction to sort objects Available values: "asc", "desc".
+Direction to sort objects. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_stores#direction DataCloudflareSecretsStores#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_stores#direction DataCloudflareSecretsStores#direction}
 
 ---
 
@@ -816,7 +816,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_stores#max_items DataCloudflareSecretsStores#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_stores#max_items DataCloudflareSecretsStores#max_items}
 
 ---
 
@@ -828,9 +828,9 @@ public readonly order: string;
 
 - *Type:* string
 
-Order secrets by values in the given field Available values: "name", "comment", "created", "modified", "status".
+Order stores by values in the given field. Available values: "name", "created", "modified".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_stores#order DataCloudflareSecretsStores#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_stores#order DataCloudflareSecretsStores#order}
 
 ---
 
