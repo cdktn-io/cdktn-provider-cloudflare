@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +16,19 @@ export interface DataCloudflareApiTokensConfig extends cdktn.TerraformMetaArgume
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
   */
   readonly direction?: string;
   /**
+  * When true, includes recently-expired tokens in the response.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#include_expired DataCloudflareApiTokens#include_expired}
+  */
+  readonly includeExpired?: boolean | cdktn.IResolvable;
+  /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
   */
   readonly maxItems?: number;
 }
@@ -501,7 +507,7 @@ export class DataCloudflareApiTokensResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens cloudflare_api_tokens}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens cloudflare_api_tokens}
 */
 export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
 
@@ -517,7 +523,7 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareApiTokens resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiTokens to import
-  * @param importFromId The id of the existing DataCloudflareApiTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiTokens to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -529,7 +535,7 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -540,7 +546,7 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_api_tokens',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -552,6 +558,7 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
       forEach: config.forEach
     });
     this._direction = config.direction;
+    this._includeExpired = config.includeExpired;
     this._maxItems = config.maxItems;
   }
 
@@ -573,6 +580,22 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get directionInput() {
     return this._direction;
+  }
+
+  // include_expired - computed: true, optional: true, required: false
+  private _includeExpired?: boolean | cdktn.IResolvable; 
+  public get includeExpired() {
+    return this.getBooleanAttribute('include_expired');
+  }
+  public set includeExpired(value: boolean | cdktn.IResolvable) {
+    this._includeExpired = value;
+  }
+  public resetIncludeExpired() {
+    this._includeExpired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeExpiredInput() {
+    return this._includeExpired;
   }
 
   // max_items - computed: false, optional: true, required: false
@@ -604,6 +627,7 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       direction: cdktn.stringToTerraform(this._direction),
+      include_expired: cdktn.booleanToTerraform(this._includeExpired),
       max_items: cdktn.numberToTerraform(this._maxItems),
     };
   }
@@ -615,6 +639,12 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      include_expired: {
+        value: cdktn.booleanToHclTerraform(this._includeExpired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       max_items: {
         value: cdktn.numberToHclTerraform(this._maxItems),

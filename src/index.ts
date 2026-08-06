@@ -513,6 +513,7 @@ export * as dataCloudflareShareResources from './data-cloudflare-share-resources
 export * as dataCloudflareShares from './data-cloudflare-shares/index';
 export * as dataCloudflareSnippet from './data-cloudflare-snippet/index';
 export * as dataCloudflareSnippetList from './data-cloudflare-snippet-list/index';
+export * as dataCloudflareSnippetRules from './data-cloudflare-snippet-rules/index';
 export * as dataCloudflareSnippetRulesList from './data-cloudflare-snippet-rules-list/index';
 export * as dataCloudflareSnippets from './data-cloudflare-snippets/index';
 export * as dataCloudflareSnippetsList from './data-cloudflare-snippets-list/index';
@@ -633,6 +634,8 @@ export * as dataCloudflareZeroTrustDexTests from './data-cloudflare-zero-trust-d
 export * as dataCloudflareZeroTrustDlpCustomEntries from './data-cloudflare-zero-trust-dlp-custom-entries/index';
 export * as dataCloudflareZeroTrustDlpCustomEntry from './data-cloudflare-zero-trust-dlp-custom-entry/index';
 export * as dataCloudflareZeroTrustDlpCustomProfile from './data-cloudflare-zero-trust-dlp-custom-profile/index';
+export * as dataCloudflareZeroTrustDlpCustomPromptTopic from './data-cloudflare-zero-trust-dlp-custom-prompt-topic/index';
+export * as dataCloudflareZeroTrustDlpCustomPromptTopics from './data-cloudflare-zero-trust-dlp-custom-prompt-topics/index';
 export * as dataCloudflareZeroTrustDlpDataClass from './data-cloudflare-zero-trust-dlp-data-class/index';
 export * as dataCloudflareZeroTrustDlpDataClasses from './data-cloudflare-zero-trust-dlp-data-classes/index';
 export * as dataCloudflareZeroTrustDlpDataTag from './data-cloudflare-zero-trust-dlp-data-tag/index';

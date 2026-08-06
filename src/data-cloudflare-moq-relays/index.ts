@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,14 +15,14 @@ export interface DataCloudflareMoqRelaysConfig extends cdktn.TerraformMetaArgume
   /**
   * Cloudflare account identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays#account_id DataCloudflareMoqRelays#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#account_id DataCloudflareMoqRelays#account_id}
   */
   readonly accountId: string;
   /**
   * Sort order by `created`. When true, results are returned oldest-first
   * (ascending); otherwise newest-first (descending, the default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays#asc DataCloudflareMoqRelays#asc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#asc DataCloudflareMoqRelays#asc}
   */
   readonly asc?: boolean | cdktn.IResolvable;
   /**
@@ -30,7 +30,7 @@ export interface DataCloudflareMoqRelaysConfig extends cdktn.TerraformMetaArgume
   * RFC 3339 timestamp (typically the `created` value of the last item
   * on the current page, to fetch the next page).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays#created_after DataCloudflareMoqRelays#created_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#created_after DataCloudflareMoqRelays#created_after}
   */
   readonly createdAfter?: string;
   /**
@@ -38,19 +38,19 @@ export interface DataCloudflareMoqRelaysConfig extends cdktn.TerraformMetaArgume
   * RFC 3339 timestamp (typically the `created` value of the first item
   * on the current page, to fetch the previous page).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays#created_before DataCloudflareMoqRelays#created_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#created_before DataCloudflareMoqRelays#created_before}
   */
   readonly createdBefore?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays#max_items DataCloudflareMoqRelays#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#max_items DataCloudflareMoqRelays#max_items}
   */
   readonly maxItems?: number;
   /**
   * Maximum number of relays to return per page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays#per_page DataCloudflareMoqRelays#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#per_page DataCloudflareMoqRelays#per_page}
   */
   readonly perPage?: number;
 }
@@ -151,7 +151,7 @@ export class DataCloudflareMoqRelaysResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays cloudflare_moq_relays}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays cloudflare_moq_relays}
 */
 export class DataCloudflareMoqRelays extends cdktn.TerraformDataSource {
 
@@ -167,7 +167,7 @@ export class DataCloudflareMoqRelays extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareMoqRelays resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMoqRelays to import
-  * @param importFromId The id of the existing DataCloudflareMoqRelays that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMoqRelays that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMoqRelays to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -179,7 +179,7 @@ export class DataCloudflareMoqRelays extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/moq_relays cloudflare_moq_relays} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays cloudflare_moq_relays} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -190,7 +190,7 @@ export class DataCloudflareMoqRelays extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_moq_relays',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
