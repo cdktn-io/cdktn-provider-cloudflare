@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkersScripts <a name="DataCloudflareWorkersScripts" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareWorkersScrip
 
 The id of the existing DataCloudflareWorkersScripts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,7 +776,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
 
 ---
 
@@ -790,7 +790,7 @@ public double MaxItems { get; set; }
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
 
 ---
 
@@ -804,7 +804,7 @@ public string Tags { get; set; }
 
 Filter scripts by tags. Format: comma-separated list of tag:allowed pairs where allowed is 'yes' or 'no'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#tags DataCloudflareWorkersScripts#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#tags DataCloudflareWorkersScripts#tags}
 
 ---
 
@@ -829,6 +829,32 @@ new DataCloudflareWorkersScriptsResult {
 using Io.Cdktn.Providers.Cloudflare;
 
 new DataCloudflareWorkersScriptsResultCacheOptions {
+
+};
+```
+
+
+### DataCloudflareWorkersScriptsResultExports <a name="DataCloudflareWorkersScriptsResultExports" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new DataCloudflareWorkersScriptsResultExports {
+
+};
+```
+
+
+### DataCloudflareWorkersScriptsResultExportsCache <a name="DataCloudflareWorkersScriptsResultExportsCache" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new DataCloudflareWorkersScriptsResultExportsCache {
 
 };
 ```
@@ -1207,6 +1233,737 @@ public DataCloudflareWorkersScriptsResultCacheOptions InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultCacheOptions">DataCloudflareWorkersScriptsResultCacheOptions</a>
+
+---
+
+
+### DataCloudflareWorkersScriptsResultExportsCacheOutputReference <a name="DataCloudflareWorkersScriptsResultExportsCacheOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new DataCloudflareWorkersScriptsResultExportsCacheOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.enabled">Enabled</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache">DataCloudflareWorkersScriptsResultExportsCache</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.enabled"></a>
+
+```csharp
+public IResolvable Enabled { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.internalValue"></a>
+
+```csharp
+public DataCloudflareWorkersScriptsResultExportsCache InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache">DataCloudflareWorkersScriptsResultExportsCache</a>
+
+---
+
+
+### DataCloudflareWorkersScriptsResultExportsMap <a name="DataCloudflareWorkersScriptsResultExportsMap" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new DataCloudflareWorkersScriptsResultExportsMap(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.get"></a>
+
+```csharp
+private DataCloudflareWorkersScriptsResultExportsOutputReference Get(string Key)
+```
+
+###### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.get.parameter.key"></a>
+
+- *Type:* string
+
+the key of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataCloudflareWorkersScriptsResultExportsOutputReference <a name="DataCloudflareWorkersScriptsResultExportsOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new DataCloudflareWorkersScriptsResultExportsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, string ComplexObjectKey);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.complexObjectKey">ComplexObjectKey</a></code> | <code>string</code> | the key of this item in the map. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectKey`<sup>Required</sup> <a name="ComplexObjectKey" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.complexObjectKey"></a>
+
+- *Type:* string
+
+the key of this item in the map.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.cache">Cache</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference">DataCloudflareWorkersScriptsResultExportsCacheOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.renamedTo">RenamedTo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.state">State</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.storage">Storage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.transferFrom">TransferFrom</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.transferredTo">TransferredTo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports">DataCloudflareWorkersScriptsResultExports</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Cache`<sup>Required</sup> <a name="Cache" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.cache"></a>
+
+```csharp
+public DataCloudflareWorkersScriptsResultExportsCacheOutputReference Cache { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference">DataCloudflareWorkersScriptsResultExportsCacheOutputReference</a>
+
+---
+
+##### `RenamedTo`<sup>Required</sup> <a name="RenamedTo" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.renamedTo"></a>
+
+```csharp
+public string RenamedTo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `State`<sup>Required</sup> <a name="State" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.state"></a>
+
+```csharp
+public string State { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Storage`<sup>Required</sup> <a name="Storage" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.storage"></a>
+
+```csharp
+public string Storage { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TransferFrom`<sup>Required</sup> <a name="TransferFrom" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.transferFrom"></a>
+
+```csharp
+public string TransferFrom { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TransferredTo`<sup>Required</sup> <a name="TransferredTo" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.transferredTo"></a>
+
+```csharp
+public string TransferredTo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.type"></a>
+
+```csharp
+public string Type { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.internalValue"></a>
+
+```csharp
+public DataCloudflareWorkersScriptsResultExports InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports">DataCloudflareWorkersScriptsResultExports</a>
 
 ---
 
@@ -2932,6 +3689,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.compatibilityFlags">CompatibilityFlags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.createdOn">CreatedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.exports">Exports</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap">DataCloudflareWorkersScriptsResultExportsMap</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.handlers">Handlers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.hasAssets">HasAssets</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.hasModules">HasModules</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
@@ -3025,6 +3783,16 @@ public string Etag { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Exports`<sup>Required</sup> <a name="Exports" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.exports"></a>
+
+```csharp
+public DataCloudflareWorkersScriptsResultExportsMap Exports { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap">DataCloudflareWorkersScriptsResultExportsMap</a>
 
 ---
 

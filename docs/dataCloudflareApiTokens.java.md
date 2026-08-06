@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiTokens <a name="DataCloudflareApiTokens" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens cloudflare_api_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens cloudflare_api_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer"></a>
 
@@ -20,6 +20,7 @@ DataCloudflareApiTokens.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .direction(java.lang.String)
+//  .includeExpired(java.lang.Boolean|IResolvable)
 //  .maxItems(java.lang.Number)
     .build();
 ```
@@ -36,6 +37,7 @@ DataCloudflareApiTokens.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer.parameter.direction">direction</a></code> | <code>java.lang.String</code> | Direction to order results. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer.parameter.includeExpired">includeExpired</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, includes recently-expired tokens in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer.parameter.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -106,7 +108,17 @@ Must be unique amongst siblings in the same scope
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+
+---
+
+##### `includeExpired`<sup>Optional</sup> <a name="includeExpired" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer.parameter.includeExpired"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+When true, includes recently-expired tokens in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#include_expired DataCloudflareApiTokens#include_expired}
 
 ---
 
@@ -116,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
 
 ---
 
@@ -143,6 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetDirection">resetDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetIncludeExpired">resetIncludeExpired</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 
 ---
@@ -366,6 +379,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 public void resetDirection()
 ```
 
+##### `resetIncludeExpired` <a name="resetIncludeExpired" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetIncludeExpired"></a>
+
+```java
+public void resetIncludeExpired()
+```
+
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetMaxItems"></a>
 
 ```java
@@ -475,7 +494,7 @@ The construct id used in the generated config for the DataCloudflareApiTokens to
 
 The id of the existing DataCloudflareApiTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -505,8 +524,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.result">result</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultList">DataCloudflareApiTokensResultList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.includeExpiredInput">includeExpiredInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.maxItemsInput">maxItemsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.includeExpired">includeExpired</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | *No description.* |
 
 ---
@@ -653,6 +674,16 @@ public java.lang.String getDirectionInput();
 
 ---
 
+##### `includeExpiredInput`<sup>Optional</sup> <a name="includeExpiredInput" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.includeExpiredInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIncludeExpiredInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `maxItemsInput`<sup>Optional</sup> <a name="maxItemsInput" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.maxItemsInput"></a>
 
 ```java
@@ -670,6 +701,16 @@ public java.lang.String getDirection();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `includeExpired`<sup>Required</sup> <a name="includeExpired" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.includeExpired"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIncludeExpired();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -719,6 +760,7 @@ DataCloudflareApiTokensConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .direction(java.lang.String)
+//  .includeExpired(java.lang.Boolean|IResolvable)
 //  .maxItems(java.lang.Number)
     .build();
 ```
@@ -735,6 +777,7 @@ DataCloudflareApiTokensConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.direction">direction</a></code> | <code>java.lang.String</code> | Direction to order results. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.includeExpired">includeExpired</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, includes recently-expired tokens in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -819,7 +862,21 @@ public java.lang.String getDirection();
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+
+---
+
+##### `includeExpired`<sup>Optional</sup> <a name="includeExpired" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.includeExpired"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIncludeExpired();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+When true, includes recently-expired tokens in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#include_expired DataCloudflareApiTokens#include_expired}
 
 ---
 
@@ -833,7 +890,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
 
 ---
 

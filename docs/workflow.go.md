@@ -4,7 +4,7 @@
 
 ### Workflow <a name="Workflow" id="@cdktn/provider-cloudflare.workflow.Workflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow cloudflare_workflow}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow cloudflare_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.Workflow.Initializer"></a>
 
@@ -74,8 +74,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putDefaultRetention">PutDefaultRetention</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putLimits">PutLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putSchedules">PutSchedules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetDefaultRetention">ResetDefaultRetention</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetLimits">ResetLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetSchedules">ResetSchedules</a></code> | *No description.* |
 
@@ -390,6 +392,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutDefaultRetention` <a name="PutDefaultRetention" id="@cdktn/provider-cloudflare.workflow.Workflow.putDefaultRetention"></a>
+
+```go
+func PutDefaultRetention(value WorkflowDefaultRetention)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.workflow.Workflow.putDefaultRetention.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a>
+
+---
+
 ##### `PutLimits` <a name="PutLimits" id="@cdktn/provider-cloudflare.workflow.Workflow.putLimits"></a>
 
 ```go
@@ -413,6 +427,12 @@ func PutSchedules(value interface{})
 - *Type:* interface{}
 
 ---
+
+##### `ResetDefaultRetention` <a name="ResetDefaultRetention" id="@cdktn/provider-cloudflare.workflow.Workflow.resetDefaultRetention"></a>
+
+```go
+func ResetDefaultRetention()
+```
 
 ##### `ResetLimits` <a name="ResetLimits" id="@cdktn/provider-cloudflare.workflow.Workflow.resetLimits"></a>
 
@@ -529,7 +549,7 @@ The construct id used in the generated config for the Workflow to import.
 
 The id of the existing Workflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -560,6 +580,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.defaultRetention">DefaultRetention</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference">WorkflowDefaultRetentionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.instances">Instances</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference">WorkflowInstancesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.isDeleted">IsDeleted</a></code> | <code>*f64</code> | *No description.* |
@@ -572,6 +593,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.versionId">VersionId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.classNameInput">ClassNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.defaultRetentionInput">DefaultRetentionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.limitsInput">LimitsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.schedulesInput">SchedulesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.scriptNameInput">ScriptNameInput</a></code> | <code>*string</code> | *No description.* |
@@ -735,6 +757,16 @@ func CreatedOn() *string
 
 ---
 
+##### `DefaultRetention`<sup>Required</sup> <a name="DefaultRetention" id="@cdktn/provider-cloudflare.workflow.Workflow.property.defaultRetention"></a>
+
+```go
+func DefaultRetention() WorkflowDefaultRetentionOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference">WorkflowDefaultRetentionOutputReference</a>
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-cloudflare.workflow.Workflow.property.id"></a>
 
 ```go
@@ -852,6 +884,16 @@ func ClassNameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DefaultRetentionInput`<sup>Optional</sup> <a name="DefaultRetentionInput" id="@cdktn/provider-cloudflare.workflow.Workflow.property.defaultRetentionInput"></a>
+
+```go
+func DefaultRetentionInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -974,6 +1016,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow
 	ClassName: *string,
 	ScriptName: *string,
 	WorkflowName: *string,
+	DefaultRetention: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.workflow.WorkflowDefaultRetention,
 	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.workflow.WorkflowLimits,
 	Schedules: interface{},
 }
@@ -990,12 +1033,13 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#account_id Workflow#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">ClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#class_name Workflow#class_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#script_name Workflow#script_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">WorkflowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">Limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#limits Workflow#limits}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.schedules">Schedules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#schedules Workflow#schedules}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#account_id Workflow#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">ClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#class_name Workflow#class_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#script_name Workflow#script_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">WorkflowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.defaultRetention">DefaultRetention</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a></code> | Default retention applied to instances of this version when they do not set their own retention. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">Limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#limits Workflow#limits}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.schedules">Schedules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#schedules Workflow#schedules}. |
 
 ---
 
@@ -1077,7 +1121,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#account_id Workflow#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#account_id Workflow#account_id}.
 
 ---
 
@@ -1089,7 +1133,7 @@ ClassName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#class_name Workflow#class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#class_name Workflow#class_name}.
 
 ---
 
@@ -1101,7 +1145,7 @@ ScriptName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#script_name Workflow#script_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#script_name Workflow#script_name}.
 
 ---
 
@@ -1113,7 +1157,21 @@ WorkflowName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+
+---
+
+##### `DefaultRetention`<sup>Optional</sup> <a name="DefaultRetention" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.defaultRetention"></a>
+
+```go
+DefaultRetention WorkflowDefaultRetention
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a>
+
+Default retention applied to instances of this version when they do not set their own retention.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#default_retention Workflow#default_retention}
 
 ---
 
@@ -1125,7 +1183,7 @@ Limits WorkflowLimits
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#limits Workflow#limits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#limits Workflow#limits}.
 
 ---
 
@@ -1137,7 +1195,57 @@ Schedules interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#schedules Workflow#schedules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#schedules Workflow#schedules}.
+
+---
+
+### WorkflowDefaultRetention <a name="WorkflowDefaultRetention" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
+
+&workflow.WorkflowDefaultRetention {
+	ErrorRetention: *map[string]interface{},
+	SuccessRetention: *map[string]interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention.property.errorRetention">ErrorRetention</a></code> | <code>*map[string]interface{}</code> | Specifies the duration in milliseconds or as a string like '5 minutes'. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention.property.successRetention">SuccessRetention</a></code> | <code>*map[string]interface{}</code> | Specifies the duration in milliseconds or as a string like '5 minutes'. |
+
+---
+
+##### `ErrorRetention`<sup>Optional</sup> <a name="ErrorRetention" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention.property.errorRetention"></a>
+
+```go
+ErrorRetention *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+Specifies the duration in milliseconds or as a string like '5 minutes'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#error_retention Workflow#error_retention}
+
+---
+
+##### `SuccessRetention`<sup>Optional</sup> <a name="SuccessRetention" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention.property.successRetention"></a>
+
+```go
+SuccessRetention *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+Specifies the duration in milliseconds or as a string like '5 minutes'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#success_retention Workflow#success_retention}
 
 ---
 
@@ -1170,7 +1278,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">Steps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#steps Workflow#steps}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">Steps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#steps Workflow#steps}. |
 
 ---
 
@@ -1182,7 +1290,7 @@ Steps *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#steps Workflow#steps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#steps Workflow#steps}.
 
 ---
 
@@ -1202,7 +1310,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules.property.cron">Cron</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#cron Workflow#cron}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules.property.cron">Cron</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#cron Workflow#cron}. |
 
 ---
 
@@ -1214,11 +1322,318 @@ Cron *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workflow#cron Workflow#cron}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#cron Workflow#cron}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### WorkflowDefaultRetentionOutputReference <a name="WorkflowDefaultRetentionOutputReference" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
+
+workflow.NewWorkflowDefaultRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowDefaultRetentionOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.resetErrorRetention">ResetErrorRetention</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.resetSuccessRetention">ResetSuccessRetention</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetErrorRetention` <a name="ResetErrorRetention" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.resetErrorRetention"></a>
+
+```go
+func ResetErrorRetention()
+```
+
+##### `ResetSuccessRetention` <a name="ResetSuccessRetention" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.resetSuccessRetention"></a>
+
+```go
+func ResetSuccessRetention()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.errorRetentionInput">ErrorRetentionInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.successRetentionInput">SuccessRetentionInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.errorRetention">ErrorRetention</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.successRetention">SuccessRetention</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ErrorRetentionInput`<sup>Optional</sup> <a name="ErrorRetentionInput" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.errorRetentionInput"></a>
+
+```go
+func ErrorRetentionInput() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `SuccessRetentionInput`<sup>Optional</sup> <a name="SuccessRetentionInput" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.successRetentionInput"></a>
+
+```go
+func SuccessRetentionInput() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `ErrorRetention`<sup>Required</sup> <a name="ErrorRetention" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.errorRetention"></a>
+
+```go
+func ErrorRetention() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `SuccessRetention`<sup>Required</sup> <a name="SuccessRetention" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.successRetention"></a>
+
+```go
+func SuccessRetention() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 
 ### WorkflowInstancesOutputReference <a name="WorkflowInstancesOutputReference" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference"></a>
 

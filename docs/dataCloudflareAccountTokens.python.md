@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountTokens <a name="DataCloudflareAccountTokens" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer"></a>
 
@@ -23,6 +23,7 @@ dataCloudflareAccountTokens.DataCloudflareAccountTokens(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str = None,
   direction: str = None,
+  include_expired: bool | IResolvable = None,
   max_items: typing.Union[int, float] = None
 )
 ```
@@ -40,6 +41,7 @@ dataCloudflareAccountTokens.DataCloudflareAccountTokens(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.direction">direction</a></code> | <code>str</code> | Direction to order results. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.includeExpired">include_expired</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, includes recently-expired tokens in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -120,7 +122,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+
+---
+
+##### `include_expired`<sup>Optional</sup> <a name="include_expired" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.includeExpired"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+When true, includes recently-expired tokens in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
 
 ---
 
@@ -130,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 
@@ -158,6 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetDirection">reset_direction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetIncludeExpired">reset_include_expired</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetMaxItems">reset_max_items</a></code> | *No description.* |
 
 ---
@@ -414,6 +427,12 @@ def reset_account_id() -> None
 def reset_direction() -> None
 ```
 
+##### `reset_include_expired` <a name="reset_include_expired" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetIncludeExpired"></a>
+
+```python
+def reset_include_expired() -> None
+```
+
 ##### `reset_max_items` <a name="reset_max_items" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetMaxItems"></a>
 
 ```python
@@ -534,7 +553,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,9 +584,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.result">result</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultList">DataCloudflareAccountTokensResultList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.includeExpiredInput">include_expired_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.maxItemsInput">max_items_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.direction">direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.includeExpired">include_expired</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
@@ -724,6 +745,16 @@ direction_input: str
 
 ---
 
+##### `include_expired_input`<sup>Optional</sup> <a name="include_expired_input" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.includeExpiredInput"></a>
+
+```python
+include_expired_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `max_items_input`<sup>Optional</sup> <a name="max_items_input" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.maxItemsInput"></a>
 
 ```python
@@ -751,6 +782,16 @@ direction: str
 ```
 
 - *Type:* str
+
+---
+
+##### `include_expired`<sup>Required</sup> <a name="include_expired" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.property.includeExpired"></a>
+
+```python
+include_expired: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -801,6 +842,7 @@ dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str = None,
   direction: str = None,
+  include_expired: bool | IResolvable = None,
   max_items: typing.Union[int, float] = None
 )
 ```
@@ -818,6 +860,7 @@ dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.direction">direction</a></code> | <code>str</code> | Direction to order results. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.includeExpired">include_expired</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, includes recently-expired tokens in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -902,7 +945,7 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -916,7 +959,21 @@ direction: str
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+
+---
+
+##### `include_expired`<sup>Optional</sup> <a name="include_expired" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.includeExpired"></a>
+
+```python
+include_expired: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+When true, includes recently-expired tokens in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
 
 ---
 
@@ -930,7 +987,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 

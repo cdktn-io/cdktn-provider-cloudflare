@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_gateway_policies
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustGatewayPoliciesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_gateway_policies#account_id DataCloudflareZeroTrustGatewayPolicies#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_policies#account_id DataCloudflareZeroTrustGatewayPolicies#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_gateway_policies#max_items DataCloudflareZeroTrustGatewayPolicies#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_policies#max_items DataCloudflareZeroTrustGatewayPolicies#max_items}
   */
   readonly maxItems?: number;
 }
@@ -1244,6 +1244,11 @@ export class DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputRefer
     return this._checkSession;
   }
 
+  // delete_headers - computed: true, optional: false, required: false
+  public get deleteHeaders() {
+    return this.getListAttribute('delete_headers');
+  }
+
   // dns_resolvers - computed: true, optional: false, required: false
   private _dnsResolvers = new DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsDnsResolversOutputReference(this, "dns_resolvers");
   public get dnsResolvers() {
@@ -1331,6 +1336,12 @@ export class DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputRefer
   // resolve_dns_through_cloudflare - computed: true, optional: false, required: false
   public get resolveDnsThroughCloudflare() {
     return this.getBooleanAttribute('resolve_dns_through_cloudflare');
+  }
+
+  // set_headers - computed: true, optional: false, required: false
+  private _setHeaders = new cdktn.StringListMap(this, "set_headers");
+  public get setHeaders() {
+    return this._setHeaders;
   }
 
   // untrusted_cert - computed: true, optional: false, required: false
@@ -1608,7 +1619,7 @@ export class DataCloudflareZeroTrustGatewayPoliciesResultList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies}
 */
 export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataSource {
 
@@ -1624,7 +1635,7 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
   * Generates CDKTN code for importing a DataCloudflareZeroTrustGatewayPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustGatewayPolicies to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_gateway_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustGatewayPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1636,7 +1647,7 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1647,7 +1658,7 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
       terraformResourceType: 'cloudflare_zero_trust_gateway_policies',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

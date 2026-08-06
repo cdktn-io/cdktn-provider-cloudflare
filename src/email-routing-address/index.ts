@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_address
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,26 +15,26 @@ export interface EmailRoutingAddressConfig extends cdktn.TerraformMetaArguments 
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
   */
   readonly accountId: string;
   /**
   * The contact email address of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
   */
   readonly email: string;
   /**
   * Destination address status. Non-admin callers may only set verified addresses back to unverified; setting to verified requires admin privileges.
   * Available values: "unverified", "verified".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#status EmailRoutingAddress#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_address#status EmailRoutingAddress#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address cloudflare_email_routing_address}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_address cloudflare_email_routing_address}
 */
 export class EmailRoutingAddress extends cdktn.TerraformResource {
 
@@ -50,7 +50,7 @@ export class EmailRoutingAddress extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EmailRoutingAddress resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailRoutingAddress to import
-  * @param importFromId The id of the existing EmailRoutingAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailRoutingAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailRoutingAddress to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -62,7 +62,7 @@ export class EmailRoutingAddress extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class EmailRoutingAddress extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_address',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

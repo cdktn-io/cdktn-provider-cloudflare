@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkersScripts <a name="DataCloudflareWorkersScripts" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter scripts by tags. Format: comma-separated list of tag:allowed pairs where allowed is 'yes' or 'no'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#tags DataCloudflareWorkersScripts#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#tags DataCloudflareWorkersScripts#tags}
 
 ---
 
@@ -534,7 +534,7 @@ The construct id used in the generated config for the DataCloudflareWorkersScrip
 
 The id of the existing DataCloudflareWorkersScripts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,7 +902,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
 
 ---
 
@@ -916,7 +916,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
 
 ---
 
@@ -930,7 +930,7 @@ tags: str
 
 Filter scripts by tags. Format: comma-separated list of tag:allowed pairs where allowed is 'yes' or 'no'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/workers_scripts#tags DataCloudflareWorkersScripts#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workers_scripts#tags DataCloudflareWorkersScripts#tags}
 
 ---
 
@@ -953,6 +953,28 @@ dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResult()
 from cdktn_provider_cloudflare import data_cloudflare_workers_scripts
 
 dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultCacheOptions()
+```
+
+
+### DataCloudflareWorkersScriptsResultExports <a name="DataCloudflareWorkersScriptsResultExports" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_workers_scripts
+
+dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports()
+```
+
+
+### DataCloudflareWorkersScriptsResultExportsCache <a name="DataCloudflareWorkersScriptsResultExportsCache" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_workers_scripts
+
+dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache()
 ```
 
 
@@ -1338,6 +1360,797 @@ internal_value: DataCloudflareWorkersScriptsResultCacheOptions
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultCacheOptions">DataCloudflareWorkersScriptsResultCacheOptions</a>
+
+---
+
+
+### DataCloudflareWorkersScriptsResultExportsCacheOutputReference <a name="DataCloudflareWorkersScriptsResultExportsCacheOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_workers_scripts
+
+dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache">DataCloudflareWorkersScriptsResultExportsCache</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.enabled"></a>
+
+```python
+enabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataCloudflareWorkersScriptsResultExportsCache
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCache">DataCloudflareWorkersScriptsResultExportsCache</a>
+
+---
+
+
+### DataCloudflareWorkersScriptsResultExportsMap <a name="DataCloudflareWorkersScriptsResultExportsMap" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_workers_scripts
+
+dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.get">get</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.get"></a>
+
+```python
+def get(
+  key: str
+) -> DataCloudflareWorkersScriptsResultExportsOutputReference
+```
+
+###### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.get.parameter.key"></a>
+
+- *Type:* str
+
+the key of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataCloudflareWorkersScriptsResultExportsOutputReference <a name="DataCloudflareWorkersScriptsResultExportsOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_workers_scripts
+
+dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_key: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.complexObjectKey">complex_object_key</a></code> | <code>str</code> | the key of this item in the map. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_key`<sup>Required</sup> <a name="complex_object_key" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.Initializer.parameter.complexObjectKey"></a>
+
+- *Type:* str
+
+the key of this item in the map.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.cache">cache</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference">DataCloudflareWorkersScriptsResultExportsCacheOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.renamedTo">renamed_to</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.storage">storage</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.transferFrom">transfer_from</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.transferredTo">transferred_to</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports">DataCloudflareWorkersScriptsResultExports</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cache`<sup>Required</sup> <a name="cache" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.cache"></a>
+
+```python
+cache: DataCloudflareWorkersScriptsResultExportsCacheOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsCacheOutputReference">DataCloudflareWorkersScriptsResultExportsCacheOutputReference</a>
+
+---
+
+##### `renamed_to`<sup>Required</sup> <a name="renamed_to" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.renamedTo"></a>
+
+```python
+renamed_to: str
+```
+
+- *Type:* str
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.state"></a>
+
+```python
+state: str
+```
+
+- *Type:* str
+
+---
+
+##### `storage`<sup>Required</sup> <a name="storage" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.storage"></a>
+
+```python
+storage: str
+```
+
+- *Type:* str
+
+---
+
+##### `transfer_from`<sup>Required</sup> <a name="transfer_from" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.transferFrom"></a>
+
+```python
+transfer_from: str
+```
+
+- *Type:* str
+
+---
+
+##### `transferred_to`<sup>Required</sup> <a name="transferred_to" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.transferredTo"></a>
+
+```python
+transferred_to: str
+```
+
+- *Type:* str
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataCloudflareWorkersScriptsResultExports
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExports">DataCloudflareWorkersScriptsResultExports</a>
 
 ---
 
@@ -3212,6 +4025,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.etag">etag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.exports">exports</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap">DataCloudflareWorkersScriptsResultExportsMap</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.handlers">handlers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.hasAssets">has_assets</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.hasModules">has_modules</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -3305,6 +4119,16 @@ etag: str
 ```
 
 - *Type:* str
+
+---
+
+##### `exports`<sup>Required</sup> <a name="exports" id="@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.property.exports"></a>
+
+```python
+exports: DataCloudflareWorkersScriptsResultExportsMap
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultExportsMap">DataCloudflareWorkersScriptsResultExportsMap</a>
 
 ---
 

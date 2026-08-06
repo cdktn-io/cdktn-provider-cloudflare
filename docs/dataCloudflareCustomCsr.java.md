@@ -4,7 +4,7 @@
 
 ### DataCloudflareCustomCsr <a name="DataCloudflareCustomCsr" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr cloudflare_custom_csr}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr cloudflare_custom_csr}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer"></a>
 
@@ -19,8 +19,9 @@ DataCloudflareCustomCsr.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .customCsrId(java.lang.String)
 //  .accountId(java.lang.String)
+//  .customCsrId(java.lang.String)
+//  .filter(DataCloudflareCustomCsrFilter)
 //  .zoneId(java.lang.String)
     .build();
 ```
@@ -36,8 +37,9 @@ DataCloudflareCustomCsr.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.customCsrId">customCsrId</a></code> | <code>java.lang.String</code> | Custom CSR identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.customCsrId">customCsrId</a></code> | <code>java.lang.String</code> | Custom CSR identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#filter DataCloudflareCustomCsr#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
 ---
@@ -102,23 +104,31 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `customCsrId`<sup>Required</sup> <a name="customCsrId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.customCsrId"></a>
-
-- *Type:* java.lang.String
-
-Custom CSR identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#custom_csr_id DataCloudflareCustomCsr#custom_csr_id}
-
----
-
 ##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.accountId"></a>
 
 - *Type:* java.lang.String
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#account_id DataCloudflareCustomCsr#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#account_id DataCloudflareCustomCsr#account_id}
+
+---
+
+##### `customCsrId`<sup>Optional</sup> <a name="customCsrId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.customCsrId"></a>
+
+- *Type:* java.lang.String
+
+Custom CSR identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#custom_csr_id DataCloudflareCustomCsr#custom_csr_id}
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.Initializer.parameter.filter"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#filter DataCloudflareCustomCsr#filter}.
 
 ---
 
@@ -128,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#zone_id DataCloudflareCustomCsr#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#zone_id DataCloudflareCustomCsr#zone_id}
 
 ---
 
@@ -154,7 +164,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.putFilter">putFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.resetCustomCsrId">resetCustomCsrId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
@@ -372,10 +385,34 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `putFilter` <a name="putFilter" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.putFilter"></a>
+
+```java
+public void putFilter(DataCloudflareCustomCsrFilter value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.putFilter.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a>
+
+---
+
 ##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.resetAccountId"></a>
 
 ```java
 public void resetAccountId()
+```
+
+##### `resetCustomCsrId` <a name="resetCustomCsrId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.resetCustomCsrId"></a>
+
+```java
+public void resetCustomCsrId()
+```
+
+##### `resetFilter` <a name="resetFilter" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.resetFilter"></a>
+
+```java
+public void resetFilter()
 ```
 
 ##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.resetZoneId"></a>
@@ -487,7 +524,7 @@ The construct id used in the generated config for the DataCloudflareCustomCsr to
 
 The id of the existing DataCloudflareCustomCsr that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -521,6 +558,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.csr">csr</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference">DataCloudflareCustomCsrFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.keyType">keyType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.locality">locality</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -531,6 +569,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.customCsrIdInput">customCsrIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.filterInput">filterInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.customCsrId">customCsrId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -720,6 +759,16 @@ public java.lang.String getDescription();
 
 ---
 
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.filter"></a>
+
+```java
+public DataCloudflareCustomCsrFilterOutputReference getFilter();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference">DataCloudflareCustomCsrFilterOutputReference</a>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.id"></a>
 
 ```java
@@ -820,6 +869,16 @@ public java.lang.String getCustomCsrIdInput();
 
 ---
 
+##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.filterInput"></a>
+
+```java
+public IResolvable|DataCloudflareCustomCsrFilter getFilterInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a>
+
+---
+
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsr.property.zoneIdInput"></a>
 
 ```java
@@ -895,8 +954,9 @@ DataCloudflareCustomCsrConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .customCsrId(java.lang.String)
 //  .accountId(java.lang.String)
+//  .customCsrId(java.lang.String)
+//  .filter(DataCloudflareCustomCsrFilter)
 //  .zoneId(java.lang.String)
     .build();
 ```
@@ -912,8 +972,9 @@ DataCloudflareCustomCsrConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.customCsrId">customCsrId</a></code> | <code>java.lang.String</code> | Custom CSR identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.customCsrId">customCsrId</a></code> | <code>java.lang.String</code> | Custom CSR identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#filter DataCloudflareCustomCsr#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
 ---
@@ -988,20 +1049,6 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `customCsrId`<sup>Required</sup> <a name="customCsrId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.customCsrId"></a>
-
-```java
-public java.lang.String getCustomCsrId();
-```
-
-- *Type:* java.lang.String
-
-Custom CSR identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#custom_csr_id DataCloudflareCustomCsr#custom_csr_id}
-
----
-
 ##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.accountId"></a>
 
 ```java
@@ -1012,7 +1059,33 @@ public java.lang.String getAccountId();
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#account_id DataCloudflareCustomCsr#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#account_id DataCloudflareCustomCsr#account_id}
+
+---
+
+##### `customCsrId`<sup>Optional</sup> <a name="customCsrId" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.customCsrId"></a>
+
+```java
+public java.lang.String getCustomCsrId();
+```
+
+- *Type:* java.lang.String
+
+Custom CSR identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#custom_csr_id DataCloudflareCustomCsr#custom_csr_id}
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrConfig.property.filter"></a>
+
+```java
+public DataCloudflareCustomCsrFilter getFilter();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#filter DataCloudflareCustomCsr#filter}.
 
 ---
 
@@ -1026,7 +1099,269 @@ public java.lang.String getZoneId();
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#zone_id DataCloudflareCustomCsr#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#zone_id DataCloudflareCustomCsr#zone_id}
+
+---
+
+### DataCloudflareCustomCsrFilter <a name="DataCloudflareCustomCsrFilter" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.data_cloudflare_custom_csr.DataCloudflareCustomCsrFilter;
+
+DataCloudflareCustomCsrFilter.builder()
+    .build();
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataCloudflareCustomCsrFilterOutputReference <a name="DataCloudflareCustomCsrFilterOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.data_cloudflare_custom_csr.DataCloudflareCustomCsrFilterOutputReference;
+
+new DataCloudflareCustomCsrFilterOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilterOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|DataCloudflareCustomCsrFilter getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.dataCloudflareCustomCsr.DataCloudflareCustomCsrFilter">DataCloudflareCustomCsrFilter</a>
 
 ---
 

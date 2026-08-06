@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiTokens <a name="DataCloudflareApiTokens" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens cloudflare_api_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens cloudflare_api_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer"></a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetDirection">ResetDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetIncludeExpired">ResetIncludeExpired</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetMaxItems">ResetMaxItems</a></code> | *No description.* |
 
 ---
@@ -292,6 +293,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetDirection()
 ```
 
+##### `ResetIncludeExpired` <a name="ResetIncludeExpired" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetIncludeExpired"></a>
+
+```csharp
+private void ResetIncludeExpired()
+```
+
 ##### `ResetMaxItems` <a name="ResetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.resetMaxItems"></a>
 
 ```csharp
@@ -401,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareApiTokens to
 
 The id of the existing DataCloudflareApiTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -431,8 +438,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.result">Result</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultList">DataCloudflareApiTokensResultList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.directionInput">DirectionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.includeExpiredInput">IncludeExpiredInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.maxItemsInput">MaxItemsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.direction">Direction</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.includeExpired">IncludeExpired</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.maxItems">MaxItems</a></code> | <code>double</code> | *No description.* |
 
 ---
@@ -579,6 +588,16 @@ public string DirectionInput { get; }
 
 ---
 
+##### `IncludeExpiredInput`<sup>Optional</sup> <a name="IncludeExpiredInput" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.includeExpiredInput"></a>
+
+```csharp
+public bool|IResolvable IncludeExpiredInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `MaxItemsInput`<sup>Optional</sup> <a name="MaxItemsInput" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.maxItemsInput"></a>
 
 ```csharp
@@ -596,6 +615,16 @@ public string Direction { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `IncludeExpired`<sup>Required</sup> <a name="IncludeExpired" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.property.includeExpired"></a>
+
+```csharp
+public bool|IResolvable IncludeExpired { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -645,6 +674,7 @@ new DataCloudflareApiTokensConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Direction = null,
+    bool|IResolvable IncludeExpired = null,
     double MaxItems = null
 };
 ```
@@ -661,6 +691,7 @@ new DataCloudflareApiTokensConfig {
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.direction">Direction</a></code> | <code>string</code> | Direction to order results. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.includeExpired">IncludeExpired</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When true, includes recently-expired tokens in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.maxItems">MaxItems</a></code> | <code>double</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -745,7 +776,21 @@ public string Direction { get; set; }
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+
+---
+
+##### `IncludeExpired`<sup>Optional</sup> <a name="IncludeExpired" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.includeExpired"></a>
+
+```csharp
+public bool|IResolvable IncludeExpired { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+When true, includes recently-expired tokens in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#include_expired DataCloudflareApiTokens#include_expired}
 
 ---
 
@@ -759,7 +804,7 @@ public double MaxItems { get; set; }
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
 
 ---
 

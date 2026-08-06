@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiToken <a name="DataCloudflareApiToken" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token cloudflare_api_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token cloudflare_api_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer"></a>
 
@@ -37,7 +37,7 @@ dataCloudflareApiToken.DataCloudflareApiToken(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer.parameter.tokenId">token_id</a></code> | <code>str</code> | Token identifier tag. |
 
 ---
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#token_id DataCloudflareApiToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#token_id DataCloudflareApiToken#token_id}
 
 ---
 
@@ -392,7 +392,8 @@ def interpolation_for_attribute(
 
 ```python
 def put_filter(
-  direction: str = None
+  direction: str = None,
+  include_expired: bool | IResolvable = None
 ) -> None
 ```
 
@@ -402,7 +403,17 @@ def put_filter(
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#direction DataCloudflareApiToken#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#direction DataCloudflareApiToken#direction}
+
+---
+
+###### `include_expired`<sup>Optional</sup> <a name="include_expired" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.putFilter.parameter.includeExpired"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+When true, includes recently-expired tokens in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#include_expired DataCloudflareApiToken#include_expired}
 
 ---
 
@@ -532,7 +543,7 @@ The construct id used in the generated config for the DataCloudflareApiToken to 
 
 The id of the existing DataCloudflareApiToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +923,7 @@ dataCloudflareApiToken.DataCloudflareApiTokenConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.tokenId">token_id</a></code> | <code>str</code> | Token identifier tag. |
 
 ---
@@ -995,7 +1006,7 @@ filter: DataCloudflareApiTokenFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}.
 
 ---
 
@@ -1009,7 +1020,7 @@ token_id: str
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#token_id DataCloudflareApiToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#token_id DataCloudflareApiToken#token_id}
 
 ---
 
@@ -1021,7 +1032,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktn_provider_cloudflare import data_cloudflare_api_token
 
 dataCloudflareApiToken.DataCloudflareApiTokenFilter(
-  direction: str = None
+  direction: str = None,
+  include_expired: bool | IResolvable = None
 )
 ```
 
@@ -1030,6 +1042,7 @@ dataCloudflareApiToken.DataCloudflareApiTokenFilter(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter.property.direction">direction</a></code> | <code>str</code> | Direction to order results. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter.property.includeExpired">include_expired</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, includes recently-expired tokens in the response. |
 
 ---
 
@@ -1043,7 +1056,21 @@ direction: str
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_token#direction DataCloudflareApiToken#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#direction DataCloudflareApiToken#direction}
+
+---
+
+##### `include_expired`<sup>Optional</sup> <a name="include_expired" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter.property.includeExpired"></a>
+
+```python
+include_expired: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+When true, includes recently-expired tokens in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_token#include_expired DataCloudflareApiToken#include_expired}
 
 ---
 
@@ -1717,6 +1744,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.resetDirection">reset_direction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.resetIncludeExpired">reset_include_expired</a></code> | *No description.* |
 
 ---
 
@@ -1898,6 +1926,12 @@ Returns a reversible string representation.
 def reset_direction() -> None
 ```
 
+##### `reset_include_expired` <a name="reset_include_expired" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.resetIncludeExpired"></a>
+
+```python
+def reset_include_expired() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1906,7 +1940,9 @@ def reset_direction() -> None
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.includeExpiredInput">include_expired_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.includeExpired">include_expired</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a></code> | *No description.* |
 
 ---
@@ -1945,6 +1981,16 @@ direction_input: str
 
 ---
 
+##### `include_expired_input`<sup>Optional</sup> <a name="include_expired_input" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.includeExpiredInput"></a>
+
+```python
+include_expired_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.direction"></a>
 
 ```python
@@ -1952,6 +1998,16 @@ direction: str
 ```
 
 - *Type:* str
+
+---
+
+##### `include_expired`<sup>Required</sup> <a name="include_expired" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.property.includeExpired"></a>
+
+```python
+include_expired: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,96 @@ export interface ZeroTrustDeviceSubnetConfig extends cdktn.TerraformMetaArgument
   /**
   * Cloudflare account ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet#account_id ZeroTrustDeviceSubnet#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet#account_id ZeroTrustDeviceSubnet#account_id}
   */
   readonly accountId: string;
   /**
   * An optional description of the subnet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet#comment ZeroTrustDeviceSubnet#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet#comment ZeroTrustDeviceSubnet#comment}
   */
   readonly comment?: string;
   /**
   * If `true`, this is the default subnet for the account. There can only be one default subnet per account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet#is_default_network ZeroTrustDeviceSubnet#is_default_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet#is_default_network ZeroTrustDeviceSubnet#is_default_network}
   */
   readonly isDefaultNetwork?: boolean | cdktn.IResolvable;
   /**
   * A user-friendly name for the subnet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet#name ZeroTrustDeviceSubnet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet#name ZeroTrustDeviceSubnet#name}
   */
   readonly name: string;
   /**
   * The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet#network ZeroTrustDeviceSubnet#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet#network ZeroTrustDeviceSubnet#network}
   */
   readonly network: string;
 }
+export interface ZeroTrustDeviceSubnetCapacity {
+}
+
+export function zeroTrustDeviceSubnetCapacityToTerraform(struct?: ZeroTrustDeviceSubnetCapacity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustDeviceSubnetCapacityToHclTerraform(struct?: ZeroTrustDeviceSubnetCapacity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustDeviceSubnetCapacityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustDeviceSubnetCapacity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustDeviceSubnetCapacity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // total - computed: true, optional: false, required: false
+  public get total() {
+    return this.getNumberAttribute('total');
+  }
+
+  // used - computed: true, optional: false, required: false
+  public get used() {
+    return this.getNumberAttribute('used');
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet}
 */
 export class ZeroTrustDeviceSubnet extends cdktn.TerraformResource {
 
@@ -61,7 +120,7 @@ export class ZeroTrustDeviceSubnet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ZeroTrustDeviceSubnet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDeviceSubnet to import
-  * @param importFromId The id of the existing ZeroTrustDeviceSubnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDeviceSubnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDeviceSubnet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +132,7 @@ export class ZeroTrustDeviceSubnet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +143,7 @@ export class ZeroTrustDeviceSubnet extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_device_subnet',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -117,6 +176,12 @@ export class ZeroTrustDeviceSubnet extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
+  }
+
+  // capacity - computed: true, optional: false, required: false
+  private _capacity = new ZeroTrustDeviceSubnetCapacityOutputReference(this, "capacity");
+  public get capacity() {
+    return this._capacity;
   }
 
   // comment - computed: true, optional: true, required: false

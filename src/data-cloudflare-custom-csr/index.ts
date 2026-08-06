@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,88 @@ export interface DataCloudflareCustomCsrConfig extends cdktn.TerraformMetaArgume
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#account_id DataCloudflareCustomCsr#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#account_id DataCloudflareCustomCsr#account_id}
   */
   readonly accountId?: string;
   /**
   * Custom CSR identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#custom_csr_id DataCloudflareCustomCsr#custom_csr_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#custom_csr_id DataCloudflareCustomCsr#custom_csr_id}
   */
-  readonly customCsrId: string;
+  readonly customCsrId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#filter DataCloudflareCustomCsr#filter}
+  */
+  readonly filter?: DataCloudflareCustomCsrFilter;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#zone_id DataCloudflareCustomCsr#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#zone_id DataCloudflareCustomCsr#zone_id}
   */
   readonly zoneId?: string;
 }
+export interface DataCloudflareCustomCsrFilter {
+}
+
+export function dataCloudflareCustomCsrFilterToTerraform(struct?: DataCloudflareCustomCsrFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareCustomCsrFilterToHclTerraform(struct?: DataCloudflareCustomCsrFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareCustomCsrFilterOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareCustomCsrFilter | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareCustomCsrFilter | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr cloudflare_custom_csr}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr cloudflare_custom_csr}
 */
 export class DataCloudflareCustomCsr extends cdktn.TerraformDataSource {
 
@@ -49,7 +112,7 @@ export class DataCloudflareCustomCsr extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareCustomCsr resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCustomCsr to import
-  * @param importFromId The id of the existing DataCloudflareCustomCsr that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCustomCsr that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCustomCsr to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,18 +124,18 @@ export class DataCloudflareCustomCsr extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr cloudflare_custom_csr} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr cloudflare_custom_csr} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareCustomCsrConfig
+  * @param options DataCloudflareCustomCsrConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareCustomCsrConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareCustomCsrConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_custom_csr',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -85,6 +148,7 @@ export class DataCloudflareCustomCsr extends cdktn.TerraformDataSource {
     });
     this._accountId = config.accountId;
     this._customCsrId = config.customCsrId;
+    this._filter.internalValue = config.filter;
     this._zoneId = config.zoneId;
   }
 
@@ -133,13 +197,16 @@ export class DataCloudflareCustomCsr extends cdktn.TerraformDataSource {
     return this.getStringAttribute('csr');
   }
 
-  // custom_csr_id - computed: false, optional: false, required: true
+  // custom_csr_id - computed: false, optional: true, required: false
   private _customCsrId?: string; 
   public get customCsrId() {
     return this.getStringAttribute('custom_csr_id');
   }
   public set customCsrId(value: string) {
     this._customCsrId = value;
+  }
+  public resetCustomCsrId() {
+    this._customCsrId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customCsrIdInput() {
@@ -149,6 +216,22 @@ export class DataCloudflareCustomCsr extends cdktn.TerraformDataSource {
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter = new DataCloudflareCustomCsrFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: DataCloudflareCustomCsrFilter) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
   }
 
   // id - computed: true, optional: false, required: false
@@ -215,6 +298,7 @@ export class DataCloudflareCustomCsr extends cdktn.TerraformDataSource {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
       custom_csr_id: cdktn.stringToTerraform(this._customCsrId),
+      filter: dataCloudflareCustomCsrFilterToTerraform(this._filter.internalValue),
       zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
@@ -232,6 +316,12 @@ export class DataCloudflareCustomCsr extends cdktn.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      filter: {
+        value: dataCloudflareCustomCsrFilterToHclTerraform(this._filter.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataCloudflareCustomCsrFilter",
       },
       zone_id: {
         value: cdktn.stringToHclTerraform(this._zoneId),
