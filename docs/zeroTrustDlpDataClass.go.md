@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClass.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 zerotrustdlpdataclass.NewZeroTrustDlpDataClass(scope Construct, id *string, config ZeroTrustDlpDataClassConfig) ZeroTrustDlpDataClass
 ```
@@ -420,7 +420,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClass.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 zerotrustdlpdataclass.ZeroTrustDlpDataClass_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClass.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 zerotrustdlpdataclass.ZeroTrustDlpDataClass_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ zerotrustdlpdataclass.ZeroTrustDlpDataClass_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClass.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 zerotrustdlpdataclass.ZeroTrustDlpDataClass_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ zerotrustdlpdataclass.ZeroTrustDlpDataClass_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClass.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 zerotrustdlpdataclass.ZeroTrustDlpDataClass_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClassConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 &zerotrustdlpdataclass.ZeroTrustDlpDataClassConfig {
 	Connection: interface{},
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClassSensitivityLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 &zerotrustdlpdataclass.ZeroTrustDlpDataClassSensitivityLevels {
 	GroupId: *string,
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClassSensitivityLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 zerotrustdlpdataclass.NewZeroTrustDlpDataClassSensitivityLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDlpDataClassSensitivityLevelsList
 ```
@@ -1268,7 +1268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpDataClass.ZeroTrustDlpDataClassSensitivityLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlpdataclass"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdlpdataclass"
 
 zerotrustdlpdataclass.NewZeroTrustDlpDataClassSensitivityLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDlpDataClassSensitivityLevelsOutputReference
 ```

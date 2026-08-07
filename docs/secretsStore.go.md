@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
 
 secretsstore.NewSecretsStore(scope Construct, id *string, config SecretsStoreConfig) SecretsStore
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
 
 secretsstore.SecretsStore_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
 
 secretsstore.SecretsStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ secretsstore.SecretsStore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
 
 secretsstore.SecretsStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ secretsstore.SecretsStore_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
 
 secretsstore.SecretsStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
 
 &secretsstore.SecretsStoreConfig {
 	Connection: interface{},

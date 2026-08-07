@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGateway(scope Construct, id *string, config AiGatewayConfig) AiGateway
 ```
@@ -584,7 +584,7 @@ func ResetZdr()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.aiGateway.AiGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.AiGateway_IsConstruct(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.aiGateway.AiGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.AiGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ aigateway.AiGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.aiGateway.AiGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.AiGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -644,7 +644,7 @@ aigateway.AiGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.aiGateway.AiGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.AiGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1434,7 +1434,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayConfig {
 	Connection: interface{},
@@ -1452,8 +1452,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigatewa
 	RateLimitingInterval: *f64,
 	RateLimitingLimit: *f64,
 	Authentication: interface{},
-	Dlp: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.aiGateway.AiGatewayDlp,
-	Guardrails: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.aiGateway.AiGatewayGuardrails,
+	Dlp: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGateway.AiGatewayDlp,
+	Guardrails: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGateway.AiGatewayGuardrails,
 	LogManagement: *f64,
 	LogManagementStrategy: *string,
 	Logpush: interface{},
@@ -1463,9 +1463,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigatewa
 	RetryBackoff: *string,
 	RetryDelay: *f64,
 	RetryMaxAttempts: *f64,
-	SpendLimits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.aiGateway.AiGatewaySpendLimits,
+	SpendLimits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGateway.AiGatewaySpendLimits,
 	StoreId: *string,
-	Stripe: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.aiGateway.AiGatewayStripe,
+	Stripe: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGateway.AiGatewayStripe,
 	WorkersAiBillingMode: *string,
 	Zdr: interface{},
 }
@@ -1889,7 +1889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayDlp {
 	Enabled: interface{},
@@ -1965,7 +1965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayDlpPolicies {
 	Action: *string,
@@ -2058,11 +2058,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayGuardrails {
-	Prompt: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.aiGateway.AiGatewayGuardrailsPrompt,
-	Response: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.aiGateway.AiGatewayGuardrailsResponse,
+	Prompt: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGateway.AiGatewayGuardrailsPrompt,
+	Response: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGateway.AiGatewayGuardrailsResponse,
 }
 ```
 
@@ -2104,7 +2104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayGuardrailsPrompt {
 	P1: *string,
@@ -2346,7 +2346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayGuardrailsResponse {
 	P1: *string,
@@ -2588,7 +2588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayOtel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayOtel {
 	Headers: *map[string]*string,
@@ -2664,7 +2664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewaySpendLimits {
 	Enabled: interface{},
@@ -2710,17 +2710,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewaySpendLimitsRules {
 	Limit: *f64,
 	LimitType: *string,
 	Window: *f64,
-	AiGatewayProvider: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider,
+	AiGatewayProvider: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider,
 	Enabled: interface{},
 	Id: *string,
 	Metadata: interface{},
-	Model: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.aiGateway.AiGatewaySpendLimitsRulesModel,
+	Model: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGateway.AiGatewaySpendLimitsRulesModel,
 	Technique: *string,
 }
 ```
@@ -2861,7 +2861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewaySpendLimitsRulesAiGatewayProvider {
 	Mode: *string,
@@ -2909,7 +2909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewaySpendLimitsRulesMetadata {
 	Mode: *string,
@@ -2957,7 +2957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewaySpendLimitsRulesModel {
 	Mode: *string,
@@ -3005,7 +3005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayStripe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayStripe {
 	Authorization: *string,
@@ -3051,7 +3051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayStripeUsageEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 &aigateway.AiGatewayStripeUsageEvents {
 	Payload: *string,
@@ -3085,7 +3085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayDlpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDlpOutputReference
 ```
@@ -3456,7 +3456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayDlpPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayDlpPoliciesList
 ```
@@ -3616,7 +3616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayDlpPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayDlpPoliciesOutputReference
 ```
@@ -3993,7 +3993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayGuardrailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayGuardrailsOutputReference
 ```
@@ -4312,7 +4312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayGuardrailsPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayGuardrailsPromptOutputReference
 ```
@@ -4967,7 +4967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayGuardrailsResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayGuardrailsResponseOutputReference
 ```
@@ -5622,7 +5622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayOtelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayOtelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayOtelList
 ```
@@ -5782,7 +5782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayOtelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayOtelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayOtelOutputReference
 ```
@@ -6151,7 +6151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewaySpendLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewaySpendLimitsOutputReference
 ```
@@ -6471,7 +6471,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewaySpendLimitsRulesAiGatewayProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewaySpendLimitsRulesAiGatewayProviderOutputReference
 ```
@@ -6764,7 +6764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewaySpendLimitsRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewaySpendLimitsRulesList
 ```
@@ -6924,7 +6924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesMetadataMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewaySpendLimitsRulesMetadataMap(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewaySpendLimitsRulesMetadataMap
 ```
@@ -7071,7 +7071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewaySpendLimitsRulesMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) AiGatewaySpendLimitsRulesMetadataOutputReference
 ```
@@ -7380,7 +7380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewaySpendLimitsRulesModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewaySpendLimitsRulesModelOutputReference
 ```
@@ -7673,7 +7673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewaySpendLimitsRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewaySpendLimitsRulesOutputReference
 ```
@@ -8219,7 +8219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayStripeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayStripeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayStripeOutputReference
 ```
@@ -8525,7 +8525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayStripeUsageEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayStripeUsageEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayStripeUsageEventsList
 ```
@@ -8685,7 +8685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGatewayStripeUsageEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aigateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigateway"
 
 aigateway.NewAiGatewayStripeUsageEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayStripeUsageEventsOutputReference
 ```

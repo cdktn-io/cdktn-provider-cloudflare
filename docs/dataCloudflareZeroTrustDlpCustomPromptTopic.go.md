@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomPromptTopic.DataCloudflareZeroTrustDlpCustomPromptTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpcustomprompttopic"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpcustomprompttopic"
 
 datacloudflarezerotrustdlpcustomprompttopic.NewDataCloudflareZeroTrustDlpCustomPromptTopic(scope Construct, id *string, config DataCloudflareZeroTrustDlpCustomPromptTopicConfig) DataCloudflareZeroTrustDlpCustomPromptTopic
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomPromptTopic.DataCloudflareZeroTrustDlpCustomPromptTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpcustomprompttopic"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpcustomprompttopic"
 
 datacloudflarezerotrustdlpcustomprompttopic.DataCloudflareZeroTrustDlpCustomPromptTopic_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomPromptTopic.DataCloudflareZeroTrustDlpCustomPromptTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpcustomprompttopic"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpcustomprompttopic"
 
 datacloudflarezerotrustdlpcustomprompttopic.DataCloudflareZeroTrustDlpCustomPromptTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflarezerotrustdlpcustomprompttopic.DataCloudflareZeroTrustDlpCustomProm
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomPromptTopic.DataCloudflareZeroTrustDlpCustomPromptTopic.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpcustomprompttopic"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpcustomprompttopic"
 
 datacloudflarezerotrustdlpcustomprompttopic.DataCloudflareZeroTrustDlpCustomPromptTopic_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflarezerotrustdlpcustomprompttopic.DataCloudflareZeroTrustDlpCustomProm
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomPromptTopic.DataCloudflareZeroTrustDlpCustomPromptTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpcustomprompttopic"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpcustomprompttopic"
 
 datacloudflarezerotrustdlpcustomprompttopic.DataCloudflareZeroTrustDlpCustomPromptTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomPromptTopic.DataCloudflareZeroTrustDlpCustomPromptTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpcustomprompttopic"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpcustomprompttopic"
 
 &datacloudflarezerotrustdlpcustomprompttopic.DataCloudflareZeroTrustDlpCustomPromptTopicConfig {
 	Connection: interface{},

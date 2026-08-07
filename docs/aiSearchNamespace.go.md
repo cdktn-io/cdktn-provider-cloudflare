@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiSearchNamespace.AiSearchNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchnamespace"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aisearchnamespace"
 
 aisearchnamespace.NewAiSearchNamespace(scope Construct, id *string, config AiSearchNamespaceConfig) AiSearchNamespace
 ```
@@ -407,7 +407,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.aiSearchNamespace.AiSearchNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchnamespace"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aisearchnamespace"
 
 aisearchnamespace.AiSearchNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.aiSearchNamespace.AiSearchNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchnamespace"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aisearchnamespace"
 
 aisearchnamespace.AiSearchNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ aisearchnamespace.AiSearchNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.aiSearchNamespace.AiSearchNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchnamespace"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aisearchnamespace"
 
 aisearchnamespace.AiSearchNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ aisearchnamespace.AiSearchNamespace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.aiSearchNamespace.AiSearchNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchnamespace"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aisearchnamespace"
 
 aisearchnamespace.AiSearchNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiSearchNamespace.AiSearchNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchnamespace"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aisearchnamespace"
 
 &aisearchnamespace.AiSearchNamespaceConfig {
 	Connection: interface{},

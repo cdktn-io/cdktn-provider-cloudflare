@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStream(scope Construct, id *string, config PipelineStreamConfig) PipelineStream
 ```
@@ -480,7 +480,7 @@ func ResetWorkerBinding()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.PipelineStream_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.PipelineStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ pipelinestream.PipelineStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.PipelineStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ pipelinestream.PipelineStream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.PipelineStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -956,7 +956,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 &pipelinestream.PipelineStreamConfig {
 	Connection: interface{},
@@ -968,10 +968,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Name: *string,
-	Format: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineStream.PipelineStreamFormat,
-	Http: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineStream.PipelineStreamHttp,
-	Schema: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineStream.PipelineStreamSchema,
-	WorkerBinding: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineStream.PipelineStreamWorkerBinding,
+	Format: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineStream.PipelineStreamFormat,
+	Http: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineStream.PipelineStreamHttp,
+	Schema: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineStream.PipelineStreamSchema,
+	WorkerBinding: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineStream.PipelineStreamWorkerBinding,
 }
 ```
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 &pipelinestream.PipelineStreamFormat {
 	Type: *string,
@@ -1256,12 +1256,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 &pipelinestream.PipelineStreamHttp {
 	Authentication: interface{},
 	Enabled: interface{},
-	Cors: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineStream.PipelineStreamHttpCors,
+	Cors: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineStream.PipelineStreamHttpCors,
 }
 ```
 
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttpCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 &pipelinestream.PipelineStreamHttpCors {
 	Origins: *[]*string,
@@ -1354,11 +1354,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 &pipelinestream.PipelineStreamSchema {
 	Fields: interface{},
-	Format: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pipelineStream.PipelineStreamSchemaFormat,
+	Format: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.pipelineStream.PipelineStreamSchemaFormat,
 	Inferred: interface{},
 }
 ```
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 &pipelinestream.PipelineStreamSchemaFields {
 	Type: *string,
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 &pipelinestream.PipelineStreamSchemaFormat {
 	Type: *string,
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamWorkerBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 &pipelinestream.PipelineStreamWorkerBinding {
 	Enabled: interface{},
@@ -1666,7 +1666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStreamFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineStreamFormatOutputReference
 ```
@@ -2082,7 +2082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttpCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStreamHttpCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineStreamHttpCorsOutputReference
 ```
@@ -2360,7 +2360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStreamHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineStreamHttpOutputReference
 ```
@@ -2695,7 +2695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStreamSchemaFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineStreamSchemaFieldsList
 ```
@@ -2855,7 +2855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStreamSchemaFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineStreamSchemaFieldsOutputReference
 ```
@@ -3289,7 +3289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStreamSchemaFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineStreamSchemaFormatOutputReference
 ```
@@ -3705,7 +3705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStreamSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineStreamSchemaOutputReference
 ```
@@ -4067,7 +4067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStreamWorkerBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipelinestream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream"
 
 pipelinestream.NewPipelineStreamWorkerBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineStreamWorkerBindingOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/useragentblockingrule"
 
 useragentblockingrule.NewUserAgentBlockingRule(scope Construct, id *string, config UserAgentBlockingRuleConfig) UserAgentBlockingRule
 ```
@@ -427,7 +427,7 @@ func ResetPaused()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/useragentblockingrule"
 
 useragentblockingrule.UserAgentBlockingRule_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/useragentblockingrule"
 
 useragentblockingrule.UserAgentBlockingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ useragentblockingrule.UserAgentBlockingRule_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/useragentblockingrule"
 
 useragentblockingrule.UserAgentBlockingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ useragentblockingrule.UserAgentBlockingRule_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/useragentblockingrule"
 
 useragentblockingrule.UserAgentBlockingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/useragentblockingrule"
 
 &useragentblockingrule.UserAgentBlockingRuleConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragen
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Configuration: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.userAgentBlockingRule.UserAgentBlockingRuleConfiguration,
+	Configuration: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.userAgentBlockingRule.UserAgentBlockingRuleConfiguration,
 	Mode: *string,
 	ZoneId: *string,
 	Description: *string,
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/useragentblockingrule"
 
 &useragentblockingrule.UserAgentBlockingRuleConfiguration {
 	Target: *string,
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/useragentblockingrule"
 
 useragentblockingrule.NewUserAgentBlockingRuleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserAgentBlockingRuleConfigurationOutputReference
 ```
