@@ -4,7 +4,7 @@
 
 ### TokenValidationConfig <a name="TokenValidationConfig" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config cloudflare_token_validation_config}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config cloudflare_token_validation_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer"></a>
 
@@ -40,9 +40,9 @@ TokenValidationConfig.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.credentials">credentials</a></code> | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials">TokenValidationConfigCredentials</a></code> | Request payload for create and PUT credentials operations. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#description TokenValidationConfig#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#title TokenValidationConfig#title}. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.tokenSources">tokenSources</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#description TokenValidationConfig#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#title TokenValidationConfig#title}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.tokenSources">tokenSources</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}. |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.tokenType">tokenType</a></code> | <code>java.lang.String</code> | Available values: "JWT". |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 
@@ -116,7 +116,7 @@ Request payload for create and PUT credentials operations.
 
 Provided keys define the complete stored key set. Key identities (`{alg,kid}`) must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#description TokenValidationConfig#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#description TokenValidationConfig#description}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#title TokenValidationConfig#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#title TokenValidationConfig#title}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "JWT".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#token_type TokenValidationConfig#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#token_type TokenValidationConfig#token_type}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#zone_id TokenValidationConfig#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#zone_id TokenValidationConfig#zone_id}
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the TokenValidationConfig to i
 
 The id of the existing TokenValidationConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1018,9 +1018,9 @@ TokenValidationConfigConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.credentials">credentials</a></code> | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials">TokenValidationConfigCredentials</a></code> | Request payload for create and PUT credentials operations. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#description TokenValidationConfig#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#title TokenValidationConfig#title}. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.tokenSources">tokenSources</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#description TokenValidationConfig#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#title TokenValidationConfig#title}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.tokenSources">tokenSources</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}. |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.tokenType">tokenType</a></code> | <code>java.lang.String</code> | Available values: "JWT". |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 
@@ -1108,7 +1108,7 @@ Request payload for create and PUT credentials operations.
 
 Provided keys define the complete stored key set. Key identities (`{alg,kid}`) must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}
 
 ---
 
@@ -1120,7 +1120,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#description TokenValidationConfig#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#description TokenValidationConfig#description}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#title TokenValidationConfig#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#title TokenValidationConfig#title}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public java.util.List<java.lang.String> getTokenSources();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}.
 
 ---
 
@@ -1158,7 +1158,7 @@ public java.lang.String getTokenType();
 
 Available values: "JWT".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#token_type TokenValidationConfig#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#token_type TokenValidationConfig#token_type}
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#zone_id TokenValidationConfig#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#zone_id TokenValidationConfig#zone_id}
 
 ---
 
@@ -1192,7 +1192,7 @@ TokenValidationConfigCredentials.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials.property.keys">keys</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys">TokenValidationConfigCredentialsKeys</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#keys TokenValidationConfig#keys}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials.property.keys">keys</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys">TokenValidationConfigCredentialsKeys</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#keys TokenValidationConfig#keys}. |
 
 ---
 
@@ -1204,7 +1204,7 @@ public IResolvable|java.util.List<TokenValidationConfigCredentialsKeys> getKeys(
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys">TokenValidationConfigCredentialsKeys</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#keys TokenValidationConfig#keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#keys TokenValidationConfig#keys}.
 
 ---
 
@@ -1254,7 +1254,7 @@ public java.lang.String getAlg();
 
 Algorithm Available values: "RS256", "RS384", "RS512", "PS256", "PS384", "PS512", "ES256", "ES384", "HS256", "HS384", "HS512".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#alg TokenValidationConfig#alg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#alg TokenValidationConfig#alg}
 
 ---
 
@@ -1268,7 +1268,7 @@ public java.lang.String getKid();
 
 Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#kid TokenValidationConfig#kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#kid TokenValidationConfig#kid}
 
 ---
 
@@ -1282,7 +1282,7 @@ public java.lang.String getKty();
 
 Key Type Available values: "RSA", "EC", "oct".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#kty TokenValidationConfig#kty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#kty TokenValidationConfig#kty}
 
 ---
 
@@ -1296,7 +1296,7 @@ public java.lang.String getCrv();
 
 Curve Available values: "P-256", "P-384".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#crv TokenValidationConfig#crv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#crv TokenValidationConfig#crv}
 
 ---
 
@@ -1310,7 +1310,7 @@ public java.lang.String getE();
 
 RSA exponent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#e TokenValidationConfig#e}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#e TokenValidationConfig#e}
 
 ---
 
@@ -1324,7 +1324,7 @@ public java.lang.String getK();
 
 Symmetric key material. Required for create and PUT update requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#k TokenValidationConfig#k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#k TokenValidationConfig#k}
 
 ---
 
@@ -1338,7 +1338,7 @@ public java.lang.String getN();
 
 RSA modulus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#n TokenValidationConfig#n}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#n TokenValidationConfig#n}
 
 ---
 
@@ -1352,7 +1352,7 @@ public java.lang.String getX();
 
 X EC coordinate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#x TokenValidationConfig#x}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#x TokenValidationConfig#x}
 
 ---
 
@@ -1366,7 +1366,7 @@ public java.lang.String getY();
 
 Y EC coordinate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/token_validation_config#y TokenValidationConfig#y}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/token_validation_config#y TokenValidationConfig#y}
 
 ---
 

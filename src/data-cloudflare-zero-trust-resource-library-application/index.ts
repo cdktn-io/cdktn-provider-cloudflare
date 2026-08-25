@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustResourceLibraryApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application#id DataCloudflareZeroTrustResourceLibraryApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application#id DataCloudflareZeroTrustResourceLibraryApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  readonly id: string;
+  readonly id: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}
 */
 export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
   * Generates CDKTN code for importing a DataCloudflareZeroTrustResourceLibraryApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustResourceLibraryApplication to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustResourceLibraryApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustResourceLibraryApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustResourceLibraryApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -54,7 +54,7 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
       terraformResourceType: 'cloudflare_zero_trust_resource_library_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -122,6 +122,11 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
     return this.getStringAttribute('application_type_description');
   }
 
+  // category_id - computed: true, optional: false, required: false
+  public get categoryId() {
+    return this.getNumberAttribute('category_id');
+  }
+
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
@@ -134,7 +139,7 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
 
   // hostnames - computed: true, optional: false, required: false
   public get hostnames() {
-    return this.getListAttribute('hostnames');
+    return cdktn.Fn.tolist(this.getListAttribute('hostnames'));
   }
 
   // human_id - computed: true, optional: false, required: false
@@ -143,11 +148,11 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
   }
 
   // id - computed: false, optional: false, required: true
-  private _id?: string; 
+  private _id?: number; 
   public get id() {
-    return this.getStringAttribute('id');
+    return this.getNumberAttribute('id');
   }
-  public set id(value: string) {
+  public set id(value: number) {
     this._id = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -155,14 +160,9 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
     return this._id;
   }
 
-  // intel_id - computed: true, optional: false, required: false
-  public get intelId() {
-    return this.getNumberAttribute('intel_id');
-  }
-
   // ip_subnets - computed: true, optional: false, required: false
   public get ipSubnets() {
-    return this.getListAttribute('ip_subnets');
+    return cdktn.Fn.tolist(this.getListAttribute('ip_subnets'));
   }
 
   // name - computed: true, optional: false, required: false
@@ -172,17 +172,17 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
 
   // port_protocols - computed: true, optional: false, required: false
   public get portProtocols() {
-    return this.getListAttribute('port_protocols');
+    return cdktn.Fn.tolist(this.getListAttribute('port_protocols'));
   }
 
   // support_domains - computed: true, optional: false, required: false
   public get supportDomains() {
-    return this.getListAttribute('support_domains');
+    return cdktn.Fn.tolist(this.getListAttribute('support_domains'));
   }
 
   // supported - computed: true, optional: false, required: false
   public get supported() {
-    return this.getListAttribute('supported');
+    return cdktn.Fn.tolist(this.getListAttribute('supported'));
   }
 
   // updated_at - computed: true, optional: false, required: false
@@ -202,7 +202,7 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
-      id: cdktn.stringToTerraform(this._id),
+      id: cdktn.numberToTerraform(this._id),
     };
   }
 
@@ -215,10 +215,10 @@ export class DataCloudflareZeroTrustResourceLibraryApplication extends cdktn.Ter
         storageClassType: "string",
       },
       id: {
-        value: cdktn.stringToHclTerraform(this._id),
+        value: cdktn.numberToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
-        storageClassType: "string",
+        storageClassType: "number",
       },
     };
 

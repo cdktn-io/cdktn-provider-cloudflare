@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +15,123 @@ export interface ZeroTrustAccessCustomPageConfig extends cdktn.TerraformMetaArgu
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
   */
   readonly accountId: string;
   /**
+  * Contract version of the page's Liquid template. Present (>= 1) marks a sanitized template; absent or 0 marks a legacy page served verbatim.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page#contract_version ZeroTrustAccessCustomPage#contract_version}
+  */
+  readonly contractVersion?: number;
+  /**
   * Custom page HTML.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
   */
   readonly customHtml: string;
   /**
   * Custom page name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
   */
   readonly name: string;
   /**
   * Custom page type.
-  * Available values: "identity_denied", "forbidden".
+  * Available values: "identity_denied", "forbidden", "login", "interstitial".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
   */
   readonly type: string;
 }
+export interface ZeroTrustAccessCustomPageWarnings {
+}
+
+export function zeroTrustAccessCustomPageWarningsToTerraform(struct?: ZeroTrustAccessCustomPageWarnings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessCustomPageWarningsToHclTerraform(struct?: ZeroTrustAccessCustomPageWarnings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessCustomPageWarningsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ZeroTrustAccessCustomPageWarnings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessCustomPageWarnings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // message - computed: true, optional: false, required: false
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+
+  // ref - computed: true, optional: false, required: false
+  public get ref() {
+    return this.getStringAttribute('ref');
+  }
+
+  // tier - computed: true, optional: false, required: false
+  public get tier() {
+    return this.getStringAttribute('tier');
+  }
+}
+
+export class ZeroTrustAccessCustomPageWarningsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ZeroTrustAccessCustomPageWarningsOutputReference {
+    return new ZeroTrustAccessCustomPageWarningsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}
 */
 export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
 
@@ -56,7 +147,7 @@ export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ZeroTrustAccessCustomPage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustAccessCustomPage to import
-  * @param importFromId The id of the existing ZeroTrustAccessCustomPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustAccessCustomPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustAccessCustomPage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -68,7 +159,7 @@ export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +170,7 @@ export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_access_custom_page',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -91,6 +182,7 @@ export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._contractVersion = config.contractVersion;
     this._customHtml = config.customHtml;
     this._name = config.name;
     this._type = config.type;
@@ -111,6 +203,22 @@ export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
+  }
+
+  // contract_version - computed: true, optional: true, required: false
+  private _contractVersion?: number; 
+  public get contractVersion() {
+    return this.getNumberAttribute('contract_version');
+  }
+  public set contractVersion(value: number) {
+    this._contractVersion = value;
+  }
+  public resetContractVersion() {
+    this._contractVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contractVersionInput() {
+    return this._contractVersion;
   }
 
   // custom_html - computed: false, optional: false, required: true
@@ -162,6 +270,12 @@ export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
     return this.getStringAttribute('uid');
   }
 
+  // warnings - computed: true, optional: false, required: false
+  private _warnings = new ZeroTrustAccessCustomPageWarningsList(this, "warnings", false);
+  public get warnings() {
+    return this._warnings;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -169,6 +283,7 @@ export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      contract_version: cdktn.numberToTerraform(this._contractVersion),
       custom_html: cdktn.stringToTerraform(this._customHtml),
       name: cdktn.stringToTerraform(this._name),
       type: cdktn.stringToTerraform(this._type),
@@ -182,6 +297,12 @@ export class ZeroTrustAccessCustomPage extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      contract_version: {
+        value: cdktn.numberToHclTerraform(this._contractVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       custom_html: {
         value: cdktn.stringToHclTerraform(this._customHtml),

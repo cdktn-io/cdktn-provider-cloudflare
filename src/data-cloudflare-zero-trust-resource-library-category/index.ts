@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustResourceLibraryCategoryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category#account_id DataCloudflareZeroTrustResourceLibraryCategory#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category#account_id DataCloudflareZeroTrustResourceLibraryCategory#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category#id DataCloudflareZeroTrustResourceLibraryCategory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category#id DataCloudflareZeroTrustResourceLibraryCategory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  readonly id: string;
+  readonly id: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category}
 */
 export class DataCloudflareZeroTrustResourceLibraryCategory extends cdktn.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataCloudflareZeroTrustResourceLibraryCategory extends cdktn.Terraf
   * Generates CDKTN code for importing a DataCloudflareZeroTrustResourceLibraryCategory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustResourceLibraryCategory to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustResourceLibraryCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustResourceLibraryCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustResourceLibraryCategory to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -54,7 +54,7 @@ export class DataCloudflareZeroTrustResourceLibraryCategory extends cdktn.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class DataCloudflareZeroTrustResourceLibraryCategory extends cdktn.Terraf
       terraformResourceType: 'cloudflare_zero_trust_resource_library_category',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -108,11 +108,11 @@ export class DataCloudflareZeroTrustResourceLibraryCategory extends cdktn.Terraf
   }
 
   // id - computed: false, optional: false, required: true
-  private _id?: string; 
+  private _id?: number; 
   public get id() {
-    return this.getStringAttribute('id');
+    return this.getNumberAttribute('id');
   }
-  public set id(value: string) {
+  public set id(value: number) {
     this._id = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -132,7 +132,7 @@ export class DataCloudflareZeroTrustResourceLibraryCategory extends cdktn.Terraf
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
-      id: cdktn.stringToTerraform(this._id),
+      id: cdktn.numberToTerraform(this._id),
     };
   }
 
@@ -145,10 +145,10 @@ export class DataCloudflareZeroTrustResourceLibraryCategory extends cdktn.Terraf
         storageClassType: "string",
       },
       id: {
-        value: cdktn.stringToHclTerraform(this._id),
+        value: cdktn.numberToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
-        storageClassType: "string",
+        storageClassType: "number",
       },
     };
 
