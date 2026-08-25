@@ -45,6 +45,7 @@ export * as cloudforceOneRequestPriority from './cloudforce-one-request-priority
 export * as connectivityDirectoryService from './connectivity-directory-service/index';
 export * as contentScanning from './content-scanning/index';
 export * as contentScanningExpression from './content-scanning-expression/index';
+export * as ctAlerting from './ct-alerting/index';
 export * as customCsr from './custom-csr/index';
 export * as customHostname from './custom-hostname/index';
 export * as customHostnameFallbackOrigin from './custom-hostname-fallback-origin/index';
@@ -121,6 +122,7 @@ export * as pagesProject from './pages-project/index';
 export * as pipeline from './pipeline/index';
 export * as pipelineSink from './pipeline-sink/index';
 export * as pipelineStream from './pipeline-stream/index';
+export * as precursor from './precursor/index';
 export * as queue from './queue/index';
 export * as queueConsumer from './queue-consumer/index';
 export * as r2Bucket from './r2-bucket/index';
@@ -332,6 +334,7 @@ export * as dataCloudflareConnectivityDirectoryService from './data-cloudflare-c
 export * as dataCloudflareConnectivityDirectoryServices from './data-cloudflare-connectivity-directory-services/index';
 export * as dataCloudflareContentScanning from './data-cloudflare-content-scanning/index';
 export * as dataCloudflareContentScanningExpressions from './data-cloudflare-content-scanning-expressions/index';
+export * as dataCloudflareCtAlerting from './data-cloudflare-ct-alerting/index';
 export * as dataCloudflareCustomCsr from './data-cloudflare-custom-csr/index';
 export * as dataCloudflareCustomCsrs from './data-cloudflare-custom-csrs/index';
 export * as dataCloudflareCustomHostname from './data-cloudflare-custom-hostname/index';
@@ -387,6 +390,7 @@ export * as dataCloudflareGoogleTagGateway from './data-cloudflare-google-tag-ga
 export * as dataCloudflareHealthcheck from './data-cloudflare-healthcheck/index';
 export * as dataCloudflareHealthchecks from './data-cloudflare-healthchecks/index';
 export * as dataCloudflareHostnameTlsSetting from './data-cloudflare-hostname-tls-setting/index';
+export * as dataCloudflareHostnameTlsSettings from './data-cloudflare-hostname-tls-settings/index';
 export * as dataCloudflareHyperdriveConfig from './data-cloudflare-hyperdrive-config/index';
 export * as dataCloudflareHyperdriveConfigs from './data-cloudflare-hyperdrive-configs/index';
 export * as dataCloudflareImage from './data-cloudflare-image/index';
@@ -473,6 +477,7 @@ export * as dataCloudflarePipelineSink from './data-cloudflare-pipeline-sink/ind
 export * as dataCloudflarePipelineSinks from './data-cloudflare-pipeline-sinks/index';
 export * as dataCloudflarePipelineStream from './data-cloudflare-pipeline-stream/index';
 export * as dataCloudflarePipelineStreams from './data-cloudflare-pipeline-streams/index';
+export * as dataCloudflarePrecursor from './data-cloudflare-precursor/index';
 export * as dataCloudflareQueue from './data-cloudflare-queue/index';
 export * as dataCloudflareQueueConsumer from './data-cloudflare-queue-consumer/index';
 export * as dataCloudflareQueueConsumers from './data-cloudflare-queue-consumers/index';

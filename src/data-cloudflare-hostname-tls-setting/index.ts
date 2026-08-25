@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,6 +13,12 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareHostnameTlsSettingConfig extends cdktn.TerraformMetaArguments {
   /**
+  * The hostname for which the tls settings are set.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting#hostname DataCloudflareHostnameTlsSetting#hostname}
+  */
+  readonly hostname: string;
+  /**
   * The TLS Setting name.
   * The value type depends on the setting:
   * - `ciphers`: value is an array of cipher suite strings (e.g., `["ECDHE-RSA-AES128-GCM-SHA256", "AES128-GCM-SHA256"]`).
@@ -20,19 +26,19 @@ export interface DataCloudflareHostnameTlsSettingConfig extends cdktn.TerraformM
   * - `http2`: value is `"on"` or `"off"`.
   * Available values: "ciphers", "min_tls_version", "http2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting#setting_id DataCloudflareHostnameTlsSetting#setting_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting#setting_id DataCloudflareHostnameTlsSetting#setting_id}
   */
   readonly settingId: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting#zone_id DataCloudflareHostnameTlsSetting#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting#zone_id DataCloudflareHostnameTlsSetting#zone_id}
   */
   readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting}
 */
 export class DataCloudflareHostnameTlsSetting extends cdktn.TerraformDataSource {
 
@@ -48,7 +54,7 @@ export class DataCloudflareHostnameTlsSetting extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataCloudflareHostnameTlsSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareHostnameTlsSetting to import
-  * @param importFromId The id of the existing DataCloudflareHostnameTlsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareHostnameTlsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareHostnameTlsSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -60,7 +66,7 @@ export class DataCloudflareHostnameTlsSetting extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +77,7 @@ export class DataCloudflareHostnameTlsSetting extends cdktn.TerraformDataSource 
       terraformResourceType: 'cloudflare_hostname_tls_setting',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -82,6 +88,7 @@ export class DataCloudflareHostnameTlsSetting extends cdktn.TerraformDataSource 
       connection: config.connection,
       forEach: config.forEach
     });
+    this._hostname = config.hostname;
     this._settingId = config.settingId;
     this._zoneId = config.zoneId;
   }
@@ -95,14 +102,17 @@ export class DataCloudflareHostnameTlsSetting extends cdktn.TerraformDataSource 
     return this.getStringAttribute('created_at');
   }
 
-  // hostname - computed: true, optional: false, required: false
+  // hostname - computed: false, optional: false, required: true
+  private _hostname?: string; 
   public get hostname() {
     return this.getStringAttribute('hostname');
   }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
+  public set hostname(value: string) {
+    this._hostname = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname;
   }
 
   // setting_id - computed: false, optional: false, required: true
@@ -155,6 +165,7 @@ export class DataCloudflareHostnameTlsSetting extends cdktn.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      hostname: cdktn.stringToTerraform(this._hostname),
       setting_id: cdktn.stringToTerraform(this._settingId),
       zone_id: cdktn.stringToTerraform(this._zoneId),
     };
@@ -162,6 +173,12 @@ export class DataCloudflareHostnameTlsSetting extends cdktn.TerraformDataSource 
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      hostname: {
+        value: cdktn.stringToHclTerraform(this._hostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       setting_id: {
         value: cdktn.stringToHclTerraform(this._settingId),
         isBlock: false,

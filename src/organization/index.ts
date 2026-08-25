@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktn from 'cdktn';
 
 export interface OrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#name Organization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#name Organization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#parent Organization#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#parent Organization#parent}
   */
   readonly parent?: OrganizationParent;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#profile Organization#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#profile Organization#profile}
   */
   readonly profile?: OrganizationProfile;
 }
-export interface OrganizationMetaFlags {
+export interface OrganizationMetaTenantFlags {
 }
 
-export function organizationMetaFlagsToTerraform(struct?: OrganizationMetaFlags): any {
+export function organizationMetaTenantFlagsToTerraform(struct?: OrganizationMetaTenantFlags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -38,7 +38,7 @@ export function organizationMetaFlagsToTerraform(struct?: OrganizationMetaFlags)
 }
 
 
-export function organizationMetaFlagsToHclTerraform(struct?: OrganizationMetaFlags): any {
+export function organizationMetaTenantFlagsToHclTerraform(struct?: OrganizationMetaTenantFlags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -48,7 +48,7 @@ export function organizationMetaFlagsToHclTerraform(struct?: OrganizationMetaFla
   return attrs;
 }
 
-export class OrganizationMetaFlagsOutputReference extends cdktn.ComplexObject {
+export class OrganizationMetaTenantFlagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -59,13 +59,13 @@ export class OrganizationMetaFlagsOutputReference extends cdktn.ComplexObject {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrganizationMetaFlags | undefined {
+  public get internalValue(): OrganizationMetaTenantFlags | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrganizationMetaFlags | undefined) {
+  public set internalValue(value: OrganizationMetaTenantFlags | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -92,6 +92,16 @@ export class OrganizationMetaFlagsOutputReference extends cdktn.ComplexObject {
   // account_mobility - computed: true, optional: false, required: false
   public get accountMobility() {
     return this.getStringAttribute('account_mobility');
+  }
+
+  // enterprise_capability - computed: true, optional: false, required: false
+  public get enterpriseCapability() {
+    return this.getStringAttribute('enterprise_capability');
+  }
+
+  // member_management - computed: true, optional: false, required: false
+  public get memberManagement() {
+    return this.getStringAttribute('member_management');
   }
 
   // sub_org_creation - computed: true, optional: false, required: false
@@ -148,12 +158,6 @@ export class OrganizationMetaOutputReference extends cdktn.ComplexObject {
     }
   }
 
-  // flags - computed: true, optional: false, required: false
-  private _flags = new OrganizationMetaFlagsOutputReference(this, "flags");
-  public get flags() {
-    return this._flags;
-  }
-
   // hierarchy_tags - computed: true, optional: false, required: false
   public get hierarchyTags() {
     return this.getListAttribute('hierarchy_tags');
@@ -163,10 +167,16 @@ export class OrganizationMetaOutputReference extends cdktn.ComplexObject {
   public get managedBy() {
     return this.getStringAttribute('managed_by');
   }
+
+  // tenant_flags - computed: true, optional: false, required: false
+  private _tenantFlags = new OrganizationMetaTenantFlagsOutputReference(this, "tenant_flags");
+  public get tenantFlags() {
+    return this._tenantFlags;
+  }
 }
 export interface OrganizationParent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#id Organization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#id Organization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -265,23 +275,23 @@ export class OrganizationParentOutputReference extends cdktn.ComplexObject {
 }
 export interface OrganizationProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#business_address Organization#business_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#business_address Organization#business_address}
   */
   readonly businessAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#business_email Organization#business_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#business_email Organization#business_email}
   */
   readonly businessEmail: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#business_name Organization#business_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#business_name Organization#business_name}
   */
   readonly businessName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#business_phone Organization#business_phone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#business_phone Organization#business_phone}
   */
   readonly businessPhone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#external_metadata Organization#external_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#external_metadata Organization#external_metadata}
   */
   readonly externalMetadata: string;
 }
@@ -476,7 +486,7 @@ export class OrganizationProfileOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization cloudflare_organization}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization cloudflare_organization}
 */
 export class Organization extends cdktn.TerraformResource {
 
@@ -492,7 +502,7 @@ export class Organization extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Organization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Organization to import
-  * @param importFromId The id of the existing Organization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Organization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Organization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -504,7 +514,7 @@ export class Organization extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/organization cloudflare_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/organization cloudflare_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -515,7 +525,7 @@ export class Organization extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
