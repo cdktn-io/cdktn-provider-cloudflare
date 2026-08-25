@@ -4,7 +4,7 @@
 
 ### DataCloudflareMoqRelays <a name="DataCloudflareMoqRelays" id="@cdktn/provider-cloudflare.dataCloudflareMoqRelays.DataCloudflareMoqRelays"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays cloudflare_moq_relays}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays cloudflare_moq_relays}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMoqRelays.DataCloudflareMoqRelays.Initializer"></a>
 
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataCloudflareMoqRelays to
 
 The id of the existing DataCloudflareMoqRelays that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,7 +778,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMoqRelays.DataCloudflareMoqRelaysConfig.property.createdAfter">CreatedAfter</a></code> | <code>*string</code> | Cursor for pagination. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMoqRelays.DataCloudflareMoqRelaysConfig.property.createdBefore">CreatedBefore</a></code> | <code>*string</code> | Cursor for pagination. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMoqRelays.DataCloudflareMoqRelaysConfig.property.maxItems">MaxItems</a></code> | <code>*f64</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMoqRelays.DataCloudflareMoqRelaysConfig.property.perPage">PerPage</a></code> | <code>*f64</code> | Maximum number of relays to return per page. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMoqRelays.DataCloudflareMoqRelaysConfig.property.perPage">PerPage</a></code> | <code>*f64</code> | Maximum number of relays to return per page. Values above the maximum are clamped to it rather than rejected. |
 
 ---
 
@@ -862,7 +862,7 @@ AccountId *string
 
 Cloudflare account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#account_id DataCloudflareMoqRelays#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#account_id DataCloudflareMoqRelays#account_id}
 
 ---
 
@@ -876,7 +876,7 @@ Asc interface{}
 
 Sort order by `created`. When true, results are returned oldest-first (ascending); otherwise newest-first (descending, the default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#asc DataCloudflareMoqRelays#asc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#asc DataCloudflareMoqRelays#asc}
 
 ---
 
@@ -894,7 +894,7 @@ Returns relays created strictly after this
 RFC 3339 timestamp (typically the `created` value of the last item
 on the current page, to fetch the next page).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#created_after DataCloudflareMoqRelays#created_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#created_after DataCloudflareMoqRelays#created_after}
 
 ---
 
@@ -912,7 +912,7 @@ Returns relays created strictly before this
 RFC 3339 timestamp (typically the `created` value of the first item
 on the current page, to fetch the previous page).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#created_before DataCloudflareMoqRelays#created_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#created_before DataCloudflareMoqRelays#created_before}
 
 ---
 
@@ -926,7 +926,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#max_items DataCloudflareMoqRelays#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#max_items DataCloudflareMoqRelays#max_items}
 
 ---
 
@@ -938,9 +938,9 @@ PerPage *f64
 
 - *Type:* *f64
 
-Maximum number of relays to return per page.
+Maximum number of relays to return per page. Values above the maximum are clamped to it rather than rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#per_page DataCloudflareMoqRelays#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#per_page DataCloudflareMoqRelays#per_page}
 
 ---
 
