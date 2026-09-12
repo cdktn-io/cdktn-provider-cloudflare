@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,26 @@ export interface WorkersKvNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
   */
   readonly accountId: string;
   /**
+  * Specify the jurisdiction to restrict the KV namespace to durably store data within. Can only be set at namespace creation time.
+  * Available values: "eu", "fedramp", "us".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
+  */
+  readonly jurisdiction?: string;
+  /**
   * A human-readable string name for a Namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}
 */
 export class WorkersKvNamespace extends cdktn.TerraformResource {
 
@@ -43,7 +50,7 @@ export class WorkersKvNamespace extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkersKvNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersKvNamespace to import
-  * @param importFromId The id of the existing WorkersKvNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersKvNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersKvNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +62,7 @@ export class WorkersKvNamespace extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +73,7 @@ export class WorkersKvNamespace extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_workers_kv_namespace',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -78,6 +85,7 @@ export class WorkersKvNamespace extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._jurisdiction = config.jurisdiction;
     this._title = config.title;
   }
 
@@ -101,6 +109,22 @@ export class WorkersKvNamespace extends cdktn.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // jurisdiction - computed: false, optional: true, required: false
+  private _jurisdiction?: string; 
+  public get jurisdiction() {
+    return this.getStringAttribute('jurisdiction');
+  }
+  public set jurisdiction(value: string) {
+    this._jurisdiction = value;
+  }
+  public resetJurisdiction() {
+    this._jurisdiction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jurisdictionInput() {
+    return this._jurisdiction;
   }
 
   // supports_url_encoding - computed: true, optional: false, required: false
@@ -128,6 +152,7 @@ export class WorkersKvNamespace extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      jurisdiction: cdktn.stringToTerraform(this._jurisdiction),
       title: cdktn.stringToTerraform(this._title),
     };
   }
@@ -136,6 +161,12 @@ export class WorkersKvNamespace extends cdktn.TerraformResource {
     const attrs = {
       account_id: {
         value: cdktn.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jurisdiction: {
+        value: cdktn.stringToHclTerraform(this._jurisdiction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

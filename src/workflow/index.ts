@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,47 +13,147 @@ import * as cdktn from 'cdktn';
 
 export interface WorkflowConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#account_id Workflow#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#account_id Workflow#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#class_name Workflow#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#class_name Workflow#class_name}
   */
   readonly className: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#concurrency Workflow#concurrency}
+  */
+  readonly concurrency?: WorkflowConcurrency;
+  /**
   * Default retention applied to instances of this version when they do not set their own retention.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#default_retention Workflow#default_retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#default_retention Workflow#default_retention}
   */
   readonly defaultRetention?: WorkflowDefaultRetention;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#limits Workflow#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#limits Workflow#limits}
   */
   readonly limits?: WorkflowLimits;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#schedules Workflow#schedules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#schedules Workflow#schedules}
   */
   readonly schedules?: WorkflowSchedules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#script_name Workflow#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#script_name Workflow#script_name}
   */
   readonly scriptName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#workflow_name Workflow#workflow_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#workflow_name Workflow#workflow_name}
   */
   readonly workflowName: string;
+}
+export interface WorkflowConcurrency {
+  /**
+  * Maximum number of instances of this workflow that can run concurrently. Additional instances are queued and started as running instances complete. Must not exceed the account concurrency limit.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#limit Workflow#limit}
+  */
+  readonly limit?: number;
+}
+
+export function workflowConcurrencyToTerraform(struct?: WorkflowConcurrency | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    limit: cdktn.numberToTerraform(struct!.limit),
+  }
+}
+
+
+export function workflowConcurrencyToHclTerraform(struct?: WorkflowConcurrency | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    limit: {
+      value: cdktn.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkflowConcurrencyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkflowConcurrency | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._limit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkflowConcurrency | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._limit = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._limit = value.limit;
+    }
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  public resetLimit() {
+    this._limit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
 }
 export interface WorkflowDefaultRetention {
   /**
   * Specifies the duration in milliseconds or as a string like '5 minutes'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#error_retention Workflow#error_retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#error_retention Workflow#error_retention}
   */
   readonly errorRetention?: { [key: string]: any };
   /**
   * Specifies the duration in milliseconds or as a string like '5 minutes'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#success_retention Workflow#success_retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#success_retention Workflow#success_retention}
   */
   readonly successRetention?: { [key: string]: any };
 }
@@ -174,103 +274,9 @@ export class WorkflowDefaultRetentionOutputReference extends cdktn.ComplexObject
     return this._successRetention;
   }
 }
-export interface WorkflowInstances {
-}
-
-export function workflowInstancesToTerraform(struct?: WorkflowInstances): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function workflowInstancesToHclTerraform(struct?: WorkflowInstances): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class WorkflowInstancesOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): WorkflowInstances | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: WorkflowInstances | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // complete - computed: true, optional: false, required: false
-  public get complete() {
-    return this.getNumberAttribute('complete');
-  }
-
-  // errored - computed: true, optional: false, required: false
-  public get errored() {
-    return this.getNumberAttribute('errored');
-  }
-
-  // paused - computed: true, optional: false, required: false
-  public get paused() {
-    return this.getNumberAttribute('paused');
-  }
-
-  // queued - computed: true, optional: false, required: false
-  public get queued() {
-    return this.getNumberAttribute('queued');
-  }
-
-  // rolling_back - computed: true, optional: false, required: false
-  public get rollingBack() {
-    return this.getNumberAttribute('rolling_back');
-  }
-
-  // running - computed: true, optional: false, required: false
-  public get running() {
-    return this.getNumberAttribute('running');
-  }
-
-  // terminated - computed: true, optional: false, required: false
-  public get terminated() {
-    return this.getNumberAttribute('terminated');
-  }
-
-  // waiting - computed: true, optional: false, required: false
-  public get waiting() {
-    return this.getNumberAttribute('waiting');
-  }
-
-  // waiting_for_pause - computed: true, optional: false, required: false
-  public get waitingForPause() {
-    return this.getNumberAttribute('waiting_for_pause');
-  }
-}
 export interface WorkflowLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#steps Workflow#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#steps Workflow#steps}
   */
   readonly steps?: number;
 }
@@ -364,7 +370,7 @@ export class WorkflowLimitsOutputReference extends cdktn.ComplexObject {
 }
 export interface WorkflowSchedules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#cron Workflow#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#cron Workflow#cron}
   */
   readonly cron: string;
 }
@@ -477,7 +483,7 @@ export class WorkflowSchedulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow cloudflare_workflow}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow cloudflare_workflow}
 */
 export class Workflow extends cdktn.TerraformResource {
 
@@ -493,7 +499,7 @@ export class Workflow extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Workflow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workflow to import
-  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workflow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -505,7 +511,7 @@ export class Workflow extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow cloudflare_workflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow cloudflare_workflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -516,7 +522,7 @@ export class Workflow extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_workflow',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -529,6 +535,7 @@ export class Workflow extends cdktn.TerraformResource {
     });
     this._accountId = config.accountId;
     this._className = config.className;
+    this._concurrency.internalValue = config.concurrency;
     this._defaultRetention.internalValue = config.defaultRetention;
     this._limits.internalValue = config.limits;
     this._schedules.internalValue = config.schedules;
@@ -566,6 +573,22 @@ export class Workflow extends cdktn.TerraformResource {
     return this._className;
   }
 
+  // concurrency - computed: false, optional: true, required: false
+  private _concurrency = new WorkflowConcurrencyOutputReference(this, "concurrency");
+  public get concurrency() {
+    return this._concurrency;
+  }
+  public putConcurrency(value: WorkflowConcurrency) {
+    this._concurrency.internalValue = value;
+  }
+  public resetConcurrency() {
+    this._concurrency.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get concurrencyInput() {
+    return this._concurrency.internalValue;
+  }
+
   // created_on - computed: true, optional: false, required: false
   public get createdOn() {
     return this.getStringAttribute('created_on');
@@ -593,7 +616,7 @@ export class Workflow extends cdktn.TerraformResource {
   }
 
   // instances - computed: true, optional: false, required: false
-  private _instances = new WorkflowInstancesOutputReference(this, "instances");
+  private _instances = new cdktn.NumberMap(this, "instances");
   public get instances() {
     return this._instances;
   }
@@ -694,6 +717,7 @@ export class Workflow extends cdktn.TerraformResource {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
       class_name: cdktn.stringToTerraform(this._className),
+      concurrency: workflowConcurrencyToTerraform(this._concurrency.internalValue),
       default_retention: workflowDefaultRetentionToTerraform(this._defaultRetention.internalValue),
       limits: workflowLimitsToTerraform(this._limits.internalValue),
       schedules: cdktn.listMapper(workflowSchedulesToTerraform, false)(this._schedules.internalValue),
@@ -715,6 +739,12 @@ export class Workflow extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      concurrency: {
+        value: workflowConcurrencyToHclTerraform(this._concurrency.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WorkflowConcurrency",
       },
       default_retention: {
         value: workflowDefaultRetentionToHclTerraform(this._defaultRetention.internalValue),

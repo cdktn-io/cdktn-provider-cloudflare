@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,19 +17,19 @@ export interface PrecursorConfig extends cdktn.TerraformMetaArguments {
   * not match a more specific enforcement rule.
   * Available values: "off", "min-friction", "max-security".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#default_mode Precursor#default_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#default_mode Precursor#default_mode}
   */
   readonly defaultMode?: string;
   /**
   * The ordered list of enforcement rules for the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
   */
   readonly enforcementRules?: PrecursorEnforcementRules[] | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#zone_id Precursor#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#zone_id Precursor#zone_id}
   */
   readonly zoneId: string;
 }
@@ -37,19 +37,19 @@ export interface PrecursorEnforcementRules {
   /**
   * An informative description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#description Precursor#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#description Precursor#description}
   */
   readonly description?: string;
   /**
   * Whether the rule is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#enabled Precursor#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#enabled Precursor#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The filter expression that determines which requests the rule matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#expression Precursor#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#expression Precursor#expression}
   */
   readonly expression: string;
   /**
@@ -57,7 +57,7 @@ export interface PrecursorEnforcementRules {
   * rule. Unlike `default_mode`, this cannot be `off`.
   * Available values: "min-friction", "max-security".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#mode Precursor#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#mode Precursor#mode}
   */
   readonly mode: string;
 }
@@ -259,7 +259,7 @@ export class PrecursorEnforcementRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor cloudflare_precursor}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor cloudflare_precursor}
 */
 export class Precursor extends cdktn.TerraformResource {
 
@@ -275,7 +275,7 @@ export class Precursor extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Precursor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Precursor to import
-  * @param importFromId The id of the existing Precursor that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Precursor that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Precursor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -287,7 +287,7 @@ export class Precursor extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor cloudflare_precursor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor cloudflare_precursor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -298,7 +298,7 @@ export class Precursor extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_precursor',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
