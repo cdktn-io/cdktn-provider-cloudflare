@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareZeroTrustAccessPoliciesConfig extends cdktn.Terra
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies#account_id DataCloudflareZeroTrustAccessPolicies#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_policies#account_id DataCloudflareZeroTrustAccessPolicies#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies#max_items DataCloudflareZeroTrustAccessPolicies#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_policies#max_items DataCloudflareZeroTrustAccessPolicies#max_items}
   */
   readonly maxItems?: number;
 }
@@ -654,6 +654,11 @@ export class DataCloudflareZeroTrustAccessPoliciesResultExcludeDevicePostureOutp
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // account_id - computed: true, optional: false, required: false
+  public get accountId() {
+    return this.getStringAttribute('account_id');
   }
 
   // integration_uid - computed: true, optional: false, required: false
@@ -2329,6 +2334,11 @@ export class DataCloudflareZeroTrustAccessPoliciesResultIncludeDevicePostureOutp
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // account_id - computed: true, optional: false, required: false
+  public get accountId() {
+    return this.getStringAttribute('account_id');
   }
 
   // integration_uid - computed: true, optional: false, required: false
@@ -4070,6 +4080,11 @@ export class DataCloudflareZeroTrustAccessPoliciesResultRequireDevicePostureOutp
     }
   }
 
+  // account_id - computed: true, optional: false, required: false
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+
   // integration_uid - computed: true, optional: false, required: false
   public get integrationUid() {
     return this.getStringAttribute('integration_uid');
@@ -5364,6 +5379,11 @@ export class DataCloudflareZeroTrustAccessPoliciesResultOutputReference extends 
     }
   }
 
+  // account_id - computed: true, optional: false, required: false
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+
   // app_count - computed: true, optional: false, required: false
   public get appCount() {
     return this.getNumberAttribute('app_count');
@@ -5481,7 +5501,7 @@ export class DataCloudflareZeroTrustAccessPoliciesResultList extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies}
 */
 export class DataCloudflareZeroTrustAccessPolicies extends cdktn.TerraformDataSource {
 
@@ -5497,7 +5517,7 @@ export class DataCloudflareZeroTrustAccessPolicies extends cdktn.TerraformDataSo
   * Generates CDKTN code for importing a DataCloudflareZeroTrustAccessPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustAccessPolicies to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustAccessPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5509,7 +5529,7 @@ export class DataCloudflareZeroTrustAccessPolicies extends cdktn.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5520,7 +5540,7 @@ export class DataCloudflareZeroTrustAccessPolicies extends cdktn.TerraformDataSo
       terraformResourceType: 'cloudflare_zero_trust_access_policies',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

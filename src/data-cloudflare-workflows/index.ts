@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflows
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,115 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareWorkflowsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows#account_id DataCloudflareWorkflows#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflows#account_id DataCloudflareWorkflows#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows#max_items DataCloudflareWorkflows#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflows#max_items DataCloudflareWorkflows#max_items}
   */
   readonly maxItems?: number;
   /**
   * Allows filtering workflows` name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows#search DataCloudflareWorkflows#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflows#search DataCloudflareWorkflows#search}
   */
   readonly search?: string;
-}
-export interface DataCloudflareWorkflowsResultInstances {
-}
-
-export function dataCloudflareWorkflowsResultInstancesToTerraform(struct?: DataCloudflareWorkflowsResultInstances): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareWorkflowsResultInstancesToHclTerraform(struct?: DataCloudflareWorkflowsResultInstances): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareWorkflowsResultInstancesOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): DataCloudflareWorkflowsResultInstances | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareWorkflowsResultInstances | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // complete - computed: true, optional: false, required: false
-  public get complete() {
-    return this.getNumberAttribute('complete');
-  }
-
-  // errored - computed: true, optional: false, required: false
-  public get errored() {
-    return this.getNumberAttribute('errored');
-  }
-
-  // paused - computed: true, optional: false, required: false
-  public get paused() {
-    return this.getNumberAttribute('paused');
-  }
-
-  // queued - computed: true, optional: false, required: false
-  public get queued() {
-    return this.getNumberAttribute('queued');
-  }
-
-  // rolling_back - computed: true, optional: false, required: false
-  public get rollingBack() {
-    return this.getNumberAttribute('rolling_back');
-  }
-
-  // running - computed: true, optional: false, required: false
-  public get running() {
-    return this.getNumberAttribute('running');
-  }
-
-  // terminated - computed: true, optional: false, required: false
-  public get terminated() {
-    return this.getNumberAttribute('terminated');
-  }
-
-  // waiting - computed: true, optional: false, required: false
-  public get waiting() {
-    return this.getNumberAttribute('waiting');
-  }
-
-  // waiting_for_pause - computed: true, optional: false, required: false
-  public get waitingForPause() {
-    return this.getNumberAttribute('waiting_for_pause');
-  }
 }
 export interface DataCloudflareWorkflowsResultSchedules {
 }
@@ -270,7 +176,7 @@ export class DataCloudflareWorkflowsResultOutputReference extends cdktn.ComplexO
   }
 
   // instances - computed: true, optional: false, required: false
-  private _instances = new DataCloudflareWorkflowsResultInstancesOutputReference(this, "instances");
+  private _instances = new cdktn.NumberMap(this, "instances");
   public get instances() {
     return this._instances;
   }
@@ -322,7 +228,7 @@ export class DataCloudflareWorkflowsResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows cloudflare_workflows}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflows cloudflare_workflows}
 */
 export class DataCloudflareWorkflows extends cdktn.TerraformDataSource {
 
@@ -338,7 +244,7 @@ export class DataCloudflareWorkflows extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareWorkflows resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWorkflows to import
-  * @param importFromId The id of the existing DataCloudflareWorkflows that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWorkflows that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflows#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWorkflows to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -350,7 +256,7 @@ export class DataCloudflareWorkflows extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows cloudflare_workflows} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflows cloudflare_workflows} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -361,7 +267,7 @@ export class DataCloudflareWorkflows extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_workflows',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
