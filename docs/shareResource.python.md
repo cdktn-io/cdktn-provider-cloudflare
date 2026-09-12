@@ -4,7 +4,7 @@
 
 ### ShareResource <a name="ShareResource" id="@cdktn/provider-cloudflare.shareResource.ShareResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource cloudflare_share_resource}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource cloudflare_share_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer"></a>
 
@@ -45,7 +45,7 @@ shareResource.ShareResource(
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.meta">meta</a></code> | <code>str</code> | Resource Metadata. |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceAccountId">resource_account_id</a></code> | <code>str</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceId">resource_id</a></code> | <code>str</code> | Share Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant". |
+| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant". |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.shareId">share_id</a></code> | <code>str</code> | Share identifier tag. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#account_id ShareResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#account_id ShareResource#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Resource Metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#meta ShareResource#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#meta ShareResource#meta}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Share Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#resource_id ShareResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#resource_id ShareResource#resource_id}
 
 ---
 
@@ -154,9 +154,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant".
+Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#resource_type ShareResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#resource_type ShareResource#resource_type}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#share_id ShareResource#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#share_id ShareResource#share_id}
 
 ---
 
@@ -663,7 +663,7 @@ The construct id used in the generated config for the ShareResource to import.
 
 The id of the existing ShareResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1084,7 +1084,7 @@ shareResource.ShareResourceConfig(
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.meta">meta</a></code> | <code>str</code> | Resource Metadata. |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceAccountId">resource_account_id</a></code> | <code>str</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceId">resource_id</a></code> | <code>str</code> | Share Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant". |
+| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant". |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.shareId">share_id</a></code> | <code>str</code> | Share identifier tag. |
 
 ---
@@ -1169,7 +1169,7 @@ account_id: str
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#account_id ShareResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#account_id ShareResource#account_id}
 
 ---
 
@@ -1183,7 +1183,7 @@ meta: str
 
 Resource Metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#meta ShareResource#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#meta ShareResource#meta}
 
 ---
 
@@ -1197,7 +1197,7 @@ resource_account_id: str
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
 
 ---
 
@@ -1211,7 +1211,7 @@ resource_id: str
 
 Share Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#resource_id ShareResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#resource_id ShareResource#resource_id}
 
 ---
 
@@ -1223,9 +1223,9 @@ resource_type: str
 
 - *Type:* str
 
-Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant".
+Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#resource_type ShareResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#resource_type ShareResource#resource_type}
 
 ---
 
@@ -1239,7 +1239,7 @@ share_id: str
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/share_resource#share_id ShareResource#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_resource#share_id ShareResource#share_id}
 
 ---
 

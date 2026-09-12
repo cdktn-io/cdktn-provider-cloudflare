@@ -4,7 +4,7 @@
 
 ### RegistrarDomain <a name="RegistrarDomain" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain cloudflare_registrar_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain cloudflare_registrar_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer"></a>
 
@@ -39,7 +39,7 @@ RegistrarDomain.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests. |
+| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | Provides a fully qualified domain name (FQDN), including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration. Cloudflare permits only one registration per domain, making the domain name a natural idempotency key for registration requests. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.autoRenew">autoRenew</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Auto-renew controls whether subscription is automatically renewed upon domain expiration. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.locked">locked</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Shows whether a registrar lock is in place for a domain. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.privacy">privacy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Privacy option controls redacting WHOIS information. |
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
 
 ---
 
@@ -120,9 +120,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests.
+Provides a fully qualified domain name (FQDN), including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration. Cloudflare permits only one registration per domain, making the domain name a natural idempotency key for registration requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Auto-renew controls whether subscription is automatically renewed upon domain expiration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Shows whether a registrar lock is in place for a domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Privacy option controls redacting WHOIS information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the RegistrarDomain to import.
 
 The id of the existing RegistrarDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -962,7 +962,7 @@ RegistrarDomainConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests. |
+| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Provides a fully qualified domain name (FQDN), including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration. Cloudflare permits only one registration per domain, making the domain name a natural idempotency key for registration requests. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.autoRenew">autoRenew</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Auto-renew controls whether subscription is automatically renewed upon domain expiration. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.locked">locked</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Shows whether a registrar lock is in place for a domain. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.privacy">privacy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Privacy option controls redacting WHOIS information. |
@@ -1049,7 +1049,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
 
 ---
 
@@ -1061,9 +1061,9 @@ public java.lang.String getDomainName();
 
 - *Type:* java.lang.String
 
-Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests.
+Provides a fully qualified domain name (FQDN), including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration. Cloudflare permits only one registration per domain, making the domain name a natural idempotency key for registration requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
 
 ---
 
@@ -1077,7 +1077,7 @@ public java.lang.Boolean|IResolvable getAutoRenew();
 
 Auto-renew controls whether subscription is automatically renewed upon domain expiration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
 
 ---
 
@@ -1091,7 +1091,7 @@ public java.lang.Boolean|IResolvable getLocked();
 
 Shows whether a registrar lock is in place for a domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
 
 ---
 
@@ -1105,7 +1105,7 @@ public java.lang.Boolean|IResolvable getPrivacy();
 
 Privacy option controls redacting WHOIS information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
 
 ---
 

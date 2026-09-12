@@ -4,7 +4,7 @@
 
 ### Workflow <a name="Workflow" id="@cdktn/provider-cloudflare.workflow.Workflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow cloudflare_workflow}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow cloudflare_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.Workflow.Initializer"></a>
 
@@ -25,6 +25,7 @@ workflow.Workflow(
   class_name: str,
   script_name: str,
   workflow_name: str,
+  concurrency: WorkflowConcurrency = None,
   default_retention: WorkflowDefaultRetention = None,
   limits: WorkflowLimits = None,
   schedules: IResolvable | typing.List[WorkflowSchedules] = None
@@ -42,13 +43,14 @@ workflow.Workflow(
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#account_id Workflow#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.className">class_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#class_name Workflow#class_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#script_name Workflow#script_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.workflowName">workflow_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#account_id Workflow#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.className">class_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#class_name Workflow#class_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#script_name Workflow#script_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.workflowName">workflow_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.concurrency">concurrency</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#concurrency Workflow#concurrency}. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.defaultRetention">default_retention</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a></code> | Default retention applied to instances of this version when they do not set their own retention. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#limits Workflow#limits}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.schedules">schedules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#schedules Workflow#schedules}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#limits Workflow#limits}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.schedules">schedules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#schedules Workflow#schedules}. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#account_id Workflow#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#account_id Workflow#account_id}.
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#class_name Workflow#class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#class_name Workflow#class_name}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#script_name Workflow#script_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#script_name Workflow#script_name}.
 
 ---
 
@@ -140,7 +142,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+
+---
+
+##### `concurrency`<sup>Optional</sup> <a name="concurrency" id="@cdktn/provider-cloudflare.workflow.Workflow.Initializer.parameter.concurrency"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#concurrency Workflow#concurrency}.
 
 ---
 
@@ -150,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Default retention applied to instances of this version when they do not set their own retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#default_retention Workflow#default_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#default_retention Workflow#default_retention}
 
 ---
 
@@ -158,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#limits Workflow#limits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#limits Workflow#limits}.
 
 ---
 
@@ -166,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#schedules Workflow#schedules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#schedules Workflow#schedules}.
 
 ---
 
@@ -198,9 +208,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putConcurrency">put_concurrency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putDefaultRetention">put_default_retention</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putLimits">put_limits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putSchedules">put_schedules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetConcurrency">reset_concurrency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetDefaultRetention">reset_default_retention</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetLimits">reset_limits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetSchedules">reset_schedules</a></code> | *No description.* |
@@ -555,6 +567,26 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_concurrency` <a name="put_concurrency" id="@cdktn/provider-cloudflare.workflow.Workflow.putConcurrency"></a>
+
+```python
+def put_concurrency(
+  limit: typing.Union[int, float] = None
+) -> None
+```
+
+###### `limit`<sup>Optional</sup> <a name="limit" id="@cdktn/provider-cloudflare.workflow.Workflow.putConcurrency.parameter.limit"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of instances of this workflow that can run concurrently.
+
+Additional instances are queued and started as running instances complete. Must not exceed the account concurrency limit.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#limit Workflow#limit}
+
+---
+
 ##### `put_default_retention` <a name="put_default_retention" id="@cdktn/provider-cloudflare.workflow.Workflow.putDefaultRetention"></a>
 
 ```python
@@ -570,7 +602,7 @@ def put_default_retention(
 
 Specifies the duration in milliseconds or as a string like '5 minutes'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#error_retention Workflow#error_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#error_retention Workflow#error_retention}
 
 ---
 
@@ -580,7 +612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies the duration in milliseconds or as a string like '5 minutes'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#success_retention Workflow#success_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#success_retention Workflow#success_retention}
 
 ---
 
@@ -596,7 +628,7 @@ def put_limits(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#steps Workflow#steps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#steps Workflow#steps}.
 
 ---
 
@@ -613,6 +645,12 @@ def put_schedules(
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>]
 
 ---
+
+##### `reset_concurrency` <a name="reset_concurrency" id="@cdktn/provider-cloudflare.workflow.Workflow.resetConcurrency"></a>
+
+```python
+def reset_concurrency() -> None
+```
 
 ##### `reset_default_retention` <a name="reset_default_retention" id="@cdktn/provider-cloudflare.workflow.Workflow.resetDefaultRetention"></a>
 
@@ -746,7 +784,7 @@ The construct id used in the generated config for the Workflow to import.
 
 The id of the existing Workflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,10 +814,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.concurrency">concurrency</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference">WorkflowConcurrencyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.defaultRetention">default_retention</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference">WorkflowDefaultRetentionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.instances">instances</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference">WorkflowInstancesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.instances">instances</a></code> | <code>cdktn.NumberMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.isDeleted">is_deleted</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference">WorkflowLimitsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
@@ -790,6 +829,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.versionId">version_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.classNameInput">class_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.concurrencyInput">concurrency_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.defaultRetentionInput">default_retention_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.limitsInput">limits_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.schedulesInput">schedules_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>]</code> | *No description.* |
@@ -944,6 +984,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `concurrency`<sup>Required</sup> <a name="concurrency" id="@cdktn/provider-cloudflare.workflow.Workflow.property.concurrency"></a>
+
+```python
+concurrency: WorkflowConcurrencyOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference">WorkflowConcurrencyOutputReference</a>
+
+---
+
 ##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktn/provider-cloudflare.workflow.Workflow.property.createdOn"></a>
 
 ```python
@@ -977,10 +1027,10 @@ id: str
 ##### `instances`<sup>Required</sup> <a name="instances" id="@cdktn/provider-cloudflare.workflow.Workflow.property.instances"></a>
 
 ```python
-instances: WorkflowInstancesOutputReference
+instances: NumberMap
 ```
 
-- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference">WorkflowInstancesOutputReference</a>
+- *Type:* cdktn.NumberMap
 
 ---
 
@@ -1081,6 +1131,16 @@ class_name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `concurrency_input`<sup>Optional</sup> <a name="concurrency_input" id="@cdktn/provider-cloudflare.workflow.Workflow.property.concurrencyInput"></a>
+
+```python
+concurrency_input: IResolvable | WorkflowConcurrency
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a>
 
 ---
 
@@ -1194,6 +1254,42 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### WorkflowConcurrency <a name="WorkflowConcurrency" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrency"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrency.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import workflow
+
+workflow.WorkflowConcurrency(
+  limit: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of instances of this workflow that can run concurrently. |
+
+---
+
+##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrency.property.limit"></a>
+
+```python
+limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of instances of this workflow that can run concurrently.
+
+Additional instances are queued and started as running instances complete. Must not exceed the account concurrency limit.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#limit Workflow#limit}
+
+---
+
 ### WorkflowConfig <a name="WorkflowConfig" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.Initializer"></a>
@@ -1213,6 +1309,7 @@ workflow.WorkflowConfig(
   class_name: str,
   script_name: str,
   workflow_name: str,
+  concurrency: WorkflowConcurrency = None,
   default_retention: WorkflowDefaultRetention = None,
   limits: WorkflowLimits = None,
   schedules: IResolvable | typing.List[WorkflowSchedules] = None
@@ -1230,13 +1327,14 @@ workflow.WorkflowConfig(
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#account_id Workflow#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">class_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#class_name Workflow#class_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">script_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#script_name Workflow#script_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">workflow_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#account_id Workflow#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">class_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#class_name Workflow#class_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">script_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#script_name Workflow#script_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">workflow_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.concurrency">concurrency</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#concurrency Workflow#concurrency}. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.defaultRetention">default_retention</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a></code> | Default retention applied to instances of this version when they do not set their own retention. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#limits Workflow#limits}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.schedules">schedules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#schedules Workflow#schedules}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#limits Workflow#limits}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.schedules">schedules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#schedules Workflow#schedules}. |
 
 ---
 
@@ -1318,7 +1416,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#account_id Workflow#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#account_id Workflow#account_id}.
 
 ---
 
@@ -1330,7 +1428,7 @@ class_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#class_name Workflow#class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#class_name Workflow#class_name}.
 
 ---
 
@@ -1342,7 +1440,7 @@ script_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#script_name Workflow#script_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#script_name Workflow#script_name}.
 
 ---
 
@@ -1354,7 +1452,19 @@ workflow_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+
+---
+
+##### `concurrency`<sup>Optional</sup> <a name="concurrency" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.concurrency"></a>
+
+```python
+concurrency: WorkflowConcurrency
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#concurrency Workflow#concurrency}.
 
 ---
 
@@ -1368,7 +1478,7 @@ default_retention: WorkflowDefaultRetention
 
 Default retention applied to instances of this version when they do not set their own retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#default_retention Workflow#default_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#default_retention Workflow#default_retention}
 
 ---
 
@@ -1380,7 +1490,7 @@ limits: WorkflowLimits
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#limits Workflow#limits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#limits Workflow#limits}.
 
 ---
 
@@ -1392,7 +1502,7 @@ schedules: IResolvable | typing.List[WorkflowSchedules]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#schedules Workflow#schedules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#schedules Workflow#schedules}.
 
 ---
 
@@ -1428,7 +1538,7 @@ error_retention: typing.Mapping[typing.Any]
 
 Specifies the duration in milliseconds or as a string like '5 minutes'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#error_retention Workflow#error_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#error_retention Workflow#error_retention}
 
 ---
 
@@ -1442,20 +1552,9 @@ success_retention: typing.Mapping[typing.Any]
 
 Specifies the duration in milliseconds or as a string like '5 minutes'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#success_retention Workflow#success_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#success_retention Workflow#success_retention}
 
 ---
-
-### WorkflowInstances <a name="WorkflowInstances" id="@cdktn/provider-cloudflare.workflow.WorkflowInstances"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowInstances.Initializer"></a>
-
-```python
-from cdktn_provider_cloudflare import workflow
-
-workflow.WorkflowInstances()
-```
-
 
 ### WorkflowLimits <a name="WorkflowLimits" id="@cdktn/provider-cloudflare.workflow.WorkflowLimits"></a>
 
@@ -1473,7 +1572,7 @@ workflow.WorkflowLimits(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">steps</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#steps Workflow#steps}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">steps</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#steps Workflow#steps}. |
 
 ---
 
@@ -1485,7 +1584,7 @@ steps: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#steps Workflow#steps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#steps Workflow#steps}.
 
 ---
 
@@ -1505,7 +1604,7 @@ workflow.WorkflowSchedules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules.property.cron">cron</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#cron Workflow#cron}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules.property.cron">cron</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#cron Workflow#cron}. |
 
 ---
 
@@ -1517,11 +1616,314 @@ cron: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#cron Workflow#cron}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow#cron Workflow#cron}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### WorkflowConcurrencyOutputReference <a name="WorkflowConcurrencyOutputReference" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import workflow
+
+workflow.WorkflowConcurrencyOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.resetLimit">reset_limit</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_limit` <a name="reset_limit" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.resetLimit"></a>
+
+```python
+def reset_limit() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.limitInput">limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `limit_input`<sup>Optional</sup> <a name="limit_input" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.limitInput"></a>
+
+```python
+limit_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `limit`<sup>Required</sup> <a name="limit" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.limit"></a>
+
+```python
+limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | WorkflowConcurrency
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a>
+
+---
+
 
 ### WorkflowDefaultRetentionOutputReference <a name="WorkflowDefaultRetentionOutputReference" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference"></a>
 
@@ -1851,379 +2253,6 @@ internal_value: IResolvable | WorkflowDefaultRetention
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a>
-
----
-
-
-### WorkflowInstancesOutputReference <a name="WorkflowInstancesOutputReference" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.Initializer"></a>
-
-```python
-from cdktn_provider_cloudflare import workflow
-
-workflow.WorkflowInstancesOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktn.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.complete">complete</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.errored">errored</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.paused">paused</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.queued">queued</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.rollingBack">rolling_back</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.running">running</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.terminated">terminated</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.waiting">waiting</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.waitingForPause">waiting_for_pause</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstances">WorkflowInstances</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `complete`<sup>Required</sup> <a name="complete" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.complete"></a>
-
-```python
-complete: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `errored`<sup>Required</sup> <a name="errored" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.errored"></a>
-
-```python
-errored: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `paused`<sup>Required</sup> <a name="paused" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.paused"></a>
-
-```python
-paused: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `queued`<sup>Required</sup> <a name="queued" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.queued"></a>
-
-```python
-queued: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `rolling_back`<sup>Required</sup> <a name="rolling_back" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.rollingBack"></a>
-
-```python
-rolling_back: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `running`<sup>Required</sup> <a name="running" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.running"></a>
-
-```python
-running: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `terminated`<sup>Required</sup> <a name="terminated" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.terminated"></a>
-
-```python
-terminated: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `waiting`<sup>Required</sup> <a name="waiting" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.waiting"></a>
-
-```python
-waiting: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `waiting_for_pause`<sup>Required</sup> <a name="waiting_for_pause" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.waitingForPause"></a>
-
-```python
-waiting_for_pause: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.property.internalValue"></a>
-
-```python
-internal_value: WorkflowInstances
-```
-
-- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstances">WorkflowInstances</a>
 
 ---
 

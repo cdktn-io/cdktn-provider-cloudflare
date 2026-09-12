@@ -4,7 +4,7 @@
 
 ### CtAlerting <a name="CtAlerting" id="@cdktn/provider-cloudflare.ctAlerting.CtAlerting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ct_alerting cloudflare_ct_alerting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ct_alerting cloudflare_ct_alerting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ctAlerting.CtAlerting.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the CtAlerting to import.
 
 The id of the existing CtAlerting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ct_alerting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ct_alerting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether CT alerting is enabled for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ct_alerting#enabled CtAlerting#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ct_alerting#enabled CtAlerting#enabled}
 
 ---
 
@@ -900,7 +900,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ct_alerting#zone_id CtAlerting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ct_alerting#zone_id CtAlerting#zone_id}
 
 ---
 
@@ -916,7 +916,7 @@ Email addresses that receive CT alert notifications for the zone.
 
 A maximum of 100 addresses may be configured. Each address must be a valid RFC 5322 email address and must not contain a comma.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ct_alerting#emails CtAlerting#emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ct_alerting#emails CtAlerting#emails}
 
 ---
 

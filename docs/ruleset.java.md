@@ -4,7 +4,7 @@
 
 ### Ruleset <a name="Ruleset" id="@cdktn/provider-cloudflare.ruleset.Ruleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset cloudflare_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset cloudflare_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.Ruleset.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The kind of the ruleset. Available values: "managed", "custom", "root", "zone".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#kind Ruleset#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#kind Ruleset#kind}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The human-readable name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -138,7 +138,7 @@ The phase of the ruleset.
 
 Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#phase Ruleset#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#phase Ruleset#phase}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#account_id Ruleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#account_id Ruleset#account_id}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An informative description of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The list of rules in the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
 
 ---
 
@@ -668,7 +668,7 @@ The construct id used in the generated config for the Ruleset to import.
 
 The id of the existing Ruleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1176,7 +1176,7 @@ public java.lang.String getKind();
 
 The kind of the ruleset. Available values: "managed", "custom", "root", "zone".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#kind Ruleset#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#kind Ruleset#kind}
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getName();
 
 The human-readable name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -1206,7 +1206,7 @@ The phase of the ruleset.
 
 Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#phase Ruleset#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#phase Ruleset#phase}
 
 ---
 
@@ -1220,7 +1220,7 @@ public java.lang.String getAccountId();
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#account_id Ruleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#account_id Ruleset#account_id}
 
 ---
 
@@ -1234,7 +1234,7 @@ public java.lang.String getDescription();
 
 An informative description of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -1248,7 +1248,7 @@ public IResolvable|java.util.List<RulesetRules> getRules();
 
 The list of rules in the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -1262,7 +1262,7 @@ public java.lang.String getZoneId();
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
 
 ---
 
@@ -1314,7 +1314,7 @@ The action to perform when the rule matches.
 
 Available values: "block", "challenge", "compress_response", "ddos_dynamic", "execute", "force_connection_close", "js_challenge", "log", "log_custom_field", "managed_challenge", "redirect", "rewrite", "route", "score", "serve_error", "set_cache_control", "set_cache_settings", "set_cache_tags", "set_config", "skip".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.String getExpression();
 
 The expression defining which traffic will match the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -1342,7 +1342,7 @@ public RulesetRulesActionParameters getActionParameters();
 
 The parameters configuring the rule's action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
 
 ---
 
@@ -1356,7 +1356,7 @@ public java.lang.String getDescription();
 
 An informative description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -1370,7 +1370,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the rule should be executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -1384,7 +1384,7 @@ public RulesetRulesExposedCredentialCheck getExposedCredentialCheck();
 
 Configuration for exposed credential checking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
 
 ---
 
@@ -1398,7 +1398,7 @@ public RulesetRulesLogging getLogging();
 
 An object configuring the rule's logging behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#logging Ruleset#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#logging Ruleset#logging}
 
 ---
 
@@ -1412,7 +1412,7 @@ public RulesetRulesRatelimit getRatelimit();
 
 An object configuring the rule's rate limit behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
 
 ---
 
@@ -1426,7 +1426,7 @@ public java.lang.String getRef();
 
 The reference of the rule (the rule's ID by default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#ref Ruleset#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#ref Ruleset#ref}
 
 ---
 
@@ -1480,6 +1480,7 @@ RulesetRulesActionParameters.builder()
 //  .origin(RulesetRulesActionParametersOrigin)
 //  .originCacheControl(java.lang.Boolean|IResolvable)
 //  .originErrorPagePassthru(java.lang.Boolean|IResolvable)
+//  .originRangeRequests(RulesetRulesActionParametersOriginRangeRequests)
 //  .overrides(RulesetRulesActionParametersOverrides)
 //  .phases(java.util.List<java.lang.String>)
 //  .polish(java.lang.String)
@@ -1566,6 +1567,7 @@ RulesetRulesActionParameters.builder()
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | An origin to route to. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originCacheControl">originCacheControl</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Cloudflare will aim to strictly adhere to RFC 7234. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originErrorPagePassthru">originErrorPagePassthru</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to generate Cloudflare error pages for issues from the origin server. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originRangeRequests">originRangeRequests</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests">RulesetRulesActionParametersOriginRangeRequests</a></code> | Controls whether Cloudflare fetches a large asset from the origin as a series of range requests instead of one whole-body request. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.overrides">overrides</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | A set of overrides to apply to the target ruleset. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.phases">phases</a></code> | <code>java.util.List<java.lang.String></code> | A list of phases to skip the execution of. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.polish">polish</a></code> | <code>java.lang.String</code> | The Polish level to configure. Available values: "off", "lossless", "lossy", "webp". |
@@ -1616,7 +1618,7 @@ public java.util.List<java.lang.Number> getAdditionalCacheablePorts();
 
 A list of additional ports that caching should be enabled on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
 
 ---
 
@@ -1630,7 +1632,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersAlgorithms> getAlg
 
 Custom order for compression algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
 
 ---
 
@@ -1644,7 +1646,7 @@ public java.lang.String getAssetName();
 
 The name of a custom asset to serve as the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#asset_name Ruleset#asset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#asset_name Ruleset#asset_name}
 
 ---
 
@@ -1658,7 +1660,7 @@ public java.lang.Boolean|IResolvable getAutomaticHttpsRewrites();
 
 Whether to enable Automatic HTTPS Rewrites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
 
 ---
 
@@ -1672,7 +1674,7 @@ public RulesetRulesActionParametersAutominify getAutominify();
 
 Which file extensions to minify automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#autominify Ruleset#autominify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#autominify Ruleset#autominify}
 
 ---
 
@@ -1686,7 +1688,7 @@ public java.lang.Boolean|IResolvable getBic();
 
 Whether to enable Browser Integrity Check (BIC).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#bic Ruleset#bic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#bic Ruleset#bic}
 
 ---
 
@@ -1702,7 +1704,7 @@ How long client browsers should cache the response.
 
 Cloudflare cache purge will not purge content cached on client browsers, so high browser TTLs may lead to stale content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
 
 ---
 
@@ -1718,7 +1720,7 @@ Whether the request's response from the origin is eligible for caching.
 
 Caching itself will still depend on the cache control header and your other caching configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cache Ruleset#cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cache Ruleset#cache}
 
 ---
 
@@ -1732,7 +1734,7 @@ public RulesetRulesActionParametersCacheKey getCacheKey();
 
 Which components of the request are included in or excluded from the cache key Cloudflare uses to store the response in cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
 
 ---
 
@@ -1746,7 +1748,7 @@ public RulesetRulesActionParametersCacheReserve getCacheReserve();
 
 Settings to determine whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
 
 ---
 
@@ -1760,7 +1762,7 @@ public java.lang.String getContent();
 
 The response content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -1774,7 +1776,7 @@ public java.lang.Boolean|IResolvable getContentConverter();
 
 Whether to enable content conversion (e.g., HTML to Markdown).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#content_converter Ruleset#content_converter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#content_converter Ruleset#content_converter}
 
 ---
 
@@ -1788,7 +1790,7 @@ public java.lang.String getContentType();
 
 The content type header to set with the error response. Available values: "application/json", "text/html", "text/plain", "text/xml".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -1802,7 +1804,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersCookieFields> getC
 
 The cookie fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
 
 ---
 
@@ -1816,7 +1818,7 @@ public java.lang.Boolean|IResolvable getDisableApps();
 
 Whether to disable Cloudflare Apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
 
 ---
 
@@ -1830,7 +1832,7 @@ public java.lang.Boolean|IResolvable getDisableRum();
 
 Whether to disable Real User Monitoring (RUM).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
 
 ---
 
@@ -1844,7 +1846,7 @@ public java.lang.Boolean|IResolvable getDisableZaraz();
 
 Whether to disable Zaraz.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
 
 ---
 
@@ -1858,7 +1860,7 @@ public RulesetRulesActionParametersEdgeTtl getEdgeTtl();
 
 How long the Cloudflare edge network should cache the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
 
 ---
 
@@ -1872,7 +1874,7 @@ public java.lang.Boolean|IResolvable getEmailObfuscation();
 
 Whether to enable Email Obfuscation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
 
 ---
 
@@ -1886,7 +1888,7 @@ public java.lang.String getExpression();
 
 An expression to generate cache tags for set_cache_tags action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -1900,7 +1902,7 @@ public java.lang.Boolean|IResolvable getFonts();
 
 Whether to enable Cloudflare Fonts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#fonts Ruleset#fonts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#fonts Ruleset#fonts}
 
 ---
 
@@ -1914,7 +1916,7 @@ public RulesetRulesActionParametersFromListStruct getFromList();
 
 A redirect based on a bulk list lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#from_list Ruleset#from_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#from_list Ruleset#from_list}
 
 ---
 
@@ -1928,7 +1930,7 @@ public RulesetRulesActionParametersFromValue getFromValue();
 
 A redirect based on the request properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#from_value Ruleset#from_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#from_value Ruleset#from_value}
 
 ---
 
@@ -1942,7 +1944,7 @@ public IResolvable|java.util.Map<java.lang.String, RulesetRulesActionParametersH
 
 A map of headers to rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#headers Ruleset#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#headers Ruleset#headers}
 
 ---
 
@@ -1956,7 +1958,7 @@ public java.lang.String getHostHeader();
 
 A value to rewrite the HTTP host header to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#host_header Ruleset#host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#host_header Ruleset#host_header}
 
 ---
 
@@ -1970,7 +1972,7 @@ public java.lang.Boolean|IResolvable getHotlinkProtection();
 
 Whether to enable Hotlink Protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
 
 ---
 
@@ -1984,7 +1986,7 @@ public java.lang.String getId();
 
 The ID of the ruleset to execute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2001,7 +2003,7 @@ public RulesetRulesActionParametersImmutable getImmutable();
 
 Set the immutable cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#immutable Ruleset#immutable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#immutable Ruleset#immutable}
 
 ---
 
@@ -2015,7 +2017,7 @@ public java.lang.Number getIncrement();
 
 A delta to change the score by, which can be either positive or negative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#increment Ruleset#increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#increment Ruleset#increment}
 
 ---
 
@@ -2029,7 +2031,7 @@ public RulesetRulesActionParametersMatchedData getMatchedData();
 
 The configuration to use for matched data logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
 
 ---
 
@@ -2043,7 +2045,7 @@ public RulesetRulesActionParametersMaxAge getMaxAge();
 
 Set the max-age cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#max_age Ruleset#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#max_age Ruleset#max_age}
 
 ---
 
@@ -2057,7 +2059,7 @@ public java.lang.Boolean|IResolvable getMirage();
 
 Whether to enable Mirage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#mirage Ruleset#mirage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#mirage Ruleset#mirage}
 
 ---
 
@@ -2071,7 +2073,7 @@ public RulesetRulesActionParametersMustRevalidate getMustRevalidate();
 
 Set the must-revalidate cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#must_revalidate Ruleset#must_revalidate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#must_revalidate Ruleset#must_revalidate}
 
 ---
 
@@ -2085,7 +2087,7 @@ public RulesetRulesActionParametersMustUnderstand getMustUnderstand();
 
 Set the must-understand cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#must_understand Ruleset#must_understand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#must_understand Ruleset#must_understand}
 
 ---
 
@@ -2099,7 +2101,7 @@ public RulesetRulesActionParametersNoCache getNoCache();
 
 Set the no-cache cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#no_cache Ruleset#no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#no_cache Ruleset#no_cache}
 
 ---
 
@@ -2113,7 +2115,7 @@ public RulesetRulesActionParametersNoStore getNoStore();
 
 Set the no-store cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#no_store Ruleset#no_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#no_store Ruleset#no_store}
 
 ---
 
@@ -2127,7 +2129,7 @@ public RulesetRulesActionParametersNoTransform getNoTransform();
 
 Set the no-transform cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#no_transform Ruleset#no_transform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#no_transform Ruleset#no_transform}
 
 ---
 
@@ -2141,7 +2143,7 @@ public java.lang.String getOperation();
 
 The operation to perform for set_cache_tags action. Available values: "set", "add", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -2155,7 +2157,7 @@ public java.lang.Boolean|IResolvable getOpportunisticEncryption();
 
 Whether to enable Opportunistic Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
 
 ---
 
@@ -2169,7 +2171,7 @@ public RulesetRulesActionParametersOrigin getOrigin();
 
 An origin to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#origin Ruleset#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#origin Ruleset#origin}
 
 ---
 
@@ -2183,7 +2185,7 @@ public java.lang.Boolean|IResolvable getOriginCacheControl();
 
 Whether Cloudflare will aim to strictly adhere to RFC 7234.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
 
 ---
 
@@ -2197,7 +2199,21 @@ public java.lang.Boolean|IResolvable getOriginErrorPagePassthru();
 
 Whether to generate Cloudflare error pages for issues from the origin server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
+
+---
+
+##### `originRangeRequests`<sup>Optional</sup> <a name="originRangeRequests" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originRangeRequests"></a>
+
+```java
+public RulesetRulesActionParametersOriginRangeRequests getOriginRangeRequests();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests">RulesetRulesActionParametersOriginRangeRequests</a>
+
+Controls whether Cloudflare fetches a large asset from the origin as a series of range requests instead of one whole-body request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#origin_range_requests Ruleset#origin_range_requests}
 
 ---
 
@@ -2211,7 +2227,7 @@ public RulesetRulesActionParametersOverrides getOverrides();
 
 A set of overrides to apply to the target ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#overrides Ruleset#overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#overrides Ruleset#overrides}
 
 ---
 
@@ -2228,7 +2244,7 @@ A list of phases to skip the execution of.
 This option is incompatible with the rulesets option.
 Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#phases Ruleset#phases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#phases Ruleset#phases}
 
 ---
 
@@ -2242,7 +2258,7 @@ public java.lang.String getPolish();
 
 The Polish level to configure. Available values: "off", "lossless", "lossy", "webp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#polish Ruleset#polish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#polish Ruleset#polish}
 
 ---
 
@@ -2256,7 +2272,7 @@ public RulesetRulesActionParametersPrivate getPrivate();
 
 Set the private cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#private Ruleset#private}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#private Ruleset#private}
 
 ---
 
@@ -2270,7 +2286,7 @@ public java.util.List<java.lang.String> getProducts();
 
 A list of legacy security products to skip the execution of. Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#products Ruleset#products}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#products Ruleset#products}
 
 ---
 
@@ -2284,7 +2300,7 @@ public RulesetRulesActionParametersProxyRevalidate getProxyRevalidate();
 
 Set the proxy-revalidate cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#proxy_revalidate Ruleset#proxy_revalidate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#proxy_revalidate Ruleset#proxy_revalidate}
 
 ---
 
@@ -2298,7 +2314,7 @@ public RulesetRulesActionParametersPublic getPublic();
 
 Set the public cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#public Ruleset#public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#public Ruleset#public}
 
 ---
 
@@ -2312,7 +2328,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersRawResponseFields>
 
 The raw response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
 
 ---
 
@@ -2328,7 +2344,7 @@ A timeout value between two successive read operations to use for your origin se
 
 Historically, the timeout value between two read options from Cloudflare to an origin server is 100 seconds. If you are attempting to reduce HTTP 524 errors because of timeouts from an origin server, try increasing this timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
 
 ---
 
@@ -2342,7 +2358,7 @@ public java.lang.Boolean|IResolvable getRedirectsForAiTraining();
 
 Whether to redirect verified AI training crawlers to canonical URLs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#redirects_for_ai_training Ruleset#redirects_for_ai_training}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#redirects_for_ai_training Ruleset#redirects_for_ai_training}
 
 ---
 
@@ -2356,7 +2372,7 @@ public java.lang.String getRequestBodyBuffering();
 
 The request body buffering mode to configure. Available values: "none", "standard", "full".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
 
 ---
 
@@ -2370,7 +2386,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersRequestFields> get
 
 The raw request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
 
 ---
 
@@ -2386,7 +2402,7 @@ Whether Cloudflare should respect strong ETag (entity tag) headers.
 
 If false, Cloudflare converts strong ETag headers to weak ETag headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
 
 ---
 
@@ -2400,7 +2416,7 @@ public RulesetRulesActionParametersResponse getResponse();
 
 The response to show when the block is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#response Ruleset#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#response Ruleset#response}
 
 ---
 
@@ -2414,7 +2430,7 @@ public java.lang.String getResponseBodyBuffering();
 
 The response body buffering mode to configure. Available values: "none", "standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
 
 ---
 
@@ -2428,7 +2444,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersResponseFields> ge
 
 The transformed response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
 
 ---
 
@@ -2442,7 +2458,7 @@ public java.lang.Boolean|IResolvable getRocketLoader();
 
 Whether to enable Rocket Loader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
 
 ---
 
@@ -2458,7 +2474,7 @@ A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execu
 
 This option is incompatible with the ruleset option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -2472,7 +2488,7 @@ public java.lang.String getRuleset();
 
 A ruleset to skip the execution of. This option is incompatible with the rulesets option. Available values: "current".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
 
 ---
 
@@ -2488,7 +2504,7 @@ A list of ruleset IDs to skip the execution of.
 
 This option is incompatible with the ruleset and phases options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
 
 ---
 
@@ -2502,7 +2518,7 @@ public java.lang.String getSecurityLevel();
 
 The Security Level to configure. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#security_level Ruleset#security_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#security_level Ruleset#security_level}
 
 ---
 
@@ -2516,7 +2532,7 @@ public java.lang.Boolean|IResolvable getServerSideExcludes();
 
 Whether to enable Server-Side Excludes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
 
 ---
 
@@ -2530,7 +2546,7 @@ public RulesetRulesActionParametersServeStale getServeStale();
 
 When to serve stale content from cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
 
 ---
 
@@ -2544,7 +2560,7 @@ public RulesetRulesActionParametersSMaxage getSMaxage();
 
 Set the s-maxage cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#s_maxage Ruleset#s_maxage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#s_maxage Ruleset#s_maxage}
 
 ---
 
@@ -2558,7 +2574,7 @@ public RulesetRulesActionParametersSni getSni();
 
 A Server Name Indication (SNI) override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#sni Ruleset#sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#sni Ruleset#sni}
 
 ---
 
@@ -2572,7 +2588,7 @@ public java.lang.String getSsl();
 
 The SSL level to configure. Available values: "off", "flexible", "full", "strict", "origin_pull".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#ssl Ruleset#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#ssl Ruleset#ssl}
 
 ---
 
@@ -2586,7 +2602,7 @@ public RulesetRulesActionParametersStaleIfError getStaleIfError();
 
 Set the stale-if-error cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#stale_if_error Ruleset#stale_if_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#stale_if_error Ruleset#stale_if_error}
 
 ---
 
@@ -2600,7 +2616,7 @@ public RulesetRulesActionParametersStaleWhileRevalidate getStaleWhileRevalidate(
 
 Set the stale-while-revalidate cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#stale_while_revalidate Ruleset#stale_while_revalidate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#stale_while_revalidate Ruleset#stale_while_revalidate}
 
 ---
 
@@ -2614,7 +2630,7 @@ public java.lang.Number getStatusCode();
 
 The status code to use for the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -2628,7 +2644,7 @@ public java.lang.Boolean|IResolvable getStripEtags();
 
 Whether to strip the ETag header from the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#strip_etags Ruleset#strip_etags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#strip_etags Ruleset#strip_etags}
 
 ---
 
@@ -2642,7 +2658,7 @@ public java.lang.Boolean|IResolvable getStripLastModified();
 
 Whether to strip the Last-Modified header from the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#strip_last_modified Ruleset#strip_last_modified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#strip_last_modified Ruleset#strip_last_modified}
 
 ---
 
@@ -2656,7 +2672,7 @@ public java.lang.Boolean|IResolvable getStripSetCookie();
 
 Whether to strip the Set-Cookie header from the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#strip_set_cookie Ruleset#strip_set_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#strip_set_cookie Ruleset#strip_set_cookie}
 
 ---
 
@@ -2670,7 +2686,7 @@ public java.lang.Boolean|IResolvable getSxg();
 
 Whether to enable Signed Exchanges (SXG).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#sxg Ruleset#sxg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#sxg Ruleset#sxg}
 
 ---
 
@@ -2684,7 +2700,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersTransformedRequest
 
 The transformed request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
 
 ---
 
@@ -2698,7 +2714,7 @@ public RulesetRulesActionParametersUri getUri();
 
 A URI rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#uri Ruleset#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#uri Ruleset#uri}
 
 ---
 
@@ -2712,7 +2728,7 @@ public java.util.List<java.lang.String> getValues();
 
 The cache tag values for set_cache_tags action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#values Ruleset#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#values Ruleset#values}
 
 ---
 
@@ -2728,7 +2744,7 @@ Controls how cached responses vary based on request headers.
 
 `default` is required and applies to any Vary response header that does not have a per-header override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#vary Ruleset#vary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#vary Ruleset#vary}
 
 ---
 
@@ -2762,7 +2778,7 @@ public java.lang.String getName();
 
 Name of the compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -2800,7 +2816,7 @@ public java.lang.Boolean|IResolvable getCss();
 
 Whether to minify CSS files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#css Ruleset#css}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#css Ruleset#css}
 
 ---
 
@@ -2814,7 +2830,7 @@ public java.lang.Boolean|IResolvable getHtml();
 
 Whether to minify HTML files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#html Ruleset#html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#html Ruleset#html}
 
 ---
 
@@ -2828,7 +2844,7 @@ public java.lang.Boolean|IResolvable getJs();
 
 Whether to minify JavaScript files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#js Ruleset#js}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#js Ruleset#js}
 
 ---
 
@@ -2864,7 +2880,7 @@ public java.lang.String getMode();
 
 The browser TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -2878,7 +2894,7 @@ public java.lang.Number getDefault();
 
 The browser TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -2918,7 +2934,7 @@ public java.lang.Boolean|IResolvable getCacheByDeviceType();
 
 Whether to separate cached content based on the visitor's device type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
 
 ---
 
@@ -2932,7 +2948,7 @@ public java.lang.Boolean|IResolvable getCacheDeceptionArmor();
 
 Whether to protect from web cache deception attacks, while allowing static assets to be cached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
 
 ---
 
@@ -2946,7 +2962,7 @@ public RulesetRulesActionParametersCacheKeyCustomKey getCustomKey();
 
 Which components of the request are included or excluded from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#custom_key Ruleset#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#custom_key Ruleset#custom_key}
 
 ---
 
@@ -2960,7 +2976,7 @@ public java.lang.Boolean|IResolvable getIgnoreQueryStringsOrder();
 
 Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
 
 ---
 
@@ -3002,7 +3018,7 @@ public RulesetRulesActionParametersCacheKeyCustomKeyCookie getCookie();
 
 Which cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cookie Ruleset#cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cookie Ruleset#cookie}
 
 ---
 
@@ -3016,7 +3032,7 @@ public RulesetRulesActionParametersCacheKeyCustomKeyHeader getHeader();
 
 Which headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#header Ruleset#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#header Ruleset#header}
 
 ---
 
@@ -3030,7 +3046,7 @@ public RulesetRulesActionParametersCacheKeyCustomKeyHost getHost();
 
 How to use the host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -3044,7 +3060,7 @@ public RulesetRulesActionParametersCacheKeyCustomKeyQueryString getQueryString()
 
 Which query string parameters to include in or exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#query_string Ruleset#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#query_string Ruleset#query_string}
 
 ---
 
@@ -3058,7 +3074,7 @@ public RulesetRulesActionParametersCacheKeyCustomKeyUser getUser();
 
 How to use characteristics of the request user agent in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#user Ruleset#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#user Ruleset#user}
 
 ---
 
@@ -3096,7 +3112,7 @@ A list of cookies to check for the presence of.
 
 The presence of these cookies is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -3110,7 +3126,7 @@ public java.util.List<java.lang.String> getInclude();
 
 A list of cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -3152,7 +3168,7 @@ A list of headers to check for the presence of.
 
 The presence of these headers is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -3168,7 +3184,7 @@ A mapping of header names to a list of values.
 
 If a header is present in the request and contains any of the values provided, its value is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#contains Ruleset#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#contains Ruleset#contains}
 
 ---
 
@@ -3182,7 +3198,7 @@ public java.lang.Boolean|IResolvable getExcludeOrigin();
 
 Whether to exclude the origin header in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
 
 ---
 
@@ -3196,7 +3212,7 @@ public java.util.List<java.lang.String> getInclude();
 
 A list of headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -3230,7 +3246,7 @@ public java.lang.Boolean|IResolvable getResolved();
 
 Whether to use the resolved host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#resolved Ruleset#resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#resolved Ruleset#resolved}
 
 ---
 
@@ -3266,7 +3282,7 @@ public RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude getExclud
 
 Which query string parameters to exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#exclude Ruleset#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#exclude Ruleset#exclude}
 
 ---
 
@@ -3280,7 +3296,7 @@ public RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude getInclud
 
 Which query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -3316,7 +3332,7 @@ public java.lang.Boolean|IResolvable getAll();
 
 Whether to exclude all query string parameters from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -3330,7 +3346,7 @@ public java.util.List<java.lang.String> getList();
 
 A list of query string parameters to exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#list Ruleset#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -3366,7 +3382,7 @@ public java.lang.Boolean|IResolvable getAll();
 
 Whether to include all query string parameters in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -3380,7 +3396,7 @@ public java.util.List<java.lang.String> getList();
 
 A list of query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#list Ruleset#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -3418,7 +3434,7 @@ public java.lang.Boolean|IResolvable getDeviceType();
 
 Whether to use the user agent's device type in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#device_type Ruleset#device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#device_type Ruleset#device_type}
 
 ---
 
@@ -3432,7 +3448,7 @@ public java.lang.Boolean|IResolvable getGeo();
 
 Whether to use the user agents's country in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#geo Ruleset#geo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#geo Ruleset#geo}
 
 ---
 
@@ -3446,7 +3462,7 @@ public java.lang.Boolean|IResolvable getLang();
 
 Whether to use the user agent's language in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#lang Ruleset#lang}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#lang Ruleset#lang}
 
 ---
 
@@ -3484,7 +3500,7 @@ Whether Cache Reserve is enabled.
 
 If this is true and a request meets eligibility criteria, Cloudflare will write the resource to Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#eligible Ruleset#eligible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#eligible Ruleset#eligible}
 
 ---
 
@@ -3498,7 +3514,7 @@ public java.lang.Number getMinimumFileSize();
 
 The minimum file size eligible for storage in Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
 
 ---
 
@@ -3532,7 +3548,7 @@ public java.lang.String getName();
 
 The name of the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -3570,7 +3586,7 @@ public java.lang.String getMode();
 
 The edge TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -3584,7 +3600,7 @@ public java.lang.Number getDefault();
 
 The edge TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -3598,7 +3614,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersEdgeTtlStatusCodeT
 
 A list of TTLs to apply to specific status codes or status code ranges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
 
 ---
 
@@ -3638,7 +3654,7 @@ The time to cache the response for (in seconds).
 
 A value of 0 is equivalent to setting the cache control header with the value "no-cache". A value of -1 is equivalent to setting the cache control header with the value of "no-store".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3652,7 +3668,7 @@ public java.lang.Number getStatusCode();
 
 A single status code to apply the TTL to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -3666,7 +3682,7 @@ public RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange getStatus
 
 A range of status codes to apply the TTL to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
 
 ---
 
@@ -3702,7 +3718,7 @@ public java.lang.Number getFrom();
 
 The lower bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#from Ruleset#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#from Ruleset#from}
 
 ---
 
@@ -3716,7 +3732,7 @@ public java.lang.Number getTo();
 
 The upper bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#to Ruleset#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#to Ruleset#to}
 
 ---
 
@@ -3752,7 +3768,7 @@ public java.lang.String getKey();
 
 An expression that evaluates to the list lookup key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#key Ruleset#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#key Ruleset#key}
 
 ---
 
@@ -3766,7 +3782,7 @@ public java.lang.String getName();
 
 The name of the list to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -3804,7 +3820,7 @@ public RulesetRulesActionParametersFromValueTargetUrl getTargetUrl();
 
 A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#target_url Ruleset#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#target_url Ruleset#target_url}
 
 ---
 
@@ -3818,7 +3834,7 @@ public java.lang.Boolean|IResolvable getPreserveQueryString();
 
 Whether to keep the query string of the original request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
 
 ---
 
@@ -3832,7 +3848,7 @@ public java.lang.Number getStatusCode();
 
 The status code to use for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -3868,7 +3884,7 @@ public java.lang.String getExpression();
 
 An expression that evaluates to a URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -3882,7 +3898,7 @@ public java.lang.String getValue();
 
 A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3920,7 +3936,7 @@ public java.lang.String getOperation();
 
 The operation to perform on the header. Available values: "add", "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3934,7 +3950,7 @@ public java.lang.String getExpression();
 
 An expression that evaluates to a value for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -3948,7 +3964,7 @@ public java.lang.String getValue();
 
 A static value for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3984,7 +4000,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3998,7 +4014,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4032,7 +4048,7 @@ public java.lang.String getPublicKey();
 
 The public key to encrypt matched data logs with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#public_key Ruleset#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#public_key Ruleset#public_key}
 
 ---
 
@@ -4070,7 +4086,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4084,7 +4100,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4098,7 +4114,7 @@ public java.lang.Number getValue();
 
 The value for the directive in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4134,7 +4150,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4148,7 +4164,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4184,7 +4200,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4198,7 +4214,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4236,7 +4252,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4250,7 +4266,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4264,7 +4280,7 @@ public java.util.List<java.lang.String> getQualifiers();
 
 The qualifiers for the directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
 
 ---
 
@@ -4300,7 +4316,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4314,7 +4330,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4350,7 +4366,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4364,7 +4380,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4400,7 +4416,7 @@ public java.lang.String getHost();
 
 A resolved host to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -4414,7 +4430,41 @@ public java.lang.Number getPort();
 
 A destination port to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#port Ruleset#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#port Ruleset#port}
+
+---
+
+### RulesetRulesActionParametersOriginRangeRequests <a name="RulesetRulesActionParametersOriginRangeRequests" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests;
+
+RulesetRulesActionParametersOriginRangeRequests.builder()
+    .mode(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests.property.mode">mode</a></code> | <code>java.lang.String</code> | Whether to use range requests. `default` is the behaviour the zone gets without this rule. Available values: "on", "off", "default". |
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+Whether to use range requests. `default` is the behaviour the zone gets without this rule. Available values: "on", "off", "default".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -4456,7 +4506,7 @@ public java.lang.String getAction();
 
 An action to override all rules with. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -4470,7 +4520,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersOverridesCategorie
 
 A list of category-level overrides. This option has the second-highest precedence after rule-level overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#categories Ruleset#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#categories Ruleset#categories}
 
 ---
 
@@ -4484,7 +4534,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether to enable execution of all rules. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4498,7 +4548,7 @@ public IResolvable|java.util.List<RulesetRulesActionParametersOverridesRules> ge
 
 A list of rule-level overrides. This option has the highest precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -4515,7 +4565,7 @@ A sensitivity level to set for all rules.
 This option has lower precedence than rule and category overrides and is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -4555,7 +4605,7 @@ public java.lang.String getCategory();
 
 The name of the category to override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#category Ruleset#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#category Ruleset#category}
 
 ---
 
@@ -4569,7 +4619,7 @@ public java.lang.String getAction();
 
 The action to override rules in the category with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -4583,7 +4633,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether to enable execution of rules in the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4600,7 +4650,7 @@ The sensitivity level to use for rules in the category.
 This option is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -4642,7 +4692,7 @@ public java.lang.String getId();
 
 The ID of the rule to override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4659,7 +4709,7 @@ public java.lang.String getAction();
 
 The action to override the rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -4673,7 +4723,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether to enable execution of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4687,7 +4737,7 @@ public java.lang.Number getScoreThreshold();
 
 The score threshold to use for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
 
 ---
 
@@ -4704,7 +4754,7 @@ The sensitivity level to use for the rule.
 This option is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -4742,7 +4792,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4756,7 +4806,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4770,7 +4820,7 @@ public java.util.List<java.lang.String> getQualifiers();
 
 The qualifiers for the directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
 
 ---
 
@@ -4806,7 +4856,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4820,7 +4870,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4856,7 +4906,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4870,7 +4920,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4906,7 +4956,7 @@ public java.lang.String getName();
 
 The name of the response header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4920,7 +4970,7 @@ public java.lang.Boolean|IResolvable getPreserveDuplicates();
 
 Whether to log duplicate values of the same header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 
 ---
 
@@ -4954,7 +5004,7 @@ public java.lang.String getName();
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4992,7 +5042,7 @@ public java.lang.String getContent();
 
 The content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -5006,7 +5056,7 @@ public java.lang.String getContentType();
 
 The type of the content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -5020,7 +5070,7 @@ public java.lang.Number getStatusCode();
 
 The status code to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -5056,7 +5106,7 @@ public java.lang.String getName();
 
 The name of the response header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -5070,7 +5120,7 @@ public java.lang.Boolean|IResolvable getPreserveDuplicates();
 
 Whether to log duplicate values of the same header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 
 ---
 
@@ -5104,7 +5154,7 @@ public java.lang.Boolean|IResolvable getDisableStaleWhileUpdating();
 
 Whether Cloudflare should disable serving stale content while getting the latest content from the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
 
 ---
 
@@ -5142,7 +5192,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -5156,7 +5206,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -5170,7 +5220,7 @@ public java.lang.Number getValue();
 
 The value for the directive in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5204,7 +5254,7 @@ public java.lang.String getValue();
 
 A value to override the SNI to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5242,7 +5292,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -5256,7 +5306,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -5270,7 +5320,7 @@ public java.lang.Number getValue();
 
 The value for the directive in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5308,7 +5358,7 @@ public java.lang.String getOperation();
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -5322,7 +5372,7 @@ public java.lang.Boolean|IResolvable getCloudflareOnly();
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -5336,7 +5386,7 @@ public java.lang.Number getValue();
 
 The value for the directive in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5370,7 +5420,7 @@ public java.lang.String getName();
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -5406,7 +5456,7 @@ public RulesetRulesActionParametersUriPath getPath();
 
 A URI path rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#path Ruleset#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#path Ruleset#path}
 
 ---
 
@@ -5420,7 +5470,7 @@ public RulesetRulesActionParametersUriQuery getQuery();
 
 A URI query rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#query Ruleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#query Ruleset#query}
 
 ---
 
@@ -5456,7 +5506,7 @@ public java.lang.String getExpression();
 
 An expression that evaluates to a value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -5470,7 +5520,7 @@ public java.lang.String getValue();
 
 A value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5506,7 +5556,7 @@ public java.lang.String getExpression();
 
 An expression that evaluates to a value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -5520,7 +5570,7 @@ public java.lang.String getValue();
 
 A value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5556,7 +5606,7 @@ public RulesetRulesActionParametersVaryDefault getDefault();
 
 Controls how response Vary headers without a per-header override contribute to the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -5570,7 +5620,7 @@ public IResolvable|java.util.Map<java.lang.String, RulesetRulesActionParametersV
 
 A mapping of lowercase request header names to their vary configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#headers Ruleset#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#headers Ruleset#headers}
 
 ---
 
@@ -5604,7 +5654,7 @@ public java.lang.String getAction();
 
 How the header value is treated when building the cache key. Available values: "bypass", "passthrough", "normalize".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -5642,7 +5692,7 @@ public java.lang.String getAction();
 
 How the header value is treated when building the cache key. Available values: "bypass", "passthrough", "normalize".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -5656,7 +5706,7 @@ public java.util.List<java.lang.String> getLanguages();
 
 The set of languages to normalize against. Only valid for the `accept-language` header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#languages Ruleset#languages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#languages Ruleset#languages}
 
 ---
 
@@ -5670,7 +5720,7 @@ public java.util.List<java.lang.String> getMediaTypes();
 
 The set of media types to normalize against. Only valid for the `accept` header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#media_types Ruleset#media_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#media_types Ruleset#media_types}
 
 ---
 
@@ -5706,7 +5756,7 @@ public java.lang.String getPasswordExpression();
 
 An expression that selects the password used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#password_expression Ruleset#password_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#password_expression Ruleset#password_expression}
 
 ---
 
@@ -5720,7 +5770,7 @@ public java.lang.String getUsernameExpression();
 
 An expression that selects the user ID used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#username_expression Ruleset#username_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#username_expression Ruleset#username_expression}
 
 ---
 
@@ -5754,7 +5804,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether to generate a log when the rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -5802,7 +5852,7 @@ public java.util.List<java.lang.String> getCharacteristics();
 
 Characteristics of the request on which the rate limit counter will be incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#characteristics Ruleset#characteristics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#characteristics Ruleset#characteristics}
 
 ---
 
@@ -5816,7 +5866,7 @@ public java.lang.Number getPeriod();
 
 Period in seconds over which the counter is being incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#period Ruleset#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#period Ruleset#period}
 
 ---
 
@@ -5832,7 +5882,7 @@ An expression that defines when the rate limit counter should be incremented.
 
 It defaults to the same as the rule's expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
 
 ---
 
@@ -5846,7 +5896,7 @@ public java.lang.Number getMitigationTimeout();
 
 Period of time in seconds after which the action will be disabled following its first execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
 
 ---
 
@@ -5860,7 +5910,7 @@ public java.lang.Number getRequestsPerPeriod();
 
 The threshold of requests per period after which the action will be executed for the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
 
 ---
 
@@ -5874,7 +5924,7 @@ public java.lang.Boolean|IResolvable getRequestsToOrigin();
 
 Whether counting is only performed when an origin is reached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
 
 ---
 
@@ -5888,7 +5938,7 @@ public java.lang.Number getScorePerPeriod();
 
 The score threshold per period for which the action will be executed the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
 
 ---
 
@@ -5902,7 +5952,7 @@ public java.lang.String getScoreResponseHeaderName();
 
 A response header name provided by the origin, which contains the score to increment rate limit counter with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
 
 ---
 
@@ -16151,6 +16201,277 @@ public IResolvable|RulesetRulesActionParametersOrigin getInternalValue();
 ---
 
 
+### RulesetRulesActionParametersOriginRangeRequestsOutputReference <a name="RulesetRulesActionParametersOriginRangeRequestsOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference;
+
+new RulesetRulesActionParametersOriginRangeRequestsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests">RulesetRulesActionParametersOriginRangeRequests</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.modeInput"></a>
+
+```java
+public java.lang.String getModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|RulesetRulesActionParametersOriginRangeRequests getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests">RulesetRulesActionParametersOriginRangeRequests</a>
+
+---
+
+
 ### RulesetRulesActionParametersOutputReference <a name="RulesetRulesActionParametersOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.Initializer"></a>
@@ -16220,6 +16541,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoStore">putNoStore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoTransform">putNoTransform</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putOrigin">putOrigin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putOriginRangeRequests">putOriginRangeRequests</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putOverrides">putOverrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPrivate">putPrivate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putProxyRevalidate">putProxyRevalidate</a></code> | *No description.* |
@@ -16278,6 +16600,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOrigin">resetOrigin</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOriginCacheControl">resetOriginCacheControl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOriginErrorPagePassthru">resetOriginErrorPagePassthru</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOriginRangeRequests">resetOriginRangeRequests</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOverrides">resetOverrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPhases">resetPhases</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPolish">resetPolish</a></code> | *No description.* |
@@ -16693,6 +17016,18 @@ public void putOrigin(RulesetRulesActionParametersOrigin value)
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putOrigin.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a>
+
+---
+
+##### `putOriginRangeRequests` <a name="putOriginRangeRequests" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putOriginRangeRequests"></a>
+
+```java
+public void putOriginRangeRequests(RulesetRulesActionParametersOriginRangeRequests value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putOriginRangeRequests.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests">RulesetRulesActionParametersOriginRangeRequests</a>
 
 ---
 
@@ -17140,6 +17475,12 @@ public void resetOriginCacheControl()
 public void resetOriginErrorPagePassthru()
 ```
 
+##### `resetOriginRangeRequests` <a name="resetOriginRangeRequests" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOriginRangeRequests"></a>
+
+```java
+public void resetOriginRangeRequests()
+```
+
 ##### `resetOverrides` <a name="resetOverrides" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOverrides"></a>
 
 ```java
@@ -17388,6 +17729,7 @@ public void resetVary()
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noStore">noStore</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference">RulesetRulesActionParametersNoStoreOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noTransform">noTransform</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference">RulesetRulesActionParametersNoTransformOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference">RulesetRulesActionParametersOriginOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originRangeRequests">originRangeRequests</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference">RulesetRulesActionParametersOriginRangeRequestsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.overrides">overrides</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference">RulesetRulesActionParametersOverridesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.private">private</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference">RulesetRulesActionParametersPrivateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.proxyRevalidate">proxyRevalidate</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference">RulesetRulesActionParametersProxyRevalidateOutputReference</a></code> | *No description.* |
@@ -17446,6 +17788,7 @@ public void resetVary()
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControlInput">originCacheControlInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthruInput">originErrorPagePassthruInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originInput">originInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originRangeRequestsInput">originRangeRequestsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests">RulesetRulesActionParametersOriginRangeRequests</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.overridesInput">overridesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phasesInput">phasesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.polishInput">polishInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -17742,6 +18085,16 @@ public RulesetRulesActionParametersOriginOutputReference getOrigin();
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference">RulesetRulesActionParametersOriginOutputReference</a>
+
+---
+
+##### `originRangeRequests`<sup>Required</sup> <a name="originRangeRequests" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originRangeRequests"></a>
+
+```java
+public RulesetRulesActionParametersOriginRangeRequestsOutputReference getOriginRangeRequests();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequestsOutputReference">RulesetRulesActionParametersOriginRangeRequestsOutputReference</a>
 
 ---
 
@@ -18322,6 +18675,16 @@ public IResolvable|RulesetRulesActionParametersOrigin getOriginInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a>
+
+---
+
+##### `originRangeRequestsInput`<sup>Optional</sup> <a name="originRangeRequestsInput" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originRangeRequestsInput"></a>
+
+```java
+public IResolvable|RulesetRulesActionParametersOriginRangeRequests getOriginRangeRequestsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginRangeRequests">RulesetRulesActionParametersOriginRangeRequests</a>
 
 ---
 

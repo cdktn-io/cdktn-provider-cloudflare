@@ -4,7 +4,7 @@
 
 ### DataCloudflarePrecursor <a name="DataCloudflarePrecursor" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/precursor cloudflare_precursor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/precursor cloudflare_precursor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
 
 ---
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataCloudflarePrecursor to
 
 The id of the existing DataCloudflarePrecursor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/precursor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/precursor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
 
 ---
 

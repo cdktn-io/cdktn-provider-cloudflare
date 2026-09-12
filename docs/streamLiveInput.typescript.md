@@ -4,7 +4,7 @@
 
 ### StreamLiveInput <a name="StreamLiveInput" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer"></a>
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the StreamLiveInput to import.
 
 The id of the existing StreamLiveInput that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -584,6 +584,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.created">created</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.keysRotatedAt">keysRotatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.modified">modified</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.playback">playback</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference">StreamLiveInputPlaybackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.recording">recording</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference">StreamLiveInputRecordingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.rtmps">rtmps</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsOutputReference">StreamLiveInputRtmpsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.rtmpsPlayback">rtmpsPlayback</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlaybackOutputReference">StreamLiveInputRtmpsPlaybackOutputReference</a></code> | *No description.* |
@@ -780,6 +781,16 @@ public readonly modified: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `playback`<sup>Required</sup> <a name="playback" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.playback"></a>
+
+```typescript
+public readonly playback: StreamLiveInputPlaybackOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference">StreamLiveInputPlaybackOutputReference</a>
 
 ---
 
@@ -1155,7 +1166,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
 
 ---
 
@@ -1169,7 +1180,7 @@ public readonly defaultCreator: string;
 
 Sets the creator ID asssociated with this live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
 
 ---
 
@@ -1185,7 +1196,7 @@ Indicates the number of days after which the live inputs recordings will be dele
 
 When a stream completes and the recording is ready, the value is used to calculate a scheduled deletion date for that recording. Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
 
 ---
 
@@ -1199,7 +1210,7 @@ public readonly enabled: boolean | IResolvable;
 
 Indicates whether the live input is enabled and can accept streams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#enabled StreamLiveInput#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#enabled StreamLiveInput#enabled}
 
 ---
 
@@ -1213,7 +1224,7 @@ public readonly liveInputIdentifier: string;
 
 A unique identifier for a live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
 
 ---
 
@@ -1227,7 +1238,7 @@ public readonly meta: string;
 
 A user modifiable key-value store used to reference other systems of record for managing live inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
 
 ---
 
@@ -1241,7 +1252,7 @@ public readonly preferLowLatency: boolean | IResolvable;
 
 When enabled, the live stream is delivered using Low-Latency HLS (LL-HLS), reducing glass-to-glass latency for viewers at the cost of reduced player compatibility.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#prefer_low_latency StreamLiveInput#prefer_low_latency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#prefer_low_latency StreamLiveInput#prefer_low_latency}
 
 ---
 
@@ -1257,9 +1268,20 @@ Records the input to a Cloudflare Stream video.
 
 Behavior depends on the mode. In most cases, the video will initially be viewable as a live video and transition to on-demand after a condition is satisfied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
 
 ---
+
+### StreamLiveInputPlayback <a name="StreamLiveInputPlayback" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlayback"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlayback.Initializer"></a>
+
+```typescript
+import { streamLiveInput } from '@cdktn/provider-cloudflare'
+
+const streamLiveInputPlayback: streamLiveInput.StreamLiveInputPlayback = { ... }
+```
+
 
 ### StreamLiveInputRecording <a name="StreamLiveInputRecording" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecording"></a>
 
@@ -1295,7 +1317,7 @@ Lists the origins allowed to display videos created with this input.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. An empty array allows videos to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
 
 ---
 
@@ -1309,7 +1331,7 @@ public readonly hideLiveViewerCount: boolean | IResolvable;
 
 Disables reporting the number of live viewers when this property is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
 
 ---
 
@@ -1326,7 +1348,7 @@ Specifies the recording behavior for the live input.
 Set this value to `off` to prevent a recording. Set the value to `automatic` to begin a recording and transition to on-demand after Stream Live stops receiving input.
 Available values: "off", "automatic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
 
 ---
 
@@ -1342,7 +1364,7 @@ Indicates if a video using the live input has the `requireSignedURLs` property s
 
 Also enforces access controls on any video recording of the livestream with the live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
 
 ---
 
@@ -1358,7 +1380,7 @@ Determines the amount of time a live input configured in `automatic` mode should
 
 `0` is recommended for most use cases and indicates the platform default should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
 
 ---
 
@@ -1429,6 +1451,277 @@ const streamLiveInputWebRtcPlayback: streamLiveInput.StreamLiveInputWebRtcPlayba
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### StreamLiveInputPlaybackOutputReference <a name="StreamLiveInputPlaybackOutputReference" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.Initializer"></a>
+
+```typescript
+import { streamLiveInput } from '@cdktn/provider-cloudflare'
+
+new streamLiveInput.StreamLiveInputPlaybackOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.dash">dash</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.hls">hls</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlayback">StreamLiveInputPlayback</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dash`<sup>Required</sup> <a name="dash" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.dash"></a>
+
+```typescript
+public readonly dash: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hls`<sup>Required</sup> <a name="hls" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.hls"></a>
+
+```typescript
+public readonly hls: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlaybackOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: StreamLiveInputPlayback;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputPlayback">StreamLiveInputPlayback</a>
+
+---
+
 
 ### StreamLiveInputRecordingOutputReference <a name="StreamLiveInputRecordingOutputReference" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference"></a>
 
