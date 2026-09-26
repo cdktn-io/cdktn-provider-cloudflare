@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_default_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_default_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustDeviceDefaultProfileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_default_profile#account_id DataCloudflareZeroTrustDeviceDefaultProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_default_profile#account_id DataCloudflareZeroTrustDeviceDefaultProfile#account_id}
   */
   readonly accountId?: string;
 }
@@ -472,7 +472,7 @@ export class DataCloudflareZeroTrustDeviceDefaultProfileVirtualNetworksOutputRef
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}
 */
 export class DataCloudflareZeroTrustDeviceDefaultProfile extends cdktn.TerraformDataSource {
 
@@ -488,7 +488,7 @@ export class DataCloudflareZeroTrustDeviceDefaultProfile extends cdktn.Terraform
   * Generates CDKTN code for importing a DataCloudflareZeroTrustDeviceDefaultProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustDeviceDefaultProfile to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustDeviceDefaultProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_default_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustDeviceDefaultProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_default_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustDeviceDefaultProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -500,7 +500,7 @@ export class DataCloudflareZeroTrustDeviceDefaultProfile extends cdktn.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -511,7 +511,7 @@ export class DataCloudflareZeroTrustDeviceDefaultProfile extends cdktn.Terraform
       terraformResourceType: 'cloudflare_zero_trust_device_default_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -629,6 +629,11 @@ export class DataCloudflareZeroTrustDeviceDefaultProfile extends cdktn.Terraform
     return this.getStringAttribute('policy_id');
   }
 
+  // profile_type - computed: true, optional: false, required: false
+  public get profileType() {
+    return this.getStringAttribute('profile_type');
+  }
+
   // register_interface_ip_with_dns - computed: true, optional: false, required: false
   public get registerInterfaceIpWithDns() {
     return this.getBooleanAttribute('register_interface_ip_with_dns');
@@ -658,6 +663,11 @@ export class DataCloudflareZeroTrustDeviceDefaultProfile extends cdktn.Terraform
   // tunnel_protocol - computed: true, optional: false, required: false
   public get tunnelProtocol() {
     return this.getStringAttribute('tunnel_protocol');
+  }
+
+  // uninstall_protection - computed: true, optional: false, required: false
+  public get uninstallProtection() {
+    return this.getBooleanAttribute('uninstall_protection');
   }
 
   // virtual_networks - computed: true, optional: false, required: false

@@ -4,7 +4,7 @@
 
 ### CustomSsl <a name="CustomSsl" id="@cdktn/provider-cloudflare.customSsl.CustomSsl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.Initializer"></a>
 
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetDeploy">ResetDeploy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetGeoRestrictions">ResetGeoRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetPolicy">ResetPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetPrivateKey">ResetPrivateKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetType">ResetType</a></code> | *No description.* |
 
 ---
@@ -435,6 +436,12 @@ private void ResetGeoRestrictions()
 private void ResetPolicy()
 ```
 
+##### `ResetPrivateKey` <a name="ResetPrivateKey" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.resetPrivateKey"></a>
+
+```csharp
+private void ResetPrivateKey()
+```
+
 ##### `ResetType` <a name="ResetType" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.resetType"></a>
 
 ```csharp
@@ -544,7 +551,7 @@ The construct id used in the generated config for the CustomSsl to import.
 
 The id of the existing CustomSsl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1074,13 +1081,13 @@ new CustomSslConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Certificate,
-    string PrivateKey,
     string ZoneId,
     string BundleMethod = null,
     string CustomCsrId = null,
     string Deploy = null,
     CustomSslGeoRestrictions GeoRestrictions = null,
     string Policy = null,
+    string PrivateKey = null,
     string Type = null
 };
 ```
@@ -1097,13 +1104,13 @@ new CustomSslConfig {
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.certificate">Certificate</a></code> | <code>string</code> | The zone's SSL certificate or certificate and the intermediate(s). |
-| <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.privateKey">PrivateKey</a></code> | <code>string</code> | The zone's private key. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.bundleMethod">BundleMethod</a></code> | <code>string</code> | A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.customCsrId">CustomCsrId</a></code> | <code>string</code> | The identifier for the Custom CSR that was used. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.deploy">Deploy</a></code> | <code>string</code> | The environment to deploy the certificate to. Available values: "staging", "production". |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.geoRestrictions">GeoRestrictions</a></code> | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslGeoRestrictions">CustomSslGeoRestrictions</a></code> | Specify the region where your private key can be held locally for optimal TLS performance. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.policy">Policy</a></code> | <code>string</code> | Specify the policy that determines the region where your private key will be held locally. |
+| <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.privateKey">PrivateKey</a></code> | <code>string</code> | The zone's private key. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.type">Type</a></code> | <code>string</code> | The type 'legacy_custom' enables support for legacy clients which do not include SNI in the TLS handshake. |
 
 ---
@@ -1188,21 +1195,7 @@ public string Certificate { get; set; }
 
 The zone's SSL certificate or certificate and the intermediate(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
-
----
-
-##### `PrivateKey`<sup>Required</sup> <a name="PrivateKey" id="@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.privateKey"></a>
-
-```csharp
-public string PrivateKey { get; set; }
-```
-
-- *Type:* string
-
-The zone's private key.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
 
 ---
 
@@ -1216,7 +1209,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
 
 ---
 
@@ -1233,7 +1226,7 @@ A ubiquitous bundle has the highest probability of being verified everywhere, ev
 An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
 Available values: "ubiquitous", "optimal", "force".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
 
 ---
 
@@ -1247,7 +1240,7 @@ public string CustomCsrId { get; set; }
 
 The identifier for the Custom CSR that was used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#custom_csr_id CustomSsl#custom_csr_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#custom_csr_id CustomSsl#custom_csr_id}
 
 ---
 
@@ -1261,7 +1254,7 @@ public string Deploy { get; set; }
 
 The environment to deploy the certificate to. Available values: "staging", "production".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#deploy CustomSsl#deploy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#deploy CustomSsl#deploy}
 
 ---
 
@@ -1277,7 +1270,7 @@ Specify the region where your private key can be held locally for optimal TLS pe
 
 HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Options allow distribution to only to U.S. data centers, only to E.U. data centers, or only to highest security data centers. Default distribution is to all Cloudflare datacenters, for optimal performance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
 
 ---
 
@@ -1294,7 +1287,23 @@ Specify the policy that determines the region where your private key will be hel
 HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Any combination of countries, specified by their two letter country code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) can be chosen, such as 'country: IN', as well as 'region: EU' which refers to the EU region. If there are too few data centers satisfying the policy, it will be rejected.
 Note: The API accepts this field as either "policy" or "policy_restrictions" in requests. Responses return this field as "policy_restrictions".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#policy CustomSsl#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#policy CustomSsl#policy}
+
+---
+
+##### `PrivateKey`<sup>Optional</sup> <a name="PrivateKey" id="@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.privateKey"></a>
+
+```csharp
+public string PrivateKey { get; set; }
+```
+
+- *Type:* string
+
+The zone's private key.
+
+Not required if custom_csr_id is provided, in which case the private key is retrieved from the CSR record held by Cloudflare.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
 
 ---
 
@@ -1310,7 +1319,7 @@ The type 'legacy_custom' enables support for legacy clients which do not include
 
 Available values: "legacy_custom", "sni_custom".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#type CustomSsl#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#type CustomSsl#type}
 
 ---
 
@@ -1344,7 +1353,7 @@ public string Label { get; set; }
 
 Available values: "us", "eu", "highest_security".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_ssl#label CustomSsl#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl#label CustomSsl#label}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### CallsSfuApp <a name="CallsSfuApp" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the CallsSfuApp to import.
 
 The id of the existing CallsSfuApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,7 +842,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/callssfu
 | <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.property.appId">AppId</a></code> | <code>*string</code> | A Cloudflare-generated unique identifier for a item. |
-| <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.property.name">Name</a></code> | <code>*string</code> | A short description of Calls app, not shown to end users. |
+| <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.property.name">Name</a></code> | <code>*string</code> | A short description of a Realtime SFU app, not shown to end users. |
 
 ---
 
@@ -926,7 +926,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
 
 ---
 
@@ -940,7 +940,7 @@ AppId *string
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
 
 ---
 
@@ -952,9 +952,9 @@ Name *string
 
 - *Type:* *string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/calls_sfu_app#name CallsSfuApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/calls_sfu_app#name CallsSfuApp#name}
 
 ---
 

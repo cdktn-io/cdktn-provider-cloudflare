@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoints
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,62 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustGatewayProxyEndpointsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#account_id DataCloudflareZeroTrustGatewayProxyEndpoints#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#account_id DataCloudflareZeroTrustGatewayProxyEndpoints#account_id}
   */
   readonly accountId?: string;
   /**
+  * Sort direction. Only takes effect when `order_by` is also provided; it
+  * is ignored otherwise. When `direction` is omitted the effective
+  * direction is field-specific: `created_at` and `updated_at` default to
+  * descending (newest first); `name` defaults to ascending.
+  *   * `asc` — ascending.
+  *   * `desc` — descending.
+  * Available values: "asc", "desc".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#direction DataCloudflareZeroTrustGatewayProxyEndpoints#direction}
+  */
+  readonly direction?: string;
+  /**
+  * Filter the returned proxy endpoints by one or more `field:value` pairs.
+  * Repeat the parameter to apply multiple filters; they are combined with
+  * logical AND (an endpoint must satisfy every filter to be returned).
+  * 
+  * Supported fields and their matching behaviour:
+  *   * `name` — case-insensitive substring match on the endpoint name.
+  *   * `id` — substring match on the endpoint ID (UUID), with or without dashes.
+  *   * `kind` — exact match on the endpoint kind. The value must be `ip` or `identity`; any other value returns `400`.
+  * 
+  * Each entry must match one of the per-field patterns below: the field
+  * must be one of `name`, `id`, or `kind`; `name`/`id` accept any value,
+  * while `kind` only accepts `ip` or `identity`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#filter DataCloudflareZeroTrustGatewayProxyEndpoints#filter}
+  */
+  readonly filter?: string[];
+  /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#max_items DataCloudflareZeroTrustGatewayProxyEndpoints#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#max_items DataCloudflareZeroTrustGatewayProxyEndpoints#max_items}
   */
   readonly maxItems?: number;
+  /**
+  * Field to sort the returned endpoints by. When omitted, the order of
+  * results is unspecified. Supported values:
+  *   * `name` — sort alphabetically by endpoint name.
+  *   * `created_at` — sort by creation time; defaults to descending unless `direction` is set.
+  *   * `updated_at` — sort by last-modified time; defaults to descending unless `direction` is set.
+  * Available values: "name", "created_at", "updated_at".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#order_by DataCloudflareZeroTrustGatewayProxyEndpoints#order_by}
+  */
+  readonly orderBy?: string;
+  /**
+  * Case-insensitive substring match on the endpoint name. When combined
+  * with `filter`, both must match (logical AND).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#search DataCloudflareZeroTrustGatewayProxyEndpoints#search}
+  */
+  readonly search?: string;
 }
 export interface DataCloudflareZeroTrustGatewayProxyEndpointsResult {
 }
@@ -130,7 +177,7 @@ export class DataCloudflareZeroTrustGatewayProxyEndpointsResultList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints}
 */
 export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.TerraformDataSource {
 
@@ -146,7 +193,7 @@ export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.Terrafor
   * Generates CDKTN code for importing a DataCloudflareZeroTrustGatewayProxyEndpoints resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustGatewayProxyEndpoints to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayProxyEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayProxyEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustGatewayProxyEndpoints to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -158,7 +205,7 @@ export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,7 +216,7 @@ export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.Terrafor
       terraformResourceType: 'cloudflare_zero_trust_gateway_proxy_endpoints',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -181,7 +228,11 @@ export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.Terrafor
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._direction = config.direction;
+    this._filter = config.filter;
     this._maxItems = config.maxItems;
+    this._orderBy = config.orderBy;
+    this._search = config.search;
   }
 
   // ==========
@@ -204,6 +255,38 @@ export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.Terrafor
     return this._accountId;
   }
 
+  // direction - computed: false, optional: true, required: false
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  public resetDirection() {
+    this._direction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter?: string[]; 
+  public get filter() {
+    return this.getListAttribute('filter');
+  }
+  public set filter(value: string[]) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
+  }
+
   // max_items - computed: false, optional: true, required: false
   private _maxItems?: number; 
   public get maxItems() {
@@ -220,10 +303,42 @@ export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.Terrafor
     return this._maxItems;
   }
 
+  // order_by - computed: false, optional: true, required: false
+  private _orderBy?: string; 
+  public get orderBy() {
+    return this.getStringAttribute('order_by');
+  }
+  public set orderBy(value: string) {
+    this._orderBy = value;
+  }
+  public resetOrderBy() {
+    this._orderBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderByInput() {
+    return this._orderBy;
+  }
+
   // result - computed: true, optional: false, required: false
   private _result = new DataCloudflareZeroTrustGatewayProxyEndpointsResultList(this, "result", false);
   public get result() {
     return this._result;
+  }
+
+  // search - computed: false, optional: true, required: false
+  private _search?: string; 
+  public get search() {
+    return this.getStringAttribute('search');
+  }
+  public set search(value: string) {
+    this._search = value;
+  }
+  public resetSearch() {
+    this._search = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchInput() {
+    return this._search;
   }
 
   // =========
@@ -233,7 +348,11 @@ export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.Terrafor
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      direction: cdktn.stringToTerraform(this._direction),
+      filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filter),
       max_items: cdktn.numberToTerraform(this._maxItems),
+      order_by: cdktn.stringToTerraform(this._orderBy),
+      search: cdktn.stringToTerraform(this._search),
     };
   }
 
@@ -245,11 +364,35 @@ export class DataCloudflareZeroTrustGatewayProxyEndpoints extends cdktn.Terrafor
         type: "simple",
         storageClassType: "string",
       },
+      direction: {
+        value: cdktn.stringToHclTerraform(this._direction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._filter),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       max_items: {
         value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      order_by: {
+        value: cdktn.stringToHclTerraform(this._orderBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      search: {
+        value: cdktn.stringToHclTerraform(this._search),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

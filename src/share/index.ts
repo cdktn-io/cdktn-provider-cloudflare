@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,21 +15,33 @@ export interface ShareConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#account_id Share#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#account_id Share#account_id}
   */
   readonly accountId: string;
   /**
+  * Include recipient counts in the response.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#include_recipient_counts Share#include_recipient_counts}
+  */
+  readonly includeRecipientCounts?: boolean | cdktn.IResolvable;
+  /**
+  * Include resources in the response.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#include_resources Share#include_resources}
+  */
+  readonly includeResources?: boolean | cdktn.IResolvable;
+  /**
   * The name of the share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#name Share#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#name Share#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#recipients Share#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipients Share#recipients}
   */
   readonly recipients: ShareRecipients[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resources Share#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resources Share#resources}
   */
   readonly resources: ShareResources[] | cdktn.IResolvable;
 }
@@ -37,13 +49,13 @@ export interface ShareRecipients {
   /**
   * Organization identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#organization_id Share#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#organization_id Share#organization_id}
   */
   readonly organizationId?: string;
   /**
   * The account that will receive the share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#recipient_account_id Share#recipient_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipient_account_id Share#recipient_account_id}
   */
   readonly recipientAccountId?: string;
 }
@@ -190,26 +202,26 @@ export interface ShareResources {
   /**
   * Resource Metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#meta Share#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#meta Share#meta}
   */
   readonly meta: string;
   /**
   * Account identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resource_account_id Share#resource_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_account_id Share#resource_account_id}
   */
   readonly resourceAccountId: string;
   /**
   * Share Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resource_id Share#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_id Share#resource_id}
   */
   readonly resourceId: string;
   /**
   * Resource Type.
   * Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resource_type Share#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_type Share#resource_type}
   */
   readonly resourceType: string;
 }
@@ -400,7 +412,7 @@ export class ShareResourcesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share cloudflare_share}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share cloudflare_share}
 */
 export class Share extends cdktn.TerraformResource {
 
@@ -416,7 +428,7 @@ export class Share extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Share resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Share to import
-  * @param importFromId The id of the existing Share that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Share that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Share to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -428,7 +440,7 @@ export class Share extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share cloudflare_share} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share cloudflare_share} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -439,7 +451,7 @@ export class Share extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_share',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -451,6 +463,8 @@ export class Share extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._includeRecipientCounts = config.includeRecipientCounts;
+    this._includeResources = config.includeResources;
     this._name = config.name;
     this._recipients.internalValue = config.recipients;
     this._resources.internalValue = config.resources;
@@ -506,6 +520,38 @@ export class Share extends cdktn.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // include_recipient_counts - computed: false, optional: true, required: false
+  private _includeRecipientCounts?: boolean | cdktn.IResolvable; 
+  public get includeRecipientCounts() {
+    return this.getBooleanAttribute('include_recipient_counts');
+  }
+  public set includeRecipientCounts(value: boolean | cdktn.IResolvable) {
+    this._includeRecipientCounts = value;
+  }
+  public resetIncludeRecipientCounts() {
+    this._includeRecipientCounts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeRecipientCountsInput() {
+    return this._includeRecipientCounts;
+  }
+
+  // include_resources - computed: false, optional: true, required: false
+  private _includeResources?: boolean | cdktn.IResolvable; 
+  public get includeResources() {
+    return this.getBooleanAttribute('include_resources');
+  }
+  public set includeResources(value: boolean | cdktn.IResolvable) {
+    this._includeResources = value;
+  }
+  public resetIncludeResources() {
+    this._includeResources = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeResourcesInput() {
+    return this._includeResources;
   }
 
   // kind - computed: true, optional: false, required: false
@@ -579,6 +625,8 @@ export class Share extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      include_recipient_counts: cdktn.booleanToTerraform(this._includeRecipientCounts),
+      include_resources: cdktn.booleanToTerraform(this._includeResources),
       name: cdktn.stringToTerraform(this._name),
       recipients: cdktn.listMapper(shareRecipientsToTerraform, false)(this._recipients.internalValue),
       resources: cdktn.listMapper(shareResourcesToTerraform, false)(this._resources.internalValue),
@@ -592,6 +640,18 @@ export class Share extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      include_recipient_counts: {
+        value: cdktn.booleanToHclTerraform(this._includeRecipientCounts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      include_resources: {
+        value: cdktn.booleanToHclTerraform(this._includeResources),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       name: {
         value: cdktn.stringToHclTerraform(this._name),

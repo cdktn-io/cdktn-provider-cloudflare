@@ -4,7 +4,7 @@
 
 ### SchemaValidationSchemas <a name="SchemaValidationSchemas" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.resetOmitSource">ResetOmitSource</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +387,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetOmitSource` <a name="ResetOmitSource" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.resetOmitSource"></a>
+
+```csharp
+private void ResetOmitSource()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +496,7 @@ The construct id used in the generated config for the SchemaValidationSchemas to
 
 The id of the existing SchemaValidationSchemas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -524,11 +531,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.schemaId">SchemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.kindInput">KindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.omitSourceInput">OmitSourceInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.sourceInput">SourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.validationEnabledInput">ValidationEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.kind">Kind</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.omitSource">OmitSource</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.source">Source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.validationEnabled">ValidationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.zoneId">ZoneId</a></code> | <code>string</code> | *No description.* |
@@ -727,6 +736,16 @@ public string NameInput { get; }
 
 ---
 
+##### `OmitSourceInput`<sup>Optional</sup> <a name="OmitSourceInput" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.omitSourceInput"></a>
+
+```csharp
+public bool|IResolvable OmitSourceInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `SourceInput`<sup>Optional</sup> <a name="SourceInput" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.sourceInput"></a>
 
 ```csharp
@@ -774,6 +793,16 @@ public string Name { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `OmitSource`<sup>Required</sup> <a name="OmitSource" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.property.omitSource"></a>
+
+```csharp
+public bool|IResolvable OmitSource { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -846,7 +875,8 @@ new SchemaValidationSchemasConfig {
     string Name,
     string Source,
     bool|IResolvable ValidationEnabled,
-    string ZoneId
+    string ZoneId,
+    bool|IResolvable OmitSource = null
 };
 ```
 
@@ -866,6 +896,7 @@ new SchemaValidationSchemasConfig {
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemasConfig.property.source">Source</a></code> | <code>string</code> | The raw schema, e.g., the OpenAPI schema, either as JSON or YAML. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemasConfig.property.validationEnabled">ValidationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | An indicator if this schema is enabled. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemasConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemasConfig.property.omitSource">OmitSource</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Omit the source-files of schemas and only retrieve their meta-data. |
 
 ---
 
@@ -949,7 +980,7 @@ public string Kind { get; set; }
 
 The kind of the schema Available values: "openapi_v3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
 
 ---
 
@@ -963,7 +994,7 @@ public string Name { get; set; }
 
 A human-readable name for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
 
 ---
 
@@ -977,7 +1008,7 @@ public string Source { get; set; }
 
 The raw schema, e.g., the OpenAPI schema, either as JSON or YAML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
 
 ---
 
@@ -991,7 +1022,7 @@ public bool|IResolvable ValidationEnabled { get; set; }
 
 An indicator if this schema is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
 
 ---
 
@@ -1005,7 +1036,21 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
+
+---
+
+##### `OmitSource`<sup>Optional</sup> <a name="OmitSource" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemasConfig.property.omitSource"></a>
+
+```csharp
+public bool|IResolvable OmitSource { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Omit the source-files of schemas and only retrieve their meta-data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#omit_source SchemaValidationSchemas#omit_source}
 
 ---
 

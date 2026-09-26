@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,27 @@ import * as cdktn from 'cdktn';
 
 export interface SecretsStoreConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#account_id SecretsStore#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#account_id SecretsStore#account_id}
   */
   readonly accountId: string;
   /**
+  * When true, cascade-deletes all secrets in the store before deleting the store itself.
+  * Required when deleting a non-empty store. Without this parameter, attempting to
+  * delete a non-empty store returns 409.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#force SecretsStore#force}
+  */
+  readonly force?: boolean | cdktn.IResolvable;
+  /**
   * The name of the store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#name SecretsStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#name SecretsStore#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store cloudflare_secrets_store}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store cloudflare_secrets_store}
 */
 export class SecretsStore extends cdktn.TerraformResource {
 
@@ -41,7 +49,7 @@ export class SecretsStore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecretsStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsStore to import
-  * @param importFromId The id of the existing SecretsStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +61,7 @@ export class SecretsStore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store cloudflare_secrets_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store cloudflare_secrets_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +72,7 @@ export class SecretsStore extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_secrets_store',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -76,6 +84,7 @@ export class SecretsStore extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._force = config.force;
     this._name = config.name;
   }
 
@@ -99,6 +108,22 @@ export class SecretsStore extends cdktn.TerraformResource {
   // created - computed: true, optional: false, required: false
   public get created() {
     return this.getStringAttribute('created');
+  }
+
+  // force - computed: true, optional: true, required: false
+  private _force?: boolean | cdktn.IResolvable; 
+  public get force() {
+    return this.getBooleanAttribute('force');
+  }
+  public set force(value: boolean | cdktn.IResolvable) {
+    this._force = value;
+  }
+  public resetForce() {
+    this._force = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceInput() {
+    return this._force;
   }
 
   // id - computed: true, optional: false, required: false
@@ -131,6 +156,7 @@ export class SecretsStore extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      force: cdktn.booleanToTerraform(this._force),
       name: cdktn.stringToTerraform(this._name),
     };
   }
@@ -142,6 +168,12 @@ export class SecretsStore extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      force: {
+        value: cdktn.booleanToHclTerraform(this._force),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       name: {
         value: cdktn.stringToHclTerraform(this._name),

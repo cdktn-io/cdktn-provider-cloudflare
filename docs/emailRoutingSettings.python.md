@@ -4,7 +4,7 @@
 
 ### EmailRoutingSettings <a name="EmailRoutingSettings" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer"></a>
 
@@ -21,7 +21,8 @@ emailRoutingSettings.EmailRoutingSettings(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str
+  zone_id: str,
+  support_subaddress: bool | IResolvable = None
 )
 ```
 
@@ -37,6 +38,7 @@ emailRoutingSettings.EmailRoutingSettings(
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.supportSubaddress">support_subaddress</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules. |
 
 ---
 
@@ -106,7 +108,17 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+
+---
+
+##### `support_subaddress`<sup>Optional</sup> <a name="support_subaddress" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.supportSubaddress"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
 
 ---
 
@@ -138,6 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.resetSupportSubaddress">reset_support_subaddress</a></code> | *No description.* |
 
 ---
 
@@ -489,6 +502,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_support_subaddress` <a name="reset_support_subaddress" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.resetSupportSubaddress"></a>
+
+```python
+def reset_support_subaddress() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -603,7 +622,7 @@ The construct id used in the generated config for the EmailRoutingSettings to im
 
 The id of the existing EmailRoutingSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,7 +660,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.skipWizard">skip_wizard</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.tag">tag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.supportSubaddressInput">support_subaddress_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.supportSubaddress">support_subaddress</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -868,6 +889,16 @@ tag: str
 
 ---
 
+##### `support_subaddress_input`<sup>Optional</sup> <a name="support_subaddress_input" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.supportSubaddressInput"></a>
+
+```python
+support_subaddress_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `zone_id_input`<sup>Optional</sup> <a name="zone_id_input" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.zoneIdInput"></a>
 
 ```python
@@ -875,6 +906,16 @@ zone_id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `support_subaddress`<sup>Required</sup> <a name="support_subaddress" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.property.supportSubaddress"></a>
+
+```python
+support_subaddress: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -923,7 +964,8 @@ emailRoutingSettings.EmailRoutingSettingsConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str
+  zone_id: str,
+  support_subaddress: bool | IResolvable = None
 )
 ```
 
@@ -939,6 +981,7 @@ emailRoutingSettings.EmailRoutingSettingsConfig(
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.supportSubaddress">support_subaddress</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules. |
 
 ---
 
@@ -1022,7 +1065,21 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+
+---
+
+##### `support_subaddress`<sup>Optional</sup> <a name="support_subaddress" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.supportSubaddress"></a>
+
+```python
+support_subaddress: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
 
 ---
 

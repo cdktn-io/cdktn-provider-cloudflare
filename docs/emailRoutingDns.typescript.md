@@ -4,7 +4,7 @@
 
 ### EmailRoutingDns <a name="EmailRoutingDns" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.resetSubdomain">resetSubdomain</a></code> | *No description.* |
 
 ---
 
@@ -393,6 +394,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetName(): void
 ```
 
+##### `resetSubdomain` <a name="resetSubdomain" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.resetSubdomain"></a>
+
+```typescript
+public resetSubdomain(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +503,7 @@ The construct id used in the generated config for the EmailRoutingDns to import.
 
 The id of the existing EmailRoutingDns that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -535,8 +542,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.supportSubaddress">supportSubaddress</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.tag">tag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.subdomainInput">subdomainInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.subdomain">subdomain</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -773,6 +782,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `subdomainInput`<sup>Optional</sup> <a name="subdomainInput" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.subdomainInput"></a>
+
+```typescript
+public readonly subdomainInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.zoneIdInput"></a>
 
 ```typescript
@@ -787,6 +806,16 @@ public readonly zoneIdInput: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subdomain`<sup>Required</sup> <a name="subdomain" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.subdomain"></a>
+
+```typescript
+public readonly subdomain: string;
 ```
 
 - *Type:* string
@@ -846,6 +875,7 @@ const emailRoutingDnsConfig: emailRoutingDns.EmailRoutingDnsConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.name">name</a></code> | <code>string</code> | Domain of your zone. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.subdomain">subdomain</a></code> | <code>string</code> | Deprecated. |
 
 ---
 
@@ -929,7 +959,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
 
 ---
 
@@ -943,7 +973,23 @@ public readonly name: string;
 
 Domain of your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+
+---
+
+##### `subdomain`<sup>Optional</sup> <a name="subdomain" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.subdomain"></a>
+
+```typescript
+public readonly subdomain: string;
+```
+
+- *Type:* string
+
+Deprecated.
+
+When supplied, the response shape differs from the documented default and is not modeled in generated SDKs. Do not rely on this parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#subdomain EmailRoutingDns#subdomain}
 
 ---
 

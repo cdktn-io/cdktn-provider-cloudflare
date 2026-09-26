@@ -4,7 +4,7 @@
 
 ### UserGroupMembers <a name="UserGroupMembers" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members cloudflare_user_group_members}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members cloudflare_user_group_members}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer"></a>
 
@@ -23,7 +23,11 @@ userGroupMembers.UserGroupMembers(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   members: IResolvable | typing.List[UserGroupMembersMembers],
-  user_group_id: str
+  user_group_id: str,
+  direction: str = None,
+  fuzzy_email: str = None,
+  page: typing.Union[int, float] = None,
+  per_page: typing.Union[int, float] = None
 )
 ```
 
@@ -39,8 +43,12 @@ userGroupMembers.UserGroupMembers(
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.members">members</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembers">UserGroupMembersMembers</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#members UserGroupMembers#members}. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.members">members</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembers">UserGroupMembersMembers</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}. |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.userGroupId">user_group_id</a></code> | <code>str</code> | User Group identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.direction">direction</a></code> | <code>str</code> | The sort order of returned user group members by email. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.fuzzyEmail">fuzzy_email</a></code> | <code>str</code> | A string used for filtering members by partial email match. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.page">page</a></code> | <code>typing.Union[int, float]</code> | Page number of paginated results. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | Maximum number of results per page. |
 
 ---
 
@@ -110,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
 
 ---
 
@@ -118,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembers">UserGroupMembersMembers</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#members UserGroupMembers#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}.
 
 ---
 
@@ -128,7 +136,47 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 User Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.direction"></a>
+
+- *Type:* str
+
+The sort order of returned user group members by email. Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#direction UserGroupMembers#direction}
+
+---
+
+##### `fuzzy_email`<sup>Optional</sup> <a name="fuzzy_email" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.fuzzyEmail"></a>
+
+- *Type:* str
+
+A string used for filtering members by partial email match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#fuzzy_email UserGroupMembers#fuzzy_email}
+
+---
+
+##### `page`<sup>Optional</sup> <a name="page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.page"></a>
+
+- *Type:* typing.Union[int, float]
+
+Page number of paginated results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#page UserGroupMembers#page}
+
+---
+
+##### `per_page`<sup>Optional</sup> <a name="per_page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer.parameter.perPage"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of results per page.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#per_page UserGroupMembers#per_page}
 
 ---
 
@@ -161,6 +209,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.putMembers">put_members</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetDirection">reset_direction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetFuzzyEmail">reset_fuzzy_email</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetPage">reset_page</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetPerPage">reset_per_page</a></code> | *No description.* |
 
 ---
 
@@ -526,6 +578,30 @@ def put_members(
 
 ---
 
+##### `reset_direction` <a name="reset_direction" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetDirection"></a>
+
+```python
+def reset_direction() -> None
+```
+
+##### `reset_fuzzy_email` <a name="reset_fuzzy_email" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetFuzzyEmail"></a>
+
+```python
+def reset_fuzzy_email() -> None
+```
+
+##### `reset_page` <a name="reset_page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetPage"></a>
+
+```python
+def reset_page() -> None
+```
+
+##### `reset_per_page` <a name="reset_per_page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetPerPage"></a>
+
+```python
+def reset_per_page() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -640,7 +716,7 @@ The construct id used in the generated config for the UserGroupMembers to import
 
 The id of the existing UserGroupMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -673,9 +749,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.members">members</a></code> | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembersList">UserGroupMembersMembersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.fuzzyEmailInput">fuzzy_email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.membersInput">members_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembers">UserGroupMembersMembers</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.pageInput">page_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.perPageInput">per_page_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.userGroupIdInput">user_group_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.direction">direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.fuzzyEmail">fuzzy_email</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.page">page</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.userGroupId">user_group_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -852,6 +936,26 @@ account_id_input: str
 
 ---
 
+##### `direction_input`<sup>Optional</sup> <a name="direction_input" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.directionInput"></a>
+
+```python
+direction_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `fuzzy_email_input`<sup>Optional</sup> <a name="fuzzy_email_input" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.fuzzyEmailInput"></a>
+
+```python
+fuzzy_email_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `members_input`<sup>Optional</sup> <a name="members_input" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.membersInput"></a>
 
 ```python
@@ -859,6 +963,26 @@ members_input: IResolvable | typing.List[UserGroupMembersMembers]
 ```
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembers">UserGroupMembersMembers</a>]
+
+---
+
+##### `page_input`<sup>Optional</sup> <a name="page_input" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.pageInput"></a>
+
+```python
+page_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `per_page_input`<sup>Optional</sup> <a name="per_page_input" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.perPageInput"></a>
+
+```python
+per_page_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -879,6 +1003,46 @@ account_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+---
+
+##### `fuzzy_email`<sup>Required</sup> <a name="fuzzy_email" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.fuzzyEmail"></a>
+
+```python
+fuzzy_email: str
+```
+
+- *Type:* str
+
+---
+
+##### `page`<sup>Required</sup> <a name="page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.page"></a>
+
+```python
+page: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `per_page`<sup>Required</sup> <a name="per_page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.perPage"></a>
+
+```python
+per_page: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -929,7 +1093,11 @@ userGroupMembers.UserGroupMembersConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   members: IResolvable | typing.List[UserGroupMembersMembers],
-  user_group_id: str
+  user_group_id: str,
+  direction: str = None,
+  fuzzy_email: str = None,
+  page: typing.Union[int, float] = None,
+  per_page: typing.Union[int, float] = None
 )
 ```
 
@@ -945,8 +1113,12 @@ userGroupMembers.UserGroupMembersConfig(
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.members">members</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembers">UserGroupMembersMembers</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#members UserGroupMembers#members}. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.members">members</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembers">UserGroupMembersMembers</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}. |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.userGroupId">user_group_id</a></code> | <code>str</code> | User Group identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.direction">direction</a></code> | <code>str</code> | The sort order of returned user group members by email. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.fuzzyEmail">fuzzy_email</a></code> | <code>str</code> | A string used for filtering members by partial email match. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.page">page</a></code> | <code>typing.Union[int, float]</code> | Page number of paginated results. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | Maximum number of results per page. |
 
 ---
 
@@ -1030,7 +1202,7 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
 
 ---
 
@@ -1042,7 +1214,7 @@ members: IResolvable | typing.List[UserGroupMembersMembers]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembers">UserGroupMembersMembers</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#members UserGroupMembers#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}.
 
 ---
 
@@ -1056,7 +1228,63 @@ user_group_id: str
 
 User Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+The sort order of returned user group members by email. Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#direction UserGroupMembers#direction}
+
+---
+
+##### `fuzzy_email`<sup>Optional</sup> <a name="fuzzy_email" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.fuzzyEmail"></a>
+
+```python
+fuzzy_email: str
+```
+
+- *Type:* str
+
+A string used for filtering members by partial email match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#fuzzy_email UserGroupMembers#fuzzy_email}
+
+---
+
+##### `page`<sup>Optional</sup> <a name="page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.page"></a>
+
+```python
+page: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Page number of paginated results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#page UserGroupMembers#page}
+
+---
+
+##### `per_page`<sup>Optional</sup> <a name="per_page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.perPage"></a>
+
+```python
+per_page: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of results per page.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#per_page UserGroupMembers#per_page}
 
 ---
 
@@ -1090,7 +1318,7 @@ id: str
 
 The identifier of an existing account Member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#id UserGroupMembers#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#id UserGroupMembers#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

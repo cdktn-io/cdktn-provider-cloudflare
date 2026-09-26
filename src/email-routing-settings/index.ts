@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface EmailRoutingSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
+  */
+  readonly supportSubaddress?: boolean | cdktn.IResolvable;
+  /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}
 */
 export class EmailRoutingSettings extends cdktn.TerraformResource {
 
@@ -37,7 +43,7 @@ export class EmailRoutingSettings extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EmailRoutingSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailRoutingSettings to import
-  * @param importFromId The id of the existing EmailRoutingSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailRoutingSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailRoutingSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +55,7 @@ export class EmailRoutingSettings extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +66,7 @@ export class EmailRoutingSettings extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -71,6 +77,7 @@ export class EmailRoutingSettings extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._supportSubaddress = config.supportSubaddress;
     this._zoneId = config.zoneId;
   }
 
@@ -113,6 +120,22 @@ export class EmailRoutingSettings extends cdktn.TerraformResource {
     return this.getStringAttribute('status');
   }
 
+  // support_subaddress - computed: false, optional: true, required: false
+  private _supportSubaddress?: boolean | cdktn.IResolvable; 
+  public get supportSubaddress() {
+    return this.getBooleanAttribute('support_subaddress');
+  }
+  public set supportSubaddress(value: boolean | cdktn.IResolvable) {
+    this._supportSubaddress = value;
+  }
+  public resetSupportSubaddress() {
+    this._supportSubaddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportSubaddressInput() {
+    return this._supportSubaddress;
+  }
+
   // tag - computed: true, optional: false, required: false
   public get tag() {
     return this.getStringAttribute('tag');
@@ -137,12 +160,19 @@ export class EmailRoutingSettings extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      support_subaddress: cdktn.booleanToTerraform(this._supportSubaddress),
       zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      support_subaddress: {
+        value: cdktn.booleanToHclTerraform(this._supportSubaddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       zone_id: {
         value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,

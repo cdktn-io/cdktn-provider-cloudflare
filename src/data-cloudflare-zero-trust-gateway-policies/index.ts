@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_policies
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,52 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustGatewayPoliciesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_policies#account_id DataCloudflareZeroTrustGatewayPolicies#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies#account_id DataCloudflareZeroTrustGatewayPolicies#account_id}
   */
   readonly accountId?: string;
   /**
+  * Sort direction. When `order_by` is omitted, this controls the direction
+  * of the existing precedence ordering. Shared rules remain first in either
+  * direction. Accepted values are `asc` and `desc`.
+  * Available values: "asc", "desc".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies#direction DataCloudflareZeroTrustGatewayPolicies#direction}
+  */
+  readonly direction?: string;
+  /**
+  * Filter the returned rules by one or more `field:value` pairs. Repeat the
+  * parameter to combine filters with logical AND.
+  * 
+  * Supported fields are `name`, `id`, `action`, `enabled`, `source_account`,
+  * `is_shared`, `filters`, and `expression` (max 1024 bytes). The `source_account`
+  * value is matched as a normalized UUID substring. The `filters` value must
+  * be one of the rule filter names and matches a member of the rule's `filters`
+  * array. The `expression` filter performs a case-insensitive literal
+  * substring match across traffic, identity, and device posture expressions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies#filter DataCloudflareZeroTrustGatewayPolicies#filter}
+  */
+  readonly filter?: string[];
+  /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_policies#max_items DataCloudflareZeroTrustGatewayPolicies#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies#max_items DataCloudflareZeroTrustGatewayPolicies#max_items}
   */
   readonly maxItems?: number;
+  /**
+  * Field to sort the returned rules by. Supported values are `name`,
+  * `created_at`, `updated_at`, and `precedence`.
+  * Available values: "name", "created_at", "updated_at", "precedence".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies#order_by DataCloudflareZeroTrustGatewayPolicies#order_by}
+  */
+  readonly orderBy?: string;
+  /**
+  * Case-insensitive substring search across rule name and description.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies#search DataCloudflareZeroTrustGatewayPolicies#search}
+  */
+  readonly search?: string;
 }
 export interface DataCloudflareZeroTrustGatewayPoliciesResultExpiration {
 }
@@ -1619,7 +1656,7 @@ export class DataCloudflareZeroTrustGatewayPoliciesResultList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies}
 */
 export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataSource {
 
@@ -1635,7 +1672,7 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
   * Generates CDKTN code for importing a DataCloudflareZeroTrustGatewayPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustGatewayPolicies to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustGatewayPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1647,7 +1684,7 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1658,7 +1695,7 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
       terraformResourceType: 'cloudflare_zero_trust_gateway_policies',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1670,7 +1707,11 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._direction = config.direction;
+    this._filter = config.filter;
     this._maxItems = config.maxItems;
+    this._orderBy = config.orderBy;
+    this._search = config.search;
   }
 
   // ==========
@@ -1693,6 +1734,38 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
     return this._accountId;
   }
 
+  // direction - computed: false, optional: true, required: false
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  public resetDirection() {
+    this._direction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter?: string[]; 
+  public get filter() {
+    return this.getListAttribute('filter');
+  }
+  public set filter(value: string[]) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
+  }
+
   // max_items - computed: false, optional: true, required: false
   private _maxItems?: number; 
   public get maxItems() {
@@ -1709,10 +1782,42 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
     return this._maxItems;
   }
 
+  // order_by - computed: false, optional: true, required: false
+  private _orderBy?: string; 
+  public get orderBy() {
+    return this.getStringAttribute('order_by');
+  }
+  public set orderBy(value: string) {
+    this._orderBy = value;
+  }
+  public resetOrderBy() {
+    this._orderBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderByInput() {
+    return this._orderBy;
+  }
+
   // result - computed: true, optional: false, required: false
   private _result = new DataCloudflareZeroTrustGatewayPoliciesResultList(this, "result", false);
   public get result() {
     return this._result;
+  }
+
+  // search - computed: false, optional: true, required: false
+  private _search?: string; 
+  public get search() {
+    return this.getStringAttribute('search');
+  }
+  public set search(value: string) {
+    this._search = value;
+  }
+  public resetSearch() {
+    this._search = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchInput() {
+    return this._search;
   }
 
   // =========
@@ -1722,7 +1827,11 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      direction: cdktn.stringToTerraform(this._direction),
+      filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filter),
       max_items: cdktn.numberToTerraform(this._maxItems),
+      order_by: cdktn.stringToTerraform(this._orderBy),
+      search: cdktn.stringToTerraform(this._search),
     };
   }
 
@@ -1734,11 +1843,35 @@ export class DataCloudflareZeroTrustGatewayPolicies extends cdktn.TerraformDataS
         type: "simple",
         storageClassType: "string",
       },
+      direction: {
+        value: cdktn.stringToHclTerraform(this._direction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._filter),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       max_items: {
         value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      order_by: {
+        value: cdktn.stringToHclTerraform(this._orderBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      search: {
+        value: cdktn.stringToHclTerraform(this._search),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

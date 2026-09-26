@@ -4,7 +4,7 @@
 
 ### ShareRecipient <a name="ShareRecipient" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient cloudflare_share_recipient}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient cloudflare_share_recipient}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetIncludeResources">resetIncludeResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetOrganizationId">resetOrganizationId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetRecipientAccountId">resetRecipientAccountId</a></code> | *No description.* |
 
@@ -388,6 +389,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetIncludeResources` <a name="resetIncludeResources" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetIncludeResources"></a>
+
+```typescript
+public resetIncludeResources(): void
+```
+
 ##### `resetOrganizationId` <a name="resetOrganizationId" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetOrganizationId"></a>
 
 ```typescript
@@ -503,7 +510,7 @@ The construct id used in the generated config for the ShareRecipient to import.
 
 The id of the existing ShareRecipient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -539,10 +546,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.modified">modified</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientResourcesList">ShareRecipientResourcesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.includeResourcesInput">includeResourcesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.organizationIdInput">organizationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.recipientAccountIdInput">recipientAccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.shareIdInput">shareIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.includeResources">includeResources</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.organizationId">organizationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.recipientAccountId">recipientAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.shareId">shareId</a></code> | <code>string</code> | *No description.* |
@@ -751,6 +760,16 @@ public readonly accountIdInput: string;
 
 ---
 
+##### `includeResourcesInput`<sup>Optional</sup> <a name="includeResourcesInput" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.includeResourcesInput"></a>
+
+```typescript
+public readonly includeResourcesInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `organizationIdInput`<sup>Optional</sup> <a name="organizationIdInput" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.organizationIdInput"></a>
 
 ```typescript
@@ -788,6 +807,16 @@ public readonly accountId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `includeResources`<sup>Required</sup> <a name="includeResources" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.includeResources"></a>
+
+```typescript
+public readonly includeResources: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -864,6 +893,7 @@ const shareRecipientConfig: shareRecipient.ShareRecipientConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.shareId">shareId</a></code> | <code>string</code> | Share identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.includeResources">includeResources</a></code> | <code>boolean \| cdktn.IResolvable</code> | Include resources in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.organizationId">organizationId</a></code> | <code>string</code> | Organization identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.recipientAccountId">recipientAccountId</a></code> | <code>string</code> | The account that will receive the share. |
 
@@ -949,7 +979,7 @@ public readonly accountId: string;
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#account_id ShareRecipient#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#account_id ShareRecipient#account_id}
 
 ---
 
@@ -963,7 +993,21 @@ public readonly shareId: string;
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#share_id ShareRecipient#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#share_id ShareRecipient#share_id}
+
+---
+
+##### `includeResources`<sup>Optional</sup> <a name="includeResources" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.includeResources"></a>
+
+```typescript
+public readonly includeResources: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Include resources in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#include_resources ShareRecipient#include_resources}
 
 ---
 
@@ -977,7 +1021,7 @@ public readonly organizationId: string;
 
 Organization identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
 
 ---
 
@@ -991,7 +1035,7 @@ public readonly recipientAccountId: string;
 
 The account that will receive the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
 
 ---
 

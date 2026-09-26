@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,37 @@ export interface AccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Parent container details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#managed_by Account#managed_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#managed_by Account#managed_by}
   */
   readonly managedBy?: AccountManagedBy;
   /**
   * Account name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#name Account#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#name Account#name}
   */
   readonly name: string;
   /**
   * Account settings
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#settings Account#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#settings Account#settings}
   */
   readonly settings?: AccountSettings;
   /**
+  * Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#standalone Account#standalone}
+  */
+  readonly standalone?: boolean | cdktn.IResolvable;
+  /**
   * Available values: "standard", "enterprise".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#type Account#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#type Account#type}
   */
   readonly type?: string;
   /**
-  * information related to the tenant unit, and optionally, an id of the unit to create the account on. see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
+  * Information related to the tenant unit. Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#unit Account#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#unit Account#unit}
   */
   readonly unit?: AccountUnit;
 }
@@ -116,14 +122,14 @@ export interface AccountSettings {
   /**
   * Sets an abuse contact email to notify for abuse reports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
   */
   readonly abuseContactEmail?: string;
   /**
   * Indicates whether membership in this account requires that
   * Two-Factor Authentication is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
   */
   readonly enforceTwofactor?: boolean | cdktn.IResolvable;
 }
@@ -248,7 +254,7 @@ export interface AccountUnit {
   /**
   * Tenant unit ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#id Account#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#id Account#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -345,7 +351,7 @@ export class AccountUnitOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account cloudflare_account}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account cloudflare_account}
 */
 export class Account extends cdktn.TerraformResource {
 
@@ -361,7 +367,7 @@ export class Account extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Account resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Account to import
-  * @param importFromId The id of the existing Account that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Account that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Account to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -373,7 +379,7 @@ export class Account extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account cloudflare_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account cloudflare_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -384,7 +390,7 @@ export class Account extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_account',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -398,6 +404,7 @@ export class Account extends cdktn.TerraformResource {
     this._managedBy.internalValue = config.managedBy;
     this._name = config.name;
     this._settings.internalValue = config.settings;
+    this._standalone = config.standalone;
     this._type = config.type;
     this._unit.internalValue = config.unit;
   }
@@ -461,6 +468,22 @@ export class Account extends cdktn.TerraformResource {
     return this._settings.internalValue;
   }
 
+  // standalone - computed: true, optional: true, required: false
+  private _standalone?: boolean | cdktn.IResolvable; 
+  public get standalone() {
+    return this.getBooleanAttribute('standalone');
+  }
+  public set standalone(value: boolean | cdktn.IResolvable) {
+    this._standalone = value;
+  }
+  public resetStandalone() {
+    this._standalone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get standaloneInput() {
+    return this._standalone;
+  }
+
   // type - computed: true, optional: true, required: false
   private _type?: string; 
   public get type() {
@@ -502,6 +525,7 @@ export class Account extends cdktn.TerraformResource {
       managed_by: accountManagedByToTerraform(this._managedBy.internalValue),
       name: cdktn.stringToTerraform(this._name),
       settings: accountSettingsToTerraform(this._settings.internalValue),
+      standalone: cdktn.booleanToTerraform(this._standalone),
       type: cdktn.stringToTerraform(this._type),
       unit: accountUnitToTerraform(this._unit.internalValue),
     };
@@ -526,6 +550,12 @@ export class Account extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "AccountSettings",
+      },
+      standalone: {
+        value: cdktn.booleanToHclTerraform(this._standalone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       type: {
         value: cdktn.stringToHclTerraform(this._type),

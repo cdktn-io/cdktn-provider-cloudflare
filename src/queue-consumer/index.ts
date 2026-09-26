@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,73 +15,443 @@ export interface QueueConsumerConfig extends cdktn.TerraformMetaArguments {
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}
   */
   readonly deadLetterQueue?: string;
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
   */
   readonly queueId: string;
   /**
   * Name of a Worker
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
   */
   readonly scriptName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#settings QueueConsumer#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#settings QueueConsumer#settings}
   */
   readonly settings?: QueueConsumerSettings;
   /**
-  * Available values: "worker", "http_pull".
+  * Available values: "worker", "http_pull", "notification".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#type QueueConsumer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#type QueueConsumer#type}
   */
   readonly type: string;
+}
+export interface QueueConsumerSettingsEmail {
+  /**
+  * The email address.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function queueConsumerSettingsEmailToTerraform(struct?: QueueConsumerSettingsEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    id: cdktn.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function queueConsumerSettingsEmailToHclTerraform(struct?: QueueConsumerSettingsEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    id: {
+      value: cdktn.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class QueueConsumerSettingsEmailOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): QueueConsumerSettingsEmail | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: QueueConsumerSettingsEmail | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+
+export class QueueConsumerSettingsEmailList extends cdktn.ComplexList {
+  public internalValue? : QueueConsumerSettingsEmail[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): QueueConsumerSettingsEmailOutputReference {
+    return new QueueConsumerSettingsEmailOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface QueueConsumerSettingsPagerduty {
+  /**
+  * UUID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function queueConsumerSettingsPagerdutyToTerraform(struct?: QueueConsumerSettingsPagerduty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    id: cdktn.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function queueConsumerSettingsPagerdutyToHclTerraform(struct?: QueueConsumerSettingsPagerduty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    id: {
+      value: cdktn.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class QueueConsumerSettingsPagerdutyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): QueueConsumerSettingsPagerduty | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: QueueConsumerSettingsPagerduty | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+
+export class QueueConsumerSettingsPagerdutyList extends cdktn.ComplexList {
+  public internalValue? : QueueConsumerSettingsPagerduty[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): QueueConsumerSettingsPagerdutyOutputReference {
+    return new QueueConsumerSettingsPagerdutyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface QueueConsumerSettingsWebhooks {
+  /**
+  * UUID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function queueConsumerSettingsWebhooksToTerraform(struct?: QueueConsumerSettingsWebhooks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    id: cdktn.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function queueConsumerSettingsWebhooksToHclTerraform(struct?: QueueConsumerSettingsWebhooks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    id: {
+      value: cdktn.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class QueueConsumerSettingsWebhooksOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): QueueConsumerSettingsWebhooks | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: QueueConsumerSettingsWebhooks | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+
+export class QueueConsumerSettingsWebhooksList extends cdktn.ComplexList {
+  public internalValue? : QueueConsumerSettingsWebhooks[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): QueueConsumerSettingsWebhooksOutputReference {
+    return new QueueConsumerSettingsWebhooksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface QueueConsumerSettings {
   /**
   * The maximum number of messages to include in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
   */
   readonly batchSize?: number;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#email QueueConsumer#email}
+  */
+  readonly email?: QueueConsumerSettingsEmail[] | cdktn.IResolvable;
+  /**
   * Maximum number of concurrent consumers that may consume from this Queue. Set to `null` to automatically opt in to the platform's maximum (recommended).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
   */
   readonly maxConcurrency?: number;
   /**
   * The maximum number of retries
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * The number of milliseconds to wait for a batch to fill up before attempting to deliver it
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
   */
   readonly maxWaitTimeMs?: number;
   /**
+  * PagerDuty notification destinations.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#pagerduty QueueConsumer#pagerduty}
+  */
+  readonly pagerduty?: QueueConsumerSettingsPagerduty[] | cdktn.IResolvable;
+  /**
   * The number of seconds to delay before making the message available for another attempt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
   */
   readonly retryDelay?: number;
   /**
   * The number of milliseconds that a message is exclusively leased. After the timeout, the message becomes available for another attempt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
   */
   readonly visibilityTimeoutMs?: number;
+  /**
+  * Webhook notification destinations.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#webhooks QueueConsumer#webhooks}
+  */
+  readonly webhooks?: QueueConsumerSettingsWebhooks[] | cdktn.IResolvable;
 }
 
 export function queueConsumerSettingsToTerraform(struct?: QueueConsumerSettings | cdktn.IResolvable): any {
@@ -91,11 +461,14 @@ export function queueConsumerSettingsToTerraform(struct?: QueueConsumerSettings 
   }
   return {
     batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    email: cdktn.listMapper(queueConsumerSettingsEmailToTerraform, false)(struct!.email),
     max_concurrency: cdktn.numberToTerraform(struct!.maxConcurrency),
     max_retries: cdktn.numberToTerraform(struct!.maxRetries),
     max_wait_time_ms: cdktn.numberToTerraform(struct!.maxWaitTimeMs),
+    pagerduty: cdktn.listMapper(queueConsumerSettingsPagerdutyToTerraform, false)(struct!.pagerduty),
     retry_delay: cdktn.numberToTerraform(struct!.retryDelay),
     visibility_timeout_ms: cdktn.numberToTerraform(struct!.visibilityTimeoutMs),
+    webhooks: cdktn.listMapper(queueConsumerSettingsWebhooksToTerraform, false)(struct!.webhooks),
   }
 }
 
@@ -111,6 +484,12 @@ export function queueConsumerSettingsToHclTerraform(struct?: QueueConsumerSettin
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    email: {
+      value: cdktn.listMapperHcl(queueConsumerSettingsEmailToHclTerraform, false)(struct!.email),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QueueConsumerSettingsEmailList",
     },
     max_concurrency: {
       value: cdktn.numberToHclTerraform(struct!.maxConcurrency),
@@ -130,6 +509,12 @@ export function queueConsumerSettingsToHclTerraform(struct?: QueueConsumerSettin
       type: "simple",
       storageClassType: "number",
     },
+    pagerduty: {
+      value: cdktn.listMapperHcl(queueConsumerSettingsPagerdutyToHclTerraform, false)(struct!.pagerduty),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QueueConsumerSettingsPagerdutyList",
+    },
     retry_delay: {
       value: cdktn.numberToHclTerraform(struct!.retryDelay),
       isBlock: false,
@@ -141,6 +526,12 @@ export function queueConsumerSettingsToHclTerraform(struct?: QueueConsumerSettin
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    webhooks: {
+      value: cdktn.listMapperHcl(queueConsumerSettingsWebhooksToHclTerraform, false)(struct!.webhooks),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QueueConsumerSettingsWebhooksList",
     },
   };
 
@@ -170,6 +561,10 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
       hasAnyValues = true;
       internalValueResult.batchSize = this._batchSize;
     }
+    if (this._email?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email?.internalValue;
+    }
     if (this._maxConcurrency !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxConcurrency = this._maxConcurrency;
@@ -182,6 +577,10 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
       hasAnyValues = true;
       internalValueResult.maxWaitTimeMs = this._maxWaitTimeMs;
     }
+    if (this._pagerduty?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pagerduty = this._pagerduty?.internalValue;
+    }
     if (this._retryDelay !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryDelay = this._retryDelay;
@@ -189,6 +588,10 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
     if (this._visibilityTimeoutMs !== undefined) {
       hasAnyValues = true;
       internalValueResult.visibilityTimeoutMs = this._visibilityTimeoutMs;
+    }
+    if (this._webhooks?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.webhooks = this._webhooks?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -198,11 +601,14 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._batchSize = undefined;
+      this._email.internalValue = undefined;
       this._maxConcurrency = undefined;
       this._maxRetries = undefined;
       this._maxWaitTimeMs = undefined;
+      this._pagerduty.internalValue = undefined;
       this._retryDelay = undefined;
       this._visibilityTimeoutMs = undefined;
+      this._webhooks.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -212,11 +618,14 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._batchSize = value.batchSize;
+      this._email.internalValue = value.email;
       this._maxConcurrency = value.maxConcurrency;
       this._maxRetries = value.maxRetries;
       this._maxWaitTimeMs = value.maxWaitTimeMs;
+      this._pagerduty.internalValue = value.pagerduty;
       this._retryDelay = value.retryDelay;
       this._visibilityTimeoutMs = value.visibilityTimeoutMs;
+      this._webhooks.internalValue = value.webhooks;
     }
   }
 
@@ -234,6 +643,22 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get batchSizeInput() {
     return this._batchSize;
+  }
+
+  // email - computed: true, optional: true, required: false
+  private _email = new QueueConsumerSettingsEmailList(this, "email", false);
+  public get email() {
+    return this._email;
+  }
+  public putEmail(value: QueueConsumerSettingsEmail[] | cdktn.IResolvable) {
+    this._email.internalValue = value;
+  }
+  public resetEmail() {
+    this._email.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email.internalValue;
   }
 
   // max_concurrency - computed: true, optional: true, required: false
@@ -284,6 +709,22 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
     return this._maxWaitTimeMs;
   }
 
+  // pagerduty - computed: true, optional: true, required: false
+  private _pagerduty = new QueueConsumerSettingsPagerdutyList(this, "pagerduty", false);
+  public get pagerduty() {
+    return this._pagerduty;
+  }
+  public putPagerduty(value: QueueConsumerSettingsPagerduty[] | cdktn.IResolvable) {
+    this._pagerduty.internalValue = value;
+  }
+  public resetPagerduty() {
+    this._pagerduty.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pagerdutyInput() {
+    return this._pagerduty.internalValue;
+  }
+
   // retry_delay - computed: true, optional: true, required: false
   private _retryDelay?: number; 
   public get retryDelay() {
@@ -315,10 +756,26 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
   public get visibilityTimeoutMsInput() {
     return this._visibilityTimeoutMs;
   }
+
+  // webhooks - computed: true, optional: true, required: false
+  private _webhooks = new QueueConsumerSettingsWebhooksList(this, "webhooks", false);
+  public get webhooks() {
+    return this._webhooks;
+  }
+  public putWebhooks(value: QueueConsumerSettingsWebhooks[] | cdktn.IResolvable) {
+    this._webhooks.internalValue = value;
+  }
+  public resetWebhooks() {
+    this._webhooks.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webhooksInput() {
+    return this._webhooks.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer cloudflare_queue_consumer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer cloudflare_queue_consumer}
 */
 export class QueueConsumer extends cdktn.TerraformResource {
 
@@ -334,7 +791,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a QueueConsumer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QueueConsumer to import
-  * @param importFromId The id of the existing QueueConsumer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QueueConsumer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QueueConsumer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -346,7 +803,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -357,7 +814,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_queue_consumer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,37 +16,43 @@ export interface SchemaValidationSchemasConfig extends cdktn.TerraformMetaArgume
   * The kind of the schema
   * Available values: "openapi_v3".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
   */
   readonly kind: string;
   /**
   * A human-readable name for the schema
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
   */
   readonly name: string;
   /**
+  * Omit the source-files of schemas and only retrieve their meta-data.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#omit_source SchemaValidationSchemas#omit_source}
+  */
+  readonly omitSource?: boolean | cdktn.IResolvable;
+  /**
   * The raw schema, e.g., the OpenAPI schema, either as JSON or YAML
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
   */
   readonly source: string;
   /**
   * An indicator if this schema is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
   */
   readonly validationEnabled: boolean | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}
 */
 export class SchemaValidationSchemas extends cdktn.TerraformResource {
 
@@ -62,7 +68,7 @@ export class SchemaValidationSchemas extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SchemaValidationSchemas resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SchemaValidationSchemas to import
-  * @param importFromId The id of the existing SchemaValidationSchemas that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SchemaValidationSchemas that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SchemaValidationSchemas to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -74,7 +80,7 @@ export class SchemaValidationSchemas extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +91,7 @@ export class SchemaValidationSchemas extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_schema_validation_schemas',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -98,6 +104,7 @@ export class SchemaValidationSchemas extends cdktn.TerraformResource {
     });
     this._kind = config.kind;
     this._name = config.name;
+    this._omitSource = config.omitSource;
     this._source = config.source;
     this._validationEnabled = config.validationEnabled;
     this._zoneId = config.zoneId;
@@ -141,6 +148,22 @@ export class SchemaValidationSchemas extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // omit_source - computed: true, optional: true, required: false
+  private _omitSource?: boolean | cdktn.IResolvable; 
+  public get omitSource() {
+    return this.getBooleanAttribute('omit_source');
+  }
+  public set omitSource(value: boolean | cdktn.IResolvable) {
+    this._omitSource = value;
+  }
+  public resetOmitSource() {
+    this._omitSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get omitSourceInput() {
+    return this._omitSource;
   }
 
   // schema_id - computed: true, optional: false, required: false
@@ -195,6 +218,7 @@ export class SchemaValidationSchemas extends cdktn.TerraformResource {
     return {
       kind: cdktn.stringToTerraform(this._kind),
       name: cdktn.stringToTerraform(this._name),
+      omit_source: cdktn.booleanToTerraform(this._omitSource),
       source: cdktn.stringToTerraform(this._source),
       validation_enabled: cdktn.booleanToTerraform(this._validationEnabled),
       zone_id: cdktn.stringToTerraform(this._zoneId),
@@ -214,6 +238,12 @@ export class SchemaValidationSchemas extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      omit_source: {
+        value: cdktn.booleanToHclTerraform(this._omitSource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       source: {
         value: cdktn.stringToHclTerraform(this._source),

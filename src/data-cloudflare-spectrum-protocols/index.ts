@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareSpectrumProtocolsConfig extends cdktn.TerraformMe
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols#max_items DataCloudflareSpectrumProtocols#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols#max_items DataCloudflareSpectrumProtocols#max_items}
   */
   readonly maxItems?: number;
   /**
   * Zone identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols#zone_id DataCloudflareSpectrumProtocols#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols#zone_id DataCloudflareSpectrumProtocols#zone_id}
   */
   readonly zoneId: string;
 }
@@ -117,7 +117,7 @@ export class DataCloudflareSpectrumProtocolsResultList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols cloudflare_spectrum_protocols}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols cloudflare_spectrum_protocols}
 */
 export class DataCloudflareSpectrumProtocols extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataCloudflareSpectrumProtocols extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareSpectrumProtocols resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareSpectrumProtocols to import
-  * @param importFromId The id of the existing DataCloudflareSpectrumProtocols that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareSpectrumProtocols that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareSpectrumProtocols to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataCloudflareSpectrumProtocols extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols cloudflare_spectrum_protocols} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols cloudflare_spectrum_protocols} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataCloudflareSpectrumProtocols extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_spectrum_protocols',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

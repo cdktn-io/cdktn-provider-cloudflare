@@ -4,7 +4,7 @@
 
 ### OauthClient <a name="OauthClient" id="@cdktn/provider-cloudflare.oauthClient.OauthClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client cloudflare_oauth_client}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client cloudflare_oauth_client}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.oauthClient.OauthClient.Initializer"></a>
 
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#account_id OauthClient#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#account_id OauthClient#account_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Human-readable name of the OAuth client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#client_name OauthClient#client_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#client_name OauthClient#client_name}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of OAuth grant types the client is allowed to use. `authorization_code` is required; `refresh_token` may be included optionally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#grant_types OauthClient#grant_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#grant_types OauthClient#grant_types}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of allowed redirect URIs for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#redirect_uris OauthClient#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#redirect_uris OauthClient#redirect_uris}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of OAuth response types the client is allowed to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#response_types OauthClient#response_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#response_types OauthClient#response_types}
 
 ---
 
@@ -188,7 +188,7 @@ Array of OAuth scopes the client is allowed to request.
 
 Colon-delimited scopes are not accepted. Dot-delimited scopes are validated against available OAuth API scopes; simple identity scopes are allowed. Protocol scopes `offline_access` and `openid` are added or removed automatically based on `grant_types` and `response_types`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#scopes OauthClient#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#scopes OauthClient#scopes}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The authentication method the client uses at the token endpoint. Available values: "none", "client_secret_basic", "client_secret_post".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#token_endpoint_auth_method OauthClient#token_endpoint_auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#token_endpoint_auth_method OauthClient#token_endpoint_auth_method}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of allowed CORS origins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#allowed_cors_origins OauthClient#allowed_cors_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#allowed_cors_origins OauthClient#allowed_cors_origins}
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 URL of the home page of the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#client_uri OauthClient#client_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#client_uri OauthClient#client_uri}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 URL of the client's logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#logo_uri OauthClient#logo_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#logo_uri OauthClient#logo_uri}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique identifier for an OAuth client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#oauth_client_id OauthClient#oauth_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#oauth_client_id OauthClient#oauth_client_id}
 
 ---
 
@@ -250,7 +250,7 @@ Scopes that the authorizing user may decline during consent.
 
 Each value must also appear in `scopes`. The scopes `openid`, `offline`, and `offline_access` cannot be optional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#optional_scopes OauthClient#optional_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#optional_scopes OauthClient#optional_scopes}
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 URL that points to a privacy policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#policy_uri OauthClient#policy_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#policy_uri OauthClient#policy_uri}
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of allowed post-logout redirect URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#post_logout_redirect_uris OauthClient#post_logout_redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#post_logout_redirect_uris OauthClient#post_logout_redirect_uris}
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 URL that points to a terms of service document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#tos_uri OauthClient#tos_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#tos_uri OauthClient#tos_uri}
 
 ---
 
@@ -293,7 +293,7 @@ Promote the OAuth client from private to public visibility.
 Only `public` is accepted; demotion to `private` is not supported. Promotion requires a non-empty client name, logo URI, verified client URI host, and at least one non-identity scope.
 Available values: "public".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#visibility OauthClient#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#visibility OauthClient#visibility}
 
 ---
 
@@ -853,7 +853,7 @@ The construct id used in the generated config for the OauthClient to import.
 
 The id of the existing OauthClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1632,7 +1632,7 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#account_id OauthClient#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#account_id OauthClient#account_id}
 
 ---
 
@@ -1646,7 +1646,7 @@ client_name: str
 
 Human-readable name of the OAuth client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#client_name OauthClient#client_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#client_name OauthClient#client_name}
 
 ---
 
@@ -1660,7 +1660,7 @@ grant_types: typing.List[str]
 
 Array of OAuth grant types the client is allowed to use. `authorization_code` is required; `refresh_token` may be included optionally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#grant_types OauthClient#grant_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#grant_types OauthClient#grant_types}
 
 ---
 
@@ -1674,7 +1674,7 @@ redirect_uris: typing.List[str]
 
 Array of allowed redirect URIs for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#redirect_uris OauthClient#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#redirect_uris OauthClient#redirect_uris}
 
 ---
 
@@ -1688,7 +1688,7 @@ response_types: typing.List[str]
 
 Array of OAuth response types the client is allowed to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#response_types OauthClient#response_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#response_types OauthClient#response_types}
 
 ---
 
@@ -1704,7 +1704,7 @@ Array of OAuth scopes the client is allowed to request.
 
 Colon-delimited scopes are not accepted. Dot-delimited scopes are validated against available OAuth API scopes; simple identity scopes are allowed. Protocol scopes `offline_access` and `openid` are added or removed automatically based on `grant_types` and `response_types`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#scopes OauthClient#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#scopes OauthClient#scopes}
 
 ---
 
@@ -1718,7 +1718,7 @@ token_endpoint_auth_method: str
 
 The authentication method the client uses at the token endpoint. Available values: "none", "client_secret_basic", "client_secret_post".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#token_endpoint_auth_method OauthClient#token_endpoint_auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#token_endpoint_auth_method OauthClient#token_endpoint_auth_method}
 
 ---
 
@@ -1732,7 +1732,7 @@ allowed_cors_origins: typing.List[str]
 
 Array of allowed CORS origins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#allowed_cors_origins OauthClient#allowed_cors_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#allowed_cors_origins OauthClient#allowed_cors_origins}
 
 ---
 
@@ -1746,7 +1746,7 @@ client_uri: str
 
 URL of the home page of the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#client_uri OauthClient#client_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#client_uri OauthClient#client_uri}
 
 ---
 
@@ -1760,7 +1760,7 @@ logo_uri: str
 
 URL of the client's logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#logo_uri OauthClient#logo_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#logo_uri OauthClient#logo_uri}
 
 ---
 
@@ -1774,7 +1774,7 @@ oauth_client_id: str
 
 The unique identifier for an OAuth client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#oauth_client_id OauthClient#oauth_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#oauth_client_id OauthClient#oauth_client_id}
 
 ---
 
@@ -1790,7 +1790,7 @@ Scopes that the authorizing user may decline during consent.
 
 Each value must also appear in `scopes`. The scopes `openid`, `offline`, and `offline_access` cannot be optional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#optional_scopes OauthClient#optional_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#optional_scopes OauthClient#optional_scopes}
 
 ---
 
@@ -1804,7 +1804,7 @@ policy_uri: str
 
 URL that points to a privacy policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#policy_uri OauthClient#policy_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#policy_uri OauthClient#policy_uri}
 
 ---
 
@@ -1818,7 +1818,7 @@ post_logout_redirect_uris: typing.List[str]
 
 Array of allowed post-logout redirect URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#post_logout_redirect_uris OauthClient#post_logout_redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#post_logout_redirect_uris OauthClient#post_logout_redirect_uris}
 
 ---
 
@@ -1832,7 +1832,7 @@ tos_uri: str
 
 URL that points to a terms of service document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#tos_uri OauthClient#tos_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#tos_uri OauthClient#tos_uri}
 
 ---
 
@@ -1849,7 +1849,7 @@ Promote the OAuth client from private to public visibility.
 Only `public` is accepted; demotion to `private` is not supported. Promotion requires a non-empty client name, logo URI, verified client URI host, and at least one non-identity scope.
 Available values: "public".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client#visibility OauthClient#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/oauth_client#visibility OauthClient#visibility}
 
 ---
 

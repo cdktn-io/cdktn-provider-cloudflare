@@ -4,7 +4,7 @@
 
 ### EmailRoutingDns <a name="EmailRoutingDns" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.Initializer"></a>
 
@@ -21,6 +21,7 @@ EmailRoutingDns.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .zoneId(java.lang.String)
 //  .name(java.lang.String)
+//  .subdomain(java.lang.String)
     .build();
 ```
 
@@ -37,6 +38,7 @@ EmailRoutingDns.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Domain of your zone. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.Initializer.parameter.subdomain">subdomain</a></code> | <code>java.lang.String</code> | Deprecated. |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
 
 ---
 
@@ -116,7 +118,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Domain of your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+
+---
+
+##### `subdomain`<sup>Optional</sup> <a name="subdomain" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.Initializer.parameter.subdomain"></a>
+
+- *Type:* java.lang.String
+
+Deprecated.
+
+When supplied, the response shape differs from the documented default and is not modeled in generated SDKs. Do not rely on this parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#subdomain EmailRoutingDns#subdomain}
 
 ---
 
@@ -149,6 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.resetSubdomain">resetSubdomain</a></code> | *No description.* |
 
 ---
 
@@ -469,6 +484,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetName()
 ```
 
+##### `resetSubdomain` <a name="resetSubdomain" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.resetSubdomain"></a>
+
+```java
+public void resetSubdomain()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -572,7 +593,7 @@ The construct id used in the generated config for the EmailRoutingDns to import.
 
 The id of the existing EmailRoutingDns that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,8 +632,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.supportSubaddress">supportSubaddress</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.tag">tag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.subdomainInput">subdomainInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.subdomain">subdomain</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -849,6 +872,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `subdomainInput`<sup>Optional</sup> <a name="subdomainInput" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.subdomainInput"></a>
+
+```java
+public java.lang.String getSubdomainInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.zoneIdInput"></a>
 
 ```java
@@ -863,6 +896,16 @@ public java.lang.String getZoneIdInput();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subdomain`<sup>Required</sup> <a name="subdomain" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.property.subdomain"></a>
+
+```java
+public java.lang.String getSubdomain();
 ```
 
 - *Type:* java.lang.String
@@ -916,6 +959,7 @@ EmailRoutingDnsConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .zoneId(java.lang.String)
 //  .name(java.lang.String)
+//  .subdomain(java.lang.String)
     .build();
 ```
 
@@ -932,6 +976,7 @@ EmailRoutingDnsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.name">name</a></code> | <code>java.lang.String</code> | Domain of your zone. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.subdomain">subdomain</a></code> | <code>java.lang.String</code> | Deprecated. |
 
 ---
 
@@ -1015,7 +1060,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
 
 ---
 
@@ -1029,7 +1074,23 @@ public java.lang.String getName();
 
 Domain of your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+
+---
+
+##### `subdomain`<sup>Optional</sup> <a name="subdomain" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig.property.subdomain"></a>
+
+```java
+public java.lang.String getSubdomain();
+```
+
+- *Type:* java.lang.String
+
+Deprecated.
+
+When supplied, the response shape differs from the documented default and is not modeled in generated SDKs. Do not rely on this parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_dns#subdomain EmailRoutingDns#subdomain}
 
 ---
 

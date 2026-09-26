@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktn/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -22,6 +22,7 @@ Account.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .managedBy(AccountManagedBy)
 //  .settings(AccountSettings)
+//  .standalone(java.lang.Boolean|IResolvable)
 //  .type(java.lang.String)
 //  .unit(AccountUnit)
     .build();
@@ -41,8 +42,9 @@ Account.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Account name. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.managedBy">managedBy</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.standalone">standalone</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Available values: "standard", "enterprise". |
-| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | information related to the tenant unit, and optionally, an id of the unit to create the account on. |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | Information related to the tenant unit. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Parent container details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#managed_by Account#managed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -132,7 +134,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#settings Account#settings}
+
+---
+
+##### `standalone`<sup>Optional</sup> <a name="standalone" id="@cdktn/provider-cloudflare.account.Account.Initializer.parameter.standalone"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#standalone Account#standalone}
 
 ---
 
@@ -142,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -150,11 +162,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a>
 
-information related to the tenant unit, and optionally, an id of the unit to create the account on.
+Information related to the tenant unit.
 
-see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
+Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -191,6 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.putUnit">putUnit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.resetManagedBy">resetManagedBy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.resetSettings">resetSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.resetStandalone">resetStandalone</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.resetType">resetType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.resetUnit">resetUnit</a></code> | *No description.* |
 
@@ -555,6 +568,12 @@ public void resetManagedBy()
 public void resetSettings()
 ```
 
+##### `resetStandalone` <a name="resetStandalone" id="@cdktn/provider-cloudflare.account.Account.resetStandalone"></a>
+
+```java
+public void resetStandalone()
+```
+
 ##### `resetType` <a name="resetType" id="@cdktn/provider-cloudflare.account.Account.resetType"></a>
 
 ```java
@@ -670,7 +689,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,9 +727,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.managedByInput">managedByInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.settingsInput">settingsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.property.standaloneInput">standaloneInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.unitInput">unitInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.property.standalone">standalone</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -937,6 +958,16 @@ public IResolvable|AccountSettings getSettingsInput();
 
 ---
 
+##### `standaloneInput`<sup>Optional</sup> <a name="standaloneInput" id="@cdktn/provider-cloudflare.account.Account.property.standaloneInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getStandaloneInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-cloudflare.account.Account.property.typeInput"></a>
 
 ```java
@@ -964,6 +995,16 @@ public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `standalone`<sup>Required</sup> <a name="standalone" id="@cdktn/provider-cloudflare.account.Account.property.standalone"></a>
+
+```java
+public java.lang.Boolean|IResolvable getStandalone();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1015,6 +1056,7 @@ AccountConfig.builder()
     .name(java.lang.String)
 //  .managedBy(AccountManagedBy)
 //  .settings(AccountSettings)
+//  .standalone(java.lang.Boolean|IResolvable)
 //  .type(java.lang.String)
 //  .unit(AccountUnit)
     .build();
@@ -1034,8 +1076,9 @@ AccountConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Account name. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.managedBy">managedBy</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.standalone">standalone</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.type">type</a></code> | <code>java.lang.String</code> | Available values: "standard", "enterprise". |
-| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | information related to the tenant unit, and optionally, an id of the unit to create the account on. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | Information related to the tenant unit. |
 
 ---
 
@@ -1119,7 +1162,7 @@ public java.lang.String getName();
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -1133,7 +1176,7 @@ public AccountManagedBy getManagedBy();
 
 Parent container details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#managed_by Account#managed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -1147,7 +1190,21 @@ public AccountSettings getSettings();
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#settings Account#settings}
+
+---
+
+##### `standalone`<sup>Optional</sup> <a name="standalone" id="@cdktn/provider-cloudflare.account.AccountConfig.property.standalone"></a>
+
+```java
+public java.lang.Boolean|IResolvable getStandalone();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#standalone Account#standalone}
 
 ---
 
@@ -1161,7 +1218,7 @@ public java.lang.String getType();
 
 Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -1173,11 +1230,11 @@ public AccountUnit getUnit();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a>
 
-information related to the tenant unit, and optionally, an id of the unit to create the account on.
+Information related to the tenant unit.
 
-see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
+Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -1225,7 +1282,7 @@ public java.lang.String getAbuseContactEmail();
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -1239,7 +1296,7 @@ public java.lang.Boolean|IResolvable getEnforceTwofactor();
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -1273,7 +1330,7 @@ public java.lang.String getId();
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

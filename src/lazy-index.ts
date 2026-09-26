@@ -73,6 +73,7 @@ Object.defineProperty(exports, 'emailSecurityDomain', { get: function () { retur
 Object.defineProperty(exports, 'emailSecurityImpersonationRegistry', { get: function () { return require('./email-security-impersonation-registry'); } });
 Object.defineProperty(exports, 'emailSecurityTrustedDomains', { get: function () { return require('./email-security-trusted-domains'); } });
 Object.defineProperty(exports, 'emailSendingSubdomain', { get: function () { return require('./email-sending-subdomain'); } });
+Object.defineProperty(exports, 'fieldExtractor', { get: function () { return require('./field-extractor'); } });
 Object.defineProperty(exports, 'filter', { get: function () { return require('./filter'); } });
 Object.defineProperty(exports, 'firewallRule', { get: function () { return require('./firewall-rule'); } });
 Object.defineProperty(exports, 'flagshipApp', { get: function () { return require('./flagship-app'); } });
@@ -103,6 +104,7 @@ Object.defineProperty(exports, 'magicTransitSite', { get: function () { return r
 Object.defineProperty(exports, 'magicTransitSiteAcl', { get: function () { return require('./magic-transit-site-acl'); } });
 Object.defineProperty(exports, 'magicTransitSiteLan', { get: function () { return require('./magic-transit-site-lan'); } });
 Object.defineProperty(exports, 'magicTransitSiteWan', { get: function () { return require('./magic-transit-site-wan'); } });
+Object.defineProperty(exports, 'magicWanBgpFilterProfile', { get: function () { return require('./magic-wan-bgp-filter-profile'); } });
 Object.defineProperty(exports, 'magicWanGreTunnel', { get: function () { return require('./magic-wan-gre-tunnel'); } });
 Object.defineProperty(exports, 'magicWanIpsecTunnel', { get: function () { return require('./magic-wan-ipsec-tunnel'); } });
 Object.defineProperty(exports, 'magicWanStaticRoute', { get: function () { return require('./magic-wan-static-route'); } });
@@ -211,6 +213,9 @@ Object.defineProperty(exports, 'zeroTrustAccessPolicy', { get: function () { ret
 Object.defineProperty(exports, 'zeroTrustAccessServiceToken', { get: function () { return require('./zero-trust-access-service-token'); } });
 Object.defineProperty(exports, 'zeroTrustAccessShortLivedCertificate', { get: function () { return require('./zero-trust-access-short-lived-certificate'); } });
 Object.defineProperty(exports, 'zeroTrustAccessTag', { get: function () { return require('./zero-trust-access-tag'); } });
+Object.defineProperty(exports, 'zeroTrustCasbPolicy', { get: function () { return require('./zero-trust-casb-policy'); } });
+Object.defineProperty(exports, 'zeroTrustCasbWebhook', { get: function () { return require('./zero-trust-casb-webhook'); } });
+Object.defineProperty(exports, 'zeroTrustConnectivitySettings', { get: function () { return require('./zero-trust-connectivity-settings'); } });
 Object.defineProperty(exports, 'zeroTrustDeviceCustomProfile', { get: function () { return require('./zero-trust-device-custom-profile'); } });
 Object.defineProperty(exports, 'zeroTrustDeviceCustomProfileLocalDomainFallback', { get: function () { return require('./zero-trust-device-custom-profile-local-domain-fallback'); } });
 Object.defineProperty(exports, 'zeroTrustDeviceDefaultProfile', { get: function () { return require('./zero-trust-device-default-profile'); } });
@@ -268,6 +273,8 @@ Object.defineProperty(exports, 'zoneHold', { get: function () { return require('
 Object.defineProperty(exports, 'zoneLockdown', { get: function () { return require('./zone-lockdown'); } });
 Object.defineProperty(exports, 'zoneSetting', { get: function () { return require('./zone-setting'); } });
 Object.defineProperty(exports, 'zoneSubscription', { get: function () { return require('./zone-subscription'); } });
+Object.defineProperty(exports, 'zoneTracing', { get: function () { return require('./zone-tracing'); } });
+Object.defineProperty(exports, 'zoneTracingRules', { get: function () { return require('./zone-tracing-rules'); } });
 Object.defineProperty(exports, 'dataCloudflareAccessRule', { get: function () { return require('./data-cloudflare-access-rule'); } });
 Object.defineProperty(exports, 'dataCloudflareAccessRules', { get: function () { return require('./data-cloudflare-access-rules'); } });
 Object.defineProperty(exports, 'dataCloudflareAccount', { get: function () { return require('./data-cloudflare-account'); } });
@@ -389,6 +396,7 @@ Object.defineProperty(exports, 'dataCloudflareEmailSecurityTrustedDomains', { ge
 Object.defineProperty(exports, 'dataCloudflareEmailSecurityTrustedDomainsList', { get: function () { return require('./data-cloudflare-email-security-trusted-domains-list'); } });
 Object.defineProperty(exports, 'dataCloudflareEmailSendingSubdomain', { get: function () { return require('./data-cloudflare-email-sending-subdomain'); } });
 Object.defineProperty(exports, 'dataCloudflareEmailSendingSubdomains', { get: function () { return require('./data-cloudflare-email-sending-subdomains'); } });
+Object.defineProperty(exports, 'dataCloudflareFieldExtractor', { get: function () { return require('./data-cloudflare-field-extractor'); } });
 Object.defineProperty(exports, 'dataCloudflareFilter', { get: function () { return require('./data-cloudflare-filter'); } });
 Object.defineProperty(exports, 'dataCloudflareFilters', { get: function () { return require('./data-cloudflare-filters'); } });
 Object.defineProperty(exports, 'dataCloudflareFirewallRule', { get: function () { return require('./data-cloudflare-firewall-rule'); } });
@@ -445,6 +453,8 @@ Object.defineProperty(exports, 'dataCloudflareMagicTransitSiteLans', { get: func
 Object.defineProperty(exports, 'dataCloudflareMagicTransitSiteWan', { get: function () { return require('./data-cloudflare-magic-transit-site-wan'); } });
 Object.defineProperty(exports, 'dataCloudflareMagicTransitSiteWans', { get: function () { return require('./data-cloudflare-magic-transit-site-wans'); } });
 Object.defineProperty(exports, 'dataCloudflareMagicTransitSites', { get: function () { return require('./data-cloudflare-magic-transit-sites'); } });
+Object.defineProperty(exports, 'dataCloudflareMagicWanBgpFilterProfile', { get: function () { return require('./data-cloudflare-magic-wan-bgp-filter-profile'); } });
+Object.defineProperty(exports, 'dataCloudflareMagicWanBgpFilterProfiles', { get: function () { return require('./data-cloudflare-magic-wan-bgp-filter-profiles'); } });
 Object.defineProperty(exports, 'dataCloudflareMagicWanGreTunnel', { get: function () { return require('./data-cloudflare-magic-wan-gre-tunnel'); } });
 Object.defineProperty(exports, 'dataCloudflareMagicWanIpsecTunnel', { get: function () { return require('./data-cloudflare-magic-wan-ipsec-tunnel'); } });
 Object.defineProperty(exports, 'dataCloudflareMagicWanStaticRoute', { get: function () { return require('./data-cloudflare-magic-wan-static-route'); } });
@@ -503,7 +513,6 @@ Object.defineProperty(exports, 'dataCloudflareR2BucketSippy', { get: function ()
 Object.defineProperty(exports, 'dataCloudflareR2CustomDomain', { get: function () { return require('./data-cloudflare-r2-custom-domain'); } });
 Object.defineProperty(exports, 'dataCloudflareR2DataCatalog', { get: function () { return require('./data-cloudflare-r2-data-catalog'); } });
 Object.defineProperty(exports, 'dataCloudflareRateLimit', { get: function () { return require('./data-cloudflare-rate-limit'); } });
-Object.defineProperty(exports, 'dataCloudflareRateLimits', { get: function () { return require('./data-cloudflare-rate-limits'); } });
 Object.defineProperty(exports, 'dataCloudflareRegionalHostname', { get: function () { return require('./data-cloudflare-regional-hostname'); } });
 Object.defineProperty(exports, 'dataCloudflareRegionalHostnames', { get: function () { return require('./data-cloudflare-regional-hostnames'); } });
 Object.defineProperty(exports, 'dataCloudflareRegionalTieredCache', { get: function () { return require('./data-cloudflare-regional-tiered-cache'); } });
@@ -589,6 +598,7 @@ Object.defineProperty(exports, 'dataCloudflareWorkersCronTrigger', { get: functi
 Object.defineProperty(exports, 'dataCloudflareWorkersCustomDomain', { get: function () { return require('./data-cloudflare-workers-custom-domain'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersCustomDomains', { get: function () { return require('./data-cloudflare-workers-custom-domains'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersDeployment', { get: function () { return require('./data-cloudflare-workers-deployment'); } });
+Object.defineProperty(exports, 'dataCloudflareWorkersDeployments', { get: function () { return require('./data-cloudflare-workers-deployments'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsDispatchNamespace', { get: function () { return require('./data-cloudflare-workers-for-platforms-dispatch-namespace'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsDispatchNamespaces', { get: function () { return require('./data-cloudflare-workers-for-platforms-dispatch-namespaces'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersKv', { get: function () { return require('./data-cloudflare-workers-kv'); } });
@@ -627,6 +637,11 @@ Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessShortLivedCertifica
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessShortLivedCertificates', { get: function () { return require('./data-cloudflare-zero-trust-access-short-lived-certificates'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessTag', { get: function () { return require('./data-cloudflare-zero-trust-access-tag'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessTags', { get: function () { return require('./data-cloudflare-zero-trust-access-tags'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbPolicies', { get: function () { return require('./data-cloudflare-zero-trust-casb-policies'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbPolicy', { get: function () { return require('./data-cloudflare-zero-trust-casb-policy'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbWebhook', { get: function () { return require('./data-cloudflare-zero-trust-casb-webhook'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbWebhooks', { get: function () { return require('./data-cloudflare-zero-trust-casb-webhooks'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustConnectivitySettings', { get: function () { return require('./data-cloudflare-zero-trust-connectivity-settings'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDeviceCustomProfile', { get: function () { return require('./data-cloudflare-zero-trust-device-custom-profile'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback', { get: function () { return require('./data-cloudflare-zero-trust-device-custom-profile-local-domain-fallback'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDeviceCustomProfiles', { get: function () { return require('./data-cloudflare-zero-trust-device-custom-profiles'); } });
@@ -724,6 +739,8 @@ Object.defineProperty(exports, 'dataCloudflareZoneLockdown', { get: function () 
 Object.defineProperty(exports, 'dataCloudflareZoneLockdowns', { get: function () { return require('./data-cloudflare-zone-lockdowns'); } });
 Object.defineProperty(exports, 'dataCloudflareZoneSetting', { get: function () { return require('./data-cloudflare-zone-setting'); } });
 Object.defineProperty(exports, 'dataCloudflareZoneSubscription', { get: function () { return require('./data-cloudflare-zone-subscription'); } });
+Object.defineProperty(exports, 'dataCloudflareZoneTracing', { get: function () { return require('./data-cloudflare-zone-tracing'); } });
+Object.defineProperty(exports, 'dataCloudflareZoneTracingRules', { get: function () { return require('./data-cloudflare-zone-tracing-rules'); } });
 Object.defineProperty(exports, 'dataCloudflareZones', { get: function () { return require('./data-cloudflare-zones'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 
