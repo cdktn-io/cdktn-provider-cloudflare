@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,43 @@ export interface ApiShieldSchemaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Schema file bytes
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
   */
   readonly file: string;
   /**
   * Kind of schema
   * Available values: "openapi_v3".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
   */
   readonly kind: string;
   /**
   * Name of the schema
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}
+  * Omit the source-files of schemas and only retrieve their meta-data.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#omit_source ApiShieldSchema#omit_source}
+  */
+  readonly omitSource?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}
   */
   readonly schemaId?: string;
   /**
   * Flag whether schema is enabled for validation.
   * Available values: "true", "false".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
   */
   readonly validationEnabled?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
   */
   readonly zoneId: string;
 }
@@ -270,7 +276,7 @@ export class ApiShieldSchemaUploadDetailsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}
 */
 export class ApiShieldSchema extends cdktn.TerraformResource {
 
@@ -286,7 +292,7 @@ export class ApiShieldSchema extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiShieldSchema resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiShieldSchema to import
-  * @param importFromId The id of the existing ApiShieldSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiShieldSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiShieldSchema to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -298,7 +304,7 @@ export class ApiShieldSchema extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -309,7 +315,7 @@ export class ApiShieldSchema extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_api_shield_schema',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -323,6 +329,7 @@ export class ApiShieldSchema extends cdktn.TerraformResource {
     this._file = config.file;
     this._kind = config.kind;
     this._name = config.name;
+    this._omitSource = config.omitSource;
     this._schemaId = config.schemaId;
     this._validationEnabled = config.validationEnabled;
     this._zoneId = config.zoneId;
@@ -377,6 +384,22 @@ export class ApiShieldSchema extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // omit_source - computed: true, optional: true, required: false
+  private _omitSource?: boolean | cdktn.IResolvable; 
+  public get omitSource() {
+    return this.getBooleanAttribute('omit_source');
+  }
+  public set omitSource(value: boolean | cdktn.IResolvable) {
+    this._omitSource = value;
+  }
+  public resetOmitSource() {
+    this._omitSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get omitSourceInput() {
+    return this._omitSource;
   }
 
   // schema - computed: true, optional: false, required: false
@@ -450,6 +473,7 @@ export class ApiShieldSchema extends cdktn.TerraformResource {
       file: cdktn.stringToTerraform(this._file),
       kind: cdktn.stringToTerraform(this._kind),
       name: cdktn.stringToTerraform(this._name),
+      omit_source: cdktn.booleanToTerraform(this._omitSource),
       schema_id: cdktn.stringToTerraform(this._schemaId),
       validation_enabled: cdktn.stringToTerraform(this._validationEnabled),
       zone_id: cdktn.stringToTerraform(this._zoneId),
@@ -475,6 +499,12 @@ export class ApiShieldSchema extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      omit_source: {
+        value: cdktn.booleanToHclTerraform(this._omitSource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       schema_id: {
         value: cdktn.stringToHclTerraform(this._schemaId),

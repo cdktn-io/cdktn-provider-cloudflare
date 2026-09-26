@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,42 @@ export interface UserGroupMembersConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#members UserGroupMembers#members}
+  * The sort order of returned user group members by email.
+  * Available values: "asc", "desc".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#direction UserGroupMembers#direction}
+  */
+  readonly direction?: string;
+  /**
+  * A string used for filtering members by partial email match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#fuzzy_email UserGroupMembers#fuzzy_email}
+  */
+  readonly fuzzyEmail?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}
   */
   readonly members: UserGroupMembersMembers[] | cdktn.IResolvable;
   /**
+  * Page number of paginated results.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#page UserGroupMembers#page}
+  */
+  readonly page?: number;
+  /**
+  * Maximum number of results per page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#per_page UserGroupMembers#per_page}
+  */
+  readonly perPage?: number;
+  /**
   * User Group identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
   */
   readonly userGroupId: string;
 }
@@ -33,7 +58,7 @@ export interface UserGroupMembersMembers {
   /**
   * The identifier of an existing account Member.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#id UserGroupMembers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#id UserGroupMembers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +174,7 @@ export class UserGroupMembersMembersList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members cloudflare_user_group_members}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members cloudflare_user_group_members}
 */
 export class UserGroupMembers extends cdktn.TerraformResource {
 
@@ -165,7 +190,7 @@ export class UserGroupMembers extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a UserGroupMembers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserGroupMembers to import
-  * @param importFromId The id of the existing UserGroupMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserGroupMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserGroupMembers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -177,7 +202,7 @@ export class UserGroupMembers extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members cloudflare_user_group_members} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members cloudflare_user_group_members} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,7 +213,7 @@ export class UserGroupMembers extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_user_group_members',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -200,7 +225,11 @@ export class UserGroupMembers extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._direction = config.direction;
+    this._fuzzyEmail = config.fuzzyEmail;
     this._members.internalValue = config.members;
+    this._page = config.page;
+    this._perPage = config.perPage;
     this._userGroupId = config.userGroupId;
   }
 
@@ -221,6 +250,38 @@ export class UserGroupMembers extends cdktn.TerraformResource {
     return this._accountId;
   }
 
+  // direction - computed: true, optional: true, required: false
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  public resetDirection() {
+    this._direction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // fuzzy_email - computed: false, optional: true, required: false
+  private _fuzzyEmail?: string; 
+  public get fuzzyEmail() {
+    return this.getStringAttribute('fuzzy_email');
+  }
+  public set fuzzyEmail(value: string) {
+    this._fuzzyEmail = value;
+  }
+  public resetFuzzyEmail() {
+    this._fuzzyEmail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fuzzyEmailInput() {
+    return this._fuzzyEmail;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -237,6 +298,38 @@ export class UserGroupMembers extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get membersInput() {
     return this._members.internalValue;
+  }
+
+  // page - computed: true, optional: true, required: false
+  private _page?: number; 
+  public get page() {
+    return this.getNumberAttribute('page');
+  }
+  public set page(value: number) {
+    this._page = value;
+  }
+  public resetPage() {
+    this._page = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pageInput() {
+    return this._page;
+  }
+
+  // per_page - computed: true, optional: true, required: false
+  private _perPage?: number; 
+  public get perPage() {
+    return this.getNumberAttribute('per_page');
+  }
+  public set perPage(value: number) {
+    this._perPage = value;
+  }
+  public resetPerPage() {
+    this._perPage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get perPageInput() {
+    return this._perPage;
   }
 
   // user_group_id - computed: false, optional: false, required: true
@@ -259,7 +352,11 @@ export class UserGroupMembers extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      direction: cdktn.stringToTerraform(this._direction),
+      fuzzy_email: cdktn.stringToTerraform(this._fuzzyEmail),
       members: cdktn.listMapper(userGroupMembersMembersToTerraform, false)(this._members.internalValue),
+      page: cdktn.numberToTerraform(this._page),
+      per_page: cdktn.numberToTerraform(this._perPage),
       user_group_id: cdktn.stringToTerraform(this._userGroupId),
     };
   }
@@ -272,11 +369,35 @@ export class UserGroupMembers extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      direction: {
+        value: cdktn.stringToHclTerraform(this._direction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fuzzy_email: {
+        value: cdktn.stringToHclTerraform(this._fuzzyEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       members: {
         value: cdktn.listMapperHcl(userGroupMembersMembersToHclTerraform, false)(this._members.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "UserGroupMembersMembersList",
+      },
+      page: {
+        value: cdktn.numberToHclTerraform(this._page),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      per_page: {
+        value: cdktn.numberToHclTerraform(this._perPage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       user_group_id: {
         value: cdktn.stringToHclTerraform(this._userGroupId),

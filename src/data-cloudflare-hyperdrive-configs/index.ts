@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hyperdrive_configs
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareHyperdriveConfigsConfig extends cdktn.TerraformMe
   /**
   * Define configurations using a unique string identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hyperdrive_configs#account_id DataCloudflareHyperdriveConfigs#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs#account_id DataCloudflareHyperdriveConfigs#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hyperdrive_configs#max_items DataCloudflareHyperdriveConfigs#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs#max_items DataCloudflareHyperdriveConfigs#max_items}
   */
   readonly maxItems?: number;
 }
@@ -87,6 +87,85 @@ export class DataCloudflareHyperdriveConfigsResultCachingOutputReference extends
   // stale_while_revalidate - computed: true, optional: false, required: false
   public get staleWhileRevalidate() {
     return this.getNumberAttribute('stale_while_revalidate');
+  }
+}
+export interface DataCloudflareHyperdriveConfigsResultIntegration {
+}
+
+export function dataCloudflareHyperdriveConfigsResultIntegrationToTerraform(struct?: DataCloudflareHyperdriveConfigsResultIntegration): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareHyperdriveConfigsResultIntegrationToHclTerraform(struct?: DataCloudflareHyperdriveConfigsResultIntegration): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareHyperdriveConfigsResultIntegrationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareHyperdriveConfigsResultIntegration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareHyperdriveConfigsResultIntegration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // custom_database_name - computed: true, optional: false, required: false
+  public get customDatabaseName() {
+    return this.getStringAttribute('custom_database_name');
+  }
+
+  // database_branch_name - computed: true, optional: false, required: false
+  public get databaseBranchName() {
+    return this.getStringAttribute('database_branch_name');
+  }
+
+  // database_name - computed: true, optional: false, required: false
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+
+  // integration - computed: true, optional: false, required: false
+  public get integration() {
+    return this.getStringAttribute('integration');
+  }
+
+  // organization_name - computed: true, optional: false, required: false
+  public get organizationName() {
+    return this.getStringAttribute('organization_name');
+  }
+
+  // scheme - computed: true, optional: false, required: false
+  public get scheme() {
+    return this.getStringAttribute('scheme');
   }
 }
 export interface DataCloudflareHyperdriveConfigsResultMtls {
@@ -314,6 +393,12 @@ export class DataCloudflareHyperdriveConfigsResultOutputReference extends cdktn.
     return this.getStringAttribute('id');
   }
 
+  // integration - computed: true, optional: false, required: false
+  private _integration = new DataCloudflareHyperdriveConfigsResultIntegrationOutputReference(this, "integration");
+  public get integration() {
+    return this._integration;
+  }
+
   // modified_on - computed: true, optional: false, required: false
   public get modifiedOn() {
     return this.getStringAttribute('modified_on');
@@ -367,7 +452,7 @@ export class DataCloudflareHyperdriveConfigsResultList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs}
 */
 export class DataCloudflareHyperdriveConfigs extends cdktn.TerraformDataSource {
 
@@ -383,7 +468,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareHyperdriveConfigs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareHyperdriveConfigs to import
-  * @param importFromId The id of the existing DataCloudflareHyperdriveConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hyperdrive_configs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareHyperdriveConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareHyperdriveConfigs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -395,7 +480,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -406,7 +491,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_hyperdrive_configs',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
