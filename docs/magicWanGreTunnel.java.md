@@ -4,7 +4,7 @@
 
 ### MagicWanGreTunnel <a name="MagicWanGreTunnel" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer"></a>
 
@@ -51,9 +51,9 @@ MagicWanGreTunnel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.interfaceAddress">interfaceAddress</a></code> | <code>java.lang.String</code> | A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the tunnel. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.automaticReturnRouting">automaticReturnRouting</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | True if automatic stateful return routing should be enabled for a tunnel, false otherwise. |
-| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.bgp">bgp</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.bgp">bgp</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An optional description of the GRE tunnel. |
-| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.healthCheck">healthCheck</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.healthCheck">healthCheck</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.interfaceAddress6">interfaceAddress6</a></code> | <code>java.lang.String</code> | A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the address being the first IP of the subnet and not same as the address of virtual_subnet6. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.mtu">mtu</a></code> | <code>java.lang.Number</code> | Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.ttl">ttl</a></code> | <code>java.lang.Number</code> | Time To Live (TTL) in number of hops of the GRE tunnel. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The IP address assigned to the Cloudflare side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The IP address assigned to the customer side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
 
 ---
 
@@ -158,7 +158,7 @@ A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side o
 
 Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
 
 ---
 
@@ -170,7 +170,7 @@ The name of the tunnel.
 
 The name cannot contain spaces or special characters, must be 15 characters or less, and cannot share a name with another GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 True if automatic stateful return routing should be enabled for a tunnel, false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#automatic_return_routing MagicWanGreTunnel#automatic_return_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#automatic_return_routing MagicWanGreTunnel#automatic_return_routing}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An optional description of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
 
 ---
 
@@ -218,7 +218,7 @@ A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the addr
 
 Eg if virtual_subnet6 is 2606:54c1:7:0:a9fe:12d2::/127 , interface_address6 could be 2606:54c1:7:0:a9fe:12d2:1:200/127
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#interface_address6 MagicWanGreTunnel#interface_address6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#interface_address6 MagicWanGreTunnel#interface_address6}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Time To Live (TTL) in number of hops of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
 
 ---
 
@@ -762,7 +762,7 @@ The construct id used in the generated config for the MagicWanGreTunnel to impor
 
 The id of the existing MagicWanGreTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1274,7 +1274,9 @@ import io.cdktn.providers.cloudflare.magic_wan_gre_tunnel.MagicWanGreTunnelBgp;
 
 MagicWanGreTunnelBgp.builder()
     .customerAsn(java.lang.Number)
+//  .exportFilterId(java.lang.String)
 //  .extraPrefixes(java.util.List<java.lang.String>)
+//  .importFilterId(java.lang.String)
 //  .md5Key(java.lang.String)
     .build();
 ```
@@ -1284,7 +1286,9 @@ MagicWanGreTunnelBgp.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.customerAsn">customerAsn</a></code> | <code>java.lang.Number</code> | ASN used on the customer end of the BGP session. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.exportFilterId">exportFilterId</a></code> | <code>java.lang.String</code> | UUID of the BGP filter profile to apply to routes advertised by Cloudflare. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.extraPrefixes">extraPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.importFilterId">importFilterId</a></code> | <code>java.lang.String</code> | UUID of the BGP filter profile to apply to routes advertised to Cloudflare. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.md5Key">md5Key</a></code> | <code>java.lang.String</code> | MD5 key to use for session authentication. |
 
 ---
@@ -1299,7 +1303,21 @@ public java.lang.Number getCustomerAsn();
 
 ASN used on the customer end of the BGP session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#customer_asn MagicWanGreTunnel#customer_asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#customer_asn MagicWanGreTunnel#customer_asn}
+
+---
+
+##### `exportFilterId`<sup>Optional</sup> <a name="exportFilterId" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.exportFilterId"></a>
+
+```java
+public java.lang.String getExportFilterId();
+```
+
+- *Type:* java.lang.String
+
+UUID of the BGP filter profile to apply to routes advertised by Cloudflare.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#export_filter_id MagicWanGreTunnel#export_filter_id}
 
 ---
 
@@ -1313,7 +1331,21 @@ public java.util.List<java.lang.String> getExtraPrefixes();
 
 Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#extra_prefixes MagicWanGreTunnel#extra_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#extra_prefixes MagicWanGreTunnel#extra_prefixes}
+
+---
+
+##### `importFilterId`<sup>Optional</sup> <a name="importFilterId" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.importFilterId"></a>
+
+```java
+public java.lang.String getImportFilterId();
+```
+
+- *Type:* java.lang.String
+
+UUID of the BGP filter profile to apply to routes advertised to Cloudflare.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#import_filter_id MagicWanGreTunnel#import_filter_id}
 
 ---
 
@@ -1342,7 +1374,7 @@ quotation mark (`"`), vertical tab (0x0B), carriage return (0x0D), tab (0x09), f
 (0x0C), and the question mark (`?`). Requests specifying an MD5 key with one or more of
 these disallowed characters will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#md5_key MagicWanGreTunnel#md5_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#md5_key MagicWanGreTunnel#md5_key}
 
 ---
 
@@ -1405,9 +1437,9 @@ MagicWanGreTunnelConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.interfaceAddress">interfaceAddress</a></code> | <code>java.lang.String</code> | A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the tunnel. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.automaticReturnRouting">automaticReturnRouting</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | True if automatic stateful return routing should be enabled for a tunnel, false otherwise. |
-| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.bgp">bgp</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.bgp">bgp</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.description">description</a></code> | <code>java.lang.String</code> | An optional description of the GRE tunnel. |
-| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.healthCheck">healthCheck</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.healthCheck">healthCheck</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.interfaceAddress6">interfaceAddress6</a></code> | <code>java.lang.String</code> | A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the address being the first IP of the subnet and not same as the address of virtual_subnet6. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.mtu">mtu</a></code> | <code>java.lang.Number</code> | Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.ttl">ttl</a></code> | <code>java.lang.Number</code> | Time To Live (TTL) in number of hops of the GRE tunnel. |
@@ -1494,7 +1526,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
 
 ---
 
@@ -1508,7 +1540,7 @@ public java.lang.String getCloudflareGreEndpoint();
 
 The IP address assigned to the Cloudflare side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
 
 ---
 
@@ -1522,7 +1554,7 @@ public java.lang.String getCustomerGreEndpoint();
 
 The IP address assigned to the customer side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
 
 ---
 
@@ -1538,7 +1570,7 @@ A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side o
 
 Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
 
 ---
 
@@ -1554,7 +1586,7 @@ The name of the tunnel.
 
 The name cannot contain spaces or special characters, must be 15 characters or less, and cannot share a name with another GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
 
 ---
 
@@ -1568,7 +1600,7 @@ public java.lang.Boolean|IResolvable getAutomaticReturnRouting();
 
 True if automatic stateful return routing should be enabled for a tunnel, false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#automatic_return_routing MagicWanGreTunnel#automatic_return_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#automatic_return_routing MagicWanGreTunnel#automatic_return_routing}
 
 ---
 
@@ -1580,7 +1612,7 @@ public MagicWanGreTunnelBgp getBgp();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}.
 
 ---
 
@@ -1594,7 +1626,7 @@ public java.lang.String getDescription();
 
 An optional description of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
 
 ---
 
@@ -1606,7 +1638,7 @@ public MagicWanGreTunnelHealthCheck getHealthCheck();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
 
 ---
 
@@ -1622,7 +1654,7 @@ A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the addr
 
 Eg if virtual_subnet6 is 2606:54c1:7:0:a9fe:12d2::/127 , interface_address6 could be 2606:54c1:7:0:a9fe:12d2:1:200/127
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#interface_address6 MagicWanGreTunnel#interface_address6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#interface_address6 MagicWanGreTunnel#interface_address6}
 
 ---
 
@@ -1636,7 +1668,7 @@ public java.lang.Number getMtu();
 
 Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
 
 ---
 
@@ -1650,7 +1682,7 @@ public java.lang.Number getTtl();
 
 Time To Live (TTL) in number of hops of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
 
 ---
 
@@ -1695,7 +1727,7 @@ The direction of the flow of the healthcheck.
 Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 Available values: "unidirectional", "bidirectional".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#direction MagicWanGreTunnel#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#direction MagicWanGreTunnel#direction}
 
 ---
 
@@ -1709,7 +1741,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Determines whether to run healthchecks for a tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
 
 ---
 
@@ -1723,7 +1755,7 @@ public java.lang.String getRate();
 
 How frequent the health check is run. The default value is `mid`. Available values: "low", "mid", "high".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
 
 ---
 
@@ -1739,7 +1771,7 @@ The destination address in a request type health check.
 
 After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to `customer_gre_endpoint address`. This field is ignored for bidirectional healthchecks as the interface_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#target MagicWanGreTunnel#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#target MagicWanGreTunnel#target}
 
 ---
 
@@ -1753,7 +1785,7 @@ public java.lang.String getType();
 
 The type of healthcheck to run, reply or request. The default value is `reply`. Available values: "reply", "request".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
 
 ---
 
@@ -1789,7 +1821,7 @@ The saved health check target.
 
 Setting the value to the empty string indicates that the calculated default value will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#saved MagicWanGreTunnel#saved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#saved MagicWanGreTunnel#saved}
 
 ---
 
@@ -1845,7 +1877,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetExportFilterId">resetExportFilterId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetExtraPrefixes">resetExtraPrefixes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetImportFilterId">resetImportFilterId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetMd5Key">resetMd5Key</a></code> | *No description.* |
 
 ---
@@ -2000,10 +2034,22 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExportFilterId` <a name="resetExportFilterId" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetExportFilterId"></a>
+
+```java
+public void resetExportFilterId()
+```
+
 ##### `resetExtraPrefixes` <a name="resetExtraPrefixes" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetExtraPrefixes"></a>
 
 ```java
 public void resetExtraPrefixes()
+```
+
+##### `resetImportFilterId` <a name="resetImportFilterId" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetImportFilterId"></a>
+
+```java
+public void resetImportFilterId()
 ```
 
 ##### `resetMd5Key` <a name="resetMd5Key" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetMd5Key"></a>
@@ -2020,10 +2066,14 @@ public void resetMd5Key()
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.customerAsnInput">customerAsnInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.exportFilterIdInput">exportFilterIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.extraPrefixesInput">extraPrefixesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.importFilterIdInput">importFilterIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.md5KeyInput">md5KeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.customerAsn">customerAsn</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.exportFilterId">exportFilterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.extraPrefixes">extraPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.importFilterId">importFilterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.md5Key">md5Key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | *No description.* |
 
@@ -2063,6 +2113,16 @@ public java.lang.Number getCustomerAsnInput();
 
 ---
 
+##### `exportFilterIdInput`<sup>Optional</sup> <a name="exportFilterIdInput" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.exportFilterIdInput"></a>
+
+```java
+public java.lang.String getExportFilterIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `extraPrefixesInput`<sup>Optional</sup> <a name="extraPrefixesInput" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.extraPrefixesInput"></a>
 
 ```java
@@ -2070,6 +2130,16 @@ public java.util.List<java.lang.String> getExtraPrefixesInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `importFilterIdInput`<sup>Optional</sup> <a name="importFilterIdInput" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.importFilterIdInput"></a>
+
+```java
+public java.lang.String getImportFilterIdInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -2093,6 +2163,16 @@ public java.lang.Number getCustomerAsn();
 
 ---
 
+##### `exportFilterId`<sup>Required</sup> <a name="exportFilterId" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.exportFilterId"></a>
+
+```java
+public java.lang.String getExportFilterId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `extraPrefixes`<sup>Required</sup> <a name="extraPrefixes" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.extraPrefixes"></a>
 
 ```java
@@ -2100,6 +2180,16 @@ public java.util.List<java.lang.String> getExtraPrefixes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `importFilterId`<sup>Required</sup> <a name="importFilterId" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.importFilterId"></a>
+
+```java
+public java.lang.String getImportFilterId();
+```
+
+- *Type:* java.lang.String
 
 ---
 

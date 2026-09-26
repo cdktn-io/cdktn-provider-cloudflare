@@ -4,7 +4,7 @@
 
 ### CustomPages <a name="CustomPages" id="@cdktn/provider-cloudflare.customPages.CustomPages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_pages cloudflare_custom_pages}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_pages cloudflare_custom_pages}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customPages.CustomPages.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the CustomPages to import.
 
 The id of the existing CustomPages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_pages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_pages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,7 +915,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/custompa
 | <code><a href="#@cdktn/provider-cloudflare.customPages.CustomPagesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customPages.CustomPagesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customPages.CustomPagesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.customPages.CustomPagesConfig.property.identifier">Identifier</a></code> | <code>*string</code> | Error Page Types Available values: "1000_errors", "500_errors", "basic_challenge", "country_challenge", "ip_block", "managed_challenge", "ratelimit_block", "under_attack", "waf_block", "waf_challenge". |
+| <code><a href="#@cdktn/provider-cloudflare.customPages.CustomPagesConfig.property.identifier">Identifier</a></code> | <code>*string</code> | Custom page type. Available values: "1000_errors", "500_errors", "basic_challenge", "country_challenge", "ip_block", "managed_challenge", "ratelimit_block", "under_attack", "waf_block", "waf_challenge". |
 | <code><a href="#@cdktn/provider-cloudflare.customPages.CustomPagesConfig.property.state">State</a></code> | <code>*string</code> | The custom page state. Available values: "default", "customized". |
 | <code><a href="#@cdktn/provider-cloudflare.customPages.CustomPagesConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
 | <code><a href="#@cdktn/provider-cloudflare.customPages.CustomPagesConfig.property.url">Url</a></code> | <code>*string</code> | The URL associated with the custom page. |
@@ -1001,9 +1001,9 @@ Identifier *string
 
 - *Type:* *string
 
-Error Page Types Available values: "1000_errors", "500_errors", "basic_challenge", "country_challenge", "ip_block", "managed_challenge", "ratelimit_block", "under_attack", "waf_block", "waf_challenge".
+Custom page type. Available values: "1000_errors", "500_errors", "basic_challenge", "country_challenge", "ip_block", "managed_challenge", "ratelimit_block", "under_attack", "waf_block", "waf_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_pages#identifier CustomPages#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_pages#identifier CustomPages#identifier}
 
 ---
 
@@ -1017,7 +1017,7 @@ State *string
 
 The custom page state. Available values: "default", "customized".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_pages#state CustomPages#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_pages#state CustomPages#state}
 
 ---
 
@@ -1031,7 +1031,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_pages#account_id CustomPages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_pages#account_id CustomPages#account_id}
 
 ---
 
@@ -1045,7 +1045,7 @@ Url *string
 
 The URL associated with the custom page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_pages#url CustomPages#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_pages#url CustomPages#url}
 
 ---
 
@@ -1059,7 +1059,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/custom_pages#zone_id CustomPages#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_pages#zone_id CustomPages#zone_id}
 
 ---
 

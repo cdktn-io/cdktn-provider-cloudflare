@@ -4,7 +4,7 @@
 
 ### EmailSecurityDomain <a name="EmailSecurityDomain" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain cloudflare_email_security_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain cloudflare_email_security_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain.Initializer"></a>
 
@@ -531,7 +531,7 @@ The construct id used in the generated config for the EmailSecurityDomain to imp
 
 The id of the existing EmailSecurityDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1144,17 +1144,17 @@ const emailSecurityDomainConfig: emailSecurityDomain.EmailSecurityDomainConfig =
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.allowedDeliveryModes">allowedDeliveryModes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.dropDispositions">dropDispositions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.ipRestrictions">ipRestrictions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.regions">regions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.allowedDeliveryModes">allowedDeliveryModes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.dropDispositions">dropDispositions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.ipRestrictions">ipRestrictions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.regions">regions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.folder">folder</a></code> | <code>string</code> | Available values: "AllItems", "Inbox". |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.integrationId">integrationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.lookbackHops">lookbackHops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.requireTlsInbound">requireTlsInbound</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.requireTlsOutbound">requireTlsOutbound</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.transport">transport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.integrationId">integrationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.lookbackHops">lookbackHops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.requireTlsInbound">requireTlsInbound</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.requireTlsOutbound">requireTlsOutbound</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.property.transport">transport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}. |
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
 
 ---
 
@@ -1250,7 +1250,7 @@ public readonly allowedDeliveryModes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly domain: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly dropDispositions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly ipRestrictions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly regions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}.
 
 ---
 
@@ -1312,7 +1312,7 @@ public readonly folder: string;
 
 Available values: "AllItems", "Inbox".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
 
 ---
 
@@ -1324,7 +1324,7 @@ public readonly integrationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}.
 
 ---
 
@@ -1336,7 +1336,7 @@ public readonly lookbackHops: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}.
 
 ---
 
@@ -1348,7 +1348,7 @@ public readonly requireTlsInbound: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}.
 
 ---
 
@@ -1360,7 +1360,7 @@ public readonly requireTlsOutbound: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}.
 
 ---
 
@@ -1372,7 +1372,7 @@ public readonly transport: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}.
 
 ---
 

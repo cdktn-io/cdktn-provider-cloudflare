@@ -4,7 +4,7 @@
 
 ### ObservatoryScheduledTest <a name="ObservatoryScheduledTest" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the ObservatoryScheduledTest t
 
 The id of the existing ObservatoryScheduledTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,7 +842,7 @@ const observatoryScheduledTestConfig: observatoryScheduledTest.ObservatorySchedu
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.url">url</a></code> | <code>string</code> | A URL. |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.frequency">frequency</a></code> | <code>string</code> | The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans. |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.frequency">frequency</a></code> | <code>string</code> | The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans. Available values: "DAILY", "WEEKLY". |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.region">region</a></code> | <code>string</code> | A test region. |
 
 ---
@@ -927,7 +927,7 @@ public readonly url: string;
 
 A URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
 
 ---
 
@@ -941,7 +941,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
 
 ---
 
@@ -953,9 +953,9 @@ public readonly frequency: string;
 
 - *Type:* string
 
-The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans.
+The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans. Available values: "DAILY", "WEEKLY".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
 
 ---
 
@@ -971,7 +971,7 @@ A test region.
 
 Available values: "asia-east1", "asia-northeast1", "asia-northeast2", "asia-south1", "asia-southeast1", "australia-southeast1", "europe-north1", "europe-southwest1", "europe-west1", "europe-west2", "europe-west3", "europe-west4", "europe-west8", "europe-west9", "me-west1", "southamerica-east1", "us-central1", "us-east1", "us-east4", "us-south1", "us-west1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
 
 ---
 

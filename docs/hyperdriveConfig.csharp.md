@@ -4,7 +4,7 @@
 
 ### HyperdriveConfig <a name="HyperdriveConfig" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.Initializer"></a>
 
@@ -78,7 +78,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.putMtls">PutMtls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.putOrigin">PutOrigin</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetCaching">ResetCaching</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetIntegration">ResetIntegration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetMtls">ResetMtls</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetOrigin">ResetOrigin</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetOriginConnectionLimit">ResetOriginConnectionLimit</a></code> | *No description.* |
 
 ---
@@ -434,10 +436,22 @@ private void PutOrigin(HyperdriveConfigOrigin Value)
 private void ResetCaching()
 ```
 
+##### `ResetIntegration` <a name="ResetIntegration" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetIntegration"></a>
+
+```csharp
+private void ResetIntegration()
+```
+
 ##### `ResetMtls` <a name="ResetMtls" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetMtls"></a>
 
 ```csharp
 private void ResetMtls()
+```
+
+##### `ResetOrigin` <a name="ResetOrigin" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetOrigin"></a>
+
+```csharp
+private void ResetOrigin()
 ```
 
 ##### `ResetOriginConnectionLimit` <a name="ResetOriginConnectionLimit" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.resetOriginConnectionLimit"></a>
@@ -549,7 +563,7 @@ The construct id used in the generated config for the HyperdriveConfig to import
 
 The id of the existing HyperdriveConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -588,11 +602,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.restartedOn">RestartedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.cachingInput">CachingInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching">HyperdriveConfigCaching</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.integrationInput">IntegrationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.mtlsInput">MtlsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls">HyperdriveConfigMtls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.originConnectionLimitInput">OriginConnectionLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.originInput">OriginInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin">HyperdriveConfigOrigin</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.integration">Integration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.originConnectionLimit">OriginConnectionLimit</a></code> | <code>double</code> | *No description.* |
 
@@ -830,6 +846,16 @@ public IResolvable|HyperdriveConfigCaching CachingInput { get; }
 
 ---
 
+##### `IntegrationInput`<sup>Optional</sup> <a name="IntegrationInput" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.integrationInput"></a>
+
+```csharp
+public string IntegrationInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `MtlsInput`<sup>Optional</sup> <a name="MtlsInput" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.mtlsInput"></a>
 
 ```csharp
@@ -874,6 +900,16 @@ public IResolvable|HyperdriveConfigOrigin OriginInput { get; }
 
 ```csharp
 public string AccountId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Integration`<sup>Required</sup> <a name="Integration" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.property.integration"></a>
+
+```csharp
+public string Integration { get; }
 ```
 
 - *Type:* string
@@ -938,9 +974,9 @@ new HyperdriveConfigCaching {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.disabled">Disabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Set to true to disable caching of SQL responses. Default is false. |
-| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.maxAge">MaxAge</a></code> | <code>double</code> | Specify the maximum duration (in seconds) items should persist in the cache. Defaults to 60 seconds if not specified. |
-| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.staleWhileRevalidate">StaleWhileRevalidate</a></code> | <code>double</code> | Specify the number of seconds the cache may serve a stale response. Defaults to 15 seconds if not specified. |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.disabled">Disabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}. |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.staleWhileRevalidate">StaleWhileRevalidate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}. |
 
 ---
 
@@ -952,9 +988,7 @@ public bool|IResolvable Disabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Set to true to disable caching of SQL responses. Default is false.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}.
 
 ---
 
@@ -966,9 +1000,7 @@ public double MaxAge { get; set; }
 
 - *Type:* double
 
-Specify the maximum duration (in seconds) items should persist in the cache. Defaults to 60 seconds if not specified.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}.
 
 ---
 
@@ -980,9 +1012,7 @@ public double StaleWhileRevalidate { get; set; }
 
 - *Type:* double
 
-Specify the number of seconds the cache may serve a stale response. Defaults to 15 seconds if not specified.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}.
 
 ---
 
@@ -1003,9 +1033,10 @@ new HyperdriveConfigConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AccountId,
     string Name,
-    HyperdriveConfigOrigin Origin,
     HyperdriveConfigCaching Caching = null,
+    string Integration = null,
     HyperdriveConfigMtls Mtls = null,
+    HyperdriveConfigOrigin Origin = null,
     double OriginConnectionLimit = null
 };
 ```
@@ -1023,9 +1054,10 @@ new HyperdriveConfigConfig {
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.accountId">AccountId</a></code> | <code>string</code> | Define configurations using a unique string identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.name">Name</a></code> | <code>string</code> | The name of the Hyperdrive configuration. Used to identify the configuration in the Cloudflare dashboard and API. |
-| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin">HyperdriveConfigOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}. |
-| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.caching">Caching</a></code> | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching">HyperdriveConfigCaching</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}. |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.caching">Caching</a></code> | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching">HyperdriveConfigCaching</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}. |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.integration">Integration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#integration HyperdriveConfig#integration}. |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.mtls">Mtls</a></code> | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls">HyperdriveConfigMtls</a></code> | mTLS configuration for the origin connection. |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin">HyperdriveConfigOrigin</a></code> | Combines database connection fields with exactly one supported network location. |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.originConnectionLimit">OriginConnectionLimit</a></code> | <code>double</code> | The (soft) maximum number of connections the Hyperdrive is allowed to make to the origin database. |
 
 ---
@@ -1110,7 +1142,7 @@ public string AccountId { get; set; }
 
 Define configurations using a unique string identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
 
 ---
 
@@ -1124,19 +1156,7 @@ public string Name { get; set; }
 
 The name of the Hyperdrive configuration. Used to identify the configuration in the Cloudflare dashboard and API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
-
----
-
-##### `Origin`<sup>Required</sup> <a name="Origin" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.origin"></a>
-
-```csharp
-public HyperdriveConfigOrigin Origin { get; set; }
-```
-
-- *Type:* <a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin">HyperdriveConfigOrigin</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
 
 ---
 
@@ -1148,7 +1168,19 @@ public HyperdriveConfigCaching Caching { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching">HyperdriveConfigCaching</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}.
+
+---
+
+##### `Integration`<sup>Optional</sup> <a name="Integration" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.integration"></a>
+
+```csharp
+public string Integration { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#integration HyperdriveConfig#integration}.
 
 ---
 
@@ -1164,7 +1196,21 @@ mTLS configuration for the origin connection.
 
 Cannot be used with VPC Service origins; TLS must be managed on the VPC Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#mtls HyperdriveConfig#mtls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#mtls HyperdriveConfig#mtls}
+
+---
+
+##### `Origin`<sup>Optional</sup> <a name="Origin" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.property.origin"></a>
+
+```csharp
+public HyperdriveConfigOrigin Origin { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin">HyperdriveConfigOrigin</a>
+
+Combines database connection fields with exactly one supported network location.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
 
 ---
 
@@ -1183,7 +1229,7 @@ If not specified, defaults to 20 for free tier and 60 for paid tier.
 Certain Cloudflare-managed origins may be permitted a higher limit.
 Contact Cloudflare if you need a higher limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#origin_connection_limit HyperdriveConfig#origin_connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#origin_connection_limit HyperdriveConfig#origin_connection_limit}
 
 ---
 
@@ -1207,7 +1253,7 @@ new HyperdriveConfigMtls {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls.property.caCertificateId">CaCertificateId</a></code> | <code>string</code> | Define CA certificate ID obtained after uploading CA cert. |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls.property.mtlsCertificateId">MtlsCertificateId</a></code> | <code>string</code> | Define mTLS certificate ID obtained after uploading client cert. |
-| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls.property.sslmode">Sslmode</a></code> | <code>string</code> | Set SSL mode to 'require', 'verify-ca', or 'verify-full' to verify the CA. |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls.property.sslmode">Sslmode</a></code> | <code>string</code> | PostgreSQL accepts `require`, `verify-ca`, and `verify-full`. |
 
 ---
 
@@ -1221,7 +1267,7 @@ public string CaCertificateId { get; set; }
 
 Define CA certificate ID obtained after uploading CA cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#ca_certificate_id HyperdriveConfig#ca_certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#ca_certificate_id HyperdriveConfig#ca_certificate_id}
 
 ---
 
@@ -1235,7 +1281,7 @@ public string MtlsCertificateId { get; set; }
 
 Define mTLS certificate ID obtained after uploading client cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#mtls_certificate_id HyperdriveConfig#mtls_certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#mtls_certificate_id HyperdriveConfig#mtls_certificate_id}
 
 ---
 
@@ -1247,9 +1293,11 @@ public string Sslmode { get; set; }
 
 - *Type:* string
 
-Set SSL mode to 'require', 'verify-ca', or 'verify-full' to verify the CA.
+PostgreSQL accepts `require`, `verify-ca`, and `verify-full`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#sslmode HyperdriveConfig#sslmode}
+MySQL accepts `REQUIRED`, `VERIFY_CA`, and `VERIFY_IDENTITY`. The verify modes require a CA certificate; the require modes cannot be used with a CA certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#sslmode HyperdriveConfig#sslmode}
 
 ---
 
@@ -1283,7 +1331,7 @@ new HyperdriveConfigOrigin {
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.user">User</a></code> | <code>string</code> | Set the user of your origin database. |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientId">AccessClientId</a></code> | <code>string</code> | Defines the Client ID of the Access token to use when connecting to the origin database. |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientSecret">AccessClientSecret</a></code> | <code>string</code> | Defines the Client Secret of the Access Token to use when connecting to the origin database. |
-| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.host">Host</a></code> | <code>string</code> | Defines the host (hostname or IP) of your origin database. |
+| <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.host">Host</a></code> | <code>string</code> | Defines the publicly reachable hostname or IP of your origin database. |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port">Port</a></code> | <code>double</code> | Defines the port of your origin database. Defaults to 5432 for PostgreSQL or 3306 for MySQL if not specified. |
 | <code><a href="#@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.serviceId">ServiceId</a></code> | <code>string</code> | The identifier of the Workers VPC Service to connect through. |
 
@@ -1299,7 +1347,7 @@ public string Database { get; set; }
 
 Set the name of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
 
 ---
 
@@ -1313,7 +1361,7 @@ public string Password { get; set; }
 
 Set the password needed to access your origin database. The API never returns this write-only value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
 
 ---
 
@@ -1327,7 +1375,7 @@ public string Scheme { get; set; }
 
 Specifies the URL scheme used to connect to your origin database. Available values: "postgres", "postgresql", "mysql".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
 
 ---
 
@@ -1341,7 +1389,7 @@ public string User { get; set; }
 
 Set the user of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
 
 ---
 
@@ -1355,7 +1403,7 @@ public string AccessClientId { get; set; }
 
 Defines the Client ID of the Access token to use when connecting to the origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
 
 ---
 
@@ -1371,7 +1419,7 @@ Defines the Client Secret of the Access Token to use when connecting to the orig
 
 The API never returns this write-only value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
 
 ---
 
@@ -1383,9 +1431,11 @@ public string Host { get; set; }
 
 - *Type:* string
 
-Defines the host (hostname or IP) of your origin database.
+Defines the publicly reachable hostname or IP of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+Private, loopback, and link-local IP addresses are not allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
 
 ---
 
@@ -1399,7 +1449,7 @@ public double Port { get; set; }
 
 Defines the port of your origin database. Defaults to 5432 for PostgreSQL or 3306 for MySQL if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
 
 ---
 
@@ -1415,7 +1465,7 @@ The identifier of the Workers VPC Service to connect through.
 
 Hyperdrive will egress through the specified VPC Service to reach the origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config#service_id HyperdriveConfig#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config#service_id HyperdriveConfig#service_id}
 
 ---
 

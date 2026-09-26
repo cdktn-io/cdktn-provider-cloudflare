@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkflow <a name="DataCloudflareWorkflow" id="@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow cloudflare_workflow}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow cloudflare_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataCloudflareWorkflow to 
 
 The id of the existing DataCloudflareWorkflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -457,6 +457,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.schedules">Schedules</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowSchedulesList">DataCloudflareWorkflowSchedulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.scriptDeleted">ScriptDeleted</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.scriptName">ScriptName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.triggeredOn">TriggeredOn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -669,6 +670,16 @@ func Schedules() DataCloudflareWorkflowSchedulesList
 
 ---
 
+##### `ScriptDeleted`<sup>Required</sup> <a name="ScriptDeleted" id="@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.scriptDeleted"></a>
+
+```go
+func ScriptDeleted() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
+
+---
+
 ##### `ScriptName`<sup>Required</sup> <a name="ScriptName" id="@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.property.scriptName"></a>
 
 ```go
@@ -791,9 +802,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow#account_id DataCloudflareWorkflow#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowFilter">DataCloudflareWorkflowFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow#filter DataCloudflareWorkflow#filter}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.workflowName">WorkflowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow#workflow_name DataCloudflareWorkflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow#account_id DataCloudflareWorkflow#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowFilter">DataCloudflareWorkflowFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow#filter DataCloudflareWorkflow#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.property.workflowName">WorkflowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow#workflow_name DataCloudflareWorkflow#workflow_name}. |
 
 ---
 
@@ -875,7 +886,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow#account_id DataCloudflareWorkflow#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow#account_id DataCloudflareWorkflow#account_id}.
 
 ---
 
@@ -887,7 +898,7 @@ Filter DataCloudflareWorkflowFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowFilter">DataCloudflareWorkflowFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow#filter DataCloudflareWorkflow#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow#filter DataCloudflareWorkflow#filter}.
 
 ---
 
@@ -899,7 +910,7 @@ WorkflowName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow#workflow_name DataCloudflareWorkflow#workflow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow#workflow_name DataCloudflareWorkflow#workflow_name}.
 
 ---
 
@@ -933,7 +944,7 @@ Search *string
 
 Allows filtering workflows` name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/workflow#search DataCloudflareWorkflow#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workflow#search DataCloudflareWorkflow#search}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustList <a name="DataCloudflareZeroTrustList" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_list cloudflare_zero_trust_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list cloudflare_zero_trust_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustLis
 
 The id of the existing DataCloudflareZeroTrustList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,8 +780,8 @@ new DataCloudflareZeroTrustListConfig {
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_list#account_id DataCloudflareZeroTrustList#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter">DataCloudflareZeroTrustListFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#account_id DataCloudflareZeroTrustList#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter">DataCloudflareZeroTrustListFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.listId">ListId</a></code> | <code>string</code> | Identify the API resource with a UUID. |
 
 ---
@@ -864,7 +864,7 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_list#account_id DataCloudflareZeroTrustList#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#account_id DataCloudflareZeroTrustList#account_id}.
 
 ---
 
@@ -876,7 +876,7 @@ public DataCloudflareZeroTrustListFilter Filter { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter">DataCloudflareZeroTrustListFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}.
 
 ---
 
@@ -890,7 +890,7 @@ public string ListId { get; set; }
 
 Identify the API resource with a UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_list#list_id DataCloudflareZeroTrustList#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#list_id DataCloudflareZeroTrustList#list_id}
 
 ---
 
@@ -902,6 +902,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using Io.Cdktn.Providers.Cloudflare;
 
 new DataCloudflareZeroTrustListFilter {
+    string Direction = null,
+    string[] Filter = null,
+    string OrderBy = null,
+    string Search = null,
     string Type = null
 };
 ```
@@ -910,7 +914,105 @@ new DataCloudflareZeroTrustListFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.direction">Direction</a></code> | <code>string</code> | Sort direction. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.filter">Filter</a></code> | <code>string[]</code> | Filter the returned lists by one or more `field:value` pairs. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.orderBy">OrderBy</a></code> | <code>string</code> | Field to sort the returned lists by. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.search">Search</a></code> | <code>string</code> | Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.type">Type</a></code> | <code>string</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID". |
+
+---
+
+##### `Direction`<sup>Optional</sup> <a name="Direction" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.direction"></a>
+
+```csharp
+public string Direction { get; set; }
+```
+
+- *Type:* string
+
+Sort direction.
+
+Applies to the field named in `order_by`; when `order_by`
+is omitted it applies to the default `created_at` ordering. When
+`direction` is omitted the default is field-specific: explicitly choosing
+`created_at` or `updated_at` defaults to descending (newest first); `name`
+and `item_count` default to ascending; and the default `created_at`
+ordering used when `order_by` is omitted is ascending (for backwards
+compatibility).
+
+* `asc` — ascending.
+* `desc` — descending.
+  Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#direction DataCloudflareZeroTrustList#direction}
+
+---
+
+##### `Filter`<sup>Optional</sup> <a name="Filter" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.filter"></a>
+
+```csharp
+public string[] Filter { get; set; }
+```
+
+- *Type:* string[]
+
+Filter the returned lists by one or more `field:value` pairs.
+
+Repeat the parameter to apply multiple filters; they are combined with
+logical AND (a list must satisfy every filter to be returned).
+
+Supported fields and their matching behaviour:
+
+* `name` — case-insensitive substring match on the list name.
+* `id` — substring match on the list ID (UUID), with or without dashes.
+* `type` — exact match on the list type. Supersedes the legacy `type` query
+  parameter when both are supplied. Must be one of the valid type values.
+* `item_count` — exact integer match on the number of items in the list.
+
+Each entry must match one of the per-field patterns below: the field must be
+one of `name`, `id`, `type`, or `item_count`; `name`/`id` accept any value,
+`type` is restricted to the valid list type values, and `item_count` must be
+a non-negative integer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}
+
+---
+
+##### `OrderBy`<sup>Optional</sup> <a name="OrderBy" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.orderBy"></a>
+
+```csharp
+public string OrderBy { get; set; }
+```
+
+- *Type:* string
+
+Field to sort the returned lists by.
+
+When omitted, results are ordered by
+`created_at` in ascending order (i.e. creation order) for backwards
+compatibility. Supported values:
+
+* `name` — sort alphabetically by list name.
+* `created_at` — sort by creation time; defaults to descending unless `direction` is set.
+* `updated_at` — sort by last-modified time; defaults to descending unless `direction` is set.
+* `item_count` — sort by number of items in the list.
+  Available values: "name", "created_at", "updated_at", "item_count".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#order_by DataCloudflareZeroTrustList#order_by}
+
+---
+
+##### `Search`<sup>Optional</sup> <a name="Search" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.search"></a>
+
+```csharp
+public string Search { get; set; }
+```
+
+- *Type:* string
+
+Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#search DataCloudflareZeroTrustList#search}
 
 ---
 
@@ -924,7 +1026,7 @@ public string Type { get; set; }
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_list#type DataCloudflareZeroTrustList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_list#type DataCloudflareZeroTrustList#type}
 
 ---
 
@@ -993,6 +1095,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetDirection">ResetDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetFilter">ResetFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetOrderBy">ResetOrderBy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetSearch">ResetSearch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetType">ResetType</a></code> | *No description.* |
 
 ---
@@ -1147,6 +1253,30 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetDirection` <a name="ResetDirection" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetDirection"></a>
+
+```csharp
+private void ResetDirection()
+```
+
+##### `ResetFilter` <a name="ResetFilter" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetFilter"></a>
+
+```csharp
+private void ResetFilter()
+```
+
+##### `ResetOrderBy` <a name="ResetOrderBy" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetOrderBy"></a>
+
+```csharp
+private void ResetOrderBy()
+```
+
+##### `ResetSearch` <a name="ResetSearch" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetSearch"></a>
+
+```csharp
+private void ResetSearch()
+```
+
 ##### `ResetType` <a name="ResetType" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.resetType"></a>
 
 ```csharp
@@ -1160,7 +1290,15 @@ private void ResetType()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.directionInput">DirectionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.filterInput">FilterInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.orderByInput">OrderByInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.searchInput">SearchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.direction">Direction</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.filter">Filter</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.orderBy">OrderBy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.search">Search</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter">DataCloudflareZeroTrustListFilter</a></code> | *No description.* |
 
@@ -1190,10 +1328,90 @@ public string Fqn { get; }
 
 ---
 
+##### `DirectionInput`<sup>Optional</sup> <a name="DirectionInput" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.directionInput"></a>
+
+```csharp
+public string DirectionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FilterInput`<sup>Optional</sup> <a name="FilterInput" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.filterInput"></a>
+
+```csharp
+public string[] FilterInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `OrderByInput`<sup>Optional</sup> <a name="OrderByInput" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.orderByInput"></a>
+
+```csharp
+public string OrderByInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SearchInput`<sup>Optional</sup> <a name="SearchInput" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.searchInput"></a>
+
+```csharp
+public string SearchInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.typeInput"></a>
 
 ```csharp
 public string TypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Direction`<sup>Required</sup> <a name="Direction" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.direction"></a>
+
+```csharp
+public string Direction { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Filter`<sup>Required</sup> <a name="Filter" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.filter"></a>
+
+```csharp
+public string[] Filter { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `OrderBy`<sup>Required</sup> <a name="OrderBy" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.orderBy"></a>
+
+```csharp
+public string OrderBy { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Search`<sup>Required</sup> <a name="Search" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilterOutputReference.property.search"></a>
+
+```csharp
+public string Search { get; }
 ```
 
 - *Type:* string

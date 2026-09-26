@@ -4,7 +4,7 @@
 
 ### Stream <a name="Stream" id="@cdktn/provider-cloudflare.stream.Stream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream cloudflare_stream}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream cloudflare_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.Stream.Initializer"></a>
 
@@ -24,6 +24,7 @@ stream.Stream(
   account_id: str,
   allowed_origins: typing.List[str] = None,
   creator: str = None,
+  direct_user: bool | IResolvable = None,
   identifier: str = None,
   max_duration_seconds: typing.Union[int, float] = None,
   meta: str = None,
@@ -50,6 +51,7 @@ stream.Stream(
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | Lists the origins allowed to display the video. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.creator">creator</a></code> | <code>str</code> | A user-defined identifier for the media creator. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.directUser">direct_user</a></code> | <code>bool \| cdktn.IResolvable</code> | Provisions a URL to let your end users upload videos directly to Cloudflare Stream without exposing your API token to clients. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.maxDurationSeconds">max_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | The maximum duration in seconds for a video upload. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.meta">meta</a></code> | <code>str</code> | A user modifiable key-value store used to reference other systems of record for managing videos. |
@@ -128,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#account_id Stream#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#account_id Stream#account_id}
 
 ---
 
@@ -140,7 +142,7 @@ Lists the origins allowed to display the video.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. Empty arrays allow the video to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
 
 ---
 
@@ -150,7 +152,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#creator Stream#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#creator Stream#creator}
+
+---
+
+##### `direct_user`<sup>Optional</sup> <a name="direct_user" id="@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.directUser"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Provisions a URL to let your end users upload videos directly to Cloudflare Stream without exposing your API token to clients.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#direct_user Stream#direct_user}
 
 ---
 
@@ -160,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#identifier Stream#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#identifier Stream#identifier}
 
 ---
 
@@ -172,7 +184,7 @@ The maximum duration in seconds for a video upload.
 
 Can be set for a video that is not yet uploaded to limit its duration. Uploads that exceed the specified duration will fail during processing. A value of `-1` means the value is unknown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
 
 ---
 
@@ -182,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A user modifiable key-value store used to reference other systems of record for managing videos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#meta Stream#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#meta Stream#meta}
 
 ---
 
@@ -192,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Public details for the video including title, share link, channel link, and logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#public_details Stream#public_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#public_details Stream#public_details}
 
 ---
 
@@ -204,7 +216,7 @@ Indicates whether the video can be a accessed using the UID.
 
 When set to `true`, a signed token must be generated with a signing key to view the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
 
 ---
 
@@ -216,7 +228,7 @@ Indicates the date and time at which the video will be deleted.
 
 Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion. If specified, must be at least 30 days from upload time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
 
 ---
 
@@ -228,7 +240,7 @@ The timestamp for a thumbnail image calculated as a percentage value of the vide
 
 To convert from a second-wise timestamp to a percentage, divide the desired timestamp by the total duration of the video.  If this value is not set, the default thumbnail image is taken from 0s of the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
 
 ---
 
@@ -238,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique identifier for the video. Can be used to verify the video being updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#uid Stream#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#uid Stream#uid}
 
 ---
 
@@ -248,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The date and time when the video upload URL is no longer valid for direct user uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
 
 ---
 
@@ -283,6 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.putPublicDetails">put_public_details</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetAllowedOrigins">reset_allowed_origins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetCreator">reset_creator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetDirectUser">reset_direct_user</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetIdentifier">reset_identifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetMaxDurationSeconds">reset_max_duration_seconds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetMeta">reset_meta</a></code> | *No description.* |
@@ -658,7 +671,7 @@ def put_public_details(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#channel_link Stream#channel_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#channel_link Stream#channel_link}.
 
 ---
 
@@ -666,7 +679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#logo Stream#logo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#logo Stream#logo}.
 
 ---
 
@@ -674,7 +687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#share_link Stream#share_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#share_link Stream#share_link}.
 
 ---
 
@@ -682,7 +695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#title Stream#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#title Stream#title}.
 
 ---
 
@@ -696,6 +709,12 @@ def reset_allowed_origins() -> None
 
 ```python
 def reset_creator() -> None
+```
+
+##### `reset_direct_user` <a name="reset_direct_user" id="@cdktn/provider-cloudflare.stream.Stream.resetDirectUser"></a>
+
+```python
+def reset_direct_user() -> None
 ```
 
 ##### `reset_identifier` <a name="reset_identifier" id="@cdktn/provider-cloudflare.stream.Stream.resetIdentifier"></a>
@@ -866,7 +885,7 @@ The construct id used in the generated config for the Stream to import.
 
 The id of the existing Stream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,6 +935,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.allowedOriginsInput">allowed_origins_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.creatorInput">creator_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.directUserInput">direct_user_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.maxDurationSecondsInput">max_duration_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.metaInput">meta_input</a></code> | <code>str</code> | *No description.* |
@@ -928,6 +948,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.creator">creator</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.directUser">direct_user</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.identifier">identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.maxDurationSeconds">max_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.meta">meta</a></code> | <code>str</code> | *No description.* |
@@ -1281,6 +1302,16 @@ creator_input: str
 
 ---
 
+##### `direct_user_input`<sup>Optional</sup> <a name="direct_user_input" id="@cdktn/provider-cloudflare.stream.Stream.property.directUserInput"></a>
+
+```python
+direct_user_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `identifier_input`<sup>Optional</sup> <a name="identifier_input" id="@cdktn/provider-cloudflare.stream.Stream.property.identifierInput"></a>
 
 ```python
@@ -1398,6 +1429,16 @@ creator: str
 ```
 
 - *Type:* str
+
+---
+
+##### `direct_user`<sup>Required</sup> <a name="direct_user" id="@cdktn/provider-cloudflare.stream.Stream.property.directUser"></a>
+
+```python
+direct_user: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1519,6 +1560,7 @@ stream.StreamConfig(
   account_id: str,
   allowed_origins: typing.List[str] = None,
   creator: str = None,
+  direct_user: bool | IResolvable = None,
   identifier: str = None,
   max_duration_seconds: typing.Union[int, float] = None,
   meta: str = None,
@@ -1545,6 +1587,7 @@ stream.StreamConfig(
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | Lists the origins allowed to display the video. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.creator">creator</a></code> | <code>str</code> | A user-defined identifier for the media creator. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.directUser">direct_user</a></code> | <code>bool \| cdktn.IResolvable</code> | Provisions a URL to let your end users upload videos directly to Cloudflare Stream without exposing your API token to clients. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.identifier">identifier</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.maxDurationSeconds">max_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | The maximum duration in seconds for a video upload. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.meta">meta</a></code> | <code>str</code> | A user modifiable key-value store used to reference other systems of record for managing videos. |
@@ -1637,7 +1680,7 @@ account_id: str
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#account_id Stream#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#account_id Stream#account_id}
 
 ---
 
@@ -1653,7 +1696,7 @@ Lists the origins allowed to display the video.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. Empty arrays allow the video to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
 
 ---
 
@@ -1667,7 +1710,21 @@ creator: str
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#creator Stream#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#creator Stream#creator}
+
+---
+
+##### `direct_user`<sup>Optional</sup> <a name="direct_user" id="@cdktn/provider-cloudflare.stream.StreamConfig.property.directUser"></a>
+
+```python
+direct_user: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Provisions a URL to let your end users upload videos directly to Cloudflare Stream without exposing your API token to clients.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#direct_user Stream#direct_user}
 
 ---
 
@@ -1681,7 +1738,7 @@ identifier: str
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#identifier Stream#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#identifier Stream#identifier}
 
 ---
 
@@ -1697,7 +1754,7 @@ The maximum duration in seconds for a video upload.
 
 Can be set for a video that is not yet uploaded to limit its duration. Uploads that exceed the specified duration will fail during processing. A value of `-1` means the value is unknown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
 
 ---
 
@@ -1711,7 +1768,7 @@ meta: str
 
 A user modifiable key-value store used to reference other systems of record for managing videos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#meta Stream#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#meta Stream#meta}
 
 ---
 
@@ -1725,7 +1782,7 @@ public_details: StreamPublicDetails
 
 Public details for the video including title, share link, channel link, and logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#public_details Stream#public_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#public_details Stream#public_details}
 
 ---
 
@@ -1741,7 +1798,7 @@ Indicates whether the video can be a accessed using the UID.
 
 When set to `true`, a signed token must be generated with a signing key to view the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
 
 ---
 
@@ -1757,7 +1814,7 @@ Indicates the date and time at which the video will be deleted.
 
 Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion. If specified, must be at least 30 days from upload time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
 
 ---
 
@@ -1773,7 +1830,7 @@ The timestamp for a thumbnail image calculated as a percentage value of the vide
 
 To convert from a second-wise timestamp to a percentage, divide the desired timestamp by the total duration of the video.  If this value is not set, the default thumbnail image is taken from 0s of the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
 
 ---
 
@@ -1787,7 +1844,7 @@ uid: str
 
 The unique identifier for the video. Can be used to verify the video being updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#uid Stream#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#uid Stream#uid}
 
 ---
 
@@ -1801,7 +1858,7 @@ upload_expiry: str
 
 The date and time when the video upload URL is no longer valid for direct user uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
 
 ---
 
@@ -1846,10 +1903,10 @@ stream.StreamPublicDetails(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.channelLink">channel_link</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#channel_link Stream#channel_link}. |
-| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.logo">logo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#logo Stream#logo}. |
-| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.shareLink">share_link</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#share_link Stream#share_link}. |
-| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#title Stream#title}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.channelLink">channel_link</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#channel_link Stream#channel_link}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.logo">logo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#logo Stream#logo}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.shareLink">share_link</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#share_link Stream#share_link}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#title Stream#title}. |
 
 ---
 
@@ -1861,7 +1918,7 @@ channel_link: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#channel_link Stream#channel_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#channel_link Stream#channel_link}.
 
 ---
 
@@ -1873,7 +1930,7 @@ logo: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#logo Stream#logo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#logo Stream#logo}.
 
 ---
 
@@ -1885,7 +1942,7 @@ share_link: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#share_link Stream#share_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#share_link Stream#share_link}.
 
 ---
 
@@ -1897,7 +1954,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream#title Stream#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream#title Stream#title}.
 
 ---
 

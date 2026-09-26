@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktn/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.putUnit">PutUnit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.resetManagedBy">ResetManagedBy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.resetSettings">ResetSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.resetStandalone">ResetStandalone</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.resetType">ResetType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.resetUnit">ResetUnit</a></code> | *No description.* |
 
@@ -441,6 +442,12 @@ func ResetManagedBy()
 func ResetSettings()
 ```
 
+##### `ResetStandalone` <a name="ResetStandalone" id="@cdktn/provider-cloudflare.account.Account.resetStandalone"></a>
+
+```go
+func ResetStandalone()
+```
+
 ##### `ResetType` <a name="ResetType" id="@cdktn/provider-cloudflare.account.Account.resetType"></a>
 
 ```go
@@ -556,7 +563,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -594,9 +601,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.managedByInput">ManagedByInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.settingsInput">SettingsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.property.standaloneInput">StandaloneInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.unitInput">UnitInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.property.standalone">Standalone</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -823,6 +832,16 @@ func SettingsInput() interface{}
 
 ---
 
+##### `StandaloneInput`<sup>Optional</sup> <a name="StandaloneInput" id="@cdktn/provider-cloudflare.account.Account.property.standaloneInput"></a>
+
+```go
+func StandaloneInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-cloudflare.account.Account.property.typeInput"></a>
 
 ```go
@@ -850,6 +869,16 @@ func Name() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Standalone`<sup>Required</sup> <a name="Standalone" id="@cdktn/provider-cloudflare.account.Account.property.standalone"></a>
+
+```go
+func Standalone() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -901,6 +930,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/account"
 	Name: *string,
 	ManagedBy: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.account.AccountManagedBy,
 	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.account.AccountSettings,
+	Standalone: interface{},
 	Type: *string,
 	Unit: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.account.AccountUnit,
 }
@@ -920,8 +950,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/account"
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.name">Name</a></code> | <code>*string</code> | Account name. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.managedBy">ManagedBy</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.standalone">Standalone</a></code> | <code>interface{}</code> | Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.type">Type</a></code> | <code>*string</code> | Available values: "standard", "enterprise". |
-| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.unit">Unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | information related to the tenant unit, and optionally, an id of the unit to create the account on. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.unit">Unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | Information related to the tenant unit. |
 
 ---
 
@@ -1005,7 +1036,7 @@ Name *string
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -1019,7 +1050,7 @@ ManagedBy AccountManagedBy
 
 Parent container details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#managed_by Account#managed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -1033,7 +1064,21 @@ Settings AccountSettings
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#settings Account#settings}
+
+---
+
+##### `Standalone`<sup>Optional</sup> <a name="Standalone" id="@cdktn/provider-cloudflare.account.AccountConfig.property.standalone"></a>
+
+```go
+Standalone interface{}
+```
+
+- *Type:* interface{}
+
+Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#standalone Account#standalone}
 
 ---
 
@@ -1047,7 +1092,7 @@ Type *string
 
 Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -1059,11 +1104,11 @@ Unit AccountUnit
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a>
 
-information related to the tenant unit, and optionally, an id of the unit to create the account on.
+Information related to the tenant unit.
 
-see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
+Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -1112,7 +1157,7 @@ AbuseContactEmail *string
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -1126,7 +1171,7 @@ EnforceTwofactor interface{}
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -1160,7 +1205,7 @@ Id *string
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

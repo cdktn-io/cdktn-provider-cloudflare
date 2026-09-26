@@ -4,7 +4,7 @@
 
 ### RateLimit <a name="RateLimit" id="@cdktn/provider-cloudflare.rateLimit.RateLimit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit cloudflare_rate_limit}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit cloudflare_rate_limit}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.Initializer"></a>
 
@@ -25,7 +25,8 @@ rateLimit.RateLimit(
   match: RateLimitMatch,
   period: typing.Union[int, float],
   threshold: typing.Union[int, float],
-  zone_id: str
+  zone_id: str,
+  rate_limit_id: str = None
 )
 ```
 
@@ -45,6 +46,7 @@ rateLimit.RateLimit(
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.Initializer.parameter.period">period</a></code> | <code>typing.Union[int, float]</code> | The time in seconds (an integer value) to count matching traffic. |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.Initializer.parameter.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | The threshold that will trigger the configured mitigation action. |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.Initializer.parameter.rateLimitId">rate_limit_id</a></code> | <code>str</code> | Defines the unique identifier of the rate limit. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The action to perform when the threshold of matched traffic within the configured period is exceeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#action RateLimit#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#action RateLimit#action}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Determines which traffic the rate limit counts towards the threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#match RateLimit#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#match RateLimit#match}
 
 ---
 
@@ -136,7 +138,7 @@ The time in seconds (an integer value) to count matching traffic.
 
 If the count exceeds the configured threshold within this period, Cloudflare will perform the configured action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#period RateLimit#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#period RateLimit#period}
 
 ---
 
@@ -148,7 +150,7 @@ The threshold that will trigger the configured mitigation action.
 
 Configure this value along with the `period` property to establish a threshold per period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#threshold RateLimit#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#threshold RateLimit#threshold}
 
 ---
 
@@ -158,7 +160,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#zone_id RateLimit#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#zone_id RateLimit#zone_id}
+
+---
+
+##### `rate_limit_id`<sup>Optional</sup> <a name="rate_limit_id" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.Initializer.parameter.rateLimitId"></a>
+
+- *Type:* str
+
+Defines the unique identifier of the rate limit.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#rate_limit_id RateLimit#rate_limit_id}
 
 ---
 
@@ -192,6 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.putAction">put_action</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.putMatch">put_match</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.resetRateLimitId">reset_rate_limit_id</a></code> | *No description.* |
 
 ---
 
@@ -559,7 +572,7 @@ def put_action(
 
 The action to perform. Available values: "simulate", "ban", "challenge", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#mode RateLimit#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#mode RateLimit#mode}
 
 ---
 
@@ -572,7 +585,7 @@ A custom content type and reponse to return when the threshold is exceeded.
 The custom response configured in this object will override the custom error for the zone. This object is optional.
 Notes: If you omit this object, Cloudflare will use the default HTML error page. If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone challenge pages and you should not provide the "response" object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#response RateLimit#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#response RateLimit#response}
 
 ---
 
@@ -585,7 +598,7 @@ The time in seconds during which Cloudflare will perform the mitigation action.
 Must be an integer value greater than or equal to the period.
 Notes: If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone's Challenge Passage time and you should not provide this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#timeout RateLimit#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#timeout RateLimit#timeout}
 
 ---
 
@@ -603,7 +616,7 @@ def put_match(
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchHeaders">RateLimitMatchHeaders</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#headers RateLimit#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#headers RateLimit#headers}.
 
 ---
 
@@ -611,7 +624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchRequest">RateLimitMatchRequest</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#request RateLimit#request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#request RateLimit#request}.
 
 ---
 
@@ -619,9 +632,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchResponse">RateLimitMatchResponse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#response RateLimit#response}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#response RateLimit#response}.
 
 ---
+
+##### `reset_rate_limit_id` <a name="reset_rate_limit_id" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.resetRateLimitId"></a>
+
+```python
+def reset_rate_limit_id() -> None
+```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
@@ -737,7 +756,7 @@ The construct id used in the generated config for the RateLimit to import.
 
 The id of the existing RateLimit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -768,17 +787,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.action">action</a></code> | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitActionOutputReference">RateLimitActionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.bypass">bypass</a></code> | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList">RateLimitBypassList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.match">match</a></code> | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchOutputReference">RateLimitMatchOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.actionInput">action_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitAction">RateLimitAction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.matchInput">match_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatch">RateLimitMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.periodInput">period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.rateLimitIdInput">rate_limit_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.period">period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.rateLimitId">rate_limit_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimit.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 
@@ -936,46 +953,6 @@ action: RateLimitActionOutputReference
 
 ---
 
-##### `bypass`<sup>Required</sup> <a name="bypass" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.property.bypass"></a>
-
-```python
-bypass: RateLimitBypassList
-```
-
-- *Type:* <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList">RateLimitBypassList</a>
-
----
-
-##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.property.description"></a>
-
-```python
-description: str
-```
-
-- *Type:* str
-
----
-
-##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.property.disabled"></a>
-
-```python
-disabled: IResolvable
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
 ##### `match`<sup>Required</sup> <a name="match" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.property.match"></a>
 
 ```python
@@ -1016,6 +993,16 @@ period_input: typing.Union[int, float]
 
 ---
 
+##### `rate_limit_id_input`<sup>Optional</sup> <a name="rate_limit_id_input" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.property.rateLimitIdInput"></a>
+
+```python
+rate_limit_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.property.thresholdInput"></a>
 
 ```python
@@ -1043,6 +1030,16 @@ period: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `rate_limit_id`<sup>Required</sup> <a name="rate_limit_id" id="@cdktn/provider-cloudflare.rateLimit.RateLimit.property.rateLimitId"></a>
+
+```python
+rate_limit_id: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1120,7 +1117,7 @@ mode: str
 
 The action to perform. Available values: "simulate", "ban", "challenge", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#mode RateLimit#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#mode RateLimit#mode}
 
 ---
 
@@ -1137,7 +1134,7 @@ A custom content type and reponse to return when the threshold is exceeded.
 The custom response configured in this object will override the custom error for the zone. This object is optional.
 Notes: If you omit this object, Cloudflare will use the default HTML error page. If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone challenge pages and you should not provide the "response" object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#response RateLimit#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#response RateLimit#response}
 
 ---
 
@@ -1154,7 +1151,7 @@ The time in seconds during which Cloudflare will perform the mitigation action.
 Must be an integer value greater than or equal to the period.
 Notes: If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone's Challenge Passage time and you should not provide this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#timeout RateLimit#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#timeout RateLimit#timeout}
 
 ---
 
@@ -1190,7 +1187,7 @@ body: str
 
 The response body to return. The value must conform to the configured content type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#body RateLimit#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#body RateLimit#body}
 
 ---
 
@@ -1204,20 +1201,9 @@ content_type: str
 
 The content type of the body. Must be one of the following: `text/plain`, `text/xml`, or `application/json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#content_type RateLimit#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#content_type RateLimit#content_type}
 
 ---
-
-### RateLimitBypass <a name="RateLimitBypass" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypass"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypass.Initializer"></a>
-
-```python
-from cdktn_provider_cloudflare import rate_limit
-
-rateLimit.RateLimitBypass()
-```
-
 
 ### RateLimitConfig <a name="RateLimitConfig" id="@cdktn/provider-cloudflare.rateLimit.RateLimitConfig"></a>
 
@@ -1238,7 +1224,8 @@ rateLimit.RateLimitConfig(
   match: RateLimitMatch,
   period: typing.Union[int, float],
   threshold: typing.Union[int, float],
-  zone_id: str
+  zone_id: str,
+  rate_limit_id: str = None
 )
 ```
 
@@ -1258,6 +1245,7 @@ rateLimit.RateLimitConfig(
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitConfig.property.period">period</a></code> | <code>typing.Union[int, float]</code> | The time in seconds (an integer value) to count matching traffic. |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitConfig.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | The threshold that will trigger the configured mitigation action. |
 | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitConfig.property.rateLimitId">rate_limit_id</a></code> | <code>str</code> | Defines the unique identifier of the rate limit. |
 
 ---
 
@@ -1341,7 +1329,7 @@ action: RateLimitAction
 
 The action to perform when the threshold of matched traffic within the configured period is exceeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#action RateLimit#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#action RateLimit#action}
 
 ---
 
@@ -1355,7 +1343,7 @@ match: RateLimitMatch
 
 Determines which traffic the rate limit counts towards the threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#match RateLimit#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#match RateLimit#match}
 
 ---
 
@@ -1371,7 +1359,7 @@ The time in seconds (an integer value) to count matching traffic.
 
 If the count exceeds the configured threshold within this period, Cloudflare will perform the configured action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#period RateLimit#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#period RateLimit#period}
 
 ---
 
@@ -1387,7 +1375,7 @@ The threshold that will trigger the configured mitigation action.
 
 Configure this value along with the `period` property to establish a threshold per period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#threshold RateLimit#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#threshold RateLimit#threshold}
 
 ---
 
@@ -1401,7 +1389,21 @@ zone_id: str
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#zone_id RateLimit#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#zone_id RateLimit#zone_id}
+
+---
+
+##### `rate_limit_id`<sup>Optional</sup> <a name="rate_limit_id" id="@cdktn/provider-cloudflare.rateLimit.RateLimitConfig.property.rateLimitId"></a>
+
+```python
+rate_limit_id: str
+```
+
+- *Type:* str
+
+Defines the unique identifier of the rate limit.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#rate_limit_id RateLimit#rate_limit_id}
 
 ---
 
@@ -1423,9 +1425,9 @@ rateLimit.RateLimitMatch(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatch.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchHeaders">RateLimitMatchHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#headers RateLimit#headers}. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatch.property.request">request</a></code> | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchRequest">RateLimitMatchRequest</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#request RateLimit#request}. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatch.property.response">response</a></code> | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchResponse">RateLimitMatchResponse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#response RateLimit#response}. |
+| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatch.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchHeaders">RateLimitMatchHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#headers RateLimit#headers}. |
+| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatch.property.request">request</a></code> | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchRequest">RateLimitMatchRequest</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#request RateLimit#request}. |
+| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatch.property.response">response</a></code> | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchResponse">RateLimitMatchResponse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#response RateLimit#response}. |
 
 ---
 
@@ -1437,7 +1439,7 @@ headers: IResolvable | typing.List[RateLimitMatchHeaders]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchHeaders">RateLimitMatchHeaders</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#headers RateLimit#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#headers RateLimit#headers}.
 
 ---
 
@@ -1449,7 +1451,7 @@ request: RateLimitMatchRequest
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchRequest">RateLimitMatchRequest</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#request RateLimit#request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#request RateLimit#request}.
 
 ---
 
@@ -1461,7 +1463,7 @@ response: RateLimitMatchResponse
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitMatchResponse">RateLimitMatchResponse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#response RateLimit#response}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#response RateLimit#response}.
 
 ---
 
@@ -1499,7 +1501,7 @@ name: str
 
 The name of the response header to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#name RateLimit#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#name RateLimit#name}
 
 ---
 
@@ -1513,7 +1515,7 @@ op: str
 
 The operator used when matching: `eq` means "equal" and `ne` means "not equal". Available values: "eq", "ne".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#op RateLimit#op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#op RateLimit#op}
 
 ---
 
@@ -1527,7 +1529,7 @@ value: str
 
 The value of the response header, which must match exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#value RateLimit#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#value RateLimit#value}
 
 ---
 
@@ -1567,7 +1569,7 @@ The HTTP methods to match.
 
 You can specify a subset (for example, `['POST','PUT']`) or all methods (`['_ALL_']`). This field is optional when creating a rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#methods RateLimit#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#methods RateLimit#methods}
 
 ---
 
@@ -1583,7 +1585,7 @@ The HTTP schemes to match.
 
 You can specify one scheme (`['HTTPS']`), both schemes (`['HTTP','HTTPS']`), or all schemes (`['_ALL_']`). This field is optional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#schemes RateLimit#schemes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#schemes RateLimit#schemes}
 
 ---
 
@@ -1597,7 +1599,7 @@ url: str
 
 The URL pattern to match, composed of a host and a path such as `example.org/path*`. Normalization is applied before the pattern is matched. `*` wildcards are expanded to match applicable traffic. Query strings are not matched. Set the value to `*` to match all traffic to your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#url RateLimit#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#url RateLimit#url}
 
 ---
 
@@ -1634,7 +1636,7 @@ When true, only the uncached traffic served from your origin servers will count 
 In this case, any cached traffic served by Cloudflare will not count towards rate limiting. This field is optional.
 Notes: This field is deprecated. Instead, use response headers and set "origin_traffic" to "false" to avoid legacy behaviour interacting with the "response_headers" property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#origin_traffic RateLimit#origin_traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#origin_traffic RateLimit#origin_traffic}
 
 ---
 
@@ -1887,7 +1889,7 @@ def put_response(
 
 The response body to return. The value must conform to the configured content type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#body RateLimit#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#body RateLimit#body}
 
 ---
 
@@ -1897,7 +1899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The content type of the body. Must be one of the following: `text/plain`, `text/xml`, or `application/json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#content_type RateLimit#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#content_type RateLimit#content_type}
 
 ---
 
@@ -2359,481 +2361,6 @@ internal_value: IResolvable | RateLimitActionResponse
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitActionResponse">RateLimitActionResponse</a>
-
----
-
-
-### RateLimitBypassList <a name="RateLimitBypassList" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.Initializer"></a>
-
-```python
-from cdktn_provider_cloudflare import rate_limit
-
-rateLimit.RateLimitBypassList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.get">get</a></code> | *No description.* |
-
----
-
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.allWithMapKey"></a>
-
-```python
-def all_with_map_key(
-  map_key_attribute_name: str
-) -> DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* str
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.resolve.parameter._context"></a>
-
-- *Type:* cdktn.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> RateLimitBypassOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-
-### RateLimitBypassOutputReference <a name="RateLimitBypassOutputReference" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer"></a>
-
-```python
-from cdktn_provider_cloudflare import rate_limit
-
-rateLimit.RateLimitBypassOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktn.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypass">RateLimitBypass</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.name"></a>
-
-```python
-name: str
-```
-
-- *Type:* str
-
----
-
-##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.value"></a>
-
-```python
-value: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.property.internalValue"></a>
-
-```python
-internal_value: RateLimitBypass
-```
-
-- *Type:* <a href="#@cdktn/provider-cloudflare.rateLimit.RateLimitBypass">RateLimitBypass</a>
 
 ---
 
@@ -3655,7 +3182,7 @@ The HTTP methods to match.
 
 You can specify a subset (for example, `['POST','PUT']`) or all methods (`['_ALL_']`). This field is optional when creating a rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#methods RateLimit#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#methods RateLimit#methods}
 
 ---
 
@@ -3667,7 +3194,7 @@ The HTTP schemes to match.
 
 You can specify one scheme (`['HTTPS']`), both schemes (`['HTTP','HTTPS']`), or all schemes (`['_ALL_']`). This field is optional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#schemes RateLimit#schemes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#schemes RateLimit#schemes}
 
 ---
 
@@ -3677,7 +3204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The URL pattern to match, composed of a host and a path such as `example.org/path*`. Normalization is applied before the pattern is matched. `*` wildcards are expanded to match applicable traffic. Query strings are not matched. Set the value to `*` to match all traffic to your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#url RateLimit#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#url RateLimit#url}
 
 ---
 
@@ -3698,7 +3225,7 @@ When true, only the uncached traffic served from your origin servers will count 
 In this case, any cached traffic served by Cloudflare will not count towards rate limiting. This field is optional.
 Notes: This field is deprecated. Instead, use response headers and set "origin_traffic" to "false" to avoid legacy behaviour interacting with the "response_headers" property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit#origin_traffic RateLimit#origin_traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit#origin_traffic RateLimit#origin_traffic}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Worker <a name="Worker" id="@cdktn/provider-cloudflare.worker.Worker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker cloudflare_worker}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker cloudflare_worker}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.Worker.Initializer"></a>
 
@@ -21,8 +21,10 @@ Worker.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .name(java.lang.String)
+//  .force(java.lang.Boolean|IResolvable)
 //  .logpush(java.lang.Boolean|IResolvable)
 //  .observability(WorkerObservability)
+//  .previewsBaseConfig(WorkerPreviewsBaseConfig)
 //  .subdomain(WorkerSubdomain)
 //  .tags(java.util.List<java.lang.String>)
 //  .tailConsumers(IResolvable|java.util.List<WorkerTailConsumers>)
@@ -42,8 +44,10 @@ Worker.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.force">force</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, delete the Worker even when other Workers still reference it. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.logpush">logpush</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether logpush is enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.observability">observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a></code> | Observability settings for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.previewsBaseConfig">previewsBaseConfig</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a></code> | Template configuration used when creating new Previews for this Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.subdomain">subdomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerSubdomain">WorkerSubdomain</a></code> | Subdomain settings for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.tailConsumers">tailConsumers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerTailConsumers">WorkerTailConsumers</a>></code> | Other Workers that should consume logs from the Worker. |
@@ -116,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#account_id Worker#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#account_id Worker#account_id}
 
 ---
 
@@ -126,7 +130,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#name Worker#name}
+
+---
+
+##### `force`<sup>Optional</sup> <a name="force" id="@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.force"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If true, delete the Worker even when other Workers still reference it.
+
+Service bindings in those Workers may be left broken. Durable Object namespaces implemented by the deleted Worker are deleted even if other Workers reference them.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#force Worker#force}
 
 ---
 
@@ -136,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether logpush is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#logpush Worker#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#logpush Worker#logpush}
 
 ---
 
@@ -146,7 +162,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Observability settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#observability Worker#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#observability Worker#observability}
+
+---
+
+##### `previewsBaseConfig`<sup>Optional</sup> <a name="previewsBaseConfig" id="@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.previewsBaseConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a>
+
+Template configuration used when creating new Previews for this Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#previews_base_config Worker#previews_base_config}
 
 ---
 
@@ -156,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Subdomain settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#subdomain Worker#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#subdomain Worker#subdomain}
 
 ---
 
@@ -166,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Tags associated with the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#tags Worker#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#tags Worker#tags}
 
 ---
 
@@ -176,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Other Workers that should consume logs from the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
 
 ---
 
@@ -209,10 +235,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putObservability">putObservability</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putPreviewsBaseConfig">putPreviewsBaseConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putSubdomain">putSubdomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putTailConsumers">putTailConsumers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetForce">resetForce</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetLogpush">resetLogpush</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetObservability">resetObservability</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetPreviewsBaseConfig">resetPreviewsBaseConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetSubdomain">resetSubdomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetTailConsumers">resetTailConsumers</a></code> | *No description.* |
@@ -542,6 +571,18 @@ public void putObservability(WorkerObservability value)
 
 ---
 
+##### `putPreviewsBaseConfig` <a name="putPreviewsBaseConfig" id="@cdktn/provider-cloudflare.worker.Worker.putPreviewsBaseConfig"></a>
+
+```java
+public void putPreviewsBaseConfig(WorkerPreviewsBaseConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.Worker.putPreviewsBaseConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a>
+
+---
+
 ##### `putSubdomain` <a name="putSubdomain" id="@cdktn/provider-cloudflare.worker.Worker.putSubdomain"></a>
 
 ```java
@@ -566,6 +607,12 @@ public void putTailConsumers(IResolvable|java.util.List<WorkerTailConsumers> val
 
 ---
 
+##### `resetForce` <a name="resetForce" id="@cdktn/provider-cloudflare.worker.Worker.resetForce"></a>
+
+```java
+public void resetForce()
+```
+
 ##### `resetLogpush` <a name="resetLogpush" id="@cdktn/provider-cloudflare.worker.Worker.resetLogpush"></a>
 
 ```java
@@ -576,6 +623,12 @@ public void resetLogpush()
 
 ```java
 public void resetObservability()
+```
+
+##### `resetPreviewsBaseConfig` <a name="resetPreviewsBaseConfig" id="@cdktn/provider-cloudflare.worker.Worker.resetPreviewsBaseConfig"></a>
+
+```java
+public void resetPreviewsBaseConfig()
 ```
 
 ##### `resetSubdomain` <a name="resetSubdomain" id="@cdktn/provider-cloudflare.worker.Worker.resetSubdomain"></a>
@@ -699,7 +752,7 @@ The construct id used in the generated config for the Worker to import.
 
 The id of the existing Worker that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,18 +786,22 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.deployedOn">deployedOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.observability">observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference">WorkerObservabilityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.previewsBaseConfig">previewsBaseConfig</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference">WorkerPreviewsBaseConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.references">references</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerReferencesOutputReference">WorkerReferencesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.subdomain">subdomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerSubdomainOutputReference">WorkerSubdomainOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.tailConsumers">tailConsumers</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerTailConsumersList">WorkerTailConsumersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.updatedOn">updatedOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.forceInput">forceInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.logpushInput">logpushInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.observabilityInput">observabilityInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.previewsBaseConfigInput">previewsBaseConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.subdomainInput">subdomainInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerSubdomain">WorkerSubdomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.tailConsumersInput">tailConsumersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerTailConsumers">WorkerTailConsumers</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.force">force</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.logpush">logpush</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -933,6 +990,16 @@ public WorkerObservabilityOutputReference getObservability();
 
 ---
 
+##### `previewsBaseConfig`<sup>Required</sup> <a name="previewsBaseConfig" id="@cdktn/provider-cloudflare.worker.Worker.property.previewsBaseConfig"></a>
+
+```java
+public WorkerPreviewsBaseConfigOutputReference getPreviewsBaseConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference">WorkerPreviewsBaseConfigOutputReference</a>
+
+---
+
 ##### `references`<sup>Required</sup> <a name="references" id="@cdktn/provider-cloudflare.worker.Worker.property.references"></a>
 
 ```java
@@ -983,6 +1050,16 @@ public java.lang.String getAccountIdInput();
 
 ---
 
+##### `forceInput`<sup>Optional</sup> <a name="forceInput" id="@cdktn/provider-cloudflare.worker.Worker.property.forceInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForceInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `logpushInput`<sup>Optional</sup> <a name="logpushInput" id="@cdktn/provider-cloudflare.worker.Worker.property.logpushInput"></a>
 
 ```java
@@ -1010,6 +1087,16 @@ public IResolvable|WorkerObservability getObservabilityInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a>
+
+---
+
+##### `previewsBaseConfigInput`<sup>Optional</sup> <a name="previewsBaseConfigInput" id="@cdktn/provider-cloudflare.worker.Worker.property.previewsBaseConfigInput"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfig getPreviewsBaseConfigInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a>
 
 ---
 
@@ -1050,6 +1137,16 @@ public java.lang.String getAccountId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `force`<sup>Required</sup> <a name="force" id="@cdktn/provider-cloudflare.worker.Worker.property.force"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForce();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1120,8 +1217,10 @@ WorkerConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .name(java.lang.String)
+//  .force(java.lang.Boolean|IResolvable)
 //  .logpush(java.lang.Boolean|IResolvable)
 //  .observability(WorkerObservability)
+//  .previewsBaseConfig(WorkerPreviewsBaseConfig)
 //  .subdomain(WorkerSubdomain)
 //  .tags(java.util.List<java.lang.String>)
 //  .tailConsumers(IResolvable|java.util.List<WorkerTailConsumers>)
@@ -1141,8 +1240,10 @@ WorkerConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.force">force</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, delete the Worker even when other Workers still reference it. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.logpush">logpush</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether logpush is enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.observability">observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a></code> | Observability settings for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.previewsBaseConfig">previewsBaseConfig</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a></code> | Template configuration used when creating new Previews for this Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.subdomain">subdomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerSubdomain">WorkerSubdomain</a></code> | Subdomain settings for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.tailConsumers">tailConsumers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerTailConsumers">WorkerTailConsumers</a>></code> | Other Workers that should consume logs from the Worker. |
@@ -1229,7 +1330,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#account_id Worker#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#account_id Worker#account_id}
 
 ---
 
@@ -1243,7 +1344,23 @@ public java.lang.String getName();
 
 Name of the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#name Worker#name}
+
+---
+
+##### `force`<sup>Optional</sup> <a name="force" id="@cdktn/provider-cloudflare.worker.WorkerConfig.property.force"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForce();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If true, delete the Worker even when other Workers still reference it.
+
+Service bindings in those Workers may be left broken. Durable Object namespaces implemented by the deleted Worker are deleted even if other Workers reference them.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#force Worker#force}
 
 ---
 
@@ -1257,7 +1374,7 @@ public java.lang.Boolean|IResolvable getLogpush();
 
 Whether logpush is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#logpush Worker#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#logpush Worker#logpush}
 
 ---
 
@@ -1271,7 +1388,21 @@ public WorkerObservability getObservability();
 
 Observability settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#observability Worker#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#observability Worker#observability}
+
+---
+
+##### `previewsBaseConfig`<sup>Optional</sup> <a name="previewsBaseConfig" id="@cdktn/provider-cloudflare.worker.WorkerConfig.property.previewsBaseConfig"></a>
+
+```java
+public WorkerPreviewsBaseConfig getPreviewsBaseConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a>
+
+Template configuration used when creating new Previews for this Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#previews_base_config Worker#previews_base_config}
 
 ---
 
@@ -1285,7 +1416,7 @@ public WorkerSubdomain getSubdomain();
 
 Subdomain settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#subdomain Worker#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#subdomain Worker#subdomain}
 
 ---
 
@@ -1299,7 +1430,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags associated with the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#tags Worker#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#tags Worker#tags}
 
 ---
 
@@ -1313,7 +1444,7 @@ public IResolvable|java.util.List<WorkerTailConsumers> getTailConsumers();
 
 Other Workers that should consume logs from the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
 
 ---
 
@@ -1327,6 +1458,7 @@ import io.cdktn.providers.cloudflare.worker.WorkerObservability;
 WorkerObservability.builder()
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .headSamplingRate(java.lang.Number)
+//  .issues(WorkerObservabilityIssues)
 //  .logs(WorkerObservabilityLogs)
 //  .traces(WorkerObservabilityTraces)
     .build();
@@ -1338,6 +1470,7 @@ WorkerObservability.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether observability is enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.headSamplingRate">headSamplingRate</a></code> | <code>java.lang.Number</code> | The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%). |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.issues">issues</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues">WorkerObservabilityIssues</a></code> | Real-time Issues settings for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs">WorkerObservabilityLogs</a></code> | Log settings for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.traces">traces</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a></code> | Trace settings for the Worker. |
 
@@ -1353,7 +1486,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether observability is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1367,7 +1500,21 @@ public java.lang.Number getHeadSamplingRate();
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+
+---
+
+##### `issues`<sup>Optional</sup> <a name="issues" id="@cdktn/provider-cloudflare.worker.WorkerObservability.property.issues"></a>
+
+```java
+public WorkerObservabilityIssues getIssues();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues">WorkerObservabilityIssues</a>
+
+Real-time Issues settings for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#issues Worker#issues}
 
 ---
 
@@ -1381,7 +1528,7 @@ public WorkerObservabilityLogs getLogs();
 
 Log settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#logs Worker#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#logs Worker#logs}
 
 ---
 
@@ -1395,7 +1542,41 @@ public WorkerObservabilityTraces getTraces();
 
 Trace settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#traces Worker#traces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#traces Worker#traces}
+
+---
+
+### WorkerObservabilityIssues <a name="WorkerObservabilityIssues" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerObservabilityIssues;
+
+WorkerObservabilityIssues.builder()
+//  .enabled(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether real-time Issues are enabled for the Worker. |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether real-time Issues are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1437,7 +1618,7 @@ public java.util.List<java.lang.String> getDestinations();
 
 A list of destinations where logs will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#destinations Worker#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -1451,7 +1632,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether logs are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1465,7 +1646,7 @@ public java.lang.Number getHeadSamplingRate();
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1479,7 +1660,7 @@ public java.lang.Boolean|IResolvable getInvocationLogs();
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
 
 ---
 
@@ -1493,7 +1674,7 @@ public java.lang.Boolean|IResolvable getPersist();
 
 Whether log persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#persist Worker#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -1535,7 +1716,7 @@ public java.util.List<java.lang.String> getDestinations();
 
 A list of destinations where traces will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#destinations Worker#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -1549,7 +1730,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether traces are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1563,7 +1744,7 @@ public java.lang.Number getHeadSamplingRate();
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1577,7 +1758,7 @@ public java.lang.Boolean|IResolvable getPersist();
 
 Whether trace persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#persist Worker#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -1594,7 +1775,820 @@ Controls how inbound trace context (traceparent/tracestate) headers on incoming 
 "authenticated" (default) honors inbound trace context only when accompanied by a valid trace auth token. "accept" unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled.
 Available values: "authenticated", "accept".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#propagation_policy Worker#propagation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#propagation_policy Worker#propagation_policy}
+
+---
+
+### WorkerPreviewsBaseConfig <a name="WorkerPreviewsBaseConfig" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfig;
+
+WorkerPreviewsBaseConfig.builder()
+//  .cacheOptions(WorkerPreviewsBaseConfigCacheOptions)
+//  .env(IResolvable|java.util.Map<java.lang.String, WorkerPreviewsBaseConfigEnv>)
+//  .limits(WorkerPreviewsBaseConfigLimits)
+//  .logpush(java.lang.Boolean|IResolvable)
+//  .observability(WorkerPreviewsBaseConfigObservability)
+//  .placement(WorkerPreviewsBaseConfigPlacement)
+//  .tailConsumers(IResolvable|java.util.List<WorkerPreviewsBaseConfigTailConsumers>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.cacheOptions">cacheOptions</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions">WorkerPreviewsBaseConfigCacheOptions</a></code> | Cache options used when creating new Previews. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.env">env</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.Map<java.lang.String, <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a>></code> | Bindings used when creating new Previews, keyed by binding name. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits">WorkerPreviewsBaseConfigLimits</a></code> | Resource limits enforced at runtime for newly created Previews. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.logpush">logpush</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether logpush is enabled when creating new Previews. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.observability">observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability">WorkerPreviewsBaseConfigObservability</a></code> | Observability settings used when creating new Previews. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.placement">placement</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement">WorkerPreviewsBaseConfigPlacement</a></code> | Placement configuration used when creating new Previews. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.tailConsumers">tailConsumers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a>></code> | Other Workers that should consume logs from newly created Previews. |
+
+---
+
+##### `cacheOptions`<sup>Optional</sup> <a name="cacheOptions" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.cacheOptions"></a>
+
+```java
+public WorkerPreviewsBaseConfigCacheOptions getCacheOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions">WorkerPreviewsBaseConfigCacheOptions</a>
+
+Cache options used when creating new Previews.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#cache_options Worker#cache_options}
+
+---
+
+##### `env`<sup>Optional</sup> <a name="env" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.env"></a>
+
+```java
+public IResolvable|java.util.Map<java.lang.String, WorkerPreviewsBaseConfigEnv> getEnv();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.Map<java.lang.String, <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a>>
+
+Bindings used when creating new Previews, keyed by binding name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#env Worker#env}
+
+---
+
+##### `limits`<sup>Optional</sup> <a name="limits" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.limits"></a>
+
+```java
+public WorkerPreviewsBaseConfigLimits getLimits();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits">WorkerPreviewsBaseConfigLimits</a>
+
+Resource limits enforced at runtime for newly created Previews.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#limits Worker#limits}
+
+---
+
+##### `logpush`<sup>Optional</sup> <a name="logpush" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.logpush"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLogpush();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether logpush is enabled when creating new Previews.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#logpush Worker#logpush}
+
+---
+
+##### `observability`<sup>Optional</sup> <a name="observability" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.observability"></a>
+
+```java
+public WorkerPreviewsBaseConfigObservability getObservability();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability">WorkerPreviewsBaseConfigObservability</a>
+
+Observability settings used when creating new Previews.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#observability Worker#observability}
+
+---
+
+##### `placement`<sup>Optional</sup> <a name="placement" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.placement"></a>
+
+```java
+public WorkerPreviewsBaseConfigPlacement getPlacement();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement">WorkerPreviewsBaseConfigPlacement</a>
+
+Placement configuration used when creating new Previews.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#placement Worker#placement}
+
+---
+
+##### `tailConsumers`<sup>Optional</sup> <a name="tailConsumers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.property.tailConsumers"></a>
+
+```java
+public IResolvable|java.util.List<WorkerPreviewsBaseConfigTailConsumers> getTailConsumers();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a>>
+
+Other Workers that should consume logs from newly created Previews.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+
+---
+
+### WorkerPreviewsBaseConfigCacheOptions <a name="WorkerPreviewsBaseConfigCacheOptions" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions;
+
+WorkerPreviewsBaseConfigCacheOptions.builder()
+//  .crossVersionCache(java.lang.Boolean|IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions.property.crossVersionCache">crossVersionCache</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether cached responses are shared across Worker version uploads. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether caching is enabled for this Worker. |
+
+---
+
+##### `crossVersionCache`<sup>Optional</sup> <a name="crossVersionCache" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions.property.crossVersionCache"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCrossVersionCache();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether cached responses are shared across Worker version uploads.
+
+This is independent of `enabled`. It can stay true
+while caching is off, so the preference survives turning
+caching off and back on.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#cross_version_cache Worker#cross_version_cache}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether caching is enabled for this Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
+
+---
+
+### WorkerPreviewsBaseConfigEnv <a name="WorkerPreviewsBaseConfigEnv" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigEnv;
+
+WorkerPreviewsBaseConfigEnv.builder()
+    .type(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv.property.type">type</a></code> | <code>java.lang.String</code> | The kind of resource that the binding provides. |
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+The kind of resource that the binding provides.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#type Worker#type}
+
+---
+
+### WorkerPreviewsBaseConfigLimits <a name="WorkerPreviewsBaseConfigLimits" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigLimits;
+
+WorkerPreviewsBaseConfigLimits.builder()
+//  .cpuMs(java.lang.Number)
+//  .subrequests(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits.property.cpuMs">cpuMs</a></code> | <code>java.lang.Number</code> | The amount of CPU time this Worker can use in milliseconds. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits.property.subrequests">subrequests</a></code> | <code>java.lang.Number</code> | The number of subrequests this Worker can make per request. |
+
+---
+
+##### `cpuMs`<sup>Optional</sup> <a name="cpuMs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits.property.cpuMs"></a>
+
+```java
+public java.lang.Number getCpuMs();
+```
+
+- *Type:* java.lang.Number
+
+The amount of CPU time this Worker can use in milliseconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#cpu_ms Worker#cpu_ms}
+
+---
+
+##### `subrequests`<sup>Optional</sup> <a name="subrequests" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits.property.subrequests"></a>
+
+```java
+public java.lang.Number getSubrequests();
+```
+
+- *Type:* java.lang.Number
+
+The number of subrequests this Worker can make per request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#subrequests Worker#subrequests}
+
+---
+
+### WorkerPreviewsBaseConfigObservability <a name="WorkerPreviewsBaseConfigObservability" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigObservability;
+
+WorkerPreviewsBaseConfigObservability.builder()
+//  .enabled(java.lang.Boolean|IResolvable)
+//  .headSamplingRate(java.lang.Number)
+//  .issues(WorkerPreviewsBaseConfigObservabilityIssues)
+//  .logs(WorkerPreviewsBaseConfigObservabilityLogs)
+//  .redactQueryString(java.lang.Boolean|IResolvable)
+//  .traces(WorkerPreviewsBaseConfigObservabilityTraces)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether observability is enabled for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.headSamplingRate">headSamplingRate</a></code> | <code>java.lang.Number</code> | The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%). |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.issues">issues</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues">WorkerPreviewsBaseConfigObservabilityIssues</a></code> | Real-time Issues settings for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs">WorkerPreviewsBaseConfigObservabilityLogs</a></code> | Log settings for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.redactQueryString">redactQueryString</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether query strings are removed from request URLs in logs and traces. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.traces">traces</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces">WorkerPreviewsBaseConfigObservabilityTraces</a></code> | Trace settings for the Worker. |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether observability is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
+
+---
+
+##### `headSamplingRate`<sup>Optional</sup> <a name="headSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.headSamplingRate"></a>
+
+```java
+public java.lang.Number getHeadSamplingRate();
+```
+
+- *Type:* java.lang.Number
+
+The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+
+---
+
+##### `issues`<sup>Optional</sup> <a name="issues" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.issues"></a>
+
+```java
+public WorkerPreviewsBaseConfigObservabilityIssues getIssues();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues">WorkerPreviewsBaseConfigObservabilityIssues</a>
+
+Real-time Issues settings for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#issues Worker#issues}
+
+---
+
+##### `logs`<sup>Optional</sup> <a name="logs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.logs"></a>
+
+```java
+public WorkerPreviewsBaseConfigObservabilityLogs getLogs();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs">WorkerPreviewsBaseConfigObservabilityLogs</a>
+
+Log settings for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#logs Worker#logs}
+
+---
+
+##### `redactQueryString`<sup>Optional</sup> <a name="redactQueryString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.redactQueryString"></a>
+
+```java
+public java.lang.Boolean|IResolvable getRedactQueryString();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether query strings are removed from request URLs in logs and traces.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#redact_query_string Worker#redact_query_string}
+
+---
+
+##### `traces`<sup>Optional</sup> <a name="traces" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.property.traces"></a>
+
+```java
+public WorkerPreviewsBaseConfigObservabilityTraces getTraces();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces">WorkerPreviewsBaseConfigObservabilityTraces</a>
+
+Trace settings for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#traces Worker#traces}
+
+---
+
+### WorkerPreviewsBaseConfigObservabilityIssues <a name="WorkerPreviewsBaseConfigObservabilityIssues" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues;
+
+WorkerPreviewsBaseConfigObservabilityIssues.builder()
+//  .enabled(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether real-time Issues are enabled for the Worker. |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether real-time Issues are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
+
+---
+
+### WorkerPreviewsBaseConfigObservabilityLogs <a name="WorkerPreviewsBaseConfigObservabilityLogs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs;
+
+WorkerPreviewsBaseConfigObservabilityLogs.builder()
+//  .destinations(java.util.List<java.lang.String>)
+//  .enabled(java.lang.Boolean|IResolvable)
+//  .headSamplingRate(java.lang.Number)
+//  .invocationLogs(java.lang.Boolean|IResolvable)
+//  .persist(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.destinations">destinations</a></code> | <code>java.util.List<java.lang.String></code> | A list of destinations where logs will be exported to. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether logs are enabled for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.headSamplingRate">headSamplingRate</a></code> | <code>java.lang.Number</code> | The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.invocationLogs">invocationLogs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.persist">persist</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether log persistence is enabled for the Worker. |
+
+---
+
+##### `destinations`<sup>Optional</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.destinations"></a>
+
+```java
+public java.util.List<java.lang.String> getDestinations();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+A list of destinations where logs will be exported to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#destinations Worker#destinations}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether logs are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
+
+---
+
+##### `headSamplingRate`<sup>Optional</sup> <a name="headSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.headSamplingRate"></a>
+
+```java
+public java.lang.Number getHeadSamplingRate();
+```
+
+- *Type:* java.lang.Number
+
+The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+
+---
+
+##### `invocationLogs`<sup>Optional</sup> <a name="invocationLogs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.invocationLogs"></a>
+
+```java
+public java.lang.Boolean|IResolvable getInvocationLogs();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+
+---
+
+##### `persist`<sup>Optional</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.property.persist"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPersist();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether log persistence is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#persist Worker#persist}
+
+---
+
+### WorkerPreviewsBaseConfigObservabilityTraces <a name="WorkerPreviewsBaseConfigObservabilityTraces" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces;
+
+WorkerPreviewsBaseConfigObservabilityTraces.builder()
+//  .destinations(java.util.List<java.lang.String>)
+//  .enabled(java.lang.Boolean|IResolvable)
+//  .headSamplingRate(java.lang.Number)
+//  .persist(java.lang.Boolean|IResolvable)
+//  .propagationPolicy(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.destinations">destinations</a></code> | <code>java.util.List<java.lang.String></code> | A list of destinations where traces will be exported to. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether traces are enabled for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.headSamplingRate">headSamplingRate</a></code> | <code>java.lang.Number</code> | The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.persist">persist</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether trace persistence is enabled for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.propagationPolicy">propagationPolicy</a></code> | <code>java.lang.String</code> | Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. |
+
+---
+
+##### `destinations`<sup>Optional</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.destinations"></a>
+
+```java
+public java.util.List<java.lang.String> getDestinations();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+A list of destinations where traces will be exported to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#destinations Worker#destinations}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether traces are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
+
+---
+
+##### `headSamplingRate`<sup>Optional</sup> <a name="headSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.headSamplingRate"></a>
+
+```java
+public java.lang.Number getHeadSamplingRate();
+```
+
+- *Type:* java.lang.Number
+
+The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+
+---
+
+##### `persist`<sup>Optional</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.persist"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPersist();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether trace persistence is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#persist Worker#persist}
+
+---
+
+##### `propagationPolicy`<sup>Optional</sup> <a name="propagationPolicy" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.property.propagationPolicy"></a>
+
+```java
+public java.lang.String getPropagationPolicy();
+```
+
+- *Type:* java.lang.String
+
+Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled.
+
+"authenticated" honors inbound trace context only when accompanied by a valid trace auth token. "accept" unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
+Available values: "authenticated", "accept".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#propagation_policy Worker#propagation_policy}
+
+---
+
+### WorkerPreviewsBaseConfigPlacement <a name="WorkerPreviewsBaseConfigPlacement" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigPlacement;
+
+WorkerPreviewsBaseConfigPlacement.builder()
+//  .host(java.lang.String)
+//  .hostname(java.lang.String)
+//  .mode(java.lang.String)
+//  .region(java.lang.String)
+//  .target(IResolvable|java.util.List<WorkerPreviewsBaseConfigPlacementTarget>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.host">host</a></code> | <code>java.lang.String</code> | TCP host and port for targeted placement. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.hostname">hostname</a></code> | <code>java.lang.String</code> | HTTP hostname for targeted placement. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.mode">mode</a></code> | <code>java.lang.String</code> | Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Available values: "smart", "targeted". |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.region">region</a></code> | <code>java.lang.String</code> | Cloud region for targeted placement in format 'provider:region'. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.target">target</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a>></code> | Array of placement targets (currently limited to single target). |
+
+---
+
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.host"></a>
+
+```java
+public java.lang.String getHost();
+```
+
+- *Type:* java.lang.String
+
+TCP host and port for targeted placement.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#host Worker#host}
+
+---
+
+##### `hostname`<sup>Optional</sup> <a name="hostname" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.hostname"></a>
+
+```java
+public java.lang.String getHostname();
+```
+
+- *Type:* java.lang.String
+
+HTTP hostname for targeted placement.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#hostname Worker#hostname}
+
+---
+
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Available values: "smart", "targeted".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#mode Worker#mode}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Cloud region for targeted placement in format 'provider:region'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#region Worker#region}
+
+---
+
+##### `target`<sup>Optional</sup> <a name="target" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.property.target"></a>
+
+```java
+public IResolvable|java.util.List<WorkerPreviewsBaseConfigPlacementTarget> getTarget();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a>>
+
+Array of placement targets (currently limited to single target).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#target Worker#target}
+
+---
+
+### WorkerPreviewsBaseConfigPlacementTarget <a name="WorkerPreviewsBaseConfigPlacementTarget" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget;
+
+WorkerPreviewsBaseConfigPlacementTarget.builder()
+//  .host(java.lang.String)
+//  .hostname(java.lang.String)
+//  .region(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget.property.host">host</a></code> | <code>java.lang.String</code> | TCP host:port for targeted placement. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget.property.hostname">hostname</a></code> | <code>java.lang.String</code> | HTTP hostname for targeted placement. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget.property.region">region</a></code> | <code>java.lang.String</code> | Cloud region in format 'provider:region'. |
+
+---
+
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget.property.host"></a>
+
+```java
+public java.lang.String getHost();
+```
+
+- *Type:* java.lang.String
+
+TCP host:port for targeted placement.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#host Worker#host}
+
+---
+
+##### `hostname`<sup>Optional</sup> <a name="hostname" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget.property.hostname"></a>
+
+```java
+public java.lang.String getHostname();
+```
+
+- *Type:* java.lang.String
+
+HTTP hostname for targeted placement.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#hostname Worker#hostname}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Cloud region in format 'provider:region'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#region Worker#region}
+
+---
+
+### WorkerPreviewsBaseConfigTailConsumers <a name="WorkerPreviewsBaseConfigTailConsumers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers;
+
+WorkerPreviewsBaseConfigTailConsumers.builder()
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers.property.name">name</a></code> | <code>java.lang.String</code> | Name of the consumer Worker. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the consumer Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -1702,7 +2696,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the *.workers.dev subdomain is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1716,7 +2710,7 @@ public java.lang.Boolean|IResolvable getPreviewsEnabled();
 
 Whether [preview URLs](https://developers.cloudflare.com/workers/configuration/previews/) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
 
 ---
 
@@ -1750,11 +2744,289 @@ public java.lang.String getName();
 
 Name of the consumer Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#name Worker#name}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### WorkerObservabilityIssuesOutputReference <a name="WorkerObservabilityIssuesOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerObservabilityIssuesOutputReference;
+
+new WorkerObservabilityIssuesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.resetEnabled"></a>
+
+```java
+public void resetEnabled()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues">WorkerObservabilityIssues</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.enabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerObservabilityIssues getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues">WorkerObservabilityIssues</a>
+
+---
+
 
 ### WorkerObservabilityLogsOutputReference <a name="WorkerObservabilityLogsOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference"></a>
 
@@ -2200,10 +3472,12 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putIssues">putIssues</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putLogs">putLogs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putTraces">putTraces</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetHeadSamplingRate">resetHeadSamplingRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetIssues">resetIssues</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetLogs">resetLogs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetTraces">resetTraces</a></code> | *No description.* |
 
@@ -2359,6 +3633,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putIssues` <a name="putIssues" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putIssues"></a>
+
+```java
+public void putIssues(WorkerObservabilityIssues value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putIssues.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues">WorkerObservabilityIssues</a>
+
+---
+
 ##### `putLogs` <a name="putLogs" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putLogs"></a>
 
 ```java
@@ -2395,6 +3681,12 @@ public void resetEnabled()
 public void resetHeadSamplingRate()
 ```
 
+##### `resetIssues` <a name="resetIssues" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetIssues"></a>
+
+```java
+public void resetIssues()
+```
+
 ##### `resetLogs` <a name="resetLogs" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetLogs"></a>
 
 ```java
@@ -2414,10 +3706,12 @@ public void resetTraces()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.issues">issues</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference">WorkerObservabilityIssuesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference">WorkerObservabilityLogsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.traces">traces</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference">WorkerObservabilityTracesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.headSamplingRateInput">headSamplingRateInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.issuesInput">issuesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues">WorkerObservabilityIssues</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.logsInput">logsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs">WorkerObservabilityLogs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.tracesInput">tracesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -2447,6 +3741,16 @@ public java.lang.String getFqn();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `issues`<sup>Required</sup> <a name="issues" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.issues"></a>
+
+```java
+public WorkerObservabilityIssuesOutputReference getIssues();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference">WorkerObservabilityIssuesOutputReference</a>
 
 ---
 
@@ -2487,6 +3791,16 @@ public java.lang.Number getHeadSamplingRateInput();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `issuesInput`<sup>Optional</sup> <a name="issuesInput" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.issuesInput"></a>
+
+```java
+public IResolvable|WorkerObservabilityIssues getIssuesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues">WorkerObservabilityIssues</a>
 
 ---
 
@@ -2931,6 +4245,4475 @@ public IResolvable|WorkerObservabilityTraces getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigCacheOptionsOutputReference <a name="WorkerPreviewsBaseConfigCacheOptionsOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference;
+
+new WorkerPreviewsBaseConfigCacheOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.resetCrossVersionCache">resetCrossVersionCache</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCrossVersionCache` <a name="resetCrossVersionCache" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.resetCrossVersionCache"></a>
+
+```java
+public void resetCrossVersionCache()
+```
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.resetEnabled"></a>
+
+```java
+public void resetEnabled()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.crossVersionCacheInput">crossVersionCacheInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.crossVersionCache">crossVersionCache</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions">WorkerPreviewsBaseConfigCacheOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `crossVersionCacheInput`<sup>Optional</sup> <a name="crossVersionCacheInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.crossVersionCacheInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCrossVersionCacheInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.enabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `crossVersionCache`<sup>Required</sup> <a name="crossVersionCache" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.crossVersionCache"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCrossVersionCache();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigCacheOptions getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions">WorkerPreviewsBaseConfigCacheOptions</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigEnvMap <a name="WorkerPreviewsBaseConfigEnvMap" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigEnvMap;
+
+new WorkerPreviewsBaseConfigEnvMap(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.get"></a>
+
+```java
+public WorkerPreviewsBaseConfigEnvOutputReference get(java.lang.String key)
+```
+
+###### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.get.parameter.key"></a>
+
+- *Type:* java.lang.String
+
+the key of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.Map<java.lang.String, <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.Map<java.lang.String, WorkerPreviewsBaseConfigEnv> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.Map<java.lang.String, <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a>>
+
+---
+
+
+### WorkerPreviewsBaseConfigEnvOutputReference <a name="WorkerPreviewsBaseConfigEnvOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference;
+
+new WorkerPreviewsBaseConfigEnvOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.String complexObjectKey);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.Initializer.parameter.complexObjectKey">complexObjectKey</a></code> | <code>java.lang.String</code> | the key of this item in the map. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectKey`<sup>Required</sup> <a name="complexObjectKey" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.Initializer.parameter.complexObjectKey"></a>
+
+- *Type:* java.lang.String
+
+the key of this item in the map.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.typeInput"></a>
+
+```java
+public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigEnv getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigLimitsOutputReference <a name="WorkerPreviewsBaseConfigLimitsOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference;
+
+new WorkerPreviewsBaseConfigLimitsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.resetCpuMs">resetCpuMs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.resetSubrequests">resetSubrequests</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCpuMs` <a name="resetCpuMs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.resetCpuMs"></a>
+
+```java
+public void resetCpuMs()
+```
+
+##### `resetSubrequests` <a name="resetSubrequests" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.resetSubrequests"></a>
+
+```java
+public void resetSubrequests()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.cpuMsInput">cpuMsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.subrequestsInput">subrequestsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.cpuMs">cpuMs</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.subrequests">subrequests</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits">WorkerPreviewsBaseConfigLimits</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `cpuMsInput`<sup>Optional</sup> <a name="cpuMsInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.cpuMsInput"></a>
+
+```java
+public java.lang.Number getCpuMsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `subrequestsInput`<sup>Optional</sup> <a name="subrequestsInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.subrequestsInput"></a>
+
+```java
+public java.lang.Number getSubrequestsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `cpuMs`<sup>Required</sup> <a name="cpuMs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.cpuMs"></a>
+
+```java
+public java.lang.Number getCpuMs();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `subrequests`<sup>Required</sup> <a name="subrequests" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.subrequests"></a>
+
+```java
+public java.lang.Number getSubrequests();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigLimits getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits">WorkerPreviewsBaseConfigLimits</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigObservabilityIssuesOutputReference <a name="WorkerPreviewsBaseConfigObservabilityIssuesOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference;
+
+new WorkerPreviewsBaseConfigObservabilityIssuesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.resetEnabled"></a>
+
+```java
+public void resetEnabled()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues">WorkerPreviewsBaseConfigObservabilityIssues</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.enabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigObservabilityIssues getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues">WorkerPreviewsBaseConfigObservabilityIssues</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigObservabilityLogsOutputReference <a name="WorkerPreviewsBaseConfigObservabilityLogsOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference;
+
+new WorkerPreviewsBaseConfigObservabilityLogsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetDestinations">resetDestinations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetHeadSamplingRate">resetHeadSamplingRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetInvocationLogs">resetInvocationLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetPersist">resetPersist</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDestinations` <a name="resetDestinations" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetDestinations"></a>
+
+```java
+public void resetDestinations()
+```
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetEnabled"></a>
+
+```java
+public void resetEnabled()
+```
+
+##### `resetHeadSamplingRate` <a name="resetHeadSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetHeadSamplingRate"></a>
+
+```java
+public void resetHeadSamplingRate()
+```
+
+##### `resetInvocationLogs` <a name="resetInvocationLogs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetInvocationLogs"></a>
+
+```java
+public void resetInvocationLogs()
+```
+
+##### `resetPersist` <a name="resetPersist" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.resetPersist"></a>
+
+```java
+public void resetPersist()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.destinationsInput">destinationsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.headSamplingRateInput">headSamplingRateInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.invocationLogsInput">invocationLogsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.persistInput">persistInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.destinations">destinations</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.headSamplingRate">headSamplingRate</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.invocationLogs">invocationLogs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.persist">persist</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs">WorkerPreviewsBaseConfigObservabilityLogs</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `destinationsInput`<sup>Optional</sup> <a name="destinationsInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.destinationsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getDestinationsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.enabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `headSamplingRateInput`<sup>Optional</sup> <a name="headSamplingRateInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.headSamplingRateInput"></a>
+
+```java
+public java.lang.Number getHeadSamplingRateInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `invocationLogsInput`<sup>Optional</sup> <a name="invocationLogsInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.invocationLogsInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getInvocationLogsInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `persistInput`<sup>Optional</sup> <a name="persistInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.persistInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPersistInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `destinations`<sup>Required</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.destinations"></a>
+
+```java
+public java.util.List<java.lang.String> getDestinations();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `headSamplingRate`<sup>Required</sup> <a name="headSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.headSamplingRate"></a>
+
+```java
+public java.lang.Number getHeadSamplingRate();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `invocationLogs`<sup>Required</sup> <a name="invocationLogs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.invocationLogs"></a>
+
+```java
+public java.lang.Boolean|IResolvable getInvocationLogs();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `persist`<sup>Required</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.persist"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPersist();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigObservabilityLogs getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs">WorkerPreviewsBaseConfigObservabilityLogs</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigObservabilityOutputReference <a name="WorkerPreviewsBaseConfigObservabilityOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference;
+
+new WorkerPreviewsBaseConfigObservabilityOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putIssues">putIssues</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putLogs">putLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putTraces">putTraces</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetHeadSamplingRate">resetHeadSamplingRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetIssues">resetIssues</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetLogs">resetLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetRedactQueryString">resetRedactQueryString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetTraces">resetTraces</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putIssues` <a name="putIssues" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putIssues"></a>
+
+```java
+public void putIssues(WorkerPreviewsBaseConfigObservabilityIssues value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putIssues.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues">WorkerPreviewsBaseConfigObservabilityIssues</a>
+
+---
+
+##### `putLogs` <a name="putLogs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putLogs"></a>
+
+```java
+public void putLogs(WorkerPreviewsBaseConfigObservabilityLogs value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putLogs.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs">WorkerPreviewsBaseConfigObservabilityLogs</a>
+
+---
+
+##### `putTraces` <a name="putTraces" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putTraces"></a>
+
+```java
+public void putTraces(WorkerPreviewsBaseConfigObservabilityTraces value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.putTraces.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces">WorkerPreviewsBaseConfigObservabilityTraces</a>
+
+---
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetEnabled"></a>
+
+```java
+public void resetEnabled()
+```
+
+##### `resetHeadSamplingRate` <a name="resetHeadSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetHeadSamplingRate"></a>
+
+```java
+public void resetHeadSamplingRate()
+```
+
+##### `resetIssues` <a name="resetIssues" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetIssues"></a>
+
+```java
+public void resetIssues()
+```
+
+##### `resetLogs` <a name="resetLogs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetLogs"></a>
+
+```java
+public void resetLogs()
+```
+
+##### `resetRedactQueryString` <a name="resetRedactQueryString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetRedactQueryString"></a>
+
+```java
+public void resetRedactQueryString()
+```
+
+##### `resetTraces` <a name="resetTraces" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.resetTraces"></a>
+
+```java
+public void resetTraces()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.issues">issues</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference">WorkerPreviewsBaseConfigObservabilityIssuesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference">WorkerPreviewsBaseConfigObservabilityLogsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.traces">traces</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference">WorkerPreviewsBaseConfigObservabilityTracesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.headSamplingRateInput">headSamplingRateInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.issuesInput">issuesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues">WorkerPreviewsBaseConfigObservabilityIssues</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.logsInput">logsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs">WorkerPreviewsBaseConfigObservabilityLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.redactQueryStringInput">redactQueryStringInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.tracesInput">tracesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces">WorkerPreviewsBaseConfigObservabilityTraces</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.headSamplingRate">headSamplingRate</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.redactQueryString">redactQueryString</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability">WorkerPreviewsBaseConfigObservability</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `issues`<sup>Required</sup> <a name="issues" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.issues"></a>
+
+```java
+public WorkerPreviewsBaseConfigObservabilityIssuesOutputReference getIssues();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference">WorkerPreviewsBaseConfigObservabilityIssuesOutputReference</a>
+
+---
+
+##### `logs`<sup>Required</sup> <a name="logs" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.logs"></a>
+
+```java
+public WorkerPreviewsBaseConfigObservabilityLogsOutputReference getLogs();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference">WorkerPreviewsBaseConfigObservabilityLogsOutputReference</a>
+
+---
+
+##### `traces`<sup>Required</sup> <a name="traces" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.traces"></a>
+
+```java
+public WorkerPreviewsBaseConfigObservabilityTracesOutputReference getTraces();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference">WorkerPreviewsBaseConfigObservabilityTracesOutputReference</a>
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.enabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `headSamplingRateInput`<sup>Optional</sup> <a name="headSamplingRateInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.headSamplingRateInput"></a>
+
+```java
+public java.lang.Number getHeadSamplingRateInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `issuesInput`<sup>Optional</sup> <a name="issuesInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.issuesInput"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigObservabilityIssues getIssuesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues">WorkerPreviewsBaseConfigObservabilityIssues</a>
+
+---
+
+##### `logsInput`<sup>Optional</sup> <a name="logsInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.logsInput"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigObservabilityLogs getLogsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs">WorkerPreviewsBaseConfigObservabilityLogs</a>
+
+---
+
+##### `redactQueryStringInput`<sup>Optional</sup> <a name="redactQueryStringInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.redactQueryStringInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getRedactQueryStringInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `tracesInput`<sup>Optional</sup> <a name="tracesInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.tracesInput"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigObservabilityTraces getTracesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces">WorkerPreviewsBaseConfigObservabilityTraces</a>
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `headSamplingRate`<sup>Required</sup> <a name="headSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.headSamplingRate"></a>
+
+```java
+public java.lang.Number getHeadSamplingRate();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `redactQueryString`<sup>Required</sup> <a name="redactQueryString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.redactQueryString"></a>
+
+```java
+public java.lang.Boolean|IResolvable getRedactQueryString();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigObservability getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability">WorkerPreviewsBaseConfigObservability</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigObservabilityTracesOutputReference <a name="WorkerPreviewsBaseConfigObservabilityTracesOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference;
+
+new WorkerPreviewsBaseConfigObservabilityTracesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetDestinations">resetDestinations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetHeadSamplingRate">resetHeadSamplingRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetPersist">resetPersist</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetPropagationPolicy">resetPropagationPolicy</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDestinations` <a name="resetDestinations" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetDestinations"></a>
+
+```java
+public void resetDestinations()
+```
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetEnabled"></a>
+
+```java
+public void resetEnabled()
+```
+
+##### `resetHeadSamplingRate` <a name="resetHeadSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetHeadSamplingRate"></a>
+
+```java
+public void resetHeadSamplingRate()
+```
+
+##### `resetPersist` <a name="resetPersist" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetPersist"></a>
+
+```java
+public void resetPersist()
+```
+
+##### `resetPropagationPolicy` <a name="resetPropagationPolicy" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.resetPropagationPolicy"></a>
+
+```java
+public void resetPropagationPolicy()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.destinationsInput">destinationsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.headSamplingRateInput">headSamplingRateInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.persistInput">persistInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.propagationPolicyInput">propagationPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.destinations">destinations</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.headSamplingRate">headSamplingRate</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.persist">persist</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.propagationPolicy">propagationPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces">WorkerPreviewsBaseConfigObservabilityTraces</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `destinationsInput`<sup>Optional</sup> <a name="destinationsInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.destinationsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getDestinationsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.enabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `headSamplingRateInput`<sup>Optional</sup> <a name="headSamplingRateInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.headSamplingRateInput"></a>
+
+```java
+public java.lang.Number getHeadSamplingRateInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `persistInput`<sup>Optional</sup> <a name="persistInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.persistInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPersistInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `propagationPolicyInput`<sup>Optional</sup> <a name="propagationPolicyInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.propagationPolicyInput"></a>
+
+```java
+public java.lang.String getPropagationPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `destinations`<sup>Required</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.destinations"></a>
+
+```java
+public java.util.List<java.lang.String> getDestinations();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `headSamplingRate`<sup>Required</sup> <a name="headSamplingRate" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.headSamplingRate"></a>
+
+```java
+public java.lang.Number getHeadSamplingRate();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `persist`<sup>Required</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.persist"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPersist();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `propagationPolicy`<sup>Required</sup> <a name="propagationPolicy" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.propagationPolicy"></a>
+
+```java
+public java.lang.String getPropagationPolicy();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigObservabilityTraces getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces">WorkerPreviewsBaseConfigObservabilityTraces</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigOutputReference <a name="WorkerPreviewsBaseConfigOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigOutputReference;
+
+new WorkerPreviewsBaseConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putCacheOptions">putCacheOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putEnv">putEnv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putLimits">putLimits</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putObservability">putObservability</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putPlacement">putPlacement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putTailConsumers">putTailConsumers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetCacheOptions">resetCacheOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetEnv">resetEnv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetLimits">resetLimits</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetLogpush">resetLogpush</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetObservability">resetObservability</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetPlacement">resetPlacement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetTailConsumers">resetTailConsumers</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCacheOptions` <a name="putCacheOptions" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putCacheOptions"></a>
+
+```java
+public void putCacheOptions(WorkerPreviewsBaseConfigCacheOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putCacheOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions">WorkerPreviewsBaseConfigCacheOptions</a>
+
+---
+
+##### `putEnv` <a name="putEnv" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putEnv"></a>
+
+```java
+public void putEnv(IResolvable|java.util.Map<java.lang.String, WorkerPreviewsBaseConfigEnv> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putEnv.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.Map<java.lang.String, <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a>>
+
+---
+
+##### `putLimits` <a name="putLimits" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putLimits"></a>
+
+```java
+public void putLimits(WorkerPreviewsBaseConfigLimits value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putLimits.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits">WorkerPreviewsBaseConfigLimits</a>
+
+---
+
+##### `putObservability` <a name="putObservability" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putObservability"></a>
+
+```java
+public void putObservability(WorkerPreviewsBaseConfigObservability value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putObservability.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability">WorkerPreviewsBaseConfigObservability</a>
+
+---
+
+##### `putPlacement` <a name="putPlacement" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putPlacement"></a>
+
+```java
+public void putPlacement(WorkerPreviewsBaseConfigPlacement value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putPlacement.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement">WorkerPreviewsBaseConfigPlacement</a>
+
+---
+
+##### `putTailConsumers` <a name="putTailConsumers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putTailConsumers"></a>
+
+```java
+public void putTailConsumers(IResolvable|java.util.List<WorkerPreviewsBaseConfigTailConsumers> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.putTailConsumers.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a>>
+
+---
+
+##### `resetCacheOptions` <a name="resetCacheOptions" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetCacheOptions"></a>
+
+```java
+public void resetCacheOptions()
+```
+
+##### `resetEnv` <a name="resetEnv" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetEnv"></a>
+
+```java
+public void resetEnv()
+```
+
+##### `resetLimits` <a name="resetLimits" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetLimits"></a>
+
+```java
+public void resetLimits()
+```
+
+##### `resetLogpush` <a name="resetLogpush" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetLogpush"></a>
+
+```java
+public void resetLogpush()
+```
+
+##### `resetObservability` <a name="resetObservability" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetObservability"></a>
+
+```java
+public void resetObservability()
+```
+
+##### `resetPlacement` <a name="resetPlacement" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetPlacement"></a>
+
+```java
+public void resetPlacement()
+```
+
+##### `resetTailConsumers` <a name="resetTailConsumers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.resetTailConsumers"></a>
+
+```java
+public void resetTailConsumers()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.cacheOptions">cacheOptions</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference">WorkerPreviewsBaseConfigCacheOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.env">env</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap">WorkerPreviewsBaseConfigEnvMap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference">WorkerPreviewsBaseConfigLimitsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.observability">observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference">WorkerPreviewsBaseConfigObservabilityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.placement">placement</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference">WorkerPreviewsBaseConfigPlacementOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.tailConsumers">tailConsumers</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList">WorkerPreviewsBaseConfigTailConsumersList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.cacheOptionsInput">cacheOptionsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions">WorkerPreviewsBaseConfigCacheOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.envInput">envInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.Map<java.lang.String, <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.limitsInput">limitsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits">WorkerPreviewsBaseConfigLimits</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.logpushInput">logpushInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.observabilityInput">observabilityInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability">WorkerPreviewsBaseConfigObservability</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.placementInput">placementInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement">WorkerPreviewsBaseConfigPlacement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.tailConsumersInput">tailConsumersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.logpush">logpush</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `cacheOptions`<sup>Required</sup> <a name="cacheOptions" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.cacheOptions"></a>
+
+```java
+public WorkerPreviewsBaseConfigCacheOptionsOutputReference getCacheOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference">WorkerPreviewsBaseConfigCacheOptionsOutputReference</a>
+
+---
+
+##### `env`<sup>Required</sup> <a name="env" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.env"></a>
+
+```java
+public WorkerPreviewsBaseConfigEnvMap getEnv();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap">WorkerPreviewsBaseConfigEnvMap</a>
+
+---
+
+##### `limits`<sup>Required</sup> <a name="limits" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.limits"></a>
+
+```java
+public WorkerPreviewsBaseConfigLimitsOutputReference getLimits();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference">WorkerPreviewsBaseConfigLimitsOutputReference</a>
+
+---
+
+##### `observability`<sup>Required</sup> <a name="observability" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.observability"></a>
+
+```java
+public WorkerPreviewsBaseConfigObservabilityOutputReference getObservability();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference">WorkerPreviewsBaseConfigObservabilityOutputReference</a>
+
+---
+
+##### `placement`<sup>Required</sup> <a name="placement" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.placement"></a>
+
+```java
+public WorkerPreviewsBaseConfigPlacementOutputReference getPlacement();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference">WorkerPreviewsBaseConfigPlacementOutputReference</a>
+
+---
+
+##### `tailConsumers`<sup>Required</sup> <a name="tailConsumers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.tailConsumers"></a>
+
+```java
+public WorkerPreviewsBaseConfigTailConsumersList getTailConsumers();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList">WorkerPreviewsBaseConfigTailConsumersList</a>
+
+---
+
+##### `cacheOptionsInput`<sup>Optional</sup> <a name="cacheOptionsInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.cacheOptionsInput"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigCacheOptions getCacheOptionsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions">WorkerPreviewsBaseConfigCacheOptions</a>
+
+---
+
+##### `envInput`<sup>Optional</sup> <a name="envInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.envInput"></a>
+
+```java
+public IResolvable|java.util.Map<java.lang.String, WorkerPreviewsBaseConfigEnv> getEnvInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.Map<java.lang.String, <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv">WorkerPreviewsBaseConfigEnv</a>>
+
+---
+
+##### `limitsInput`<sup>Optional</sup> <a name="limitsInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.limitsInput"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigLimits getLimitsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits">WorkerPreviewsBaseConfigLimits</a>
+
+---
+
+##### `logpushInput`<sup>Optional</sup> <a name="logpushInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.logpushInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLogpushInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `observabilityInput`<sup>Optional</sup> <a name="observabilityInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.observabilityInput"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigObservability getObservabilityInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability">WorkerPreviewsBaseConfigObservability</a>
+
+---
+
+##### `placementInput`<sup>Optional</sup> <a name="placementInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.placementInput"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigPlacement getPlacementInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement">WorkerPreviewsBaseConfigPlacement</a>
+
+---
+
+##### `tailConsumersInput`<sup>Optional</sup> <a name="tailConsumersInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.tailConsumersInput"></a>
+
+```java
+public IResolvable|java.util.List<WorkerPreviewsBaseConfigTailConsumers> getTailConsumersInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a>>
+
+---
+
+##### `logpush`<sup>Required</sup> <a name="logpush" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.logpush"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLogpush();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfig getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig">WorkerPreviewsBaseConfig</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigPlacementOutputReference <a name="WorkerPreviewsBaseConfigPlacementOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference;
+
+new WorkerPreviewsBaseConfigPlacementOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.putTarget">putTarget</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetHost">resetHost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetHostname">resetHostname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetMode">resetMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetTarget">resetTarget</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTarget` <a name="putTarget" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.putTarget"></a>
+
+```java
+public void putTarget(IResolvable|java.util.List<WorkerPreviewsBaseConfigPlacementTarget> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.putTarget.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a>>
+
+---
+
+##### `resetHost` <a name="resetHost" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetHost"></a>
+
+```java
+public void resetHost()
+```
+
+##### `resetHostname` <a name="resetHostname" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetHostname"></a>
+
+```java
+public void resetHostname()
+```
+
+##### `resetMode` <a name="resetMode" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetMode"></a>
+
+```java
+public void resetMode()
+```
+
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
+##### `resetTarget` <a name="resetTarget" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.resetTarget"></a>
+
+```java
+public void resetTarget()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.target">target</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList">WorkerPreviewsBaseConfigPlacementTargetList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.hostnameInput">hostnameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.targetInput">targetInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.hostname">hostname</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement">WorkerPreviewsBaseConfigPlacement</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.target"></a>
+
+```java
+public WorkerPreviewsBaseConfigPlacementTargetList getTarget();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList">WorkerPreviewsBaseConfigPlacementTargetList</a>
+
+---
+
+##### `hostInput`<sup>Optional</sup> <a name="hostInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.hostInput"></a>
+
+```java
+public java.lang.String getHostInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hostnameInput`<sup>Optional</sup> <a name="hostnameInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.hostnameInput"></a>
+
+```java
+public java.lang.String getHostnameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.modeInput"></a>
+
+```java
+public java.lang.String getModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.targetInput"></a>
+
+```java
+public IResolvable|java.util.List<WorkerPreviewsBaseConfigPlacementTarget> getTargetInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a>>
+
+---
+
+##### `host`<sup>Required</sup> <a name="host" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.host"></a>
+
+```java
+public java.lang.String getHost();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hostname`<sup>Required</sup> <a name="hostname" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.hostname"></a>
+
+```java
+public java.lang.String getHostname();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigPlacement getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement">WorkerPreviewsBaseConfigPlacement</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigPlacementTargetList <a name="WorkerPreviewsBaseConfigPlacementTargetList" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList;
+
+new WorkerPreviewsBaseConfigPlacementTargetList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.get"></a>
+
+```java
+public WorkerPreviewsBaseConfigPlacementTargetOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<WorkerPreviewsBaseConfigPlacementTarget> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a>>
+
+---
+
+
+### WorkerPreviewsBaseConfigPlacementTargetOutputReference <a name="WorkerPreviewsBaseConfigPlacementTargetOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference;
+
+new WorkerPreviewsBaseConfigPlacementTargetOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resetHost">resetHost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resetHostname">resetHostname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resetRegion">resetRegion</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetHost` <a name="resetHost" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resetHost"></a>
+
+```java
+public void resetHost()
+```
+
+##### `resetHostname` <a name="resetHostname" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resetHostname"></a>
+
+```java
+public void resetHostname()
+```
+
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.hostnameInput">hostnameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.hostname">hostname</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hostInput`<sup>Optional</sup> <a name="hostInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.hostInput"></a>
+
+```java
+public java.lang.String getHostInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hostnameInput`<sup>Optional</sup> <a name="hostnameInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.hostnameInput"></a>
+
+```java
+public java.lang.String getHostnameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `host`<sup>Required</sup> <a name="host" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.host"></a>
+
+```java
+public java.lang.String getHost();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hostname`<sup>Required</sup> <a name="hostname" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.hostname"></a>
+
+```java
+public java.lang.String getHostname();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigPlacementTarget getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget">WorkerPreviewsBaseConfigPlacementTarget</a>
+
+---
+
+
+### WorkerPreviewsBaseConfigTailConsumersList <a name="WorkerPreviewsBaseConfigTailConsumersList" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList;
+
+new WorkerPreviewsBaseConfigTailConsumersList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.get"></a>
+
+```java
+public WorkerPreviewsBaseConfigTailConsumersOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<WorkerPreviewsBaseConfigTailConsumers> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a>>
+
+---
+
+
+### WorkerPreviewsBaseConfigTailConsumersOutputReference <a name="WorkerPreviewsBaseConfigTailConsumersOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference;
+
+new WorkerPreviewsBaseConfigTailConsumersOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkerPreviewsBaseConfigTailConsumers getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers">WorkerPreviewsBaseConfigTailConsumers</a>
 
 ---
 

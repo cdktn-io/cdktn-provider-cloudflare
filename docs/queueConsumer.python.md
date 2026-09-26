@@ -4,7 +4,7 @@
 
 ### QueueConsumer <a name="QueueConsumer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer"></a>
 
@@ -43,10 +43,10 @@ queueConsumer.QueueConsumer(
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | A Resource identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.queueId">queue_id</a></code> | <code>str</code> | A Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.type">type</a></code> | <code>str</code> | Available values: "worker", "http_pull". |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.type">type</a></code> | <code>str</code> | Available values: "worker", "http_pull", "notification". |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of a Worker. |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
 
 ---
 
@@ -134,9 +134,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Available values: "worker", "http_pull".
+Available values: "worker", "http_pull", "notification".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#type QueueConsumer#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#type QueueConsumer#type}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
 
 ---
 
@@ -554,11 +554,14 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ```python
 def put_settings(
   batch_size: typing.Union[int, float] = None,
+  email: IResolvable | typing.List[QueueConsumerSettingsEmail] = None,
   max_concurrency: typing.Union[int, float] = None,
   max_retries: typing.Union[int, float] = None,
   max_wait_time_ms: typing.Union[int, float] = None,
+  pagerduty: IResolvable | typing.List[QueueConsumerSettingsPagerduty] = None,
   retry_delay: typing.Union[int, float] = None,
-  visibility_timeout_ms: typing.Union[int, float] = None
+  visibility_timeout_ms: typing.Union[int, float] = None,
+  webhooks: IResolvable | typing.List[QueueConsumerSettingsWebhooks] = None
 ) -> None
 ```
 
@@ -568,7 +571,15 @@ def put_settings(
 
 The maximum number of messages to include in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+
+---
+
+###### `email`<sup>Optional</sup> <a name="email" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.putSettings.parameter.email"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#email QueueConsumer#email}.
 
 ---
 
@@ -580,7 +591,7 @@ Maximum number of concurrent consumers that may consume from this Queue.
 
 Set to `null` to automatically opt in to the platform's maximum (recommended).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
 
 ---
 
@@ -590,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
 
 ---
 
@@ -600,7 +611,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of milliseconds to wait for a batch to fill up before attempting to deliver it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+
+---
+
+###### `pagerduty`<sup>Optional</sup> <a name="pagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.putSettings.parameter.pagerduty"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>]
+
+PagerDuty notification destinations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#pagerduty QueueConsumer#pagerduty}
 
 ---
 
@@ -610,7 +631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of seconds to delay before making the message available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
 
 ---
 
@@ -622,7 +643,17 @@ The number of milliseconds that a message is exclusively leased.
 
 After the timeout, the message becomes available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+
+---
+
+###### `webhooks`<sup>Optional</sup> <a name="webhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.putSettings.parameter.webhooks"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>]
+
+Webhook notification destinations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#webhooks QueueConsumer#webhooks}
 
 ---
 
@@ -758,7 +789,7 @@ The construct id used in the generated config for the QueueConsumer to import.
 
 The id of the existing QueueConsumer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1155,10 +1186,10 @@ queueConsumer.QueueConsumerConfig(
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.accountId">account_id</a></code> | <code>str</code> | A Resource identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.queueId">queue_id</a></code> | <code>str</code> | A Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.type">type</a></code> | <code>str</code> | Available values: "worker", "http_pull". |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.type">type</a></code> | <code>str</code> | Available values: "worker", "http_pull", "notification". |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of a Worker. |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
 
 ---
 
@@ -1242,7 +1273,7 @@ account_id: str
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
 
 ---
 
@@ -1256,7 +1287,7 @@ queue_id: str
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
 
 ---
 
@@ -1268,9 +1299,9 @@ type: str
 
 - *Type:* str
 
-Available values: "worker", "http_pull".
+Available values: "worker", "http_pull", "notification".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#type QueueConsumer#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#type QueueConsumer#type}
 
 ---
 
@@ -1282,7 +1313,7 @@ dead_letter_queue: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
 
 ---
 
@@ -1296,7 +1327,7 @@ script_name: str
 
 Name of a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
 
 ---
 
@@ -1308,7 +1339,7 @@ settings: QueueConsumerSettings
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
 
 ---
 
@@ -1321,11 +1352,14 @@ from cdktn_provider_cloudflare import queue_consumer
 
 queueConsumer.QueueConsumerSettings(
   batch_size: typing.Union[int, float] = None,
+  email: IResolvable | typing.List[QueueConsumerSettingsEmail] = None,
   max_concurrency: typing.Union[int, float] = None,
   max_retries: typing.Union[int, float] = None,
   max_wait_time_ms: typing.Union[int, float] = None,
+  pagerduty: IResolvable | typing.List[QueueConsumerSettingsPagerduty] = None,
   retry_delay: typing.Union[int, float] = None,
-  visibility_timeout_ms: typing.Union[int, float] = None
+  visibility_timeout_ms: typing.Union[int, float] = None,
+  webhooks: IResolvable | typing.List[QueueConsumerSettingsWebhooks] = None
 )
 ```
 
@@ -1334,11 +1368,14 @@ queueConsumer.QueueConsumerSettings(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.batchSize">batch_size</a></code> | <code>typing.Union[int, float]</code> | The maximum number of messages to include in a batch. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.email">email</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#email QueueConsumer#email}. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.maxConcurrency">max_concurrency</a></code> | <code>typing.Union[int, float]</code> | Maximum number of concurrent consumers that may consume from this Queue. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | The maximum number of retries. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.maxWaitTimeMs">max_wait_time_ms</a></code> | <code>typing.Union[int, float]</code> | The number of milliseconds to wait for a batch to fill up before attempting to deliver it. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.pagerduty">pagerduty</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>]</code> | PagerDuty notification destinations. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.retryDelay">retry_delay</a></code> | <code>typing.Union[int, float]</code> | The number of seconds to delay before making the message available for another attempt. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.visibilityTimeoutMs">visibility_timeout_ms</a></code> | <code>typing.Union[int, float]</code> | The number of milliseconds that a message is exclusively leased. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.webhooks">webhooks</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>]</code> | Webhook notification destinations. |
 
 ---
 
@@ -1352,7 +1389,19 @@ batch_size: typing.Union[int, float]
 
 The maximum number of messages to include in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+
+---
+
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.email"></a>
+
+```python
+email: IResolvable | typing.List[QueueConsumerSettingsEmail]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#email QueueConsumer#email}.
 
 ---
 
@@ -1368,7 +1417,7 @@ Maximum number of concurrent consumers that may consume from this Queue.
 
 Set to `null` to automatically opt in to the platform's maximum (recommended).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
 
 ---
 
@@ -1382,7 +1431,7 @@ max_retries: typing.Union[int, float]
 
 The maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
 
 ---
 
@@ -1396,7 +1445,21 @@ max_wait_time_ms: typing.Union[int, float]
 
 The number of milliseconds to wait for a batch to fill up before attempting to deliver it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+
+---
+
+##### `pagerduty`<sup>Optional</sup> <a name="pagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.pagerduty"></a>
+
+```python
+pagerduty: IResolvable | typing.List[QueueConsumerSettingsPagerduty]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>]
+
+PagerDuty notification destinations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#pagerduty QueueConsumer#pagerduty}
 
 ---
 
@@ -1410,7 +1473,7 @@ retry_delay: typing.Union[int, float]
 
 The number of seconds to delay before making the message available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
 
 ---
 
@@ -1426,11 +1489,622 @@ The number of milliseconds that a message is exclusively leased.
 
 After the timeout, the message becomes available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+
+---
+
+##### `webhooks`<sup>Optional</sup> <a name="webhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.webhooks"></a>
+
+```python
+webhooks: IResolvable | typing.List[QueueConsumerSettingsWebhooks]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>]
+
+Webhook notification destinations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#webhooks QueueConsumer#webhooks}
+
+---
+
+### QueueConsumerSettingsEmail <a name="QueueConsumerSettingsEmail" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsEmail(
+  id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail.property.id">id</a></code> | <code>str</code> | The email address. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+The email address.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### QueueConsumerSettingsPagerduty <a name="QueueConsumerSettingsPagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsPagerduty(
+  id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty.property.id">id</a></code> | <code>str</code> | UUID. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+UUID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### QueueConsumerSettingsWebhooks <a name="QueueConsumerSettingsWebhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsWebhooks(
+  id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks.property.id">id</a></code> | <code>str</code> | UUID. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+UUID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### QueueConsumerSettingsEmailList <a name="QueueConsumerSettingsEmailList" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsEmailList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QueueConsumerSettingsEmailOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[QueueConsumerSettingsEmail]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>]
+
+---
+
+
+### QueueConsumerSettingsEmailOutputReference <a name="QueueConsumerSettingsEmailOutputReference" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsEmailOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | QueueConsumerSettingsEmail
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>
+
+---
+
 
 ### QueueConsumerSettingsOutputReference <a name="QueueConsumerSettingsOutputReference" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference"></a>
 
@@ -1485,12 +2159,18 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putEmail">put_email</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putPagerduty">put_pagerduty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putWebhooks">put_webhooks</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetBatchSize">reset_batch_size</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetEmail">reset_email</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetMaxConcurrency">reset_max_concurrency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetMaxRetries">reset_max_retries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetMaxWaitTimeMs">reset_max_wait_time_ms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetPagerduty">reset_pagerduty</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetRetryDelay">reset_retry_delay</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetVisibilityTimeoutMs">reset_visibility_timeout_ms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetWebhooks">reset_webhooks</a></code> | *No description.* |
 
 ---
 
@@ -1666,10 +2346,58 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_email` <a name="put_email" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putEmail"></a>
+
+```python
+def put_email(
+  value: IResolvable | typing.List[QueueConsumerSettingsEmail]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putEmail.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>]
+
+---
+
+##### `put_pagerduty` <a name="put_pagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putPagerduty"></a>
+
+```python
+def put_pagerduty(
+  value: IResolvable | typing.List[QueueConsumerSettingsPagerduty]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putPagerduty.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>]
+
+---
+
+##### `put_webhooks` <a name="put_webhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putWebhooks"></a>
+
+```python
+def put_webhooks(
+  value: IResolvable | typing.List[QueueConsumerSettingsWebhooks]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putWebhooks.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>]
+
+---
+
 ##### `reset_batch_size` <a name="reset_batch_size" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetBatchSize"></a>
 
 ```python
 def reset_batch_size() -> None
+```
+
+##### `reset_email` <a name="reset_email" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetEmail"></a>
+
+```python
+def reset_email() -> None
 ```
 
 ##### `reset_max_concurrency` <a name="reset_max_concurrency" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetMaxConcurrency"></a>
@@ -1690,6 +2418,12 @@ def reset_max_retries() -> None
 def reset_max_wait_time_ms() -> None
 ```
 
+##### `reset_pagerduty` <a name="reset_pagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetPagerduty"></a>
+
+```python
+def reset_pagerduty() -> None
+```
+
 ##### `reset_retry_delay` <a name="reset_retry_delay" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetRetryDelay"></a>
 
 ```python
@@ -1702,6 +2436,12 @@ def reset_retry_delay() -> None
 def reset_visibility_timeout_ms() -> None
 ```
 
+##### `reset_webhooks` <a name="reset_webhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetWebhooks"></a>
+
+```python
+def reset_webhooks() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1709,12 +2449,18 @@ def reset_visibility_timeout_ms() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.email">email</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList">QueueConsumerSettingsEmailList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.pagerduty">pagerduty</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList">QueueConsumerSettingsPagerdutyList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.webhooks">webhooks</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList">QueueConsumerSettingsWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.batchSizeInput">batch_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.emailInput">email_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxConcurrencyInput">max_concurrency_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxRetriesInput">max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxWaitTimeMsInput">max_wait_time_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.pagerdutyInput">pagerduty_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.retryDelayInput">retry_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.visibilityTimeoutMsInput">visibility_timeout_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.webhooksInput">webhooks_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.batchSize">batch_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxConcurrency">max_concurrency</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1749,6 +2495,36 @@ fqn: str
 
 ---
 
+##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.email"></a>
+
+```python
+email: QueueConsumerSettingsEmailList
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList">QueueConsumerSettingsEmailList</a>
+
+---
+
+##### `pagerduty`<sup>Required</sup> <a name="pagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.pagerduty"></a>
+
+```python
+pagerduty: QueueConsumerSettingsPagerdutyList
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList">QueueConsumerSettingsPagerdutyList</a>
+
+---
+
+##### `webhooks`<sup>Required</sup> <a name="webhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.webhooks"></a>
+
+```python
+webhooks: QueueConsumerSettingsWebhooksList
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList">QueueConsumerSettingsWebhooksList</a>
+
+---
+
 ##### `batch_size_input`<sup>Optional</sup> <a name="batch_size_input" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.batchSizeInput"></a>
 
 ```python
@@ -1756,6 +2532,16 @@ batch_size_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `email_input`<sup>Optional</sup> <a name="email_input" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.emailInput"></a>
+
+```python
+email_input: IResolvable | typing.List[QueueConsumerSettingsEmail]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>]
 
 ---
 
@@ -1789,6 +2575,16 @@ max_wait_time_ms_input: typing.Union[int, float]
 
 ---
 
+##### `pagerduty_input`<sup>Optional</sup> <a name="pagerduty_input" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.pagerdutyInput"></a>
+
+```python
+pagerduty_input: IResolvable | typing.List[QueueConsumerSettingsPagerduty]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>]
+
+---
+
 ##### `retry_delay_input`<sup>Optional</sup> <a name="retry_delay_input" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.retryDelayInput"></a>
 
 ```python
@@ -1806,6 +2602,16 @@ visibility_timeout_ms_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `webhooks_input`<sup>Optional</sup> <a name="webhooks_input" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.webhooksInput"></a>
+
+```python
+webhooks_input: IResolvable | typing.List[QueueConsumerSettingsWebhooks]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>]
 
 ---
 
@@ -1876,6 +2682,978 @@ internal_value: IResolvable | QueueConsumerSettings
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a>
+
+---
+
+
+### QueueConsumerSettingsPagerdutyList <a name="QueueConsumerSettingsPagerdutyList" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsPagerdutyList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QueueConsumerSettingsPagerdutyOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[QueueConsumerSettingsPagerduty]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>]
+
+---
+
+
+### QueueConsumerSettingsPagerdutyOutputReference <a name="QueueConsumerSettingsPagerdutyOutputReference" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsPagerdutyOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | QueueConsumerSettingsPagerduty
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>
+
+---
+
+
+### QueueConsumerSettingsWebhooksList <a name="QueueConsumerSettingsWebhooksList" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsWebhooksList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QueueConsumerSettingsWebhooksOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[QueueConsumerSettingsWebhooks]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>]
+
+---
+
+
+### QueueConsumerSettingsWebhooksOutputReference <a name="QueueConsumerSettingsWebhooksOutputReference" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import queue_consumer
+
+queueConsumer.QueueConsumerSettingsWebhooksOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | QueueConsumerSettingsWebhooks
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>
 
 ---
 

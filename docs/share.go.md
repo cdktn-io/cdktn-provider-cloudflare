@@ -4,7 +4,7 @@
 
 ### Share <a name="Share" id="@cdktn/provider-cloudflare.share.Share"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share cloudflare_share}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share cloudflare_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.Share.Initializer"></a>
 
@@ -76,6 +76,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.putRecipients">PutRecipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.putResources">PutResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.resetIncludeRecipientCounts">ResetIncludeRecipientCounts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.resetIncludeResources">ResetIncludeResources</a></code> | *No description.* |
 
 ---
 
@@ -412,6 +414,18 @@ func PutResources(value interface{})
 
 ---
 
+##### `ResetIncludeRecipientCounts` <a name="ResetIncludeRecipientCounts" id="@cdktn/provider-cloudflare.share.Share.resetIncludeRecipientCounts"></a>
+
+```go
+func ResetIncludeRecipientCounts()
+```
+
+##### `ResetIncludeResources` <a name="ResetIncludeResources" id="@cdktn/provider-cloudflare.share.Share.resetIncludeResources"></a>
+
+```go
+func ResetIncludeResources()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -515,7 +529,7 @@ The construct id used in the generated config for the Share to import.
 
 The id of the existing Share that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -560,10 +574,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.targetType">TargetType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeRecipientCountsInput">IncludeRecipientCountsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeResourcesInput">IncludeResourcesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.recipientsInput">RecipientsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.resourcesInput">ResourcesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeRecipientCounts">IncludeRecipientCounts</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeResources">IncludeResources</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -860,6 +878,26 @@ func AccountIdInput() *string
 
 ---
 
+##### `IncludeRecipientCountsInput`<sup>Optional</sup> <a name="IncludeRecipientCountsInput" id="@cdktn/provider-cloudflare.share.Share.property.includeRecipientCountsInput"></a>
+
+```go
+func IncludeRecipientCountsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IncludeResourcesInput`<sup>Optional</sup> <a name="IncludeResourcesInput" id="@cdktn/provider-cloudflare.share.Share.property.includeResourcesInput"></a>
+
+```go
+func IncludeResourcesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-cloudflare.share.Share.property.nameInput"></a>
 
 ```go
@@ -897,6 +935,26 @@ func AccountId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `IncludeRecipientCounts`<sup>Required</sup> <a name="IncludeRecipientCounts" id="@cdktn/provider-cloudflare.share.Share.property.includeRecipientCounts"></a>
+
+```go
+func IncludeRecipientCounts() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IncludeResources`<sup>Required</sup> <a name="IncludeResources" id="@cdktn/provider-cloudflare.share.Share.property.includeResources"></a>
+
+```go
+func IncludeResources() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -949,6 +1007,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 	Name: *string,
 	Recipients: interface{},
 	Resources: interface{},
+	IncludeRecipientCounts: interface{},
+	IncludeResources: interface{},
 }
 ```
 
@@ -965,8 +1025,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/share"
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.name">Name</a></code> | <code>*string</code> | The name of the share. |
-| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.recipients">Recipients</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#recipients Share#recipients}. |
-| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.resources">Resources</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resources Share#resources}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.recipients">Recipients</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipients Share#recipients}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.resources">Resources</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resources Share#resources}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.includeRecipientCounts">IncludeRecipientCounts</a></code> | <code>interface{}</code> | Include recipient counts in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.includeResources">IncludeResources</a></code> | <code>interface{}</code> | Include resources in the response. |
 
 ---
 
@@ -1050,7 +1112,7 @@ AccountId *string
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#account_id Share#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#account_id Share#account_id}
 
 ---
 
@@ -1064,7 +1126,7 @@ Name *string
 
 The name of the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#name Share#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#name Share#name}
 
 ---
 
@@ -1076,7 +1138,7 @@ Recipients interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#recipients Share#recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipients Share#recipients}.
 
 ---
 
@@ -1088,7 +1150,35 @@ Resources interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resources Share#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resources Share#resources}.
+
+---
+
+##### `IncludeRecipientCounts`<sup>Optional</sup> <a name="IncludeRecipientCounts" id="@cdktn/provider-cloudflare.share.ShareConfig.property.includeRecipientCounts"></a>
+
+```go
+IncludeRecipientCounts interface{}
+```
+
+- *Type:* interface{}
+
+Include recipient counts in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#include_recipient_counts Share#include_recipient_counts}
+
+---
+
+##### `IncludeResources`<sup>Optional</sup> <a name="IncludeResources" id="@cdktn/provider-cloudflare.share.ShareConfig.property.includeResources"></a>
+
+```go
+IncludeResources interface{}
+```
+
+- *Type:* interface{}
+
+Include resources in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#include_resources Share#include_resources}
 
 ---
 
@@ -1124,7 +1214,7 @@ OrganizationId *string
 
 Organization identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#organization_id Share#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#organization_id Share#organization_id}
 
 ---
 
@@ -1138,7 +1228,7 @@ RecipientAccountId *string
 
 The account that will receive the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#recipient_account_id Share#recipient_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipient_account_id Share#recipient_account_id}
 
 ---
 
@@ -1178,7 +1268,7 @@ Meta *string
 
 Resource Metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#meta Share#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#meta Share#meta}
 
 ---
 
@@ -1192,7 +1282,7 @@ ResourceAccountId *string
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resource_account_id Share#resource_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_account_id Share#resource_account_id}
 
 ---
 
@@ -1206,7 +1296,7 @@ ResourceId *string
 
 Share Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resource_id Share#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_id Share#resource_id}
 
 ---
 
@@ -1220,7 +1310,7 @@ ResourceType *string
 
 Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share#resource_type Share#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_type Share#resource_type}
 
 ---
 

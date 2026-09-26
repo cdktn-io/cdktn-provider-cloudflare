@@ -4,7 +4,7 @@
 
 ### ShareRecipient <a name="ShareRecipient" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient cloudflare_share_recipient}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient cloudflare_share_recipient}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetIncludeResources">ResetIncludeResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetOrganizationId">ResetOrganizationId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetRecipientAccountId">ResetRecipientAccountId</a></code> | *No description.* |
 
@@ -388,6 +389,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetIncludeResources` <a name="ResetIncludeResources" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetIncludeResources"></a>
+
+```csharp
+private void ResetIncludeResources()
+```
+
 ##### `ResetOrganizationId` <a name="ResetOrganizationId" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.resetOrganizationId"></a>
 
 ```csharp
@@ -503,7 +510,7 @@ The construct id used in the generated config for the ShareRecipient to import.
 
 The id of the existing ShareRecipient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -539,10 +546,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.modified">Modified</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientResourcesList">ShareRecipientResourcesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.includeResourcesInput">IncludeResourcesInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.organizationIdInput">OrganizationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.recipientAccountIdInput">RecipientAccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.shareIdInput">ShareIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.includeResources">IncludeResources</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.organizationId">OrganizationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.recipientAccountId">RecipientAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.shareId">ShareId</a></code> | <code>string</code> | *No description.* |
@@ -751,6 +760,16 @@ public string AccountIdInput { get; }
 
 ---
 
+##### `IncludeResourcesInput`<sup>Optional</sup> <a name="IncludeResourcesInput" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.includeResourcesInput"></a>
+
+```csharp
+public bool|IResolvable IncludeResourcesInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `OrganizationIdInput`<sup>Optional</sup> <a name="OrganizationIdInput" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.organizationIdInput"></a>
 
 ```csharp
@@ -788,6 +807,16 @@ public string AccountId { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `IncludeResources`<sup>Required</sup> <a name="IncludeResources" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.property.includeResources"></a>
+
+```csharp
+public bool|IResolvable IncludeResources { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -858,6 +887,7 @@ new ShareRecipientConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AccountId,
     string ShareId,
+    bool|IResolvable IncludeResources = null,
     string OrganizationId = null,
     string RecipientAccountId = null
 };
@@ -876,6 +906,7 @@ new ShareRecipientConfig {
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.accountId">AccountId</a></code> | <code>string</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.shareId">ShareId</a></code> | <code>string</code> | Share identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.includeResources">IncludeResources</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Include resources in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.organizationId">OrganizationId</a></code> | <code>string</code> | Organization identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.recipientAccountId">RecipientAccountId</a></code> | <code>string</code> | The account that will receive the share. |
 
@@ -961,7 +992,7 @@ public string AccountId { get; set; }
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#account_id ShareRecipient#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#account_id ShareRecipient#account_id}
 
 ---
 
@@ -975,7 +1006,21 @@ public string ShareId { get; set; }
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#share_id ShareRecipient#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#share_id ShareRecipient#share_id}
+
+---
+
+##### `IncludeResources`<sup>Optional</sup> <a name="IncludeResources" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.property.includeResources"></a>
+
+```csharp
+public bool|IResolvable IncludeResources { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Include resources in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#include_resources ShareRecipient#include_resources}
 
 ---
 
@@ -989,7 +1034,7 @@ public string OrganizationId { get; set; }
 
 Organization identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
 
 ---
 
@@ -1003,7 +1048,7 @@ public string RecipientAccountId { get; set; }
 
 The account that will receive the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
 
 ---
 

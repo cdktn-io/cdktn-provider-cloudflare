@@ -4,7 +4,7 @@
 
 ### ApiShield <a name="ApiShield" id="@cdktn/provider-cloudflare.apiShield.ApiShield"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield cloudflare_api_shield}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield cloudflare_api_shield}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShield.ApiShield.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.putAuthIdCharacteristics">PutAuthIdCharacteristics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.resetNormalize">ResetNormalize</a></code> | *No description.* |
 
 ---
 
@@ -399,6 +400,12 @@ func PutAuthIdCharacteristics(value interface{})
 
 ---
 
+##### `ResetNormalize` <a name="ResetNormalize" id="@cdktn/provider-cloudflare.apiShield.ApiShield.resetNormalize"></a>
+
+```go
+func ResetNormalize()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -502,7 +509,7 @@ The construct id used in the generated config for the ApiShield to import.
 
 The id of the existing ApiShield that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -535,7 +542,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList">ApiShieldAuthIdCharacteristicsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.authIdCharacteristicsInput">AuthIdCharacteristicsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.normalizeInput">NormalizeInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.normalize">Normalize</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -712,6 +721,16 @@ func AuthIdCharacteristicsInput() interface{}
 
 ---
 
+##### `NormalizeInput`<sup>Optional</sup> <a name="NormalizeInput" id="@cdktn/provider-cloudflare.apiShield.ApiShield.property.normalizeInput"></a>
+
+```go
+func NormalizeInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ZoneIdInput`<sup>Optional</sup> <a name="ZoneIdInput" id="@cdktn/provider-cloudflare.apiShield.ApiShield.property.zoneIdInput"></a>
 
 ```go
@@ -719,6 +738,16 @@ func ZoneIdInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Normalize`<sup>Required</sup> <a name="Normalize" id="@cdktn/provider-cloudflare.apiShield.ApiShield.property.normalize"></a>
+
+```go
+func Normalize() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -784,7 +813,7 @@ Name *string
 
 The name of the characteristic field, i.e., the header or cookie name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#name ApiShield#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#name ApiShield#name}
 
 ---
 
@@ -798,7 +827,7 @@ Type *string
 
 The type of characteristic. Available values: "header", "cookie", "jwt".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#type ApiShield#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#type ApiShield#type}
 
 ---
 
@@ -819,6 +848,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 	Provisioners: *[]interface{},
 	AuthIdCharacteristics: interface{},
 	ZoneId: *string,
+	Normalize: interface{},
 }
 ```
 
@@ -833,8 +863,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.normalize">Normalize</a></code> | <code>interface{}</code> | Ensures that the configuration is written or retrieved in normalized fashion. |
 
 ---
 
@@ -916,7 +947,7 @@ AuthIdCharacteristics interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}.
 
 ---
 
@@ -930,7 +961,21 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#zone_id ApiShield#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#zone_id ApiShield#zone_id}
+
+---
+
+##### `Normalize`<sup>Optional</sup> <a name="Normalize" id="@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.normalize"></a>
+
+```go
+Normalize interface{}
+```
+
+- *Type:* interface{}
+
+Ensures that the configuration is written or retrieved in normalized fashion.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#normalize ApiShield#normalize}
 
 ---
 

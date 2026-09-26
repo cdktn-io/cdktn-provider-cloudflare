@@ -4,7 +4,7 @@
 
 ### TurnstileWidget <a name="TurnstileWidget" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer"></a>
 
@@ -76,8 +76,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetBotFightMode">resetBotFightMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetClearanceLevel">resetClearanceLevel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetDirection">resetDirection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetEphemeralId">resetEphemeralId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetOfflabel">resetOfflabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetOrder">resetOrder</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetPage">resetPage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetPerPage">resetPerPage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
@@ -403,16 +408,46 @@ public resetBotFightMode(): void
 public resetClearanceLevel(): void
 ```
 
+##### `resetDirection` <a name="resetDirection" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetDirection"></a>
+
+```typescript
+public resetDirection(): void
+```
+
 ##### `resetEphemeralId` <a name="resetEphemeralId" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetEphemeralId"></a>
 
 ```typescript
 public resetEphemeralId(): void
 ```
 
+##### `resetFilter` <a name="resetFilter" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetFilter"></a>
+
+```typescript
+public resetFilter(): void
+```
+
 ##### `resetOfflabel` <a name="resetOfflabel" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetOfflabel"></a>
 
 ```typescript
 public resetOfflabel(): void
+```
+
+##### `resetOrder` <a name="resetOrder" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetOrder"></a>
+
+```typescript
+public resetOrder(): void
+```
+
+##### `resetPage` <a name="resetPage" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetPage"></a>
+
+```typescript
+public resetPage(): void
+```
+
+##### `resetPerPage` <a name="resetPerPage" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetPerPage"></a>
+
+```typescript
+public resetPerPage(): void
 ```
 
 ##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetRegion"></a>
@@ -524,7 +559,7 @@ The construct id used in the generated config for the TurnstileWidget to import.
 
 The id of the existing TurnstileWidget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -564,20 +599,30 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.botFightModeInput">botFightModeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.clearanceLevelInput">clearanceLevelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.directionInput">directionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.domainsInput">domainsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.ephemeralIdInput">ephemeralIdInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.offlabelInput">offlabelInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.orderInput">orderInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.pageInput">pageInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.perPageInput">perPageInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.botFightMode">botFightMode</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.clearanceLevel">clearanceLevel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.direction">direction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.domains">domains</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.ephemeralId">ephemeralId</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.filter">filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.mode">mode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.offlabel">offlabel</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.order">order</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.page">page</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.perPage">perPage</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.region">region</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -824,6 +869,16 @@ public readonly clearanceLevelInput: string;
 
 ---
 
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.directionInput"></a>
+
+```typescript
+public readonly directionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `domainsInput`<sup>Optional</sup> <a name="domainsInput" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.domainsInput"></a>
 
 ```typescript
@@ -841,6 +896,16 @@ public readonly ephemeralIdInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.filterInput"></a>
+
+```typescript
+public readonly filterInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -871,6 +936,36 @@ public readonly offlabelInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `orderInput`<sup>Optional</sup> <a name="orderInput" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.orderInput"></a>
+
+```typescript
+public readonly orderInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pageInput`<sup>Optional</sup> <a name="pageInput" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.pageInput"></a>
+
+```typescript
+public readonly pageInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `perPageInput`<sup>Optional</sup> <a name="perPageInput" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.perPageInput"></a>
+
+```typescript
+public readonly perPageInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -914,6 +1009,16 @@ public readonly clearanceLevel: string;
 
 ---
 
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.direction"></a>
+
+```typescript
+public readonly direction: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `domains`<sup>Required</sup> <a name="domains" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.domains"></a>
 
 ```typescript
@@ -931,6 +1036,16 @@ public readonly ephemeralId: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.filter"></a>
+
+```typescript
+public readonly filter: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -961,6 +1076,36 @@ public readonly offlabel: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `order`<sup>Required</sup> <a name="order" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.order"></a>
+
+```typescript
+public readonly order: string;
+```
+
+- *Type:* string
+
+---
+
+##### `page`<sup>Required</sup> <a name="page" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.page"></a>
+
+```typescript
+public readonly page: number;
+```
+
+- *Type:* number
+
+---
+
+##### `perPage`<sup>Required</sup> <a name="perPage" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.property.perPage"></a>
+
+```typescript
+public readonly perPage: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1016,13 +1161,18 @@ const turnstileWidgetConfig: turnstileWidget.TurnstileWidgetConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode">mode</a></code> | <code>string</code> | Widget Mode Available values: "non-interactive", "invisible", "managed". |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.name">name</a></code> | <code>string</code> | Human readable widget name. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.botFightMode">botFightMode</a></code> | <code>boolean \| cdktn.IResolvable</code> | If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only). |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.clearanceLevel">clearanceLevel</a></code> | <code>string</code> | If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set Available values: "no_clearance", "jschallenge", "managed", "interactive". |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.direction">direction</a></code> | <code>string</code> | Direction to order widgets. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.ephemeralId">ephemeralId</a></code> | <code>boolean \| cdktn.IResolvable</code> | Return the Ephemeral ID in /siteverify (ENT only). |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.filter">filter</a></code> | <code>string</code> | Filter widgets by field using case-insensitive substring matching. Format: `field:value`. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.offlabel">offlabel</a></code> | <code>boolean \| cdktn.IResolvable</code> | Do not show any Cloudflare branding on the widget (ENT only). |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.order">order</a></code> | <code>string</code> | Field to order widgets by. Available values: "id", "sitekey", "name", "created_on", "modified_on". |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.page">page</a></code> | <code>number</code> | Page number of paginated results. |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.perPage">perPage</a></code> | <code>number</code> | Number of items per page. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.region">region</a></code> | <code>string</code> | Region where this widget can be used. This cannot be changed after creation. Available values: "world", "china". |
 
 ---
@@ -1107,7 +1257,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
 
 ---
 
@@ -1119,7 +1269,7 @@ public readonly domains: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
 
 ---
 
@@ -1133,7 +1283,7 @@ public readonly mode: string;
 
 Widget Mode Available values: "non-interactive", "invisible", "managed".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -1151,7 +1301,7 @@ Not unique. Cloudflare suggests that you
 set this to a meaningful string to make it easier to identify your
 widget, and where it is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 
 ---
 
@@ -1165,7 +1315,7 @@ public readonly botFightMode: boolean | IResolvable;
 
 If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 
 ---
 
@@ -1179,7 +1329,21 @@ public readonly clearanceLevel: string;
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set Available values: "no_clearance", "jschallenge", "managed", "interactive".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.direction"></a>
+
+```typescript
+public readonly direction: string;
+```
+
+- *Type:* string
+
+Direction to order widgets. Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#direction TurnstileWidget#direction}
 
 ---
 
@@ -1193,7 +1357,28 @@ public readonly ephemeralId: boolean | IResolvable;
 
 Return the Ephemeral ID in /siteverify (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.filter"></a>
+
+```typescript
+public readonly filter: string;
+```
+
+- *Type:* string
+
+Filter widgets by field using case-insensitive substring matching. Format: `field:value`.
+
+Supported fields:
+- `name` - Filter by widget name (e.g., `filter=name:login-form`)
+- `sitekey` - Filter by sitekey (e.g., `filter=sitekey:0x4AAA`)
+
+Returns 400 Bad Request if the field is unsupported or format is invalid.
+An empty filter value returns all results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#filter TurnstileWidget#filter}
 
 ---
 
@@ -1207,7 +1392,49 @@ public readonly offlabel: boolean | IResolvable;
 
 Do not show any Cloudflare branding on the widget (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+
+---
+
+##### `order`<sup>Optional</sup> <a name="order" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.order"></a>
+
+```typescript
+public readonly order: string;
+```
+
+- *Type:* string
+
+Field to order widgets by. Available values: "id", "sitekey", "name", "created_on", "modified_on".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#order TurnstileWidget#order}
+
+---
+
+##### `page`<sup>Optional</sup> <a name="page" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.page"></a>
+
+```typescript
+public readonly page: number;
+```
+
+- *Type:* number
+
+Page number of paginated results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#page TurnstileWidget#page}
+
+---
+
+##### `perPage`<sup>Optional</sup> <a name="perPage" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.perPage"></a>
+
+```typescript
+public readonly perPage: number;
+```
+
+- *Type:* number
+
+Number of items per page.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#per_page TurnstileWidget#per_page}
 
 ---
 
@@ -1221,7 +1448,7 @@ public readonly region: string;
 
 Region where this widget can be used. This cannot be changed after creation. Available values: "world", "china".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 
 ---
 

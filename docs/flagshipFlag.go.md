@@ -4,7 +4,7 @@
 
 ### FlagshipFlag <a name="FlagshipFlag" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag cloudflare_flagship_flag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag cloudflare_flagship_flag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.Initializer"></a>
 
@@ -76,7 +76,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.putRules">PutRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetFlagKey">ResetFlagKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetType">ResetType</a></code> | *No description.* |
 
 ---
@@ -408,12 +407,6 @@ func PutRules(value interface{})
 func ResetDescription()
 ```
 
-##### `ResetFlagKey` <a name="ResetFlagKey" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetFlagKey"></a>
-
-```go
-func ResetFlagKey()
-```
-
 ##### `ResetType` <a name="ResetType" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetType"></a>
 
 ```go
@@ -523,7 +516,7 @@ The construct id used in the generated config for the FlagshipFlag to import.
 
 The id of the existing FlagshipFlag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -553,6 +546,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.rules">Rules</a></code> | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesList">FlagshipFlagRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | *No description.* |
@@ -561,7 +555,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.defaultVariationInput">DefaultVariationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.flagKeyInput">FlagKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.rulesInput">RulesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
@@ -571,7 +564,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.defaultVariation">DefaultVariation</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.flagKey">FlagKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.variations">Variations</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -720,6 +712,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Rules`<sup>Required</sup> <a name="Rules" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.rules"></a>
 
 ```go
@@ -797,16 +799,6 @@ func EnabledInput() interface{}
 ```
 
 - *Type:* interface{}
-
----
-
-##### `FlagKeyInput`<sup>Optional</sup> <a name="FlagKeyInput" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.flagKeyInput"></a>
-
-```go
-func FlagKeyInput() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -900,16 +892,6 @@ func Enabled() interface{}
 
 ---
 
-##### `FlagKey`<sup>Required</sup> <a name="FlagKey" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.flagKey"></a>
-
-```go
-func FlagKey() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.key"></a>
 
 ```go
@@ -983,7 +965,6 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagship
 	Rules: interface{},
 	Variations: *map[string]*string,
 	Description: *string,
-	FlagKey: *string,
 	Type: *string,
 }
 ```
@@ -1006,9 +987,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagship
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.key">Key</a></code> | <code>*string</code> | Unique identifier for the flag within an app. Used in all evaluation and SDK calls. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.rules">Rules</a></code> | <code>interface{}</code> | Targeting rules evaluated in ascending `priority`; |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.variations">Variations</a></code> | <code>*map[string]*string</code> | Map of variation name to value. |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#description FlagshipFlag#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.flagKey">FlagKey</a></code> | <code>*string</code> | Flag key (slug). |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.type">Type</a></code> | <code>*string</code> | Value type of the flag's variations. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#description FlagshipFlag#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.type">Type</a></code> | <code>*string</code> | Deprecated compatibility field. |
 
 ---
 
@@ -1092,7 +1072,7 @@ AccountId *string
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#account_id FlagshipFlag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#account_id FlagshipFlag#account_id}
 
 ---
 
@@ -1106,7 +1086,7 @@ AppId *string
 
 App identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#app_id FlagshipFlag#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#app_id FlagshipFlag#app_id}
 
 ---
 
@@ -1120,7 +1100,7 @@ DefaultVariation *string
 
 Variation served when no rule matches or the flag is disabled. Must be a key in `variations`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#default_variation FlagshipFlag#default_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#default_variation FlagshipFlag#default_variation}
 
 ---
 
@@ -1134,7 +1114,7 @@ Enabled interface{}
 
 When false, the flag bypasses all rules and always serves `default_variation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#enabled FlagshipFlag#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#enabled FlagshipFlag#enabled}
 
 ---
 
@@ -1148,7 +1128,7 @@ Key *string
 
 Unique identifier for the flag within an app. Used in all evaluation and SDK calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#key FlagshipFlag#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#key FlagshipFlag#key}
 
 ---
 
@@ -1164,7 +1144,7 @@ Targeting rules evaluated in ascending `priority`;
 
 the first matching rule wins. An empty array means the flag always serves `default_variation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#rules FlagshipFlag#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#rules FlagshipFlag#rules}
 
 ---
 
@@ -1180,7 +1160,7 @@ Map of variation name to value.
 
 All values must be the same type (boolean, string, number, or JSON object/array). Each serialized value must be 10KB or smaller.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#variations FlagshipFlag#variations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#variations FlagshipFlag#variations}
 
 ---
 
@@ -1192,21 +1172,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#description FlagshipFlag#description}.
-
----
-
-##### `FlagKey`<sup>Optional</sup> <a name="FlagKey" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.flagKey"></a>
-
-```go
-FlagKey *string
-```
-
-- *Type:* *string
-
-Flag key (slug).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#flag_key FlagshipFlag#flag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#description FlagshipFlag#description}.
 
 ---
 
@@ -1218,12 +1184,12 @@ Type *string
 
 - *Type:* *string
 
-Value type of the flag's variations.
+Deprecated compatibility field.
 
-Inferred from the variation values on write, so it may be omitted in requests.
+Omit it; the API ignores this value and infers the type from the flag's variations.
 Available values: "boolean", "string", "number", "json".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#type FlagshipFlag#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#type FlagshipFlag#type}
 
 ---
 
@@ -1249,7 +1215,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagship
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.conditions">Conditions</a></code> | <code>interface{}</code> | Conditions the context must satisfy for this rule to match. An empty array matches all contexts. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.priority">Priority</a></code> | <code>*f64</code> | Evaluation order; lower numbers are evaluated first. Must be unique across the flag's rules. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.serveVariation">ServeVariation</a></code> | <code>*string</code> | Variation served when this rule matches. Must be a key in `variations`. |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.rollout">Rollout</a></code> | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesRollout">FlagshipFlagRulesRollout</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.rollout">Rollout</a></code> | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesRollout">FlagshipFlagRulesRollout</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}. |
 
 ---
 
@@ -1263,7 +1229,7 @@ Conditions interface{}
 
 Conditions the context must satisfy for this rule to match. An empty array matches all contexts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#conditions FlagshipFlag#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#conditions FlagshipFlag#conditions}
 
 ---
 
@@ -1277,7 +1243,7 @@ Priority *f64
 
 Evaluation order; lower numbers are evaluated first. Must be unique across the flag's rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#priority FlagshipFlag#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#priority FlagshipFlag#priority}
 
 ---
 
@@ -1291,7 +1257,7 @@ ServeVariation *string
 
 Variation served when this rule matches. Must be a key in `variations`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#serve_variation FlagshipFlag#serve_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#serve_variation FlagshipFlag#serve_variation}
 
 ---
 
@@ -1303,7 +1269,7 @@ Rollout FlagshipFlagRulesRollout
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesRollout">FlagshipFlagRulesRollout</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}.
 
 ---
 
@@ -1327,8 +1293,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagship
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}. |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.clauses">Clauses</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.clauses">Clauses</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.logicalOperator">LogicalOperator</a></code> | <code>*string</code> | Available values: "AND", "OR". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.operator">Operator</a></code> | <code>*string</code> | Available values: "equals", "not_equals", "greater_than", "less_than", "greater_than_or_equals", "less_than_or_equals", "contains", "starts_with", "ends_with", "in", "not_in". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.value">Value</a></code> | <code>*string</code> | Value to compare against the context attribute. |
@@ -1343,7 +1309,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}.
 
 ---
 
@@ -1355,7 +1321,7 @@ Clauses interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}.
 
 ---
 
@@ -1369,7 +1335,7 @@ LogicalOperator *string
 
 Available values: "AND", "OR".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#logical_operator FlagshipFlag#logical_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#logical_operator FlagshipFlag#logical_operator}
 
 ---
 
@@ -1383,7 +1349,7 @@ Operator *string
 
 Available values: "equals", "not_equals", "greater_than", "less_than", "greater_than_or_equals", "less_than_or_equals", "contains", "starts_with", "ends_with", "in", "not_in".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#operator FlagshipFlag#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#operator FlagshipFlag#operator}
 
 ---
 
@@ -1399,7 +1365,7 @@ Value to compare against the context attribute.
 
 Must be an array for `in` and `not_in`; numeric and ISO-8601 datetime strings are accepted by the ordering operators.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#value FlagshipFlag#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#value FlagshipFlag#value}
 
 ---
 
@@ -1423,8 +1389,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/flagship
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}. |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.clauses">Clauses</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.clauses">Clauses</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.logicalOperator">LogicalOperator</a></code> | <code>*string</code> | Available values: "AND", "OR". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.operator">Operator</a></code> | <code>*string</code> | Available values: "equals", "not_equals", "greater_than", "less_than", "greater_than_or_equals", "less_than_or_equals", "contains", "starts_with", "ends_with", "in", "not_in". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.value">Value</a></code> | <code>*string</code> | Value to compare against the context attribute. |
@@ -1439,7 +1405,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}.
 
 ---
 
@@ -1451,7 +1417,7 @@ Clauses interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}.
 
 ---
 
@@ -1465,7 +1431,7 @@ LogicalOperator *string
 
 Available values: "AND", "OR".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#logical_operator FlagshipFlag#logical_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#logical_operator FlagshipFlag#logical_operator}
 
 ---
 
@@ -1479,7 +1445,7 @@ Operator *string
 
 Available values: "equals", "not_equals", "greater_than", "less_than", "greater_than_or_equals", "less_than_or_equals", "contains", "starts_with", "ends_with", "in", "not_in".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#operator FlagshipFlag#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#operator FlagshipFlag#operator}
 
 ---
 
@@ -1495,7 +1461,7 @@ Value to compare against the context attribute.
 
 Must be an array for `in` and `not_in`; numeric and ISO-8601 datetime strings are accepted by the ordering operators.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#value FlagshipFlag#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#value FlagshipFlag#value}
 
 ---
 
@@ -1533,7 +1499,7 @@ Percentage of matching traffic (0–100) served this variation.
 
 For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#percentage FlagshipFlag#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#percentage FlagshipFlag#percentage}
 
 ---
 
@@ -1547,7 +1513,7 @@ Attribute *string
 
 Context attribute used for sticky bucketing. Defaults to `targetingKey`. If absent at evaluation time, bucketing is random per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}
 
 ---
 

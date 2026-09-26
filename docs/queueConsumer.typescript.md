@@ -4,7 +4,7 @@
 
 ### QueueConsumer <a name="QueueConsumer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the QueueConsumer to import.
 
 The id of the existing QueueConsumer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,10 +906,10 @@ const queueConsumerConfig: queueConsumer.QueueConsumerConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.accountId">accountId</a></code> | <code>string</code> | A Resource identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.queueId">queueId</a></code> | <code>string</code> | A Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.type">type</a></code> | <code>string</code> | Available values: "worker", "http_pull". |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.deadLetterQueue">deadLetterQueue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.type">type</a></code> | <code>string</code> | Available values: "worker", "http_pull", "notification". |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.deadLetterQueue">deadLetterQueue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Name of a Worker. |
-| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
 
 ---
 
@@ -993,7 +993,7 @@ public readonly accountId: string;
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly queueId: string;
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
 
 ---
 
@@ -1019,9 +1019,9 @@ public readonly type: string;
 
 - *Type:* string
 
-Available values: "worker", "http_pull".
+Available values: "worker", "http_pull", "notification".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#type QueueConsumer#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#type QueueConsumer#type}
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly deadLetterQueue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly scriptName: string;
 
 Name of a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly settings: QueueConsumerSettings;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
 
 ---
 
@@ -1078,11 +1078,14 @@ const queueConsumerSettings: queueConsumer.QueueConsumerSettings = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.batchSize">batchSize</a></code> | <code>number</code> | The maximum number of messages to include in a batch. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.email">email</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#email QueueConsumer#email}. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.maxConcurrency">maxConcurrency</a></code> | <code>number</code> | Maximum number of concurrent consumers that may consume from this Queue. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.maxRetries">maxRetries</a></code> | <code>number</code> | The maximum number of retries. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.maxWaitTimeMs">maxWaitTimeMs</a></code> | <code>number</code> | The number of milliseconds to wait for a batch to fill up before attempting to deliver it. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.pagerduty">pagerduty</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>[]</code> | PagerDuty notification destinations. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.retryDelay">retryDelay</a></code> | <code>number</code> | The number of seconds to delay before making the message available for another attempt. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.visibilityTimeoutMs">visibilityTimeoutMs</a></code> | <code>number</code> | The number of milliseconds that a message is exclusively leased. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.webhooks">webhooks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>[]</code> | Webhook notification destinations. |
 
 ---
 
@@ -1096,7 +1099,19 @@ public readonly batchSize: number;
 
 The maximum number of messages to include in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+
+---
+
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.email"></a>
+
+```typescript
+public readonly email: IResolvable | QueueConsumerSettingsEmail[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#email QueueConsumer#email}.
 
 ---
 
@@ -1112,7 +1127,7 @@ Maximum number of concurrent consumers that may consume from this Queue.
 
 Set to `null` to automatically opt in to the platform's maximum (recommended).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
 
 ---
 
@@ -1126,7 +1141,7 @@ public readonly maxRetries: number;
 
 The maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
 
 ---
 
@@ -1140,7 +1155,21 @@ public readonly maxWaitTimeMs: number;
 
 The number of milliseconds to wait for a batch to fill up before attempting to deliver it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+
+---
+
+##### `pagerduty`<sup>Optional</sup> <a name="pagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.pagerduty"></a>
+
+```typescript
+public readonly pagerduty: IResolvable | QueueConsumerSettingsPagerduty[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>[]
+
+PagerDuty notification destinations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#pagerduty QueueConsumer#pagerduty}
 
 ---
 
@@ -1154,7 +1183,7 @@ public readonly retryDelay: number;
 
 The number of seconds to delay before making the message available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
 
 ---
 
@@ -1170,11 +1199,579 @@ The number of milliseconds that a message is exclusively leased.
 
 After the timeout, the message becomes available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+
+---
+
+##### `webhooks`<sup>Optional</sup> <a name="webhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.property.webhooks"></a>
+
+```typescript
+public readonly webhooks: IResolvable | QueueConsumerSettingsWebhooks[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>[]
+
+Webhook notification destinations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#webhooks QueueConsumer#webhooks}
+
+---
+
+### QueueConsumerSettingsEmail <a name="QueueConsumerSettingsEmail" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+const queueConsumerSettingsEmail: queueConsumer.QueueConsumerSettingsEmail = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail.property.id">id</a></code> | <code>string</code> | The email address. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The email address.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### QueueConsumerSettingsPagerduty <a name="QueueConsumerSettingsPagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+const queueConsumerSettingsPagerduty: queueConsumer.QueueConsumerSettingsPagerduty = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty.property.id">id</a></code> | <code>string</code> | UUID. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+UUID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### QueueConsumerSettingsWebhooks <a name="QueueConsumerSettingsWebhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+const queueConsumerSettingsWebhooks: queueConsumer.QueueConsumerSettingsWebhooks = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks.property.id">id</a></code> | <code>string</code> | UUID. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+UUID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### QueueConsumerSettingsEmailList <a name="QueueConsumerSettingsEmailList" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+new queueConsumer.QueueConsumerSettingsEmailList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.get"></a>
+
+```typescript
+public get(index: number): QueueConsumerSettingsEmailOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | QueueConsumerSettingsEmail[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>[]
+
+---
+
+
+### QueueConsumerSettingsEmailOutputReference <a name="QueueConsumerSettingsEmailOutputReference" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+new queueConsumer.QueueConsumerSettingsEmailOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | QueueConsumerSettingsEmail;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>
+
+---
+
 
 ### QueueConsumerSettingsOutputReference <a name="QueueConsumerSettingsOutputReference" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference"></a>
 
@@ -1226,12 +1823,18 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putEmail">putEmail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putPagerduty">putPagerduty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putWebhooks">putWebhooks</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetBatchSize">resetBatchSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetEmail">resetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetMaxConcurrency">resetMaxConcurrency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetMaxRetries">resetMaxRetries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetMaxWaitTimeMs">resetMaxWaitTimeMs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetPagerduty">resetPagerduty</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetRetryDelay">resetRetryDelay</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetVisibilityTimeoutMs">resetVisibilityTimeoutMs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetWebhooks">resetWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -1385,10 +1988,52 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putEmail` <a name="putEmail" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putEmail"></a>
+
+```typescript
+public putEmail(value: IResolvable | QueueConsumerSettingsEmail[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putEmail.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>[]
+
+---
+
+##### `putPagerduty` <a name="putPagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putPagerduty"></a>
+
+```typescript
+public putPagerduty(value: IResolvable | QueueConsumerSettingsPagerduty[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putPagerduty.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>[]
+
+---
+
+##### `putWebhooks` <a name="putWebhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putWebhooks"></a>
+
+```typescript
+public putWebhooks(value: IResolvable | QueueConsumerSettingsWebhooks[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.putWebhooks.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>[]
+
+---
+
 ##### `resetBatchSize` <a name="resetBatchSize" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetBatchSize"></a>
 
 ```typescript
 public resetBatchSize(): void
+```
+
+##### `resetEmail` <a name="resetEmail" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetEmail"></a>
+
+```typescript
+public resetEmail(): void
 ```
 
 ##### `resetMaxConcurrency` <a name="resetMaxConcurrency" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetMaxConcurrency"></a>
@@ -1409,6 +2054,12 @@ public resetMaxRetries(): void
 public resetMaxWaitTimeMs(): void
 ```
 
+##### `resetPagerduty` <a name="resetPagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetPagerduty"></a>
+
+```typescript
+public resetPagerduty(): void
+```
+
 ##### `resetRetryDelay` <a name="resetRetryDelay" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetRetryDelay"></a>
 
 ```typescript
@@ -1421,6 +2072,12 @@ public resetRetryDelay(): void
 public resetVisibilityTimeoutMs(): void
 ```
 
+##### `resetWebhooks` <a name="resetWebhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.resetWebhooks"></a>
+
+```typescript
+public resetWebhooks(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1428,12 +2085,18 @@ public resetVisibilityTimeoutMs(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.email">email</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList">QueueConsumerSettingsEmailList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.pagerduty">pagerduty</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList">QueueConsumerSettingsPagerdutyList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.webhooks">webhooks</a></code> | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList">QueueConsumerSettingsWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.batchSizeInput">batchSizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.emailInput">emailInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxConcurrencyInput">maxConcurrencyInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxRetriesInput">maxRetriesInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxWaitTimeMsInput">maxWaitTimeMsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.pagerdutyInput">pagerdutyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.retryDelayInput">retryDelayInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.visibilityTimeoutMsInput">visibilityTimeoutMsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.webhooksInput">webhooksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.batchSize">batchSize</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxConcurrency">maxConcurrency</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.maxRetries">maxRetries</a></code> | <code>number</code> | *No description.* |
@@ -1468,6 +2131,36 @@ public readonly fqn: string;
 
 ---
 
+##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.email"></a>
+
+```typescript
+public readonly email: QueueConsumerSettingsEmailList;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmailList">QueueConsumerSettingsEmailList</a>
+
+---
+
+##### `pagerduty`<sup>Required</sup> <a name="pagerduty" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.pagerduty"></a>
+
+```typescript
+public readonly pagerduty: QueueConsumerSettingsPagerdutyList;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList">QueueConsumerSettingsPagerdutyList</a>
+
+---
+
+##### `webhooks`<sup>Required</sup> <a name="webhooks" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.webhooks"></a>
+
+```typescript
+public readonly webhooks: QueueConsumerSettingsWebhooksList;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList">QueueConsumerSettingsWebhooksList</a>
+
+---
+
 ##### `batchSizeInput`<sup>Optional</sup> <a name="batchSizeInput" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.batchSizeInput"></a>
 
 ```typescript
@@ -1475,6 +2168,16 @@ public readonly batchSizeInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `emailInput`<sup>Optional</sup> <a name="emailInput" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.emailInput"></a>
+
+```typescript
+public readonly emailInput: IResolvable | QueueConsumerSettingsEmail[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsEmail">QueueConsumerSettingsEmail</a>[]
 
 ---
 
@@ -1508,6 +2211,16 @@ public readonly maxWaitTimeMsInput: number;
 
 ---
 
+##### `pagerdutyInput`<sup>Optional</sup> <a name="pagerdutyInput" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.pagerdutyInput"></a>
+
+```typescript
+public readonly pagerdutyInput: IResolvable | QueueConsumerSettingsPagerduty[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>[]
+
+---
+
 ##### `retryDelayInput`<sup>Optional</sup> <a name="retryDelayInput" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.retryDelayInput"></a>
 
 ```typescript
@@ -1525,6 +2238,16 @@ public readonly visibilityTimeoutMsInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `webhooksInput`<sup>Optional</sup> <a name="webhooksInput" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.property.webhooksInput"></a>
+
+```typescript
+public readonly webhooksInput: IResolvable | QueueConsumerSettingsWebhooks[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>[]
 
 ---
 
@@ -1595,6 +2318,904 @@ public readonly internalValue: IResolvable | QueueConsumerSettings;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a>
+
+---
+
+
+### QueueConsumerSettingsPagerdutyList <a name="QueueConsumerSettingsPagerdutyList" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+new queueConsumer.QueueConsumerSettingsPagerdutyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.get"></a>
+
+```typescript
+public get(index: number): QueueConsumerSettingsPagerdutyOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | QueueConsumerSettingsPagerduty[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>[]
+
+---
+
+
+### QueueConsumerSettingsPagerdutyOutputReference <a name="QueueConsumerSettingsPagerdutyOutputReference" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+new queueConsumer.QueueConsumerSettingsPagerdutyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerdutyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | QueueConsumerSettingsPagerduty;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsPagerduty">QueueConsumerSettingsPagerduty</a>
+
+---
+
+
+### QueueConsumerSettingsWebhooksList <a name="QueueConsumerSettingsWebhooksList" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+new queueConsumer.QueueConsumerSettingsWebhooksList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.get"></a>
+
+```typescript
+public get(index: number): QueueConsumerSettingsWebhooksOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | QueueConsumerSettingsWebhooks[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>[]
+
+---
+
+
+### QueueConsumerSettingsWebhooksOutputReference <a name="QueueConsumerSettingsWebhooksOutputReference" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer"></a>
+
+```typescript
+import { queueConsumer } from '@cdktn/provider-cloudflare'
+
+new queueConsumer.QueueConsumerSettingsWebhooksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooksOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | QueueConsumerSettingsWebhooks;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsWebhooks">QueueConsumerSettingsWebhooks</a>
 
 ---
 

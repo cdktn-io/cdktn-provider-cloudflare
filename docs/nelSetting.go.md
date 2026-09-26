@@ -4,7 +4,7 @@
 
 ### NelSetting <a name="NelSetting" id="@cdktn/provider-cloudflare.nelSetting.NelSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/nel_setting cloudflare_nel_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/nel_setting cloudflare_nel_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.nelSetting.NelSetting.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the NelSetting to import.
 
 The id of the existing NelSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/nel_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/nel_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ Value NelSettingValue
 
 The NEL configuration value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/nel_setting#value NelSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/nel_setting#value NelSetting#value}
 
 ---
 
@@ -904,7 +904,7 @@ ZoneId *string
 
 Identifier of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/nel_setting#zone_id NelSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/nel_setting#zone_id NelSetting#zone_id}
 
 ---
 
@@ -938,7 +938,7 @@ Enabled interface{}
 
 Whether Network Error Logging is enabled for the zone. When enabled, browsers report network errors to Cloudflare's NEL endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/nel_setting#enabled NelSetting#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/nel_setting#enabled NelSetting#enabled}
 
 ---
 

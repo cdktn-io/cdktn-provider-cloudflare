@@ -4,7 +4,7 @@
 
 ### WorkersKv <a name="WorkersKv" id="@cdktn/provider-cloudflare.workersKv.WorkersKv"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv cloudflare_workers_kv}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv cloudflare_workers_kv}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.Initializer"></a>
 
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.resetExpiration">ResetExpiration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.resetExpirationTtl">ResetExpirationTtl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.resetMetadata">ResetMetadata</a></code> | *No description.* |
 
 ---
@@ -387,6 +389,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetExpiration` <a name="ResetExpiration" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.resetExpiration"></a>
+
+```go
+func ResetExpiration()
+```
+
+##### `ResetExpirationTtl` <a name="ResetExpirationTtl" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.resetExpirationTtl"></a>
+
+```go
+func ResetExpirationTtl()
+```
+
 ##### `ResetMetadata` <a name="ResetMetadata" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.resetMetadata"></a>
 
 ```go
@@ -496,7 +510,7 @@ The construct id used in the generated config for the WorkersKv to import.
 
 The id of the existing WorkersKv that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -528,11 +542,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.expirationInput">ExpirationInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.expirationTtlInput">ExpirationTtlInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.keyNameInput">KeyNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.metadataInput">MetadataInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.expiration">Expiration</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.expirationTtl">ExpirationTtl</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.keyName">KeyName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.metadata">Metadata</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | *No description.* |
@@ -702,6 +720,26 @@ func AccountIdInput() *string
 
 ---
 
+##### `ExpirationInput`<sup>Optional</sup> <a name="ExpirationInput" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.property.expirationInput"></a>
+
+```go
+func ExpirationInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ExpirationTtlInput`<sup>Optional</sup> <a name="ExpirationTtlInput" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.property.expirationTtlInput"></a>
+
+```go
+func ExpirationTtlInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `KeyNameInput`<sup>Optional</sup> <a name="KeyNameInput" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.property.keyNameInput"></a>
 
 ```go
@@ -749,6 +787,26 @@ func AccountId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Expiration`<sup>Required</sup> <a name="Expiration" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.property.expiration"></a>
+
+```go
+func Expiration() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ExpirationTtl`<sup>Required</sup> <a name="ExpirationTtl" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.property.expirationTtl"></a>
+
+```go
+func ExpirationTtl() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -831,6 +889,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersk
 	KeyName: *string,
 	NamespaceId: *string,
 	Value: *string,
+	Expiration: *f64,
+	ExpirationTtl: *f64,
 	Metadata: *string,
 }
 ```
@@ -850,6 +910,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersk
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.keyName">KeyName</a></code> | <code>*string</code> | A key's name. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Namespace identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.value">Value</a></code> | <code>*string</code> | A byte sequence to be stored, up to 25 MiB in length. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.expiration">Expiration</a></code> | <code>*f64</code> | Expires the key at a certain time, measured in number of seconds since the UNIX epoch. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.expirationTtl">ExpirationTtl</a></code> | <code>*f64</code> | Expires the key after a number of seconds. Must be at least 60. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.metadata">Metadata</a></code> | <code>*string</code> | Associates arbitrary JSON data with a key/value pair. |
 
 ---
@@ -934,7 +996,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
 
 ---
 
@@ -950,7 +1012,7 @@ A key's name.
 
 The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
 
 ---
 
@@ -964,7 +1026,7 @@ NamespaceId *string
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 
 ---
 
@@ -978,7 +1040,35 @@ Value *string
 
 A byte sequence to be stored, up to 25 MiB in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv#value WorkersKv#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#value WorkersKv#value}
+
+---
+
+##### `Expiration`<sup>Optional</sup> <a name="Expiration" id="@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.expiration"></a>
+
+```go
+Expiration *f64
+```
+
+- *Type:* *f64
+
+Expires the key at a certain time, measured in number of seconds since the UNIX epoch.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#expiration WorkersKv#expiration}
+
+---
+
+##### `ExpirationTtl`<sup>Optional</sup> <a name="ExpirationTtl" id="@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.expirationTtl"></a>
+
+```go
+ExpirationTtl *f64
+```
+
+- *Type:* *f64
+
+Expires the key after a number of seconds. Must be at least 60.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#expiration_ttl WorkersKv#expiration_ttl}
 
 ---
 
@@ -992,7 +1082,7 @@ Metadata *string
 
 Associates arbitrary JSON data with a key/value pair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
 
 ---
 

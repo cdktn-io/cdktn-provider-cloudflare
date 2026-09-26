@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustLists <a name="DataCloudflareZeroTrustLists" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer"></a>
 
@@ -22,7 +22,11 @@ dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str = None,
+  direction: str = None,
+  filter: typing.List[str] = None,
   max_items: typing.Union[int, float] = None,
+  order_by: str = None,
+  search: str = None,
   type: str = None
 )
 ```
@@ -38,8 +42,12 @@ dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.direction">direction</a></code> | <code>str</code> | Sort direction. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.filter">filter</a></code> | <code>typing.List[str]</code> | Filter the returned lists by one or more `field:value` pairs. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.orderBy">order_by</a></code> | <code>str</code> | Field to sort the returned lists by. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.search">search</a></code> | <code>str</code> | Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.type">type</a></code> | <code>str</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID". |
 
 ---
@@ -108,7 +116,55 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}.
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.direction"></a>
+
+- *Type:* str
+
+Sort direction.
+
+Applies to the field named in `order_by`; when `order_by`
+is omitted it applies to the default `created_at` ordering. When
+`direction` is omitted the default is field-specific: explicitly choosing
+`created_at` or `updated_at` defaults to descending (newest first); `name`
+and `item_count` default to ascending; and the default `created_at`
+ordering used when `order_by` is omitted is ascending (for backwards
+compatibility).
+
+* `asc` — ascending.
+* `desc` — descending.
+  Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#direction DataCloudflareZeroTrustLists#direction}
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.filter"></a>
+
+- *Type:* typing.List[str]
+
+Filter the returned lists by one or more `field:value` pairs.
+
+Repeat the parameter to apply multiple filters; they are combined with
+logical AND (a list must satisfy every filter to be returned).
+
+Supported fields and their matching behaviour:
+
+* `name` — case-insensitive substring match on the list name.
+* `id` — substring match on the list ID (UUID), with or without dashes.
+* `type` — exact match on the list type. Supersedes the legacy `type` query
+  parameter when both are supplied. Must be one of the valid type values.
+* `item_count` — exact integer match on the number of items in the list.
+
+Each entry must match one of the per-field patterns below: the field must be
+one of `name`, `id`, `type`, or `item_count`; `name`/`id` accept any value,
+`type` is restricted to the valid list type values, and `item_count` must be
+a non-negative integer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#filter DataCloudflareZeroTrustLists#filter}
 
 ---
 
@@ -118,7 +174,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
+
+---
+
+##### `order_by`<sup>Optional</sup> <a name="order_by" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.orderBy"></a>
+
+- *Type:* str
+
+Field to sort the returned lists by.
+
+When omitted, results are ordered by
+`created_at` in ascending order (i.e. creation order) for backwards
+compatibility. Supported values:
+
+* `name` — sort alphabetically by list name.
+* `created_at` — sort by creation time; defaults to descending unless `direction` is set.
+* `updated_at` — sort by last-modified time; defaults to descending unless `direction` is set.
+* `item_count` — sort by number of items in the list.
+  Available values: "name", "created_at", "updated_at", "item_count".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#order_by DataCloudflareZeroTrustLists#order_by}
+
+---
+
+##### `search`<sup>Optional</sup> <a name="search" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.search"></a>
+
+- *Type:* str
+
+Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#search DataCloudflareZeroTrustLists#search}
 
 ---
 
@@ -128,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
 
 ---
 
@@ -155,7 +241,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetDirection">reset_direction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetMaxItems">reset_max_items</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetOrderBy">reset_order_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetSearch">reset_search</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetType">reset_type</a></code> | *No description.* |
 
 ---
@@ -406,10 +496,34 @@ def interpolation_for_attribute(
 def reset_account_id() -> None
 ```
 
+##### `reset_direction` <a name="reset_direction" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetDirection"></a>
+
+```python
+def reset_direction() -> None
+```
+
+##### `reset_filter` <a name="reset_filter" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetFilter"></a>
+
+```python
+def reset_filter() -> None
+```
+
 ##### `reset_max_items` <a name="reset_max_items" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetMaxItems"></a>
 
 ```python
 def reset_max_items() -> None
+```
+
+##### `reset_order_by` <a name="reset_order_by" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetOrderBy"></a>
+
+```python
+def reset_order_by() -> None
+```
+
+##### `reset_search` <a name="reset_search" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetSearch"></a>
+
+```python
+def reset_search() -> None
 ```
 
 ##### `reset_type` <a name="reset_type" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.resetType"></a>
@@ -532,7 +646,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustLis
 
 The id of the existing DataCloudflareZeroTrustLists that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -562,10 +676,18 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.result">result</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsResultList">DataCloudflareZeroTrustListsResultList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.filterInput">filter_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.maxItemsInput">max_items_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.orderByInput">order_by_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.searchInput">search_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.direction">direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.filter">filter</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.orderBy">order_by</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.search">search</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.type">type</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -712,6 +834,26 @@ account_id_input: str
 
 ---
 
+##### `direction_input`<sup>Optional</sup> <a name="direction_input" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.directionInput"></a>
+
+```python
+direction_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.filterInput"></a>
+
+```python
+filter_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `max_items_input`<sup>Optional</sup> <a name="max_items_input" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.maxItemsInput"></a>
 
 ```python
@@ -719,6 +861,26 @@ max_items_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `order_by_input`<sup>Optional</sup> <a name="order_by_input" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.orderByInput"></a>
+
+```python
+order_by_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `search_input`<sup>Optional</sup> <a name="search_input" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.searchInput"></a>
+
+```python
+search_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -742,6 +904,26 @@ account_id: str
 
 ---
 
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.filter"></a>
+
+```python
+filter: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `max_items`<sup>Required</sup> <a name="max_items" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.maxItems"></a>
 
 ```python
@@ -749,6 +931,26 @@ max_items: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `order_by`<sup>Required</sup> <a name="order_by" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.orderBy"></a>
+
+```python
+order_by: str
+```
+
+- *Type:* str
+
+---
+
+##### `search`<sup>Required</sup> <a name="search" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.property.search"></a>
+
+```python
+search: str
+```
+
+- *Type:* str
 
 ---
 
@@ -798,7 +1000,11 @@ dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str = None,
+  direction: str = None,
+  filter: typing.List[str] = None,
   max_items: typing.Union[int, float] = None,
+  order_by: str = None,
+  search: str = None,
   type: str = None
 )
 ```
@@ -814,8 +1020,12 @@ dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.direction">direction</a></code> | <code>str</code> | Sort direction. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.filter">filter</a></code> | <code>typing.List[str]</code> | Filter the returned lists by one or more `field:value` pairs. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.orderBy">order_by</a></code> | <code>str</code> | Field to sort the returned lists by. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.search">search</a></code> | <code>str</code> | Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.type">type</a></code> | <code>str</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID". |
 
 ---
@@ -898,7 +1108,63 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}.
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+Sort direction.
+
+Applies to the field named in `order_by`; when `order_by`
+is omitted it applies to the default `created_at` ordering. When
+`direction` is omitted the default is field-specific: explicitly choosing
+`created_at` or `updated_at` defaults to descending (newest first); `name`
+and `item_count` default to ascending; and the default `created_at`
+ordering used when `order_by` is omitted is ascending (for backwards
+compatibility).
+
+* `asc` — ascending.
+* `desc` — descending.
+  Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#direction DataCloudflareZeroTrustLists#direction}
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.filter"></a>
+
+```python
+filter: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Filter the returned lists by one or more `field:value` pairs.
+
+Repeat the parameter to apply multiple filters; they are combined with
+logical AND (a list must satisfy every filter to be returned).
+
+Supported fields and their matching behaviour:
+
+* `name` — case-insensitive substring match on the list name.
+* `id` — substring match on the list ID (UUID), with or without dashes.
+* `type` — exact match on the list type. Supersedes the legacy `type` query
+  parameter when both are supplied. Must be one of the valid type values.
+* `item_count` — exact integer match on the number of items in the list.
+
+Each entry must match one of the per-field patterns below: the field must be
+one of `name`, `id`, `type`, or `item_count`; `name`/`id` accept any value,
+`type` is restricted to the valid list type values, and `item_count` must be
+a non-negative integer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#filter DataCloudflareZeroTrustLists#filter}
 
 ---
 
@@ -912,7 +1178,45 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
+
+---
+
+##### `order_by`<sup>Optional</sup> <a name="order_by" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.orderBy"></a>
+
+```python
+order_by: str
+```
+
+- *Type:* str
+
+Field to sort the returned lists by.
+
+When omitted, results are ordered by
+`created_at` in ascending order (i.e. creation order) for backwards
+compatibility. Supported values:
+
+* `name` — sort alphabetically by list name.
+* `created_at` — sort by creation time; defaults to descending unless `direction` is set.
+* `updated_at` — sort by last-modified time; defaults to descending unless `direction` is set.
+* `item_count` — sort by number of items in the list.
+  Available values: "name", "created_at", "updated_at", "item_count".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#order_by DataCloudflareZeroTrustLists#order_by}
+
+---
+
+##### `search`<sup>Optional</sup> <a name="search" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.search"></a>
+
+```python
+search: str
+```
+
+- *Type:* str
+
+Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#search DataCloudflareZeroTrustLists#search}
 
 ---
 
@@ -926,7 +1230,7 @@ type: str
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
 
 ---
 

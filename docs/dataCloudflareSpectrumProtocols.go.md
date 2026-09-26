@@ -4,7 +4,7 @@
 
 ### DataCloudflareSpectrumProtocols <a name="DataCloudflareSpectrumProtocols" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocols"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols cloudflare_spectrum_protocols}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols cloudflare_spectrum_protocols}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocols.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareSpectrumProt
 
 The id of the existing DataCloudflareSpectrumProtocols that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -738,7 +738,7 @@ ZoneId *string
 
 Zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols#zone_id DataCloudflareSpectrumProtocols#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols#zone_id DataCloudflareSpectrumProtocols#zone_id}
 
 ---
 
@@ -752,7 +752,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/spectrum_protocols#max_items DataCloudflareSpectrumProtocols#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/spectrum_protocols#max_items DataCloudflareSpectrumProtocols#max_items}
 
 ---
 

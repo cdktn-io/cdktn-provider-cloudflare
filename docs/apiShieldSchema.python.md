@@ -4,7 +4,7 @@
 
 ### ApiShieldSchema <a name="ApiShieldSchema" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer"></a>
 
@@ -25,6 +25,7 @@ apiShieldSchema.ApiShieldSchema(
   kind: str,
   zone_id: str,
   name: str = None,
+  omit_source: bool | IResolvable = None,
   schema_id: str = None,
   validation_enabled: str = None
 )
@@ -45,7 +46,8 @@ apiShieldSchema.ApiShieldSchema(
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer.parameter.kind">kind</a></code> | <code>str</code> | Kind of schema Available values: "openapi_v3". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the schema. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer.parameter.schemaId">schema_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer.parameter.omitSource">omit_source</a></code> | <code>bool \| cdktn.IResolvable</code> | Omit the source-files of schemas and only retrieve their meta-data. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer.parameter.schemaId">schema_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer.parameter.validationEnabled">validation_enabled</a></code> | <code>str</code> | Flag whether schema is enabled for validation. Available values: "true", "false". |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Schema file bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Kind of schema Available values: "openapi_v3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
 
 ---
 
@@ -146,7 +148,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
+
+---
+
+##### `omit_source`<sup>Optional</sup> <a name="omit_source" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer.parameter.omitSource"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Omit the source-files of schemas and only retrieve their meta-data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#omit_source ApiShieldSchema#omit_source}
 
 ---
 
@@ -154,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}.
 
 ---
 
@@ -164,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Flag whether schema is enabled for validation. Available values: "true", "false".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
 
 ---
 
@@ -197,6 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetOmitSource">reset_omit_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetSchemaId">reset_schema_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetValidationEnabled">reset_validation_enabled</a></code> | *No description.* |
 
@@ -556,6 +569,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_name() -> None
 ```
 
+##### `reset_omit_source` <a name="reset_omit_source" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetOmitSource"></a>
+
+```python
+def reset_omit_source() -> None
+```
+
 ##### `reset_schema_id` <a name="reset_schema_id" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetSchemaId"></a>
 
 ```python
@@ -682,7 +701,7 @@ The construct id used in the generated config for the ApiShieldSchema to import.
 
 The id of the existing ApiShieldSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -719,12 +738,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.fileInput">file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.omitSourceInput">omit_source_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.schemaIdInput">schema_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.validationEnabledInput">validation_enabled_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.file">file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.omitSource">omit_source</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.schemaId">schema_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.validationEnabled">validation_enabled</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
@@ -943,6 +964,16 @@ name_input: str
 
 ---
 
+##### `omit_source_input`<sup>Optional</sup> <a name="omit_source_input" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.omitSourceInput"></a>
+
+```python
+omit_source_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `schema_id_input`<sup>Optional</sup> <a name="schema_id_input" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.schemaIdInput"></a>
 
 ```python
@@ -1000,6 +1031,16 @@ name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `omit_source`<sup>Required</sup> <a name="omit_source" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.property.omitSource"></a>
+
+```python
+omit_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1072,6 +1113,7 @@ apiShieldSchema.ApiShieldSchemaConfig(
   kind: str,
   zone_id: str,
   name: str = None,
+  omit_source: bool | IResolvable = None,
   schema_id: str = None,
   validation_enabled: str = None
 )
@@ -1092,7 +1134,8 @@ apiShieldSchema.ApiShieldSchemaConfig(
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.kind">kind</a></code> | <code>str</code> | Kind of schema Available values: "openapi_v3". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.name">name</a></code> | <code>str</code> | Name of the schema. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.schemaId">schema_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.omitSource">omit_source</a></code> | <code>bool \| cdktn.IResolvable</code> | Omit the source-files of schemas and only retrieve their meta-data. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.schemaId">schema_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.validationEnabled">validation_enabled</a></code> | <code>str</code> | Flag whether schema is enabled for validation. Available values: "true", "false". |
 
 ---
@@ -1177,7 +1220,7 @@ file: str
 
 Schema file bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
 
 ---
 
@@ -1191,7 +1234,7 @@ kind: str
 
 Kind of schema Available values: "openapi_v3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
 
 ---
 
@@ -1205,7 +1248,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
 
 ---
 
@@ -1219,7 +1262,21 @@ name: str
 
 Name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
+
+---
+
+##### `omit_source`<sup>Optional</sup> <a name="omit_source" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.omitSource"></a>
+
+```python
+omit_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Omit the source-files of schemas and only retrieve their meta-data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#omit_source ApiShieldSchema#omit_source}
 
 ---
 
@@ -1231,7 +1288,7 @@ schema_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}.
 
 ---
 
@@ -1245,7 +1302,7 @@ validation_enabled: str
 
 Flag whether schema is enabled for validation. Available values: "true", "false".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
 
 ---
 

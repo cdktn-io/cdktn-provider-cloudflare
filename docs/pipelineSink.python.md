@@ -4,7 +4,7 @@
 
 ### PipelineSink <a name="PipelineSink" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink cloudflare_pipeline_sink}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink cloudflare_pipeline_sink}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineSink.PipelineSink.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Specifies the public ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines the name of the Sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#name PipelineSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#name PipelineSink#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies the type of sink. Available values: "r2", "r2_data_catalog".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#type PipelineSink#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#type PipelineSink#type}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines the configuration of the R2 Sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#config PipelineSink#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#config PipelineSink#config}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines the output data format of a sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#format PipelineSink#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#format PipelineSink#format}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines the schema of the events in the data stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#schema PipelineSink#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#schema PipelineSink#schema}
 
 ---
 
@@ -579,7 +579,7 @@ def put_config(
 
 Cloudflare Account ID for the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
 
 ---
 
@@ -589,7 +589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 R2 Bucket to write to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#bucket PipelineSink#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#bucket PipelineSink#bucket}
 
 ---
 
@@ -597,7 +597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigCredentials">PipelineSinkConfigCredentials</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#credentials PipelineSink#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#credentials PipelineSink#credentials}.
 
 ---
 
@@ -607,7 +607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Controls filename prefix/suffix and strategy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#file_naming PipelineSink#file_naming}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#file_naming PipelineSink#file_naming}
 
 ---
 
@@ -617,7 +617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Jurisdiction this bucket is hosted in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#jurisdiction PipelineSink#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#jurisdiction PipelineSink#jurisdiction}
 
 ---
 
@@ -627,7 +627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Table namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#namespace PipelineSink#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#namespace PipelineSink#namespace}
 
 ---
 
@@ -637,7 +637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Data-layout partitioning for sinks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#partitioning PipelineSink#partitioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#partitioning PipelineSink#partitioning}
 
 ---
 
@@ -647,7 +647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Subpath within the bucket to write to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#path PipelineSink#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#path PipelineSink#path}
 
 ---
 
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Rolling policy for file sinks (when & why to close a file and open a new one).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#rolling_policy PipelineSink#rolling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#rolling_policy PipelineSink#rolling_policy}
 
 ---
 
@@ -667,7 +667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Table name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#table_name PipelineSink#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#table_name PipelineSink#table_name}
 
 ---
 
@@ -677,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Authentication token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#token PipelineSink#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#token PipelineSink#token}
 
 ---
 
@@ -700,7 +700,7 @@ def put_format(
 
 Available values: "json", "parquet".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#type PipelineSink#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#type PipelineSink#type}
 
 ---
 
@@ -710,7 +710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies the compression applied to JSON sink output. Available values: "uncompressed", "gzip", "snappy", "zstd", "lz4".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#compression PipelineSink#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#compression PipelineSink#compression}
 
 ---
 
@@ -720,7 +720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "number", "string", "bytes".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#decimal_encoding PipelineSink#decimal_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#decimal_encoding PipelineSink#decimal_encoding}
 
 ---
 
@@ -728,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#row_group_bytes PipelineSink#row_group_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#row_group_bytes PipelineSink#row_group_bytes}.
 
 ---
 
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "rfc3339", "unix_millis".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#timestamp_format PipelineSink#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#timestamp_format PipelineSink#timestamp_format}
 
 ---
 
@@ -746,7 +746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#unstructured PipelineSink#unstructured}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#unstructured PipelineSink#unstructured}.
 
 ---
 
@@ -763,7 +763,7 @@ def put_schema(
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields">PipelineSinkSchemaFields</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#fields PipelineSink#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#fields PipelineSink#fields}.
 
 ---
 
@@ -771,7 +771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#inferred PipelineSink#inferred}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#inferred PipelineSink#inferred}.
 
 ---
 
@@ -907,7 +907,7 @@ The construct id used in the generated config for the PipelineSink to import.
 
 The id of the existing PipelineSink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1391,7 +1391,7 @@ account_id: str
 
 Specifies the public ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
 
 ---
 
@@ -1405,7 +1405,7 @@ name: str
 
 Defines the name of the Sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#name PipelineSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#name PipelineSink#name}
 
 ---
 
@@ -1419,7 +1419,7 @@ type: str
 
 Specifies the type of sink. Available values: "r2", "r2_data_catalog".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#type PipelineSink#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#type PipelineSink#type}
 
 ---
 
@@ -1433,7 +1433,7 @@ config: PipelineSinkConfigA
 
 Defines the configuration of the R2 Sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#config PipelineSink#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#config PipelineSink#config}
 
 ---
 
@@ -1447,7 +1447,7 @@ format: PipelineSinkFormat
 
 Defines the output data format of a sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#format PipelineSink#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#format PipelineSink#format}
 
 ---
 
@@ -1461,7 +1461,7 @@ schema: PipelineSinkSchema
 
 Defines the schema of the events in the data stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#schema PipelineSink#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#schema PipelineSink#schema}
 
 ---
 
@@ -1493,7 +1493,7 @@ pipelineSink.PipelineSinkConfigA(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigA.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare Account ID for the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigA.property.bucket">bucket</a></code> | <code>str</code> | R2 Bucket to write to. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigA.property.credentials">credentials</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigCredentials">PipelineSinkConfigCredentials</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#credentials PipelineSink#credentials}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigA.property.credentials">credentials</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigCredentials">PipelineSinkConfigCredentials</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#credentials PipelineSink#credentials}. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigA.property.fileNaming">file_naming</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigFileNaming">PipelineSinkConfigFileNaming</a></code> | Controls filename prefix/suffix and strategy. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigA.property.jurisdiction">jurisdiction</a></code> | <code>str</code> | Jurisdiction this bucket is hosted in. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigA.property.namespace">namespace</a></code> | <code>str</code> | Table namespace. |
@@ -1515,7 +1515,7 @@ account_id: str
 
 Cloudflare Account ID for the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
 
 ---
 
@@ -1529,7 +1529,7 @@ bucket: str
 
 R2 Bucket to write to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#bucket PipelineSink#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#bucket PipelineSink#bucket}
 
 ---
 
@@ -1541,7 +1541,7 @@ credentials: PipelineSinkConfigCredentials
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkConfigCredentials">PipelineSinkConfigCredentials</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#credentials PipelineSink#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#credentials PipelineSink#credentials}.
 
 ---
 
@@ -1555,7 +1555,7 @@ file_naming: PipelineSinkConfigFileNaming
 
 Controls filename prefix/suffix and strategy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#file_naming PipelineSink#file_naming}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#file_naming PipelineSink#file_naming}
 
 ---
 
@@ -1569,7 +1569,7 @@ jurisdiction: str
 
 Jurisdiction this bucket is hosted in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#jurisdiction PipelineSink#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#jurisdiction PipelineSink#jurisdiction}
 
 ---
 
@@ -1583,7 +1583,7 @@ namespace: str
 
 Table namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#namespace PipelineSink#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#namespace PipelineSink#namespace}
 
 ---
 
@@ -1597,7 +1597,7 @@ partitioning: PipelineSinkConfigPartitioning
 
 Data-layout partitioning for sinks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#partitioning PipelineSink#partitioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#partitioning PipelineSink#partitioning}
 
 ---
 
@@ -1611,7 +1611,7 @@ path: str
 
 Subpath within the bucket to write to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#path PipelineSink#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#path PipelineSink#path}
 
 ---
 
@@ -1625,7 +1625,7 @@ rolling_policy: PipelineSinkConfigRollingPolicy
 
 Rolling policy for file sinks (when & why to close a file and open a new one).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#rolling_policy PipelineSink#rolling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#rolling_policy PipelineSink#rolling_policy}
 
 ---
 
@@ -1639,7 +1639,7 @@ table_name: str
 
 Table name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#table_name PipelineSink#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#table_name PipelineSink#table_name}
 
 ---
 
@@ -1653,7 +1653,7 @@ token: str
 
 Authentication token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#token PipelineSink#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#token PipelineSink#token}
 
 ---
 
@@ -1689,7 +1689,7 @@ access_key_id: str
 
 Cloudflare Account ID for the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#access_key_id PipelineSink#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#access_key_id PipelineSink#access_key_id}
 
 ---
 
@@ -1703,7 +1703,7 @@ secret_access_key: str
 
 Cloudflare Account ID for the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#secret_access_key PipelineSink#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#secret_access_key PipelineSink#secret_access_key}
 
 ---
 
@@ -1741,7 +1741,7 @@ prefix: str
 
 The prefix to use in file name. i.e prefix-<uuid>.parquet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#prefix PipelineSink#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#prefix PipelineSink#prefix}
 
 ---
 
@@ -1755,7 +1755,7 @@ strategy: str
 
 Filename generation strategy. Available values: "serial", "uuid", "uuid_v7", "ulid".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#strategy PipelineSink#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#strategy PipelineSink#strategy}
 
 ---
 
@@ -1769,7 +1769,7 @@ suffix: str
 
 This will overwrite the default file suffix. i.e .parquet, use with caution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#suffix PipelineSink#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#suffix PipelineSink#suffix}
 
 ---
 
@@ -1803,7 +1803,7 @@ time_pattern: str
 
 The pattern of the date string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#time_pattern PipelineSink#time_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#time_pattern PipelineSink#time_pattern}
 
 ---
 
@@ -1841,7 +1841,7 @@ file_size_bytes: typing.Union[int, float]
 
 Files will be rolled after reaching this number of bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#file_size_bytes PipelineSink#file_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#file_size_bytes PipelineSink#file_size_bytes}
 
 ---
 
@@ -1855,7 +1855,7 @@ inactivity_seconds: typing.Union[int, float]
 
 Number of seconds of inactivity to wait before rolling over to a new file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#inactivity_seconds PipelineSink#inactivity_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#inactivity_seconds PipelineSink#inactivity_seconds}
 
 ---
 
@@ -1869,7 +1869,7 @@ interval_seconds: typing.Union[int, float]
 
 Number of seconds to wait before rolling over to a new file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#interval_seconds PipelineSink#interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#interval_seconds PipelineSink#interval_seconds}
 
 ---
 
@@ -1897,9 +1897,9 @@ pipelineSink.PipelineSinkFormat(
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.property.type">type</a></code> | <code>str</code> | Available values: "json", "parquet". |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.property.compression">compression</a></code> | <code>str</code> | Specifies the compression applied to JSON sink output. Available values: "uncompressed", "gzip", "snappy", "zstd", "lz4". |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.property.decimalEncoding">decimal_encoding</a></code> | <code>str</code> | Available values: "number", "string", "bytes". |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.property.rowGroupBytes">row_group_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#row_group_bytes PipelineSink#row_group_bytes}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.property.rowGroupBytes">row_group_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#row_group_bytes PipelineSink#row_group_bytes}. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.property.timestampFormat">timestamp_format</a></code> | <code>str</code> | Available values: "rfc3339", "unix_millis". |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.property.unstructured">unstructured</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#unstructured PipelineSink#unstructured}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkFormat.property.unstructured">unstructured</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#unstructured PipelineSink#unstructured}. |
 
 ---
 
@@ -1913,7 +1913,7 @@ type: str
 
 Available values: "json", "parquet".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#type PipelineSink#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#type PipelineSink#type}
 
 ---
 
@@ -1927,7 +1927,7 @@ compression: str
 
 Specifies the compression applied to JSON sink output. Available values: "uncompressed", "gzip", "snappy", "zstd", "lz4".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#compression PipelineSink#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#compression PipelineSink#compression}
 
 ---
 
@@ -1941,7 +1941,7 @@ decimal_encoding: str
 
 Available values: "number", "string", "bytes".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#decimal_encoding PipelineSink#decimal_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#decimal_encoding PipelineSink#decimal_encoding}
 
 ---
 
@@ -1953,7 +1953,7 @@ row_group_bytes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#row_group_bytes PipelineSink#row_group_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#row_group_bytes PipelineSink#row_group_bytes}.
 
 ---
 
@@ -1967,7 +1967,7 @@ timestamp_format: str
 
 Available values: "rfc3339", "unix_millis".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#timestamp_format PipelineSink#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#timestamp_format PipelineSink#timestamp_format}
 
 ---
 
@@ -1979,7 +1979,7 @@ unstructured: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#unstructured PipelineSink#unstructured}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#unstructured PipelineSink#unstructured}.
 
 ---
 
@@ -2000,8 +2000,8 @@ pipelineSink.PipelineSinkSchema(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchema.property.fields">fields</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields">PipelineSinkSchemaFields</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#fields PipelineSink#fields}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchema.property.inferred">inferred</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#inferred PipelineSink#inferred}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchema.property.fields">fields</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields">PipelineSinkSchemaFields</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#fields PipelineSink#fields}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchema.property.inferred">inferred</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#inferred PipelineSink#inferred}. |
 
 ---
 
@@ -2013,7 +2013,7 @@ fields: IResolvable | typing.List[PipelineSinkSchemaFields]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields">PipelineSinkSchemaFields</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#fields PipelineSink#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#fields PipelineSink#fields}.
 
 ---
 
@@ -2025,7 +2025,7 @@ inferred: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#inferred PipelineSink#inferred}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#inferred PipelineSink#inferred}.
 
 ---
 
@@ -2051,10 +2051,10 @@ pipelineSink.PipelineSinkSchemaFields(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.type">type</a></code> | <code>str</code> | Available values: "int32", "int64", "float32", "float64", "bool", "string", "binary", "timestamp", "json". |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.metadataKey">metadata_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#metadata_key PipelineSink#metadata_key}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#name PipelineSink#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.required">required</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#required PipelineSink#required}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.sqlName">sql_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#sql_name PipelineSink#sql_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.metadataKey">metadata_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#metadata_key PipelineSink#metadata_key}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#name PipelineSink#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.required">required</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#required PipelineSink#required}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.sqlName">sql_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#sql_name PipelineSink#sql_name}. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFields.property.unit">unit</a></code> | <code>str</code> | Available values: "second", "millisecond", "microsecond", "nanosecond". |
 
 ---
@@ -2069,7 +2069,7 @@ type: str
 
 Available values: "int32", "int64", "float32", "float64", "bool", "string", "binary", "timestamp", "json".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#type PipelineSink#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#type PipelineSink#type}
 
 ---
 
@@ -2081,7 +2081,7 @@ metadata_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#metadata_key PipelineSink#metadata_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#metadata_key PipelineSink#metadata_key}.
 
 ---
 
@@ -2093,7 +2093,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#name PipelineSink#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#name PipelineSink#name}.
 
 ---
 
@@ -2105,7 +2105,7 @@ required: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#required PipelineSink#required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#required PipelineSink#required}.
 
 ---
 
@@ -2117,7 +2117,7 @@ sql_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#sql_name PipelineSink#sql_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#sql_name PipelineSink#sql_name}.
 
 ---
 
@@ -2131,7 +2131,7 @@ unit: str
 
 Available values: "second", "millisecond", "microsecond", "nanosecond".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#unit PipelineSink#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#unit PipelineSink#unit}
 
 ---
 
@@ -2393,7 +2393,7 @@ def put_credentials(
 
 Cloudflare Account ID for the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#access_key_id PipelineSink#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#access_key_id PipelineSink#access_key_id}
 
 ---
 
@@ -2403,7 +2403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Cloudflare Account ID for the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#secret_access_key PipelineSink#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#secret_access_key PipelineSink#secret_access_key}
 
 ---
 
@@ -2423,7 +2423,7 @@ def put_file_naming(
 
 The prefix to use in file name. i.e prefix-<uuid>.parquet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#prefix PipelineSink#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#prefix PipelineSink#prefix}
 
 ---
 
@@ -2433,7 +2433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filename generation strategy. Available values: "serial", "uuid", "uuid_v7", "ulid".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#strategy PipelineSink#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#strategy PipelineSink#strategy}
 
 ---
 
@@ -2443,7 +2443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 This will overwrite the default file suffix. i.e .parquet, use with caution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#suffix PipelineSink#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#suffix PipelineSink#suffix}
 
 ---
 
@@ -2461,7 +2461,7 @@ def put_partitioning(
 
 The pattern of the date string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#time_pattern PipelineSink#time_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#time_pattern PipelineSink#time_pattern}
 
 ---
 
@@ -2481,7 +2481,7 @@ def put_rolling_policy(
 
 Files will be rolled after reaching this number of bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#file_size_bytes PipelineSink#file_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#file_size_bytes PipelineSink#file_size_bytes}
 
 ---
 
@@ -2491,7 +2491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Number of seconds of inactivity to wait before rolling over to a new file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#inactivity_seconds PipelineSink#inactivity_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#inactivity_seconds PipelineSink#inactivity_seconds}
 
 ---
 
@@ -2501,7 +2501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Number of seconds to wait before rolling over to a new file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/pipeline_sink#interval_seconds PipelineSink#interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_sink#interval_seconds PipelineSink#interval_seconds}
 
 ---
 

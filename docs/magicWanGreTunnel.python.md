@@ -4,7 +4,7 @@
 
 ### MagicWanGreTunnel <a name="MagicWanGreTunnel" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer"></a>
 
@@ -53,9 +53,9 @@ magicWanGreTunnel.MagicWanGreTunnel(
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.interfaceAddress">interface_address</a></code> | <code>str</code> | A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the tunnel. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.automaticReturnRouting">automatic_return_routing</a></code> | <code>bool \| cdktn.IResolvable</code> | True if automatic stateful return routing should be enabled for a tunnel, false otherwise. |
-| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.bgp">bgp</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.bgp">bgp</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of the GRE tunnel. |
-| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.healthCheck">health_check</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.healthCheck">health_check</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.interfaceAddress6">interface_address6</a></code> | <code>str</code> | A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the address being the first IP of the subnet and not same as the address of virtual_subnet6. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Time To Live (TTL) in number of hops of the GRE tunnel. |
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The IP address assigned to the Cloudflare side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The IP address assigned to the customer side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
 
 ---
 
@@ -160,7 +160,7 @@ A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side o
 
 Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
 
 ---
 
@@ -172,7 +172,7 @@ The name of the tunnel.
 
 The name cannot contain spaces or special characters, must be 15 characters or less, and cannot share a name with another GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 True if automatic stateful return routing should be enabled for a tunnel, false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#automatic_return_routing MagicWanGreTunnel#automatic_return_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#automatic_return_routing MagicWanGreTunnel#automatic_return_routing}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}.
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An optional description of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
 
 ---
 
@@ -220,7 +220,7 @@ A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the addr
 
 Eg if virtual_subnet6 is 2606:54c1:7:0:a9fe:12d2::/127 , interface_address6 could be 2606:54c1:7:0:a9fe:12d2:1:200/127
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#interface_address6 MagicWanGreTunnel#interface_address6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#interface_address6 MagicWanGreTunnel#interface_address6}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Time To Live (TTL) in number of hops of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
 
 ---
 
@@ -637,7 +637,9 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ```python
 def put_bgp(
   customer_asn: typing.Union[int, float],
+  export_filter_id: str = None,
   extra_prefixes: typing.List[str] = None,
+  import_filter_id: str = None,
   md5_key: str = None
 ) -> None
 ```
@@ -648,7 +650,17 @@ def put_bgp(
 
 ASN used on the customer end of the BGP session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#customer_asn MagicWanGreTunnel#customer_asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#customer_asn MagicWanGreTunnel#customer_asn}
+
+---
+
+###### `export_filter_id`<sup>Optional</sup> <a name="export_filter_id" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.putBgp.parameter.exportFilterId"></a>
+
+- *Type:* str
+
+UUID of the BGP filter profile to apply to routes advertised by Cloudflare.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#export_filter_id MagicWanGreTunnel#export_filter_id}
 
 ---
 
@@ -658,7 +670,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#extra_prefixes MagicWanGreTunnel#extra_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#extra_prefixes MagicWanGreTunnel#extra_prefixes}
+
+---
+
+###### `import_filter_id`<sup>Optional</sup> <a name="import_filter_id" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.putBgp.parameter.importFilterId"></a>
+
+- *Type:* str
+
+UUID of the BGP filter profile to apply to routes advertised to Cloudflare.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#import_filter_id MagicWanGreTunnel#import_filter_id}
 
 ---
 
@@ -683,7 +705,7 @@ quotation mark (`"`), vertical tab (0x0B), carriage return (0x0D), tab (0x09), f
 (0x0C), and the question mark (`?`). Requests specifying an MD5 key with one or more of
 these disallowed characters will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#md5_key MagicWanGreTunnel#md5_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#md5_key MagicWanGreTunnel#md5_key}
 
 ---
 
@@ -708,7 +730,7 @@ The direction of the flow of the healthcheck.
 Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 Available values: "unidirectional", "bidirectional".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#direction MagicWanGreTunnel#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#direction MagicWanGreTunnel#direction}
 
 ---
 
@@ -718,7 +740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Determines whether to run healthchecks for a tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
 
 ---
 
@@ -728,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 How frequent the health check is run. The default value is `mid`. Available values: "low", "mid", "high".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
 
 ---
 
@@ -740,7 +762,7 @@ The destination address in a request type health check.
 
 After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to `customer_gre_endpoint address`. This field is ignored for bidirectional healthchecks as the interface_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#target MagicWanGreTunnel#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#target MagicWanGreTunnel#target}
 
 ---
 
@@ -750,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The type of healthcheck to run, reply or request. The default value is `reply`. Available values: "reply", "request".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
 
 ---
 
@@ -910,7 +932,7 @@ The construct id used in the generated config for the MagicWanGreTunnel to impor
 
 The id of the existing MagicWanGreTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1422,7 +1444,9 @@ from cdktn_provider_cloudflare import magic_wan_gre_tunnel
 
 magicWanGreTunnel.MagicWanGreTunnelBgp(
   customer_asn: typing.Union[int, float],
+  export_filter_id: str = None,
   extra_prefixes: typing.List[str] = None,
+  import_filter_id: str = None,
   md5_key: str = None
 )
 ```
@@ -1432,7 +1456,9 @@ magicWanGreTunnel.MagicWanGreTunnelBgp(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.customerAsn">customer_asn</a></code> | <code>typing.Union[int, float]</code> | ASN used on the customer end of the BGP session. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.exportFilterId">export_filter_id</a></code> | <code>str</code> | UUID of the BGP filter profile to apply to routes advertised by Cloudflare. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.extraPrefixes">extra_prefixes</a></code> | <code>typing.List[str]</code> | Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.importFilterId">import_filter_id</a></code> | <code>str</code> | UUID of the BGP filter profile to apply to routes advertised to Cloudflare. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.md5Key">md5_key</a></code> | <code>str</code> | MD5 key to use for session authentication. |
 
 ---
@@ -1447,7 +1473,21 @@ customer_asn: typing.Union[int, float]
 
 ASN used on the customer end of the BGP session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#customer_asn MagicWanGreTunnel#customer_asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#customer_asn MagicWanGreTunnel#customer_asn}
+
+---
+
+##### `export_filter_id`<sup>Optional</sup> <a name="export_filter_id" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.exportFilterId"></a>
+
+```python
+export_filter_id: str
+```
+
+- *Type:* str
+
+UUID of the BGP filter profile to apply to routes advertised by Cloudflare.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#export_filter_id MagicWanGreTunnel#export_filter_id}
 
 ---
 
@@ -1461,7 +1501,21 @@ extra_prefixes: typing.List[str]
 
 Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#extra_prefixes MagicWanGreTunnel#extra_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#extra_prefixes MagicWanGreTunnel#extra_prefixes}
+
+---
+
+##### `import_filter_id`<sup>Optional</sup> <a name="import_filter_id" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp.property.importFilterId"></a>
+
+```python
+import_filter_id: str
+```
+
+- *Type:* str
+
+UUID of the BGP filter profile to apply to routes advertised to Cloudflare.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#import_filter_id MagicWanGreTunnel#import_filter_id}
 
 ---
 
@@ -1490,7 +1544,7 @@ quotation mark (`"`), vertical tab (0x0B), carriage return (0x0D), tab (0x09), f
 (0x0C), and the question mark (`?`). Requests specifying an MD5 key with one or more of
 these disallowed characters will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#md5_key MagicWanGreTunnel#md5_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#md5_key MagicWanGreTunnel#md5_key}
 
 ---
 
@@ -1552,9 +1606,9 @@ magicWanGreTunnel.MagicWanGreTunnelConfig(
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.interfaceAddress">interface_address</a></code> | <code>str</code> | A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.name">name</a></code> | <code>str</code> | The name of the tunnel. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.automaticReturnRouting">automatic_return_routing</a></code> | <code>bool \| cdktn.IResolvable</code> | True if automatic stateful return routing should be enabled for a tunnel, false otherwise. |
-| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.bgp">bgp</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.bgp">bgp</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.description">description</a></code> | <code>str</code> | An optional description of the GRE tunnel. |
-| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.healthCheck">health_check</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.healthCheck">health_check</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.interfaceAddress6">interface_address6</a></code> | <code>str</code> | A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the address being the first IP of the subnet and not same as the address of virtual_subnet6. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Time To Live (TTL) in number of hops of the GRE tunnel. |
@@ -1641,7 +1695,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
 
 ---
 
@@ -1655,7 +1709,7 @@ cloudflare_gre_endpoint: str
 
 The IP address assigned to the Cloudflare side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
 
 ---
 
@@ -1669,7 +1723,7 @@ customer_gre_endpoint: str
 
 The IP address assigned to the customer side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
 
 ---
 
@@ -1685,7 +1739,7 @@ A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side o
 
 Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
 
 ---
 
@@ -1701,7 +1755,7 @@ The name of the tunnel.
 
 The name cannot contain spaces or special characters, must be 15 characters or less, and cannot share a name with another GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
 
 ---
 
@@ -1715,7 +1769,7 @@ automatic_return_routing: bool | IResolvable
 
 True if automatic stateful return routing should be enabled for a tunnel, false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#automatic_return_routing MagicWanGreTunnel#automatic_return_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#automatic_return_routing MagicWanGreTunnel#automatic_return_routing}
 
 ---
 
@@ -1727,7 +1781,7 @@ bgp: MagicWanGreTunnelBgp
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#bgp MagicWanGreTunnel#bgp}.
 
 ---
 
@@ -1741,7 +1795,7 @@ description: str
 
 An optional description of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
 
 ---
 
@@ -1753,7 +1807,7 @@ health_check: MagicWanGreTunnelHealthCheck
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck">MagicWanGreTunnelHealthCheck</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
 
 ---
 
@@ -1769,7 +1823,7 @@ A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the addr
 
 Eg if virtual_subnet6 is 2606:54c1:7:0:a9fe:12d2::/127 , interface_address6 could be 2606:54c1:7:0:a9fe:12d2:1:200/127
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#interface_address6 MagicWanGreTunnel#interface_address6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#interface_address6 MagicWanGreTunnel#interface_address6}
 
 ---
 
@@ -1783,7 +1837,7 @@ mtu: typing.Union[int, float]
 
 Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
 
 ---
 
@@ -1797,7 +1851,7 @@ ttl: typing.Union[int, float]
 
 Time To Live (TTL) in number of hops of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
 
 ---
 
@@ -1842,7 +1896,7 @@ The direction of the flow of the healthcheck.
 Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 Available values: "unidirectional", "bidirectional".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#direction MagicWanGreTunnel#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#direction MagicWanGreTunnel#direction}
 
 ---
 
@@ -1856,7 +1910,7 @@ enabled: bool | IResolvable
 
 Determines whether to run healthchecks for a tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
 
 ---
 
@@ -1870,7 +1924,7 @@ rate: str
 
 How frequent the health check is run. The default value is `mid`. Available values: "low", "mid", "high".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
 
 ---
 
@@ -1886,7 +1940,7 @@ The destination address in a request type health check.
 
 After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to `customer_gre_endpoint address`. This field is ignored for bidirectional healthchecks as the interface_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#target MagicWanGreTunnel#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#target MagicWanGreTunnel#target}
 
 ---
 
@@ -1900,7 +1954,7 @@ type: str
 
 The type of healthcheck to run, reply or request. The default value is `reply`. Available values: "reply", "request".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
 
 ---
 
@@ -1936,7 +1990,7 @@ The saved health check target.
 
 Setting the value to the empty string indicates that the calculated default value will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#saved MagicWanGreTunnel#saved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#saved MagicWanGreTunnel#saved}
 
 ---
 
@@ -1995,7 +2049,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetExportFilterId">reset_export_filter_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetExtraPrefixes">reset_extra_prefixes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetImportFilterId">reset_import_filter_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetMd5Key">reset_md5_key</a></code> | *No description.* |
 
 ---
@@ -2172,10 +2228,22 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_export_filter_id` <a name="reset_export_filter_id" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetExportFilterId"></a>
+
+```python
+def reset_export_filter_id() -> None
+```
+
 ##### `reset_extra_prefixes` <a name="reset_extra_prefixes" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetExtraPrefixes"></a>
 
 ```python
 def reset_extra_prefixes() -> None
+```
+
+##### `reset_import_filter_id` <a name="reset_import_filter_id" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetImportFilterId"></a>
+
+```python
+def reset_import_filter_id() -> None
 ```
 
 ##### `reset_md5_key` <a name="reset_md5_key" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.resetMd5Key"></a>
@@ -2192,10 +2260,14 @@ def reset_md5_key() -> None
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.customerAsnInput">customer_asn_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.exportFilterIdInput">export_filter_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.extraPrefixesInput">extra_prefixes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.importFilterIdInput">import_filter_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.md5KeyInput">md5_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.customerAsn">customer_asn</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.exportFilterId">export_filter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.extraPrefixes">extra_prefixes</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.importFilterId">import_filter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.md5Key">md5_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp">MagicWanGreTunnelBgp</a></code> | *No description.* |
 
@@ -2235,6 +2307,16 @@ customer_asn_input: typing.Union[int, float]
 
 ---
 
+##### `export_filter_id_input`<sup>Optional</sup> <a name="export_filter_id_input" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.exportFilterIdInput"></a>
+
+```python
+export_filter_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `extra_prefixes_input`<sup>Optional</sup> <a name="extra_prefixes_input" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.extraPrefixesInput"></a>
 
 ```python
@@ -2242,6 +2324,16 @@ extra_prefixes_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `import_filter_id_input`<sup>Optional</sup> <a name="import_filter_id_input" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.importFilterIdInput"></a>
+
+```python
+import_filter_id_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -2265,6 +2357,16 @@ customer_asn: typing.Union[int, float]
 
 ---
 
+##### `export_filter_id`<sup>Required</sup> <a name="export_filter_id" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.exportFilterId"></a>
+
+```python
+export_filter_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `extra_prefixes`<sup>Required</sup> <a name="extra_prefixes" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.extraPrefixes"></a>
 
 ```python
@@ -2272,6 +2374,16 @@ extra_prefixes: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `import_filter_id`<sup>Required</sup> <a name="import_filter_id" id="@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference.property.importFilterId"></a>
+
+```python
+import_filter_id: str
+```
+
+- *Type:* str
 
 ---
 
@@ -2908,7 +3020,7 @@ The saved health check target.
 
 Setting the value to the empty string indicates that the calculated default value will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_gre_tunnel#saved MagicWanGreTunnel#saved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_gre_tunnel#saved MagicWanGreTunnel#saved}
 
 ---
 

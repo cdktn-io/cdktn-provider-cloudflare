@@ -4,7 +4,7 @@
 
 ### SecretsStore <a name="SecretsStore" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store cloudflare_secrets_store}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store cloudflare_secrets_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer"></a>
 
@@ -22,7 +22,8 @@ secretsStore.SecretsStore(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
-  name: str
+  name: str,
+  force: bool | IResolvable = None
 )
 ```
 
@@ -37,8 +38,9 @@ secretsStore.SecretsStore(
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#account_id SecretsStore#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#account_id SecretsStore#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the store. |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer.parameter.force">force</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, cascade-deletes all secrets in the store before deleting the store itself. |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#account_id SecretsStore#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#account_id SecretsStore#account_id}.
 
 ---
 
@@ -116,7 +118,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#name SecretsStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#name SecretsStore#name}
+
+---
+
+##### `force`<sup>Optional</sup> <a name="force" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer.parameter.force"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+When true, cascade-deletes all secrets in the store before deleting the store itself.
+
+Required when deleting a non-empty store. Without this parameter, attempting to
+delete a non-empty store returns 409.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#force SecretsStore#force}
 
 ---
 
@@ -148,6 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.resetForce">reset_force</a></code> | *No description.* |
 
 ---
 
@@ -499,6 +515,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_force` <a name="reset_force" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.resetForce"></a>
+
+```python
+def reset_force() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -613,7 +635,7 @@ The construct id used in the generated config for the SecretsStore to import.
 
 The id of the existing SecretsStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,8 +669,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.modified">modified</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.forceInput">force_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.force">force</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -835,6 +859,16 @@ account_id_input: str
 
 ---
 
+##### `force_input`<sup>Optional</sup> <a name="force_input" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.forceInput"></a>
+
+```python
+force_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.nameInput"></a>
 
 ```python
@@ -852,6 +886,16 @@ account_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `force`<sup>Required</sup> <a name="force" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.property.force"></a>
+
+```python
+force: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -901,7 +945,8 @@ secretsStore.SecretsStoreConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
-  name: str
+  name: str,
+  force: bool | IResolvable = None
 )
 ```
 
@@ -916,8 +961,9 @@ secretsStore.SecretsStoreConfig(
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#account_id SecretsStore#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#account_id SecretsStore#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.name">name</a></code> | <code>str</code> | The name of the store. |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.force">force</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, cascade-deletes all secrets in the store before deleting the store itself. |
 
 ---
 
@@ -999,7 +1045,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#account_id SecretsStore#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#account_id SecretsStore#account_id}.
 
 ---
 
@@ -1013,7 +1059,24 @@ name: str
 
 The name of the store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store#name SecretsStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#name SecretsStore#name}
+
+---
+
+##### `force`<sup>Optional</sup> <a name="force" id="@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.force"></a>
+
+```python
+force: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+When true, cascade-deletes all secrets in the store before deleting the store itself.
+
+Required when deleting a non-empty store. Without this parameter, attempting to
+delete a non-empty store returns 409.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#force SecretsStore#force}
 
 ---
 

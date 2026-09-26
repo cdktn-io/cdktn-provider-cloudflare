@@ -4,7 +4,7 @@
 
 ### ApiShield <a name="ApiShield" id="@cdktn/provider-cloudflare.apiShield.ApiShield"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield cloudflare_api_shield}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield cloudflare_api_shield}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShield.ApiShield.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.putAuthIdCharacteristics">PutAuthIdCharacteristics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.resetNormalize">ResetNormalize</a></code> | *No description.* |
 
 ---
 
@@ -399,6 +400,12 @@ private void PutAuthIdCharacteristics(IResolvable|ApiShieldAuthIdCharacteristics
 
 ---
 
+##### `ResetNormalize` <a name="ResetNormalize" id="@cdktn/provider-cloudflare.apiShield.ApiShield.resetNormalize"></a>
+
+```csharp
+private void ResetNormalize()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -502,7 +509,7 @@ The construct id used in the generated config for the ApiShield to import.
 
 The id of the existing ApiShield that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -535,7 +542,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList">ApiShieldAuthIdCharacteristicsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.authIdCharacteristicsInput">AuthIdCharacteristicsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics">ApiShieldAuthIdCharacteristics</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.normalizeInput">NormalizeInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.normalize">Normalize</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShield.property.zoneId">ZoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -712,6 +721,16 @@ public IResolvable|ApiShieldAuthIdCharacteristics[] AuthIdCharacteristicsInput {
 
 ---
 
+##### `NormalizeInput`<sup>Optional</sup> <a name="NormalizeInput" id="@cdktn/provider-cloudflare.apiShield.ApiShield.property.normalizeInput"></a>
+
+```csharp
+public bool|IResolvable NormalizeInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `ZoneIdInput`<sup>Optional</sup> <a name="ZoneIdInput" id="@cdktn/provider-cloudflare.apiShield.ApiShield.property.zoneIdInput"></a>
 
 ```csharp
@@ -719,6 +738,16 @@ public string ZoneIdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Normalize`<sup>Required</sup> <a name="Normalize" id="@cdktn/provider-cloudflare.apiShield.ApiShield.property.normalize"></a>
+
+```csharp
+public bool|IResolvable Normalize { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -784,7 +813,7 @@ public string Name { get; set; }
 
 The name of the characteristic field, i.e., the header or cookie name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#name ApiShield#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#name ApiShield#name}
 
 ---
 
@@ -798,7 +827,7 @@ public string Type { get; set; }
 
 The type of characteristic. Available values: "header", "cookie", "jwt".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#type ApiShield#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#type ApiShield#type}
 
 ---
 
@@ -818,7 +847,8 @@ new ApiShieldConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     IResolvable|ApiShieldAuthIdCharacteristics[] AuthIdCharacteristics,
-    string ZoneId
+    string ZoneId,
+    bool|IResolvable Normalize = null
 };
 ```
 
@@ -833,8 +863,9 @@ new ApiShieldConfig {
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics">ApiShieldAuthIdCharacteristics</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics">ApiShieldAuthIdCharacteristics</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.normalize">Normalize</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Ensures that the configuration is written or retrieved in normalized fashion. |
 
 ---
 
@@ -916,7 +947,7 @@ public IResolvable|ApiShieldAuthIdCharacteristics[] AuthIdCharacteristics { get;
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics">ApiShieldAuthIdCharacteristics</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}.
 
 ---
 
@@ -930,7 +961,21 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield#zone_id ApiShield#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#zone_id ApiShield#zone_id}
+
+---
+
+##### `Normalize`<sup>Optional</sup> <a name="Normalize" id="@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.normalize"></a>
+
+```csharp
+public bool|IResolvable Normalize { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Ensures that the configuration is written or retrieved in normalized fashion.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield#normalize ApiShield#normalize}
 
 ---
 

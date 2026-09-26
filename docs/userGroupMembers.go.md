@@ -4,7 +4,7 @@
 
 ### UserGroupMembers <a name="UserGroupMembers" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members cloudflare_user_group_members}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members cloudflare_user_group_members}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer"></a>
 
@@ -75,6 +75,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.putMembers">PutMembers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetDirection">ResetDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetFuzzyEmail">ResetFuzzyEmail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetPage">ResetPage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetPerPage">ResetPerPage</a></code> | *No description.* |
 
 ---
 
@@ -399,6 +403,30 @@ func PutMembers(value interface{})
 
 ---
 
+##### `ResetDirection` <a name="ResetDirection" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetDirection"></a>
+
+```go
+func ResetDirection()
+```
+
+##### `ResetFuzzyEmail` <a name="ResetFuzzyEmail" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetFuzzyEmail"></a>
+
+```go
+func ResetFuzzyEmail()
+```
+
+##### `ResetPage` <a name="ResetPage" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetPage"></a>
+
+```go
+func ResetPage()
+```
+
+##### `ResetPerPage` <a name="ResetPerPage" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.resetPerPage"></a>
+
+```go
+func ResetPerPage()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -502,7 +530,7 @@ The construct id used in the generated config for the UserGroupMembers to import
 
 The id of the existing UserGroupMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -535,9 +563,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.members">Members</a></code> | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersMembersList">UserGroupMembersMembersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.directionInput">DirectionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.fuzzyEmailInput">FuzzyEmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.membersInput">MembersInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.pageInput">PageInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.perPageInput">PerPageInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.userGroupIdInput">UserGroupIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.direction">Direction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.fuzzyEmail">FuzzyEmail</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.page">Page</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.perPage">PerPage</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.userGroupId">UserGroupId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -714,6 +750,26 @@ func AccountIdInput() *string
 
 ---
 
+##### `DirectionInput`<sup>Optional</sup> <a name="DirectionInput" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.directionInput"></a>
+
+```go
+func DirectionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FuzzyEmailInput`<sup>Optional</sup> <a name="FuzzyEmailInput" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.fuzzyEmailInput"></a>
+
+```go
+func FuzzyEmailInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `MembersInput`<sup>Optional</sup> <a name="MembersInput" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.membersInput"></a>
 
 ```go
@@ -721,6 +777,26 @@ func MembersInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `PageInput`<sup>Optional</sup> <a name="PageInput" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.pageInput"></a>
+
+```go
+func PageInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PerPageInput`<sup>Optional</sup> <a name="PerPageInput" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.perPageInput"></a>
+
+```go
+func PerPageInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -741,6 +817,46 @@ func AccountId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Direction`<sup>Required</sup> <a name="Direction" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.direction"></a>
+
+```go
+func Direction() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FuzzyEmail`<sup>Required</sup> <a name="FuzzyEmail" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.fuzzyEmail"></a>
+
+```go
+func FuzzyEmail() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Page`<sup>Required</sup> <a name="Page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.page"></a>
+
+```go
+func Page() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PerPage`<sup>Required</sup> <a name="PerPage" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.property.perPage"></a>
+
+```go
+func PerPage() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -792,6 +908,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergrou
 	AccountId: *string,
 	Members: interface{},
 	UserGroupId: *string,
+	Direction: *string,
+	FuzzyEmail: *string,
+	Page: *f64,
+	PerPage: *f64,
 }
 ```
 
@@ -807,8 +927,12 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergrou
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.members">Members</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#members UserGroupMembers#members}. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.members">Members</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}. |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.userGroupId">UserGroupId</a></code> | <code>*string</code> | User Group identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.direction">Direction</a></code> | <code>*string</code> | The sort order of returned user group members by email. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.fuzzyEmail">FuzzyEmail</a></code> | <code>*string</code> | A string used for filtering members by partial email match. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.page">Page</a></code> | <code>*f64</code> | Page number of paginated results. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.perPage">PerPage</a></code> | <code>*f64</code> | Maximum number of results per page. |
 
 ---
 
@@ -892,7 +1016,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
 
 ---
 
@@ -904,7 +1028,7 @@ Members interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#members UserGroupMembers#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}.
 
 ---
 
@@ -918,7 +1042,63 @@ UserGroupId *string
 
 User Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
+
+---
+
+##### `Direction`<sup>Optional</sup> <a name="Direction" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.direction"></a>
+
+```go
+Direction *string
+```
+
+- *Type:* *string
+
+The sort order of returned user group members by email. Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#direction UserGroupMembers#direction}
+
+---
+
+##### `FuzzyEmail`<sup>Optional</sup> <a name="FuzzyEmail" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.fuzzyEmail"></a>
+
+```go
+FuzzyEmail *string
+```
+
+- *Type:* *string
+
+A string used for filtering members by partial email match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#fuzzy_email UserGroupMembers#fuzzy_email}
+
+---
+
+##### `Page`<sup>Optional</sup> <a name="Page" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.page"></a>
+
+```go
+Page *f64
+```
+
+- *Type:* *f64
+
+Page number of paginated results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#page UserGroupMembers#page}
+
+---
+
+##### `PerPage`<sup>Optional</sup> <a name="PerPage" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.perPage"></a>
+
+```go
+PerPage *f64
+```
+
+- *Type:* *f64
+
+Maximum number of results per page.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#per_page UserGroupMembers#per_page}
 
 ---
 
@@ -952,7 +1132,7 @@ Id *string
 
 The identifier of an existing account Member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members#id UserGroupMembers#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#id UserGroupMembers#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
