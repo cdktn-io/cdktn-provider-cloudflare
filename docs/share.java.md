@@ -4,7 +4,7 @@
 
 ### Share <a name="Share" id="@cdktn/provider-cloudflare.share.Share"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share cloudflare_share}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share cloudflare_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.Share.Initializer"></a>
 
@@ -41,8 +41,8 @@ Share.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the share. |
-| <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.recipients">recipients</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipients Share#recipients}. |
-| <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.resources">resources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resources Share#resources}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.recipients">recipients</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#recipients Share#recipients}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.resources">resources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#resources Share#resources}. |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.includeRecipientCounts">includeRecipientCounts</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include recipient counts in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.Initializer.parameter.includeResources">includeResources</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include resources in the response. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#account_id Share#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#account_id Share#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#name Share#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#name Share#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipients Share#recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#recipients Share#recipients}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resources Share#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#resources Share#resources}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#include_recipient_counts Share#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#include_recipient_counts Share#include_recipient_counts}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#include_resources Share#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#include_resources Share#include_resources}
 
 ---
 
@@ -649,7 +649,7 @@ The construct id used in the generated config for the Share to import.
 
 The id of the existing Share that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1145,8 +1145,8 @@ ShareConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the share. |
-| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.recipients">recipients</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipients Share#recipients}. |
-| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.resources">resources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resources Share#resources}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.recipients">recipients</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#recipients Share#recipients}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.resources">resources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#resources Share#resources}. |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.includeRecipientCounts">includeRecipientCounts</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include recipient counts in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.includeResources">includeResources</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include resources in the response. |
 
@@ -1232,7 +1232,7 @@ public java.lang.String getAccountId();
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#account_id Share#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#account_id Share#account_id}
 
 ---
 
@@ -1246,7 +1246,7 @@ public java.lang.String getName();
 
 The name of the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#name Share#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#name Share#name}
 
 ---
 
@@ -1258,7 +1258,7 @@ public IResolvable|java.util.List<ShareRecipients> getRecipients();
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipients Share#recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#recipients Share#recipients}.
 
 ---
 
@@ -1270,7 +1270,7 @@ public IResolvable|java.util.List<ShareResources> getResources();
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resources Share#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#resources Share#resources}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public java.lang.Boolean|IResolvable getIncludeRecipientCounts();
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#include_recipient_counts Share#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#include_recipient_counts Share#include_recipient_counts}
 
 ---
 
@@ -1298,7 +1298,7 @@ public java.lang.Boolean|IResolvable getIncludeResources();
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#include_resources Share#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#include_resources Share#include_resources}
 
 ---
 
@@ -1334,7 +1334,7 @@ public java.lang.String getOrganizationId();
 
 Organization identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#organization_id Share#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#organization_id Share#organization_id}
 
 ---
 
@@ -1348,7 +1348,7 @@ public java.lang.String getRecipientAccountId();
 
 The account that will receive the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#recipient_account_id Share#recipient_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#recipient_account_id Share#recipient_account_id}
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getMeta();
 
 Resource Metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#meta Share#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#meta Share#meta}
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.lang.String getResourceAccountId();
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_account_id Share#resource_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#resource_account_id Share#resource_account_id}
 
 ---
 
@@ -1416,7 +1416,7 @@ public java.lang.String getResourceId();
 
 Share Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_id Share#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#resource_id Share#resource_id}
 
 ---
 
@@ -1430,7 +1430,7 @@ public java.lang.String getResourceType();
 
 Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share#resource_type Share#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/share#resource_type Share#resource_type}
 
 ---
 

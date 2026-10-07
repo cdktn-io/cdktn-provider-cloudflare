@@ -4,7 +4,7 @@
 
 ### WorkersScriptSubdomain <a name="WorkersScriptSubdomain" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkersScriptSubdomain to 
 
 The id of the existing WorkersScriptSubdomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_script_subdomain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script_subdomain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ const workersScriptSubdomainConfig: workersScriptSubdomain.WorkersScriptSubdomai
 | <code><a href="#@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomainConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomainConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomainConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the Worker should be available on the workers.dev subdomain. |
-| <code><a href="#@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomainConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Name of the script, used in URLs and route configuration. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomainConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Name of the script. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomainConfig.property.previewsEnabled">previewsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the Worker's Preview URLs should be available on the workers.dev subdomain. |
 
 ---
@@ -898,7 +898,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
 
 ---
 
@@ -912,7 +912,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the Worker should be available on the workers.dev subdomain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
 
 ---
 
@@ -924,9 +924,9 @@ public readonly scriptName: string;
 
 - *Type:* string
 
-Name of the script, used in URLs and route configuration.
+Name of the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
 
 ---
 
@@ -940,7 +940,7 @@ public readonly previewsEnabled: boolean | IResolvable;
 
 Whether the Worker's Preview URLs should be available on the workers.dev subdomain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
 
 ---
 

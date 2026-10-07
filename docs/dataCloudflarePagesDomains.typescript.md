@@ -4,7 +4,7 @@
 
 ### DataCloudflarePagesDomains <a name="DataCloudflarePagesDomains" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomains"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domains cloudflare_pages_domains}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domains cloudflare_pages_domains}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomains.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataCloudflarePagesDomains
 
 The id of the existing DataCloudflarePagesDomains that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domains#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domains#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,7 +672,7 @@ const dataCloudflarePagesDomainsConfig: dataCloudflarePagesDomains.DataCloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsConfig.property.projectName">projectName</a></code> | <code>string</code> | Name of the project. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsConfig.property.projectName">projectName</a></code> | <code>string</code> | Name of the Pages project. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
@@ -756,9 +756,11 @@ public readonly projectName: string;
 
 - *Type:* string
 
-Name of the project.
+Name of the Pages project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domains#project_name DataCloudflarePagesDomains#project_name}
+Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domains#project_name DataCloudflarePagesDomains#project_name}
 
 ---
 
@@ -772,7 +774,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domains#account_id DataCloudflarePagesDomains#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domains#account_id DataCloudflarePagesDomains#account_id}
 
 ---
 
@@ -786,7 +788,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domains#max_items DataCloudflarePagesDomains#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domains#max_items DataCloudflarePagesDomains#max_items}
 
 ---
 

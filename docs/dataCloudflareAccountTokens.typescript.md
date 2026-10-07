@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountTokens <a name="DataCloudflareAccountTokens" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -809,7 +809,7 @@ public readonly direction: string;
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
 
 ---
 
@@ -823,7 +823,7 @@ public readonly includeExpired: boolean | IResolvable;
 
 When true, includes recently-expired tokens in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
 
 ---
 
@@ -837,7 +837,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 
@@ -1818,6 +1818,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultConditionOutputReference">DataCloudflareAccountTokensResultConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.creatorEmailAtCreation">creatorEmailAtCreation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.expiresOn">expiresOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.issuedOn">issuedOn</a></code> | <code>string</code> | *No description.* |
@@ -1826,6 +1827,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.notBefore">notBefore</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.policies">policies</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesList">DataCloudflareAccountTokensResultPoliciesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.provisionerId">provisionerId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.provisionerType">provisionerType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResult">DataCloudflareAccountTokensResult</a></code> | *No description.* |
 
@@ -1862,6 +1865,16 @@ public readonly condition: DataCloudflareAccountTokensResultConditionOutputRefer
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultConditionOutputReference">DataCloudflareAccountTokensResultConditionOutputReference</a>
+
+---
+
+##### `creatorEmailAtCreation`<sup>Required</sup> <a name="creatorEmailAtCreation" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.creatorEmailAtCreation"></a>
+
+```typescript
+public readonly creatorEmailAtCreation: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1942,6 +1955,26 @@ public readonly policies: DataCloudflareAccountTokensResultPoliciesList;
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesList">DataCloudflareAccountTokensResultPoliciesList</a>
+
+---
+
+##### `provisionerId`<sup>Required</sup> <a name="provisionerId" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.provisionerId"></a>
+
+```typescript
+public readonly provisionerId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `provisionerType`<sup>Required</sup> <a name="provisionerType" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.provisionerType"></a>
+
+```typescript
+public readonly provisionerType: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -2785,8 +2818,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.category">category</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.deprecated">deprecated</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.editable">editable</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.eolAt">eolAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.label">label</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.scopes">scopes</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.visibility">visibility</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMeta">DataCloudflareAccountTokensResultPoliciesPermissionGroupsMeta</a></code> | *No description.* |
 
 ---
@@ -2815,20 +2854,80 @@ public readonly fqn: string;
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.key"></a>
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.category"></a>
 
 ```typescript
-public readonly key: string;
+public readonly category: string;
 ```
 
 - *Type:* string
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.value"></a>
+##### `deprecated`<sup>Required</sup> <a name="deprecated" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.deprecated"></a>
 
 ```typescript
-public readonly value: string;
+public readonly deprecated: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `editable`<sup>Required</sup> <a name="editable" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.editable"></a>
+
+```typescript
+public readonly editable: string;
+```
+
+- *Type:* string
+
+---
+
+##### `eolAt`<sup>Required</sup> <a name="eolAt" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.eolAt"></a>
+
+```typescript
+public readonly eolAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.label"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.scopes"></a>
+
+```typescript
+public readonly scopes: string;
+```
+
+- *Type:* string
+
+---
+
+##### `visibility`<sup>Required</sup> <a name="visibility" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.visibility"></a>
+
+```typescript
+public readonly visibility: string;
 ```
 
 - *Type:* string

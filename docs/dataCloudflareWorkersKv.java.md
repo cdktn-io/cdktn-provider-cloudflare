@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkersKv <a name="DataCloudflareWorkersKv" id="@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workers_kv cloudflare_workers_kv}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/workers_kv cloudflare_workers_kv}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer"></a>
 
@@ -36,9 +36,9 @@ DataCloudflareWorkersKv.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | ID of the Cloudflare account that owns the Workers KV namespaces. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer.parameter.keyName">keyName</a></code> | <code>java.lang.String</code> | A key's name. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer.parameter.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Namespace identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer.parameter.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | ID of the Workers KV namespace. |
 
 ---
 
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workers_kv#account_id DataCloudflareWorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/workers_kv#account_id DataCloudflareWorkersKv#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ A key's name.
 
 The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workers_kv#key_name DataCloudflareWorkersKv#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/workers_kv#key_name DataCloudflareWorkersKv#key_name}
 
 ---
 
@@ -128,9 +128,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workers_kv#namespace_id DataCloudflareWorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/workers_kv#namespace_id DataCloudflareWorkersKv#namespace_id}
 
 ---
 
@@ -475,7 +475,7 @@ The construct id used in the generated config for the DataCloudflareWorkersKv to
 
 The id of the existing DataCloudflareWorkersKv that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workers_kv#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/workers_kv#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -768,9 +768,9 @@ DataCloudflareWorkersKvConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKvConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKvConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKvConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKvConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKvConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | ID of the Cloudflare account that owns the Workers KV namespaces. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKvConfig.property.keyName">keyName</a></code> | <code>java.lang.String</code> | A key's name. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKvConfig.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Namespace identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKvConfig.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | ID of the Workers KV namespace. |
 
 ---
 
@@ -852,9 +852,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workers_kv#account_id DataCloudflareWorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/workers_kv#account_id DataCloudflareWorkersKv#account_id}
 
 ---
 
@@ -870,7 +870,7 @@ A key's name.
 
 The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workers_kv#key_name DataCloudflareWorkersKv#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/workers_kv#key_name DataCloudflareWorkersKv#key_name}
 
 ---
 
@@ -882,9 +882,9 @@ public java.lang.String getNamespaceId();
 
 - *Type:* java.lang.String
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/workers_kv#namespace_id DataCloudflareWorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/workers_kv#namespace_id DataCloudflareWorkersKv#namespace_id}
 
 ---
 

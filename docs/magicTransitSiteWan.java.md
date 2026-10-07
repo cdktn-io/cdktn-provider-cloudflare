@@ -4,7 +4,7 @@
 
 ### MagicTransitSiteWan <a name="MagicTransitSiteWan" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer"></a>
 
@@ -22,6 +22,8 @@ MagicTransitSiteWan.Builder.create(Construct scope, java.lang.String id)
     .accountId(java.lang.String)
     .physport(java.lang.Number)
     .siteId(java.lang.String)
+//  .healthCheckRate(java.lang.String)
+//  .loadBalanceInnerFlows(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
 //  .priority(java.lang.Number)
 //  .staticAddressing(MagicTransitSiteWanStaticAddressing)
@@ -41,10 +43,12 @@ MagicTransitSiteWan.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.physport">physport</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.physport">physport</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.siteId">siteId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.healthCheckRate">healthCheckRate</a></code> | <code>java.lang.String</code> | Magic WAN health check rate for tunnels created on this link. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.loadBalanceInnerFlows">loadBalanceInnerFlows</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#load_balance_inner_flows MagicTransitSiteWan#load_balance_inner_flows}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.staticAddressing">staticAddressing</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanStaticAddressing">MagicTransitSiteWanStaticAddressing</a></code> | (optional) if omitted, use DHCP. Submit secondary_address when site is in high availability mode. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.vlanTag">vlanTag</a></code> | <code>java.lang.Number</code> | VLAN ID. Use zero for untagged. |
 
@@ -116,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
 
 ---
 
@@ -124,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}.
 
 ---
 
@@ -134,7 +138,28 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
+
+---
+
+##### `healthCheckRate`<sup>Optional</sup> <a name="healthCheckRate" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.healthCheckRate"></a>
+
+- *Type:* java.lang.String
+
+Magic WAN health check rate for tunnels created on this link.
+
+The default value is `mid`.
+Available values: "low", "mid", "high".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#health_check_rate MagicTransitSiteWan#health_check_rate}
+
+---
+
+##### `loadBalanceInnerFlows`<sup>Optional</sup> <a name="loadBalanceInnerFlows" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer.parameter.loadBalanceInnerFlows"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#load_balance_inner_flows MagicTransitSiteWan#load_balance_inner_flows}.
 
 ---
 
@@ -142,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}.
 
 ---
 
@@ -150,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}.
 
 ---
 
@@ -160,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 (optional) if omitted, use DHCP. Submit secondary_address when site is in high availability mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
 
 ---
 
@@ -170,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 VLAN ID. Use zero for untagged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
 
 ---
 
@@ -203,6 +228,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.putStaticAddressing">putStaticAddressing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetHealthCheckRate">resetHealthCheckRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetLoadBalanceInnerFlows">resetLoadBalanceInnerFlows</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetPriority">resetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetStaticAddressing">resetStaticAddressing</a></code> | *No description.* |
@@ -533,6 +560,18 @@ public void putStaticAddressing(MagicTransitSiteWanStaticAddressing value)
 
 ---
 
+##### `resetHealthCheckRate` <a name="resetHealthCheckRate" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetHealthCheckRate"></a>
+
+```java
+public void resetHealthCheckRate()
+```
+
+##### `resetLoadBalanceInnerFlows` <a name="resetLoadBalanceInnerFlows" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetLoadBalanceInnerFlows"></a>
+
+```java
+public void resetLoadBalanceInnerFlows()
+```
+
 ##### `resetName` <a name="resetName" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetName"></a>
 
 ```java
@@ -660,7 +699,7 @@ The construct id used in the generated config for the MagicTransitSiteWan to imp
 
 The id of the existing MagicTransitSiteWan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,10 +729,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.healthCheckRate">healthCheckRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.staticAddressing">staticAddressing</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanStaticAddressingOutputReference">MagicTransitSiteWanStaticAddressingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.healthCheckRateInput">healthCheckRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.loadBalanceInnerFlowsInput">loadBalanceInnerFlowsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.physportInput">physportInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.priorityInput">priorityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -701,6 +741,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.staticAddressingInput">staticAddressingInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanStaticAddressing">MagicTransitSiteWanStaticAddressing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.vlanTagInput">vlanTagInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.healthCheckRate">healthCheckRate</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.loadBalanceInnerFlows">loadBalanceInnerFlows</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.physport">physport</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.priority">priority</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -851,16 +893,6 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `healthCheckRate`<sup>Required</sup> <a name="healthCheckRate" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.healthCheckRate"></a>
-
-```java
-public java.lang.String getHealthCheckRate();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.id"></a>
 
 ```java
@@ -888,6 +920,26 @@ public java.lang.String getAccountIdInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `healthCheckRateInput`<sup>Optional</sup> <a name="healthCheckRateInput" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.healthCheckRateInput"></a>
+
+```java
+public java.lang.String getHealthCheckRateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `loadBalanceInnerFlowsInput`<sup>Optional</sup> <a name="loadBalanceInnerFlowsInput" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.loadBalanceInnerFlowsInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLoadBalanceInnerFlowsInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -958,6 +1010,26 @@ public java.lang.String getAccountId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `healthCheckRate`<sup>Required</sup> <a name="healthCheckRate" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.healthCheckRate"></a>
+
+```java
+public java.lang.String getHealthCheckRate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `loadBalanceInnerFlows`<sup>Required</sup> <a name="loadBalanceInnerFlows" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.loadBalanceInnerFlows"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLoadBalanceInnerFlows();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1049,6 +1121,8 @@ MagicTransitSiteWanConfig.builder()
     .accountId(java.lang.String)
     .physport(java.lang.Number)
     .siteId(java.lang.String)
+//  .healthCheckRate(java.lang.String)
+//  .loadBalanceInnerFlows(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
 //  .priority(java.lang.Number)
 //  .staticAddressing(MagicTransitSiteWanStaticAddressing)
@@ -1068,10 +1142,12 @@ MagicTransitSiteWanConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.physport">physport</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.physport">physport</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.siteId">siteId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.healthCheckRate">healthCheckRate</a></code> | <code>java.lang.String</code> | Magic WAN health check rate for tunnels created on this link. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.loadBalanceInnerFlows">loadBalanceInnerFlows</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#load_balance_inner_flows MagicTransitSiteWan#load_balance_inner_flows}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.staticAddressing">staticAddressing</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanStaticAddressing">MagicTransitSiteWanStaticAddressing</a></code> | (optional) if omitted, use DHCP. Submit secondary_address when site is in high availability mode. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.vlanTag">vlanTag</a></code> | <code>java.lang.Number</code> | VLAN ID. Use zero for untagged. |
 
@@ -1157,7 +1233,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
 
 ---
 
@@ -1169,7 +1245,7 @@ public java.lang.Number getPhysport();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}.
 
 ---
 
@@ -1183,7 +1259,36 @@ public java.lang.String getSiteId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
+
+---
+
+##### `healthCheckRate`<sup>Optional</sup> <a name="healthCheckRate" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.healthCheckRate"></a>
+
+```java
+public java.lang.String getHealthCheckRate();
+```
+
+- *Type:* java.lang.String
+
+Magic WAN health check rate for tunnels created on this link.
+
+The default value is `mid`.
+Available values: "low", "mid", "high".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#health_check_rate MagicTransitSiteWan#health_check_rate}
+
+---
+
+##### `loadBalanceInnerFlows`<sup>Optional</sup> <a name="loadBalanceInnerFlows" id="@cdktn/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.loadBalanceInnerFlows"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLoadBalanceInnerFlows();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#load_balance_inner_flows MagicTransitSiteWan#load_balance_inner_flows}.
 
 ---
 
@@ -1195,7 +1300,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}.
 
 ---
 
@@ -1207,7 +1312,7 @@ public java.lang.Number getPriority();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}.
 
 ---
 
@@ -1221,7 +1326,7 @@ public MagicTransitSiteWanStaticAddressing getStaticAddressing();
 
 (optional) if omitted, use DHCP. Submit secondary_address when site is in high availability mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
 
 ---
 
@@ -1235,7 +1340,7 @@ public java.lang.Number getVlanTag();
 
 VLAN ID. Use zero for untagged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
 
 ---
 
@@ -1273,7 +1378,7 @@ public java.lang.String getAddress();
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#address MagicTransitSiteWan#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#address MagicTransitSiteWan#address}
 
 ---
 
@@ -1287,7 +1392,7 @@ public java.lang.String getGatewayAddress();
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#gateway_address MagicTransitSiteWan#gateway_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#gateway_address MagicTransitSiteWan#gateway_address}
 
 ---
 
@@ -1301,7 +1406,7 @@ public java.lang.String getSecondaryAddress();
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#secondary_address MagicTransitSiteWan#secondary_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#secondary_address MagicTransitSiteWan#secondary_address}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountToken <a name="DataCloudflareAccountToken" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token cloudflare_account_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token cloudflare_account_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer"></a>
 
@@ -37,7 +37,7 @@ DataCloudflareAccountToken.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.tokenId">tokenId</a></code> | <code>java.lang.String</code> | Token identifier tag. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
 
 ---
 
@@ -505,7 +505,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -534,6 +534,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConditionOutputReference">DataCloudflareAccountTokenConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.creatorEmailAtCreation">creatorEmailAtCreation</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.expiresOn">expiresOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilterOutputReference">DataCloudflareAccountTokenFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -543,6 +544,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.notBefore">notBefore</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.policies">policies</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesList">DataCloudflareAccountTokenPoliciesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provisionerId">provisionerId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provisionerType">provisionerType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.filterInput">filterInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | *No description.* |
@@ -684,6 +687,16 @@ public DataCloudflareAccountTokenConditionOutputReference getCondition();
 
 ---
 
+##### `creatorEmailAtCreation`<sup>Required</sup> <a name="creatorEmailAtCreation" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.creatorEmailAtCreation"></a>
+
+```java
+public java.lang.String getCreatorEmailAtCreation();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `expiresOn`<sup>Required</sup> <a name="expiresOn" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.expiresOn"></a>
 
 ```java
@@ -771,6 +784,26 @@ public DataCloudflareAccountTokenPoliciesList getPolicies();
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesList">DataCloudflareAccountTokenPoliciesList</a>
+
+---
+
+##### `provisionerId`<sup>Required</sup> <a name="provisionerId" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provisionerId"></a>
+
+```java
+public java.lang.String getProvisionerId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `provisionerType`<sup>Required</sup> <a name="provisionerType" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provisionerType"></a>
+
+```java
+public java.lang.String getProvisionerType();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -911,7 +944,7 @@ DataCloudflareAccountTokenConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.tokenId">tokenId</a></code> | <code>java.lang.String</code> | Token identifier tag. |
 
 ---
@@ -996,7 +1029,7 @@ public java.lang.String getAccountId();
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
 
 ---
 
@@ -1008,7 +1041,7 @@ public DataCloudflareAccountTokenFilter getFilter();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
 
 ---
 
@@ -1022,7 +1055,7 @@ public java.lang.String getTokenId();
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
 
 ---
 
@@ -1058,7 +1091,7 @@ public java.lang.String getDirection();
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
 
 ---
 
@@ -1072,7 +1105,7 @@ public java.lang.Boolean|IResolvable getIncludeExpired();
 
 When true, includes recently-expired tokens in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#include_expired DataCloudflareAccountToken#include_expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#include_expired DataCloudflareAccountToken#include_expired}
 
 ---
 
@@ -2771,8 +2804,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.category">category</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.deprecated">deprecated</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.editable">editable</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.eolAt">eolAt</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.label">label</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.scopes">scopes</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.visibility">visibility</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMeta">DataCloudflareAccountTokenPoliciesPermissionGroupsMeta</a></code> | *No description.* |
 
 ---
@@ -2801,20 +2840,80 @@ public java.lang.String getFqn();
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.key"></a>
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.category"></a>
 
 ```java
-public java.lang.String getKey();
+public java.lang.String getCategory();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.value"></a>
+##### `deprecated`<sup>Required</sup> <a name="deprecated" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.deprecated"></a>
 
 ```java
-public java.lang.String getValue();
+public java.lang.String getDeprecated();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `editable`<sup>Required</sup> <a name="editable" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.editable"></a>
+
+```java
+public java.lang.String getEditable();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `eolAt`<sup>Required</sup> <a name="eolAt" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.eolAt"></a>
+
+```java
+public java.lang.String getEolAt();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.label"></a>
+
+```java
+public java.lang.String getLabel();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.scopes"></a>
+
+```java
+public java.lang.String getScopes();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `visibility`<sup>Required</sup> <a name="visibility" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.visibility"></a>
+
+```java
+public java.lang.String getVisibility();
 ```
 
 - *Type:* java.lang.String

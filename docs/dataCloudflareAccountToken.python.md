@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountToken <a name="DataCloudflareAccountToken" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token cloudflare_account_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token cloudflare_account_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer"></a>
 
@@ -39,7 +39,7 @@ dataCloudflareAccountToken.DataCloudflareAccountToken(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.tokenId">token_id</a></code> | <code>str</code> | Token identifier tag. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
 
 ---
 
@@ -416,7 +416,7 @@ def put_filter(
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
 
 ---
 
@@ -426,7 +426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When true, includes recently-expired tokens in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#include_expired DataCloudflareAccountToken#include_expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#include_expired DataCloudflareAccountToken#include_expired}
 
 ---
 
@@ -562,7 +562,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -591,6 +591,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConditionOutputReference">DataCloudflareAccountTokenConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.creatorEmailAtCreation">creator_email_at_creation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilterOutputReference">DataCloudflareAccountTokenFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -600,6 +601,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.notBefore">not_before</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.policies">policies</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesList">DataCloudflareAccountTokenPoliciesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provisionerId">provisioner_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provisionerType">provisioner_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.filterInput">filter_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | *No description.* |
@@ -741,6 +744,16 @@ condition: DataCloudflareAccountTokenConditionOutputReference
 
 ---
 
+##### `creator_email_at_creation`<sup>Required</sup> <a name="creator_email_at_creation" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.creatorEmailAtCreation"></a>
+
+```python
+creator_email_at_creation: str
+```
+
+- *Type:* str
+
+---
+
 ##### `expires_on`<sup>Required</sup> <a name="expires_on" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.expiresOn"></a>
 
 ```python
@@ -828,6 +841,26 @@ policies: DataCloudflareAccountTokenPoliciesList
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesList">DataCloudflareAccountTokenPoliciesList</a>
+
+---
+
+##### `provisioner_id`<sup>Required</sup> <a name="provisioner_id" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provisionerId"></a>
+
+```python
+provisioner_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `provisioner_type`<sup>Required</sup> <a name="provisioner_type" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.property.provisionerType"></a>
+
+```python
+provisioner_type: str
+```
+
+- *Type:* str
 
 ---
 
@@ -966,7 +999,7 @@ dataCloudflareAccountToken.DataCloudflareAccountTokenConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.tokenId">token_id</a></code> | <code>str</code> | Token identifier tag. |
 
 ---
@@ -1051,7 +1084,7 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
 
 ---
 
@@ -1063,7 +1096,7 @@ filter: DataCloudflareAccountTokenFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
 
 ---
 
@@ -1077,7 +1110,7 @@ token_id: str
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
 
 ---
 
@@ -1113,7 +1146,7 @@ direction: str
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
 
 ---
 
@@ -1127,7 +1160,7 @@ include_expired: bool | IResolvable
 
 When true, includes recently-expired tokens in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#include_expired DataCloudflareAccountToken#include_expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#include_expired DataCloudflareAccountToken#include_expired}
 
 ---
 
@@ -2970,8 +3003,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.category">category</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.deprecated">deprecated</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.editable">editable</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.eolAt">eol_at</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.label">label</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.scopes">scopes</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMeta">DataCloudflareAccountTokenPoliciesPermissionGroupsMeta</a></code> | *No description.* |
 
 ---
@@ -3000,20 +3039,80 @@ fqn: str
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.key"></a>
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.category"></a>
 
 ```python
-key: str
+category: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.value"></a>
+##### `deprecated`<sup>Required</sup> <a name="deprecated" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.deprecated"></a>
 
 ```python
-value: str
+deprecated: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `editable`<sup>Required</sup> <a name="editable" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.editable"></a>
+
+```python
+editable: str
+```
+
+- *Type:* str
+
+---
+
+##### `eol_at`<sup>Required</sup> <a name="eol_at" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.eolAt"></a>
+
+```python
+eol_at: str
+```
+
+- *Type:* str
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.label"></a>
+
+```python
+label: str
+```
+
+- *Type:* str
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.scopes"></a>
+
+```python
+scopes: str
+```
+
+- *Type:* str
+
+---
+
+##### `visibility`<sup>Required</sup> <a name="visibility" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference.property.visibility"></a>
+
+```python
+visibility: str
 ```
 
 - *Type:* str

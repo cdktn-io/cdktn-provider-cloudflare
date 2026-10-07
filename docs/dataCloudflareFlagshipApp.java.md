@@ -4,7 +4,7 @@
 
 ### DataCloudflareFlagshipApp <a name="DataCloudflareFlagshipApp" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_app cloudflare_flagship_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_app cloudflare_flagship_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp.Initializer"></a>
 
@@ -35,8 +35,8 @@ DataCloudflareFlagshipApp.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp.Initializer.parameter.appId">appId</a></code> | <code>java.lang.String</code> | App identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID that owns the Flagship app. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipApp.Initializer.parameter.appId">appId</a></code> | <code>java.lang.String</code> | Flagship app ID returned when the app was created. |
 
 ---
 
@@ -104,9 +104,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_app#account_id DataCloudflareFlagshipApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_app#account_id DataCloudflareFlagshipApp#account_id}
 
 ---
 
@@ -114,9 +114,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-App identifier.
+Flagship app ID returned when the app was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_app#app_id DataCloudflareFlagshipApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_app#app_id DataCloudflareFlagshipApp#app_id}
 
 ---
 
@@ -461,7 +461,7 @@ The construct id used in the generated config for the DataCloudflareFlagshipApp 
 
 The id of the existing DataCloudflareFlagshipApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -764,8 +764,8 @@ DataCloudflareFlagshipAppConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipAppConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipAppConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipAppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipAppConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipAppConfig.property.appId">appId</a></code> | <code>java.lang.String</code> | App identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipAppConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID that owns the Flagship app. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApp.DataCloudflareFlagshipAppConfig.property.appId">appId</a></code> | <code>java.lang.String</code> | Flagship app ID returned when the app was created. |
 
 ---
 
@@ -847,9 +847,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_app#account_id DataCloudflareFlagshipApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_app#account_id DataCloudflareFlagshipApp#account_id}
 
 ---
 
@@ -861,9 +861,9 @@ public java.lang.String getAppId();
 
 - *Type:* java.lang.String
 
-App identifier.
+Flagship app ID returned when the app was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_app#app_id DataCloudflareFlagshipApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_app#app_id DataCloudflareFlagshipApp#app_id}
 
 ---
 

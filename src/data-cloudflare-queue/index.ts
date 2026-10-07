@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,240 +15,15 @@ export interface DataCloudflareQueueConfig extends cdktn.TerraformMetaArguments 
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue#account_id DataCloudflareQueue#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/queue#account_id DataCloudflareQueue#account_id}
   */
   readonly accountId?: string;
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue#queue_id DataCloudflareQueue#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/queue#queue_id DataCloudflareQueue#queue_id}
   */
   readonly queueId: string;
-}
-export interface DataCloudflareQueueConsumersSettingsEmail {
-}
-
-export function dataCloudflareQueueConsumersSettingsEmailToTerraform(struct?: DataCloudflareQueueConsumersSettingsEmail): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareQueueConsumersSettingsEmailToHclTerraform(struct?: DataCloudflareQueueConsumersSettingsEmail): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareQueueConsumersSettingsEmailOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataCloudflareQueueConsumersSettingsEmail | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareQueueConsumersSettingsEmail | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-}
-
-export class DataCloudflareQueueConsumersSettingsEmailList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataCloudflareQueueConsumersSettingsEmailOutputReference {
-    return new DataCloudflareQueueConsumersSettingsEmailOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataCloudflareQueueConsumersSettingsPagerduty {
-}
-
-export function dataCloudflareQueueConsumersSettingsPagerdutyToTerraform(struct?: DataCloudflareQueueConsumersSettingsPagerduty): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareQueueConsumersSettingsPagerdutyToHclTerraform(struct?: DataCloudflareQueueConsumersSettingsPagerduty): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareQueueConsumersSettingsPagerdutyOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataCloudflareQueueConsumersSettingsPagerduty | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareQueueConsumersSettingsPagerduty | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-}
-
-export class DataCloudflareQueueConsumersSettingsPagerdutyList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataCloudflareQueueConsumersSettingsPagerdutyOutputReference {
-    return new DataCloudflareQueueConsumersSettingsPagerdutyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataCloudflareQueueConsumersSettingsWebhooks {
-}
-
-export function dataCloudflareQueueConsumersSettingsWebhooksToTerraform(struct?: DataCloudflareQueueConsumersSettingsWebhooks): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareQueueConsumersSettingsWebhooksToHclTerraform(struct?: DataCloudflareQueueConsumersSettingsWebhooks): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareQueueConsumersSettingsWebhooksOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataCloudflareQueueConsumersSettingsWebhooks | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareQueueConsumersSettingsWebhooks | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-}
-
-export class DataCloudflareQueueConsumersSettingsWebhooksList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataCloudflareQueueConsumersSettingsWebhooksOutputReference {
-    return new DataCloudflareQueueConsumersSettingsWebhooksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
 }
 export interface DataCloudflareQueueConsumersSettings {
 }
@@ -304,12 +79,6 @@ export class DataCloudflareQueueConsumersSettingsOutputReference extends cdktn.C
     return this.getNumberAttribute('batch_size');
   }
 
-  // email - computed: true, optional: false, required: false
-  private _email = new DataCloudflareQueueConsumersSettingsEmailList(this, "email", false);
-  public get email() {
-    return this._email;
-  }
-
   // max_concurrency - computed: true, optional: false, required: false
   public get maxConcurrency() {
     return this.getNumberAttribute('max_concurrency');
@@ -325,12 +94,6 @@ export class DataCloudflareQueueConsumersSettingsOutputReference extends cdktn.C
     return this.getNumberAttribute('max_wait_time_ms');
   }
 
-  // pagerduty - computed: true, optional: false, required: false
-  private _pagerduty = new DataCloudflareQueueConsumersSettingsPagerdutyList(this, "pagerduty", false);
-  public get pagerduty() {
-    return this._pagerduty;
-  }
-
   // retry_delay - computed: true, optional: false, required: false
   public get retryDelay() {
     return this.getNumberAttribute('retry_delay');
@@ -339,12 +102,6 @@ export class DataCloudflareQueueConsumersSettingsOutputReference extends cdktn.C
   // visibility_timeout_ms - computed: true, optional: false, required: false
   public get visibilityTimeoutMs() {
     return this.getNumberAttribute('visibility_timeout_ms');
-  }
-
-  // webhooks - computed: true, optional: false, required: false
-  private _webhooks = new DataCloudflareQueueConsumersSettingsWebhooksList(this, "webhooks", false);
-  public get webhooks() {
-    return this._webhooks;
   }
 }
 export interface DataCloudflareQueueConsumers {
@@ -604,7 +361,7 @@ export class DataCloudflareQueueSettingsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue cloudflare_queue}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/queue cloudflare_queue}
 */
 export class DataCloudflareQueue extends cdktn.TerraformDataSource {
 
@@ -620,7 +377,7 @@ export class DataCloudflareQueue extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareQueue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareQueue to import
-  * @param importFromId The id of the existing DataCloudflareQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareQueue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -632,7 +389,7 @@ export class DataCloudflareQueue extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue cloudflare_queue} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/queue cloudflare_queue} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -643,7 +400,7 @@ export class DataCloudflareQueue extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_queue',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

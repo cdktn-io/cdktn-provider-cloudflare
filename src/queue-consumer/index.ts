@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,33 +15,33 @@ export interface QueueConsumerConfig extends cdktn.TerraformMetaArguments {
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}
   */
   readonly deadLetterQueue?: string;
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
   */
   readonly queueId: string;
   /**
   * Name of a Worker
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
   */
   readonly scriptName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#settings QueueConsumer#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#settings QueueConsumer#settings}
   */
   readonly settings?: QueueConsumerSettings;
   /**
   * Available values: "worker", "http_pull", "notification".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#type QueueConsumer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#type QueueConsumer#type}
   */
   readonly type: string;
 }
@@ -49,7 +49,7 @@ export interface QueueConsumerSettingsEmail {
   /**
   * The email address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#id QueueConsumer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ export interface QueueConsumerSettingsPagerduty {
   /**
   * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#id QueueConsumer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -285,7 +285,7 @@ export interface QueueConsumerSettingsWebhooks {
   /**
   * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#id QueueConsumer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#id QueueConsumer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -403,53 +403,53 @@ export interface QueueConsumerSettings {
   /**
   * The maximum number of messages to include in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
   */
   readonly batchSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#email QueueConsumer#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#email QueueConsumer#email}
   */
   readonly email?: QueueConsumerSettingsEmail[] | cdktn.IResolvable;
   /**
   * Maximum number of concurrent consumers that may consume from this Queue. Set to `null` to automatically opt in to the platform's maximum (recommended).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
   */
   readonly maxConcurrency?: number;
   /**
   * The maximum number of retries
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * The number of milliseconds to wait for a batch to fill up before attempting to deliver it
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
   */
   readonly maxWaitTimeMs?: number;
   /**
   * PagerDuty notification destinations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#pagerduty QueueConsumer#pagerduty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#pagerduty QueueConsumer#pagerduty}
   */
   readonly pagerduty?: QueueConsumerSettingsPagerduty[] | cdktn.IResolvable;
   /**
   * The number of seconds to delay before making the message available for another attempt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
   */
   readonly retryDelay?: number;
   /**
   * The number of milliseconds that a message is exclusively leased. After the timeout, the message becomes available for another attempt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
   */
   readonly visibilityTimeoutMs?: number;
   /**
   * Webhook notification destinations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#webhooks QueueConsumer#webhooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#webhooks QueueConsumer#webhooks}
   */
   readonly webhooks?: QueueConsumerSettingsWebhooks[] | cdktn.IResolvable;
 }
@@ -775,7 +775,7 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer cloudflare_queue_consumer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer cloudflare_queue_consumer}
 */
 export class QueueConsumer extends cdktn.TerraformResource {
 
@@ -791,7 +791,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a QueueConsumer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QueueConsumer to import
-  * @param importFromId The id of the existing QueueConsumer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QueueConsumer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QueueConsumer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -803,7 +803,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -814,7 +814,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_queue_consumer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,27 +15,27 @@ export interface FieldExtractorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Cloudflare account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#account_id FieldExtractor#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#account_id FieldExtractor#account_id}
   */
   readonly accountId: string;
   /**
   * Extractor type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#extractor FieldExtractor#extractor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#extractor FieldExtractor#extractor}
   */
   readonly extractor: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#rules FieldExtractor#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#rules FieldExtractor#rules}
   */
   readonly rules: FieldExtractorRules[] | cdktn.IResolvable;
 }
 export interface FieldExtractorRulesFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#expression FieldExtractor#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#expression FieldExtractor#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#name FieldExtractor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#name FieldExtractor#name}
   */
   readonly name: string;
 }
@@ -174,15 +174,15 @@ export class FieldExtractorRulesFieldsList extends cdktn.ComplexList {
 }
 export interface FieldExtractorRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#description FieldExtractor#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#description FieldExtractor#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#fields FieldExtractor#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#fields FieldExtractor#fields}
   */
   readonly fields: FieldExtractorRulesFields[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#ref FieldExtractor#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#ref FieldExtractor#ref}
   */
   readonly ref: string;
 }
@@ -350,7 +350,7 @@ export class FieldExtractorRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor cloudflare_field_extractor}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor cloudflare_field_extractor}
 */
 export class FieldExtractor extends cdktn.TerraformResource {
 
@@ -366,7 +366,7 @@ export class FieldExtractor extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FieldExtractor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FieldExtractor to import
-  * @param importFromId The id of the existing FieldExtractor that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FieldExtractor that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FieldExtractor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -378,7 +378,7 @@ export class FieldExtractor extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor cloudflare_field_extractor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor cloudflare_field_extractor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -389,7 +389,7 @@ export class FieldExtractor extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_field_extractor',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

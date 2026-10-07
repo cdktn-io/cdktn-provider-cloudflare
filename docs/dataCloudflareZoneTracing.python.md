@@ -4,7 +4,7 @@
 
 ### DataCloudflareZoneTracing <a name="DataCloudflareZoneTracing" id="@cdktn/provider-cloudflare.dataCloudflareZoneTracing.DataCloudflareZoneTracing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing cloudflare_zone_tracing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing cloudflare_zone_tracing}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZoneTracing.DataCloudflareZoneTracing.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Specify the zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing#zone_id DataCloudflareZoneTracing#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing#zone_id DataCloudflareZoneTracing#zone_id}
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataCloudflareZoneTracing 
 
 The id of the existing DataCloudflareZoneTracing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ zone_id: str
 
 Specify the zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing#zone_id DataCloudflareZoneTracing#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing#zone_id DataCloudflareZoneTracing#zone_id}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareFlagshipFlagConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Cloudflare account ID.
+  * Cloudflare account ID that owns the Flagship app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#account_id DataCloudflareFlagshipFlag#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#account_id DataCloudflareFlagshipFlag#account_id}
   */
   readonly accountId: string;
   /**
-  * App identifier.
+  * Flagship app ID returned when the app was created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#app_id DataCloudflareFlagshipFlag#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#app_id DataCloudflareFlagshipFlag#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#filter DataCloudflareFlagshipFlag#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#filter DataCloudflareFlagshipFlag#filter}
   */
   readonly filter?: DataCloudflareFlagshipFlagFilter;
   /**
-  * Flag key (slug).
+  * Case-sensitive key identifying the flag within the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#flag_key DataCloudflareFlagshipFlag#flag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#flag_key DataCloudflareFlagshipFlag#flag_key}
   */
   readonly flagKey?: string;
 }
@@ -39,9 +39,9 @@ export interface DataCloudflareFlagshipFlagFilter {
   /**
   * Max items to return (1–200).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#limit DataCloudflareFlagshipFlag#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#limit DataCloudflareFlagshipFlag#limit}
   */
-  readonly limit?: string;
+  readonly limit?: number;
 }
 
 export function dataCloudflareFlagshipFlagFilterToTerraform(struct?: DataCloudflareFlagshipFlagFilter | cdktn.IResolvable): any {
@@ -50,7 +50,7 @@ export function dataCloudflareFlagshipFlagFilterToTerraform(struct?: DataCloudfl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    limit: cdktn.stringToTerraform(struct!.limit),
+    limit: cdktn.numberToTerraform(struct!.limit),
   }
 }
 
@@ -62,10 +62,10 @@ export function dataCloudflareFlagshipFlagFilterToHclTerraform(struct?: DataClou
   }
   const attrs = {
     limit: {
-      value: cdktn.stringToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
-      storageClassType: "string",
+      storageClassType: "number",
     },
   };
 
@@ -116,11 +116,11 @@ export class DataCloudflareFlagshipFlagFilterOutputReference extends cdktn.Compl
   }
 
   // limit - computed: false, optional: true, required: false
-  private _limit?: string; 
+  private _limit?: number; 
   public get limit() {
-    return this.getStringAttribute('limit');
+    return this.getNumberAttribute('limit');
   }
-  public set limit(value: string) {
+  public set limit(value: number) {
     this._limit = value;
   }
   public resetLimit() {
@@ -476,7 +476,7 @@ export class DataCloudflareFlagshipFlagRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}
 */
 export class DataCloudflareFlagshipFlag extends cdktn.TerraformDataSource {
 
@@ -492,7 +492,7 @@ export class DataCloudflareFlagshipFlag extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareFlagshipFlag resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareFlagshipFlag to import
-  * @param importFromId The id of the existing DataCloudflareFlagshipFlag that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareFlagshipFlag that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareFlagshipFlag to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -504,7 +504,7 @@ export class DataCloudflareFlagshipFlag extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -515,7 +515,7 @@ export class DataCloudflareFlagshipFlag extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_flagship_flag',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

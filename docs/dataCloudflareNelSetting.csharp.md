@@ -4,7 +4,7 @@
 
 ### DataCloudflareNelSetting <a name="DataCloudflareNelSetting" id="@cdktn/provider-cloudflare.dataCloudflareNelSetting.DataCloudflareNelSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/nel_setting cloudflare_nel_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/nel_setting cloudflare_nel_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareNelSetting.DataCloudflareNelSetting.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareNelSetting t
 
 The id of the existing DataCloudflareNelSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/nel_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/nel_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ public string ZoneId { get; set; }
 
 Identifier of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/nel_setting#zone_id DataCloudflareNelSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/nel_setting#zone_id DataCloudflareNelSetting#zone_id}
 
 ---
 

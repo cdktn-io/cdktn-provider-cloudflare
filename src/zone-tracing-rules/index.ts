@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface ZoneTracingRulesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Trace rules in evaluation order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#rules ZoneTracingRules#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#rules ZoneTracingRules#rules}
   */
   readonly rules: ZoneTracingRulesRules[] | cdktn.IResolvable;
   /**
   * Specify the zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#zone_id ZoneTracingRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#zone_id ZoneTracingRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -29,7 +29,7 @@ export interface ZoneTracingRulesRulesActionParameters {
   /**
   * The ratio of requests sampled for tracing, from 0 to 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#sampling_ratio ZoneTracingRules#sampling_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#sampling_ratio ZoneTracingRules#sampling_ratio}
   */
   readonly samplingRatio: number;
 }
@@ -122,25 +122,25 @@ export interface ZoneTracingRulesRules {
   /**
   * Available values: "set_trace_settings".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#action ZoneTracingRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#action ZoneTracingRules#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#action_parameters ZoneTracingRules#action_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#action_parameters ZoneTracingRules#action_parameters}
   */
   readonly actionParameters: ZoneTracingRulesRulesActionParameters;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#description ZoneTracingRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#description ZoneTracingRules#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#enabled ZoneTracingRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#enabled ZoneTracingRules#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * A Rules language expression that selects requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#expression ZoneTracingRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#expression ZoneTracingRules#expression}
   */
   readonly expression: string;
 }
@@ -357,7 +357,7 @@ export class ZoneTracingRulesRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules cloudflare_zone_tracing_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules cloudflare_zone_tracing_rules}
 */
 export class ZoneTracingRules extends cdktn.TerraformResource {
 
@@ -373,7 +373,7 @@ export class ZoneTracingRules extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ZoneTracingRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneTracingRules to import
-  * @param importFromId The id of the existing ZoneTracingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneTracingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneTracingRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -385,7 +385,7 @@ export class ZoneTracingRules extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing_rules cloudflare_zone_tracing_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing_rules cloudflare_zone_tracing_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -396,7 +396,7 @@ export class ZoneTracingRules extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_zone_tracing_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

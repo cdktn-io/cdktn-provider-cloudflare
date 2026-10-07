@@ -4,7 +4,7 @@
 
 ### AiGateway <a name="AiGateway" id="@cdktn/provider-cloudflare.aiGateway.AiGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGateway.AiGateway.Initializer"></a>
 
@@ -687,7 +687,7 @@ The construct id used in the generated config for the AiGateway to import.
 
 The id of the existing AiGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1542,32 +1542,32 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#account_id AiGateway#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.cacheInvalidateOnUpdate">CacheInvalidateOnUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#cache_invalidate_on_update AiGateway#cache_invalidate_on_update}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.cacheTtl">CacheTtl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#cache_ttl AiGateway#cache_ttl}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.collectLogs">CollectLogs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#collect_logs AiGateway#collect_logs}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.id">Id</a></code> | <code>*string</code> | gateway id. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.rateLimitingInterval">RateLimitingInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#rate_limiting_interval AiGateway#rate_limiting_interval}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.rateLimitingLimit">RateLimitingLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#rate_limiting_limit AiGateway#rate_limiting_limit}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.authentication">Authentication</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#authentication AiGateway#authentication}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#account_id AiGateway#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.cacheInvalidateOnUpdate">CacheInvalidateOnUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#cache_invalidate_on_update AiGateway#cache_invalidate_on_update}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.cacheTtl">CacheTtl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#cache_ttl AiGateway#cache_ttl}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.collectLogs">CollectLogs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#collect_logs AiGateway#collect_logs}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Unique identifier of the AI Gateway within the account. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.rateLimitingInterval">RateLimitingInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#rate_limiting_interval AiGateway#rate_limiting_interval}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.rateLimitingLimit">RateLimitingLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#rate_limiting_limit AiGateway#rate_limiting_limit}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.authentication">Authentication</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#authentication AiGateway#authentication}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.byokOnly">ByokOnly</a></code> | <code>interface{}</code> | Requires customer-provided provider credentials and prevents fallback to Unified Billing. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.dlp">Dlp</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp">AiGatewayDlp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#dlp AiGateway#dlp}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.guardrails">Guardrails</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrails">AiGatewayGuardrails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#guardrails AiGateway#guardrails}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logClassification">LogClassification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#log_classification AiGateway#log_classification}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logManagement">LogManagement</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#log_management AiGateway#log_management}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.dlp">Dlp</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp">AiGatewayDlp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#dlp AiGateway#dlp}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.guardrails">Guardrails</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrails">AiGatewayGuardrails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#guardrails AiGateway#guardrails}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logClassification">LogClassification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#log_classification AiGateway#log_classification}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logManagement">LogManagement</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#log_management AiGateway#log_management}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logManagementStrategy">LogManagementStrategy</a></code> | <code>*string</code> | Available values: "STOP_INSERTING", "DELETE_OLDEST". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logpush">Logpush</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#logpush AiGateway#logpush}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logpushPublicKey">LogpushPublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#logpush_public_key AiGateway#logpush_public_key}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.otel">Otel</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#otel AiGateway#otel}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logpush">Logpush</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#logpush AiGateway#logpush}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.logpushPublicKey">LogpushPublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#logpush_public_key AiGateway#logpush_public_key}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.otel">Otel</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#otel AiGateway#otel}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.rateLimitingTechnique">RateLimitingTechnique</a></code> | <code>*string</code> | Available values: "fixed", "sliding". |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.retryBackoff">RetryBackoff</a></code> | <code>*string</code> | Backoff strategy for retry delays Available values: "constant", "linear", "exponential". |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.retryDelay">RetryDelay</a></code> | <code>*f64</code> | Delay between retry attempts in milliseconds (0-60000). |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.retryMaxAttempts">RetryMaxAttempts</a></code> | <code>*f64</code> | Maximum number of retry attempts for failed requests (1-5). |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.spendLimits">SpendLimits</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimits">AiGatewaySpendLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#spend_limits AiGateway#spend_limits}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.storeId">StoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#store_id AiGateway#store_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.stripe">Stripe</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripe">AiGatewayStripe</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#stripe AiGateway#stripe}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.spendLimits">SpendLimits</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimits">AiGatewaySpendLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#spend_limits AiGateway#spend_limits}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.storeId">StoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#store_id AiGateway#store_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.stripe">Stripe</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripe">AiGatewayStripe</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#stripe AiGateway#stripe}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.workersAiBillingMode">WorkersAiBillingMode</a></code> | <code>*string</code> | Controls how Workers AI inference calls routed through this gateway are billed. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.zdr">Zdr</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#zdr AiGateway#zdr}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayConfig.property.zdr">Zdr</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#zdr AiGateway#zdr}. |
 
 ---
 
@@ -1649,7 +1649,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#account_id AiGateway#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#account_id AiGateway#account_id}.
 
 ---
 
@@ -1661,7 +1661,7 @@ CacheInvalidateOnUpdate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#cache_invalidate_on_update AiGateway#cache_invalidate_on_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#cache_invalidate_on_update AiGateway#cache_invalidate_on_update}.
 
 ---
 
@@ -1673,7 +1673,7 @@ CacheTtl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#cache_ttl AiGateway#cache_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#cache_ttl AiGateway#cache_ttl}.
 
 ---
 
@@ -1685,7 +1685,7 @@ CollectLogs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#collect_logs AiGateway#collect_logs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#collect_logs AiGateway#collect_logs}.
 
 ---
 
@@ -1697,9 +1697,9 @@ Id *string
 
 - *Type:* *string
 
-gateway id.
+Unique identifier of the AI Gateway within the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#id AiGateway#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#id AiGateway#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1714,7 +1714,7 @@ RateLimitingInterval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#rate_limiting_interval AiGateway#rate_limiting_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#rate_limiting_interval AiGateway#rate_limiting_interval}.
 
 ---
 
@@ -1726,7 +1726,7 @@ RateLimitingLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#rate_limiting_limit AiGateway#rate_limiting_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#rate_limiting_limit AiGateway#rate_limiting_limit}.
 
 ---
 
@@ -1738,7 +1738,7 @@ Authentication interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#authentication AiGateway#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#authentication AiGateway#authentication}.
 
 ---
 
@@ -1752,7 +1752,7 @@ ByokOnly interface{}
 
 Requires customer-provided provider credentials and prevents fallback to Unified Billing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#byok_only AiGateway#byok_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#byok_only AiGateway#byok_only}
 
 ---
 
@@ -1764,7 +1764,7 @@ Dlp AiGatewayDlp
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp">AiGatewayDlp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#dlp AiGateway#dlp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#dlp AiGateway#dlp}.
 
 ---
 
@@ -1776,7 +1776,7 @@ Guardrails AiGatewayGuardrails
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrails">AiGatewayGuardrails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#guardrails AiGateway#guardrails}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#guardrails AiGateway#guardrails}.
 
 ---
 
@@ -1788,7 +1788,7 @@ LogClassification interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#log_classification AiGateway#log_classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#log_classification AiGateway#log_classification}.
 
 ---
 
@@ -1800,7 +1800,7 @@ LogManagement *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#log_management AiGateway#log_management}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#log_management AiGateway#log_management}.
 
 ---
 
@@ -1814,7 +1814,7 @@ LogManagementStrategy *string
 
 Available values: "STOP_INSERTING", "DELETE_OLDEST".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#log_management_strategy AiGateway#log_management_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#log_management_strategy AiGateway#log_management_strategy}
 
 ---
 
@@ -1826,7 +1826,7 @@ Logpush interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#logpush AiGateway#logpush}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#logpush AiGateway#logpush}.
 
 ---
 
@@ -1838,7 +1838,7 @@ LogpushPublicKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#logpush_public_key AiGateway#logpush_public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#logpush_public_key AiGateway#logpush_public_key}.
 
 ---
 
@@ -1850,7 +1850,7 @@ Otel interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#otel AiGateway#otel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#otel AiGateway#otel}.
 
 ---
 
@@ -1864,7 +1864,7 @@ RateLimitingTechnique *string
 
 Available values: "fixed", "sliding".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#rate_limiting_technique AiGateway#rate_limiting_technique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#rate_limiting_technique AiGateway#rate_limiting_technique}
 
 ---
 
@@ -1878,7 +1878,7 @@ RetryBackoff *string
 
 Backoff strategy for retry delays Available values: "constant", "linear", "exponential".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#retry_backoff AiGateway#retry_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#retry_backoff AiGateway#retry_backoff}
 
 ---
 
@@ -1892,7 +1892,7 @@ RetryDelay *f64
 
 Delay between retry attempts in milliseconds (0-60000).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#retry_delay AiGateway#retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#retry_delay AiGateway#retry_delay}
 
 ---
 
@@ -1906,7 +1906,7 @@ RetryMaxAttempts *f64
 
 Maximum number of retry attempts for failed requests (1-5).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#retry_max_attempts AiGateway#retry_max_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#retry_max_attempts AiGateway#retry_max_attempts}
 
 ---
 
@@ -1918,7 +1918,7 @@ SpendLimits AiGatewaySpendLimits
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimits">AiGatewaySpendLimits</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#spend_limits AiGateway#spend_limits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#spend_limits AiGateway#spend_limits}.
 
 ---
 
@@ -1930,7 +1930,7 @@ StoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#store_id AiGateway#store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#store_id AiGateway#store_id}.
 
 ---
 
@@ -1942,7 +1942,7 @@ Stripe AiGatewayStripe
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripe">AiGatewayStripe</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#stripe AiGateway#stripe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#stripe AiGateway#stripe}.
 
 ---
 
@@ -1959,7 +1959,7 @@ Controls how Workers AI inference calls routed through this gateway are billed.
 'postpaid' bills the account directly through Workers AI; 'unified' deducts credits via AI Gateway using neuron-based pricing and delegates billing to AI Gateway.
 Available values: "postpaid", "unified".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#workers_ai_billing_mode AiGateway#workers_ai_billing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#workers_ai_billing_mode AiGateway#workers_ai_billing_mode}
 
 ---
 
@@ -1971,7 +1971,7 @@ Zdr interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#zdr AiGateway#zdr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#zdr AiGateway#zdr}.
 
 ---
 
@@ -1994,10 +1994,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#enabled AiGateway#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#enabled AiGateway#enabled}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp.property.action">Action</a></code> | <code>*string</code> | Available values: "BLOCK", "FLAG". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp.property.policies">Policies</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#policies AiGateway#policies}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp.property.profiles">Profiles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#profiles AiGateway#profiles}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp.property.policies">Policies</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#policies AiGateway#policies}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlp.property.profiles">Profiles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#profiles AiGateway#profiles}. |
 
 ---
 
@@ -2009,7 +2009,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#enabled AiGateway#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#enabled AiGateway#enabled}.
 
 ---
 
@@ -2023,7 +2023,7 @@ Action *string
 
 Available values: "BLOCK", "FLAG".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#action AiGateway#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#action AiGateway#action}
 
 ---
 
@@ -2035,7 +2035,7 @@ Policies interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#policies AiGateway#policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#policies AiGateway#policies}.
 
 ---
 
@@ -2047,7 +2047,7 @@ Profiles *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#profiles AiGateway#profiles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#profiles AiGateway#profiles}.
 
 ---
 
@@ -2072,10 +2072,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.action">Action</a></code> | <code>*string</code> | Available values: "FLAG", "BLOCK". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.check">Check</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#check AiGateway#check}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#enabled AiGateway#enabled}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#id AiGateway#id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.profiles">Profiles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#profiles AiGateway#profiles}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.check">Check</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#check AiGateway#check}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#enabled AiGateway#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#id AiGateway#id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayDlpPolicies.property.profiles">Profiles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#profiles AiGateway#profiles}. |
 
 ---
 
@@ -2089,7 +2089,7 @@ Action *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#action AiGateway#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#action AiGateway#action}
 
 ---
 
@@ -2101,7 +2101,7 @@ Check *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#check AiGateway#check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#check AiGateway#check}.
 
 ---
 
@@ -2113,7 +2113,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#enabled AiGateway#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#enabled AiGateway#enabled}.
 
 ---
 
@@ -2125,7 +2125,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#id AiGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#id AiGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2140,7 +2140,7 @@ Profiles *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#profiles AiGateway#profiles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#profiles AiGateway#profiles}.
 
 ---
 
@@ -2161,8 +2161,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrails.property.prompt">Prompt</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsPrompt">AiGatewayGuardrailsPrompt</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#prompt AiGateway#prompt}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrails.property.response">Response</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsResponse">AiGatewayGuardrailsResponse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#response AiGateway#response}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrails.property.prompt">Prompt</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsPrompt">AiGatewayGuardrailsPrompt</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#prompt AiGateway#prompt}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrails.property.response">Response</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsResponse">AiGatewayGuardrailsResponse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#response AiGateway#response}. |
 
 ---
 
@@ -2174,7 +2174,7 @@ Prompt AiGatewayGuardrailsPrompt
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsPrompt">AiGatewayGuardrailsPrompt</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#prompt AiGateway#prompt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#prompt AiGateway#prompt}.
 
 ---
 
@@ -2186,7 +2186,7 @@ Response AiGatewayGuardrailsResponse
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayGuardrailsResponse">AiGatewayGuardrailsResponse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#response AiGateway#response}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#response AiGateway#response}.
 
 ---
 
@@ -2246,7 +2246,7 @@ P1 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#p1 AiGateway#p1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#p1 AiGateway#p1}
 
 ---
 
@@ -2260,7 +2260,7 @@ S1 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s1 AiGateway#s1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s1 AiGateway#s1}
 
 ---
 
@@ -2274,7 +2274,7 @@ S10 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s10 AiGateway#s10}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s10 AiGateway#s10}
 
 ---
 
@@ -2288,7 +2288,7 @@ S11 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s11 AiGateway#s11}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s11 AiGateway#s11}
 
 ---
 
@@ -2302,7 +2302,7 @@ S12 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s12 AiGateway#s12}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s12 AiGateway#s12}
 
 ---
 
@@ -2316,7 +2316,7 @@ S13 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s13 AiGateway#s13}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s13 AiGateway#s13}
 
 ---
 
@@ -2330,7 +2330,7 @@ S2 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s2 AiGateway#s2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s2 AiGateway#s2}
 
 ---
 
@@ -2344,7 +2344,7 @@ S3 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s3 AiGateway#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s3 AiGateway#s3}
 
 ---
 
@@ -2358,7 +2358,7 @@ S4 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s4 AiGateway#s4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s4 AiGateway#s4}
 
 ---
 
@@ -2372,7 +2372,7 @@ S5 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s5 AiGateway#s5}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s5 AiGateway#s5}
 
 ---
 
@@ -2386,7 +2386,7 @@ S6 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s6 AiGateway#s6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s6 AiGateway#s6}
 
 ---
 
@@ -2400,7 +2400,7 @@ S7 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s7 AiGateway#s7}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s7 AiGateway#s7}
 
 ---
 
@@ -2414,7 +2414,7 @@ S8 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s8 AiGateway#s8}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s8 AiGateway#s8}
 
 ---
 
@@ -2428,7 +2428,7 @@ S9 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s9 AiGateway#s9}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s9 AiGateway#s9}
 
 ---
 
@@ -2488,7 +2488,7 @@ P1 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#p1 AiGateway#p1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#p1 AiGateway#p1}
 
 ---
 
@@ -2502,7 +2502,7 @@ S1 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s1 AiGateway#s1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s1 AiGateway#s1}
 
 ---
 
@@ -2516,7 +2516,7 @@ S10 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s10 AiGateway#s10}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s10 AiGateway#s10}
 
 ---
 
@@ -2530,7 +2530,7 @@ S11 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s11 AiGateway#s11}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s11 AiGateway#s11}
 
 ---
 
@@ -2544,7 +2544,7 @@ S12 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s12 AiGateway#s12}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s12 AiGateway#s12}
 
 ---
 
@@ -2558,7 +2558,7 @@ S13 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s13 AiGateway#s13}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s13 AiGateway#s13}
 
 ---
 
@@ -2572,7 +2572,7 @@ S2 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s2 AiGateway#s2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s2 AiGateway#s2}
 
 ---
 
@@ -2586,7 +2586,7 @@ S3 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s3 AiGateway#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s3 AiGateway#s3}
 
 ---
 
@@ -2600,7 +2600,7 @@ S4 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s4 AiGateway#s4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s4 AiGateway#s4}
 
 ---
 
@@ -2614,7 +2614,7 @@ S5 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s5 AiGateway#s5}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s5 AiGateway#s5}
 
 ---
 
@@ -2628,7 +2628,7 @@ S6 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s6 AiGateway#s6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s6 AiGateway#s6}
 
 ---
 
@@ -2642,7 +2642,7 @@ S7 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s7 AiGateway#s7}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s7 AiGateway#s7}
 
 ---
 
@@ -2656,7 +2656,7 @@ S8 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s8 AiGateway#s8}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s8 AiGateway#s8}
 
 ---
 
@@ -2670,7 +2670,7 @@ S9 *string
 
 Available values: "FLAG", "BLOCK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#s9 AiGateway#s9}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#s9 AiGateway#s9}
 
 ---
 
@@ -2693,9 +2693,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayOtel.property.headers">Headers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#headers AiGateway#headers}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayOtel.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#url AiGateway#url}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayOtel.property.authorization">Authorization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#authorization AiGateway#authorization}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayOtel.property.headers">Headers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#headers AiGateway#headers}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayOtel.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#url AiGateway#url}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayOtel.property.authorization">Authorization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#authorization AiGateway#authorization}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayOtel.property.contentType">ContentType</a></code> | <code>*string</code> | Available values: "json", "protobuf". |
 
 ---
@@ -2708,7 +2708,7 @@ Headers *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#headers AiGateway#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#headers AiGateway#headers}.
 
 ---
 
@@ -2720,7 +2720,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#url AiGateway#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#url AiGateway#url}.
 
 ---
 
@@ -2732,7 +2732,7 @@ Authorization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#authorization AiGateway#authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#authorization AiGateway#authorization}.
 
 ---
 
@@ -2746,7 +2746,7 @@ ContentType *string
 
 Available values: "json", "protobuf".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#content_type AiGateway#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#content_type AiGateway#content_type}
 
 ---
 
@@ -2767,8 +2767,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimits.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#enabled AiGateway#enabled}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimits.property.rules">Rules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#rules AiGateway#rules}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimits.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#enabled AiGateway#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimits.property.rules">Rules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#rules AiGateway#rules}. |
 
 ---
 
@@ -2780,7 +2780,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#enabled AiGateway#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#enabled AiGateway#enabled}.
 
 ---
 
@@ -2792,7 +2792,7 @@ Rules interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#rules AiGateway#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#rules AiGateway#rules}.
 
 ---
 
@@ -2820,14 +2820,14 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.limit">Limit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#limit AiGateway#limit}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.limit">Limit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#limit AiGateway#limit}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.limitType">LimitType</a></code> | <code>*string</code> | Available values: "cost". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.window">Window</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#window AiGateway#window}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.aiGatewayProvider">AiGatewayProvider</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider">AiGatewaySpendLimitsRulesAiGatewayProvider</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#ai_gateway_provider AiGateway#ai_gateway_provider}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#enabled AiGateway#enabled}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#id AiGateway#id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.metadata">Metadata</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#metadata AiGateway#metadata}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.model">Model</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesModel">AiGatewaySpendLimitsRulesModel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#model AiGateway#model}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.window">Window</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#window AiGateway#window}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.aiGatewayProvider">AiGatewayProvider</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider">AiGatewaySpendLimitsRulesAiGatewayProvider</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#ai_gateway_provider AiGateway#ai_gateway_provider}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#enabled AiGateway#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#id AiGateway#id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.metadata">Metadata</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#metadata AiGateway#metadata}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.model">Model</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesModel">AiGatewaySpendLimitsRulesModel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#model AiGateway#model}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRules.property.technique">Technique</a></code> | <code>*string</code> | Available values: "fixed", "sliding". |
 
 ---
@@ -2840,7 +2840,7 @@ Limit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#limit AiGateway#limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#limit AiGateway#limit}.
 
 ---
 
@@ -2854,7 +2854,7 @@ LimitType *string
 
 Available values: "cost".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#limit_type AiGateway#limit_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#limit_type AiGateway#limit_type}
 
 ---
 
@@ -2866,7 +2866,7 @@ Window *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#window AiGateway#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#window AiGateway#window}.
 
 ---
 
@@ -2878,7 +2878,7 @@ AiGatewayProvider AiGatewaySpendLimitsRulesAiGatewayProvider
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider">AiGatewaySpendLimitsRulesAiGatewayProvider</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#ai_gateway_provider AiGateway#ai_gateway_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#ai_gateway_provider AiGateway#ai_gateway_provider}.
 
 ---
 
@@ -2890,7 +2890,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#enabled AiGateway#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#enabled AiGateway#enabled}.
 
 ---
 
@@ -2902,7 +2902,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#id AiGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#id AiGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2917,7 +2917,7 @@ Metadata interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#metadata AiGateway#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#metadata AiGateway#metadata}.
 
 ---
 
@@ -2929,7 +2929,7 @@ Model AiGatewaySpendLimitsRulesModel
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesModel">AiGatewaySpendLimitsRulesModel</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#model AiGateway#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#model AiGateway#model}.
 
 ---
 
@@ -2943,7 +2943,7 @@ Technique *string
 
 Available values: "fixed", "sliding".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#technique AiGateway#technique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#technique AiGateway#technique}
 
 ---
 
@@ -2965,7 +2965,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider.property.mode">Mode</a></code> | <code>*string</code> | Available values: "filter". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#values AiGateway#values}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesAiGatewayProvider.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#values AiGateway#values}. |
 
 ---
 
@@ -2979,7 +2979,7 @@ Mode *string
 
 Available values: "filter".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#mode AiGateway#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#mode AiGateway#mode}
 
 ---
 
@@ -2991,7 +2991,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#values AiGateway#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#values AiGateway#values}.
 
 ---
 
@@ -3013,7 +3013,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesMetadata.property.mode">Mode</a></code> | <code>*string</code> | Available values: "partition", "filter". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesMetadata.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#values AiGateway#values}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesMetadata.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#values AiGateway#values}. |
 
 ---
 
@@ -3027,7 +3027,7 @@ Mode *string
 
 Available values: "partition", "filter".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#mode AiGateway#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#mode AiGateway#mode}
 
 ---
 
@@ -3039,7 +3039,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#values AiGateway#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#values AiGateway#values}.
 
 ---
 
@@ -3061,7 +3061,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesModel.property.mode">Mode</a></code> | <code>*string</code> | Available values: "filter". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesModel.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#values AiGateway#values}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewaySpendLimitsRulesModel.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#values AiGateway#values}. |
 
 ---
 
@@ -3075,7 +3075,7 @@ Mode *string
 
 Available values: "filter".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#mode AiGateway#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#mode AiGateway#mode}
 
 ---
 
@@ -3087,7 +3087,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#values AiGateway#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#values AiGateway#values}.
 
 ---
 
@@ -3108,8 +3108,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripe.property.authorization">Authorization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#authorization AiGateway#authorization}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripe.property.usageEvents">UsageEvents</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#usage_events AiGateway#usage_events}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripe.property.authorization">Authorization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#authorization AiGateway#authorization}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripe.property.usageEvents">UsageEvents</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#usage_events AiGateway#usage_events}. |
 
 ---
 
@@ -3121,7 +3121,7 @@ Authorization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#authorization AiGateway#authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#authorization AiGateway#authorization}.
 
 ---
 
@@ -3133,7 +3133,7 @@ UsageEvents interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#usage_events AiGateway#usage_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#usage_events AiGateway#usage_events}.
 
 ---
 
@@ -3153,7 +3153,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripeUsageEvents.property.payload">Payload</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#payload AiGateway#payload}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGateway.AiGatewayStripeUsageEvents.property.payload">Payload</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#payload AiGateway#payload}. |
 
 ---
 
@@ -3165,7 +3165,7 @@ Payload *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway#payload AiGateway#payload}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/ai_gateway#payload AiGateway#payload}.
 
 ---
 

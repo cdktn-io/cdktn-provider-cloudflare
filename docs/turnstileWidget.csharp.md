@@ -4,7 +4,7 @@
 
 ### TurnstileWidget <a name="TurnstileWidget" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer"></a>
 
@@ -559,7 +559,7 @@ The construct id used in the generated config for the TurnstileWidget to import.
 
 The id of the existing TurnstileWidget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1183,7 +1183,7 @@ new TurnstileWidgetConfig {
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode">Mode</a></code> | <code>string</code> | Widget Mode Available values: "non-interactive", "invisible", "managed". |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.name">Name</a></code> | <code>string</code> | Human readable widget name. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.botFightMode">BotFightMode</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only). |
@@ -1279,7 +1279,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
 
 ---
 
@@ -1291,7 +1291,7 @@ public string[] Domains { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public string Mode { get; set; }
 
 Widget Mode Available values: "non-interactive", "invisible", "managed".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -1323,7 +1323,7 @@ Not unique. Cloudflare suggests that you
 set this to a meaningful string to make it easier to identify your
 widget, and where it is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 
 ---
 
@@ -1337,7 +1337,7 @@ public bool|IResolvable BotFightMode { get; set; }
 
 If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 
 ---
 
@@ -1351,7 +1351,7 @@ public string ClearanceLevel { get; set; }
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set Available values: "no_clearance", "jschallenge", "managed", "interactive".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
 
 ---
 
@@ -1365,7 +1365,7 @@ public string Direction { get; set; }
 
 Direction to order widgets. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#direction TurnstileWidget#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#direction TurnstileWidget#direction}
 
 ---
 
@@ -1379,7 +1379,7 @@ public bool|IResolvable EphemeralId { get; set; }
 
 Return the Ephemeral ID in /siteverify (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
 
 ---
 
@@ -1401,7 +1401,7 @@ Supported fields:
 Returns 400 Bad Request if the field is unsupported or format is invalid.
 An empty filter value returns all results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#filter TurnstileWidget#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#filter TurnstileWidget#filter}
 
 ---
 
@@ -1415,7 +1415,7 @@ public bool|IResolvable Offlabel { get; set; }
 
 Do not show any Cloudflare branding on the widget (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
 
 ---
 
@@ -1429,7 +1429,7 @@ public string Order { get; set; }
 
 Field to order widgets by. Available values: "id", "sitekey", "name", "created_on", "modified_on".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#order TurnstileWidget#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#order TurnstileWidget#order}
 
 ---
 
@@ -1443,7 +1443,7 @@ public double Page { get; set; }
 
 Page number of paginated results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#page TurnstileWidget#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#page TurnstileWidget#page}
 
 ---
 
@@ -1457,7 +1457,7 @@ public double PerPage { get; set; }
 
 Number of items per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#per_page TurnstileWidget#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#per_page TurnstileWidget#per_page}
 
 ---
 
@@ -1471,7 +1471,7 @@ public string Region { get; set; }
 
 Region where this widget can be used. This cannot be changed after creation. Available values: "world", "china".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 
 ---
 

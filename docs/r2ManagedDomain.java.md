@@ -4,7 +4,7 @@
 
 ### R2ManagedDomain <a name="R2ManagedDomain" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer"></a>
 
@@ -37,7 +37,7 @@ R2ManagedDomain.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID that owns the R2 resource. |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer.parameter.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Name of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to enable public bucket access at the r2.dev domain. |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer.parameter.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Jurisdiction of the bucket. |
@@ -108,9 +108,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable public bucket access at the r2.dev domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
 
 ---
 
@@ -596,7 +596,7 @@ The construct id used in the generated config for the R2ManagedDomain to import.
 
 The id of the existing R2ManagedDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,7 +934,7 @@ R2ManagedDomainConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID that owns the R2 resource. |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Name of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to enable public bucket access at the r2.dev domain. |
 | <code><a href="#@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Jurisdiction of the bucket. |
@@ -1019,9 +1019,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
 
 ---
 
@@ -1035,7 +1035,7 @@ public java.lang.String getBucketName();
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether to enable public bucket access at the r2.dev domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
 
 ---
 
@@ -1063,7 +1063,7 @@ public java.lang.String getJurisdiction();
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
 
 ---
 

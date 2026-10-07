@@ -4,7 +4,7 @@
 
 ### DataCloudflareR2BucketLock <a name="DataCloudflareR2BucketLock" id="@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.Initializer"></a>
 
@@ -37,7 +37,7 @@ dataCloudflareR2BucketLock.DataCloudflareR2BucketLock(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID that owns the R2 resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.Initializer.parameter.bucketName">bucket_name</a></code> | <code>str</code> | Name of the bucket. |
 
 ---
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket_lock#account_id DataCloudflareR2BucketLock#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket_lock#account_id DataCloudflareR2BucketLock#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket_lock#bucket_name DataCloudflareR2BucketLock#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket_lock#bucket_name DataCloudflareR2BucketLock#bucket_name}
 
 ---
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DataCloudflareR2BucketLock
 
 The id of the existing DataCloudflareR2BucketLock that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,7 +760,7 @@ dataCloudflareR2BucketLock.DataCloudflareR2BucketLockConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockConfig.property.accountId">account_id</a></code> | <code>str</code> | Account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID that owns the R2 resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Name of the bucket. |
 
 ---
@@ -843,9 +843,9 @@ account_id: str
 
 - *Type:* str
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket_lock#account_id DataCloudflareR2BucketLock#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket_lock#account_id DataCloudflareR2BucketLock#account_id}
 
 ---
 
@@ -859,7 +859,7 @@ bucket_name: str
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket_lock#bucket_name DataCloudflareR2BucketLock#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket_lock#bucket_name DataCloudflareR2BucketLock#bucket_name}
 
 ---
 

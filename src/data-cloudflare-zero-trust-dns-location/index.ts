@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustDnsLocationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location#account_id DataCloudflareZeroTrustDnsLocation#account_id}
+  * Specify the Cloudflare account identifier.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location#account_id DataCloudflareZeroTrustDnsLocation#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location#filter DataCloudflareZeroTrustDnsLocation#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location#filter DataCloudflareZeroTrustDnsLocation#filter}
   */
   readonly filter?: DataCloudflareZeroTrustDnsLocationFilter;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location#location_id DataCloudflareZeroTrustDnsLocation#location_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location#location_id DataCloudflareZeroTrustDnsLocation#location_id}
   */
   readonly locationId?: string;
 }
@@ -572,7 +574,7 @@ export interface DataCloudflareZeroTrustDnsLocationFilter {
   *   * `desc` — descending.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location#direction DataCloudflareZeroTrustDnsLocation#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location#direction DataCloudflareZeroTrustDnsLocation#direction}
   */
   readonly direction?: string;
   /**
@@ -590,7 +592,7 @@ export interface DataCloudflareZeroTrustDnsLocationFilter {
   *   * `name`/`id` accept any value;
   *   * `is_default` only accepts `true` or `false`; any other value returns `400`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location#filter DataCloudflareZeroTrustDnsLocation#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location#filter DataCloudflareZeroTrustDnsLocation#filter}
   */
   readonly filter?: string[];
   /**
@@ -601,14 +603,14 @@ export interface DataCloudflareZeroTrustDnsLocationFilter {
   *   * `updated_at` — sort by last-modified time; defaults to descending unless `direction` is set.
   * Available values: "name", "created_at", "updated_at".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location#order_by DataCloudflareZeroTrustDnsLocation#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location#order_by DataCloudflareZeroTrustDnsLocation#order_by}
   */
   readonly orderBy?: string;
   /**
   * Case-insensitive substring match on the location name. When combined
   * with `filter`, both must match (logical AND).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location#search DataCloudflareZeroTrustDnsLocation#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location#search DataCloudflareZeroTrustDnsLocation#search}
   */
   readonly search?: string;
 }
@@ -923,7 +925,7 @@ export class DataCloudflareZeroTrustDnsLocationNetworksList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}
 */
 export class DataCloudflareZeroTrustDnsLocation extends cdktn.TerraformDataSource {
 
@@ -939,7 +941,7 @@ export class DataCloudflareZeroTrustDnsLocation extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataCloudflareZeroTrustDnsLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustDnsLocation to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustDnsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustDnsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustDnsLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -951,7 +953,7 @@ export class DataCloudflareZeroTrustDnsLocation extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -962,7 +964,7 @@ export class DataCloudflareZeroTrustDnsLocation extends cdktn.TerraformDataSourc
       terraformResourceType: 'cloudflare_zero_trust_dns_location',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

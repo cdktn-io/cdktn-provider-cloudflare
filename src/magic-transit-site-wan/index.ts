@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,48 @@ export interface MagicTransitSiteWanConfig extends cdktn.TerraformMetaArguments 
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}
+  * Magic WAN health check rate for tunnels created on this link. The default value is `mid`.
+  * Available values: "low", "mid", "high".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#health_check_rate MagicTransitSiteWan#health_check_rate}
+  */
+  readonly healthCheckRate?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#load_balance_inner_flows MagicTransitSiteWan#load_balance_inner_flows}
+  */
+  readonly loadBalanceInnerFlows?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}
   */
   readonly physport: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}
   */
   readonly priority?: number;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
   */
   readonly siteId: string;
   /**
   * (optional) if omitted, use DHCP. Submit secondary_address when site is in high availability mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
   */
   readonly staticAddressing?: MagicTransitSiteWanStaticAddressing;
   /**
   * VLAN ID. Use zero for untagged.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
   */
   readonly vlanTag?: number;
 }
@@ -53,19 +64,19 @@ export interface MagicTransitSiteWanStaticAddressing {
   /**
   * A valid CIDR notation representing an IP range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#address MagicTransitSiteWan#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#address MagicTransitSiteWan#address}
   */
   readonly address: string;
   /**
   * A valid IPv4 address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#gateway_address MagicTransitSiteWan#gateway_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#gateway_address MagicTransitSiteWan#gateway_address}
   */
   readonly gatewayAddress: string;
   /**
   * A valid CIDR notation representing an IP range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#secondary_address MagicTransitSiteWan#secondary_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#secondary_address MagicTransitSiteWan#secondary_address}
   */
   readonly secondaryAddress?: string;
 }
@@ -211,7 +222,7 @@ export class MagicTransitSiteWanStaticAddressingOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}
 */
 export class MagicTransitSiteWan extends cdktn.TerraformResource {
 
@@ -227,7 +238,7 @@ export class MagicTransitSiteWan extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MagicTransitSiteWan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicTransitSiteWan to import
-  * @param importFromId The id of the existing MagicTransitSiteWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicTransitSiteWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicTransitSiteWan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -239,7 +250,7 @@ export class MagicTransitSiteWan extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +261,7 @@ export class MagicTransitSiteWan extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_magic_transit_site_wan',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -262,6 +273,8 @@ export class MagicTransitSiteWan extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._healthCheckRate = config.healthCheckRate;
+    this._loadBalanceInnerFlows = config.loadBalanceInnerFlows;
     this._name = config.name;
     this._physport = config.physport;
     this._priority = config.priority;
@@ -287,14 +300,41 @@ export class MagicTransitSiteWan extends cdktn.TerraformResource {
     return this._accountId;
   }
 
-  // health_check_rate - computed: true, optional: false, required: false
+  // health_check_rate - computed: true, optional: true, required: false
+  private _healthCheckRate?: string; 
   public get healthCheckRate() {
     return this.getStringAttribute('health_check_rate');
+  }
+  public set healthCheckRate(value: string) {
+    this._healthCheckRate = value;
+  }
+  public resetHealthCheckRate() {
+    this._healthCheckRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckRateInput() {
+    return this._healthCheckRate;
   }
 
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // load_balance_inner_flows - computed: true, optional: true, required: false
+  private _loadBalanceInnerFlows?: boolean | cdktn.IResolvable; 
+  public get loadBalanceInnerFlows() {
+    return this.getBooleanAttribute('load_balance_inner_flows');
+  }
+  public set loadBalanceInnerFlows(value: boolean | cdktn.IResolvable) {
+    this._loadBalanceInnerFlows = value;
+  }
+  public resetLoadBalanceInnerFlows() {
+    this._loadBalanceInnerFlows = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalanceInnerFlowsInput() {
+    return this._loadBalanceInnerFlows;
   }
 
   // name - computed: false, optional: true, required: false
@@ -394,6 +434,8 @@ export class MagicTransitSiteWan extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      health_check_rate: cdktn.stringToTerraform(this._healthCheckRate),
+      load_balance_inner_flows: cdktn.booleanToTerraform(this._loadBalanceInnerFlows),
       name: cdktn.stringToTerraform(this._name),
       physport: cdktn.numberToTerraform(this._physport),
       priority: cdktn.numberToTerraform(this._priority),
@@ -410,6 +452,18 @@ export class MagicTransitSiteWan extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      health_check_rate: {
+        value: cdktn.stringToHclTerraform(this._healthCheckRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      load_balance_inner_flows: {
+        value: cdktn.booleanToHclTerraform(this._loadBalanceInnerFlows),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       name: {
         value: cdktn.stringToHclTerraform(this._name),

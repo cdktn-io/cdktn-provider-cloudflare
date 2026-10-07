@@ -4,7 +4,7 @@
 
 ### CloudConnectorRules <a name="CloudConnectorRules" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer"></a>
 
@@ -21,8 +21,8 @@ cloudConnectorRules.CloudConnectorRules(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
-  rules: IResolvable | typing.List[CloudConnectorRulesRules] = None
+  rules: IResolvable | typing.List[CloudConnectorRulesRules],
+  zone_id: str
 )
 ```
 
@@ -37,8 +37,8 @@ cloudConnectorRules.CloudConnectorRules(
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}. |
 
 ---
 
@@ -102,21 +102,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `rules`<sup>Required</sup> <a name="rules" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.rules"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}.
+
+---
+
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
-
----
-
-##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.rules"></a>
-
-- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
 
 ---
 
@@ -149,7 +149,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.putRules">put_rules</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.resetRules">reset_rules</a></code> | *No description.* |
 
 ---
 
@@ -515,12 +514,6 @@ def put_rules(
 
 ---
 
-##### `reset_rules` <a name="reset_rules" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.resetRules"></a>
-
-```python
-def reset_rules() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -635,7 +628,7 @@ The construct id used in the generated config for the CloudConnectorRules to imp
 
 The id of the existing CloudConnectorRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,8 +893,8 @@ cloudConnectorRules.CloudConnectorRulesConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
-  rules: IResolvable | typing.List[CloudConnectorRulesRules] = None
+  rules: IResolvable | typing.List[CloudConnectorRulesRules],
+  zone_id: str
 )
 ```
 
@@ -916,8 +909,8 @@ cloudConnectorRules.CloudConnectorRulesConfig(
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}. |
 
 ---
 
@@ -991,6 +984,18 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `rules`<sup>Required</sup> <a name="rules" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.rules"></a>
+
+```python
+rules: IResolvable | typing.List[CloudConnectorRulesRules]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}.
+
+---
+
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.zoneId"></a>
 
 ```python
@@ -1001,19 +1006,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
-
----
-
-##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.rules"></a>
-
-```python
-rules: IResolvable | typing.List[CloudConnectorRulesRules]
-```
-
-- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
 
 ---
 
@@ -1038,9 +1031,9 @@ cloudConnectorRules.CloudConnectorRulesRules(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.cloudConnectorRulesProvider">cloud_connector_rules_provider</a></code> | <code>str</code> | Cloud Provider type Available values: "aws_s3", "cloudflare_r2", "gcp_storage", "azure_storage", "oci_storage". |
-| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}. |
-| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}. |
+| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.parameters">parameters</a></code> | <code><a href="#@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesParameters">CloudConnectorRulesRulesParameters</a></code> | Parameters of Cloud Connector Rule. |
 
 ---
@@ -1055,7 +1048,7 @@ cloud_connector_rules_provider: str
 
 Cloud Provider type Available values: "aws_s3", "cloudflare_r2", "gcp_storage", "azure_storage", "oci_storage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#cloud_connector_rules_provider CloudConnectorRules#cloud_connector_rules_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#cloud_connector_rules_provider CloudConnectorRules#cloud_connector_rules_provider}
 
 ---
 
@@ -1067,7 +1060,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}.
 
 ---
 
@@ -1079,7 +1072,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}.
 
 ---
 
@@ -1091,7 +1084,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}.
 
 ---
 
@@ -1105,7 +1098,7 @@ parameters: CloudConnectorRulesRulesParameters
 
 Parameters of Cloud Connector Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
 
 ---
 
@@ -1139,7 +1132,7 @@ host: str
 
 Host to perform Cloud Connection to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
 
 ---
 
@@ -1583,7 +1576,7 @@ def put_parameters(
 
 Host to perform Cloud Connection to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
 
 ---
 

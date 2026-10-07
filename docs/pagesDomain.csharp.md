@@ -4,7 +4,7 @@
 
 ### PagesDomain <a name="PagesDomain" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pages_domain cloudflare_pages_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_domain cloudflare_pages_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the PagesDomain to import.
 
 The id of the existing PagesDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,8 +871,8 @@ new PagesDomainConfig {
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.name">Name</a></code> | <code>string</code> | The domain name. |
-| <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.projectName">ProjectName</a></code> | <code>string</code> | Name of the project. |
+| <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.name">Name</a></code> | <code>string</code> | Fully qualified domain name for the Pages project, such as `example.com`. |
+| <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.projectName">ProjectName</a></code> | <code>string</code> | Name of the Pages project. |
 
 ---
 
@@ -956,7 +956,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
 
 ---
 
@@ -968,9 +968,9 @@ public string Name { get; set; }
 
 - *Type:* string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as `example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pages_domain#name PagesDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_domain#name PagesDomain#name}
 
 ---
 
@@ -982,9 +982,11 @@ public string ProjectName { get; set; }
 
 - *Type:* string
 
-Name of the project.
+Name of the Pages project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
+Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
 
 ---
 

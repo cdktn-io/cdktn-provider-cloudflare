@@ -4,7 +4,7 @@
 
 ### DataCloudflareTurnstileWidget <a name="DataCloudflareTurnstileWidget" id="@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidget.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataCloudflareTurnstileWid
 
 The id of the existing DataCloudflareTurnstileWidget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,8 +847,8 @@ new DataCloudflareTurnstileWidgetConfig {
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter">DataCloudflareTurnstileWidgetFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.sitekey">Sitekey</a></code> | <code>string</code> | Widget item identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter">DataCloudflareTurnstileWidgetFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.sitekey">Sitekey</a></code> | <code>string</code> | Unique identifier for a Turnstile widget. |
 
 ---
 
@@ -932,7 +932,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget#account_id DataCloudflareTurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget#account_id DataCloudflareTurnstileWidget#account_id}
 
 ---
 
@@ -944,7 +944,7 @@ public DataCloudflareTurnstileWidgetFilter Filter { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter">DataCloudflareTurnstileWidgetFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}.
 
 ---
 
@@ -956,9 +956,9 @@ public string Sitekey { get; set; }
 
 - *Type:* string
 
-Widget item identifier tag.
+Unique identifier for a Turnstile widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget#sitekey DataCloudflareTurnstileWidget#sitekey}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget#sitekey DataCloudflareTurnstileWidget#sitekey}
 
 ---
 
@@ -981,7 +981,7 @@ new DataCloudflareTurnstileWidgetFilter {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.property.direction">Direction</a></code> | <code>string</code> | Direction to order widgets. Available values: "asc", "desc". |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.property.filter">Filter</a></code> | <code>string</code> | Filter widgets by field using case-insensitive substring matching. Format: `field:value`. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.property.filter">Filter</a></code> | <code>string</code> | Filter widgets by field. The `name` field uses case-insensitive substring matching; `sitekey` uses exact matching. Format: `field:value`. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.property.order">Order</a></code> | <code>string</code> | Field to order widgets by. Available values: "id", "sitekey", "name", "created_on", "modified_on". |
 
 ---
@@ -996,7 +996,7 @@ public string Direction { get; set; }
 
 Direction to order widgets. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget#direction DataCloudflareTurnstileWidget#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget#direction DataCloudflareTurnstileWidget#direction}
 
 ---
 
@@ -1008,7 +1008,7 @@ public string Filter { get; set; }
 
 - *Type:* string
 
-Filter widgets by field using case-insensitive substring matching. Format: `field:value`.
+Filter widgets by field. The `name` field uses case-insensitive substring matching; `sitekey` uses exact matching. Format: `field:value`.
 
 Supported fields:
 
@@ -1018,7 +1018,7 @@ Supported fields:
 Returns 400 Bad Request if the field is unsupported or format is invalid.
 An empty filter value returns all results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}
 
 ---
 
@@ -1032,7 +1032,7 @@ public string Order { get; set; }
 
 Field to order widgets by. Available values: "id", "sitekey", "name", "created_on", "modified_on".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/turnstile_widget#order DataCloudflareTurnstileWidget#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/turnstile_widget#order DataCloudflareTurnstileWidget#order}
 
 ---
 

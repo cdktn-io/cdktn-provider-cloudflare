@@ -4,7 +4,7 @@
 
 ### DataCloudflareFlagshipApps <a name="DataCloudflareFlagshipApps" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps cloudflare_flagship_apps}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps cloudflare_flagship_apps}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer"></a>
 
@@ -37,7 +37,7 @@ dataCloudflareFlagshipApps.DataCloudflareFlagshipApps(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID that owns the Flagship app. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#account_id DataCloudflareFlagshipApps#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#account_id DataCloudflareFlagshipApps#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#max_items DataCloudflareFlagshipApps#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#max_items DataCloudflareFlagshipApps#max_items}
 
 ---
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the DataCloudflareFlagshipApps
 
 The id of the existing DataCloudflareFlagshipApps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,7 +767,7 @@ dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID that owns the Flagship app. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -850,9 +850,9 @@ account_id: str
 
 - *Type:* str
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#account_id DataCloudflareFlagshipApps#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#account_id DataCloudflareFlagshipApps#account_id}
 
 ---
 
@@ -866,7 +866,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#max_items DataCloudflareFlagshipApps#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#max_items DataCloudflareFlagshipApps#max_items}
 
 ---
 

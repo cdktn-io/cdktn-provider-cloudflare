@@ -4,7 +4,7 @@
 
 ### WorkersKv <a name="WorkersKv" id="@cdktn/provider-cloudflare.workersKv.WorkersKv"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv cloudflare_workers_kv}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv cloudflare_workers_kv}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the WorkersKv to import.
 
 The id of the existing WorkersKv that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,9 +906,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersk
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.accountId">AccountId</a></code> | <code>*string</code> | ID of the Cloudflare account that owns the Workers KV namespaces. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.keyName">KeyName</a></code> | <code>*string</code> | A key's name. |
-| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Namespace identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | ID of the Workers KV namespace. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.value">Value</a></code> | <code>*string</code> | A byte sequence to be stored, up to 25 MiB in length. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.expiration">Expiration</a></code> | <code>*f64</code> | Expires the key at a certain time, measured in number of seconds since the UNIX epoch. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.expirationTtl">ExpirationTtl</a></code> | <code>*f64</code> | Expires the key after a number of seconds. Must be at least 60. |
@@ -994,9 +994,9 @@ AccountId *string
 
 - *Type:* *string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
 
 ---
 
@@ -1012,7 +1012,7 @@ A key's name.
 
 The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
 
 ---
 
@@ -1024,9 +1024,9 @@ NamespaceId *string
 
 - *Type:* *string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 
 ---
 
@@ -1040,7 +1040,7 @@ Value *string
 
 A byte sequence to be stored, up to 25 MiB in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#value WorkersKv#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv#value WorkersKv#value}
 
 ---
 
@@ -1054,7 +1054,7 @@ Expiration *f64
 
 Expires the key at a certain time, measured in number of seconds since the UNIX epoch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#expiration WorkersKv#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv#expiration WorkersKv#expiration}
 
 ---
 
@@ -1068,7 +1068,7 @@ ExpirationTtl *f64
 
 Expires the key after a number of seconds. Must be at least 60.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#expiration_ttl WorkersKv#expiration_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv#expiration_ttl WorkersKv#expiration_ttl}
 
 ---
 
@@ -1082,7 +1082,7 @@ Metadata *string
 
 Associates arbitrary JSON data with a key/value pair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
 
 ---
 

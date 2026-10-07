@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustConnectivitySettings <a name="DataCloudflareZeroTrustConnectivitySettings" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettings.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_connectivity_settings#account_id DataCloudflareZeroTrustConnectivitySettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_connectivity_settings#account_id DataCloudflareZeroTrustConnectivitySettings#account_id}
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustCon
 
 The id of the existing DataCloudflareZeroTrustConnectivitySettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_connectivity_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_connectivity_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ account_id: str
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_connectivity_settings#account_id DataCloudflareZeroTrustConnectivitySettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_connectivity_settings#account_id DataCloudflareZeroTrustConnectivitySettings#account_id}
 
 ---
 

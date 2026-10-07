@@ -4,7 +4,7 @@
 
 ### DataCloudflarePagesDomain <a name="DataCloudflarePagesDomain" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domain cloudflare_pages_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domain cloudflare_pages_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer"></a>
 
@@ -37,8 +37,8 @@ DataCloudflarePagesDomain.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | The domain name. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer.parameter.projectName">projectName</a></code> | <code>java.lang.String</code> | Name of the project. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | Fully qualified domain name for the Pages project, such as `example.com`. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer.parameter.projectName">projectName</a></code> | <code>java.lang.String</code> | Name of the Pages project. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
 
 ---
 
@@ -116,9 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The domain name.
+Fully qualified domain name for the Pages project, such as `example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
 
 ---
 
@@ -126,9 +126,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Name of the project.
+Name of the Pages project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
+Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
 
 ---
 
@@ -473,7 +475,7 @@ The construct id used in the generated config for the DataCloudflarePagesDomain 
 
 The id of the existing DataCloudflarePagesDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,8 +846,8 @@ DataCloudflarePagesDomainConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | The domain name. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.projectName">projectName</a></code> | <code>java.lang.String</code> | Name of the project. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Fully qualified domain name for the Pages project, such as `example.com`. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.projectName">projectName</a></code> | <code>java.lang.String</code> | Name of the Pages project. |
 
 ---
 
@@ -929,7 +931,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
 
 ---
 
@@ -941,9 +943,9 @@ public java.lang.String getDomainName();
 
 - *Type:* java.lang.String
 
-The domain name.
+Fully qualified domain name for the Pages project, such as `example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
 
 ---
 
@@ -955,9 +957,11 @@ public java.lang.String getProjectName();
 
 - *Type:* java.lang.String
 
-Name of the project.
+Name of the Pages project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
+Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
 
 ---
 

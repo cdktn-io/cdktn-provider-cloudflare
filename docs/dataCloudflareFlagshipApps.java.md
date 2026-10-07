@@ -4,7 +4,7 @@
 
 ### DataCloudflareFlagshipApps <a name="DataCloudflareFlagshipApps" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps cloudflare_flagship_apps}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps cloudflare_flagship_apps}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer"></a>
 
@@ -35,7 +35,7 @@ DataCloudflareFlagshipApps.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID that owns the Flagship app. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipApps.Initializer.parameter.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -104,9 +104,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#account_id DataCloudflareFlagshipApps#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#account_id DataCloudflareFlagshipApps#account_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#max_items DataCloudflareFlagshipApps#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#max_items DataCloudflareFlagshipApps#max_items}
 
 ---
 
@@ -468,7 +468,7 @@ The construct id used in the generated config for the DataCloudflareFlagshipApps
 
 The id of the existing DataCloudflareFlagshipApps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -727,7 +727,7 @@ DataCloudflareFlagshipAppsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID that owns the Flagship app. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipApps.DataCloudflareFlagshipAppsConfig.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -810,9 +810,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#account_id DataCloudflareFlagshipApps#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#account_id DataCloudflareFlagshipApps#account_id}
 
 ---
 
@@ -826,7 +826,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_apps#max_items DataCloudflareFlagshipApps#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_apps#max_items DataCloudflareFlagshipApps#max_items}
 
 ---
 

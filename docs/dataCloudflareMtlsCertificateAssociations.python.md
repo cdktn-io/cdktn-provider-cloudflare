@@ -4,7 +4,7 @@
 
 ### DataCloudflareMtlsCertificateAssociations <a name="DataCloudflareMtlsCertificateAssociations" id="@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociations.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociati
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociations.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociations.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociations.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociations.Initializer.parameter.mtlsCertificateId">mtls_certificate_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociations.Initializer.parameter.mtlsCertificateId">mtls_certificate_id</a></code> | <code>str</code> | Certificate identifier tag. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/mtls_certificate_associations#account_id DataCloudflareMtlsCertificateAssociations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/mtls_certificate_associations#account_id DataCloudflareMtlsCertificateAssociations#account_id}
 
 ---
 
@@ -116,9 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Identifier.
+Certificate identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/mtls_certificate_associations#mtls_certificate_id DataCloudflareMtlsCertificateAssociations#mtls_certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/mtls_certificate_associations#mtls_certificate_id DataCloudflareMtlsCertificateAssociations#mtls_certificate_id}
 
 ---
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DataCloudflareMtlsCertific
 
 The id of the existing DataCloudflareMtlsCertificateAssociations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/mtls_certificate_associations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/mtls_certificate_associations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -772,7 +772,7 @@ dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociati
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociationsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociationsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociationsConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociationsConfig.property.mtlsCertificateId">mtls_certificate_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMtlsCertificateAssociations.DataCloudflareMtlsCertificateAssociationsConfig.property.mtlsCertificateId">mtls_certificate_id</a></code> | <code>str</code> | Certificate identifier tag. |
 
 ---
 
@@ -856,7 +856,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/mtls_certificate_associations#account_id DataCloudflareMtlsCertificateAssociations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/mtls_certificate_associations#account_id DataCloudflareMtlsCertificateAssociations#account_id}
 
 ---
 
@@ -868,9 +868,9 @@ mtls_certificate_id: str
 
 - *Type:* str
 
-Identifier.
+Certificate identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/mtls_certificate_associations#mtls_certificate_id DataCloudflareMtlsCertificateAssociations#mtls_certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/mtls_certificate_associations#mtls_certificate_id DataCloudflareMtlsCertificateAssociations#mtls_certificate_id}
 
 ---
 

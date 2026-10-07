@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustLists <a name="DataCloudflareZeroTrustLists" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer"></a>
 
@@ -42,7 +42,7 @@ dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Specify the Cloudflare account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.direction">direction</a></code> | <code>str</code> | Sort direction. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.filter">filter</a></code> | <code>typing.List[str]</code> | Filter the returned lists by one or more `field:value` pairs. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
@@ -116,7 +116,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}.
+Specify the Cloudflare account identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}
 
 ---
 
@@ -138,7 +140,7 @@ compatibility).
 * `desc` — descending.
   Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#direction DataCloudflareZeroTrustLists#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#direction DataCloudflareZeroTrustLists#direction}
 
 ---
 
@@ -164,7 +166,7 @@ one of `name`, `id`, `type`, or `item_count`; `name`/`id` accept any value,
 `type` is restricted to the valid list type values, and `item_count` must be
 a non-negative integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#filter DataCloudflareZeroTrustLists#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#filter DataCloudflareZeroTrustLists#filter}
 
 ---
 
@@ -174,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
 
 ---
 
@@ -194,7 +196,7 @@ compatibility. Supported values:
 * `item_count` — sort by number of items in the list.
   Available values: "name", "created_at", "updated_at", "item_count".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#order_by DataCloudflareZeroTrustLists#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#order_by DataCloudflareZeroTrustLists#order_by}
 
 ---
 
@@ -204,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#search DataCloudflareZeroTrustLists#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#search DataCloudflareZeroTrustLists#search}
 
 ---
 
@@ -214,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
 
 ---
 
@@ -646,7 +648,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustLis
 
 The id of the existing DataCloudflareZeroTrustLists that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1020,7 +1022,7 @@ dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.accountId">account_id</a></code> | <code>str</code> | Specify the Cloudflare account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.direction">direction</a></code> | <code>str</code> | Sort direction. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.filter">filter</a></code> | <code>typing.List[str]</code> | Filter the returned lists by one or more `field:value` pairs. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
@@ -1108,7 +1110,9 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}.
+Specify the Cloudflare account identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}
 
 ---
 
@@ -1134,7 +1138,7 @@ compatibility).
 * `desc` — descending.
   Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#direction DataCloudflareZeroTrustLists#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#direction DataCloudflareZeroTrustLists#direction}
 
 ---
 
@@ -1164,7 +1168,7 @@ one of `name`, `id`, `type`, or `item_count`; `name`/`id` accept any value,
 `type` is restricted to the valid list type values, and `item_count` must be
 a non-negative integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#filter DataCloudflareZeroTrustLists#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#filter DataCloudflareZeroTrustLists#filter}
 
 ---
 
@@ -1178,7 +1182,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
 
 ---
 
@@ -1202,7 +1206,7 @@ compatibility. Supported values:
 * `item_count` — sort by number of items in the list.
   Available values: "name", "created_at", "updated_at", "item_count".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#order_by DataCloudflareZeroTrustLists#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#order_by DataCloudflareZeroTrustLists#order_by}
 
 ---
 
@@ -1216,7 +1220,7 @@ search: str
 
 Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#search DataCloudflareZeroTrustLists#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#search DataCloudflareZeroTrustLists#search}
 
 ---
 
@@ -1230,7 +1234,7 @@ type: str
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
 
 ---
 

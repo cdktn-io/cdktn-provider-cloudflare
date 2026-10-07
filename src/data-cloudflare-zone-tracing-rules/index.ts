@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataCloudflareZoneTracingRulesConfig extends cdktn.TerraformMet
   /**
   * Specify the zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing_rules#zone_id DataCloudflareZoneTracingRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing_rules#zone_id DataCloudflareZoneTracingRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -171,7 +171,7 @@ export class DataCloudflareZoneTracingRulesRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules}
 */
 export class DataCloudflareZoneTracingRules extends cdktn.TerraformDataSource {
 
@@ -187,7 +187,7 @@ export class DataCloudflareZoneTracingRules extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareZoneTracingRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZoneTracingRules to import
-  * @param importFromId The id of the existing DataCloudflareZoneTracingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZoneTracingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZoneTracingRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -199,7 +199,7 @@ export class DataCloudflareZoneTracingRules extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -210,7 +210,7 @@ export class DataCloudflareZoneTracingRules extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone_tracing_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

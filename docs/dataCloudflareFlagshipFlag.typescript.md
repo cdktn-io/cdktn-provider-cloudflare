@@ -4,7 +4,7 @@
 
 ### DataCloudflareFlagshipFlag <a name="DataCloudflareFlagshipFlag" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlag.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataCloudflareFlagshipFlag
 
 The id of the existing DataCloudflareFlagshipFlag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,10 +806,10 @@ const dataCloudflareFlagshipFlagConfig: dataCloudflareFlagshipFlag.DataCloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.accountId">accountId</a></code> | <code>string</code> | Cloudflare account ID. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.appId">appId</a></code> | <code>string</code> | App identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilter">DataCloudflareFlagshipFlagFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#filter DataCloudflareFlagshipFlag#filter}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.flagKey">flagKey</a></code> | <code>string</code> | Flag key (slug). |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.accountId">accountId</a></code> | <code>string</code> | Cloudflare account ID that owns the Flagship app. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.appId">appId</a></code> | <code>string</code> | Flagship app ID returned when the app was created. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilter">DataCloudflareFlagshipFlagFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#filter DataCloudflareFlagshipFlag#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagConfig.property.flagKey">flagKey</a></code> | <code>string</code> | Case-sensitive key identifying the flag within the app. |
 
 ---
 
@@ -891,9 +891,9 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#account_id DataCloudflareFlagshipFlag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#account_id DataCloudflareFlagshipFlag#account_id}
 
 ---
 
@@ -905,9 +905,9 @@ public readonly appId: string;
 
 - *Type:* string
 
-App identifier.
+Flagship app ID returned when the app was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#app_id DataCloudflareFlagshipFlag#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#app_id DataCloudflareFlagshipFlag#app_id}
 
 ---
 
@@ -919,7 +919,7 @@ public readonly filter: DataCloudflareFlagshipFlagFilter;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilter">DataCloudflareFlagshipFlagFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#filter DataCloudflareFlagshipFlag#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#filter DataCloudflareFlagshipFlag#filter}.
 
 ---
 
@@ -931,9 +931,9 @@ public readonly flagKey: string;
 
 - *Type:* string
 
-Flag key (slug).
+Case-sensitive key identifying the flag within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#flag_key DataCloudflareFlagshipFlag#flag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#flag_key DataCloudflareFlagshipFlag#flag_key}
 
 ---
 
@@ -951,21 +951,21 @@ const dataCloudflareFlagshipFlagFilter: dataCloudflareFlagshipFlag.DataCloudflar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilter.property.limit">limit</a></code> | <code>string</code> | Max items to return (1–200). |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilter.property.limit">limit</a></code> | <code>number</code> | Max items to return (1–200). |
 
 ---
 
 ##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilter.property.limit"></a>
 
 ```typescript
-public readonly limit: string;
+public readonly limit: number;
 ```
 
-- *Type:* string
+- *Type:* number
 
 Max items to return (1–200).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag#limit DataCloudflareFlagshipFlag#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flag#limit DataCloudflareFlagshipFlag#limit}
 
 ---
 
@@ -1232,8 +1232,8 @@ public resetLimit(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.limitInput">limitInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.limit">limit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.limitInput">limitInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.limit">limit</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilter">DataCloudflareFlagshipFlagFilter</a></code> | *No description.* |
 
 ---
@@ -1265,20 +1265,20 @@ public readonly fqn: string;
 ##### `limitInput`<sup>Optional</sup> <a name="limitInput" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.limitInput"></a>
 
 ```typescript
-public readonly limitInput: string;
+public readonly limitInput: number;
 ```
 
-- *Type:* string
+- *Type:* number
 
 ---
 
 ##### `limit`<sup>Required</sup> <a name="limit" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlagFilterOutputReference.property.limit"></a>
 
 ```typescript
-public readonly limit: string;
+public readonly limit: number;
 ```
 
-- *Type:* string
+- *Type:* number
 
 ---
 

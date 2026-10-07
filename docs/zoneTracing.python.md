@@ -4,7 +4,7 @@
 
 ### ZoneTracing <a name="ZoneTracing" id="@cdktn/provider-cloudflare.zoneTracing.ZoneTracing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing cloudflare_zone_tracing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing cloudflare_zone_tracing}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneTracing.ZoneTracing.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Specify the zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#zone_id ZoneTracing#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#zone_id ZoneTracing#zone_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Up to 100 OpenTelemetry destination identifiers that receive traces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#destinations ZoneTracing#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#destinations ZoneTracing#destinations}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether Cloudflare Traces is enabled for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#enabled ZoneTracing#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#enabled ZoneTracing#enabled}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether trace context is sent externally or across a zone boundary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#forward_context ZoneTracing#forward_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#forward_context ZoneTracing#forward_context}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether traces are persisted in Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#persist ZoneTracing#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#persist ZoneTracing#persist}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet. Available values: "accept", "authenticated", "reject".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#propagation_policy ZoneTracing#propagation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#propagation_policy ZoneTracing#propagation_policy}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The ratio of requests sampled for tracing, from 0 to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#sampling_ratio ZoneTracing#sampling_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#sampling_ratio ZoneTracing#sampling_ratio}
 
 ---
 
@@ -717,7 +717,7 @@ The construct id used in the generated config for the ZoneTracing to import.
 
 The id of the existing ZoneTracing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1203,7 +1203,7 @@ zone_id: str
 
 Specify the zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#zone_id ZoneTracing#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#zone_id ZoneTracing#zone_id}
 
 ---
 
@@ -1217,7 +1217,7 @@ destinations: typing.List[str]
 
 Up to 100 OpenTelemetry destination identifiers that receive traces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#destinations ZoneTracing#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#destinations ZoneTracing#destinations}
 
 ---
 
@@ -1231,7 +1231,7 @@ enabled: bool | IResolvable
 
 Whether Cloudflare Traces is enabled for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#enabled ZoneTracing#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#enabled ZoneTracing#enabled}
 
 ---
 
@@ -1245,7 +1245,7 @@ forward_context: bool | IResolvable
 
 Whether trace context is sent externally or across a zone boundary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#forward_context ZoneTracing#forward_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#forward_context ZoneTracing#forward_context}
 
 ---
 
@@ -1259,7 +1259,7 @@ persist: bool | IResolvable
 
 Whether traces are persisted in Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#persist ZoneTracing#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#persist ZoneTracing#persist}
 
 ---
 
@@ -1273,7 +1273,7 @@ propagation_policy: str
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet. Available values: "accept", "authenticated", "reject".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#propagation_policy ZoneTracing#propagation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#propagation_policy ZoneTracing#propagation_policy}
 
 ---
 
@@ -1287,7 +1287,7 @@ sampling_ratio: typing.Union[int, float]
 
 The ratio of requests sampled for tracing, from 0 to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#sampling_ratio ZoneTracing#sampling_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#sampling_ratio ZoneTracing#sampling_ratio}
 
 ---
 

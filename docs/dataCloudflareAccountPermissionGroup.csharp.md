@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountPermissionGroup <a name="DataCloudflareAccountPermissionGroup" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_permission_group cloudflare_account_permission_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_permission_group cloudflare_account_permission_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareAccountPermi
 
 The id of the existing DataCloudflareAccountPermissionGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_permission_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_permission_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,7 +753,7 @@ public string AccountId { get; set; }
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_permission_group#account_id DataCloudflareAccountPermissionGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_permission_group#account_id DataCloudflareAccountPermissionGroup#account_id}
 
 ---
 
@@ -767,7 +767,7 @@ public string PermissionGroupId { get; set; }
 
 Permission Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_permission_group#permission_group_id DataCloudflareAccountPermissionGroup#permission_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_permission_group#permission_group_id DataCloudflareAccountPermissionGroup#permission_group_id}
 
 ---
 
@@ -996,8 +996,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.category">Category</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.deprecated">Deprecated</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.editable">Editable</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.eolAt">EolAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.label">Label</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.scopes">Scopes</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.visibility">Visibility</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMeta">DataCloudflareAccountPermissionGroupMeta</a></code> | *No description.* |
 
 ---
@@ -1026,20 +1032,80 @@ public string Fqn { get; }
 
 ---
 
-##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.key"></a>
+##### `Category`<sup>Required</sup> <a name="Category" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.category"></a>
 
 ```csharp
-public string Key { get; }
+public string Category { get; }
 ```
 
 - *Type:* string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.value"></a>
+##### `Deprecated`<sup>Required</sup> <a name="Deprecated" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.deprecated"></a>
 
 ```csharp
-public string Value { get; }
+public string Deprecated { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Editable`<sup>Required</sup> <a name="Editable" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.editable"></a>
+
+```csharp
+public string Editable { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EolAt`<sup>Required</sup> <a name="EolAt" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.eolAt"></a>
+
+```csharp
+public string EolAt { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Label`<sup>Required</sup> <a name="Label" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.label"></a>
+
+```csharp
+public string Label { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.scopes"></a>
+
+```csharp
+public string Scopes { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Visibility`<sup>Required</sup> <a name="Visibility" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupMetaOutputReference.property.visibility"></a>
+
+```csharp
+public string Visibility { get; }
 ```
 
 - *Type:* string

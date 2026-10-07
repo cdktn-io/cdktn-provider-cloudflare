@@ -4,7 +4,7 @@
 
 ### ApiShieldOperation <a name="ApiShieldOperation" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer"></a>
 
@@ -74,8 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetFeature">resetFeature</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetWithSchemas">resetWithSchemas</a></code> | *No description.* |
 
 ---
 
@@ -388,18 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetFeature` <a name="resetFeature" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetFeature"></a>
-
-```typescript
-public resetFeature(): void
-```
-
-##### `resetWithSchemas` <a name="resetWithSchemas" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetWithSchemas"></a>
-
-```typescript
-public resetWithSchemas(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -503,7 +489,7 @@ The construct id used in the generated config for the ApiShieldOperation to impo
 
 The id of the existing ApiShieldOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -539,16 +525,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.operationId">operationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.schemas">schemas</a></code> | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationSchemasOutputReference">ApiShieldOperationSchemasOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.endpointInput">endpointInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.featureInput">featureInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.methodInput">methodInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.withSchemasInput">withSchemasInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.feature">feature</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.host">host</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.method">method</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.withSchemas">withSchemas</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -755,16 +737,6 @@ public readonly endpointInput: string;
 
 ---
 
-##### `featureInput`<sup>Optional</sup> <a name="featureInput" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.featureInput"></a>
-
-```typescript
-public readonly featureInput: string[];
-```
-
-- *Type:* string[]
-
----
-
 ##### `hostInput`<sup>Optional</sup> <a name="hostInput" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.hostInput"></a>
 
 ```typescript
@@ -782,16 +754,6 @@ public readonly methodInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `withSchemasInput`<sup>Optional</sup> <a name="withSchemasInput" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.withSchemasInput"></a>
-
-```typescript
-public readonly withSchemasInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -815,16 +777,6 @@ public readonly endpoint: string;
 
 ---
 
-##### `feature`<sup>Required</sup> <a name="feature" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.feature"></a>
-
-```typescript
-public readonly feature: string[];
-```
-
-- *Type:* string[]
-
----
-
 ##### `host`<sup>Required</sup> <a name="host" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.host"></a>
 
 ```typescript
@@ -842,16 +794,6 @@ public readonly method: string;
 ```
 
 - *Type:* string
-
----
-
-##### `withSchemas`<sup>Required</sup> <a name="withSchemas" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.withSchemas"></a>
-
-```typescript
-public readonly withSchemas: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -910,8 +852,6 @@ const apiShieldOperationConfig: apiShieldOperation.ApiShieldOperationConfig = { 
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.host">host</a></code> | <code>string</code> | RFC3986-compliant host. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.method">method</a></code> | <code>string</code> | The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.feature">feature</a></code> | <code>string[]</code> | Add feature(s) to the results. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.withSchemas">withSchemas</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response. |
 
 ---
 
@@ -997,7 +937,7 @@ The endpoint which can contain path parameter templates in curly braces, each wi
 
 This will further be Cloudflare-normalized upon insertion. See: https://developers.cloudflare.com/rules/normalization/how-it-works/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 
 ---
 
@@ -1011,7 +951,7 @@ public readonly host: string;
 
 RFC3986-compliant host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 
 ---
 
@@ -1025,7 +965,7 @@ public readonly method: string;
 
 The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 
 ---
 
@@ -1039,39 +979,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
-
----
-
-##### `feature`<sup>Optional</sup> <a name="feature" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.feature"></a>
-
-```typescript
-public readonly feature: string[];
-```
-
-- *Type:* string[]
-
-Add feature(s) to the results.
-
-The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#feature ApiShieldOperation#feature}
-
----
-
-##### `withSchemas`<sup>Optional</sup> <a name="withSchemas" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.withSchemas"></a>
-
-```typescript
-public readonly withSchemas: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
-When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response.
-
-Due to the conversion overhead, this parameter is only supported on single-operation retrieval.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#with_schemas ApiShieldOperation#with_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 
 ---
 

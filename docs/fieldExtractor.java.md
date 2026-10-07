@@ -4,7 +4,7 @@
 
 ### FieldExtractor <a name="FieldExtractor" id="@cdktn/provider-cloudflare.fieldExtractor.FieldExtractor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor cloudflare_field_extractor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor cloudflare_field_extractor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.fieldExtractor.FieldExtractor.Initializer"></a>
 
@@ -38,7 +38,7 @@ FieldExtractor.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractor.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractor.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractor.Initializer.parameter.extractor">extractor</a></code> | <code>java.lang.String</code> | Extractor type. |
-| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractor.Initializer.parameter.rules">rules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules">FieldExtractorRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#rules FieldExtractor#rules}. |
+| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractor.Initializer.parameter.rules">rules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules">FieldExtractorRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#rules FieldExtractor#rules}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#account_id FieldExtractor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#account_id FieldExtractor#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Extractor type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#extractor FieldExtractor#extractor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#extractor FieldExtractor#extractor}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules">FieldExtractorRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#rules FieldExtractor#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#rules FieldExtractor#rules}.
 
 ---
 
@@ -588,7 +588,7 @@ The construct id used in the generated config for the FieldExtractor to import.
 
 The id of the existing FieldExtractor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,7 +894,7 @@ FieldExtractorConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorConfig.property.extractor">extractor</a></code> | <code>java.lang.String</code> | Extractor type. |
-| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorConfig.property.rules">rules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules">FieldExtractorRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#rules FieldExtractor#rules}. |
+| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorConfig.property.rules">rules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules">FieldExtractorRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#rules FieldExtractor#rules}. |
 
 ---
 
@@ -978,7 +978,7 @@ public java.lang.String getAccountId();
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#account_id FieldExtractor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#account_id FieldExtractor#account_id}
 
 ---
 
@@ -992,7 +992,7 @@ public java.lang.String getExtractor();
 
 Extractor type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#extractor FieldExtractor#extractor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#extractor FieldExtractor#extractor}
 
 ---
 
@@ -1004,7 +1004,7 @@ public IResolvable|java.util.List<FieldExtractorRules> getRules();
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules">FieldExtractorRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#rules FieldExtractor#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#rules FieldExtractor#rules}.
 
 ---
 
@@ -1026,9 +1026,9 @@ FieldExtractorRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules.property.fields">fields</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRulesFields">FieldExtractorRulesFields</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#fields FieldExtractor#fields}. |
-| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules.property.ref">ref</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#ref FieldExtractor#ref}. |
-| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#description FieldExtractor#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules.property.fields">fields</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRulesFields">FieldExtractorRulesFields</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#fields FieldExtractor#fields}. |
+| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules.property.ref">ref</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#ref FieldExtractor#ref}. |
+| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRules.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#description FieldExtractor#description}. |
 
 ---
 
@@ -1040,7 +1040,7 @@ public IResolvable|java.util.List<FieldExtractorRulesFields> getFields();
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRulesFields">FieldExtractorRulesFields</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#fields FieldExtractor#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#fields FieldExtractor#fields}.
 
 ---
 
@@ -1052,7 +1052,7 @@ public java.lang.String getRef();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#ref FieldExtractor#ref}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#ref FieldExtractor#ref}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#description FieldExtractor#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#description FieldExtractor#description}.
 
 ---
 
@@ -1085,8 +1085,8 @@ FieldExtractorRulesFields.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRulesFields.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#expression FieldExtractor#expression}. |
-| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRulesFields.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#name FieldExtractor#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRulesFields.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#expression FieldExtractor#expression}. |
+| <code><a href="#@cdktn/provider-cloudflare.fieldExtractor.FieldExtractorRulesFields.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#name FieldExtractor#name}. |
 
 ---
 
@@ -1098,7 +1098,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#expression FieldExtractor#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#expression FieldExtractor#expression}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/field_extractor#name FieldExtractor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/field_extractor#name FieldExtractor#name}.
 
 ---
 

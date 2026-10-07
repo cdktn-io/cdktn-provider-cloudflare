@@ -4,7 +4,7 @@
 
 ### ApiShieldOperation <a name="ApiShieldOperation" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer"></a>
 
@@ -23,8 +23,6 @@ ApiShieldOperation.Builder.create(Construct scope, java.lang.String id)
     .host(java.lang.String)
     .method(java.lang.String)
     .zoneId(java.lang.String)
-//  .feature(java.util.List<java.lang.String>)
-//  .withSchemas(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -43,8 +41,6 @@ ApiShieldOperation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.host">host</a></code> | <code>java.lang.String</code> | RFC3986-compliant host. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.method">method</a></code> | <code>java.lang.String</code> | The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.feature">feature</a></code> | <code>java.util.List<java.lang.String></code> | Add feature(s) to the results. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.withSchemas">withSchemas</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response. |
 
 ---
 
@@ -116,7 +112,7 @@ The endpoint which can contain path parameter templates in curly braces, each wi
 
 This will further be Cloudflare-normalized upon insertion. See: https://developers.cloudflare.com/rules/normalization/how-it-works/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 
 ---
 
@@ -126,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 RFC3986-compliant host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 
 ---
 
@@ -136,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 
 ---
 
@@ -146,31 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
-
----
-
-##### `feature`<sup>Optional</sup> <a name="feature" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.feature"></a>
-
-- *Type:* java.util.List<java.lang.String>
-
-Add feature(s) to the results.
-
-The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#feature ApiShieldOperation#feature}
-
----
-
-##### `withSchemas`<sup>Optional</sup> <a name="withSchemas" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.withSchemas"></a>
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response.
-
-Due to the conversion overhead, this parameter is only supported on single-operation retrieval.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#with_schemas ApiShieldOperation#with_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 
 ---
 
@@ -202,8 +174,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetFeature">resetFeature</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetWithSchemas">resetWithSchemas</a></code> | *No description.* |
 
 ---
 
@@ -518,18 +488,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetFeature` <a name="resetFeature" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetFeature"></a>
-
-```java
-public void resetFeature()
-```
-
-##### `resetWithSchemas` <a name="resetWithSchemas" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetWithSchemas"></a>
-
-```java
-public void resetWithSchemas()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -633,7 +591,7 @@ The construct id used in the generated config for the ApiShieldOperation to impo
 
 The id of the existing ApiShieldOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -669,16 +627,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.operationId">operationId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.schemas">schemas</a></code> | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationSchemasOutputReference">ApiShieldOperationSchemasOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.endpointInput">endpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.featureInput">featureInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.methodInput">methodInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.withSchemasInput">withSchemasInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.feature">feature</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.method">method</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.withSchemas">withSchemas</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -885,16 +839,6 @@ public java.lang.String getEndpointInput();
 
 ---
 
-##### `featureInput`<sup>Optional</sup> <a name="featureInput" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.featureInput"></a>
-
-```java
-public java.util.List<java.lang.String> getFeatureInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
 ##### `hostInput`<sup>Optional</sup> <a name="hostInput" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.hostInput"></a>
 
 ```java
@@ -912,16 +856,6 @@ public java.lang.String getMethodInput();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `withSchemasInput`<sup>Optional</sup> <a name="withSchemasInput" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.withSchemasInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getWithSchemasInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -945,16 +879,6 @@ public java.lang.String getEndpoint();
 
 ---
 
-##### `feature`<sup>Required</sup> <a name="feature" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.feature"></a>
-
-```java
-public java.util.List<java.lang.String> getFeature();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
 ##### `host`<sup>Required</sup> <a name="host" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.host"></a>
 
 ```java
@@ -972,16 +896,6 @@ public java.lang.String getMethod();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `withSchemas`<sup>Required</sup> <a name="withSchemas" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.withSchemas"></a>
-
-```java
-public java.lang.Boolean|IResolvable getWithSchemas();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1034,8 +948,6 @@ ApiShieldOperationConfig.builder()
     .host(java.lang.String)
     .method(java.lang.String)
     .zoneId(java.lang.String)
-//  .feature(java.util.List<java.lang.String>)
-//  .withSchemas(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1054,8 +966,6 @@ ApiShieldOperationConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.host">host</a></code> | <code>java.lang.String</code> | RFC3986-compliant host. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.method">method</a></code> | <code>java.lang.String</code> | The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.feature">feature</a></code> | <code>java.util.List<java.lang.String></code> | Add feature(s) to the results. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.withSchemas">withSchemas</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response. |
 
 ---
 
@@ -1141,7 +1051,7 @@ The endpoint which can contain path parameter templates in curly braces, each wi
 
 This will further be Cloudflare-normalized upon insertion. See: https://developers.cloudflare.com/rules/normalization/how-it-works/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 
 ---
 
@@ -1155,7 +1065,7 @@ public java.lang.String getHost();
 
 RFC3986-compliant host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 
 ---
 
@@ -1169,7 +1079,7 @@ public java.lang.String getMethod();
 
 The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 
 ---
 
@@ -1183,39 +1093,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
-
----
-
-##### `feature`<sup>Optional</sup> <a name="feature" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.feature"></a>
-
-```java
-public java.util.List<java.lang.String> getFeature();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Add feature(s) to the results.
-
-The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#feature ApiShieldOperation#feature}
-
----
-
-##### `withSchemas`<sup>Optional</sup> <a name="withSchemas" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.withSchemas"></a>
-
-```java
-public java.lang.Boolean|IResolvable getWithSchemas();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response.
-
-Due to the conversion overhead, this parameter is only supported on single-operation retrieval.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#with_schemas ApiShieldOperation#with_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 
 ---
 

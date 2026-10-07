@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,26 @@ export interface ApiShieldOperationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The endpoint which can contain path parameter templates in curly braces, each will be replaced from left to right with {varN}, starting with {var1}, during insertion. This will further be Cloudflare-normalized upon insertion. See: https://developers.cloudflare.com/rules/normalization/how-it-works/.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
   */
   readonly endpoint: string;
   /**
-  * Add feature(s) to the results. The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#feature ApiShieldOperation#feature}
-  */
-  readonly feature?: string[];
-  /**
   * RFC3986-compliant host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
   */
   readonly host: string;
   /**
   * The HTTP method used to access the endpoint.
   * Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
   */
   readonly method: string;
   /**
-  * When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response. Due to the conversion overhead, this parameter is only supported on single-operation retrieval.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#with_schemas ApiShieldOperation#with_schemas}
-  */
-  readonly withSchemas?: boolean | cdktn.IResolvable;
-  /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
   */
   readonly zoneId: string;
 }
@@ -1074,7 +1062,7 @@ export class ApiShieldOperationSchemasOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}
 */
 export class ApiShieldOperation extends cdktn.TerraformResource {
 
@@ -1090,7 +1078,7 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiShieldOperation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiShieldOperation to import
-  * @param importFromId The id of the existing ApiShieldOperation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiShieldOperation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiShieldOperation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1102,7 +1090,7 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1113,7 +1101,7 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_api_shield_operation',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1125,10 +1113,8 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._endpoint = config.endpoint;
-    this._feature = config.feature;
     this._host = config.host;
     this._method = config.method;
-    this._withSchemas = config.withSchemas;
     this._zoneId = config.zoneId;
   }
 
@@ -1147,22 +1133,6 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get endpointInput() {
     return this._endpoint;
-  }
-
-  // feature - computed: false, optional: true, required: false
-  private _feature?: string[]; 
-  public get feature() {
-    return this.getListAttribute('feature');
-  }
-  public set feature(value: string[]) {
-    this._feature = value;
-  }
-  public resetFeature() {
-    this._feature = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get featureInput() {
-    return this._feature;
   }
 
   // features - computed: true, optional: false, required: false
@@ -1218,22 +1188,6 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
     return this._schemas;
   }
 
-  // with_schemas - computed: true, optional: true, required: false
-  private _withSchemas?: boolean | cdktn.IResolvable; 
-  public get withSchemas() {
-    return this.getBooleanAttribute('with_schemas');
-  }
-  public set withSchemas(value: boolean | cdktn.IResolvable) {
-    this._withSchemas = value;
-  }
-  public resetWithSchemas() {
-    this._withSchemas = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get withSchemasInput() {
-    return this._withSchemas;
-  }
-
   // zone_id - computed: false, optional: false, required: true
   private _zoneId?: string; 
   public get zoneId() {
@@ -1254,10 +1208,8 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint: cdktn.stringToTerraform(this._endpoint),
-      feature: cdktn.listMapper(cdktn.stringToTerraform, false)(this._feature),
       host: cdktn.stringToTerraform(this._host),
       method: cdktn.stringToTerraform(this._method),
-      with_schemas: cdktn.booleanToTerraform(this._withSchemas),
       zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
@@ -1270,12 +1222,6 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      feature: {
-        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._feature),
-        isBlock: false,
-        type: "list",
-        storageClassType: "stringList",
-      },
       host: {
         value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
@@ -1287,12 +1233,6 @@ export class ApiShieldOperation extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      with_schemas: {
-        value: cdktn.booleanToHclTerraform(this._withSchemas),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       zone_id: {
         value: cdktn.stringToHclTerraform(this._zoneId),

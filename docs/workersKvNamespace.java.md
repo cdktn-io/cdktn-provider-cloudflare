@@ -4,7 +4,7 @@
 
 ### WorkersKvNamespace <a name="WorkersKvNamespace" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer"></a>
 
@@ -36,8 +36,8 @@ WorkersKvNamespace.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | A human-readable string name for a Namespace. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | ID of the Cloudflare account that owns the Workers KV namespaces. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | Human-readable string name for a Workers KV namespace. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer.parameter.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Specify the jurisdiction to restrict the KV namespace to durably store data within. |
 
 ---
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
 
 ---
 
@@ -116,9 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
 
 ---
 
@@ -131,7 +131,7 @@ Specify the jurisdiction to restrict the KV namespace to durably store data with
 Can only be set at namespace creation time.
 Available values: "eu", "fedramp", "us".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
 
 ---
 
@@ -587,7 +587,7 @@ The construct id used in the generated config for the WorkersKvNamespace to impo
 
 The id of the existing WorkersKvNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,8 +902,8 @@ WorkersKvNamespaceConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.title">title</a></code> | <code>java.lang.String</code> | A human-readable string name for a Namespace. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | ID of the Cloudflare account that owns the Workers KV namespaces. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.title">title</a></code> | <code>java.lang.String</code> | Human-readable string name for a Workers KV namespace. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Specify the jurisdiction to restrict the KV namespace to durably store data within. |
 
 ---
@@ -986,9 +986,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
 
 ---
 
@@ -1000,9 +1000,9 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
 
 ---
 
@@ -1019,7 +1019,7 @@ Specify the jurisdiction to restrict the KV namespace to durably store data with
 Can only be set at namespace creation time.
 Available values: "eu", "fedramp", "us".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
 
 ---
 

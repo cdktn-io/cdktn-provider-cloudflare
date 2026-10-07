@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountTokens <a name="DataCloudflareAccountTokens" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When true, includes recently-expired tokens in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 
@@ -553,7 +553,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -945,7 +945,7 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -959,7 +959,7 @@ direction: str
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
 
 ---
 
@@ -973,7 +973,7 @@ include_expired: bool | IResolvable
 
 When true, includes recently-expired tokens in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
 
 ---
 
@@ -987,7 +987,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 
@@ -2055,6 +2055,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultConditionOutputReference">DataCloudflareAccountTokensResultConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.creatorEmailAtCreation">creator_email_at_creation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.issuedOn">issued_on</a></code> | <code>str</code> | *No description.* |
@@ -2063,6 +2064,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.notBefore">not_before</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.policies">policies</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesList">DataCloudflareAccountTokensResultPoliciesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.provisionerId">provisioner_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.provisionerType">provisioner_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResult">DataCloudflareAccountTokensResult</a></code> | *No description.* |
 
@@ -2099,6 +2102,16 @@ condition: DataCloudflareAccountTokensResultConditionOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultConditionOutputReference">DataCloudflareAccountTokensResultConditionOutputReference</a>
+
+---
+
+##### `creator_email_at_creation`<sup>Required</sup> <a name="creator_email_at_creation" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.creatorEmailAtCreation"></a>
+
+```python
+creator_email_at_creation: str
+```
+
+- *Type:* str
 
 ---
 
@@ -2179,6 +2192,26 @@ policies: DataCloudflareAccountTokensResultPoliciesList
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesList">DataCloudflareAccountTokensResultPoliciesList</a>
+
+---
+
+##### `provisioner_id`<sup>Required</sup> <a name="provisioner_id" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.provisionerId"></a>
+
+```python
+provisioner_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `provisioner_type`<sup>Required</sup> <a name="provisioner_type" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultOutputReference.property.provisionerType"></a>
+
+```python
+provisioner_type: str
+```
+
+- *Type:* str
 
 ---
 
@@ -3094,8 +3127,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.category">category</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.deprecated">deprecated</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.editable">editable</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.eolAt">eol_at</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.label">label</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.scopes">scopes</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMeta">DataCloudflareAccountTokensResultPoliciesPermissionGroupsMeta</a></code> | *No description.* |
 
 ---
@@ -3124,20 +3163,80 @@ fqn: str
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.key"></a>
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.category"></a>
 
 ```python
-key: str
+category: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.value"></a>
+##### `deprecated`<sup>Required</sup> <a name="deprecated" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.deprecated"></a>
 
 ```python
-value: str
+deprecated: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `editable`<sup>Required</sup> <a name="editable" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.editable"></a>
+
+```python
+editable: str
+```
+
+- *Type:* str
+
+---
+
+##### `eol_at`<sup>Required</sup> <a name="eol_at" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.eolAt"></a>
+
+```python
+eol_at: str
+```
+
+- *Type:* str
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.label"></a>
+
+```python
+label: str
+```
+
+- *Type:* str
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.scopes"></a>
+
+```python
+scopes: str
+```
+
+- *Type:* str
+
+---
+
+##### `visibility`<sup>Required</sup> <a name="visibility" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference.property.visibility"></a>
+
+```python
+visibility: str
 ```
 
 - *Type:* str

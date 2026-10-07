@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiToken <a name="DataCloudflareApiToken" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token cloudflare_api_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token cloudflare_api_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataCloudflareApiToken to 
 
 The id of the existing DataCloudflareApiToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -443,6 +443,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConditionOutputReference">DataCloudflareApiTokenConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.creatorEmailAtCreation">CreatorEmailAtCreation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.expiresOn">ExpiresOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference">DataCloudflareApiTokenFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -452,6 +453,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.notBefore">NotBefore</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.policies">Policies</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesList">DataCloudflareApiTokenPoliciesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.provisionerId">ProvisionerId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.provisionerType">ProvisionerType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.filterInput">FilterInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.tokenIdInput">TokenIdInput</a></code> | <code>string</code> | *No description.* |
@@ -591,6 +594,16 @@ public DataCloudflareApiTokenConditionOutputReference Condition { get; }
 
 ---
 
+##### `CreatorEmailAtCreation`<sup>Required</sup> <a name="CreatorEmailAtCreation" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.creatorEmailAtCreation"></a>
+
+```csharp
+public string CreatorEmailAtCreation { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ExpiresOn`<sup>Required</sup> <a name="ExpiresOn" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.expiresOn"></a>
 
 ```csharp
@@ -678,6 +691,26 @@ public DataCloudflareApiTokenPoliciesList Policies { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesList">DataCloudflareApiTokenPoliciesList</a>
+
+---
+
+##### `ProvisionerId`<sup>Required</sup> <a name="ProvisionerId" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.provisionerId"></a>
+
+```csharp
+public string ProvisionerId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ProvisionerType`<sup>Required</sup> <a name="ProvisionerType" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.property.provisionerType"></a>
+
+```csharp
+public string ProvisionerType { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -798,7 +831,7 @@ new DataCloudflareApiTokenConfig {
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.property.tokenId">TokenId</a></code> | <code>string</code> | Token identifier tag. |
 
 ---
@@ -881,7 +914,7 @@ public DataCloudflareApiTokenFilter Filter { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter">DataCloudflareApiTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}.
 
 ---
 
@@ -895,7 +928,7 @@ public string TokenId { get; set; }
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token#token_id DataCloudflareApiToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token#token_id DataCloudflareApiToken#token_id}
 
 ---
 
@@ -931,7 +964,7 @@ public string Direction { get; set; }
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token#direction DataCloudflareApiToken#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token#direction DataCloudflareApiToken#direction}
 
 ---
 
@@ -945,7 +978,7 @@ public bool|IResolvable IncludeExpired { get; set; }
 
 When true, includes recently-expired tokens in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token#include_expired DataCloudflareApiToken#include_expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token#include_expired DataCloudflareApiToken#include_expired}
 
 ---
 
@@ -2647,8 +2680,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.category">Category</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.deprecated">Deprecated</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.editable">Editable</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.eolAt">EolAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.label">Label</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.scopes">Scopes</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.visibility">Visibility</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMeta">DataCloudflareApiTokenPoliciesPermissionGroupsMeta</a></code> | *No description.* |
 
 ---
@@ -2677,20 +2716,80 @@ public string Fqn { get; }
 
 ---
 
-##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.key"></a>
+##### `Category`<sup>Required</sup> <a name="Category" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.category"></a>
 
 ```csharp
-public string Key { get; }
+public string Category { get; }
 ```
 
 - *Type:* string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.value"></a>
+##### `Deprecated`<sup>Required</sup> <a name="Deprecated" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.deprecated"></a>
 
 ```csharp
-public string Value { get; }
+public string Deprecated { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Editable`<sup>Required</sup> <a name="Editable" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.editable"></a>
+
+```csharp
+public string Editable { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EolAt`<sup>Required</sup> <a name="EolAt" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.eolAt"></a>
+
+```csharp
+public string EolAt { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Label`<sup>Required</sup> <a name="Label" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.label"></a>
+
+```csharp
+public string Label { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.scopes"></a>
+
+```csharp
+public string Scopes { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Visibility`<sup>Required</sup> <a name="Visibility" id="@cdktn/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.property.visibility"></a>
+
+```csharp
+public string Visibility { get; }
 ```
 
 - *Type:* string

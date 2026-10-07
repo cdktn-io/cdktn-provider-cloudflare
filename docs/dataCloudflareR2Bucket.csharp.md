@@ -4,7 +4,7 @@
 
 ### DataCloudflareR2Bucket <a name="DataCloudflareR2Bucket" id="@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareR2Bucket to 
 
 The id of the existing DataCloudflareR2Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,7 +709,7 @@ new DataCloudflareR2BucketConfig {
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2BucketConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2BucketConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2BucketConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Name of the bucket. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2BucketConfig.property.accountId">AccountId</a></code> | <code>string</code> | Account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2BucketConfig.property.accountId">AccountId</a></code> | <code>string</code> | Cloudflare account ID that owns the R2 resource. |
 
 ---
 
@@ -793,7 +793,7 @@ public string BucketName { get; set; }
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket#bucket_name DataCloudflareR2Bucket#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket#bucket_name DataCloudflareR2Bucket#bucket_name}
 
 ---
 
@@ -805,9 +805,9 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/r2_bucket#account_id DataCloudflareR2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/r2_bucket#account_id DataCloudflareR2Bucket#account_id}
 
 ---
 
