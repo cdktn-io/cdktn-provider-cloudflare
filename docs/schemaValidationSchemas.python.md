@@ -4,7 +4,7 @@
 
 ### SchemaValidationSchemas <a name="SchemaValidationSchemas" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The kind of the schema Available values: "openapi_v3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A human-readable name for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The raw schema, e.g., the OpenAPI schema, either as JSON or YAML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An indicator if this schema is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Omit the source-files of schemas and only retrieve their meta-data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#omit_source SchemaValidationSchemas#omit_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#omit_source SchemaValidationSchemas#omit_source}
 
 ---
 
@@ -670,7 +670,7 @@ The construct id used in the generated config for the SchemaValidationSchemas to
 
 The id of the existing SchemaValidationSchemas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1154,7 +1154,7 @@ kind: str
 
 The kind of the schema Available values: "openapi_v3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
 
 ---
 
@@ -1168,7 +1168,7 @@ name: str
 
 A human-readable name for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
 
 ---
 
@@ -1182,7 +1182,7 @@ source: str
 
 The raw schema, e.g., the OpenAPI schema, either as JSON or YAML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
 
 ---
 
@@ -1196,7 +1196,7 @@ validation_enabled: bool | IResolvable
 
 An indicator if this schema is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
 
 ---
 
@@ -1210,7 +1210,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
 
 ---
 
@@ -1224,7 +1224,7 @@ omit_source: bool | IResolvable
 
 Omit the source-files of schemas and only retrieve their meta-data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas#omit_source SchemaValidationSchemas#omit_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/schema_validation_schemas#omit_source SchemaValidationSchemas#omit_source}
 
 ---
 

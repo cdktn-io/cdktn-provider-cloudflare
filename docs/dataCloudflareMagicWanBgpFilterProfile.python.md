@@ -4,7 +4,7 @@
 
 ### DataCloudflareMagicWanBgpFilterProfile <a name="DataCloudflareMagicWanBgpFilterProfile" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfile.DataCloudflareMagicWanBgpFilterProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfile.DataCloudflareMagicWanBgpFilterProfile.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile#account_id DataCloudflareMagicWanBgpFilterProfile#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile#account_id DataCloudflareMagicWanBgpFilterProfile#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile#profile_id DataCloudflareMagicWanBgpFilterProfile#profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile#profile_id DataCloudflareMagicWanBgpFilterProfile#profile_id}
 
 ---
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DataCloudflareMagicWanBgpF
 
 The id of the existing DataCloudflareMagicWanBgpFilterProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -911,7 +911,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile#account_id DataCloudflareMagicWanBgpFilterProfile#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile#account_id DataCloudflareMagicWanBgpFilterProfile#account_id}
 
 ---
 
@@ -925,7 +925,7 @@ profile_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile#profile_id DataCloudflareMagicWanBgpFilterProfile#profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile#profile_id DataCloudflareMagicWanBgpFilterProfile#profile_id}
 
 ---
 

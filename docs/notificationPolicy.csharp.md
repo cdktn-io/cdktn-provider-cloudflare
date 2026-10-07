@@ -4,7 +4,7 @@
 
 ### NotificationPolicy <a name="NotificationPolicy" id="@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy cloudflare_notification_policy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy cloudflare_notification_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the NotificationPolicy to impo
 
 The id of the existing NotificationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1075,7 +1075,7 @@ public string AccountId { get; set; }
 
 The account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
 
 ---
 
@@ -1092,7 +1092,7 @@ Refers to which event will trigger a Notification dispatch.
 You can use the endpoint to get available alert types which then will give you a list of possible values.
 Available values: "abuse_report_alert", "access_custom_certificate_expiration_type", "advanced_ddos_attack_l4_alert", "advanced_ddos_attack_l7_alert", "advanced_http_alert_error", "bgp_hijack_notification", "billing_usage_alert", "block_notification_block_removed", "block_notification_new_block", "block_notification_review_rejected", "bot_traffic_basic_alert", "brand_protection_alert", "brand_protection_digest", "clickhouse_alert_fw_anomaly", "clickhouse_alert_fw_ent_anomaly", "cloudforce_one_request_notification", "cni_maintenance_notification", "custom_analytics", "custom_bot_detection_alert", "custom_ssl_certificate_event_type", "dedicated_ssl_certificate_event_type", "device_connectivity_anomaly_alert", "dos_attack_l4", "dos_attack_l7", "expiring_service_token_alert", "failing_logpush_job_disabled_alert", "fbm_auto_advertisement", "fbm_dosd_attack", "fbm_volumetric_attack", "health_check_status_notification", "hostname_aop_custom_certificate_expiration_type", "http_alert_edge_error", "http_alert_origin_error", "image_notification", "image_resizing_notification", "incident_alert", "load_balancing_health_alert", "load_balancing_pool_enablement_alert", "logo_match_alert", "magic_tunnel_health_check_event", "magic_wan_tunnel_health", "maintenance_event_notification", "mtls_certificate_store_certificate_expiration_type", "pages_event_alert", "radar_notification", "real_origin_monitoring", "scriptmonitor_alert_new_code_change_detections", "scriptmonitor_alert_new_hosts", "scriptmonitor_alert_new_malicious_hosts", "scriptmonitor_alert_new_malicious_scripts", "scriptmonitor_alert_new_malicious_url", "scriptmonitor_alert_new_max_length_resource_url", "scriptmonitor_alert_new_resources", "secondary_dns_all_primaries_failing", "secondary_dns_primaries_failing", "secondary_dns_warning", "secondary_dns_zone_successfully_updated", "secondary_dns_zone_validation_warning", "security_insights_alert", "sentinel_alert", "stream_live_notifications", "synthetic_test_latency_alert", "synthetic_test_low_availability_alert", "traffic_anomalies_alert", "tunnel_health_event", "tunnel_update_event", "universal_ssl_event_type", "web_analytics_metrics_update", "zone_aop_custom_certificate_expiration_type".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
 
 ---
 
@@ -1108,7 +1108,7 @@ List of IDs that will be used when dispatching a notification.
 
 IDs for email type will be the email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#mechanisms NotificationPolicy#mechanisms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#mechanisms NotificationPolicy#mechanisms}
 
 ---
 
@@ -1122,7 +1122,7 @@ public string Name { get; set; }
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#name NotificationPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#name NotificationPolicy#name}
 
 ---
 
@@ -1136,7 +1136,7 @@ public string AlertInterval { get; set; }
 
 Optional specification of how often to re-alert from the same incident, not support on all alert types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#alert_interval NotificationPolicy#alert_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#alert_interval NotificationPolicy#alert_interval}
 
 ---
 
@@ -1150,7 +1150,7 @@ public string Description { get; set; }
 
 Optional description for the Notification policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#description NotificationPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#description NotificationPolicy#description}
 
 ---
 
@@ -1164,7 +1164,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether or not the Notification policy is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
 
 ---
 
@@ -1180,7 +1180,7 @@ Optional filters that allow you to be alerted only on a subset of events for tha
 
 This is only available for select alert types. See alert type documentation for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
 
 ---
 
@@ -1300,7 +1300,7 @@ public string[] Actions { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
 
 ---
 
@@ -1314,7 +1314,7 @@ public string[] AffectedAsns { get; set; }
 
 Used for configuring radar_notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#affected_asns NotificationPolicy#affected_asns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#affected_asns NotificationPolicy#affected_asns}
 
 ---
 
@@ -1328,7 +1328,7 @@ public string[] AffectedComponents { get; set; }
 
 Used for configuring incident_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
 
 ---
 
@@ -1342,7 +1342,7 @@ public string[] AffectedLocations { get; set; }
 
 Used for configuring radar_notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#affected_locations NotificationPolicy#affected_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#affected_locations NotificationPolicy#affected_locations}
 
 ---
 
@@ -1356,7 +1356,7 @@ public string[] AirportCode { get; set; }
 
 Used for configuring maintenance_event_notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
 
 ---
 
@@ -1370,7 +1370,7 @@ public string[] AlertTriggerPreferences { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
 
 ---
 
@@ -1384,7 +1384,7 @@ public string[] AlertTriggerPreferencesValue { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#alert_trigger_preferences_value NotificationPolicy#alert_trigger_preferences_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#alert_trigger_preferences_value NotificationPolicy#alert_trigger_preferences_value}
 
 ---
 
@@ -1398,7 +1398,7 @@ public string[] Enabled { get; set; }
 
 Used for configuring load_balancing_pool_enablement_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
 
 ---
 
@@ -1412,7 +1412,7 @@ public string[] Environment { get; set; }
 
 Used for configuring pages_event_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
 
 ---
 
@@ -1426,7 +1426,7 @@ public string[] Event { get; set; }
 
 Used for configuring pages_event_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#event NotificationPolicy#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#event NotificationPolicy#event}
 
 ---
 
@@ -1440,7 +1440,7 @@ public string[] EventSource { get; set; }
 
 Used for configuring load_balancing_health_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
 
 ---
 
@@ -1454,7 +1454,7 @@ public string[] EventType { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
 
 ---
 
@@ -1468,7 +1468,7 @@ public string[] GroupBy { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
 
 ---
 
@@ -1482,7 +1482,7 @@ public string[] HealthCheckId { get; set; }
 
 Used for configuring health_check_status_notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
 
 ---
 
@@ -1496,7 +1496,7 @@ public string[] IncidentImpact { get; set; }
 
 Used for configuring incident_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
 
 ---
 
@@ -1510,7 +1510,7 @@ public string[] InputId { get; set; }
 
 Used for configuring stream_live_notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
 
 ---
 
@@ -1524,7 +1524,7 @@ public string[] InsightClass { get; set; }
 
 Used for configuring security_insights_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#insight_class NotificationPolicy#insight_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#insight_class NotificationPolicy#insight_class}
 
 ---
 
@@ -1538,7 +1538,7 @@ public string[] Limit { get; set; }
 
 Used for configuring billing_usage_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
 
 ---
 
@@ -1552,7 +1552,7 @@ public string[] LogoTag { get; set; }
 
 Used for configuring logo_match_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#logo_tag NotificationPolicy#logo_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#logo_tag NotificationPolicy#logo_tag}
 
 ---
 
@@ -1566,7 +1566,7 @@ public string[] MegabitsPerSecond { get; set; }
 
 Used for configuring advanced_ddos_attack_l4_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
 
 ---
 
@@ -1580,7 +1580,7 @@ public string[] NewHealth { get; set; }
 
 Used for configuring load_balancing_health_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
 
 ---
 
@@ -1594,7 +1594,7 @@ public string[] NewStatus { get; set; }
 
 Used for configuring tunnel_health_event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
 
 ---
 
@@ -1608,7 +1608,7 @@ public string[] PacketsPerSecond { get; set; }
 
 Used for configuring advanced_ddos_attack_l4_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
 
 ---
 
@@ -1622,7 +1622,7 @@ public string[] PoolId { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
 
 ---
 
@@ -1636,7 +1636,7 @@ public string[] PopNames { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#pop_names NotificationPolicy#pop_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#pop_names NotificationPolicy#pop_names}
 
 ---
 
@@ -1650,7 +1650,7 @@ public string[] Product { get; set; }
 
 Used for configuring billing_usage_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#product NotificationPolicy#product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#product NotificationPolicy#product}
 
 ---
 
@@ -1664,7 +1664,7 @@ public string[] ProjectId { get; set; }
 
 Used for configuring pages_event_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
 
 ---
 
@@ -1678,7 +1678,7 @@ public string[] Protocol { get; set; }
 
 Used for configuring advanced_ddos_attack_l4_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
 
 ---
 
@@ -1692,7 +1692,7 @@ public string[] QueryTag { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#query_tag NotificationPolicy#query_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#query_tag NotificationPolicy#query_tag}
 
 ---
 
@@ -1706,7 +1706,7 @@ public string[] RequestsPerSecond { get; set; }
 
 Used for configuring advanced_ddos_attack_l7_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
 
 ---
 
@@ -1720,7 +1720,7 @@ public string[] Selectors { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
 
 ---
 
@@ -1734,7 +1734,7 @@ public string[] Services { get; set; }
 
 Used for configuring clickhouse_alert_fw_ent_anomaly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#services NotificationPolicy#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#services NotificationPolicy#services}
 
 ---
 
@@ -1748,7 +1748,7 @@ public string[] Slo { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
 
 ---
 
@@ -1762,7 +1762,7 @@ public string[] Status { get; set; }
 
 Used for configuring health_check_status_notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#status NotificationPolicy#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#status NotificationPolicy#status}
 
 ---
 
@@ -1776,7 +1776,7 @@ public string[] TargetHostname { get; set; }
 
 Used for configuring advanced_ddos_attack_l7_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
 
 ---
 
@@ -1790,7 +1790,7 @@ public string[] TargetIp { get; set; }
 
 Used for configuring advanced_ddos_attack_l4_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#target_ip NotificationPolicy#target_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#target_ip NotificationPolicy#target_ip}
 
 ---
 
@@ -1804,7 +1804,7 @@ public string[] TargetZoneName { get; set; }
 
 Used for configuring advanced_ddos_attack_l7_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
 
 ---
 
@@ -1818,7 +1818,7 @@ public string[] TokenId { get; set; }
 
 Access service token IDs to include for expiring_service_token_alert. Omit this property to include all current and future service tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#token_id NotificationPolicy#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#token_id NotificationPolicy#token_id}
 
 ---
 
@@ -1832,7 +1832,7 @@ public string[] TrafficExclusions { get; set; }
 
 Used for configuring traffic_anomalies_alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#traffic_exclusions NotificationPolicy#traffic_exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#traffic_exclusions NotificationPolicy#traffic_exclusions}
 
 ---
 
@@ -1846,7 +1846,7 @@ public string[] TunnelId { get; set; }
 
 Used for configuring tunnel_health_event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
 
 ---
 
@@ -1860,7 +1860,7 @@ public string[] TunnelName { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#tunnel_name NotificationPolicy#tunnel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#tunnel_name NotificationPolicy#tunnel_name}
 
 ---
 
@@ -1874,7 +1874,7 @@ public string[] Type { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#type NotificationPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#type NotificationPolicy#type}
 
 ---
 
@@ -1888,7 +1888,7 @@ public string[] Where { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#where NotificationPolicy#where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#where NotificationPolicy#where}
 
 ---
 
@@ -1902,7 +1902,7 @@ public string[] Zones { get; set; }
 
 Usage depends on specific alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
 
 ---
 
@@ -1924,9 +1924,9 @@ new NotificationPolicyMechanisms {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms.property.email">Email</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmail">NotificationPolicyMechanismsEmail</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#email NotificationPolicy#email}. |
-| <code><a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms.property.pagerduty">Pagerduty</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerduty">NotificationPolicyMechanismsPagerduty</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#pagerduty NotificationPolicy#pagerduty}. |
-| <code><a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms.property.webhooks">Webhooks</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooks">NotificationPolicyMechanismsWebhooks</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#webhooks NotificationPolicy#webhooks}. |
+| <code><a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms.property.email">Email</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmail">NotificationPolicyMechanismsEmail</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#email NotificationPolicy#email}. |
+| <code><a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms.property.pagerduty">Pagerduty</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerduty">NotificationPolicyMechanismsPagerduty</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#pagerduty NotificationPolicy#pagerduty}. |
+| <code><a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms.property.webhooks">Webhooks</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooks">NotificationPolicyMechanismsWebhooks</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#webhooks NotificationPolicy#webhooks}. |
 
 ---
 
@@ -1938,7 +1938,7 @@ public IResolvable|NotificationPolicyMechanismsEmail[] Email { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmail">NotificationPolicyMechanismsEmail</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#email NotificationPolicy#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#email NotificationPolicy#email}.
 
 ---
 
@@ -1950,7 +1950,7 @@ public IResolvable|NotificationPolicyMechanismsPagerduty[] Pagerduty { get; set;
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerduty">NotificationPolicyMechanismsPagerduty</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#pagerduty NotificationPolicy#pagerduty}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#pagerduty NotificationPolicy#pagerduty}.
 
 ---
 
@@ -1962,7 +1962,7 @@ public IResolvable|NotificationPolicyMechanismsWebhooks[] Webhooks { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooks">NotificationPolicyMechanismsWebhooks</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#webhooks NotificationPolicy#webhooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#webhooks NotificationPolicy#webhooks}.
 
 ---
 
@@ -1996,7 +1996,7 @@ public string Id { get; set; }
 
 The email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#id NotificationPolicy#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#id NotificationPolicy#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2033,7 +2033,7 @@ public string Id { get; set; }
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#id NotificationPolicy#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#id NotificationPolicy#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2070,7 +2070,7 @@ public string Id { get; set; }
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/notification_policy#id NotificationPolicy#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/notification_policy#id NotificationPolicy#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

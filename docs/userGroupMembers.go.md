@@ -4,7 +4,7 @@
 
 ### UserGroupMembers <a name="UserGroupMembers" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members cloudflare_user_group_members}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members cloudflare_user_group_members}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembers.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the UserGroupMembers to import
 
 The id of the existing UserGroupMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,7 +927,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergrou
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.members">Members</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}. |
+| <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.members">Members</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#members UserGroupMembers#members}. |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.userGroupId">UserGroupId</a></code> | <code>*string</code> | User Group identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.direction">Direction</a></code> | <code>*string</code> | The sort order of returned user group members by email. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.userGroupMembers.UserGroupMembersConfig.property.fuzzyEmail">FuzzyEmail</a></code> | <code>*string</code> | A string used for filtering members by partial email match. |
@@ -1016,7 +1016,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#account_id UserGroupMembers#account_id}
 
 ---
 
@@ -1028,7 +1028,7 @@ Members interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#members UserGroupMembers#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#members UserGroupMembers#members}.
 
 ---
 
@@ -1042,7 +1042,7 @@ UserGroupId *string
 
 User Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#user_group_id UserGroupMembers#user_group_id}
 
 ---
 
@@ -1056,7 +1056,7 @@ Direction *string
 
 The sort order of returned user group members by email. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#direction UserGroupMembers#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#direction UserGroupMembers#direction}
 
 ---
 
@@ -1070,7 +1070,7 @@ FuzzyEmail *string
 
 A string used for filtering members by partial email match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#fuzzy_email UserGroupMembers#fuzzy_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#fuzzy_email UserGroupMembers#fuzzy_email}
 
 ---
 
@@ -1084,7 +1084,7 @@ Page *f64
 
 Page number of paginated results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#page UserGroupMembers#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#page UserGroupMembers#page}
 
 ---
 
@@ -1098,7 +1098,7 @@ PerPage *f64
 
 Maximum number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#per_page UserGroupMembers#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#per_page UserGroupMembers#per_page}
 
 ---
 
@@ -1132,7 +1132,7 @@ Id *string
 
 The identifier of an existing account Member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members#id UserGroupMembers#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/user_group_members#id UserGroupMembers#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

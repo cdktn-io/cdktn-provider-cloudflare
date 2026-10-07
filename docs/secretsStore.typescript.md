@@ -4,7 +4,7 @@
 
 ### SecretsStore <a name="SecretsStore" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store cloudflare_secrets_store}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/secrets_store cloudflare_secrets_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the SecretsStore to import.
 
 The id of the existing SecretsStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/secrets_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,7 +811,7 @@ const secretsStoreConfig: secretsStore.SecretsStoreConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#account_id SecretsStore#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/secrets_store#account_id SecretsStore#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.name">name</a></code> | <code>string</code> | The name of the store. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.force">force</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, cascade-deletes all secrets in the store before deleting the store itself. |
 
@@ -895,7 +895,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#account_id SecretsStore#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/secrets_store#account_id SecretsStore#account_id}.
 
 ---
 
@@ -909,7 +909,7 @@ public readonly name: string;
 
 The name of the store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#name SecretsStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/secrets_store#name SecretsStore#name}
 
 ---
 
@@ -926,7 +926,7 @@ When true, cascade-deletes all secrets in the store before deleting the store it
 Required when deleting a non-empty store. Without this parameter, attempting to
 delete a non-empty store returns 409.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store#force SecretsStore#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/secrets_store#force SecretsStore#force}
 
 ---
 
