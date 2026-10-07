@@ -213,6 +213,7 @@ export * as zeroTrustAccessPolicy from './zero-trust-access-policy/index';
 export * as zeroTrustAccessServiceToken from './zero-trust-access-service-token/index';
 export * as zeroTrustAccessShortLivedCertificate from './zero-trust-access-short-lived-certificate/index';
 export * as zeroTrustAccessTag from './zero-trust-access-tag/index';
+export * as zeroTrustCasbIntegration from './zero-trust-casb-integration/index';
 export * as zeroTrustCasbPolicy from './zero-trust-casb-policy/index';
 export * as zeroTrustCasbWebhook from './zero-trust-casb-webhook/index';
 export * as zeroTrustConnectivitySettings from './zero-trust-connectivity-settings/index';
@@ -637,6 +638,8 @@ export * as dataCloudflareZeroTrustAccessShortLivedCertificate from './data-clou
 export * as dataCloudflareZeroTrustAccessShortLivedCertificates from './data-cloudflare-zero-trust-access-short-lived-certificates/index';
 export * as dataCloudflareZeroTrustAccessTag from './data-cloudflare-zero-trust-access-tag/index';
 export * as dataCloudflareZeroTrustAccessTags from './data-cloudflare-zero-trust-access-tags/index';
+export * as dataCloudflareZeroTrustCasbIntegration from './data-cloudflare-zero-trust-casb-integration/index';
+export * as dataCloudflareZeroTrustCasbIntegrations from './data-cloudflare-zero-trust-casb-integrations/index';
 export * as dataCloudflareZeroTrustCasbPolicies from './data-cloudflare-zero-trust-casb-policies/index';
 export * as dataCloudflareZeroTrustCasbPolicy from './data-cloudflare-zero-trust-casb-policy/index';
 export * as dataCloudflareZeroTrustCasbWebhook from './data-cloudflare-zero-trust-casb-webhook/index';

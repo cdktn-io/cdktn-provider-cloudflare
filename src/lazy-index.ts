@@ -213,6 +213,7 @@ Object.defineProperty(exports, 'zeroTrustAccessPolicy', { get: function () { ret
 Object.defineProperty(exports, 'zeroTrustAccessServiceToken', { get: function () { return require('./zero-trust-access-service-token'); } });
 Object.defineProperty(exports, 'zeroTrustAccessShortLivedCertificate', { get: function () { return require('./zero-trust-access-short-lived-certificate'); } });
 Object.defineProperty(exports, 'zeroTrustAccessTag', { get: function () { return require('./zero-trust-access-tag'); } });
+Object.defineProperty(exports, 'zeroTrustCasbIntegration', { get: function () { return require('./zero-trust-casb-integration'); } });
 Object.defineProperty(exports, 'zeroTrustCasbPolicy', { get: function () { return require('./zero-trust-casb-policy'); } });
 Object.defineProperty(exports, 'zeroTrustCasbWebhook', { get: function () { return require('./zero-trust-casb-webhook'); } });
 Object.defineProperty(exports, 'zeroTrustConnectivitySettings', { get: function () { return require('./zero-trust-connectivity-settings'); } });
@@ -637,6 +638,8 @@ Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessShortLivedCertifica
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessShortLivedCertificates', { get: function () { return require('./data-cloudflare-zero-trust-access-short-lived-certificates'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessTag', { get: function () { return require('./data-cloudflare-zero-trust-access-tag'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessTags', { get: function () { return require('./data-cloudflare-zero-trust-access-tags'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbIntegration', { get: function () { return require('./data-cloudflare-zero-trust-casb-integration'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbIntegrations', { get: function () { return require('./data-cloudflare-zero-trust-casb-integrations'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbPolicies', { get: function () { return require('./data-cloudflare-zero-trust-casb-policies'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbPolicy', { get: function () { return require('./data-cloudflare-zero-trust-casb-policy'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustCasbWebhook', { get: function () { return require('./data-cloudflare-zero-trust-casb-webhook'); } });

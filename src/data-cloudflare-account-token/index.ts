@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataCloudflareAccountTokenConfig extends cdktn.TerraformMetaArg
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}
   */
   readonly filter?: DataCloudflareAccountTokenFilter;
   /**
   * Token identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
   */
   readonly tokenId?: string;
 }
@@ -148,13 +148,13 @@ export interface DataCloudflareAccountTokenFilter {
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
   */
   readonly direction?: string;
   /**
   * When true, includes recently-expired tokens in the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#include_expired DataCloudflareAccountToken#include_expired}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#include_expired DataCloudflareAccountToken#include_expired}
   */
   readonly includeExpired?: boolean | cdktn.IResolvable;
 }
@@ -324,14 +324,44 @@ export class DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReferen
     }
   }
 
-  // key - computed: true, optional: false, required: false
-  public get key() {
-    return this.getStringAttribute('key');
+  // category - computed: true, optional: false, required: false
+  public get category() {
+    return this.getStringAttribute('category');
   }
 
-  // value - computed: true, optional: false, required: false
-  public get value() {
-    return this.getStringAttribute('value');
+  // deprecated - computed: true, optional: false, required: false
+  public get deprecated() {
+    return this.getStringAttribute('deprecated');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // editable - computed: true, optional: false, required: false
+  public get editable() {
+    return this.getStringAttribute('editable');
+  }
+
+  // eol_at - computed: true, optional: false, required: false
+  public get eolAt() {
+    return this.getStringAttribute('eol_at');
+  }
+
+  // label - computed: true, optional: false, required: false
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+
+  // scopes - computed: true, optional: false, required: false
+  public get scopes() {
+    return this.getStringAttribute('scopes');
+  }
+
+  // visibility - computed: true, optional: false, required: false
+  public get visibility() {
+    return this.getStringAttribute('visibility');
   }
 }
 export interface DataCloudflareAccountTokenPoliciesPermissionGroups {
@@ -514,7 +544,7 @@ export class DataCloudflareAccountTokenPoliciesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token cloudflare_account_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token cloudflare_account_token}
 */
 export class DataCloudflareAccountToken extends cdktn.TerraformDataSource {
 
@@ -530,7 +560,7 @@ export class DataCloudflareAccountToken extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareAccountToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccountToken to import
-  * @param importFromId The id of the existing DataCloudflareAccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccountToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -542,7 +572,7 @@ export class DataCloudflareAccountToken extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/account_token cloudflare_account_token} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/account_token cloudflare_account_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -553,7 +583,7 @@ export class DataCloudflareAccountToken extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_account_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -593,6 +623,11 @@ export class DataCloudflareAccountToken extends cdktn.TerraformDataSource {
   private _condition = new DataCloudflareAccountTokenConditionOutputReference(this, "condition");
   public get condition() {
     return this._condition;
+  }
+
+  // creator_email_at_creation - computed: true, optional: false, required: false
+  public get creatorEmailAtCreation() {
+    return this.getStringAttribute('creator_email_at_creation');
   }
 
   // expires_on - computed: true, optional: false, required: false
@@ -650,6 +685,16 @@ export class DataCloudflareAccountToken extends cdktn.TerraformDataSource {
   private _policies = new DataCloudflareAccountTokenPoliciesList(this, "policies", false);
   public get policies() {
     return this._policies;
+  }
+
+  // provisioner_id - computed: true, optional: false, required: false
+  public get provisionerId() {
+    return this.getStringAttribute('provisioner_id');
+  }
+
+  // provisioner_type - computed: true, optional: false, required: false
+  public get provisionerType() {
+    return this.getStringAttribute('provisioner_type');
   }
 
   // status - computed: true, optional: false, required: false

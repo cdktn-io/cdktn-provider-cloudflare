@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +15,50 @@ export interface ZoneTracingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Up to 100 OpenTelemetry destination identifiers that receive traces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#destinations ZoneTracing#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#destinations ZoneTracing#destinations}
   */
   readonly destinations?: string[];
   /**
   * Whether Cloudflare Traces is enabled for the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#enabled ZoneTracing#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#enabled ZoneTracing#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Whether trace context is sent externally or across a zone boundary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#forward_context ZoneTracing#forward_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#forward_context ZoneTracing#forward_context}
   */
   readonly forwardContext?: boolean | cdktn.IResolvable;
   /**
   * Whether traces are persisted in Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#persist ZoneTracing#persist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#persist ZoneTracing#persist}
   */
   readonly persist?: boolean | cdktn.IResolvable;
   /**
   * When inbound trace context may be continued. Authenticated propagation is not supported yet.
   * Available values: "accept", "authenticated", "reject".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#propagation_policy ZoneTracing#propagation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#propagation_policy ZoneTracing#propagation_policy}
   */
   readonly propagationPolicy?: string;
   /**
   * The ratio of requests sampled for tracing, from 0 to 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#sampling_ratio ZoneTracing#sampling_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#sampling_ratio ZoneTracing#sampling_ratio}
   */
   readonly samplingRatio?: number;
   /**
   * Specify the zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#zone_id ZoneTracing#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#zone_id ZoneTracing#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing cloudflare_zone_tracing}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing cloudflare_zone_tracing}
 */
 export class ZoneTracing extends cdktn.TerraformResource {
 
@@ -74,7 +74,7 @@ export class ZoneTracing extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ZoneTracing resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneTracing to import
-  * @param importFromId The id of the existing ZoneTracing that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneTracing that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneTracing to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -86,7 +86,7 @@ export class ZoneTracing extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing cloudflare_zone_tracing} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing cloudflare_zone_tracing} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class ZoneTracing extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_zone_tracing',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

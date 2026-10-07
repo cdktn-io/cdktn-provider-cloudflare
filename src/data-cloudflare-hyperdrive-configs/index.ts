@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/hyperdrive_configs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareHyperdriveConfigsConfig extends cdktn.TerraformMe
   /**
   * Define configurations using a unique string identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs#account_id DataCloudflareHyperdriveConfigs#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/hyperdrive_configs#account_id DataCloudflareHyperdriveConfigs#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs#max_items DataCloudflareHyperdriveConfigs#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/hyperdrive_configs#max_items DataCloudflareHyperdriveConfigs#max_items}
   */
   readonly maxItems?: number;
 }
@@ -153,9 +153,9 @@ export class DataCloudflareHyperdriveConfigsResultIntegrationOutputReference ext
     return this.getStringAttribute('database_name');
   }
 
-  // integration - computed: true, optional: false, required: false
-  public get integration() {
-    return this.getStringAttribute('integration');
+  // hyperdrive_config_provider - computed: true, optional: false, required: false
+  public get hyperdriveConfigProvider() {
+    return this.getStringAttribute('hyperdrive_config_provider');
   }
 
   // organization_name - computed: true, optional: false, required: false
@@ -452,7 +452,7 @@ export class DataCloudflareHyperdriveConfigsResultList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs}
 */
 export class DataCloudflareHyperdriveConfigs extends cdktn.TerraformDataSource {
 
@@ -468,7 +468,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareHyperdriveConfigs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareHyperdriveConfigs to import
-  * @param importFromId The id of the existing DataCloudflareHyperdriveConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareHyperdriveConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/hyperdrive_configs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareHyperdriveConfigs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -480,7 +480,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -491,7 +491,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_hyperdrive_configs',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
