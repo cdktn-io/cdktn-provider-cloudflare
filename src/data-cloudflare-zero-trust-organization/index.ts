@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_organization
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareZeroTrustOrganizationConfig extends cdktn.Terrafo
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_organization#account_id DataCloudflareZeroTrustOrganization#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_organization#account_id DataCloudflareZeroTrustOrganization#account_id}
   */
   readonly accountId?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_organization#zone_id DataCloudflareZeroTrustOrganization#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_organization#zone_id DataCloudflareZeroTrustOrganization#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -227,10 +227,10 @@ export class DataCloudflareZeroTrustOrganizationMfaConfigOutputReference extends
     return this.getStringAttribute('session_duration');
   }
 }
-export interface DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirements {
+export interface DataCloudflareZeroTrustOrganizationMfaPivKeyRequirements {
 }
 
-export function dataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsToTerraform(struct?: DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirements): any {
+export function dataCloudflareZeroTrustOrganizationMfaPivKeyRequirementsToTerraform(struct?: DataCloudflareZeroTrustOrganizationMfaPivKeyRequirements): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -240,7 +240,7 @@ export function dataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsToTer
 }
 
 
-export function dataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsToHclTerraform(struct?: DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirements): any {
+export function dataCloudflareZeroTrustOrganizationMfaPivKeyRequirementsToHclTerraform(struct?: DataCloudflareZeroTrustOrganizationMfaPivKeyRequirements): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -250,7 +250,7 @@ export function dataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsToHcl
   return attrs;
 }
 
-export class DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference extends cdktn.ComplexObject {
+export class DataCloudflareZeroTrustOrganizationMfaPivKeyRequirementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -261,13 +261,13 @@ export class DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsOutputRe
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirements | undefined {
+  public get internalValue(): DataCloudflareZeroTrustOrganizationMfaPivKeyRequirements | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirements | undefined) {
+  public set internalValue(value: DataCloudflareZeroTrustOrganizationMfaPivKeyRequirements | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -367,7 +367,7 @@ export class DataCloudflareZeroTrustOrganizationServiceTokenInactivityOutputRefe
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}
 */
 export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSource {
 
@@ -383,7 +383,7 @@ export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataCloudflareZeroTrustOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustOrganization to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -395,7 +395,7 @@ export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -406,7 +406,7 @@ export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSour
       terraformResourceType: 'cloudflare_zero_trust_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.27.0',
+        providerVersion: '5.28.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -489,15 +489,15 @@ export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSour
     return this._mfaConfig;
   }
 
+  // mfa_piv_key_requirements - computed: true, optional: false, required: false
+  private _mfaPivKeyRequirements = new DataCloudflareZeroTrustOrganizationMfaPivKeyRequirementsOutputReference(this, "mfa_piv_key_requirements");
+  public get mfaPivKeyRequirements() {
+    return this._mfaPivKeyRequirements;
+  }
+
   // mfa_required_for_all_apps - computed: true, optional: false, required: false
   public get mfaRequiredForAllApps() {
     return this.getBooleanAttribute('mfa_required_for_all_apps');
-  }
-
-  // mfa_ssh_piv_key_requirements - computed: true, optional: false, required: false
-  private _mfaSshPivKeyRequirements = new DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference(this, "mfa_ssh_piv_key_requirements");
-  public get mfaSshPivKeyRequirements() {
-    return this._mfaSshPivKeyRequirements;
   }
 
   // name - computed: true, optional: false, required: false
