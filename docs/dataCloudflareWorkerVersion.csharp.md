@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkerVersion <a name="DataCloudflareWorkerVersion" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/worker_version cloudflare_worker_version}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/worker_version cloudflare_worker_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersion.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareWorkerVersio
 
 The id of the existing DataCloudflareWorkerVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/worker_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/worker_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1021,6 +1021,19 @@ new DataCloudflareWorkerVersionBindingsOutboundWorker {
 ```
 
 
+### DataCloudflareWorkerVersionBindingsRetry <a name="DataCloudflareWorkerVersionBindingsRetry" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetry"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetry.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new DataCloudflareWorkerVersionBindingsRetry {
+
+};
+```
+
+
 ### DataCloudflareWorkerVersionBindingsSimple <a name="DataCloudflareWorkerVersionBindingsSimple" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsSimple"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsSimple.Initializer"></a>
@@ -1167,7 +1180,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/worker_version#account_id DataCloudflareWorkerVersion#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/worker_version#account_id DataCloudflareWorkerVersion#account_id}
 
 ---
 
@@ -1181,7 +1194,7 @@ public string VersionId { get; set; }
 
 Identifier for the version, which can be a UUID, a UUID prefix (minimum length 8), or the literal "latest" to operate on the most recently created version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/worker_version#version_id DataCloudflareWorkerVersion#version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/worker_version#version_id DataCloudflareWorkerVersion#version_id}
 
 ---
 
@@ -1195,7 +1208,7 @@ public string WorkerId { get; set; }
 
 Identifier for the Worker, which can be ID or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/worker_version#worker_id DataCloudflareWorkerVersion#worker_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/worker_version#worker_id DataCloudflareWorkerVersion#worker_id}
 
 ---
 
@@ -1211,7 +1224,7 @@ Whether to include the `modules` property of the version in the response, which 
 
 Available values: "modules".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/worker_version#include DataCloudflareWorkerVersion#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/worker_version#include DataCloudflareWorkerVersion#include}
 
 ---
 
@@ -3633,6 +3646,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.part">Part</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.pipeline">Pipeline</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.queueName">QueueName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.retry">Retry</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference">DataCloudflareWorkerVersionBindingsRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.scriptName">ScriptName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.secretName">SecretName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
@@ -3984,6 +3998,16 @@ public string QueueName { get; }
 
 ---
 
+##### `Retry`<sup>Required</sup> <a name="Retry" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.retry"></a>
+
+```csharp
+public DataCloudflareWorkerVersionBindingsRetryOutputReference Retry { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference">DataCloudflareWorkerVersionBindingsRetryOutputReference</a>
+
+---
+
 ##### `ScriptName`<sup>Required</sup> <a name="ScriptName" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsOutputReference.property.scriptName"></a>
 
 ```csharp
@@ -4121,6 +4145,277 @@ public DataCloudflareWorkerVersionBindings InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindings">DataCloudflareWorkerVersionBindings</a>
+
+---
+
+
+### DataCloudflareWorkerVersionBindingsRetryOutputReference <a name="DataCloudflareWorkerVersionBindingsRetryOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new DataCloudflareWorkerVersionBindingsRetryOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.timeoutMs">TimeoutMs</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetry">DataCloudflareWorkerVersionBindingsRetry</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MaxAttempts`<sup>Required</sup> <a name="MaxAttempts" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.maxAttempts"></a>
+
+```csharp
+public double MaxAttempts { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `TimeoutMs`<sup>Required</sup> <a name="TimeoutMs" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.timeoutMs"></a>
+
+```csharp
+public double TimeoutMs { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetryOutputReference.property.internalValue"></a>
+
+```csharp
+public DataCloudflareWorkerVersionBindingsRetry InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersion.DataCloudflareWorkerVersionBindingsRetry">DataCloudflareWorkerVersionBindingsRetry</a>
 
 ---
 

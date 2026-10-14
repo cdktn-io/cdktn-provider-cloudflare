@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustResourceLibraryApplication <a name="DataCloudflareZeroTrustResourceLibraryApplication" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer"></a>
 
@@ -38,9 +38,9 @@ dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourc
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter">DataCloudflareZeroTrustResourceLibraryApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.id">id</a></code> | <code>typing.Union[int, float]</code> | Returns the application ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter">DataCloudflareZeroTrustResourceLibraryApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.Initializer.parameter.id">id</a></code> | <code>typing.Union[int, float]</code> | Numeric identifier for the application. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter">DataCloudflareZeroTrustResourceLibraryApplicationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}.
 
 ---
 
@@ -124,9 +124,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[int, float]
 
-Returns the application ID.
+Numeric identifier for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#id DataCloudflareZeroTrustResourceLibraryApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#id DataCloudflareZeroTrustResourceLibraryApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -408,6 +408,7 @@ def put_filter(
   fields: str = None,
   filter: str = None,
   limit: typing.Union[int, float] = None,
+  lookup: str = None,
   offset: typing.Union[int, float] = None,
   order_by: str = None,
   search: str = None
@@ -420,11 +421,12 @@ def put_filter(
 
 Return only the listed properties on each application, as a comma-separated list.
 
-Use this to keep responses small when you only need part of each application — for
+Use this to keep responses small when you only need part of each application, for
 example populating a picker with `fields=id,name` instead of downloading every
 hostname and IP subnet.
 
-Omit this parameter to receive the full application object.
+Omit this parameter to receive the full application object, including
+when lookup is used.
 
 `id` is always returned.
 
@@ -434,7 +436,7 @@ Selectable properties: `id`, `name`, `human_id`, `version`, `hostnames`,
 
 Unknown or empty property names return `400`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#fields DataCloudflareZeroTrustResourceLibraryApplication#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#fields DataCloudflareZeroTrustResourceLibraryApplication#fields}
 
 ---
 
@@ -442,23 +444,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Filter applications using key:value format.
+Filter applications using `key:value` format.
 
 Supported filter keys:
 
-* name: Filter by application name (e.g., name:HR)
-* id: Filter by application ID (e.g., id:498)
-* human_id: Filter by human-readable ID (e.g., human_id:HR)
-* hostname: Filter by hostname or support domain (e.g., hostname:portal.example.com)
-* source: Filter by application source name (e.g., source:cloudflare)
-* ip_subnet: Filter by IP subnet using CIDR containment — returns applications where any stored subnet contains the search value (e.g., ip_subnet:10.0.1.5/32 matches apps with 10.0.0.0/16)
-* category_id: Filter by category ID (e.g., category_id:12).
-* category_name: Filter by category name (e.g., category_name:HR).
-* supported: Filter by supported Cloudflare product (e.g., supported:ACCESS). Values: GATEWAY, ACCESS, CASB.
-* review_status: Filter by the account's Gateway review status. Values: approved, unapproved, in_review, unreviewed.
-  .
+* `name`: application name (for example, `name:HR`).
+* `id`: application ID (for example, `id:498`).
+* `human_id`: human-readable ID (for example, `human_id:HR`).
+* `hostname`: hostname or support domain (for example, `hostname:portal.example.com`).
+* `source`: application source name (for example, `source:cloudflare`).
+* `ip_subnet`: CIDR containment; returns applications where a stored subnet contains the search value (for example, `ip_subnet:10.0.1.5/32` matches `10.0.0.0/16`).
+* `category_id`: category ID (for example, `category_id:12`).
+* `category_name`: category name (for example, `category_name:HR`).
+* `supported`: supported Cloudflare product. Values: `GATEWAY`, `ACCESS`, `CASB`.
+* `review_status`: account-specific Gateway review status. Values: `approved`, `unapproved`, `in_review`, `unreviewed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}
 
 ---
 
@@ -466,9 +467,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[int, float]
 
-Limit of number of results to return (max 250).
+Number of results to return. Defaults to 25; values are clamped to 1–250.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#limit DataCloudflareZeroTrustResourceLibraryApplication#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#limit DataCloudflareZeroTrustResourceLibraryApplication#limit}
+
+---
+
+###### `lookup`<sup>Optional</sup> <a name="lookup" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplication.putFilter.parameter.lookup"></a>
+
+- *Type:* str
+
+Find complete, case-insensitive application name mentions in a phrase or rule sentence.
+
+Misspelled names do not match. Returns matching applications
+ranked by relevance. Must be between 2 and 1000 characters. Uses the same
+filters, fields, and pagination as listing. `search` cannot be combined
+with lookup. Results are ranked by relevance, so `order_by` is ignored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#lookup DataCloudflareZeroTrustResourceLibraryApplication#lookup}
 
 ---
 
@@ -476,9 +492,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[int, float]
 
-Offset of results to return.
+Number of results to skip. Defaults to 0; negative values are clamped to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#offset DataCloudflareZeroTrustResourceLibraryApplication#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#offset DataCloudflareZeroTrustResourceLibraryApplication#offset}
 
 ---
 
@@ -491,9 +507,9 @@ Order results using field:direction format.
 Supported fields are name, id, human_id,
 category_id, application_type, application_confidence_score, and gen_ai_score.
 Supported directions are asc and desc. Ignored when search is provided; results are
-ranked by relevance instead.
+ranked by relevance instead. Also ignored when lookup is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#order_by DataCloudflareZeroTrustResourceLibraryApplication#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#order_by DataCloudflareZeroTrustResourceLibraryApplication#order_by}
 
 ---
 
@@ -505,7 +521,7 @@ Fuzzy search across application name and hostnames.
 
 Results are ranked by relevance. Must be between 2 and 200 characters. Can be combined with filter parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#search DataCloudflareZeroTrustResourceLibraryApplication#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#search DataCloudflareZeroTrustResourceLibraryApplication#search}
 
 ---
 
@@ -635,7 +651,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustRes
 
 The id of the existing DataCloudflareZeroTrustResourceLibraryApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1093,9 +1109,9 @@ dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourc
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter">DataCloudflareZeroTrustResourceLibraryApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.id">id</a></code> | <code>typing.Union[int, float]</code> | Returns the application ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter">DataCloudflareZeroTrustResourceLibraryApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationConfig.property.id">id</a></code> | <code>typing.Union[int, float]</code> | Numeric identifier for the application. |
 
 ---
 
@@ -1177,7 +1193,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#account_id DataCloudflareZeroTrustResourceLibraryApplication#account_id}.
 
 ---
 
@@ -1189,7 +1205,7 @@ filter: DataCloudflareZeroTrustResourceLibraryApplicationFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter">DataCloudflareZeroTrustResourceLibraryApplicationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}.
 
 ---
 
@@ -1201,9 +1217,9 @@ id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Returns the application ID.
+Numeric identifier for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#id DataCloudflareZeroTrustResourceLibraryApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#id DataCloudflareZeroTrustResourceLibraryApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1221,6 +1237,7 @@ dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourc
   fields: str = None,
   filter: str = None,
   limit: typing.Union[int, float] = None,
+  lookup: str = None,
   offset: typing.Union[int, float] = None,
   order_by: str = None,
   search: str = None
@@ -1232,9 +1249,10 @@ dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourc
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.fields">fields</a></code> | <code>str</code> | Return only the listed properties on each application, as a comma-separated list. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.filter">filter</a></code> | <code>str</code> | Filter applications using key:value format. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | Limit of number of results to return (max 250). |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.offset">offset</a></code> | <code>typing.Union[int, float]</code> | Offset of results to return. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.filter">filter</a></code> | <code>str</code> | Filter applications using `key:value` format. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | Number of results to return. Defaults to 25; values are clamped to 1–250. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.lookup">lookup</a></code> | <code>str</code> | Find complete, case-insensitive application name mentions in a phrase or rule sentence. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.offset">offset</a></code> | <code>typing.Union[int, float]</code> | Number of results to skip. Defaults to 0; negative values are clamped to 0. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.orderBy">order_by</a></code> | <code>str</code> | Order results using field:direction format. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.search">search</a></code> | <code>str</code> | Fuzzy search across application name and hostnames. |
 
@@ -1250,11 +1268,12 @@ fields: str
 
 Return only the listed properties on each application, as a comma-separated list.
 
-Use this to keep responses small when you only need part of each application — for
+Use this to keep responses small when you only need part of each application, for
 example populating a picker with `fields=id,name` instead of downloading every
 hostname and IP subnet.
 
-Omit this parameter to receive the full application object.
+Omit this parameter to receive the full application object, including
+when lookup is used.
 
 `id` is always returned.
 
@@ -1264,7 +1283,7 @@ Selectable properties: `id`, `name`, `human_id`, `version`, `hostnames`,
 
 Unknown or empty property names return `400`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#fields DataCloudflareZeroTrustResourceLibraryApplication#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#fields DataCloudflareZeroTrustResourceLibraryApplication#fields}
 
 ---
 
@@ -1276,23 +1295,22 @@ filter: str
 
 - *Type:* str
 
-Filter applications using key:value format.
+Filter applications using `key:value` format.
 
 Supported filter keys:
 
-* name: Filter by application name (e.g., name:HR)
-* id: Filter by application ID (e.g., id:498)
-* human_id: Filter by human-readable ID (e.g., human_id:HR)
-* hostname: Filter by hostname or support domain (e.g., hostname:portal.example.com)
-* source: Filter by application source name (e.g., source:cloudflare)
-* ip_subnet: Filter by IP subnet using CIDR containment — returns applications where any stored subnet contains the search value (e.g., ip_subnet:10.0.1.5/32 matches apps with 10.0.0.0/16)
-* category_id: Filter by category ID (e.g., category_id:12).
-* category_name: Filter by category name (e.g., category_name:HR).
-* supported: Filter by supported Cloudflare product (e.g., supported:ACCESS). Values: GATEWAY, ACCESS, CASB.
-* review_status: Filter by the account's Gateway review status. Values: approved, unapproved, in_review, unreviewed.
-  .
+* `name`: application name (for example, `name:HR`).
+* `id`: application ID (for example, `id:498`).
+* `human_id`: human-readable ID (for example, `human_id:HR`).
+* `hostname`: hostname or support domain (for example, `hostname:portal.example.com`).
+* `source`: application source name (for example, `source:cloudflare`).
+* `ip_subnet`: CIDR containment; returns applications where a stored subnet contains the search value (for example, `ip_subnet:10.0.1.5/32` matches `10.0.0.0/16`).
+* `category_id`: category ID (for example, `category_id:12`).
+* `category_name`: category name (for example, `category_name:HR`).
+* `supported`: supported Cloudflare product. Values: `GATEWAY`, `ACCESS`, `CASB`.
+* `review_status`: account-specific Gateway review status. Values: `approved`, `unapproved`, `in_review`, `unreviewed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}
 
 ---
 
@@ -1304,9 +1322,28 @@ limit: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Limit of number of results to return (max 250).
+Number of results to return. Defaults to 25; values are clamped to 1–250.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#limit DataCloudflareZeroTrustResourceLibraryApplication#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#limit DataCloudflareZeroTrustResourceLibraryApplication#limit}
+
+---
+
+##### `lookup`<sup>Optional</sup> <a name="lookup" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilter.property.lookup"></a>
+
+```python
+lookup: str
+```
+
+- *Type:* str
+
+Find complete, case-insensitive application name mentions in a phrase or rule sentence.
+
+Misspelled names do not match. Returns matching applications
+ranked by relevance. Must be between 2 and 1000 characters. Uses the same
+filters, fields, and pagination as listing. `search` cannot be combined
+with lookup. Results are ranked by relevance, so `order_by` is ignored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#lookup DataCloudflareZeroTrustResourceLibraryApplication#lookup}
 
 ---
 
@@ -1318,9 +1355,9 @@ offset: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Offset of results to return.
+Number of results to skip. Defaults to 0; negative values are clamped to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#offset DataCloudflareZeroTrustResourceLibraryApplication#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#offset DataCloudflareZeroTrustResourceLibraryApplication#offset}
 
 ---
 
@@ -1337,9 +1374,9 @@ Order results using field:direction format.
 Supported fields are name, id, human_id,
 category_id, application_type, application_confidence_score, and gen_ai_score.
 Supported directions are asc and desc. Ignored when search is provided; results are
-ranked by relevance instead.
+ranked by relevance instead. Also ignored when lookup is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#order_by DataCloudflareZeroTrustResourceLibraryApplication#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#order_by DataCloudflareZeroTrustResourceLibraryApplication#order_by}
 
 ---
 
@@ -1355,7 +1392,7 @@ Fuzzy search across application name and hostnames.
 
 Results are ranked by relevance. Must be between 2 and 200 characters. Can be combined with filter parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_application#search DataCloudflareZeroTrustResourceLibraryApplication#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_application#search DataCloudflareZeroTrustResourceLibraryApplication#search}
 
 ---
 
@@ -1417,6 +1454,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetFields">reset_fields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetLimit">reset_limit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetLookup">reset_lookup</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetOffset">reset_offset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetOrderBy">reset_order_by</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetSearch">reset_search</a></code> | *No description.* |
@@ -1613,6 +1651,12 @@ def reset_filter() -> None
 def reset_limit() -> None
 ```
 
+##### `reset_lookup` <a name="reset_lookup" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetLookup"></a>
+
+```python
+def reset_lookup() -> None
+```
+
 ##### `reset_offset` <a name="reset_offset" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.resetOffset"></a>
 
 ```python
@@ -1641,12 +1685,14 @@ def reset_search() -> None
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.fieldsInput">fields_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.limitInput">limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.lookupInput">lookup_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.offsetInput">offset_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.orderByInput">order_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.searchInput">search_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.fields">fields</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.filter">filter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.lookup">lookup</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.offset">offset</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.orderBy">order_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.search">search</a></code> | <code>str</code> | *No description.* |
@@ -1708,6 +1754,16 @@ limit_input: typing.Union[int, float]
 
 ---
 
+##### `lookup_input`<sup>Optional</sup> <a name="lookup_input" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.lookupInput"></a>
+
+```python
+lookup_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `offset_input`<sup>Optional</sup> <a name="offset_input" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.offsetInput"></a>
 
 ```python
@@ -1765,6 +1821,16 @@ limit: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `lookup`<sup>Required</sup> <a name="lookup" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustResourceLibraryApplication.DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference.property.lookup"></a>
+
+```python
+lookup: str
+```
+
+- *Type:* str
 
 ---
 

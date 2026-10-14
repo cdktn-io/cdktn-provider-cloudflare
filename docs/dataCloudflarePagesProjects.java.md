@@ -4,7 +4,7 @@
 
 ### DataCloudflarePagesProjects <a name="DataCloudflarePagesProjects" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjects"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_projects cloudflare_pages_projects}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/pages_projects cloudflare_pages_projects}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjects.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_projects#account_id DataCloudflarePagesProjects#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/pages_projects#account_id DataCloudflarePagesProjects#account_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_projects#max_items DataCloudflarePagesProjects#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/pages_projects#max_items DataCloudflarePagesProjects#max_items}
 
 ---
 
@@ -475,7 +475,7 @@ The construct id used in the generated config for the DataCloudflarePagesProject
 
 The id of the existing DataCloudflarePagesProjects that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_projects#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/pages_projects#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,7 +819,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_projects#account_id DataCloudflarePagesProjects#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/pages_projects#account_id DataCloudflarePagesProjects#account_id}
 
 ---
 
@@ -833,7 +833,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/pages_projects#max_items DataCloudflarePagesProjects#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/pages_projects#max_items DataCloudflarePagesProjects#max_items}
 
 ---
 
@@ -857,6 +857,18 @@ DataCloudflarePagesProjectsResult.builder()
 import io.cdktn.providers.cloudflare.data_cloudflare_pages_projects.DataCloudflarePagesProjectsResultBuildConfig;
 
 DataCloudflarePagesProjectsResultBuildConfig.builder()
+    .build();
+```
+
+
+### DataCloudflarePagesProjectsResultBuildImageAutoUpgrade <a name="DataCloudflarePagesProjectsResultBuildImageAutoUpgrade" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgrade"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgrade.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.data_cloudflare_pages_projects.DataCloudflarePagesProjectsResultBuildImageAutoUpgrade;
+
+DataCloudflarePagesProjectsResultBuildImageAutoUpgrade.builder()
     .build();
 ```
 
@@ -1810,6 +1822,277 @@ public DataCloudflarePagesProjectsResultBuildConfig getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildConfig">DataCloudflarePagesProjectsResultBuildConfig</a>
+
+---
+
+
+### DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference <a name="DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.data_cloudflare_pages_projects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference;
+
+new DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.fromVersion">fromVersion</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.toVersion">toVersion</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgrade">DataCloudflarePagesProjectsResultBuildImageAutoUpgrade</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `fromVersion`<sup>Required</sup> <a name="fromVersion" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.fromVersion"></a>
+
+```java
+public java.lang.Number getFromVersion();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `toVersion`<sup>Required</sup> <a name="toVersion" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.toVersion"></a>
+
+```java
+public java.lang.Number getToVersion();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference.property.internalValue"></a>
+
+```java
+public DataCloudflarePagesProjectsResultBuildImageAutoUpgrade getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgrade">DataCloudflarePagesProjectsResultBuildImageAutoUpgrade</a>
 
 ---
 
@@ -21397,6 +21680,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultOutputReference.property.buildConfig">buildConfig</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildConfigOutputReference">DataCloudflarePagesProjectsResultBuildConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultOutputReference.property.buildImageAutoUpgrade">buildImageAutoUpgrade</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference">DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultOutputReference.property.canonicalDeployment">canonicalDeployment</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultCanonicalDeploymentOutputReference">DataCloudflarePagesProjectsResultCanonicalDeploymentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultOutputReference.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultOutputReference.property.deploymentConfigs">deploymentConfigs</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultDeploymentConfigsOutputReference">DataCloudflarePagesProjectsResultDeploymentConfigsOutputReference</a></code> | *No description.* |
@@ -21447,6 +21731,16 @@ public DataCloudflarePagesProjectsResultBuildConfigOutputReference getBuildConfi
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildConfigOutputReference">DataCloudflarePagesProjectsResultBuildConfigOutputReference</a>
+
+---
+
+##### `buildImageAutoUpgrade`<sup>Required</sup> <a name="buildImageAutoUpgrade" id="@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultOutputReference.property.buildImageAutoUpgrade"></a>
+
+```java
+public DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference getBuildImageAutoUpgrade();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference">DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference</a>
 
 ---
 

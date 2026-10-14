@@ -4,7 +4,7 @@
 
 ### WorkersKvNamespace <a name="WorkersKvNamespace" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.resetJurisdiction">ResetJurisdiction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.resetMode">ResetMode</a></code> | *No description.* |
 
 ---
 
@@ -393,6 +394,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetJurisdiction()
 ```
 
+##### `ResetMode` <a name="ResetMode" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.resetMode"></a>
+
+```csharp
+private void ResetMode()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +503,7 @@ The construct id used in the generated config for the WorkersKvNamespace to impo
 
 The id of the existing WorkersKvNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -530,9 +537,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.supportsUrlEncoding">SupportsUrlEncoding</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.jurisdictionInput">JurisdictionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.jurisdiction">Jurisdiction</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.title">Title</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -719,6 +728,16 @@ public string JurisdictionInput { get; }
 
 ---
 
+##### `ModeInput`<sup>Optional</sup> <a name="ModeInput" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.modeInput"></a>
+
+```csharp
+public string ModeInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TitleInput`<sup>Optional</sup> <a name="TitleInput" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.titleInput"></a>
 
 ```csharp
@@ -743,6 +762,16 @@ public string AccountId { get; }
 
 ```csharp
 public string Jurisdiction { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.property.mode"></a>
+
+```csharp
+public string Mode { get; }
 ```
 
 - *Type:* string
@@ -796,7 +825,8 @@ new WorkersKvNamespaceConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AccountId,
     string Title,
-    string Jurisdiction = null
+    string Jurisdiction = null,
+    string Mode = null
 };
 ```
 
@@ -814,6 +844,7 @@ new WorkersKvNamespaceConfig {
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.accountId">AccountId</a></code> | <code>string</code> | ID of the Cloudflare account that owns the Workers KV namespaces. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.title">Title</a></code> | <code>string</code> | Human-readable string name for a Workers KV namespace. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.jurisdiction">Jurisdiction</a></code> | <code>string</code> | Specify the jurisdiction to restrict the KV namespace to durably store data within. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.mode">Mode</a></code> | <code>string</code> | The mode of the Workers KV namespace. |
 
 ---
 
@@ -897,7 +928,7 @@ public string AccountId { get; set; }
 
 ID of the Cloudflare account that owns the Workers KV namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
 
 ---
 
@@ -911,7 +942,7 @@ public string Title { get; set; }
 
 Human-readable string name for a Workers KV namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
 
 ---
 
@@ -928,7 +959,24 @@ Specify the jurisdiction to restrict the KV namespace to durably store data with
 Can only be set at namespace creation time.
 Available values: "eu", "fedramp", "us".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
+
+---
+
+##### `Mode`<sup>Optional</sup> <a name="Mode" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.mode"></a>
+
+```csharp
+public string Mode { get; set; }
+```
+
+- *Type:* string
+
+The mode of the Workers KV namespace.
+
+Specify `instant` when creating a namespace to create a KV Instant namespace. Omit this field when creating a namespace to create a classic namespace. Currently, `instant` is the only supported explicit value.
+Available values: "instant".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#mode WorkersKvNamespace#mode}
 
 ---
 

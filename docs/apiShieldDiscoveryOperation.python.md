@@ -4,7 +4,7 @@
 
 ### ApiShieldDiscoveryOperation <a name="ApiShieldDiscoveryOperation" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer"></a>
 
@@ -21,9 +21,9 @@ apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  operation_id: str,
-  state: str = None,
-  zone_id: str = None
+  discovery_id: str,
+  zone_id: str,
+  state: str = None
 )
 ```
 
@@ -38,9 +38,9 @@ apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation(
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.operationId">operation_id</a></code> | <code>str</code> | UUID. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.state">state</a></code> | <code>str</code> | Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored". |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.discoveryId">discovery_id</a></code> | <code>str</code> | UUID. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.state">state</a></code> | <code>str</code> | Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored". |
 
 ---
 
@@ -104,13 +104,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.operationId"></a>
+##### `discovery_id`<sup>Required</sup> <a name="discovery_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.discoveryId"></a>
 
 - *Type:* str
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#operation_id ApiShieldDiscoveryOperation#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#discovery_id ApiShieldDiscoveryOperation#discovery_id}
+
+---
+
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#zone_id ApiShieldDiscoveryOperation#zone_id}
 
 ---
 
@@ -120,17 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#state ApiShieldDiscoveryOperation#state}
-
----
-
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#zone_id ApiShieldDiscoveryOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#state ApiShieldDiscoveryOperation#state}
 
 ---
 
@@ -163,7 +163,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.resetState">reset_state</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -521,12 +520,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_state() -> None
 ```
 
-##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.resetZoneId"></a>
-
-```python
-def reset_zone_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -641,7 +634,7 @@ The construct id used in the generated config for the ApiShieldDiscoveryOperatio
 
 The id of the existing ApiShieldDiscoveryOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,11 +664,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.operationIdInput">operation_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.discoveryIdInput">discovery_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.operationId">operation_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.discoveryId">discovery_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 
@@ -823,20 +815,10 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.id"></a>
+##### `discovery_id_input`<sup>Optional</sup> <a name="discovery_id_input" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.discoveryIdInput"></a>
 
 ```python
-id: str
-```
-
-- *Type:* str
-
----
-
-##### `operation_id_input`<sup>Optional</sup> <a name="operation_id_input" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.operationIdInput"></a>
-
-```python
-operation_id_input: str
+discovery_id_input: str
 ```
 
 - *Type:* str
@@ -863,10 +845,10 @@ zone_id_input: str
 
 ---
 
-##### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.operationId"></a>
+##### `discovery_id`<sup>Required</sup> <a name="discovery_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.discoveryId"></a>
 
 ```python
-operation_id: str
+discovery_id: str
 ```
 
 - *Type:* str
@@ -928,9 +910,9 @@ apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  operation_id: str,
-  state: str = None,
-  zone_id: str = None
+  discovery_id: str,
+  zone_id: str,
+  state: str = None
 )
 ```
 
@@ -945,9 +927,9 @@ apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig(
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.operationId">operation_id</a></code> | <code>str</code> | UUID. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.state">state</a></code> | <code>str</code> | Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored". |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.discoveryId">discovery_id</a></code> | <code>str</code> | UUID. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.state">state</a></code> | <code>str</code> | Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored". |
 
 ---
 
@@ -1021,17 +1003,31 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.operationId"></a>
+##### `discovery_id`<sup>Required</sup> <a name="discovery_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.discoveryId"></a>
 
 ```python
-operation_id: str
+discovery_id: str
 ```
 
 - *Type:* str
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#operation_id ApiShieldDiscoveryOperation#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#discovery_id ApiShieldDiscoveryOperation#discovery_id}
+
+---
+
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#zone_id ApiShieldDiscoveryOperation#zone_id}
 
 ---
 
@@ -1045,21 +1041,7 @@ state: str
 
 Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#state ApiShieldDiscoveryOperation#state}
-
----
-
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#zone_id ApiShieldDiscoveryOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#state ApiShieldDiscoveryOperation#state}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApiShieldDiscoveryOperation <a name="ApiShieldDiscoveryOperation" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.resetState">ResetState</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -394,12 +393,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetState()
 ```
 
-##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.resetZoneId"></a>
-
-```go
-func ResetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -503,7 +496,7 @@ The construct id used in the generated config for the ApiShieldDiscoveryOperatio
 
 The id of the existing ApiShieldDiscoveryOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,11 +526,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.operationIdInput">OperationIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.discoveryIdInput">DiscoveryIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.stateInput">StateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.operationId">OperationId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.discoveryId">DiscoveryId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
@@ -685,20 +677,10 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.id"></a>
+##### `DiscoveryIdInput`<sup>Optional</sup> <a name="DiscoveryIdInput" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.discoveryIdInput"></a>
 
 ```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
-##### `OperationIdInput`<sup>Optional</sup> <a name="OperationIdInput" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.operationIdInput"></a>
-
-```go
-func OperationIdInput() *string
+func DiscoveryIdInput() *string
 ```
 
 - *Type:* *string
@@ -725,10 +707,10 @@ func ZoneIdInput() *string
 
 ---
 
-##### `OperationId`<sup>Required</sup> <a name="OperationId" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.operationId"></a>
+##### `DiscoveryId`<sup>Required</sup> <a name="DiscoveryId" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.property.discoveryId"></a>
 
 ```go
-func OperationId() *string
+func DiscoveryId() *string
 ```
 
 - *Type:* *string
@@ -790,9 +772,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	OperationId: *string,
-	State: *string,
+	DiscoveryId: *string,
 	ZoneId: *string,
+	State: *string,
 }
 ```
 
@@ -807,9 +789,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.operationId">OperationId</a></code> | <code>*string</code> | UUID. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.state">State</a></code> | <code>*string</code> | Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored". |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.discoveryId">DiscoveryId</a></code> | <code>*string</code> | UUID. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.state">State</a></code> | <code>*string</code> | Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored". |
 
 ---
 
@@ -883,17 +865,31 @@ Provisioners *[]interface{}
 
 ---
 
-##### `OperationId`<sup>Required</sup> <a name="OperationId" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.operationId"></a>
+##### `DiscoveryId`<sup>Required</sup> <a name="DiscoveryId" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.discoveryId"></a>
 
 ```go
-OperationId *string
+DiscoveryId *string
 ```
 
 - *Type:* *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#operation_id ApiShieldDiscoveryOperation#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#discovery_id ApiShieldDiscoveryOperation#discovery_id}
+
+---
+
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.zoneId"></a>
+
+```go
+ZoneId *string
+```
+
+- *Type:* *string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#zone_id ApiShieldDiscoveryOperation#zone_id}
 
 ---
 
@@ -907,21 +903,7 @@ State *string
 
 Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#state ApiShieldDiscoveryOperation#state}
-
----
-
-##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.property.zoneId"></a>
-
-```go
-ZoneId *string
-```
-
-- *Type:* *string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation#zone_id ApiShieldDiscoveryOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#state ApiShieldDiscoveryOperation#state}
 
 ---
 

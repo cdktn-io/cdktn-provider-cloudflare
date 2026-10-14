@@ -4,7 +4,7 @@
 
 ### EmailSecurityDomain <a name="EmailSecurityDomain" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain cloudflare_email_security_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain cloudflare_email_security_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain.Initializer"></a>
 
@@ -531,7 +531,7 @@ The construct id used in the generated config for the EmailSecurityDomain to imp
 
 The id of the existing EmailSecurityDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
 
 ---
 
@@ -1252,7 +1252,7 @@ public readonly allowedDeliveryModes: string[];
 
 Delivery modes to onboard the domain through.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly domain: string;
 
 The email domain to protect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly dropDispositions: string[];
 
 Dispositions to drop instead of delivering, e.g. `["MALICIOUS", "SPAM"]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}
 
 ---
 
@@ -1294,7 +1294,7 @@ public readonly ipRestrictions: string[];
 
 Source IP ranges mail is accepted from. Any other source is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}
 
 ---
 
@@ -1308,7 +1308,7 @@ public readonly regions: string[];
 
 Regions that process messages for this domain, e.g. `["GLOBAL"]` or `["US"]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}
 
 ---
 
@@ -1322,7 +1322,7 @@ public readonly folder: string;
 
 The mailbox folder to scan, for API-scanning domains. Available values: "AllItems", "Inbox".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
 
 ---
 
@@ -1338,7 +1338,7 @@ Identifier of the CASB integration that authorizes this domain.
 
 The integration also enables API scanning, post-delivery actions, and directory sync.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}
 
 ---
 
@@ -1352,7 +1352,7 @@ public readonly lookbackHops: number;
 
 Number of hops to trace back through received headers when reconstructing the original message (1-20).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}
 
 ---
 
@@ -1366,7 +1366,7 @@ public readonly requireTlsInbound: boolean | IResolvable;
 
 Require TLS on inbound connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}
 
 ---
 
@@ -1380,7 +1380,7 @@ public readonly requireTlsOutbound: boolean | IResolvable;
 
 Require TLS on outbound connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly transport: string;
 
 The mail transport hostname for MX/Inline delivery — the MX record Cloudflare delivers email to (e.g. `mx.example.com`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}
 
 ---
 
