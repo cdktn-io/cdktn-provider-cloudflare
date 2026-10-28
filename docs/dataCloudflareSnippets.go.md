@@ -4,12 +4,12 @@
 
 ### DataCloudflareSnippets <a name="DataCloudflareSnippets" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/snippets cloudflare_snippets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/snippets cloudflare_snippets}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresnippets"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresnippets"
 
 datacloudflaresnippets.NewDataCloudflareSnippets(scope Construct, id *string, config DataCloudflareSnippetsConfig) DataCloudflareSnippets
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresnippets"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresnippets"
 
 datacloudflaresnippets.DataCloudflareSnippets_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresnippets"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresnippets"
 
 datacloudflaresnippets.DataCloudflareSnippets_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflaresnippets.DataCloudflareSnippets_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresnippets"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresnippets"
 
 datacloudflaresnippets.DataCloudflareSnippets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflaresnippets.DataCloudflareSnippets_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresnippets"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresnippets"
 
 datacloudflaresnippets.DataCloudflareSnippets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareSnippets to 
 
 The id of the existing DataCloudflareSnippets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresnippets"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresnippets"
 
 &datacloudflaresnippets.DataCloudflareSnippetsConfig {
 	Connection: interface{},
@@ -742,7 +742,7 @@ SnippetName *string
 
 The identifying name of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
 
 ---
 
@@ -756,7 +756,7 @@ ZoneId *string
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
 
 ---
 

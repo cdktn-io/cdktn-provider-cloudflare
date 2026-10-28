@@ -4,12 +4,12 @@
 
 ### ShareRecipient <a name="ShareRecipient" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_recipient cloudflare_share_recipient}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient cloudflare_share_recipient}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 sharerecipient.NewShareRecipient(scope Construct, id *string, config ShareRecipientConfig) ShareRecipient
 ```
@@ -421,7 +421,7 @@ func ResetRecipientAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 sharerecipient.ShareRecipient_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 sharerecipient.ShareRecipient_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ sharerecipient.ShareRecipient_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 sharerecipient.ShareRecipient_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ sharerecipient.ShareRecipient_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 sharerecipient.ShareRecipient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the ShareRecipient to import.
 
 The id of the existing ShareRecipient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_recipient#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 &sharerecipient.ShareRecipientConfig {
 	Connection: interface{},
@@ -992,7 +992,7 @@ AccountId *string
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_recipient#account_id ShareRecipient#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient#account_id ShareRecipient#account_id}
 
 ---
 
@@ -1006,7 +1006,7 @@ ShareId *string
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_recipient#share_id ShareRecipient#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient#share_id ShareRecipient#share_id}
 
 ---
 
@@ -1020,7 +1020,7 @@ IncludeResources interface{}
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_recipient#include_resources ShareRecipient#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient#include_resources ShareRecipient#include_resources}
 
 ---
 
@@ -1034,7 +1034,7 @@ OrganizationId *string
 
 Organization identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
 
 ---
 
@@ -1048,7 +1048,7 @@ RecipientAccountId *string
 
 The account that will receive the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
 
 ---
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipientResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 &sharerecipient.ShareRecipientResources {
 
@@ -1072,7 +1072,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerec
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipientResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 sharerecipient.NewShareRecipientResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ShareRecipientResourcesList
 ```
@@ -1221,7 +1221,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.shareRecipient.ShareRecipientResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/sharerecipient"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/sharerecipient"
 
 sharerecipient.NewShareRecipientResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ShareRecipientResourcesOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### ApiShieldSchema <a name="ApiShieldSchema" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.NewApiShieldSchema(scope Construct, id *string, config ApiShieldSchemaConfig) ApiShieldSchema
 ```
@@ -428,7 +428,7 @@ func ResetValidationEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.ApiShieldSchema_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.ApiShieldSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ apishieldschema.ApiShieldSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.ApiShieldSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ apishieldschema.ApiShieldSchema_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.ApiShieldSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -517,7 +517,7 @@ The construct id used in the generated config for the ApiShieldSchema to import.
 
 The id of the existing ApiShieldSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 &apishieldschema.ApiShieldSchemaConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.name">Name</a></code> | <code>*string</code> | Name of the schema. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.omitSource">OmitSource</a></code> | <code>interface{}</code> | Omit the source-files of schemas and only retrieve their meta-data. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.schemaId">SchemaId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.schemaId">SchemaId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.validationEnabled">ValidationEnabled</a></code> | <code>*string</code> | Flag whether schema is enabled for validation. Available values: "true", "false". |
 
 ---
@@ -1036,7 +1036,7 @@ File *string
 
 Schema file bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#file ApiShieldSchema#file}
 
 ---
 
@@ -1050,7 +1050,7 @@ Kind *string
 
 Kind of schema Available values: "openapi_v3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
 
 ---
 
@@ -1064,7 +1064,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
 
 ---
 
@@ -1078,7 +1078,7 @@ Name *string
 
 Name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#name ApiShieldSchema#name}
 
 ---
 
@@ -1092,7 +1092,7 @@ OmitSource interface{}
 
 Omit the source-files of schemas and only retrieve their meta-data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#omit_source ApiShieldSchema#omit_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#omit_source ApiShieldSchema#omit_source}
 
 ---
 
@@ -1104,7 +1104,7 @@ SchemaId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}.
 
 ---
 
@@ -1118,7 +1118,7 @@ ValidationEnabled *string
 
 Flag whether schema is enabled for validation. Available values: "true", "false".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
 
 ---
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 &apishieldschema.ApiShieldSchemaSchema {
 
@@ -1140,7 +1140,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 &apishieldschema.ApiShieldSchemaUploadDetails {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarnings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 &apishieldschema.ApiShieldSchemaUploadDetailsWarnings {
 
@@ -1168,7 +1168,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.NewApiShieldSchemaSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldSchemaSchemaOutputReference
 ```
@@ -1483,7 +1483,7 @@ func InternalValue() ApiShieldSchemaSchema
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.NewApiShieldSchemaUploadDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldSchemaUploadDetailsOutputReference
 ```
@@ -1743,7 +1743,7 @@ func InternalValue() ApiShieldSchemaUploadDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.NewApiShieldSchemaUploadDetailsWarningsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiShieldSchemaUploadDetailsWarningsList
 ```
@@ -1892,7 +1892,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldschema"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldschema"
 
 apishieldschema.NewApiShieldSchemaUploadDetailsWarningsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiShieldSchemaUploadDetailsWarningsOutputReference
 ```

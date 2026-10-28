@@ -4,12 +4,12 @@
 
 ### ApiShieldOperationSchemaValidationSettings <a name="ApiShieldOperationSchemaValidationSettings" id="@cdktn/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.NewApiShieldOperationSchemaValidationSettings(scope Construct, id *string, config ApiShieldOperationSchemaValidationSettingsConfig) ApiShieldOperationSchemaValidationSettings
 ```
@@ -407,7 +407,7 @@ func ResetMitigationAction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSet
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSet
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ApiShieldOperationSchemaVa
 
 The id of the existing ApiShieldOperationSchemaValidationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_operation_schema_validation_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_operation_schema_validation_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldoperationschemavalidationsettings"
 
 &apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettingsConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ OperationId *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_operation_schema_validation_settings#operation_id ApiShieldOperationSchemaValidationSettings#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_operation_schema_validation_settings#operation_id ApiShieldOperationSchemaValidationSettings#operation_id}
 
 ---
 
@@ -900,7 +900,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_operation_schema_validation_settings#zone_id ApiShieldOperationSchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_operation_schema_validation_settings#zone_id ApiShieldOperationSchemaValidationSettings#zone_id}
 
 ---
 
@@ -921,7 +921,7 @@ When set, this applies a mitigation action to this operation.
   * `null` indicates that no operation level mitigation is in place, see Zone Level Schema Validation Settings for mitigation action that will be applied
     Available values: "log", "block", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_operation_schema_validation_settings#mitigation_action ApiShieldOperationSchemaValidationSettings#mitigation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_operation_schema_validation_settings#mitigation_action ApiShieldOperationSchemaValidationSettings#mitigation_action}
 
 ---
 

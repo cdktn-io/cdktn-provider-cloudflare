@@ -4,12 +4,12 @@
 
 ### EmailSendingSubdomain <a name="EmailSendingSubdomain" id="@cdktn/provider-cloudflare.emailSendingSubdomain.EmailSendingSubdomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_sending_subdomain cloudflare_email_sending_subdomain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_sending_subdomain cloudflare_email_sending_subdomain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSendingSubdomain.EmailSendingSubdomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsendingsubdomain"
 
 emailsendingsubdomain.NewEmailSendingSubdomain(scope Construct, id *string, config EmailSendingSubdomainConfig) EmailSendingSubdomain
 ```
@@ -414,7 +414,7 @@ func ResetPreviewEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.emailSendingSubdomain.EmailSendingSubdomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsendingsubdomain"
 
 emailsendingsubdomain.EmailSendingSubdomain_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.emailSendingSubdomain.EmailSendingSubdomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsendingsubdomain"
 
 emailsendingsubdomain.EmailSendingSubdomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ emailsendingsubdomain.EmailSendingSubdomain_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.emailSendingSubdomain.EmailSendingSubdomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsendingsubdomain"
 
 emailsendingsubdomain.EmailSendingSubdomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ emailsendingsubdomain.EmailSendingSubdomain_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.emailSendingSubdomain.EmailSendingSubdomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsendingsubdomain"
 
 emailsendingsubdomain.EmailSendingSubdomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the EmailSendingSubdomain to i
 
 The id of the existing EmailSendingSubdomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_sending_subdomain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_sending_subdomain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.emailSendingSubdomain.EmailSendingSubdomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsendingsubdomain"
 
 &emailsendingsubdomain.EmailSendingSubdomainConfig {
 	Connection: interface{},
@@ -985,7 +985,7 @@ The domain name within the zone.
 
 A wildcard is allowed only as the complete leftmost label (`*.example.com`) and requires the account wildcard Email Sending entitlement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_sending_subdomain#name EmailSendingSubdomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_sending_subdomain#name EmailSendingSubdomain#name}
 
 ---
 
@@ -999,7 +999,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_sending_subdomain#zone_id EmailSendingSubdomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_sending_subdomain#zone_id EmailSendingSubdomain#zone_id}
 
 ---
 
@@ -1013,7 +1013,7 @@ DropSuppressedRecipients interface{}
 
 Whether a send request that includes a recipient suppressed on this subdomain drops that recipient and still delivers to the rest, instead of failing the entire request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_sending_subdomain#drop_suppressed_recipients EmailSendingSubdomain#drop_suppressed_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_sending_subdomain#drop_suppressed_recipients EmailSendingSubdomain#drop_suppressed_recipients}
 
 ---
 
@@ -1027,7 +1027,7 @@ PreviewEnabled interface{}
 
 Whether sent messages from this subdomain can be previewed in the activity log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_sending_subdomain#preview_enabled EmailSendingSubdomain#preview_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_sending_subdomain#preview_enabled EmailSendingSubdomain#preview_enabled}
 
 ---
 

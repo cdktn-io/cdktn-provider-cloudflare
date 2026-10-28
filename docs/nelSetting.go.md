@@ -4,12 +4,12 @@
 
 ### NelSetting <a name="NelSetting" id="@cdktn/provider-cloudflare.nelSetting.NelSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/nel_setting cloudflare_nel_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/nel_setting cloudflare_nel_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.nelSetting.NelSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting"
 
 nelsetting.NewNelSetting(scope Construct, id *string, config NelSettingConfig) NelSetting
 ```
@@ -413,7 +413,7 @@ func PutValue(value NelSettingValue)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.nelSetting.NelSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting"
 
 nelsetting.NelSetting_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.nelSetting.NelSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting"
 
 nelsetting.NelSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ nelsetting.NelSetting_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.nelSetting.NelSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting"
 
 nelsetting.NelSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ nelsetting.NelSetting_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.nelSetting.NelSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting"
 
 nelsetting.NelSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the NelSetting to import.
 
 The id of the existing NelSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/nel_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/nel_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.nelSetting.NelSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting"
 
 &nelsetting.NelSettingConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetti
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Value: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.nelSetting.NelSettingValue,
+	Value: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.nelSetting.NelSettingValue,
 	ZoneId: *string,
 }
 ```
@@ -890,7 +890,7 @@ Value NelSettingValue
 
 The NEL configuration value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/nel_setting#value NelSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/nel_setting#value NelSetting#value}
 
 ---
 
@@ -904,7 +904,7 @@ ZoneId *string
 
 Identifier of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/nel_setting#zone_id NelSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/nel_setting#zone_id NelSetting#zone_id}
 
 ---
 
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.nelSetting.NelSettingValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting"
 
 &nelsetting.NelSettingValue {
 	Enabled: interface{},
@@ -938,7 +938,7 @@ Enabled interface{}
 
 Whether Network Error Logging is enabled for the zone. When enabled, browsers report network errors to Cloudflare's NEL endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/nel_setting#enabled NelSetting#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/nel_setting#enabled NelSetting#enabled}
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.nelSetting.NelSettingValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting"
 
 nelsetting.NewNelSettingValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NelSettingValueOutputReference
 ```

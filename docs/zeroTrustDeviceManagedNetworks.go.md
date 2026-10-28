@@ -4,12 +4,12 @@
 
 ### ZeroTrustDeviceManagedNetworks <a name="ZeroTrustDeviceManagedNetworks" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicemanagednetworks"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.NewZeroTrustDeviceManagedNetworks(scope Construct, id *string, config ZeroTrustDeviceManagedNetworksConfig) ZeroTrustDeviceManagedNetworks
 ```
@@ -413,7 +413,7 @@ func PutConfig(value ZeroTrustDeviceManagedNetworksConfigA)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicemanagednetworks"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicemanagednetworks"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicemanagednetworks"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicemanagednetworks"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the ZeroTrustDeviceManagedNetw
 
 The id of the existing ZeroTrustDeviceManagedNetworks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -812,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicemanagednetworks"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdevicemanagednetworks"
 
 &zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworksConfig {
 	Connection: interface{},
@@ -823,7 +823,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigA,
+	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigA,
 	Name: *string,
 	Type: *string,
 }
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks#account_id ZeroTrustDeviceManagedNetworks#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks#account_id ZeroTrustDeviceManagedNetworks#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.property.config">Config</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigA">ZeroTrustDeviceManagedNetworksConfigA</a></code> | The configuration object containing information for the WARP client to detect the managed network. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.property.name">Name</a></code> | <code>*string</code> | The name of the device managed network. This name must be unique. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.property.type">Type</a></code> | <code>*string</code> | The type of device managed network. Available values: "tls". |
@@ -925,7 +925,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks#account_id ZeroTrustDeviceManagedNetworks#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks#account_id ZeroTrustDeviceManagedNetworks#account_id}.
 
 ---
 
@@ -939,7 +939,7 @@ Config ZeroTrustDeviceManagedNetworksConfigA
 
 The configuration object containing information for the WARP client to detect the managed network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks#config ZeroTrustDeviceManagedNetworks#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks#config ZeroTrustDeviceManagedNetworks#config}
 
 ---
 
@@ -953,7 +953,7 @@ Name *string
 
 The name of the device managed network. This name must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks#name ZeroTrustDeviceManagedNetworks#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks#name ZeroTrustDeviceManagedNetworks#name}
 
 ---
 
@@ -967,7 +967,7 @@ Type *string
 
 The type of device managed network. Available values: "tls".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks#type ZeroTrustDeviceManagedNetworks#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks#type ZeroTrustDeviceManagedNetworks#type}
 
 ---
 
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicemanagednetworks"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdevicemanagednetworks"
 
 &zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworksConfigA {
 	TlsSockaddr: *string,
@@ -1003,7 +1003,7 @@ TlsSockaddr *string
 
 A network address of the form "host:port" that the WARP client will use to detect the presence of a TLS host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks#tls_sockaddr ZeroTrustDeviceManagedNetworks#tls_sockaddr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks#tls_sockaddr ZeroTrustDeviceManagedNetworks#tls_sockaddr}
 
 ---
 
@@ -1019,7 +1019,7 @@ The SHA-256 hash of the TLS certificate presented by the host found at tls_socka
 
 If absent, regular certificate verification (trusted roots, valid timestamp, etc) will be used to validate the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_managed_networks#sha256 ZeroTrustDeviceManagedNetworks#sha256}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_managed_networks#sha256 ZeroTrustDeviceManagedNetworks#sha256}
 
 ---
 
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdevicemanagednetworks"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.NewZeroTrustDeviceManagedNetworksConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDeviceManagedNetworksConfigAOutputReference
 ```

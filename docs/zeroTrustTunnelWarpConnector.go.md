@@ -4,12 +4,12 @@
 
 ### ZeroTrustTunnelWarpConnector <a name="ZeroTrustTunnelWarpConnector" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 zerotrusttunnelwarpconnector.NewZeroTrustTunnelWarpConnector(scope Construct, id *string, config ZeroTrustTunnelWarpConnectorConfig) ZeroTrustTunnelWarpConnector
 ```
@@ -414,7 +414,7 @@ func ResetTunnelSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 zerotrusttunnelwarpconnector.ZeroTrustTunnelWarpConnector_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 zerotrusttunnelwarpconnector.ZeroTrustTunnelWarpConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ zerotrusttunnelwarpconnector.ZeroTrustTunnelWarpConnector_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 zerotrusttunnelwarpconnector.ZeroTrustTunnelWarpConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ zerotrusttunnelwarpconnector.ZeroTrustTunnelWarpConnector_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 zerotrusttunnelwarpconnector.ZeroTrustTunnelWarpConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the ZeroTrustTunnelWarpConnect
 
 The id of the existing ZeroTrustTunnelWarpConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_tunnel_warp_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_tunnel_warp_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,7 +901,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 &zerotrusttunnelwarpconnector.ZeroTrustTunnelWarpConnectorConfig {
 	Connection: interface{},
@@ -1016,7 +1016,7 @@ AccountId *string
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_tunnel_warp_connector#account_id ZeroTrustTunnelWarpConnector#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_tunnel_warp_connector#account_id ZeroTrustTunnelWarpConnector#account_id}
 
 ---
 
@@ -1030,7 +1030,7 @@ Name *string
 
 A user-friendly name for a tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_tunnel_warp_connector#name ZeroTrustTunnelWarpConnector#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_tunnel_warp_connector#name ZeroTrustTunnelWarpConnector#name}
 
 ---
 
@@ -1044,7 +1044,7 @@ Ha interface{}
 
 Indicates that the tunnel will be created to be highly available. If omitted, defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_tunnel_warp_connector#ha ZeroTrustTunnelWarpConnector#ha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_tunnel_warp_connector#ha ZeroTrustTunnelWarpConnector#ha}
 
 ---
 
@@ -1060,7 +1060,7 @@ Sets the password required to run a locally-managed tunnel.
 
 Must be at least 32 bytes and encoded as a base64 string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_tunnel_warp_connector#tunnel_secret ZeroTrustTunnelWarpConnector#tunnel_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_tunnel_warp_connector#tunnel_secret ZeroTrustTunnelWarpConnector#tunnel_secret}
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnectorConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 &zerotrusttunnelwarpconnector.ZeroTrustTunnelWarpConnectorConnections {
 
@@ -1084,7 +1084,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnectorConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 zerotrusttunnelwarpconnector.NewZeroTrustTunnelWarpConnectorConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustTunnelWarpConnectorConnectionsList
 ```
@@ -1233,7 +1233,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnectorConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrusttunnelwarpconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrusttunnelwarpconnector"
 
 zerotrusttunnelwarpconnector.NewZeroTrustTunnelWarpConnectorConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustTunnelWarpConnectorConnectionsOutputReference
 ```

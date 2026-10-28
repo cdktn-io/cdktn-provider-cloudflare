@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,74 +15,74 @@ export interface EmailSecurityDomainConfig extends cdktn.TerraformMetaArguments 
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Delivery modes to onboard the domain through.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}
   */
   readonly allowedDeliveryModes: string[];
   /**
   * The email domain to protect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}
   */
   readonly domain: string;
   /**
   * Dispositions to drop instead of delivering, e.g. `["MALICIOUS", "SPAM"]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}
   */
   readonly dropDispositions: string[];
   /**
   * The mailbox folder to scan, for API-scanning domains.
   * Available values: "AllItems", "Inbox".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
   */
   readonly folder?: string;
   /**
   * Identifier of the CASB integration that authorizes this domain. The integration also enables API scanning, post-delivery actions, and directory sync.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}
   */
   readonly integrationId?: string;
   /**
   * Source IP ranges mail is accepted from. Any other source is rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}
   */
   readonly ipRestrictions: string[];
   /**
   * Number of hops to trace back through received headers when reconstructing the original message (1-20).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}
   */
   readonly lookbackHops?: number;
   /**
   * Regions that process messages for this domain, e.g. `["GLOBAL"]` or `["US"]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}
   */
   readonly regions: string[];
   /**
   * Require TLS on inbound connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}
   */
   readonly requireTlsInbound?: boolean | cdktn.IResolvable;
   /**
   * Require TLS on outbound connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}
   */
   readonly requireTlsOutbound?: boolean | cdktn.IResolvable;
   /**
   * The mail transport hostname for MX/Inline delivery — the MX record Cloudflare delivers email to (e.g. `mx.example.com`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}
   */
   readonly transport?: string;
 }
@@ -216,7 +216,7 @@ export class EmailSecurityDomainEmailsProcessedOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain cloudflare_email_security_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain cloudflare_email_security_domain}
 */
 export class EmailSecurityDomain extends cdktn.TerraformResource {
 
@@ -232,7 +232,7 @@ export class EmailSecurityDomain extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EmailSecurityDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailSecurityDomain to import
-  * @param importFromId The id of the existing EmailSecurityDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailSecurityDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailSecurityDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -244,7 +244,7 @@ export class EmailSecurityDomain extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain cloudflare_email_security_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain cloudflare_email_security_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -255,7 +255,7 @@ export class EmailSecurityDomain extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_email_security_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.28.0',
+        providerVersion: '5.28.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

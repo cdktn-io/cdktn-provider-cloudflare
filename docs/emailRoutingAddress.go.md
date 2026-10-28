@@ -4,12 +4,12 @@
 
 ### EmailRoutingAddress <a name="EmailRoutingAddress" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_address cloudflare_email_routing_address}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingaddress"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingaddress"
 
 emailroutingaddress.NewEmailRoutingAddress(scope Construct, id *string, config EmailRoutingAddressConfig) EmailRoutingAddress
 ```
@@ -407,7 +407,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingaddress"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingaddress"
 
 emailroutingaddress.EmailRoutingAddress_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingaddress"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingaddress"
 
 emailroutingaddress.EmailRoutingAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ emailroutingaddress.EmailRoutingAddress_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingaddress"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingaddress"
 
 emailroutingaddress.EmailRoutingAddress_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ emailroutingaddress.EmailRoutingAddress_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingaddress"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingaddress"
 
 emailroutingaddress.EmailRoutingAddress_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the EmailRoutingAddress to imp
 
 The id of the existing EmailRoutingAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingaddress"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingaddress"
 
 &emailroutingaddress.EmailRoutingAddressConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
 
 ---
 
@@ -944,7 +944,7 @@ Email *string
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_address#email EmailRoutingAddress#email}
 
 ---
 
@@ -961,7 +961,7 @@ Destination address status.
 Non-admin callers may only set verified addresses back to unverified; setting to verified requires admin privileges.
 Available values: "unverified", "verified".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_address#status EmailRoutingAddress#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_address#status EmailRoutingAddress#status}
 
 ---
 

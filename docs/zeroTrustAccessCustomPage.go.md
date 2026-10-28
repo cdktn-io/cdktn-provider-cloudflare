@@ -4,12 +4,12 @@
 
 ### ZeroTrustAccessCustomPage <a name="ZeroTrustAccessCustomPage" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 zerotrustaccesscustompage.NewZeroTrustAccessCustomPage(scope Construct, id *string, config ZeroTrustAccessCustomPageConfig) ZeroTrustAccessCustomPage
 ```
@@ -407,7 +407,7 @@ func ResetContractVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 zerotrustaccesscustompage.ZeroTrustAccessCustomPage_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 zerotrustaccesscustompage.ZeroTrustAccessCustomPage_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ zerotrustaccesscustompage.ZeroTrustAccessCustomPage_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 zerotrustaccesscustompage.ZeroTrustAccessCustomPage_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ zerotrustaccesscustompage.ZeroTrustAccessCustomPage_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 zerotrustaccesscustompage.ZeroTrustAccessCustomPage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ZeroTrustAccessCustomPage 
 
 The id of the existing ZeroTrustAccessCustomPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 &zerotrustaccesscustompage.ZeroTrustAccessCustomPageConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
 
 ---
 
@@ -970,7 +970,7 @@ CustomHtml *string
 
 Custom page HTML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
 
 ---
 
@@ -984,7 +984,7 @@ Name *string
 
 Custom page name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
 
 ---
 
@@ -998,7 +998,7 @@ Type *string
 
 Custom page type. Available values: "identity_denied", "forbidden", "login", "interstitial".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
 
 ---
 
@@ -1014,7 +1014,7 @@ Contract version of the page's Liquid template.
 
 Present (>= 1) marks a sanitized template; absent or 0 marks a legacy page served verbatim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_custom_page#contract_version ZeroTrustAccessCustomPage#contract_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_custom_page#contract_version ZeroTrustAccessCustomPage#contract_version}
 
 ---
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageWarnings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 &zerotrustaccesscustompage.ZeroTrustAccessCustomPageWarnings {
 
@@ -1038,7 +1038,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageWarningsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 zerotrustaccesscustompage.NewZeroTrustAccessCustomPageWarningsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessCustomPageWarningsList
 ```
@@ -1187,7 +1187,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageWarningsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustaccesscustompage"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustaccesscustompage"
 
 zerotrustaccesscustompage.NewZeroTrustAccessCustomPageWarningsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessCustomPageWarningsOutputReference
 ```

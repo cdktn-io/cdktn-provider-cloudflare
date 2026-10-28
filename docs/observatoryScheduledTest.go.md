@@ -4,12 +4,12 @@
 
 ### ObservatoryScheduledTest <a name="ObservatoryScheduledTest" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTest(scope Construct, id *string, config ObservatoryScheduledTestConfig) ObservatoryScheduledTest
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.ObservatoryScheduledTest_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.ObservatoryScheduledTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ observatoryscheduledtest.ObservatoryScheduledTest_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.ObservatoryScheduledTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ observatoryscheduledtest.ObservatoryScheduledTest_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.ObservatoryScheduledTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the ObservatoryScheduledTest t
 
 The id of the existing ObservatoryScheduledTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ Url *string
 
 A URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
 
 ---
 
@@ -953,7 +953,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
 
 ---
 
@@ -967,7 +967,7 @@ Frequency *string
 
 The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans. Available values: "DAILY", "WEEKLY".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
 
 ---
 
@@ -983,7 +983,7 @@ A test region.
 
 Available values: "asia-east1", "asia-northeast1", "asia-northeast2", "asia-south1", "asia-southeast1", "australia-southeast1", "europe-north1", "europe-southwest1", "europe-west1", "europe-west2", "europe-west3", "europe-west4", "europe-west8", "europe-west9", "me-west1", "southamerica-east1", "us-central1", "us-east1", "us-east4", "us-south1", "us-west1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
 
 ---
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestSchedule {
 
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observat
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestTest {
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observat
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestTestDesktopReport {
 
@@ -1031,7 +1031,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observat
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestTestDesktopReportError {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observat
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestTestMobileReport {
 
@@ -1057,7 +1057,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observat
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestTestMobileReportError {
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observat
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestTestRegion {
 
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observat
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTestScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestScheduleOutputReference
 ```
@@ -1367,7 +1367,7 @@ func InternalValue() ObservatoryScheduledTestSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTestTestDesktopReportErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTestDesktopReportErrorOutputReference
 ```
@@ -1649,7 +1649,7 @@ func InternalValue() ObservatoryScheduledTestTestDesktopReportError
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTestTestDesktopReportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTestDesktopReportOutputReference
 ```
@@ -2030,7 +2030,7 @@ func InternalValue() ObservatoryScheduledTestTestDesktopReport
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTestTestMobileReportErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTestMobileReportErrorOutputReference
 ```
@@ -2312,7 +2312,7 @@ func InternalValue() ObservatoryScheduledTestTestMobileReportError
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTestTestMobileReportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTestMobileReportOutputReference
 ```
@@ -2693,7 +2693,7 @@ func InternalValue() ObservatoryScheduledTestTestMobileReport
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTestTestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTestOutputReference
 ```
@@ -3019,7 +3019,7 @@ func InternalValue() ObservatoryScheduledTestTest
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTestTestRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTestRegionOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataCloudflareSpectrumProtocols <a name="DataCloudflareSpectrumProtocols" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocols"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/spectrum_protocols cloudflare_spectrum_protocols}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_protocols cloudflare_spectrum_protocols}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocols.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 datacloudflarespectrumprotocols.NewDataCloudflareSpectrumProtocols(scope Construct, id *string, config DataCloudflareSpectrumProtocolsConfig) DataCloudflareSpectrumProtocols
 ```
@@ -305,7 +305,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocols.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 datacloudflarespectrumprotocols.DataCloudflareSpectrumProtocols_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocols.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 datacloudflarespectrumprotocols.DataCloudflareSpectrumProtocols_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflarespectrumprotocols.DataCloudflareSpectrumProtocols_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocols.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 datacloudflarespectrumprotocols.DataCloudflareSpectrumProtocols_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflarespectrumprotocols.DataCloudflareSpectrumProtocols_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocols.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 datacloudflarespectrumprotocols.DataCloudflareSpectrumProtocols_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareSpectrumProt
 
 The id of the existing DataCloudflareSpectrumProtocols that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/spectrum_protocols#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_protocols#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 &datacloudflarespectrumprotocols.DataCloudflareSpectrumProtocolsConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ ZoneId *string
 
 Zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/spectrum_protocols#zone_id DataCloudflareSpectrumProtocols#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_protocols#zone_id DataCloudflareSpectrumProtocols#zone_id}
 
 ---
 
@@ -752,7 +752,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/spectrum_protocols#max_items DataCloudflareSpectrumProtocols#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_protocols#max_items DataCloudflareSpectrumProtocols#max_items}
 
 ---
 
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocolsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 &datacloudflarespectrumprotocols.DataCloudflareSpectrumProtocolsResult {
 
@@ -776,7 +776,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocolsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 datacloudflarespectrumprotocols.NewDataCloudflareSpectrumProtocolsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareSpectrumProtocolsResultList
 ```
@@ -925,7 +925,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumProtocols.DataCloudflareSpectrumProtocolsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarespectrumprotocols"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarespectrumprotocols"
 
 datacloudflarespectrumprotocols.NewDataCloudflareSpectrumProtocolsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareSpectrumProtocolsResultOutputReference
 ```

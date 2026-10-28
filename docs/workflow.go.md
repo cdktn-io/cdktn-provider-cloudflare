@@ -4,12 +4,12 @@
 
 ### Workflow <a name="Workflow" id="@cdktn/provider-cloudflare.workflow.Workflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow cloudflare_workflow}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow cloudflare_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.Workflow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.NewWorkflow(scope Construct, id *string, config WorkflowConfig) Workflow
 ```
@@ -480,7 +480,7 @@ func ResetSchedules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.workflow.Workflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.Workflow_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.workflow.Workflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.Workflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ workflow.Workflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.workflow.Workflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.Workflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ workflow.Workflow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.workflow.Workflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.Workflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -569,7 +569,7 @@ The construct id used in the generated config for the Workflow to import.
 
 The id of the existing Workflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1055,7 +1055,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrency.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 &workflow.WorkflowConcurrency {
 	Limit: *f64,
@@ -1082,7 +1082,7 @@ Maximum number of instances of this workflow that can run concurrently.
 
 Additional instances are queued and started as running instances complete. Must not exceed the account concurrency limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#limit Workflow#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#limit Workflow#limit}
 
 ---
 
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 &workflow.WorkflowConfig {
 	Connection: interface{},
@@ -1105,9 +1105,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow
 	ClassName: *string,
 	ScriptName: *string,
 	WorkflowName: *string,
-	Concurrency: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workflow.WorkflowConcurrency,
-	DefaultRetention: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workflow.WorkflowDefaultRetention,
-	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workflow.WorkflowLimits,
+	Concurrency: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workflow.WorkflowConcurrency,
+	DefaultRetention: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workflow.WorkflowDefaultRetention,
+	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workflow.WorkflowLimits,
 	Schedules: interface{},
 }
 ```
@@ -1123,14 +1123,14 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#account_id Workflow#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">ClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#class_name Workflow#class_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#script_name Workflow#script_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">WorkflowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.concurrency">Concurrency</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#concurrency Workflow#concurrency}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#account_id Workflow#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">ClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#class_name Workflow#class_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#script_name Workflow#script_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">WorkflowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.concurrency">Concurrency</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#concurrency Workflow#concurrency}. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.defaultRetention">DefaultRetention</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a></code> | Default retention applied to instances of this version when they do not set their own retention. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">Limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#limits Workflow#limits}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.schedules">Schedules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#schedules Workflow#schedules}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">Limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#limits Workflow#limits}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.schedules">Schedules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#schedules Workflow#schedules}. |
 
 ---
 
@@ -1212,7 +1212,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#account_id Workflow#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#account_id Workflow#account_id}.
 
 ---
 
@@ -1224,7 +1224,7 @@ ClassName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#class_name Workflow#class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#class_name Workflow#class_name}.
 
 ---
 
@@ -1236,7 +1236,7 @@ ScriptName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#script_name Workflow#script_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#script_name Workflow#script_name}.
 
 ---
 
@@ -1248,7 +1248,7 @@ WorkflowName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#workflow_name Workflow#workflow_name}.
 
 ---
 
@@ -1260,7 +1260,7 @@ Concurrency WorkflowConcurrency
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#concurrency Workflow#concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#concurrency Workflow#concurrency}.
 
 ---
 
@@ -1274,7 +1274,7 @@ DefaultRetention WorkflowDefaultRetention
 
 Default retention applied to instances of this version when they do not set their own retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#default_retention Workflow#default_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#default_retention Workflow#default_retention}
 
 ---
 
@@ -1286,7 +1286,7 @@ Limits WorkflowLimits
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#limits Workflow#limits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#limits Workflow#limits}.
 
 ---
 
@@ -1298,7 +1298,7 @@ Schedules interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#schedules Workflow#schedules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#schedules Workflow#schedules}.
 
 ---
 
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 &workflow.WorkflowDefaultRetention {
 	ErrorRetention: *map[string]interface{},
@@ -1334,7 +1334,7 @@ ErrorRetention *map[string]interface{}
 
 Specifies the duration in milliseconds or as a string like '5 minutes'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#error_retention Workflow#error_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#error_retention Workflow#error_retention}
 
 ---
 
@@ -1348,7 +1348,7 @@ SuccessRetention *map[string]interface{}
 
 Specifies the duration in milliseconds or as a string like '5 minutes'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#success_retention Workflow#success_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#success_retention Workflow#success_retention}
 
 ---
 
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 &workflow.WorkflowLimits {
 	Steps: *f64,
@@ -1368,7 +1368,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">Steps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#steps Workflow#steps}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">Steps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#steps Workflow#steps}. |
 
 ---
 
@@ -1380,7 +1380,7 @@ Steps *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#steps Workflow#steps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#steps Workflow#steps}.
 
 ---
 
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowSchedules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 &workflow.WorkflowSchedules {
 	Cron: *string,
@@ -1400,7 +1400,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules.property.cron">Cron</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#cron Workflow#cron}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules.property.cron">Cron</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#cron Workflow#cron}. |
 
 ---
 
@@ -1412,7 +1412,7 @@ Cron *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workflow#cron Workflow#cron}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#cron Workflow#cron}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowConcurrencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.NewWorkflowConcurrencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowConcurrencyOutputReference
 ```
@@ -1701,7 +1701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.NewWorkflowDefaultRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowDefaultRetentionOutputReference
 ```
@@ -2008,7 +2008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.NewWorkflowLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowLimitsOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowSchedulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.NewWorkflowSchedulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkflowSchedulesList
 ```
@@ -2446,7 +2446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowSchedulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workflow"
 
 workflow.NewWorkflowSchedulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkflowSchedulesOutputReference
 ```

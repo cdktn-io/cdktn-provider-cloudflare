@@ -4,12 +4,12 @@
 
 ### DataCloudflareMagicWanBgpFilterProfiles <a name="DataCloudflareMagicWanBgpFilterProfiles" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfiles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/magic_wan_bgp_filter_profiles cloudflare_magic_wan_bgp_filter_profiles}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_wan_bgp_filter_profiles cloudflare_magic_wan_bgp_filter_profiles}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 datacloudflaremagicwanbgpfilterprofiles.NewDataCloudflareMagicWanBgpFilterProfiles(scope Construct, id *string, config DataCloudflareMagicWanBgpFilterProfilesConfig) DataCloudflareMagicWanBgpFilterProfiles
 ```
@@ -305,7 +305,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfiles.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 datacloudflaremagicwanbgpfilterprofiles.DataCloudflareMagicWanBgpFilterProfiles_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfiles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 datacloudflaremagicwanbgpfilterprofiles.DataCloudflareMagicWanBgpFilterProfiles_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflaremagicwanbgpfilterprofiles.DataCloudflareMagicWanBgpFilterProfiles_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfiles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 datacloudflaremagicwanbgpfilterprofiles.DataCloudflareMagicWanBgpFilterProfiles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflaremagicwanbgpfilterprofiles.DataCloudflareMagicWanBgpFilterProfiles_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfiles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 datacloudflaremagicwanbgpfilterprofiles.DataCloudflareMagicWanBgpFilterProfiles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareMagicWanBgpF
 
 The id of the existing DataCloudflareMagicWanBgpFilterProfiles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/magic_wan_bgp_filter_profiles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_wan_bgp_filter_profiles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfilesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 &datacloudflaremagicwanbgpfilterprofiles.DataCloudflareMagicWanBgpFilterProfilesConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/magic_wan_bgp_filter_profiles#account_id DataCloudflareMagicWanBgpFilterProfiles#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_wan_bgp_filter_profiles#account_id DataCloudflareMagicWanBgpFilterProfiles#account_id}
 
 ---
 
@@ -752,7 +752,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/magic_wan_bgp_filter_profiles#max_items DataCloudflareMagicWanBgpFilterProfiles#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_wan_bgp_filter_profiles#max_items DataCloudflareMagicWanBgpFilterProfiles#max_items}
 
 ---
 
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfilesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 &datacloudflaremagicwanbgpfilterprofiles.DataCloudflareMagicWanBgpFilterProfilesResult {
 
@@ -776,7 +776,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfilesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 datacloudflaremagicwanbgpfilterprofiles.NewDataCloudflareMagicWanBgpFilterProfilesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareMagicWanBgpFilterProfilesResultList
 ```
@@ -925,7 +925,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanBgpFilterProfiles.DataCloudflareMagicWanBgpFilterProfilesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicwanbgpfilterprofiles"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicwanbgpfilterprofiles"
 
 datacloudflaremagicwanbgpfilterprofiles.NewDataCloudflareMagicWanBgpFilterProfilesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareMagicWanBgpFilterProfilesResultOutputReference
 ```

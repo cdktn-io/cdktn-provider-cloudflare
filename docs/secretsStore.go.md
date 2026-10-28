@@ -4,12 +4,12 @@
 
 ### SecretsStore <a name="SecretsStore" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store cloudflare_secrets_store}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store cloudflare_secrets_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/secretsstore"
 
 secretsstore.NewSecretsStore(scope Construct, id *string, config SecretsStoreConfig) SecretsStore
 ```
@@ -407,7 +407,7 @@ func ResetForce()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/secretsstore"
 
 secretsstore.SecretsStore_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/secretsstore"
 
 secretsstore.SecretsStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ secretsstore.SecretsStore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/secretsstore"
 
 secretsstore.SecretsStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ secretsstore.SecretsStore_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.secretsStore.SecretsStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/secretsstore"
 
 secretsstore.SecretsStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the SecretsStore to import.
 
 The id of the existing SecretsStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/secretsstore"
 
 &secretsstore.SecretsStoreConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretss
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store#account_id SecretsStore#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store#account_id SecretsStore#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.name">Name</a></code> | <code>*string</code> | The name of the store. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStore.SecretsStoreConfig.property.force">Force</a></code> | <code>interface{}</code> | When true, cascade-deletes all secrets in the store before deleting the store itself. |
 
@@ -906,7 +906,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store#account_id SecretsStore#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store#account_id SecretsStore#account_id}.
 
 ---
 
@@ -920,7 +920,7 @@ Name *string
 
 The name of the store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store#name SecretsStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store#name SecretsStore#name}
 
 ---
 
@@ -937,7 +937,7 @@ When true, cascade-deletes all secrets in the store before deleting the store it
 Required when deleting a non-empty store. Without this parameter, attempting to
 delete a non-empty store returns 409.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store#force SecretsStore#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store#force SecretsStore#force}
 
 ---
 

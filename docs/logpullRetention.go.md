@@ -4,12 +4,12 @@
 
 ### LogpullRetention <a name="LogpullRetention" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/logpull_retention cloudflare_logpull_retention}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/logpullretention"
 
 logpullretention.NewLogpullRetention(scope Construct, id *string, config LogpullRetentionConfig) LogpullRetention
 ```
@@ -407,7 +407,7 @@ func ResetFlag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/logpullretention"
 
 logpullretention.LogpullRetention_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/logpullretention"
 
 logpullretention.LogpullRetention_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ logpullretention.LogpullRetention_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/logpullretention"
 
 logpullretention.LogpullRetention_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ logpullretention.LogpullRetention_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/logpullretention"
 
 logpullretention.LogpullRetention_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the LogpullRetention to import
 
 The id of the existing LogpullRetention that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/logpull_retention#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/logpull_retention#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetentionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/logpullretention"
 
 &logpullretention.LogpullRetentionConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
 
 ---
 
@@ -876,7 +876,7 @@ Flag interface{}
 
 The log retention flag for Logpull API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/logpull_retention#flag LogpullRetention#flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/logpull_retention#flag LogpullRetention#flag}
 
 ---
 

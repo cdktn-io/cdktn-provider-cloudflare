@@ -4,12 +4,12 @@
 
 ### DataCloudflareEmailSendingSubdomain <a name="DataCloudflareEmailSendingSubdomain" id="@cdktn/provider-cloudflare.dataCloudflareEmailSendingSubdomain.DataCloudflareEmailSendingSubdomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/email_sending_subdomain cloudflare_email_sending_subdomain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_sending_subdomain cloudflare_email_sending_subdomain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareEmailSendingSubdomain.DataCloudflareEmailSendingSubdomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareemailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareemailsendingsubdomain"
 
 datacloudflareemailsendingsubdomain.NewDataCloudflareEmailSendingSubdomain(scope Construct, id *string, config DataCloudflareEmailSendingSubdomainConfig) DataCloudflareEmailSendingSubdomain
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareEmailSendingSubdomain.DataCloudflareEmailSendingSubdomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareemailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareemailsendingsubdomain"
 
 datacloudflareemailsendingsubdomain.DataCloudflareEmailSendingSubdomain_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareEmailSendingSubdomain.DataCloudflareEmailSendingSubdomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareemailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareemailsendingsubdomain"
 
 datacloudflareemailsendingsubdomain.DataCloudflareEmailSendingSubdomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflareemailsendingsubdomain.DataCloudflareEmailSendingSubdomain_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareEmailSendingSubdomain.DataCloudflareEmailSendingSubdomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareemailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareemailsendingsubdomain"
 
 datacloudflareemailsendingsubdomain.DataCloudflareEmailSendingSubdomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflareemailsendingsubdomain.DataCloudflareEmailSendingSubdomain_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareEmailSendingSubdomain.DataCloudflareEmailSendingSubdomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareemailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareemailsendingsubdomain"
 
 datacloudflareemailsendingsubdomain.DataCloudflareEmailSendingSubdomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareEmailSending
 
 The id of the existing DataCloudflareEmailSendingSubdomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/email_sending_subdomain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_sending_subdomain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -719,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareEmailSendingSubdomain.DataCloudflareEmailSendingSubdomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareemailsendingsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareemailsendingsubdomain"
 
 &datacloudflareemailsendingsubdomain.DataCloudflareEmailSendingSubdomainConfig {
 	Connection: interface{},
@@ -830,7 +830,7 @@ SubdomainId *string
 
 Sending subdomain identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/email_sending_subdomain#subdomain_id DataCloudflareEmailSendingSubdomain#subdomain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_sending_subdomain#subdomain_id DataCloudflareEmailSendingSubdomain#subdomain_id}
 
 ---
 
@@ -844,7 +844,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/email_sending_subdomain#zone_id DataCloudflareEmailSendingSubdomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_sending_subdomain#zone_id DataCloudflareEmailSendingSubdomain#zone_id}
 
 ---
 

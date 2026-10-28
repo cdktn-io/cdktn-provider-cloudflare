@@ -4,12 +4,12 @@
 
 ### EmailRoutingSettings <a name="EmailRoutingSettings" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingsettings"
 
 emailroutingsettings.NewEmailRoutingSettings(scope Construct, id *string, config EmailRoutingSettingsConfig) EmailRoutingSettings
 ```
@@ -407,7 +407,7 @@ func ResetSupportSubaddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingsettings"
 
 emailroutingsettings.EmailRoutingSettings_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingsettings"
 
 emailroutingsettings.EmailRoutingSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ emailroutingsettings.EmailRoutingSettings_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingsettings"
 
 emailroutingsettings.EmailRoutingSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ emailroutingsettings.EmailRoutingSettings_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingsettings"
 
 emailroutingsettings.EmailRoutingSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the EmailRoutingSettings to im
 
 The id of the existing EmailRoutingSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingsettings"
 
 &emailroutingsettings.EmailRoutingSettingsConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
 
 ---
 
@@ -953,7 +953,7 @@ SupportSubaddress interface{}
 
 Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
 
 ---
 

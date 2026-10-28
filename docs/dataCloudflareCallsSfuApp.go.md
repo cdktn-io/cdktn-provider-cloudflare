@@ -4,12 +4,12 @@
 
 ### DataCloudflareCallsSfuApp <a name="DataCloudflareCallsSfuApp" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/calls_sfu_app cloudflare_calls_sfu_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/calls_sfu_app cloudflare_calls_sfu_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecallssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarecallssfuapp"
 
 datacloudflarecallssfuapp.NewDataCloudflareCallsSfuApp(scope Construct, id *string, config DataCloudflareCallsSfuAppConfig) DataCloudflareCallsSfuApp
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecallssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarecallssfuapp"
 
 datacloudflarecallssfuapp.DataCloudflareCallsSfuApp_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecallssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarecallssfuapp"
 
 datacloudflarecallssfuapp.DataCloudflareCallsSfuApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflarecallssfuapp.DataCloudflareCallsSfuApp_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecallssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarecallssfuapp"
 
 datacloudflarecallssfuapp.DataCloudflareCallsSfuApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflarecallssfuapp.DataCloudflareCallsSfuApp_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecallssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarecallssfuapp"
 
 datacloudflarecallssfuapp.DataCloudflareCallsSfuApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareCallsSfuApp 
 
 The id of the existing DataCloudflareCallsSfuApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecallssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarecallssfuapp"
 
 &datacloudflarecallssfuapp.DataCloudflareCallsSfuAppConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
 
 ---
 
@@ -778,7 +778,7 @@ AppId *string
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### CallsSfuApp <a name="CallsSfuApp" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/callssfuapp"
 
 callssfuapp.NewCallsSfuApp(scope Construct, id *string, config CallsSfuAppConfig) CallsSfuApp
 ```
@@ -414,7 +414,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/callssfuapp"
 
 callssfuapp.CallsSfuApp_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/callssfuapp"
 
 callssfuapp.CallsSfuApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ callssfuapp.CallsSfuApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/callssfuapp"
 
 callssfuapp.CallsSfuApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ callssfuapp.CallsSfuApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/callssfuapp"
 
 callssfuapp.CallsSfuApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the CallsSfuApp to import.
 
 The id of the existing CallsSfuApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/callssfuapp"
 
 &callssfuapp.CallsSfuAppConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
 
 ---
 
@@ -940,7 +940,7 @@ AppId *string
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
 
 ---
 
@@ -954,7 +954,7 @@ Name *string
 
 A short description of a Realtime SFU app, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/calls_sfu_app#name CallsSfuApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/calls_sfu_app#name CallsSfuApp#name}
 
 ---
 

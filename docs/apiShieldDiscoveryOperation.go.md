@@ -4,12 +4,12 @@
 
 ### ApiShieldDiscoveryOperation <a name="ApiShieldDiscoveryOperation" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.NewApiShieldDiscoveryOperation(scope Construct, id *string, config ApiShieldDiscoveryOperationConfig) ApiShieldDiscoveryOperation
 ```
@@ -407,7 +407,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.ApiShieldDiscoveryOperation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ApiShieldDiscoveryOperatio
 
 The id of the existing ApiShieldDiscoveryOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_discovery_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishielddiscoveryoperation"
 
 &apishielddiscoveryoperation.ApiShieldDiscoveryOperationConfig {
 	Connection: interface{},
@@ -875,7 +875,7 @@ DiscoveryId *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#discovery_id ApiShieldDiscoveryOperation#discovery_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_discovery_operation#discovery_id ApiShieldDiscoveryOperation#discovery_id}
 
 ---
 
@@ -889,7 +889,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#zone_id ApiShieldDiscoveryOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_discovery_operation#zone_id ApiShieldDiscoveryOperation#zone_id}
 
 ---
 
@@ -903,7 +903,7 @@ State *string
 
 Mark state of operation in API Discovery   * `review` - Mark operation as for review   * `ignored` - Mark operation as ignored Available values: "review", "ignored".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation#state ApiShieldDiscoveryOperation#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_discovery_operation#state ApiShieldDiscoveryOperation#state}
 
 ---
 

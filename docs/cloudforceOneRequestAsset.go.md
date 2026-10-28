@@ -4,12 +4,12 @@
 
 ### CloudforceOneRequestAsset <a name="CloudforceOneRequestAsset" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequestasset"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/cloudforceonerequestasset"
 
 cloudforceonerequestasset.NewCloudforceOneRequestAsset(scope Construct, id *string, config CloudforceOneRequestAssetConfig) CloudforceOneRequestAsset
 ```
@@ -407,7 +407,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequestasset"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/cloudforceonerequestasset"
 
 cloudforceonerequestasset.CloudforceOneRequestAsset_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequestasset"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/cloudforceonerequestasset"
 
 cloudforceonerequestasset.CloudforceOneRequestAsset_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ cloudforceonerequestasset.CloudforceOneRequestAsset_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequestasset"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/cloudforceonerequestasset"
 
 cloudforceonerequestasset.CloudforceOneRequestAsset_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ cloudforceonerequestasset.CloudforceOneRequestAsset_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequestasset"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/cloudforceonerequestasset"
 
 cloudforceonerequestasset.CloudforceOneRequestAsset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the CloudforceOneRequestAsset 
 
 The id of the existing CloudforceOneRequestAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequestasset"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/cloudforceonerequestasset"
 
 &cloudforceonerequestasset.CloudforceOneRequestAssetConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request_asset#account_id CloudforceOneRequestAsset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request_asset#account_id CloudforceOneRequestAsset#account_id}
 
 ---
 
@@ -992,7 +992,7 @@ Page *f64
 
 Page number of results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
 
 ---
 
@@ -1006,7 +1006,7 @@ PerPage *f64
 
 Number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
 
 ---
 
@@ -1020,7 +1020,7 @@ RequestId *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request_asset#request_id CloudforceOneRequestAsset#request_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request_asset#request_id CloudforceOneRequestAsset#request_id}
 
 ---
 
@@ -1034,7 +1034,7 @@ Source *string
 
 Asset file to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
 
 ---
 

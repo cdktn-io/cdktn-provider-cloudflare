@@ -4,12 +4,12 @@
 
 ### DataCloudflareUrlNormalizationSettings <a name="DataCloudflareUrlNormalizationSettings" id="@cdktn/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareurlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareurlnormalizationsettings"
 
 datacloudflareurlnormalizationsettings.NewDataCloudflareUrlNormalizationSettings(scope Construct, id *string, config DataCloudflareUrlNormalizationSettingsConfig) DataCloudflareUrlNormalizationSettings
 ```
@@ -305,7 +305,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareurlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareurlnormalizationsettings"
 
 datacloudflareurlnormalizationsettings.DataCloudflareUrlNormalizationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareurlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareurlnormalizationsettings"
 
 datacloudflareurlnormalizationsettings.DataCloudflareUrlNormalizationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflareurlnormalizationsettings.DataCloudflareUrlNormalizationSettings_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareurlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareurlnormalizationsettings"
 
 datacloudflareurlnormalizationsettings.DataCloudflareUrlNormalizationSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflareurlnormalizationsettings.DataCloudflareUrlNormalizationSettings_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareurlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareurlnormalizationsettings"
 
 datacloudflareurlnormalizationsettings.DataCloudflareUrlNormalizationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareUrlNormaliza
 
 The id of the existing DataCloudflareUrlNormalizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareurlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareurlnormalizationsettings"
 
 &datacloudflareurlnormalizationsettings.DataCloudflareUrlNormalizationSettingsConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ ZoneId *string
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/url_normalization_settings#zone_id DataCloudflareUrlNormalizationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/url_normalization_settings#zone_id DataCloudflareUrlNormalizationSettings#zone_id}
 
 ---
 

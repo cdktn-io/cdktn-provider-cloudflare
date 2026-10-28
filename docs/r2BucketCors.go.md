@@ -4,12 +4,12 @@
 
 ### R2BucketCors <a name="R2BucketCors" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCors"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 r2bucketcors.NewR2BucketCors(scope Construct, id *string, config R2BucketCorsConfig) R2BucketCors
 ```
@@ -427,7 +427,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCors.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 r2bucketcors.R2BucketCors_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 r2bucketcors.R2BucketCors_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ r2bucketcors.R2BucketCors_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCors.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 r2bucketcors.R2BucketCors_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ r2bucketcors.R2BucketCors_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 r2bucketcors.R2BucketCors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the R2BucketCors to import.
 
 The id of the existing R2BucketCors that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 &r2bucketcors.R2BucketCorsConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucket
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Cloudflare account ID that owns the R2 resource. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | Name of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsConfig.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | Jurisdiction of the bucket. |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsConfig.property.rules">Rules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#rules R2BucketCors#rules}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsConfig.property.rules">Rules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#rules R2BucketCors#rules}. |
 
 ---
 
@@ -919,7 +919,7 @@ AccountId *string
 
 Cloudflare account ID that owns the R2 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#account_id R2BucketCors#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#account_id R2BucketCors#account_id}
 
 ---
 
@@ -933,7 +933,7 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#bucket_name R2BucketCors#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#bucket_name R2BucketCors#bucket_name}
 
 ---
 
@@ -947,7 +947,7 @@ Jurisdiction *string
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#jurisdiction R2BucketCors#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#jurisdiction R2BucketCors#jurisdiction}
 
 ---
 
@@ -959,7 +959,7 @@ Rules interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#rules R2BucketCors#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#rules R2BucketCors#rules}.
 
 ---
 
@@ -968,10 +968,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 &r2bucketcors.R2BucketCorsRules {
-	Allowed: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.r2BucketCors.R2BucketCorsRulesAllowed,
+	Allowed: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.r2BucketCors.R2BucketCorsRulesAllowed,
 	ExposeHeaders: *[]*string,
 	Id: *string,
 	MaxAgeSeconds: *f64,
@@ -999,7 +999,7 @@ Allowed R2BucketCorsRulesAllowed
 
 Object specifying allowed origins, methods and headers for this CORS rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#allowed R2BucketCors#allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#allowed R2BucketCors#allowed}
 
 ---
 
@@ -1015,7 +1015,7 @@ Specifies the headers that can be exposed back, and accessed by, the JavaScript 
 
 If you need to access headers beyond the safelisted response headers, such as Content-Encoding or cf-cache-status, you must specify it here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#expose_headers R2BucketCors#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#expose_headers R2BucketCors#expose_headers}
 
 ---
 
@@ -1029,7 +1029,7 @@ Id *string
 
 Identifier for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#id R2BucketCors#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#id R2BucketCors#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1048,7 +1048,7 @@ Specifies the amount of time (in seconds) browsers are allowed to cache CORS pre
 
 Browsers may limit this to 2 hours or less, even if the maximum value (86400) is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#max_age_seconds R2BucketCors#max_age_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#max_age_seconds R2BucketCors#max_age_seconds}
 
 ---
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowed.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 &r2bucketcors.R2BucketCorsRulesAllowed {
 	Methods: *[]*string,
@@ -1086,7 +1086,7 @@ Methods *[]*string
 
 Specifies the value for the Access-Control-Allow-Methods header R2 sets when requesting objects in a bucket from a browser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#methods R2BucketCors#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#methods R2BucketCors#methods}
 
 ---
 
@@ -1100,7 +1100,7 @@ Origins *[]*string
 
 Specifies the value for the Access-Control-Allow-Origin header R2 sets when requesting objects in a bucket from a browser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#origins R2BucketCors#origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#origins R2BucketCors#origins}
 
 ---
 
@@ -1116,7 +1116,7 @@ Specifies the value for the Access-Control-Allow-Headers header R2 sets when req
 
 Cross-origin requests that include custom headers (e.g. x-user-id) should specify these headers as AllowedHeaders.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_bucket_cors#headers R2BucketCors#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_bucket_cors#headers R2BucketCors#headers}
 
 ---
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 r2bucketcors.NewR2BucketCorsRulesAllowedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2BucketCorsRulesAllowedOutputReference
 ```
@@ -1449,7 +1449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 r2bucketcors.NewR2BucketCorsRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) R2BucketCorsRulesList
 ```
@@ -1609,7 +1609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketcors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2bucketcors"
 
 r2bucketcors.NewR2BucketCorsRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) R2BucketCorsRulesOutputReference
 ```

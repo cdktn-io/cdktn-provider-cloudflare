@@ -4,7 +4,7 @@
 
 ### DataCloudflareMonetizationRules <a name="DataCloudflareMonetizationRules" id="@cdktn/provider-cloudflare.dataCloudflareMonetizationRules.DataCloudflareMonetizationRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/monetization_rules cloudflare_monetization_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/monetization_rules cloudflare_monetization_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMonetizationRules.DataCloudflareMonetizationRules.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/monetization_rules#zone_id DataCloudflareMonetizationRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/monetization_rules#zone_id DataCloudflareMonetizationRules#zone_id}
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataCloudflareMonetization
 
 The id of the existing DataCloudflareMonetizationRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/monetization_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/monetization_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ zone_id: str
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/monetization_rules#zone_id DataCloudflareMonetizationRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/monetization_rules#zone_id DataCloudflareMonetizationRules#zone_id}
 
 ---
 

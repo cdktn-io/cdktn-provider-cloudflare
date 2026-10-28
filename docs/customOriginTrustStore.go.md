@@ -4,12 +4,12 @@
 
 ### CustomOriginTrustStore <a name="CustomOriginTrustStore" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/customorigintruststore"
 
 customorigintruststore.NewCustomOriginTrustStore(scope Construct, id *string, config CustomOriginTrustStoreConfig) CustomOriginTrustStore
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/customorigintruststore"
 
 customorigintruststore.CustomOriginTrustStore_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/customorigintruststore"
 
 customorigintruststore.CustomOriginTrustStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ customorigintruststore.CustomOriginTrustStore_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/customorigintruststore"
 
 customorigintruststore.CustomOriginTrustStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ customorigintruststore.CustomOriginTrustStore_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/customorigintruststore"
 
 customorigintruststore.CustomOriginTrustStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the CustomOriginTrustStore to 
 
 The id of the existing CustomOriginTrustStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/custom_origin_trust_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/custom_origin_trust_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/customorigintruststore"
 
 &customorigintruststore.CustomOriginTrustStoreConfig {
 	Connection: interface{},
@@ -923,7 +923,7 @@ The root CA certificate in PEM format.
 
 Only root CA certificates are accepted; intermediate and leaf certificates are not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
 
 ---
 
@@ -937,7 +937,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
 
 ---
 

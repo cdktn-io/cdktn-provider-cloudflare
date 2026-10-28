@@ -4,12 +4,12 @@
 
 ### DataCloudflareZoneCacheVariants <a name="DataCloudflareZoneCacheVariants" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants"
 
 datacloudflarezonecachevariants.NewDataCloudflareZoneCacheVariants(scope Construct, id *string, config DataCloudflareZoneCacheVariantsConfig) DataCloudflareZoneCacheVariants
 ```
@@ -305,7 +305,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants"
 
 datacloudflarezonecachevariants.DataCloudflareZoneCacheVariants_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants"
 
 datacloudflarezonecachevariants.DataCloudflareZoneCacheVariants_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflarezonecachevariants.DataCloudflareZoneCacheVariants_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants"
 
 datacloudflarezonecachevariants.DataCloudflareZoneCacheVariants_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflarezonecachevariants.DataCloudflareZoneCacheVariants_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants"
 
 datacloudflarezonecachevariants.DataCloudflareZoneCacheVariants_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareZoneCacheVar
 
 The id of the existing DataCloudflareZoneCacheVariants that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants"
 
 &datacloudflarezonecachevariants.DataCloudflareZoneCacheVariantsConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_cache_variants#zone_id DataCloudflareZoneCacheVariants#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_cache_variants#zone_id DataCloudflareZoneCacheVariants#zone_id}
 
 ---
 
@@ -756,7 +756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants"
 
 &datacloudflarezonecachevariants.DataCloudflareZoneCacheVariantsValue {
 
@@ -771,7 +771,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants"
 
 datacloudflarezonecachevariants.NewDataCloudflareZoneCacheVariantsValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneCacheVariantsValueOutputReference
 ```

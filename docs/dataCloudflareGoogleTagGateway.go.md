@@ -4,12 +4,12 @@
 
 ### DataCloudflareGoogleTagGateway <a name="DataCloudflareGoogleTagGateway" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/google_tag_gateway cloudflare_google_tag_gateway}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/google_tag_gateway cloudflare_google_tag_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaregoogletaggateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaregoogletaggateway"
 
 datacloudflaregoogletaggateway.NewDataCloudflareGoogleTagGateway(scope Construct, id *string, config DataCloudflareGoogleTagGatewayConfig) DataCloudflareGoogleTagGateway
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaregoogletaggateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaregoogletaggateway"
 
 datacloudflaregoogletaggateway.DataCloudflareGoogleTagGateway_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaregoogletaggateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaregoogletaggateway"
 
 datacloudflaregoogletaggateway.DataCloudflareGoogleTagGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflaregoogletaggateway.DataCloudflareGoogleTagGateway_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaregoogletaggateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaregoogletaggateway"
 
 datacloudflaregoogletaggateway.DataCloudflareGoogleTagGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflaregoogletaggateway.DataCloudflareGoogleTagGateway_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaregoogletaggateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaregoogletaggateway"
 
 datacloudflaregoogletaggateway.DataCloudflareGoogleTagGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareGoogleTagGat
 
 The id of the existing DataCloudflareGoogleTagGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/google_tag_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/google_tag_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaregoogletaggateway"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaregoogletaggateway"
 
 &datacloudflaregoogletaggateway.DataCloudflareGoogleTagGatewayConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/google_tag_gateway#zone_id DataCloudflareGoogleTagGateway#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/google_tag_gateway#zone_id DataCloudflareGoogleTagGateway#zone_id}
 
 ---
 

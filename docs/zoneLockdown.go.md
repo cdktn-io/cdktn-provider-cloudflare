@@ -4,12 +4,12 @@
 
 ### ZoneLockdown <a name="ZoneLockdown" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdown"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdown.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 zonelockdown.NewZoneLockdown(scope Construct, id *string, config ZoneLockdownConfig) ZoneLockdown
 ```
@@ -434,7 +434,7 @@ func ResetPriority()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdown.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 zonelockdown.ZoneLockdown_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdown.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 zonelockdown.ZoneLockdown_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ zonelockdown.ZoneLockdown_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdown.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 zonelockdown.ZoneLockdown_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ zonelockdown.ZoneLockdown_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdown.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 zonelockdown.ZoneLockdown_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ZoneLockdown to import.
 
 The id of the existing ZoneLockdown that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 &zonelockdown.ZoneLockdownConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ A list of IP addresses or CIDR ranges that will be allowed to access the URLs sp
 
 You can include any number of `ip` or `ip_range` configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
 
 ---
 
@@ -1025,7 +1025,7 @@ The URLs to include in the current WAF override.
 
 You can use wildcards. Each entered URL will be escaped before use, which means you can only use simple wildcard patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
 
 ---
 
@@ -1039,7 +1039,7 @@ ZoneId *string
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
 
 ---
 
@@ -1053,7 +1053,7 @@ Description *string
 
 An informative summary of the rule. This value is sanitized and any tags will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#description ZoneLockdown#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#description ZoneLockdown#description}
 
 ---
 
@@ -1067,7 +1067,7 @@ Paused interface{}
 
 When true, indicates that the rule is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#paused ZoneLockdown#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#paused ZoneLockdown#paused}
 
 ---
 
@@ -1083,7 +1083,7 @@ The priority of the rule to control the processing order.
 
 A lower number indicates higher priority. If not provided, any rules with a configured priority will be processed before rules without a priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#priority ZoneLockdown#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#priority ZoneLockdown#priority}
 
 ---
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 &zonelockdown.ZoneLockdownConfigurations {
 	Target: *string,
@@ -1122,7 +1122,7 @@ The configuration target.
 You must set the target to `ip` when specifying an IP address in the Zone Lockdown rule.
 Available values: "ip", "ip_range".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#target ZoneLockdown#target}
 
 ---
 
@@ -1136,7 +1136,7 @@ Value *string
 
 The IP address to match. This address will be compared to the IP address of incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_lockdown#value ZoneLockdown#value}
 
 ---
 
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 zonelockdown.NewZoneLockdownConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneLockdownConfigurationsList
 ```
@@ -1307,7 +1307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonelockdown"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonelockdown"
 
 zonelockdown.NewZoneLockdownConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZoneLockdownConfigurationsOutputReference
 ```

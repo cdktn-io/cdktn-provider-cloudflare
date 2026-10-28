@@ -4,12 +4,12 @@
 
 ### ContentScanning <a name="ContentScanning" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/content_scanning cloudflare_content_scanning}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/content_scanning cloudflare_content_scanning}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/contentscanning"
 
 contentscanning.NewContentScanning(scope Construct, id *string, config ContentScanningConfig) ContentScanning
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/contentscanning"
 
 contentscanning.ContentScanning_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/contentscanning"
 
 contentscanning.ContentScanning_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ contentscanning.ContentScanning_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/contentscanning"
 
 contentscanning.ContentScanning_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ contentscanning.ContentScanning_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/contentscanning"
 
 contentscanning.ContentScanning_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ContentScanning to import.
 
 The id of the existing ContentScanning that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.contentScanning.ContentScanningConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/contentscanning"
 
 &contentscanning.ContentScanningConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ Value *string
 
 The status value for Content Scanning. Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/content_scanning#value ContentScanning#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/content_scanning#value ContentScanning#value}
 
 ---
 
@@ -869,7 +869,7 @@ ZoneId *string
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
 
 ---
 

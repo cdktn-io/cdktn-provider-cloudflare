@@ -4,12 +4,12 @@
 
 ### WorkersCustomDomain <a name="WorkersCustomDomain" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscustomdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscustomdomain"
 
 workerscustomdomain.NewWorkersCustomDomain(scope Construct, id *string, config WorkersCustomDomainConfig) WorkersCustomDomain
 ```
@@ -421,7 +421,7 @@ func ResetZoneName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscustomdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscustomdomain"
 
 workerscustomdomain.WorkersCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscustomdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscustomdomain"
 
 workerscustomdomain.WorkersCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workerscustomdomain.WorkersCustomDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscustomdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscustomdomain"
 
 workerscustomdomain.WorkersCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ workerscustomdomain.WorkersCustomDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscustomdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscustomdomain"
 
 workerscustomdomain.WorkersCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the WorkersCustomDomain to imp
 
 The id of the existing WorkersCustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscustomdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscustomdomain"
 
 &workerscustomdomain.WorkersCustomDomainConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
 
 ---
 
@@ -999,7 +999,7 @@ Hostname of the domain.
 
 Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
 
 ---
 
@@ -1013,7 +1013,7 @@ Service *string
 
 Name of the Worker associated with the domain. Requests to the configured hostname will be routed to this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
 
 ---
 
@@ -1027,7 +1027,7 @@ Environment *string
 
 Worker environment associated with the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
 
 ---
 
@@ -1041,7 +1041,7 @@ ZoneId *string
 
 ID of the zone containing the domain hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
 
 ---
 
@@ -1055,7 +1055,7 @@ ZoneName *string
 
 Name of the zone containing the domain hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_custom_domain#zone_name WorkersCustomDomain#zone_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#zone_name WorkersCustomDomain#zone_name}
 
 ---
 

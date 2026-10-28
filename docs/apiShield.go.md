@@ -4,12 +4,12 @@
 
 ### ApiShield <a name="ApiShield" id="@cdktn/provider-cloudflare.apiShield.ApiShield"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield cloudflare_api_shield}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield cloudflare_api_shield}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShield.ApiShield.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 apishield.NewApiShield(scope Construct, id *string, config ApiShieldConfig) ApiShield
 ```
@@ -420,7 +420,7 @@ func ResetNormalize()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.apiShield.ApiShield.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 apishield.ApiShield_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.apiShield.ApiShield.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 apishield.ApiShield_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ apishield.ApiShield_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.apiShield.ApiShield.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 apishield.ApiShield_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apishield.ApiShield_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.apiShield.ApiShield.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 apishield.ApiShield_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the ApiShield to import.
 
 The id of the existing ApiShield that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 &apishield.ApiShieldAuthIdCharacteristics {
 	Name: *string,
@@ -813,7 +813,7 @@ Name *string
 
 The name of the characteristic field, i.e., the header or cookie name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield#name ApiShield#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield#name ApiShield#name}
 
 ---
 
@@ -827,7 +827,7 @@ Type *string
 
 The type of characteristic. Available values: "header", "cookie", "jwt".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield#type ApiShield#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield#type ApiShield#type}
 
 ---
 
@@ -836,7 +836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 &apishield.ApiShieldConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishiel
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShield.ApiShieldConfig.property.normalize">Normalize</a></code> | <code>interface{}</code> | Ensures that the configuration is written or retrieved in normalized fashion. |
 
@@ -947,7 +947,7 @@ AuthIdCharacteristics interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}.
 
 ---
 
@@ -961,7 +961,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield#zone_id ApiShield#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield#zone_id ApiShield#zone_id}
 
 ---
 
@@ -975,7 +975,7 @@ Normalize interface{}
 
 Ensures that the configuration is written or retrieved in normalized fashion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield#normalize ApiShield#normalize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield#normalize ApiShield#normalize}
 
 ---
 
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 apishield.NewApiShieldAuthIdCharacteristicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiShieldAuthIdCharacteristicsList
 ```
@@ -1146,7 +1146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishield"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishield"
 
 apishield.NewApiShieldAuthIdCharacteristicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiShieldAuthIdCharacteristicsOutputReference
 ```

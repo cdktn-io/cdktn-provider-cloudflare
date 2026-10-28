@@ -4,12 +4,12 @@
 
 ### AiGatewayDynamicRouting <a name="AiGatewayDynamicRouting" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRouting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRouting(scope Construct, id *string, config AiGatewayDynamicRoutingConfig) AiGatewayDynamicRouting
 ```
@@ -413,7 +413,7 @@ func PutElements(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRouting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.AiGatewayDynamicRouting_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRouting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.AiGatewayDynamicRouting_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ aigatewaydynamicrouting.AiGatewayDynamicRouting_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRouting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.AiGatewayDynamicRouting_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ aigatewaydynamicrouting.AiGatewayDynamicRouting_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRouting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.AiGatewayDynamicRouting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the AiGatewayDynamicRouting to
 
 The id of the existing AiGatewayDynamicRouting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingConfig {
 	Connection: interface{},
@@ -895,10 +895,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#account_id AiGatewayDynamicRouting#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.elements">Elements</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#elements AiGatewayDynamicRouting#elements}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#gateway_id AiGatewayDynamicRouting#gateway_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#name AiGatewayDynamicRouting#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#account_id AiGatewayDynamicRouting#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.elements">Elements</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#elements AiGatewayDynamicRouting#elements}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#gateway_id AiGatewayDynamicRouting#gateway_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#name AiGatewayDynamicRouting#name}. |
 
 ---
 
@@ -980,7 +980,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#account_id AiGatewayDynamicRouting#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#account_id AiGatewayDynamicRouting#account_id}.
 
 ---
 
@@ -992,7 +992,7 @@ Elements interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#elements AiGatewayDynamicRouting#elements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#elements AiGatewayDynamicRouting#elements}.
 
 ---
 
@@ -1004,7 +1004,7 @@ GatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#gateway_id AiGatewayDynamicRouting#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#gateway_id AiGatewayDynamicRouting#gateway_id}.
 
 ---
 
@@ -1016,7 +1016,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#name AiGatewayDynamicRouting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#name AiGatewayDynamicRouting#name}.
 
 ---
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingDeployment {
 
@@ -1038,13 +1038,13 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingElements {
 	Id: *string,
-	Outputs: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs,
+	Outputs: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs,
 	Type: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties,
+	Properties: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties,
 }
 ```
 
@@ -1052,10 +1052,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElements.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#id AiGatewayDynamicRouting#id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElements.property.outputs">Outputs</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs">AiGatewayDynamicRoutingElementsOutputs</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#outputs AiGatewayDynamicRouting#outputs}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElements.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#id AiGatewayDynamicRouting#id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElements.property.outputs">Outputs</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs">AiGatewayDynamicRoutingElementsOutputs</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#outputs AiGatewayDynamicRouting#outputs}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElements.property.type">Type</a></code> | <code>*string</code> | Available values: "start", "conditional", "percentage", "rate", "model", "end". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElements.property.properties">Properties</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties">AiGatewayDynamicRoutingElementsProperties</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#properties AiGatewayDynamicRouting#properties}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElements.property.properties">Properties</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties">AiGatewayDynamicRoutingElementsProperties</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#properties AiGatewayDynamicRouting#properties}. |
 
 ---
 
@@ -1067,7 +1067,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#id AiGatewayDynamicRouting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#id AiGatewayDynamicRouting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1082,7 @@ Outputs AiGatewayDynamicRoutingElementsOutputs
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs">AiGatewayDynamicRoutingElementsOutputs</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#outputs AiGatewayDynamicRouting#outputs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#outputs AiGatewayDynamicRouting#outputs}.
 
 ---
 
@@ -1096,7 +1096,7 @@ Type *string
 
 Available values: "start", "conditional", "percentage", "rate", "model", "end".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#type AiGatewayDynamicRouting#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#type AiGatewayDynamicRouting#type}
 
 ---
 
@@ -1108,7 +1108,7 @@ Properties AiGatewayDynamicRoutingElementsProperties
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties">AiGatewayDynamicRoutingElementsProperties</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#properties AiGatewayDynamicRouting#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#properties AiGatewayDynamicRouting#properties}.
 
 ---
 
@@ -1117,15 +1117,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingElementsOutputs {
 	ElementId: *string,
-	Fallback: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallback,
-	False: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalse,
-	Next: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNext,
-	Success: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccess,
-	True: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrue,
+	Fallback: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallback,
+	False: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalse,
+	Next: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNext,
+	Success: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccess,
+	True: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrue,
 }
 ```
 
@@ -1133,12 +1133,12 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.fallback">Fallback</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallback">AiGatewayDynamicRoutingElementsOutputsFallback</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#fallback AiGatewayDynamicRouting#fallback}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.false">False</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalse">AiGatewayDynamicRoutingElementsOutputsFalse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#false AiGatewayDynamicRouting#false}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.next">Next</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNext">AiGatewayDynamicRoutingElementsOutputsNext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#next AiGatewayDynamicRouting#next}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.success">Success</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccess">AiGatewayDynamicRoutingElementsOutputsSuccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#success AiGatewayDynamicRouting#success}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.true">True</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrue">AiGatewayDynamicRoutingElementsOutputsTrue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#true AiGatewayDynamicRouting#true}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.fallback">Fallback</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallback">AiGatewayDynamicRoutingElementsOutputsFallback</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#fallback AiGatewayDynamicRouting#fallback}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.false">False</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalse">AiGatewayDynamicRoutingElementsOutputsFalse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#false AiGatewayDynamicRouting#false}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.next">Next</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNext">AiGatewayDynamicRoutingElementsOutputsNext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#next AiGatewayDynamicRouting#next}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.success">Success</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccess">AiGatewayDynamicRoutingElementsOutputsSuccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#success AiGatewayDynamicRouting#success}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputs.property.true">True</a></code> | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrue">AiGatewayDynamicRoutingElementsOutputsTrue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#true AiGatewayDynamicRouting#true}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ ElementId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Fallback AiGatewayDynamicRoutingElementsOutputsFallback
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallback">AiGatewayDynamicRoutingElementsOutputsFallback</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#fallback AiGatewayDynamicRouting#fallback}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#fallback AiGatewayDynamicRouting#fallback}.
 
 ---
 
@@ -1174,7 +1174,7 @@ False AiGatewayDynamicRoutingElementsOutputsFalse
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalse">AiGatewayDynamicRoutingElementsOutputsFalse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#false AiGatewayDynamicRouting#false}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#false AiGatewayDynamicRouting#false}.
 
 ---
 
@@ -1186,7 +1186,7 @@ Next AiGatewayDynamicRoutingElementsOutputsNext
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNext">AiGatewayDynamicRoutingElementsOutputsNext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#next AiGatewayDynamicRouting#next}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#next AiGatewayDynamicRouting#next}.
 
 ---
 
@@ -1198,7 +1198,7 @@ Success AiGatewayDynamicRoutingElementsOutputsSuccess
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccess">AiGatewayDynamicRoutingElementsOutputsSuccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#success AiGatewayDynamicRouting#success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#success AiGatewayDynamicRouting#success}.
 
 ---
 
@@ -1210,7 +1210,7 @@ True AiGatewayDynamicRoutingElementsOutputsTrue
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrue">AiGatewayDynamicRoutingElementsOutputsTrue</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#true AiGatewayDynamicRouting#true}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#true AiGatewayDynamicRouting#true}.
 
 ---
 
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingElementsOutputsFallback {
 	ElementId: *string,
@@ -1230,7 +1230,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallback.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallback.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
 
 ---
 
@@ -1242,7 +1242,7 @@ ElementId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
 
 ---
 
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingElementsOutputsFalse {
 	ElementId: *string,
@@ -1262,7 +1262,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalse.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalse.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
 
 ---
 
@@ -1274,7 +1274,7 @@ ElementId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
 
 ---
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingElementsOutputsNext {
 	ElementId: *string,
@@ -1294,7 +1294,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNext.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNext.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
 
 ---
 
@@ -1306,7 +1306,7 @@ ElementId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
 
 ---
 
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingElementsOutputsSuccess {
 	ElementId: *string,
@@ -1326,7 +1326,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccess.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccess.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
 
 ---
 
@@ -1338,7 +1338,7 @@ ElementId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
 
 ---
 
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingElementsOutputsTrue {
 	ElementId: *string,
@@ -1358,7 +1358,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrue.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrue.property.elementId">ElementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}. |
 
 ---
 
@@ -1370,7 +1370,7 @@ ElementId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}.
 
 ---
 
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingElementsProperties {
 	AiGatewayDynamicRoutingProvider: *string,
@@ -1398,15 +1398,15 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.aiGatewayDynamicRoutingProvider">AiGatewayDynamicRoutingProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#ai_gateway_dynamic_routing_provider AiGatewayDynamicRouting#ai_gateway_dynamic_routing_provider}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.conditions">Conditions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#conditions AiGatewayDynamicRouting#conditions}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#key AiGatewayDynamicRouting#key}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.limit">Limit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#limit AiGatewayDynamicRouting#limit}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.aiGatewayDynamicRoutingProvider">AiGatewayDynamicRoutingProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#ai_gateway_dynamic_routing_provider AiGatewayDynamicRouting#ai_gateway_dynamic_routing_provider}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.conditions">Conditions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#conditions AiGatewayDynamicRouting#conditions}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#key AiGatewayDynamicRouting#key}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.limit">Limit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#limit AiGatewayDynamicRouting#limit}. |
 | <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.limitType">LimitType</a></code> | <code>*string</code> | Available values: "count", "cost". |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.model">Model</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#model AiGatewayDynamicRouting#model}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.retries">Retries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#retries AiGatewayDynamicRouting#retries}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#timeout AiGatewayDynamicRouting#timeout}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.window">Window</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#window AiGatewayDynamicRouting#window}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.model">Model</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#model AiGatewayDynamicRouting#model}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.retries">Retries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#retries AiGatewayDynamicRouting#retries}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#timeout AiGatewayDynamicRouting#timeout}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsProperties.property.window">Window</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#window AiGatewayDynamicRouting#window}. |
 
 ---
 
@@ -1418,7 +1418,7 @@ AiGatewayDynamicRoutingProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#ai_gateway_dynamic_routing_provider AiGatewayDynamicRouting#ai_gateway_dynamic_routing_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#ai_gateway_dynamic_routing_provider AiGatewayDynamicRouting#ai_gateway_dynamic_routing_provider}.
 
 ---
 
@@ -1430,7 +1430,7 @@ Conditions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#conditions AiGatewayDynamicRouting#conditions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#conditions AiGatewayDynamicRouting#conditions}.
 
 ---
 
@@ -1442,7 +1442,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#key AiGatewayDynamicRouting#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#key AiGatewayDynamicRouting#key}.
 
 ---
 
@@ -1454,7 +1454,7 @@ Limit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#limit AiGatewayDynamicRouting#limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#limit AiGatewayDynamicRouting#limit}.
 
 ---
 
@@ -1468,7 +1468,7 @@ LimitType *string
 
 Available values: "count", "cost".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#limit_type AiGatewayDynamicRouting#limit_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#limit_type AiGatewayDynamicRouting#limit_type}
 
 ---
 
@@ -1480,7 +1480,7 @@ Model *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#model AiGatewayDynamicRouting#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#model AiGatewayDynamicRouting#model}.
 
 ---
 
@@ -1492,7 +1492,7 @@ Retries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#retries AiGatewayDynamicRouting#retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#retries AiGatewayDynamicRouting#retries}.
 
 ---
 
@@ -1504,7 +1504,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#timeout AiGatewayDynamicRouting#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#timeout AiGatewayDynamicRouting#timeout}.
 
 ---
 
@@ -1516,7 +1516,7 @@ Window *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ai_gateway_dynamic_routing#window AiGatewayDynamicRouting#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_gateway_dynamic_routing#window AiGatewayDynamicRouting#window}.
 
 ---
 
@@ -1525,7 +1525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRoute {
 
@@ -1538,7 +1538,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteDeployment {
 
@@ -1551,7 +1551,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteElements {
 
@@ -1564,7 +1564,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteElementsOutputs {
 
@@ -1577,7 +1577,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsFallback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteElementsOutputsFallback {
 
@@ -1590,7 +1590,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsFalse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteElementsOutputsFalse {
 
@@ -1603,7 +1603,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsNext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteElementsOutputsNext {
 
@@ -1616,7 +1616,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteElementsOutputsSuccess {
 
@@ -1629,7 +1629,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsTrue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteElementsOutputsTrue {
 
@@ -1642,7 +1642,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteElementsProperties {
 
@@ -1655,7 +1655,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingRouteVersion {
 
@@ -1668,7 +1668,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 &aigatewaydynamicrouting.AiGatewayDynamicRoutingVersion {
 
@@ -1683,7 +1683,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewa
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingDeploymentOutputReference
 ```
@@ -1965,7 +1965,7 @@ func InternalValue() AiGatewayDynamicRoutingDeployment
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayDynamicRoutingElementsList
 ```
@@ -2125,7 +2125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayDynamicRoutingElementsOutputReference
 ```
@@ -2513,7 +2513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFallbackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsOutputsFallbackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingElementsOutputsFallbackOutputReference
 ```
@@ -2784,7 +2784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsFalseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsOutputsFalseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingElementsOutputsFalseOutputReference
 ```
@@ -3055,7 +3055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsNextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsOutputsNextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingElementsOutputsNextOutputReference
 ```
@@ -3326,7 +3326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsOutputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingElementsOutputsOutputReference
 ```
@@ -3814,7 +3814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsOutputsSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingElementsOutputsSuccessOutputReference
 ```
@@ -4085,7 +4085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsOutputsTrueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsOutputsTrueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingElementsOutputsTrueOutputReference
 ```
@@ -4356,7 +4356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingElementsPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingElementsPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingElementsPropertiesOutputReference
 ```
@@ -4866,7 +4866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteDeploymentOutputReference
 ```
@@ -5148,7 +5148,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteDeployment
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayDynamicRoutingRouteElementsList
 ```
@@ -5297,7 +5297,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayDynamicRoutingRouteElementsOutputReference
 ```
@@ -5608,7 +5608,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteElements
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsFallbackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsOutputsFallbackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteElementsOutputsFallbackOutputReference
 ```
@@ -5868,7 +5868,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteElementsOutputsFallback
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsFalseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsOutputsFalseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteElementsOutputsFalseOutputReference
 ```
@@ -6128,7 +6128,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteElementsOutputsFalse
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsNextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsOutputsNextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteElementsOutputsNextOutputReference
 ```
@@ -6388,7 +6388,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteElementsOutputsNext
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsOutputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteElementsOutputsOutputReference
 ```
@@ -6703,7 +6703,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteElementsOutputs
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsOutputsSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteElementsOutputsSuccessOutputReference
 ```
@@ -6963,7 +6963,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteElementsOutputsSuccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsOutputsTrueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsOutputsTrueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteElementsOutputsTrueOutputReference
 ```
@@ -7223,7 +7223,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteElementsOutputsTrue
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteElementsPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteElementsPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteElementsPropertiesOutputReference
 ```
@@ -7571,7 +7571,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteElementsProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteOutputReference
 ```
@@ -7919,7 +7919,7 @@ func InternalValue() AiGatewayDynamicRoutingRoute
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingRouteVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingRouteVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingRouteVersionOutputReference
 ```
@@ -8223,7 +8223,7 @@ func InternalValue() AiGatewayDynamicRoutingRouteVersion
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiGatewayDynamicRouting.AiGatewayDynamicRoutingVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/aigatewaydynamicrouting"
 
 aigatewaydynamicrouting.NewAiGatewayDynamicRoutingVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayDynamicRoutingVersionOutputReference
 ```

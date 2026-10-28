@@ -4,12 +4,12 @@
 
 ### DataCloudflareZoneAutoOriginTlsKex <a name="DataCloudflareZoneAutoOriginTlsKex" id="@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezoneautoorigintlskex"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezoneautoorigintlskex"
 
 datacloudflarezoneautoorigintlskex.NewDataCloudflareZoneAutoOriginTlsKex(scope Construct, id *string, config DataCloudflareZoneAutoOriginTlsKexConfig) DataCloudflareZoneAutoOriginTlsKex
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezoneautoorigintlskex"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezoneautoorigintlskex"
 
 datacloudflarezoneautoorigintlskex.DataCloudflareZoneAutoOriginTlsKex_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezoneautoorigintlskex"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezoneautoorigintlskex"
 
 datacloudflarezoneautoorigintlskex.DataCloudflareZoneAutoOriginTlsKex_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflarezoneautoorigintlskex.DataCloudflareZoneAutoOriginTlsKex_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKex.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezoneautoorigintlskex"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezoneautoorigintlskex"
 
 datacloudflarezoneautoorigintlskex.DataCloudflareZoneAutoOriginTlsKex_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflarezoneautoorigintlskex.DataCloudflareZoneAutoOriginTlsKex_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezoneautoorigintlskex"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezoneautoorigintlskex"
 
 datacloudflarezoneautoorigintlskex.DataCloudflareZoneAutoOriginTlsKex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareZoneAutoOrig
 
 The id of the existing DataCloudflareZoneAutoOriginTlsKex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_auto_origin_tls_kex#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_auto_origin_tls_kex#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezoneautoorigintlskex"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezoneautoorigintlskex"
 
 &datacloudflarezoneautoorigintlskex.DataCloudflareZoneAutoOriginTlsKexConfig {
 	Connection: interface{},
@@ -645,7 +645,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKexConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKexConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKexConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKexConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_auto_origin_tls_kex#zone_id DataCloudflareZoneAutoOriginTlsKex#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneAutoOriginTlsKex.DataCloudflareZoneAutoOriginTlsKexConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_auto_origin_tls_kex#zone_id DataCloudflareZoneAutoOriginTlsKex#zone_id}. |
 
 ---
 
@@ -727,7 +727,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_auto_origin_tls_kex#zone_id DataCloudflareZoneAutoOriginTlsKex#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_auto_origin_tls_kex#zone_id DataCloudflareZoneAutoOriginTlsKex#zone_id}.
 
 ---
 

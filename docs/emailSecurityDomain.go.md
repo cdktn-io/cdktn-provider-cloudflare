@@ -4,12 +4,12 @@
 
 ### EmailSecurityDomain <a name="EmailSecurityDomain" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain cloudflare_email_security_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain cloudflare_email_security_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 emailsecuritydomain.NewEmailSecurityDomain(scope Construct, id *string, config EmailSecurityDomainConfig) EmailSecurityDomain
 ```
@@ -442,7 +442,7 @@ func ResetTransport()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 emailsecuritydomain.EmailSecurityDomain_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 emailsecuritydomain.EmailSecurityDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ emailsecuritydomain.EmailSecurityDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 emailsecuritydomain.EmailSecurityDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ emailsecuritydomain.EmailSecurityDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 emailsecuritydomain.EmailSecurityDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -531,7 +531,7 @@ The construct id used in the generated config for the EmailSecurityDomain to imp
 
 The id of the existing EmailSecurityDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1116,7 +1116,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 &emailsecuritydomain.EmailSecurityDomainAuthorization {
 
@@ -1129,7 +1129,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsec
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 &emailsecuritydomain.EmailSecurityDomainConfig {
 	Connection: interface{},
@@ -1260,7 +1260,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
 
 ---
 
@@ -1274,7 +1274,7 @@ AllowedDeliveryModes *[]*string
 
 Delivery modes to onboard the domain through.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}
 
 ---
 
@@ -1288,7 +1288,7 @@ Domain *string
 
 The email domain to protect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}
 
 ---
 
@@ -1302,7 +1302,7 @@ DropDispositions *[]*string
 
 Dispositions to drop instead of delivering, e.g. `["MALICIOUS", "SPAM"]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}
 
 ---
 
@@ -1316,7 +1316,7 @@ IpRestrictions *[]*string
 
 Source IP ranges mail is accepted from. Any other source is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}
 
 ---
 
@@ -1330,7 +1330,7 @@ Regions *[]*string
 
 Regions that process messages for this domain, e.g. `["GLOBAL"]` or `["US"]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}
 
 ---
 
@@ -1344,7 +1344,7 @@ Folder *string
 
 The mailbox folder to scan, for API-scanning domains. Available values: "AllItems", "Inbox".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
 
 ---
 
@@ -1360,7 +1360,7 @@ Identifier of the CASB integration that authorizes this domain.
 
 The integration also enables API scanning, post-delivery actions, and directory sync.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}
 
 ---
 
@@ -1374,7 +1374,7 @@ LookbackHops *f64
 
 Number of hops to trace back through received headers when reconstructing the original message (1-20).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}
 
 ---
 
@@ -1388,7 +1388,7 @@ RequireTlsInbound interface{}
 
 Require TLS on inbound connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}
 
 ---
 
@@ -1402,7 +1402,7 @@ RequireTlsOutbound interface{}
 
 Require TLS on outbound connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}
 
 ---
 
@@ -1416,7 +1416,7 @@ Transport *string
 
 The mail transport hostname for MX/Inline delivery — the MX record Cloudflare delivers email to (e.g. `mx.example.com`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}
 
 ---
 
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainEmailsProcessed.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 &emailsecuritydomain.EmailSecurityDomainEmailsProcessed {
 
@@ -1440,7 +1440,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsec
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 emailsecuritydomain.NewEmailSecurityDomainAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmailSecurityDomainAuthorizationOutputReference
 ```
@@ -1722,7 +1722,7 @@ func InternalValue() EmailSecurityDomainAuthorization
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityDomain.EmailSecurityDomainEmailsProcessedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritydomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritydomain"
 
 emailsecuritydomain.NewEmailSecurityDomainEmailsProcessedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmailSecurityDomainEmailsProcessedOutputReference
 ```

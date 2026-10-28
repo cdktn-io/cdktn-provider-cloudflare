@@ -4,12 +4,12 @@
 
 ### Snippet <a name="Snippet" id="@cdktn/provider-cloudflare.snippet.Snippet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet cloudflare_snippet}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet cloudflare_snippet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippet.Snippet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 snippet.NewSnippet(scope Construct, id *string, config SnippetConfig) Snippet
 ```
@@ -426,7 +426,7 @@ func PutMetadata(value SnippetMetadata)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.snippet.Snippet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 snippet.Snippet_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.snippet.Snippet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 snippet.Snippet_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ snippet.Snippet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.snippet.Snippet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 snippet.Snippet_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ snippet.Snippet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.snippet.Snippet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 snippet.Snippet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the Snippet to import.
 
 The id of the existing Snippet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -836,7 +836,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.snippet.SnippetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 &snippet.SnippetConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Files: interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.snippet.SnippetMetadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.snippet.SnippetMetadata,
 	SnippetName: *string,
 	ZoneId: *string,
 }
@@ -951,7 +951,7 @@ Files interface{}
 
 The list of files belonging to the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#files Snippet#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#files Snippet#files}
 
 ---
 
@@ -965,7 +965,7 @@ Metadata SnippetMetadata
 
 Provide metadata about the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#metadata Snippet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#metadata Snippet#metadata}
 
 ---
 
@@ -979,7 +979,7 @@ SnippetName *string
 
 Identify the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#snippet_name Snippet#snippet_name}
 
 ---
 
@@ -993,7 +993,7 @@ ZoneId *string
 
 Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#zone_id Snippet#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#zone_id Snippet#zone_id}
 
 ---
 
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.snippet.SnippetFiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 &snippet.SnippetFiles {
 	Content: *string,
@@ -1014,8 +1014,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#content Snippet#content}. |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#name Snippet#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#content Snippet#content}. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#name Snippet#name}. |
 
 ---
 
@@ -1027,7 +1027,7 @@ Content *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#content Snippet#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#content Snippet#content}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#name Snippet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#name Snippet#name}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.snippet.SnippetMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 &snippet.SnippetMetadata {
 	MainModule: *string,
@@ -1073,7 +1073,7 @@ MainModule *string
 
 Specify the name of the file that contains the main module of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet#main_module Snippet#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet#main_module Snippet#main_module}
 
 ---
 
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippet.SnippetFilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 snippet.NewSnippetFilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SnippetFilesList
 ```
@@ -1244,7 +1244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippet.SnippetFilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 snippet.NewSnippetFilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SnippetFilesOutputReference
 ```
@@ -1555,7 +1555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippet.SnippetMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippet"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippet"
 
 snippet.NewSnippetMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SnippetMetadataOutputReference
 ```

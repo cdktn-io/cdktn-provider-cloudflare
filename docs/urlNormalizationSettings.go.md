@@ -4,12 +4,12 @@
 
 ### UrlNormalizationSettings <a name="UrlNormalizationSettings" id="@cdktn/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/urlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/urlnormalizationsettings"
 
 urlnormalizationsettings.NewUrlNormalizationSettings(scope Construct, id *string, config UrlNormalizationSettingsConfig) UrlNormalizationSettings
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/urlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/urlnormalizationsettings"
 
 urlnormalizationsettings.UrlNormalizationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/urlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/urlnormalizationsettings"
 
 urlnormalizationsettings.UrlNormalizationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ urlnormalizationsettings.UrlNormalizationSettings_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/urlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/urlnormalizationsettings"
 
 urlnormalizationsettings.UrlNormalizationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ urlnormalizationsettings.UrlNormalizationSettings_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/urlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/urlnormalizationsettings"
 
 urlnormalizationsettings.UrlNormalizationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the UrlNormalizationSettings t
 
 The id of the existing UrlNormalizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/urlnormalizationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/urlnormalizationsettings"
 
 &urlnormalizationsettings.UrlNormalizationSettingsConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ Scope *string
 
 The scope of the URL normalization. Available values: "incoming", "both", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/url_normalization_settings#scope UrlNormalizationSettings#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/url_normalization_settings#scope UrlNormalizationSettings#scope}
 
 ---
 
@@ -893,7 +893,7 @@ Type *string
 
 The type of URL normalization performed by Cloudflare. Available values: "cloudflare", "rfc3986".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/url_normalization_settings#type UrlNormalizationSettings#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/url_normalization_settings#type UrlNormalizationSettings#type}
 
 ---
 
@@ -907,7 +907,7 @@ ZoneId *string
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/url_normalization_settings#zone_id UrlNormalizationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/url_normalization_settings#zone_id UrlNormalizationSettings#zone_id}
 
 ---
 

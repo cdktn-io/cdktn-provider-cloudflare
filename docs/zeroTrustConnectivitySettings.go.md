@@ -4,12 +4,12 @@
 
 ### ZeroTrustConnectivitySettings <a name="ZeroTrustConnectivitySettings" id="@cdktn/provider-cloudflare.zeroTrustConnectivitySettings.ZeroTrustConnectivitySettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustConnectivitySettings.ZeroTrustConnectivitySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustconnectivitysettings"
 
 zerotrustconnectivitysettings.NewZeroTrustConnectivitySettings(scope Construct, id *string, config ZeroTrustConnectivitySettingsConfig) ZeroTrustConnectivitySettings
 ```
@@ -414,7 +414,7 @@ func ResetOfframpWarpEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustConnectivitySettings.ZeroTrustConnectivitySettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustconnectivitysettings"
 
 zerotrustconnectivitysettings.ZeroTrustConnectivitySettings_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustConnectivitySettings.ZeroTrustConnectivitySettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustconnectivitysettings"
 
 zerotrustconnectivitysettings.ZeroTrustConnectivitySettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ zerotrustconnectivitysettings.ZeroTrustConnectivitySettings_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustConnectivitySettings.ZeroTrustConnectivitySettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustconnectivitysettings"
 
 zerotrustconnectivitysettings.ZeroTrustConnectivitySettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ zerotrustconnectivitysettings.ZeroTrustConnectivitySettings_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustConnectivitySettings.ZeroTrustConnectivitySettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustconnectivitysettings"
 
 zerotrustconnectivitysettings.ZeroTrustConnectivitySettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the ZeroTrustConnectivitySetti
 
 The id of the existing ZeroTrustConnectivitySettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_connectivity_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_connectivity_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustConnectivitySettings.ZeroTrustConnectivitySettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustconnectivitysettings"
 
 &zerotrustconnectivitysettings.ZeroTrustConnectivitySettingsConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ AccountId *string
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_connectivity_settings#account_id ZeroTrustConnectivitySettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_connectivity_settings#account_id ZeroTrustConnectivitySettings#account_id}
 
 ---
 
@@ -907,7 +907,7 @@ IcmpProxyEnabled interface{}
 
 A flag to enable the ICMP proxy for the account network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_connectivity_settings#icmp_proxy_enabled ZeroTrustConnectivitySettings#icmp_proxy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_connectivity_settings#icmp_proxy_enabled ZeroTrustConnectivitySettings#icmp_proxy_enabled}
 
 ---
 
@@ -921,7 +921,7 @@ OfframpWarpEnabled interface{}
 
 A flag to enable WARP to WARP traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_connectivity_settings#offramp_warp_enabled ZeroTrustConnectivitySettings#offramp_warp_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_connectivity_settings#offramp_warp_enabled ZeroTrustConnectivitySettings#offramp_warp_enabled}
 
 ---
 

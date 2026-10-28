@@ -4,12 +4,12 @@
 
 ### WorkersCronTrigger <a name="WorkersCronTrigger" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 workerscrontrigger.NewWorkersCronTrigger(scope Construct, id *string, config WorkersCronTriggerConfig) WorkersCronTrigger
 ```
@@ -413,7 +413,7 @@ func PutSchedules(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 workerscrontrigger.WorkersCronTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 workerscrontrigger.WorkersCronTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ workerscrontrigger.WorkersCronTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 workerscrontrigger.WorkersCronTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ workerscrontrigger.WorkersCronTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 workerscrontrigger.WorkersCronTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the WorkersCronTrigger to impo
 
 The id of the existing WorkersCronTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 &workerscrontrigger.WorkersCronTriggerConfig {
 	Connection: interface{},
@@ -807,7 +807,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersc
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.schedules">Schedules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.schedules">Schedules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | Name of the script. |
 
 ---
@@ -892,7 +892,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
 
 ---
 
@@ -904,7 +904,7 @@ Schedules interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}.
 
 ---
 
@@ -918,7 +918,7 @@ ScriptName *string
 
 Name of the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
 
 ---
 
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 &workerscrontrigger.WorkersCronTriggerSchedules {
 	Cron: *string,
@@ -938,7 +938,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules.property.cron">Cron</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules.property.cron">Cron</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}. |
 
 ---
 
@@ -950,7 +950,7 @@ Cron *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}.
 
 ---
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 workerscrontrigger.NewWorkersCronTriggerSchedulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkersCronTriggerSchedulesList
 ```
@@ -1121,7 +1121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerscrontrigger"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerscrontrigger"
 
 workerscrontrigger.NewWorkersCronTriggerSchedulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkersCronTriggerSchedulesOutputReference
 ```

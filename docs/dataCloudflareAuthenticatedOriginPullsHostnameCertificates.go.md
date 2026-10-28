@@ -4,12 +4,12 @@
 
 ### DataCloudflareAuthenticatedOriginPullsHostnameCertificates <a name="DataCloudflareAuthenticatedOriginPullsHostnameCertificates" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 datacloudflareauthenticatedoriginpullshostnamecertificates.NewDataCloudflareAuthenticatedOriginPullsHostnameCertificates(scope Construct, id *string, config DataCloudflareAuthenticatedOriginPullsHostnameCertificatesConfig) DataCloudflareAuthenticatedOriginPullsHostnameCertificates
 ```
@@ -305,7 +305,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 datacloudflareauthenticatedoriginpullshostnamecertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 datacloudflareauthenticatedoriginpullshostnamecertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflareauthenticatedoriginpullshostnamecertificates.DataCloudflareAuthent
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 datacloudflareauthenticatedoriginpullshostnamecertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflareauthenticatedoriginpullshostnamecertificates.DataCloudflareAuthent
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 datacloudflareauthenticatedoriginpullshostnamecertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareAuthenticate
 
 The id of the existing DataCloudflareAuthenticatedOriginPullsHostnameCertificates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/authenticated_origin_pulls_hostname_certificates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 &datacloudflareauthenticatedoriginpullshostnamecertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#zone_id DataCloudflareAuthenticatedOriginPullsHostnameCertificates#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/authenticated_origin_pulls_hostname_certificates#zone_id DataCloudflareAuthenticatedOriginPullsHostnameCertificates#zone_id}
 
 ---
 
@@ -752,7 +752,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#max_items DataCloudflareAuthenticatedOriginPullsHostnameCertificates#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/authenticated_origin_pulls_hostname_certificates#max_items DataCloudflareAuthenticatedOriginPullsHostnameCertificates#max_items}
 
 ---
 
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 &datacloudflareauthenticatedoriginpullshostnamecertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResult {
 
@@ -776,7 +776,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 datacloudflareauthenticatedoriginpullshostnamecertificates.NewDataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultList
 ```
@@ -925,7 +925,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareauthenticatedoriginpullshostnamecertificates"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareauthenticatedoriginpullshostnamecertificates"
 
 datacloudflareauthenticatedoriginpullshostnamecertificates.NewDataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference
 ```

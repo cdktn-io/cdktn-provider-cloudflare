@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDnsLocations <a name="DataCloudflareZeroTrustDnsLocations" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDnsLocations.DataCloudflareZeroTrustDnsLocations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations cloudflare_zero_trust_dns_locations}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations cloudflare_zero_trust_dns_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDnsLocations.DataCloudflareZeroTrustDnsLocations.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Specify the Cloudflare account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#account_id DataCloudflareZeroTrustDnsLocations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#account_id DataCloudflareZeroTrustDnsLocations#account_id}
 
 ---
 
@@ -135,7 +135,7 @@ descending (newest first); `name` defaults to ascending.
 * `desc` — descending.
   Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#direction DataCloudflareZeroTrustDnsLocations#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#direction DataCloudflareZeroTrustDnsLocations#direction}
 
 ---
 
@@ -160,7 +160,7 @@ Each entry must match one of the per-field patterns below:
 * `name`/`id` accept any value;
 * `is_default` only accepts `true` or `false`; any other value returns `400`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#filter DataCloudflareZeroTrustDnsLocations#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#filter DataCloudflareZeroTrustDnsLocations#filter}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#max_items DataCloudflareZeroTrustDnsLocations#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#max_items DataCloudflareZeroTrustDnsLocations#max_items}
 
 ---
 
@@ -188,7 +188,7 @@ results is unspecified. Supported values:
 * `updated_at` — sort by last-modified time; defaults to descending unless `direction` is set.
   Available values: "name", "created_at", "updated_at".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#order_by DataCloudflareZeroTrustDnsLocations#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#order_by DataCloudflareZeroTrustDnsLocations#order_by}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Case-insensitive substring match on the location name. When combined with `filter`, both must match (logical AND).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#search DataCloudflareZeroTrustDnsLocations#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#search DataCloudflareZeroTrustDnsLocations#search}
 
 ---
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDns
 
 The id of the existing DataCloudflareZeroTrustDnsLocations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1063,7 +1063,7 @@ account_id: str
 
 Specify the Cloudflare account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#account_id DataCloudflareZeroTrustDnsLocations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#account_id DataCloudflareZeroTrustDnsLocations#account_id}
 
 ---
 
@@ -1086,7 +1086,7 @@ descending (newest first); `name` defaults to ascending.
 * `desc` — descending.
   Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#direction DataCloudflareZeroTrustDnsLocations#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#direction DataCloudflareZeroTrustDnsLocations#direction}
 
 ---
 
@@ -1115,7 +1115,7 @@ Each entry must match one of the per-field patterns below:
 * `name`/`id` accept any value;
 * `is_default` only accepts `true` or `false`; any other value returns `400`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#filter DataCloudflareZeroTrustDnsLocations#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#filter DataCloudflareZeroTrustDnsLocations#filter}
 
 ---
 
@@ -1129,7 +1129,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#max_items DataCloudflareZeroTrustDnsLocations#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#max_items DataCloudflareZeroTrustDnsLocations#max_items}
 
 ---
 
@@ -1151,7 +1151,7 @@ results is unspecified. Supported values:
 * `updated_at` — sort by last-modified time; defaults to descending unless `direction` is set.
   Available values: "name", "created_at", "updated_at".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#order_by DataCloudflareZeroTrustDnsLocations#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#order_by DataCloudflareZeroTrustDnsLocations#order_by}
 
 ---
 
@@ -1165,7 +1165,7 @@ search: str
 
 Case-insensitive substring match on the location name. When combined with `filter`, both must match (logical AND).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dns_locations#search DataCloudflareZeroTrustDnsLocations#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dns_locations#search DataCloudflareZeroTrustDnsLocations#search}
 
 ---
 

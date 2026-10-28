@@ -4,12 +4,12 @@
 
 ### ImageVariant <a name="ImageVariant" id="@cdktn/provider-cloudflare.imageVariant.ImageVariant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant cloudflare_image_variant}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant cloudflare_image_variant}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.imageVariant.ImageVariant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant"
 
 imagevariant.NewImageVariant(scope Construct, id *string, config ImageVariantConfig) ImageVariant
 ```
@@ -420,7 +420,7 @@ func ResetNeverRequireSignedUrls()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.imageVariant.ImageVariant.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant"
 
 imagevariant.ImageVariant_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.imageVariant.ImageVariant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant"
 
 imagevariant.ImageVariant_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ imagevariant.ImageVariant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.imageVariant.ImageVariant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant"
 
 imagevariant.ImageVariant_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ imagevariant.ImageVariant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.imageVariant.ImageVariant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant"
 
 imagevariant.ImageVariant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the ImageVariant to import.
 
 The id of the existing ImageVariant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant"
 
 &imagevariant.ImageVariantConfig {
 	Connection: interface{},
@@ -809,7 +809,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevar
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Id: *string,
-	Options: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.imageVariant.ImageVariantOptions,
+	Options: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.imageVariant.ImageVariantOptions,
 	NeverRequireSignedUrls: interface{},
 }
 ```
@@ -826,7 +826,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevar
 | <code><a href="#@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#id ImageVariant#id}. |
+| <code><a href="#@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#id ImageVariant#id}. |
 | <code><a href="#@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig.property.options">Options</a></code> | <code><a href="#@cdktn/provider-cloudflare.imageVariant.ImageVariantOptions">ImageVariantOptions</a></code> | Allows you to define image resizing sizes for different use cases. |
 | <code><a href="#@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig.property.neverRequireSignedUrls">NeverRequireSignedUrls</a></code> | <code>interface{}</code> | Indicates whether the variant can access an image without a signature, regardless of image access control. |
 
@@ -912,7 +912,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#account_id ImageVariant#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#account_id ImageVariant#account_id}
 
 ---
 
@@ -924,7 +924,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#id ImageVariant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#id ImageVariant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +941,7 @@ Options ImageVariantOptions
 
 Allows you to define image resizing sizes for different use cases.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#options ImageVariant#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#options ImageVariant#options}
 
 ---
 
@@ -955,7 +955,7 @@ NeverRequireSignedUrls interface{}
 
 Indicates whether the variant can access an image without a signature, regardless of image access control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#never_require_signed_urls ImageVariant#never_require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#never_require_signed_urls ImageVariant#never_require_signed_urls}
 
 ---
 
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.imageVariant.ImageVariantOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant"
 
 &imagevariant.ImageVariantOptions {
 	Fit: *string,
@@ -995,7 +995,7 @@ Fit *string
 
 The fit property describes how the width and height dimensions should be interpreted. Available values: "scale-down", "contain", "cover", "crop", "pad".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#fit ImageVariant#fit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#fit ImageVariant#fit}
 
 ---
 
@@ -1009,7 +1009,7 @@ Height *f64
 
 Maximum height in image pixels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#height ImageVariant#height}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#height ImageVariant#height}
 
 ---
 
@@ -1023,7 +1023,7 @@ Metadata *string
 
 What EXIF data should be preserved in the output image. Available values: "keep", "copyright", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#metadata ImageVariant#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#metadata ImageVariant#metadata}
 
 ---
 
@@ -1037,7 +1037,7 @@ Width *f64
 
 Maximum width in image pixels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant#width ImageVariant#width}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant#width ImageVariant#width}
 
 ---
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.imageVariant.ImageVariantOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant"
 
 imagevariant.NewImageVariantOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImageVariantOptionsOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### FlagshipApp <a name="FlagshipApp" id="@cdktn/provider-cloudflare.flagshipApp.FlagshipApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/flagship_app cloudflare_flagship_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_app cloudflare_flagship_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipApp.FlagshipApp.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/flagship_app#account_id FlagshipApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_app#account_id FlagshipApp#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the Flagship app (1–64 letters, numbers, hyphens, or underscores).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/flagship_app#name FlagshipApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_app#name FlagshipApp#name}
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the FlagshipApp to import.
 
 The id of the existing FlagshipApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/flagship_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,7 +1014,7 @@ account_id: str
 
 Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/flagship_app#account_id FlagshipApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_app#account_id FlagshipApp#account_id}
 
 ---
 
@@ -1028,7 +1028,7 @@ name: str
 
 Name of the Flagship app (1–64 letters, numbers, hyphens, or underscores).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/flagship_app#name FlagshipApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_app#name FlagshipApp#name}
 
 ---
 

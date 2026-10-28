@@ -4,12 +4,12 @@
 
 ### R2DataCatalog <a name="R2DataCatalog" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 r2datacatalog.NewR2DataCatalog(scope Construct, id *string, config R2DataCatalogConfig) R2DataCatalog
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 r2datacatalog.R2DataCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 r2datacatalog.R2DataCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ r2datacatalog.R2DataCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 r2datacatalog.R2DataCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ r2datacatalog.R2DataCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 r2datacatalog.R2DataCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the R2DataCatalog to import.
 
 The id of the existing R2DataCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 &r2datacatalog.R2DataCatalogConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ AccountId *string
 
 Use this to identify the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
 
 ---
 
@@ -924,7 +924,7 @@ BucketName *string
 
 Specifies the R2 bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
 
 ---
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogMaintenanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 &r2datacatalog.R2DataCatalogMaintenanceConfig {
 
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2dataca
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogMaintenanceConfigCompaction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 &r2datacatalog.R2DataCatalogMaintenanceConfigCompaction {
 
@@ -959,7 +959,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2dataca
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogMaintenanceConfigSnapshotExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 &r2datacatalog.R2DataCatalogMaintenanceConfigSnapshotExpiration {
 
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2dataca
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogMaintenanceConfigCompactionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 r2datacatalog.NewR2DataCatalogMaintenanceConfigCompactionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2DataCatalogMaintenanceConfigCompactionOutputReference
 ```
@@ -1245,7 +1245,7 @@ func InternalValue() R2DataCatalogMaintenanceConfigCompaction
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogMaintenanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 r2datacatalog.NewR2DataCatalogMaintenanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2DataCatalogMaintenanceConfigOutputReference
 ```
@@ -1527,7 +1527,7 @@ func InternalValue() R2DataCatalogMaintenanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogMaintenanceConfigSnapshotExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2datacatalog"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2datacatalog"
 
 r2datacatalog.NewR2DataCatalogMaintenanceConfigSnapshotExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2DataCatalogMaintenanceConfigSnapshotExpirationOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### EmailSecurityTrustedDomains <a name="EmailSecurityTrustedDomains" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.Initializer"></a>
 
@@ -44,7 +44,7 @@ EmailSecurityTrustedDomains.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.Initializer.parameter.isRegex">isRegex</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether `pattern` is a regular expression instead of a literal domain. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.Initializer.parameter.isSimilarity">isSimilarity</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Select for partner or other approved domains that have similar spelling to your connected domains. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | The domain pattern to trust, e.g. `example.com`. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.Initializer.parameter.comments">comments</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.Initializer.parameter.comments">comments</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Select to prevent recently registered domains from triggering a Suspicious or Malicious disposition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether `pattern` is a regular expression instead of a literal domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
 
 ---
 
@@ -146,7 +146,7 @@ Select for partner or other approved domains that have similar spelling to your 
 
 Prevents listed domains from triggering a Spoof disposition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The domain pattern to trust, e.g. `example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}.
 
 ---
 
@@ -620,7 +620,7 @@ The construct id used in the generated config for the EmailSecurityTrustedDomain
 
 The id of the existing EmailSecurityTrustedDomains that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1031,7 +1031,7 @@ EmailSecurityTrustedDomainsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.isRegex">isRegex</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether `pattern` is a regular expression instead of a literal domain. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.isSimilarity">isSimilarity</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Select for partner or other approved domains that have similar spelling to your connected domains. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.pattern">pattern</a></code> | <code>java.lang.String</code> | The domain pattern to trust, e.g. `example.com`. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.comments">comments</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.comments">comments</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}. |
 
 ---
 
@@ -1115,7 +1115,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
 
 ---
 
@@ -1129,7 +1129,7 @@ public java.lang.Boolean|IResolvable getIsRecent();
 
 Select to prevent recently registered domains from triggering a Suspicious or Malicious disposition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
 
 ---
 
@@ -1143,7 +1143,7 @@ public java.lang.Boolean|IResolvable getIsRegex();
 
 Whether `pattern` is a regular expression instead of a literal domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
 
 ---
 
@@ -1159,7 +1159,7 @@ Select for partner or other approved domains that have similar spelling to your 
 
 Prevents listed domains from triggering a Spoof disposition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.lang.String getPattern();
 
 The domain pattern to trust, e.g. `example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.String getComments();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}.
 
 ---
 

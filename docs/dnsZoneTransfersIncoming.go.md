@@ -4,12 +4,12 @@
 
 ### DnsZoneTransfersIncoming <a name="DnsZoneTransfersIncoming" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersincoming"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersincoming"
 
 dnszonetransfersincoming.NewDnsZoneTransfersIncoming(scope Construct, id *string, config DnsZoneTransfersIncomingConfig) DnsZoneTransfersIncoming
 ```
@@ -407,7 +407,7 @@ func ResetAutoRefreshSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersincoming"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersincoming"
 
 dnszonetransfersincoming.DnsZoneTransfersIncoming_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersincoming"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersincoming"
 
 dnszonetransfersincoming.DnsZoneTransfersIncoming_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ dnszonetransfersincoming.DnsZoneTransfersIncoming_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersincoming"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersincoming"
 
 dnszonetransfersincoming.DnsZoneTransfersIncoming_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ dnszonetransfersincoming.DnsZoneTransfersIncoming_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersincoming"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersincoming"
 
 dnszonetransfersincoming.DnsZoneTransfersIncoming_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the DnsZoneTransfersIncoming t
 
 The id of the existing DnsZoneTransfersIncoming that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_incoming#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_incoming#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersincoming"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersincoming"
 
 &dnszonetransfersincoming.DnsZoneTransfersIncomingConfig {
 	Connection: interface{},
@@ -869,7 +869,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonet
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.name">Name</a></code> | <code>*string</code> | Zone name. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.peers">Peers</a></code> | <code>*[]*string</code> | A list of peer tags. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.autoRefreshSeconds">AutoRefreshSeconds</a></code> | <code>*f64</code> | How often should a secondary zone auto refresh regardless of DNS NOTIFY. Not applicable for primary zones. |
 
 ---
@@ -954,7 +954,7 @@ Name *string
 
 Zone name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_incoming#name DnsZoneTransfersIncoming#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_incoming#name DnsZoneTransfersIncoming#name}
 
 ---
 
@@ -968,7 +968,7 @@ Peers *[]*string
 
 A list of peer tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_incoming#peers DnsZoneTransfersIncoming#peers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_incoming#peers DnsZoneTransfersIncoming#peers}
 
 ---
 
@@ -980,7 +980,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}.
 
 ---
 
@@ -994,7 +994,7 @@ AutoRefreshSeconds *f64
 
 How often should a secondary zone auto refresh regardless of DNS NOTIFY. Not applicable for primary zones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_incoming#auto_refresh_seconds DnsZoneTransfersIncoming#auto_refresh_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_incoming#auto_refresh_seconds DnsZoneTransfersIncoming#auto_refresh_seconds}
 
 ---
 

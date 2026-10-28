@@ -4,12 +4,12 @@
 
 ### LeakedCredentialCheck <a name="LeakedCredentialCheck" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/leakedcredentialcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/leakedcredentialcheck"
 
 leakedcredentialcheck.NewLeakedCredentialCheck(scope Construct, id *string, config LeakedCredentialCheckConfig) LeakedCredentialCheck
 ```
@@ -407,7 +407,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/leakedcredentialcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/leakedcredentialcheck"
 
 leakedcredentialcheck.LeakedCredentialCheck_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/leakedcredentialcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/leakedcredentialcheck"
 
 leakedcredentialcheck.LeakedCredentialCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ leakedcredentialcheck.LeakedCredentialCheck_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/leakedcredentialcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/leakedcredentialcheck"
 
 leakedcredentialcheck.LeakedCredentialCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ leakedcredentialcheck.LeakedCredentialCheck_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/leakedcredentialcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/leakedcredentialcheck"
 
 leakedcredentialcheck.LeakedCredentialCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the LeakedCredentialCheck to i
 
 The id of the existing LeakedCredentialCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/leakedcredentialcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/leakedcredentialcheck"
 
 &leakedcredentialcheck.LeakedCredentialCheckConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ ZoneId *string
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
 
 ---
 
@@ -865,7 +865,7 @@ Enabled interface{}
 
 Determines whether or not Leaked Credential Checks are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
 
 ---
 

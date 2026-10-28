@@ -4,12 +4,12 @@
 
 ### DataCloudflareFieldExtractor <a name="DataCloudflareFieldExtractor" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/field_extractor cloudflare_field_extractor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/field_extractor cloudflare_field_extractor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.NewDataCloudflareFieldExtractor(scope Construct, id *string, config DataCloudflareFieldExtractorConfig) DataCloudflareFieldExtractor
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.DataCloudflareFieldExtractor_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.DataCloudflareFieldExtractor_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflarefieldextractor.DataCloudflareFieldExtractor_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractor.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.DataCloudflareFieldExtractor_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflarefieldextractor.DataCloudflareFieldExtractor_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.DataCloudflareFieldExtractor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareFieldExtract
 
 The id of the existing DataCloudflareFieldExtractor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/field_extractor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/field_extractor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 &datacloudflarefieldextractor.DataCloudflareFieldExtractorConfig {
 	Connection: interface{},
@@ -731,7 +731,7 @@ AccountId *string
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/field_extractor#account_id DataCloudflareFieldExtractor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/field_extractor#account_id DataCloudflareFieldExtractor#account_id}
 
 ---
 
@@ -745,7 +745,7 @@ Extractor *string
 
 Extractor type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/field_extractor#extractor DataCloudflareFieldExtractor#extractor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/field_extractor#extractor DataCloudflareFieldExtractor#extractor}
 
 ---
 
@@ -754,7 +754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractorRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 &datacloudflarefieldextractor.DataCloudflareFieldExtractorRules {
 
@@ -767,7 +767,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractorRulesFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 &datacloudflarefieldextractor.DataCloudflareFieldExtractorRulesFields {
 
@@ -782,7 +782,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractorRulesFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.NewDataCloudflareFieldExtractorRulesFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareFieldExtractorRulesFieldsList
 ```
@@ -931,7 +931,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractorRulesFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.NewDataCloudflareFieldExtractorRulesFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareFieldExtractorRulesFieldsOutputReference
 ```
@@ -1220,7 +1220,7 @@ func InternalValue() DataCloudflareFieldExtractorRulesFields
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractorRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.NewDataCloudflareFieldExtractorRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareFieldExtractorRulesList
 ```
@@ -1369,7 +1369,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFieldExtractor.DataCloudflareFieldExtractorRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarefieldextractor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarefieldextractor"
 
 datacloudflarefieldextractor.NewDataCloudflareFieldExtractorRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareFieldExtractorRulesOutputReference
 ```
