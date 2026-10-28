@@ -4,12 +4,12 @@
 
 ### Queue <a name="Queue" id="@cdktn/provider-cloudflare.queue.Queue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue cloudflare_queue}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue cloudflare_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.Queue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.NewQueue(scope Construct, id *string, config QueueConfig) Queue
 ```
@@ -427,7 +427,7 @@ func ResetSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.queue.Queue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.Queue_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.queue.Queue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.Queue_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ queue.Queue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.queue.Queue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.Queue_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ queue.Queue_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.queue.Queue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.Queue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the Queue to import.
 
 The id of the existing Queue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queue.QueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 &queue.QueueConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
 	AccountId: *string,
 	QueueName: *string,
 	Jurisdiction: *string,
-	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.queue.QueueSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.queue.QueueSettings,
 }
 ```
 
@@ -921,9 +921,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.accountId">AccountId</a></code> | <code>*string</code> | A Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.queueName">QueueName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#queue_name Queue#queue_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.queueName">QueueName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#queue_name Queue#queue_name}. |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | Available values: "eu", "us", "fedramp". |
-| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#settings Queue#settings}. |
+| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#settings Queue#settings}. |
 
 ---
 
@@ -1007,7 +1007,7 @@ AccountId *string
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#account_id Queue#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#account_id Queue#account_id}
 
 ---
 
@@ -1019,7 +1019,7 @@ QueueName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#queue_name Queue#queue_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#queue_name Queue#queue_name}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Jurisdiction *string
 
 Available values: "eu", "us", "fedramp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#jurisdiction Queue#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#jurisdiction Queue#jurisdiction}
 
 ---
 
@@ -1045,7 +1045,7 @@ Settings QueueSettings
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#settings Queue#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#settings Queue#settings}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queue.QueueConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 &queue.QueueConsumers {
 
@@ -1067,7 +1067,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queue.QueueConsumersSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 &queue.QueueConsumersSettings {
 
@@ -1080,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queue.QueueProducers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 &queue.QueueProducers {
 
@@ -1093,7 +1093,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queue.QueueSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 &queue.QueueSettings {
 	DeliveryDelay: *f64,
@@ -1122,7 +1122,7 @@ DeliveryDelay *f64
 
 Number of seconds to delay delivery of all messages to consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#delivery_delay Queue#delivery_delay}
 
 ---
 
@@ -1136,7 +1136,7 @@ DeliveryPaused interface{}
 
 Indicates if message delivery to consumers is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#delivery_paused Queue#delivery_paused}
 
 ---
 
@@ -1150,7 +1150,7 @@ MessageRetentionPeriod *f64
 
 Number of seconds after which an unconsumed message will be delayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/queue#message_retention_period Queue#message_retention_period}
 
 ---
 
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.QueueConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.NewQueueConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QueueConsumersList
 ```
@@ -1310,7 +1310,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.NewQueueConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QueueConsumersOutputReference
 ```
@@ -1654,7 +1654,7 @@ func InternalValue() QueueConsumers
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.QueueConsumersSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.NewQueueConsumersSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueueConsumersSettingsOutputReference
 ```
@@ -1969,7 +1969,7 @@ func InternalValue() QueueConsumersSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.QueueProducersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.NewQueueProducersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QueueProducersList
 ```
@@ -2118,7 +2118,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.QueueProducersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.NewQueueProducersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QueueProducersOutputReference
 ```
@@ -2418,7 +2418,7 @@ func InternalValue() QueueProducers
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.QueueSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/queue"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/queue"
 
 queue.NewQueueSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueueSettingsOutputReference
 ```

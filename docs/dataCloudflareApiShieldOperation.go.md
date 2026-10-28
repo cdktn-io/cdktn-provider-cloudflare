@@ -4,12 +4,12 @@
 
 ### DataCloudflareApiShieldOperation <a name="DataCloudflareApiShieldOperation" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperation(scope Construct, id *string, config DataCloudflareApiShieldOperationConfig) DataCloudflareApiShieldOperation
 ```
@@ -346,7 +346,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.DataCloudflareApiShieldOperation_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.DataCloudflareApiShieldOperation_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datacloudflareapishieldoperation.DataCloudflareApiShieldOperation_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.DataCloudflareApiShieldOperation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ datacloudflareapishieldoperation.DataCloudflareApiShieldOperation_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.DataCloudflareApiShieldOperation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DataCloudflareApiShieldOpe
 
 The id of the existing DataCloudflareApiShieldOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Feature: *[]*string,
-	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter,
+	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter,
 	OperationId: *string,
 	WithSchemas: interface{},
 	ZoneId: *string,
@@ -830,7 +830,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.feature">Feature</a></code> | <code>*[]*string</code> | Add feature(s) to the results. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.operationId">OperationId</a></code> | <code>*string</code> | UUID. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.withSchemas">WithSchemas</a></code> | <code>interface{}</code> | When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
@@ -919,7 +919,7 @@ Add feature(s) to the results.
 
 The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
 
 ---
 
@@ -931,7 +931,7 @@ Filter DataCloudflareApiShieldOperationFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}.
 
 ---
 
@@ -945,7 +945,7 @@ OperationId *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#operation_id DataCloudflareApiShieldOperation#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#operation_id DataCloudflareApiShieldOperation#operation_id}
 
 ---
 
@@ -961,7 +961,7 @@ When true, includes OpenAPI schemas (both uploaded and learned) for the operatio
 
 Due to the conversion overhead, this parameter is only supported on single-operation retrieval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#with_schemas DataCloudflareApiShieldOperation#with_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#with_schemas DataCloudflareApiShieldOperation#with_schemas}
 
 ---
 
@@ -975,7 +975,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#zone_id DataCloudflareApiShieldOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#zone_id DataCloudflareApiShieldOperation#zone_id}
 
 ---
 
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeatures {
 
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesApiRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesApiRouting {
 
@@ -1010,7 +1010,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervals.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervals {
 
@@ -1023,7 +1023,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThreshold {
 
@@ -1036,7 +1036,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervals.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervals {
 
@@ -1049,7 +1049,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90 {
 
@@ -1062,7 +1062,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95 {
 
@@ -1075,7 +1075,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99 {
 
@@ -1088,7 +1088,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesParameterSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesParameterSchemas {
 
@@ -1101,7 +1101,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesParameterSchemasParameterSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesParameterSchemasParameterSchemas {
 
@@ -1114,7 +1114,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesSchemaInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesSchemaInfo {
 
@@ -1127,7 +1127,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesSchemaInfoActiveSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesSchemaInfoActiveSchema {
 
@@ -1140,7 +1140,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFeaturesThresholds {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationFilter {
 	Direction: *string,
@@ -1188,7 +1188,7 @@ Direction *string
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#direction DataCloudflareApiShieldOperation#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#direction DataCloudflareApiShieldOperation#direction}
 
 ---
 
@@ -1202,7 +1202,7 @@ Endpoint *string
 
 Filter results to only include endpoints containing this pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#endpoint DataCloudflareApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#endpoint DataCloudflareApiShieldOperation#endpoint}
 
 ---
 
@@ -1218,7 +1218,7 @@ Add feature(s) to the results.
 
 The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
 
 ---
 
@@ -1232,7 +1232,7 @@ Host *[]*string
 
 Filter results to only include the specified hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#host DataCloudflareApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#host DataCloudflareApiShieldOperation#host}
 
 ---
 
@@ -1246,7 +1246,7 @@ Method *[]*string
 
 Filter results to only include the specified HTTP methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#method DataCloudflareApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#method DataCloudflareApiShieldOperation#method}
 
 ---
 
@@ -1263,7 +1263,7 @@ Field to order by.
 When requesting a feature, the feature keys are available for ordering as well, e.g., `thresholds.suggested_threshold`.
 Available values: "method", "host", "endpoint", "thresholds.$key".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation#order DataCloudflareApiShieldOperation#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation#order DataCloudflareApiShieldOperation#order}
 
 ---
 
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationSchemas {
 
@@ -1285,7 +1285,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearned.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationSchemasLearned {
 
@@ -1298,7 +1298,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploaded.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 &datacloudflareapishieldoperation.DataCloudflareApiShieldOperationSchemasUploaded {
 
@@ -1313,7 +1313,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesApiRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesApiRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesApiRoutingOutputReference
 ```
@@ -1584,7 +1584,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesApiRouting
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesConfidenceIntervalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsOutputReference
 ```
@@ -1855,7 +1855,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesConfidenceIntervals
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsOutputReference
 ```
@@ -2137,7 +2137,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesConfidenceIntervals
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90OutputReference
 ```
@@ -2408,7 +2408,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesConfidenceIntervals
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95OutputReference
 ```
@@ -2679,7 +2679,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesConfidenceIntervals
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99OutputReference
 ```
@@ -2950,7 +2950,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesConfidenceIntervals
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdOutputReference
 ```
@@ -3221,7 +3221,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesConfidenceIntervals
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesOutputReference
 ```
@@ -3525,7 +3525,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeatures
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesParameterSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesParameterSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesParameterSchemasOutputReference
 ```
@@ -3796,7 +3796,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesParameterSchemas
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesParameterSchemasParameterSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesParameterSchemasParameterSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesParameterSchemasParameterSchemasOutputReference
 ```
@@ -4067,7 +4067,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesParameterSchemasPar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference
 ```
@@ -4349,7 +4349,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesSchemaInfoActiveSch
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesSchemaInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesSchemaInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesSchemaInfoOutputReference
 ```
@@ -4620,7 +4620,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesSchemaInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFeaturesThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference
 ```
@@ -4968,7 +4968,7 @@ func InternalValue() DataCloudflareApiShieldOperationFeaturesThresholds
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFilterOutputReference
 ```
@@ -5391,7 +5391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationSchemasLearnedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationSchemasLearnedOutputReference
 ```
@@ -5662,7 +5662,7 @@ func InternalValue() DataCloudflareApiShieldOperationSchemasLearned
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationSchemasOutputReference
 ```
@@ -5933,7 +5933,7 @@ func InternalValue() DataCloudflareApiShieldOperationSchemas
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperation"
 
 datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationSchemasUploadedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationSchemasUploadedOutputReference
 ```

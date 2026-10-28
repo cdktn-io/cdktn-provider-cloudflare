@@ -4,12 +4,12 @@
 
 ### DataCloudflareApiShieldOperationSchemaValidationSettings <a name="DataCloudflareApiShieldOperationSchemaValidationSettings" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.NewDataCloudflareApiShieldOperationSchemaValidationSettings(scope Construct, id *string, config DataCloudflareApiShieldOperationSchemaValidationSettingsConfig) DataCloudflareApiShieldOperationSchemaValidationSettings
 ```
@@ -305,7 +305,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShield
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShield
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareApiShieldOpe
 
 The id of the existing DataCloudflareApiShieldOperationSchemaValidationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation_schema_validation_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation_schema_validation_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareapishieldoperationschemavalidationsettings"
 
 &datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettingsConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ OperationId *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation_schema_validation_settings#operation_id DataCloudflareApiShieldOperationSchemaValidationSettings#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation_schema_validation_settings#operation_id DataCloudflareApiShieldOperationSchemaValidationSettings#operation_id}
 
 ---
 
@@ -752,7 +752,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/api_shield_operation_schema_validation_settings#zone_id DataCloudflareApiShieldOperationSchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_shield_operation_schema_validation_settings#zone_id DataCloudflareApiShieldOperationSchemaValidationSettings#zone_id}
 
 ---
 

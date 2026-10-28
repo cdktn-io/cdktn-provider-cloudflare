@@ -4,7 +4,7 @@
 
 ### ZeroTrustCasbIntegration <a name="ZeroTrustCasbIntegration" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration cloudflare_zero_trust_casb_integration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration cloudflare_zero_trust_casb_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegration.Initializer"></a>
 
@@ -630,7 +630,7 @@ The construct id used in the generated config for the ZeroTrustCasbIntegration t
 
 The id of the existing ZeroTrustCasbIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1145,7 +1145,7 @@ public ZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKey AnthropicAdminApiKe
 
 Authenticate with an Anthropic Admin API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#anthropic_admin_api_key ZeroTrustCasbIntegration#anthropic_admin_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#anthropic_admin_api_key ZeroTrustCasbIntegration#anthropic_admin_api_key}
 
 ---
 
@@ -1159,7 +1159,7 @@ public ZeroTrustCasbIntegrationAnthropicAnthropicComplianceApiKey AnthropicCompl
 
 Authenticate with an Anthropic Compliance API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#anthropic_compliance_api_key ZeroTrustCasbIntegration#anthropic_compliance_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#anthropic_compliance_api_key ZeroTrustCasbIntegration#anthropic_compliance_api_key}
 
 ---
 
@@ -1173,7 +1173,7 @@ public ZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiKey AnthropicWorksp
 
 Authenticate with an Anthropic Workspace API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#anthropic_workspace_api_key ZeroTrustCasbIntegration#anthropic_workspace_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#anthropic_workspace_api_key ZeroTrustCasbIntegration#anthropic_workspace_api_key}
 
 ---
 
@@ -1209,7 +1209,7 @@ public string ApiKey { get; set; }
 
 Anthropic Admin API key. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#api_key ZeroTrustCasbIntegration#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#api_key ZeroTrustCasbIntegration#api_key}
 
 ---
 
@@ -1223,7 +1223,7 @@ public string TenantId { get; set; }
 
 Organization ID. Auto-extracted from the key if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
 
 ---
 
@@ -1259,7 +1259,7 @@ public string ComplianceApiKey { get; set; }
 
 Anthropic Compliance API key. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#compliance_api_key ZeroTrustCasbIntegration#compliance_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#compliance_api_key ZeroTrustCasbIntegration#compliance_api_key}
 
 ---
 
@@ -1273,7 +1273,7 @@ public string TenantId { get; set; }
 
 Organization ID. Auto-extracted from the key if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
 
 ---
 
@@ -1309,7 +1309,7 @@ public string ApiKey { get; set; }
 
 Anthropic Workspace API key. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#api_key ZeroTrustCasbIntegration#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#api_key ZeroTrustCasbIntegration#api_key}
 
 ---
 
@@ -1323,7 +1323,7 @@ public string TenantId { get; set; }
 
 Workspace ID, found in the Anthropic Console URL after /workspaces/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
 
 ---
 
@@ -1357,7 +1357,7 @@ public ZeroTrustCasbIntegrationAwsAwsIamRole AwsIamRole { get; set; }
 
 Authenticate by delegating to a cross-account IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#aws_iam_role ZeroTrustCasbIntegration#aws_iam_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#aws_iam_role ZeroTrustCasbIntegration#aws_iam_role}
 
 ---
 
@@ -1393,7 +1393,7 @@ public string ExternalId { get; set; }
 
 External ID required when assuming the IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#external_id ZeroTrustCasbIntegration#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#external_id ZeroTrustCasbIntegration#external_id}
 
 ---
 
@@ -1407,7 +1407,7 @@ public string RoleArn { get; set; }
 
 ARN of the cross-account IAM role Cloudflare will assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#role_arn ZeroTrustCasbIntegration#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#role_arn ZeroTrustCasbIntegration#role_arn}
 
 ---
 
@@ -1443,7 +1443,7 @@ Authenticate with Box server authentication.
 
 Before creating the integration, add the Cloudflare CASB application in Box Admin Console > Integrations > Platform Apps Manager > Server Authentication Apps using client ID `puaghckpy0578r8p6f3g0rf860unup4r`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#box_server_authentication ZeroTrustCasbIntegration#box_server_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#box_server_authentication ZeroTrustCasbIntegration#box_server_authentication}
 
 ---
 
@@ -1477,7 +1477,7 @@ public string EnterpriseId { get; set; }
 
 Box Enterprise ID from Admin Console > Accounts & Billing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#enterprise_id ZeroTrustCasbIntegration#enterprise_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#enterprise_id ZeroTrustCasbIntegration#enterprise_id}
 
 ---
 
@@ -1617,7 +1617,7 @@ public string AccountId { get; set; }
 
 Cloudflare account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#account_id ZeroTrustCasbIntegration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#account_id ZeroTrustCasbIntegration#account_id}
 
 ---
 
@@ -1631,7 +1631,7 @@ public string Name { get; set; }
 
 Name of the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#name ZeroTrustCasbIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#name ZeroTrustCasbIntegration#name}
 
 ---
 
@@ -1645,7 +1645,7 @@ public bool|IResolvable Paused { get; set; }
 
 Whether the integration is paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#paused ZeroTrustCasbIntegration#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#paused ZeroTrustCasbIntegration#paused}
 
 ---
 
@@ -1659,7 +1659,7 @@ public ZeroTrustCasbIntegrationAnthropic Anthropic { get; set; }
 
 Anthropic integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#anthropic ZeroTrustCasbIntegration#anthropic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#anthropic ZeroTrustCasbIntegration#anthropic}
 
 ---
 
@@ -1673,7 +1673,7 @@ public ZeroTrustCasbIntegrationAws Aws { get; set; }
 
 AWS integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#aws ZeroTrustCasbIntegration#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#aws ZeroTrustCasbIntegration#aws}
 
 ---
 
@@ -1687,7 +1687,7 @@ public ZeroTrustCasbIntegrationBox Box { get; set; }
 
 Box integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#box ZeroTrustCasbIntegration#box}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#box ZeroTrustCasbIntegration#box}
 
 ---
 
@@ -1701,7 +1701,7 @@ public string[] DlpProfiles { get; set; }
 
 DLP profile IDs to associate with the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#dlp_profiles ZeroTrustCasbIntegration#dlp_profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#dlp_profiles ZeroTrustCasbIntegration#dlp_profiles}
 
 ---
 
@@ -1715,7 +1715,7 @@ public ZeroTrustCasbIntegrationGoogleCloudPlatform GoogleCloudPlatform { get; se
 
 Google Cloud Platform integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#google_cloud_platform ZeroTrustCasbIntegration#google_cloud_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#google_cloud_platform ZeroTrustCasbIntegration#google_cloud_platform}
 
 ---
 
@@ -1729,7 +1729,7 @@ public ZeroTrustCasbIntegrationGoogleWorkspace GoogleWorkspace { get; set; }
 
 Google Workspace integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#google_workspace ZeroTrustCasbIntegration#google_workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#google_workspace ZeroTrustCasbIntegration#google_workspace}
 
 ---
 
@@ -1743,7 +1743,7 @@ public ZeroTrustCasbIntegrationOpenai Openai { get; set; }
 
 OpenAI integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#openai ZeroTrustCasbIntegration#openai}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#openai ZeroTrustCasbIntegration#openai}
 
 ---
 
@@ -1757,7 +1757,7 @@ public string[] Permissions { get; set; }
 
 Permission scopes granted to the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#permissions ZeroTrustCasbIntegration#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#permissions ZeroTrustCasbIntegration#permissions}
 
 ---
 
@@ -1771,7 +1771,7 @@ public string[] UseCases { get; set; }
 
 Use cases to enroll the integration in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#use_cases ZeroTrustCasbIntegration#use_cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#use_cases ZeroTrustCasbIntegration#use_cases}
 
 ---
 
@@ -1805,7 +1805,7 @@ public ZeroTrustCasbIntegrationGoogleCloudPlatformGoogleCloudPlatformServiceAcco
 
 Authenticate with a service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#google_cloud_platform_service_account ZeroTrustCasbIntegration#google_cloud_platform_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#google_cloud_platform_service_account ZeroTrustCasbIntegration#google_cloud_platform_service_account}
 
 ---
 
@@ -1841,7 +1841,7 @@ Contents of a Google service account JSON key file.
 
 This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#service_account_key_json ZeroTrustCasbIntegration#service_account_key_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#service_account_key_json ZeroTrustCasbIntegration#service_account_key_json}
 
 ---
 
@@ -1875,7 +1875,7 @@ public ZeroTrustCasbIntegrationGoogleWorkspaceGoogleDomainWideDelegationServiceA
 
 Authenticate with a service account granted domain-wide delegation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#google_domain_wide_delegation_service_account ZeroTrustCasbIntegration#google_domain_wide_delegation_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#google_domain_wide_delegation_service_account ZeroTrustCasbIntegration#google_domain_wide_delegation_service_account}
 
 ---
 
@@ -1911,7 +1911,7 @@ public string AdministratorEmail { get; set; }
 
 A Google Workspace super administrator email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#administrator_email ZeroTrustCasbIntegration#administrator_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#administrator_email ZeroTrustCasbIntegration#administrator_email}
 
 ---
 
@@ -1927,7 +1927,7 @@ Contents of a Google service account JSON key file.
 
 This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#service_account_key_json ZeroTrustCasbIntegration#service_account_key_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#service_account_key_json ZeroTrustCasbIntegration#service_account_key_json}
 
 ---
 
@@ -1963,7 +1963,7 @@ public ZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKey ChatgptComplianceAp
 
 Authenticate with an OpenAI Compliance API key. Requires an Enterprise plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#chatgpt_compliance_api_key ZeroTrustCasbIntegration#chatgpt_compliance_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#chatgpt_compliance_api_key ZeroTrustCasbIntegration#chatgpt_compliance_api_key}
 
 ---
 
@@ -1977,7 +1977,7 @@ public ZeroTrustCasbIntegrationOpenaiChatgptStandardApiKey ChatgptStandardApiKey
 
 Authenticate with an OpenAI Admin API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#chatgpt_standard_api_key ZeroTrustCasbIntegration#chatgpt_standard_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#chatgpt_standard_api_key ZeroTrustCasbIntegration#chatgpt_standard_api_key}
 
 ---
 
@@ -2021,7 +2021,7 @@ public string AdminApiKey { get; set; }
 
 OpenAI Admin API key with api.management.read access. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#admin_api_key ZeroTrustCasbIntegration#admin_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#admin_api_key ZeroTrustCasbIntegration#admin_api_key}
 
 ---
 
@@ -2035,7 +2035,7 @@ public string ComplianceApiKey { get; set; }
 
 OpenAI Compliance API key for audit logs. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#compliance_api_key ZeroTrustCasbIntegration#compliance_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#compliance_api_key ZeroTrustCasbIntegration#compliance_api_key}
 
 ---
 
@@ -2049,7 +2049,7 @@ public string OrganizationId { get; set; }
 
 OpenAI Organization ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#organization_id ZeroTrustCasbIntegration#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#organization_id ZeroTrustCasbIntegration#organization_id}
 
 ---
 
@@ -2063,7 +2063,7 @@ public string WorkspaceId { get; set; }
 
 OpenAI Workspace ID for compliance data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#workspace_id ZeroTrustCasbIntegration#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#workspace_id ZeroTrustCasbIntegration#workspace_id}
 
 ---
 
@@ -2077,7 +2077,7 @@ public string ProjectApiKey { get; set; }
 
 OpenAI Project API key, used for DLP. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#project_api_key ZeroTrustCasbIntegration#project_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#project_api_key ZeroTrustCasbIntegration#project_api_key}
 
 ---
 
@@ -2091,7 +2091,7 @@ public string ProjectId { get; set; }
 
 OpenAI Project ID, used for DLP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#project_id ZeroTrustCasbIntegration#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#project_id ZeroTrustCasbIntegration#project_id}
 
 ---
 
@@ -2131,7 +2131,7 @@ public string AdminApiKey { get; set; }
 
 OpenAI Admin API key with api.management.read access. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#admin_api_key ZeroTrustCasbIntegration#admin_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#admin_api_key ZeroTrustCasbIntegration#admin_api_key}
 
 ---
 
@@ -2145,7 +2145,7 @@ public string OrganizationId { get; set; }
 
 OpenAI Organization ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#organization_id ZeroTrustCasbIntegration#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#organization_id ZeroTrustCasbIntegration#organization_id}
 
 ---
 
@@ -2159,7 +2159,7 @@ public string ProjectApiKey { get; set; }
 
 OpenAI Project API key, used for DLP. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#project_api_key ZeroTrustCasbIntegration#project_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#project_api_key ZeroTrustCasbIntegration#project_api_key}
 
 ---
 
@@ -2173,7 +2173,7 @@ public string ProjectId { get; set; }
 
 OpenAI Project ID, used for DLP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#project_id ZeroTrustCasbIntegration#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#project_id ZeroTrustCasbIntegration#project_id}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### Worker <a name="Worker" id="@cdktn/provider-cloudflare.worker.Worker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker cloudflare_worker}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker cloudflare_worker}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.Worker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorker(scope Construct, id *string, config WorkerConfig) Worker
 ```
@@ -501,7 +501,7 @@ func ResetTailConsumers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.worker.Worker.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.Worker_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.worker.Worker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.Worker_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ worker.Worker_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.worker.Worker.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.Worker_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ worker.Worker_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.worker.Worker.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.Worker_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -590,7 +590,7 @@ The construct id used in the generated config for the Worker to import.
 
 The id of the existing Worker that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1043,7 +1043,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerConfig {
 	Connection: interface{},
@@ -1057,9 +1057,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
 	Name: *string,
 	Force: interface{},
 	Logpush: interface{},
-	Observability: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerObservability,
-	PreviewsBaseConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerPreviewsBaseConfig,
-	Subdomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerSubdomain,
+	Observability: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerObservability,
+	PreviewsBaseConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerPreviewsBaseConfig,
+	Subdomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerSubdomain,
 	Tags: *[]*string,
 	TailConsumers: interface{},
 }
@@ -1168,7 +1168,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#account_id Worker#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#account_id Worker#account_id}
 
 ---
 
@@ -1182,7 +1182,7 @@ Name *string
 
 Name of the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -1198,7 +1198,7 @@ If true, delete the Worker even when other Workers still reference it.
 
 Service bindings in those Workers may be left broken. Durable Object namespaces implemented by the deleted Worker are deleted even if other Workers reference them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#force Worker#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#force Worker#force}
 
 ---
 
@@ -1212,7 +1212,7 @@ Logpush interface{}
 
 Whether logpush is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#logpush Worker#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#logpush Worker#logpush}
 
 ---
 
@@ -1226,7 +1226,7 @@ Observability WorkerObservability
 
 Observability settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#observability Worker#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#observability Worker#observability}
 
 ---
 
@@ -1240,7 +1240,7 @@ PreviewsBaseConfig WorkerPreviewsBaseConfig
 
 Template configuration used when creating new Previews for this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#previews_base_config Worker#previews_base_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#previews_base_config Worker#previews_base_config}
 
 ---
 
@@ -1254,7 +1254,7 @@ Subdomain WorkerSubdomain
 
 Subdomain settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#subdomain Worker#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#subdomain Worker#subdomain}
 
 ---
 
@@ -1268,7 +1268,7 @@ Tags *[]*string
 
 Tags associated with the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#tags Worker#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#tags Worker#tags}
 
 ---
 
@@ -1282,7 +1282,7 @@ TailConsumers interface{}
 
 Other Workers that should consume logs from the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#tail_consumers Worker#tail_consumers}
 
 ---
 
@@ -1291,14 +1291,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerObservability.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerObservability {
 	Enabled: interface{},
 	HeadSamplingRate: *f64,
-	Issues: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerObservabilityIssues,
-	Logs: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerObservabilityLogs,
-	Traces: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerObservabilityTraces,
+	Issues: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerObservabilityIssues,
+	Logs: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerObservabilityLogs,
+	Traces: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerObservabilityTraces,
 }
 ```
 
@@ -1324,7 +1324,7 @@ Enabled interface{}
 
 Whether observability is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1338,7 +1338,7 @@ HeadSamplingRate *f64
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1352,7 +1352,7 @@ Issues WorkerObservabilityIssues
 
 Real-time Issues settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#issues Worker#issues}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#issues Worker#issues}
 
 ---
 
@@ -1366,7 +1366,7 @@ Logs WorkerObservabilityLogs
 
 Log settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#logs Worker#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#logs Worker#logs}
 
 ---
 
@@ -1380,7 +1380,7 @@ Traces WorkerObservabilityTraces
 
 Trace settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#traces Worker#traces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#traces Worker#traces}
 
 ---
 
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerObservabilityIssues {
 	Enabled: interface{},
@@ -1414,7 +1414,7 @@ Enabled interface{}
 
 Whether real-time Issues are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerObservabilityLogs {
 	Destinations: *[]*string,
@@ -1456,7 +1456,7 @@ Destinations *[]*string
 
 A list of destinations where logs will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#destinations Worker#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -1470,7 +1470,7 @@ Enabled interface{}
 
 Whether logs are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1484,7 +1484,7 @@ HeadSamplingRate *f64
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1498,7 +1498,7 @@ InvocationLogs interface{}
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#invocation_logs Worker#invocation_logs}
 
 ---
 
@@ -1512,7 +1512,7 @@ Persist interface{}
 
 Whether log persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#persist Worker#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -1521,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerObservabilityTraces {
 	Destinations: *[]*string,
@@ -1554,7 +1554,7 @@ Destinations *[]*string
 
 A list of destinations where traces will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#destinations Worker#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -1568,7 +1568,7 @@ Enabled interface{}
 
 Whether traces are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1582,7 +1582,7 @@ HeadSamplingRate *f64
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1596,7 +1596,7 @@ Persist interface{}
 
 Whether trace persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#persist Worker#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -1613,7 +1613,7 @@ Controls how inbound trace context (traceparent/tracestate) headers on incoming 
 "authenticated" (default) honors inbound trace context only when accompanied by a valid trace auth token. "accept" unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled.
 Available values: "authenticated", "accept".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#propagation_policy Worker#propagation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#propagation_policy Worker#propagation_policy}
 
 ---
 
@@ -1622,15 +1622,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfig {
-	CacheOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerPreviewsBaseConfigCacheOptions,
+	CacheOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerPreviewsBaseConfigCacheOptions,
 	Env: interface{},
-	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerPreviewsBaseConfigLimits,
+	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerPreviewsBaseConfigLimits,
 	Logpush: interface{},
-	Observability: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerPreviewsBaseConfigObservability,
-	Placement: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerPreviewsBaseConfigPlacement,
+	Observability: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerPreviewsBaseConfigObservability,
+	Placement: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerPreviewsBaseConfigPlacement,
 	TailConsumers: interface{},
 }
 ```
@@ -1659,7 +1659,7 @@ CacheOptions WorkerPreviewsBaseConfigCacheOptions
 
 Cache options used when creating new Previews.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#cache_options Worker#cache_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#cache_options Worker#cache_options}
 
 ---
 
@@ -1673,7 +1673,7 @@ Env interface{}
 
 Bindings used when creating new Previews, keyed by binding name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#env Worker#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#env Worker#env}
 
 ---
 
@@ -1687,7 +1687,7 @@ Limits WorkerPreviewsBaseConfigLimits
 
 Resource limits enforced at runtime for newly created Previews.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#limits Worker#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#limits Worker#limits}
 
 ---
 
@@ -1701,7 +1701,7 @@ Logpush interface{}
 
 Whether logpush is enabled when creating new Previews.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#logpush Worker#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#logpush Worker#logpush}
 
 ---
 
@@ -1715,7 +1715,7 @@ Observability WorkerPreviewsBaseConfigObservability
 
 Observability settings used when creating new Previews.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#observability Worker#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#observability Worker#observability}
 
 ---
 
@@ -1729,7 +1729,7 @@ Placement WorkerPreviewsBaseConfigPlacement
 
 Placement configuration used when creating new Previews.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#placement Worker#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#placement Worker#placement}
 
 ---
 
@@ -1743,7 +1743,7 @@ TailConsumers interface{}
 
 Other Workers that should consume logs from newly created Previews.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#tail_consumers Worker#tail_consumers}
 
 ---
 
@@ -1752,7 +1752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigCacheOptions {
 	CrossVersionCache: interface{},
@@ -1783,7 +1783,7 @@ This is independent of `enabled`. It can stay true
 while caching is off, so the preference survives turning
 caching off and back on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#cross_version_cache Worker#cross_version_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#cross_version_cache Worker#cross_version_cache}
 
 ---
 
@@ -1797,7 +1797,7 @@ Enabled interface{}
 
 Whether caching is enabled for this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1806,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigEnv {
 	Type: *string,
@@ -1831,7 +1831,7 @@ Type *string
 
 The kind of resource that the binding provides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#type Worker#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#type Worker#type}
 
 ---
 
@@ -1840,7 +1840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigLimits {
 	CpuMs: *f64,
@@ -1867,7 +1867,7 @@ CpuMs *f64
 
 The amount of CPU time this Worker can use in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#cpu_ms Worker#cpu_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#cpu_ms Worker#cpu_ms}
 
 ---
 
@@ -1881,7 +1881,7 @@ Subrequests *f64
 
 The number of subrequests this Worker can make per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#subrequests Worker#subrequests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#subrequests Worker#subrequests}
 
 ---
 
@@ -1890,15 +1890,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservability.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigObservability {
 	Enabled: interface{},
 	HeadSamplingRate: *f64,
-	Issues: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerPreviewsBaseConfigObservabilityIssues,
-	Logs: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerPreviewsBaseConfigObservabilityLogs,
+	Issues: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerPreviewsBaseConfigObservabilityIssues,
+	Logs: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerPreviewsBaseConfigObservabilityLogs,
 	RedactQueryString: interface{},
-	Traces: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.worker.WorkerPreviewsBaseConfigObservabilityTraces,
+	Traces: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.worker.WorkerPreviewsBaseConfigObservabilityTraces,
 }
 ```
 
@@ -1925,7 +1925,7 @@ Enabled interface{}
 
 Whether observability is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1939,7 +1939,7 @@ HeadSamplingRate *f64
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1953,7 +1953,7 @@ Issues WorkerPreviewsBaseConfigObservabilityIssues
 
 Real-time Issues settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#issues Worker#issues}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#issues Worker#issues}
 
 ---
 
@@ -1967,7 +1967,7 @@ Logs WorkerPreviewsBaseConfigObservabilityLogs
 
 Log settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#logs Worker#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#logs Worker#logs}
 
 ---
 
@@ -1981,7 +1981,7 @@ RedactQueryString interface{}
 
 Whether query strings are removed from request URLs in logs and traces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#redact_query_string Worker#redact_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#redact_query_string Worker#redact_query_string}
 
 ---
 
@@ -1995,7 +1995,7 @@ Traces WorkerPreviewsBaseConfigObservabilityTraces
 
 Trace settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#traces Worker#traces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#traces Worker#traces}
 
 ---
 
@@ -2004,7 +2004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigObservabilityIssues {
 	Enabled: interface{},
@@ -2029,7 +2029,7 @@ Enabled interface{}
 
 Whether real-time Issues are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -2038,7 +2038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigObservabilityLogs {
 	Destinations: *[]*string,
@@ -2071,7 +2071,7 @@ Destinations *[]*string
 
 A list of destinations where logs will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#destinations Worker#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -2085,7 +2085,7 @@ Enabled interface{}
 
 Whether logs are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -2099,7 +2099,7 @@ HeadSamplingRate *f64
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -2113,7 +2113,7 @@ InvocationLogs interface{}
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#invocation_logs Worker#invocation_logs}
 
 ---
 
@@ -2127,7 +2127,7 @@ Persist interface{}
 
 Whether log persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#persist Worker#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -2136,7 +2136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTraces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigObservabilityTraces {
 	Destinations: *[]*string,
@@ -2169,7 +2169,7 @@ Destinations *[]*string
 
 A list of destinations where traces will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#destinations Worker#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -2183,7 +2183,7 @@ Enabled interface{}
 
 Whether traces are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -2197,7 +2197,7 @@ HeadSamplingRate *f64
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -2211,7 +2211,7 @@ Persist interface{}
 
 Whether trace persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#persist Worker#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -2228,7 +2228,7 @@ Controls how inbound trace context (traceparent/tracestate) headers on incoming 
 "authenticated" honors inbound trace context only when accompanied by a valid trace auth token. "accept" unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 Available values: "authenticated", "accept".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#propagation_policy Worker#propagation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#propagation_policy Worker#propagation_policy}
 
 ---
 
@@ -2237,7 +2237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigPlacement {
 	Host: *string,
@@ -2270,7 +2270,7 @@ Host *string
 
 TCP host and port for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#host Worker#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#host Worker#host}
 
 ---
 
@@ -2284,7 +2284,7 @@ Hostname *string
 
 HTTP hostname for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#hostname Worker#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#hostname Worker#hostname}
 
 ---
 
@@ -2298,7 +2298,7 @@ Mode *string
 
 Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Available values: "smart", "targeted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#mode Worker#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#mode Worker#mode}
 
 ---
 
@@ -2312,7 +2312,7 @@ Region *string
 
 Cloud region for targeted placement in format 'provider:region'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#region Worker#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#region Worker#region}
 
 ---
 
@@ -2326,7 +2326,7 @@ Target interface{}
 
 Array of placement targets (currently limited to single target).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#target Worker#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#target Worker#target}
 
 ---
 
@@ -2335,7 +2335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigPlacementTarget {
 	Host: *string,
@@ -2364,7 +2364,7 @@ Host *string
 
 TCP host:port for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#host Worker#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#host Worker#host}
 
 ---
 
@@ -2378,7 +2378,7 @@ Hostname *string
 
 HTTP hostname for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#hostname Worker#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#hostname Worker#hostname}
 
 ---
 
@@ -2392,7 +2392,7 @@ Region *string
 
 Cloud region in format 'provider:region'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#region Worker#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#region Worker#region}
 
 ---
 
@@ -2401,7 +2401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerPreviewsBaseConfigTailConsumers {
 	Name: *string,
@@ -2426,7 +2426,7 @@ Name *string
 
 Name of the consumer Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -2435,7 +2435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerReferences {
 
@@ -2448,7 +2448,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutbounds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerReferencesDispatchNamespaceOutbounds {
 
@@ -2461,7 +2461,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerReferencesDomains {
 
@@ -2474,7 +2474,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDurableObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerReferencesDurableObjects {
 
@@ -2487,7 +2487,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerReferencesQueues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerReferencesQueues {
 
@@ -2500,7 +2500,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerReferencesWorkers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerReferencesWorkers {
 
@@ -2513,7 +2513,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerSubdomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerSubdomain {
 	Enabled: interface{},
@@ -2540,7 +2540,7 @@ Enabled interface{}
 
 Whether the *.workers.dev subdomain is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -2554,7 +2554,7 @@ PreviewsEnabled interface{}
 
 Whether [preview URLs](https://developers.cloudflare.com/workers/configuration/previews/) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#previews_enabled Worker#previews_enabled}
 
 ---
 
@@ -2563,7 +2563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerTailConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 &worker.WorkerTailConsumers {
 	Name: *string,
@@ -2588,7 +2588,7 @@ Name *string
 
 Name of the consumer Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -2599,7 +2599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityIssuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerObservabilityIssuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerObservabilityIssuesOutputReference
 ```
@@ -2877,7 +2877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerObservabilityLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerObservabilityLogsOutputReference
 ```
@@ -3271,7 +3271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerObservabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerObservabilityOutputReference
 ```
@@ -3704,7 +3704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerObservabilityTracesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerObservabilityTracesOutputReference
 ```
@@ -4098,7 +4098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigCacheOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigCacheOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigCacheOptionsOutputReference
 ```
@@ -4405,7 +4405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigEnvMap(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigEnvMap
 ```
@@ -4552,7 +4552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) WorkerPreviewsBaseConfigEnvOutputReference
 ```
@@ -4832,7 +4832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigLimitsOutputReference
 ```
@@ -5139,7 +5139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityIssuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigObservabilityIssuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigObservabilityIssuesOutputReference
 ```
@@ -5417,7 +5417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigObservabilityLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigObservabilityLogsOutputReference
 ```
@@ -5811,7 +5811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigObservabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigObservabilityOutputReference
 ```
@@ -6273,7 +6273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigObservabilityTracesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigObservabilityTracesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigObservabilityTracesOutputReference
 ```
@@ -6667,7 +6667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigOutputReference
 ```
@@ -7197,7 +7197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerPreviewsBaseConfigPlacementOutputReference
 ```
@@ -7604,7 +7604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigPlacementTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerPreviewsBaseConfigPlacementTargetList
 ```
@@ -7764,7 +7764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigPlacementTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigPlacementTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerPreviewsBaseConfigPlacementTargetOutputReference
 ```
@@ -8118,7 +8118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigTailConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerPreviewsBaseConfigTailConsumersList
 ```
@@ -8278,7 +8278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerPreviewsBaseConfigTailConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerPreviewsBaseConfigTailConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerPreviewsBaseConfigTailConsumersOutputReference
 ```
@@ -8567,7 +8567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutboundsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesDispatchNamespaceOutboundsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesDispatchNamespaceOutboundsList
 ```
@@ -8716,7 +8716,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutboundsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesDispatchNamespaceOutboundsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesDispatchNamespaceOutboundsOutputReference
 ```
@@ -9027,7 +9027,7 @@ func InternalValue() WorkerReferencesDispatchNamespaceOutbounds
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesDomainsList
 ```
@@ -9176,7 +9176,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesDomainsOutputReference
 ```
@@ -9498,7 +9498,7 @@ func InternalValue() WorkerReferencesDomains
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDurableObjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesDurableObjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesDurableObjectsList
 ```
@@ -9647,7 +9647,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesDurableObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesDurableObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesDurableObjectsOutputReference
 ```
@@ -9958,7 +9958,7 @@ func InternalValue() WorkerReferencesDurableObjects
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerReferencesOutputReference
 ```
@@ -10262,7 +10262,7 @@ func InternalValue() WorkerReferences
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesQueuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesQueuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesQueuesList
 ```
@@ -10411,7 +10411,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesQueuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesQueuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesQueuesOutputReference
 ```
@@ -10711,7 +10711,7 @@ func InternalValue() WorkerReferencesQueues
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesWorkersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesWorkersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesWorkersList
 ```
@@ -10860,7 +10860,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerReferencesWorkersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerReferencesWorkersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesWorkersOutputReference
 ```
@@ -11149,7 +11149,7 @@ func InternalValue() WorkerReferencesWorkers
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerSubdomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerSubdomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerSubdomainOutputReference
 ```
@@ -11478,7 +11478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerTailConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerTailConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerTailConsumersList
 ```
@@ -11638,7 +11638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerTailConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/worker"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/worker"
 
 worker.NewWorkerTailConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerTailConsumersOutputReference
 ```

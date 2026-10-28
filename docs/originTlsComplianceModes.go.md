@@ -4,12 +4,12 @@
 
 ### OriginTlsComplianceModes <a name="OriginTlsComplianceModes" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origintlscompliancemodes"
 
 origintlscompliancemodes.NewOriginTlsComplianceModes(scope Construct, id *string, config OriginTlsComplianceModesConfig) OriginTlsComplianceModes
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origintlscompliancemodes"
 
 origintlscompliancemodes.OriginTlsComplianceModes_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origintlscompliancemodes"
 
 origintlscompliancemodes.OriginTlsComplianceModes_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ origintlscompliancemodes.OriginTlsComplianceModes_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModes.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origintlscompliancemodes"
 
 origintlscompliancemodes.OriginTlsComplianceModes_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ origintlscompliancemodes.OriginTlsComplianceModes_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origintlscompliancemodes"
 
 origintlscompliancemodes.OriginTlsComplianceModes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OriginTlsComplianceModes t
 
 The id of the existing OriginTlsComplianceModes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_tls_compliance_modes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_tls_compliance_modes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origintlscompliancemodes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origintlscompliancemodes"
 
 &origintlscompliancemodes.OriginTlsComplianceModesConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ List of TLS compliance modes that constrain the key-exchange algorithms Cloudfla
 
 Currently supported values are `fips` (FIPS-approved curves) and `pqh` (post-quantum hybrid). Future modes (e.g. `cnsa2`) may be added; clients should treat unknown values as opaque strings. Multiple modes are combined as the intersection of their permitted algorithm lists; selections whose intersection is empty are rejected. An empty list clears the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_tls_compliance_modes#value OriginTlsComplianceModes#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_tls_compliance_modes#value OriginTlsComplianceModes#value}
 
 ---
 
@@ -893,7 +893,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_tls_compliance_modes#zone_id OriginTlsComplianceModes#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_tls_compliance_modes#zone_id OriginTlsComplianceModes#zone_id}
 
 ---
 

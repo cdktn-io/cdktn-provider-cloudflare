@@ -4,12 +4,12 @@
 
 ### R2ManagedDomain <a name="R2ManagedDomain" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2manageddomain"
 
 r2manageddomain.NewR2ManagedDomain(scope Construct, id *string, config R2ManagedDomainConfig) R2ManagedDomain
 ```
@@ -407,7 +407,7 @@ func ResetJurisdiction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2manageddomain"
 
 r2manageddomain.R2ManagedDomain_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2manageddomain"
 
 r2manageddomain.R2ManagedDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ r2manageddomain.R2ManagedDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2manageddomain"
 
 r2manageddomain.R2ManagedDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ r2manageddomain.R2ManagedDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2manageddomain"
 
 r2manageddomain.R2ManagedDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the R2ManagedDomain to import.
 
 The id of the existing R2ManagedDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_managed_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_managed_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2manageddomain"
 
 &r2manageddomain.R2ManagedDomainConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ AccountId *string
 
 Cloudflare account ID that owns the R2 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
 
 ---
 
@@ -935,7 +935,7 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
 
 ---
 
@@ -949,7 +949,7 @@ Enabled interface{}
 
 Whether to enable public bucket access at the r2.dev domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
 
 ---
 
@@ -963,7 +963,7 @@ Jurisdiction *string
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### ArgoSmartRouting <a name="ArgoSmartRouting" id="@cdktn/provider-cloudflare.argoSmartRouting.ArgoSmartRouting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argosmartrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argosmartrouting"
 
 argosmartrouting.NewArgoSmartRouting(scope Construct, id *string, config ArgoSmartRoutingConfig) ArgoSmartRouting
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argosmartrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argosmartrouting"
 
 argosmartrouting.ArgoSmartRouting_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argosmartrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argosmartrouting"
 
 argosmartrouting.ArgoSmartRouting_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ argosmartrouting.ArgoSmartRouting_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argosmartrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argosmartrouting"
 
 argosmartrouting.ArgoSmartRouting_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ argosmartrouting.ArgoSmartRouting_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argosmartrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argosmartrouting"
 
 argosmartrouting.ArgoSmartRouting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ArgoSmartRouting to import
 
 The id of the existing ArgoSmartRouting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argosmartrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argosmartrouting"
 
 &argosmartrouting.ArgoSmartRoutingConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ Value *string
 
 Specifies the enablement value of Argo Smart Routing. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
 
 ---
 
@@ -891,7 +891,7 @@ ZoneId *string
 
 Specifies the zone associated with the API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
 
 ---
 

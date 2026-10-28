@@ -4,12 +4,12 @@
 
 ### UserGroup <a name="UserGroup" id="@cdktn/provider-cloudflare.userGroup.UserGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group cloudflare_user_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group cloudflare_user_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroup.UserGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.NewUserGroup(scope Construct, id *string, config UserGroupConfig) UserGroup
 ```
@@ -420,7 +420,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.userGroup.UserGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.UserGroup_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.userGroup.UserGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.UserGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ usergroup.UserGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.userGroup.UserGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.UserGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ usergroup.UserGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.userGroup.UserGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.UserGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the UserGroup to import.
 
 The id of the existing UserGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.userGroup.UserGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 &usergroup.UserGroupConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#account_id UserGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#account_id UserGroup#account_id}
 
 ---
 
@@ -935,7 +935,7 @@ Name *string
 
 Name of the User group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#name UserGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#name UserGroup#name}
 
 ---
 
@@ -949,7 +949,7 @@ Policies interface{}
 
 Policies attached to the User group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#policies UserGroup#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#policies UserGroup#policies}
 
 ---
 
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.userGroup.UserGroupPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 &usergroup.UserGroupPolicies {
 	Access: *string,
@@ -987,7 +987,7 @@ Access *string
 
 Allow or deny operations against the resources. Available values: "allow", "deny".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#access UserGroup#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#access UserGroup#access}
 
 ---
 
@@ -1001,7 +1001,7 @@ PermissionGroups interface{}
 
 A set of permission groups that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#permission_groups UserGroup#permission_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#permission_groups UserGroup#permission_groups}
 
 ---
 
@@ -1015,7 +1015,7 @@ ResourceGroups interface{}
 
 A set of resource groups that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#resource_groups UserGroup#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#resource_groups UserGroup#resource_groups}
 
 ---
 
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.userGroup.UserGroupPoliciesPermissionGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 &usergroup.UserGroupPoliciesPermissionGroups {
 	Id: *string,
@@ -1049,7 +1049,7 @@ Id *string
 
 Permission Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#id UserGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#id UserGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1061,7 +1061,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.userGroup.UserGroupPoliciesResourceGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 &usergroup.UserGroupPoliciesResourceGroups {
 	Id: *string,
@@ -1086,7 +1086,7 @@ Id *string
 
 Resource Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group#id UserGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group#id UserGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1100,7 +1100,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroup.UserGroupPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.NewUserGroupPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserGroupPoliciesList
 ```
@@ -1260,7 +1260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroup.UserGroupPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.NewUserGroupPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserGroupPoliciesOutputReference
 ```
@@ -1619,7 +1619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroup.UserGroupPoliciesPermissionGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.NewUserGroupPoliciesPermissionGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserGroupPoliciesPermissionGroupsList
 ```
@@ -1779,7 +1779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroup.UserGroupPoliciesPermissionGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.NewUserGroupPoliciesPermissionGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserGroupPoliciesPermissionGroupsOutputReference
 ```
@@ -2068,7 +2068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroup.UserGroupPoliciesResourceGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.NewUserGroupPoliciesResourceGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserGroupPoliciesResourceGroupsList
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userGroup.UserGroupPoliciesResourceGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup"
 
 usergroup.NewUserGroupPoliciesResourceGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserGroupPoliciesResourceGroupsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### ShareResource <a name="ShareResource" id="@cdktn/provider-cloudflare.shareResource.ShareResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_resource cloudflare_share_resource}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource cloudflare_share_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/shareresource"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/shareresource"
 
 shareresource.NewShareResource(scope Construct, id *string, config ShareResourceConfig) ShareResource
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.shareResource.ShareResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/shareresource"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/shareresource"
 
 shareresource.ShareResource_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.shareResource.ShareResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/shareresource"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/shareresource"
 
 shareresource.ShareResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ shareresource.ShareResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.shareResource.ShareResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/shareresource"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/shareresource"
 
 shareresource.ShareResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ shareresource.ShareResource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.shareResource.ShareResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/shareresource"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/shareresource"
 
 shareresource.ShareResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ShareResource to import.
 
 The id of the existing ShareResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -876,7 +876,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/shareresource"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/shareresource"
 
 &shareresource.ShareResourceConfig {
 	Connection: interface{},
@@ -995,7 +995,7 @@ AccountId *string
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_resource#account_id ShareResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#account_id ShareResource#account_id}
 
 ---
 
@@ -1009,7 +1009,7 @@ Meta *string
 
 Resource Metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_resource#meta ShareResource#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#meta ShareResource#meta}
 
 ---
 
@@ -1023,7 +1023,7 @@ ResourceAccountId *string
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
 
 ---
 
@@ -1037,7 +1037,7 @@ ResourceId *string
 
 Share Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_resource#resource_id ShareResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_id ShareResource#resource_id}
 
 ---
 
@@ -1051,7 +1051,7 @@ ResourceType *string
 
 Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_resource#resource_type ShareResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_type ShareResource#resource_type}
 
 ---
 
@@ -1065,7 +1065,7 @@ ShareId *string
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/share_resource#share_id ShareResource#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#share_id ShareResource#share_id}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataCloudflareZeroTrustConnectivitySettings <a name="DataCloudflareZeroTrustConnectivitySettings" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustconnectivitysettings"
 
 datacloudflarezerotrustconnectivitysettings.NewDataCloudflareZeroTrustConnectivitySettings(scope Construct, id *string, config DataCloudflareZeroTrustConnectivitySettingsConfig) DataCloudflareZeroTrustConnectivitySettings
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustconnectivitysettings"
 
 datacloudflarezerotrustconnectivitysettings.DataCloudflareZeroTrustConnectivitySettings_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustconnectivitysettings"
 
 datacloudflarezerotrustconnectivitysettings.DataCloudflareZeroTrustConnectivitySettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflarezerotrustconnectivitysettings.DataCloudflareZeroTrustConnectivityS
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustconnectivitysettings"
 
 datacloudflarezerotrustconnectivitysettings.DataCloudflareZeroTrustConnectivitySettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflarezerotrustconnectivitysettings.DataCloudflareZeroTrustConnectivityS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustconnectivitysettings"
 
 datacloudflarezerotrustconnectivitysettings.DataCloudflareZeroTrustConnectivitySettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustCon
 
 The id of the existing DataCloudflareZeroTrustConnectivitySettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_connectivity_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_connectivity_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustConnectivitySettings.DataCloudflareZeroTrustConnectivitySettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustconnectivitysettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustconnectivitysettings"
 
 &datacloudflarezerotrustconnectivitysettings.DataCloudflareZeroTrustConnectivitySettingsConfig {
 	Connection: interface{},
@@ -729,7 +729,7 @@ AccountId *string
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_connectivity_settings#account_id DataCloudflareZeroTrustConnectivitySettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_connectivity_settings#account_id DataCloudflareZeroTrustConnectivitySettings#account_id}
 
 ---
 

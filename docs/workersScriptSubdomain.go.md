@@ -4,12 +4,12 @@
 
 ### WorkersScriptSubdomain <a name="WorkersScriptSubdomain" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersscriptsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersscriptsubdomain"
 
 workersscriptsubdomain.NewWorkersScriptSubdomain(scope Construct, id *string, config WorkersScriptSubdomainConfig) WorkersScriptSubdomain
 ```
@@ -407,7 +407,7 @@ func ResetPreviewsEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersscriptsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersscriptsubdomain"
 
 workersscriptsubdomain.WorkersScriptSubdomain_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersscriptsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersscriptsubdomain"
 
 workersscriptsubdomain.WorkersScriptSubdomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ workersscriptsubdomain.WorkersScriptSubdomain_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersscriptsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersscriptsubdomain"
 
 workersscriptsubdomain.WorkersScriptSubdomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workersscriptsubdomain.WorkersScriptSubdomain_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersscriptsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersscriptsubdomain"
 
 workersscriptsubdomain.WorkersScriptSubdomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkersScriptSubdomain to 
 
 The id of the existing WorkersScriptSubdomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersscriptsubdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersscriptsubdomain"
 
 &workersscriptsubdomain.WorkersScriptSubdomainConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
 
 ---
 
@@ -924,7 +924,7 @@ Enabled interface{}
 
 Whether the Worker should be available on the workers.dev subdomain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
 
 ---
 
@@ -938,7 +938,7 @@ ScriptName *string
 
 Name of the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
 
 ---
 
@@ -952,7 +952,7 @@ PreviewsEnabled interface{}
 
 Whether the Worker's Preview URLs should be available on the workers.dev subdomain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
 
 ---
 

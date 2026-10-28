@@ -4,12 +4,12 @@
 
 ### LoadBalancerMonitorGroup <a name="LoadBalancerMonitorGroup" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 loadbalancermonitorgroup.NewLoadBalancerMonitorGroup(scope Construct, id *string, config LoadBalancerMonitorGroupConfig) LoadBalancerMonitorGroup
 ```
@@ -413,7 +413,7 @@ func PutMembers(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 loadbalancermonitorgroup.LoadBalancerMonitorGroup_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 loadbalancermonitorgroup.LoadBalancerMonitorGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ loadbalancermonitorgroup.LoadBalancerMonitorGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 loadbalancermonitorgroup.LoadBalancerMonitorGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ loadbalancermonitorgroup.LoadBalancerMonitorGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 loadbalancermonitorgroup.LoadBalancerMonitorGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the LoadBalancerMonitorGroup t
 
 The id of the existing LoadBalancerMonitorGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 &loadbalancermonitorgroup.LoadBalancerMonitorGroupConfig {
 	Connection: interface{},
@@ -914,7 +914,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group#account_id LoadBalancerMonitorGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group#account_id LoadBalancerMonitorGroup#account_id}
 
 ---
 
@@ -928,7 +928,7 @@ Description *string
 
 A short description of the monitor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group#description LoadBalancerMonitorGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group#description LoadBalancerMonitorGroup#description}
 
 ---
 
@@ -942,7 +942,7 @@ Members interface{}
 
 List of monitors in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group#members LoadBalancerMonitorGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group#members LoadBalancerMonitorGroup#members}
 
 ---
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroupMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 &loadbalancermonitorgroup.LoadBalancerMonitorGroupMembers {
 	Enabled: interface{},
@@ -982,7 +982,7 @@ Enabled interface{}
 
 Whether this monitor is enabled in the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group#enabled LoadBalancerMonitorGroup#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group#enabled LoadBalancerMonitorGroup#enabled}
 
 ---
 
@@ -996,7 +996,7 @@ MonitorId *string
 
 The ID of the Monitor to use for checking the health of origins within this pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group#monitor_id LoadBalancerMonitorGroup#monitor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group#monitor_id LoadBalancerMonitorGroup#monitor_id}
 
 ---
 
@@ -1010,7 +1010,7 @@ MonitoringOnly interface{}
 
 Whether this monitor is used for monitoring only (does not affect pool health).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group#monitoring_only LoadBalancerMonitorGroup#monitoring_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group#monitoring_only LoadBalancerMonitorGroup#monitoring_only}
 
 ---
 
@@ -1024,7 +1024,7 @@ MustBeHealthy interface{}
 
 Whether this monitor must be healthy for the pool to be considered healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/load_balancer_monitor_group#must_be_healthy LoadBalancerMonitorGroup#must_be_healthy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer_monitor_group#must_be_healthy LoadBalancerMonitorGroup#must_be_healthy}
 
 ---
 
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroupMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 loadbalancermonitorgroup.NewLoadBalancerMonitorGroupMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerMonitorGroupMembersList
 ```
@@ -1195,7 +1195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroupMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/loadbalancermonitorgroup"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/loadbalancermonitorgroup"
 
 loadbalancermonitorgroup.NewLoadBalancerMonitorGroupMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerMonitorGroupMembersOutputReference
 ```

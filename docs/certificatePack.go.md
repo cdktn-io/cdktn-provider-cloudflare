@@ -4,12 +4,12 @@
 
 ### CertificatePack <a name="CertificatePack" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack cloudflare_certificate_pack}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePack(scope Construct, id *string, config CertificatePackConfig) CertificatePack
 ```
@@ -414,7 +414,7 @@ func ResetHosts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.CertificatePack_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.CertificatePack_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ certificatepack.CertificatePack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.CertificatePack_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ certificatepack.CertificatePack_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.CertificatePack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the CertificatePack to import.
 
 The id of the existing CertificatePack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,7 +934,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 &certificatepack.CertificatePackCertificates {
 
@@ -947,7 +947,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certific
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificatesGeoRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 &certificatepack.CertificatePackCertificatesGeoRestrictions {
 
@@ -960,7 +960,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certific
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 &certificatepack.CertificatePackConfig {
 	Connection: interface{},
@@ -1084,7 +1084,7 @@ Certificate Authority selected for the order.
 For information on any certificate authority specific details or restrictions [see this page for more details](https://developers.cloudflare.com/ssl/reference/certificate-authorities).
 Available values: "google", "lets_encrypt", "ssl_com".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
 
 ---
 
@@ -1098,7 +1098,7 @@ Type *string
 
 Type of certificate pack. Available values: "advanced".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack#type CertificatePack#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack#type CertificatePack#type}
 
 ---
 
@@ -1112,7 +1112,7 @@ ValidationMethod *string
 
 Validation Method selected for the order. Available values: "txt", "http", "email".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
 
 ---
 
@@ -1126,7 +1126,7 @@ ValidityDays *f64
 
 Validity Days selected for the order. Available values: 14, 30, 90, 365.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
 
 ---
 
@@ -1140,7 +1140,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
 
 ---
 
@@ -1156,7 +1156,7 @@ Whether or not to add Cloudflare Branding for the order.
 
 This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
 
 ---
 
@@ -1172,7 +1172,7 @@ Comma separated list of valid host names for the certificate packs.
 
 Must contain the zone apex, may not contain more than 50 hosts, and may not be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/certificate_pack#hosts CertificatePack#hosts}
 
 ---
 
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackDcvDelegationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 &certificatepack.CertificatePackDcvDelegationRecords {
 
@@ -1194,7 +1194,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certific
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 &certificatepack.CertificatePackValidationErrors {
 
@@ -1207,7 +1207,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certific
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 &certificatepack.CertificatePackValidationRecords {
 
@@ -1222,7 +1222,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certific
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificatesGeoRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackCertificatesGeoRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificatePackCertificatesGeoRestrictionsOutputReference
 ```
@@ -1482,7 +1482,7 @@ func InternalValue() CertificatePackCertificatesGeoRestrictions
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificatePackCertificatesList
 ```
@@ -1631,7 +1631,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificatePackCertificatesOutputReference
 ```
@@ -2030,7 +2030,7 @@ func InternalValue() CertificatePackCertificates
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackDcvDelegationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackDcvDelegationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificatePackDcvDelegationRecordsList
 ```
@@ -2179,7 +2179,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackDcvDelegationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackDcvDelegationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificatePackDcvDelegationRecordsOutputReference
 ```
@@ -2534,7 +2534,7 @@ func InternalValue() CertificatePackDcvDelegationRecords
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackValidationErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificatePackValidationErrorsList
 ```
@@ -2683,7 +2683,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackValidationErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificatePackValidationErrorsOutputReference
 ```
@@ -2961,7 +2961,7 @@ func InternalValue() CertificatePackValidationErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackValidationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificatePackValidationRecordsList
 ```
@@ -3110,7 +3110,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/certificatepack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/certificatepack"
 
 certificatepack.NewCertificatePackValidationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificatePackValidationRecordsOutputReference
 ```

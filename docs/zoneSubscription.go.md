@@ -4,12 +4,12 @@
 
 ### ZoneSubscription <a name="ZoneSubscription" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription cloudflare_zone_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription"
 
 zonesubscription.NewZoneSubscription(scope Construct, id *string, config ZoneSubscriptionConfig) ZoneSubscription
 ```
@@ -427,7 +427,7 @@ func ResetRatePlan()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription"
 
 zonesubscription.ZoneSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription"
 
 zonesubscription.ZoneSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ zonesubscription.ZoneSubscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription"
 
 zonesubscription.ZoneSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ zonesubscription.ZoneSubscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription"
 
 zonesubscription.ZoneSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ZoneSubscription to import
 
 The id of the existing ZoneSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription"
 
 &zonesubscription.ZoneSubscriptionConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubs
 	Provisioners: *[]interface{},
 	ZoneId: *string,
 	Frequency: *string,
-	RatePlan: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zoneSubscription.ZoneSubscriptionRatePlan,
+	RatePlan: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zoneSubscription.ZoneSubscriptionRatePlan,
 }
 ```
 
@@ -961,7 +961,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription#zone_id ZoneSubscription#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription#zone_id ZoneSubscription#zone_id}
 
 ---
 
@@ -978,7 +978,7 @@ How often the subscription is renewed automatically.
 Available values: "weekly", "monthly", "quarterly", "yearly".
 Note: Some plans may not support frequency configuration and will return "not-applicable".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
 
 ---
 
@@ -992,7 +992,7 @@ RatePlan ZoneSubscriptionRatePlan
 
 The rate plan applied to the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
 
 ---
 
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription"
 
 &zonesubscription.ZoneSubscriptionRatePlan {
 	Id: *string,
@@ -1028,7 +1028,7 @@ Id *string
 
 The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise", "partners_ent".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription#id ZoneSubscription#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription#id ZoneSubscription#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,7 +1045,7 @@ Scope *string
 
 The scope that this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription#scope ZoneSubscription#scope}
 
 ---
 
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription"
 
 zonesubscription.NewZoneSubscriptionRatePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneSubscriptionRatePlanOutputReference
 ```

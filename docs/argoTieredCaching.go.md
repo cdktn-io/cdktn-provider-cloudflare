@@ -4,12 +4,12 @@
 
 ### ArgoTieredCaching <a name="ArgoTieredCaching" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argotieredcaching"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argotieredcaching"
 
 argotieredcaching.NewArgoTieredCaching(scope Construct, id *string, config ArgoTieredCachingConfig) ArgoTieredCaching
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argotieredcaching"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argotieredcaching"
 
 argotieredcaching.ArgoTieredCaching_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argotieredcaching"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argotieredcaching"
 
 argotieredcaching.ArgoTieredCaching_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ argotieredcaching.ArgoTieredCaching_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argotieredcaching"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argotieredcaching"
 
 argotieredcaching.ArgoTieredCaching_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ argotieredcaching.ArgoTieredCaching_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argotieredcaching"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argotieredcaching"
 
 argotieredcaching.ArgoTieredCaching_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ArgoTieredCaching to impor
 
 The id of the existing ArgoTieredCaching that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCachingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argotieredcaching"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argotieredcaching"
 
 &argotieredcaching.ArgoTieredCachingConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ Value *string
 
 Enables Tiered Caching. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
 
 ---
 
@@ -891,7 +891,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
 
 ---
 

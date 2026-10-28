@@ -4,12 +4,12 @@
 
 ### DataCloudflareDlsPrefixBinding <a name="DataCloudflareDlsPrefixBinding" id="@cdktn/provider-cloudflare.dataCloudflareDlsPrefixBinding.DataCloudflareDlsPrefixBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareDlsPrefixBinding.DataCloudflareDlsPrefixBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaredlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaredlsprefixbinding"
 
 datacloudflaredlsprefixbinding.NewDataCloudflareDlsPrefixBinding(scope Construct, id *string, config DataCloudflareDlsPrefixBindingConfig) DataCloudflareDlsPrefixBinding
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareDlsPrefixBinding.DataCloudflareDlsPrefixBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaredlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaredlsprefixbinding"
 
 datacloudflaredlsprefixbinding.DataCloudflareDlsPrefixBinding_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareDlsPrefixBinding.DataCloudflareDlsPrefixBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaredlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaredlsprefixbinding"
 
 datacloudflaredlsprefixbinding.DataCloudflareDlsPrefixBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflaredlsprefixbinding.DataCloudflareDlsPrefixBinding_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareDlsPrefixBinding.DataCloudflareDlsPrefixBinding.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaredlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaredlsprefixbinding"
 
 datacloudflaredlsprefixbinding.DataCloudflareDlsPrefixBinding_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflaredlsprefixbinding.DataCloudflareDlsPrefixBinding_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareDlsPrefixBinding.DataCloudflareDlsPrefixBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaredlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaredlsprefixbinding"
 
 datacloudflaredlsprefixbinding.DataCloudflareDlsPrefixBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareDlsPrefixBin
 
 The id of the existing DataCloudflareDlsPrefixBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dls_prefix_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dls_prefix_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareDlsPrefixBinding.DataCloudflareDlsPrefixBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaredlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaredlsprefixbinding"
 
 &datacloudflaredlsprefixbinding.DataCloudflareDlsPrefixBindingConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ AccountId *string
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dls_prefix_binding#account_id DataCloudflareDlsPrefixBinding#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dls_prefix_binding#account_id DataCloudflareDlsPrefixBinding#account_id}
 
 ---
 
@@ -778,7 +778,7 @@ BindingId *string
 
 Unique identifier for the prefix binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dls_prefix_binding#binding_id DataCloudflareDlsPrefixBinding#binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dls_prefix_binding#binding_id DataCloudflareDlsPrefixBinding#binding_id}
 
 ---
 

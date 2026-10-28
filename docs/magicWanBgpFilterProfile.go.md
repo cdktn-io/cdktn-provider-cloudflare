@@ -4,12 +4,12 @@
 
 ### MagicWanBgpFilterProfile <a name="MagicWanBgpFilterProfile" id="@cdktn/provider-cloudflare.magicWanBgpFilterProfile.MagicWanBgpFilterProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicWanBgpFilterProfile.MagicWanBgpFilterProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/magicwanbgpfilterprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magicwanbgpfilterprofile"
 
 magicwanbgpfilterprofile.NewMagicWanBgpFilterProfile(scope Construct, id *string, config MagicWanBgpFilterProfileConfig) MagicWanBgpFilterProfile
 ```
@@ -407,7 +407,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.magicWanBgpFilterProfile.MagicWanBgpFilterProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/magicwanbgpfilterprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magicwanbgpfilterprofile"
 
 magicwanbgpfilterprofile.MagicWanBgpFilterProfile_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.magicWanBgpFilterProfile.MagicWanBgpFilterProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/magicwanbgpfilterprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magicwanbgpfilterprofile"
 
 magicwanbgpfilterprofile.MagicWanBgpFilterProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ magicwanbgpfilterprofile.MagicWanBgpFilterProfile_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.magicWanBgpFilterProfile.MagicWanBgpFilterProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/magicwanbgpfilterprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magicwanbgpfilterprofile"
 
 magicwanbgpfilterprofile.MagicWanBgpFilterProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ magicwanbgpfilterprofile.MagicWanBgpFilterProfile_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.magicWanBgpFilterProfile.MagicWanBgpFilterProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/magicwanbgpfilterprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magicwanbgpfilterprofile"
 
 magicwanbgpfilterprofile.MagicWanBgpFilterProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the MagicWanBgpFilterProfile t
 
 The id of the existing MagicWanBgpFilterProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/magic_wan_bgp_filter_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_wan_bgp_filter_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.magicWanBgpFilterProfile.MagicWanBgpFilterProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/magicwanbgpfilterprofile"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magicwanbgpfilterprofile"
 
 &magicwanbgpfilterprofile.MagicWanBgpFilterProfileConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/magic_wan_bgp_filter_profile#account_id MagicWanBgpFilterProfile#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_wan_bgp_filter_profile#account_id MagicWanBgpFilterProfile#account_id}
 
 ---
 
@@ -970,7 +970,7 @@ MatchAction *string
 
 Action to take when a route matches one of the targets in this profile Available values: "allow", "deny".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/magic_wan_bgp_filter_profile#match_action MagicWanBgpFilterProfile#match_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_wan_bgp_filter_profile#match_action MagicWanBgpFilterProfile#match_action}
 
 ---
 
@@ -984,7 +984,7 @@ Name *string
 
 Friendly name for the filter profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/magic_wan_bgp_filter_profile#name MagicWanBgpFilterProfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_wan_bgp_filter_profile#name MagicWanBgpFilterProfile#name}
 
 ---
 
@@ -1000,7 +1000,7 @@ List of CIDR prefixes.
 
 Each entry may carry an optional suffix that specifies which prefix lengths to match relative to the prefix length N: '{X,Y}' matches prefix lengths in the inclusive range [X, Y] where N <= X <= Y <= max (max is 32 for IPv4, 128 for IPv6), '{X}' matches exactly length X (equivalent to {X,X}), '+' is shorthand for {N, max} (the prefix and all more-specific subnets, including at length N itself; valid even when N is the maximum length). Omit the suffix to match the prefix exactly at length N.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/magic_wan_bgp_filter_profile#targets MagicWanBgpFilterProfile#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_wan_bgp_filter_profile#targets MagicWanBgpFilterProfile#targets}
 
 ---
 
@@ -1014,7 +1014,7 @@ Description *string
 
 Description of the filter profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/magic_wan_bgp_filter_profile#description MagicWanBgpFilterProfile#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_wan_bgp_filter_profile#description MagicWanBgpFilterProfile#description}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### WorkerVersion <a name="WorkerVersion" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version cloudflare_worker_version}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version cloudflare_worker_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersion(scope Construct, id *string, config WorkerVersionConfig) WorkerVersion
 ```
@@ -662,7 +662,7 @@ func ResetUsageModel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.WorkerVersion_IsConstruct(x interface{}) *bool
 ```
@@ -694,7 +694,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.WorkerVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ workerversion.WorkerVersion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.WorkerVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ workerversion.WorkerVersion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.WorkerVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ The construct id used in the generated config for the WorkerVersion to import.
 
 The id of the existing WorkerVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1490,7 +1490,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionAnnotations {
 	WorkersMessage: *string,
@@ -1517,7 +1517,7 @@ WorkersMessage *string
 
 Human-readable message about the version. Truncated to 1000 bytes if longer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#workers_message WorkerVersion#workers_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#workers_message WorkerVersion#workers_message}
 
 ---
 
@@ -1531,7 +1531,7 @@ WorkersTag *string
 
 User-provided identifier for the version. Maximum 100 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#workers_tag WorkerVersion#workers_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#workers_tag WorkerVersion#workers_tag}
 
 ---
 
@@ -1540,10 +1540,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionAssets {
-	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionAssetsConfig,
+	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionAssetsConfig,
 	Directory: *string,
 	Jwt: *string,
 }
@@ -1569,7 +1569,7 @@ Config WorkerVersionAssetsConfig
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#config WorkerVersion#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#config WorkerVersion#config}
 
 ---
 
@@ -1583,7 +1583,7 @@ Directory *string
 
 Path to the directory containing asset files to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#directory WorkerVersion#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#directory WorkerVersion#directory}
 
 ---
 
@@ -1597,7 +1597,7 @@ Jwt *string
 
 Token provided upon successful upload of all files from a registered manifest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#jwt WorkerVersion#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#jwt WorkerVersion#jwt}
 
 ---
 
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionAssetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionAssetsConfig {
 	BasePath: *string,
@@ -1639,7 +1639,7 @@ The public URL path prefix under which assets are served.
 
 A null request value resets it to `/`; responses represent the root as `/`. All versions in a gradual deployment must use the same canonical value. To change it, first deploy the version containing the change at 100%.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#base_path WorkerVersion#base_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#base_path WorkerVersion#base_path}
 
 ---
 
@@ -1653,7 +1653,7 @@ HtmlHandling *string
 
 Determines the redirects and rewrites of requests for HTML content. Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#html_handling WorkerVersion#html_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#html_handling WorkerVersion#html_handling}
 
 ---
 
@@ -1669,7 +1669,7 @@ Determines the response when a request does not match a static asset, and there 
 
 Available values: "none", "404-page", "single-page-application".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#not_found_handling WorkerVersion#not_found_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#not_found_handling WorkerVersion#not_found_handling}
 
 ---
 
@@ -1685,7 +1685,7 @@ When a boolean true, requests will always invoke the Worker script.
 
 Otherwise, attempt to serve an asset matching the request, falling back to the Worker script. When a list of strings, contains path rules to control routing to either the Worker or assets. Glob (*) and negative (!) rules are supported. Rules must start with either '/' or '!/'. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#run_worker_first WorkerVersion#run_worker_first}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#run_worker_first WorkerVersion#run_worker_first}
 
 ---
 
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionBindings {
 	Name: *string,
@@ -1725,16 +1725,16 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 	NamespaceId: *string,
 	NetworkId: *string,
 	OldName: *string,
-	Outbound: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionBindingsOutbound,
+	Outbound: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionBindingsOutbound,
 	Part: *string,
 	Pipeline: *string,
 	QueueName: *string,
-	Retry: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionBindingsRetry,
+	Retry: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionBindingsRetry,
 	ScriptName: *string,
 	SecretName: *string,
 	Service: *string,
 	ServiceId: *string,
-	Simple: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionBindingsSimple,
+	Simple: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionBindingsSimple,
 	StoreId: *string,
 	Stream: *string,
 	Text: *string,
@@ -1807,7 +1807,7 @@ Name *string
 
 A JavaScript variable name for the binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -1823,7 +1823,7 @@ The kind of resource that the binding provides.
 
 Available values: "ai", "ai_search", "ai_search_namespace", "messaging", "analytics_engine", "artifacts", "assets", "browser", "d1", "data_blob", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "inherit", "images", "json", "kv_namespace", "media", "mtls_certificate", "plain_text", "pipelines", "k2", "queue", "ratelimit", "r2_bucket", "secret_text", "send_email", "service", "text_blob", "vectorize", "version_metadata", "secrets_store_secret", "flagship", "secret_key", "workflow", "wasm_module", "vpc_service", "vpc_network".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#type WorkerVersion#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#type WorkerVersion#type}
 
 ---
 
@@ -1837,7 +1837,7 @@ Algorithm *string
 
 Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#algorithm WorkerVersion#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#algorithm WorkerVersion#algorithm}
 
 ---
 
@@ -1851,7 +1851,7 @@ AllowedDestinationAddresses *[]*string
 
 List of allowed destination addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#allowed_destination_addresses WorkerVersion#allowed_destination_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#allowed_destination_addresses WorkerVersion#allowed_destination_addresses}
 
 ---
 
@@ -1865,7 +1865,7 @@ AllowedSenderAddresses *[]*string
 
 List of allowed sender addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#allowed_sender_addresses WorkerVersion#allowed_sender_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#allowed_sender_addresses WorkerVersion#allowed_sender_addresses}
 
 ---
 
@@ -1879,7 +1879,7 @@ AppId *string
 
 ID of the Flagship app to bind to for feature flag evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#app_id WorkerVersion#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#app_id WorkerVersion#app_id}
 
 ---
 
@@ -1893,7 +1893,7 @@ BucketName *string
 
 R2 bucket to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#bucket_name WorkerVersion#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#bucket_name WorkerVersion#bucket_name}
 
 ---
 
@@ -1907,7 +1907,7 @@ CertificateId *string
 
 Identifier of the certificate to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#certificate_id WorkerVersion#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#certificate_id WorkerVersion#certificate_id}
 
 ---
 
@@ -1921,7 +1921,7 @@ ClassName *string
 
 The exported class name of the Durable Object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#class_name WorkerVersion#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#class_name WorkerVersion#class_name}
 
 ---
 
@@ -1935,7 +1935,7 @@ DatabaseId *string
 
 Identifier of the D1 database to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#database_id WorkerVersion#database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#database_id WorkerVersion#database_id}
 
 ---
 
@@ -1949,7 +1949,7 @@ Dataset *string
 
 The name of the dataset to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#dataset WorkerVersion#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#dataset WorkerVersion#dataset}
 
 ---
 
@@ -1963,7 +1963,7 @@ DestinationAddress *string
 
 Destination address for the email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#destination_address WorkerVersion#destination_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#destination_address WorkerVersion#destination_address}
 
 ---
 
@@ -1977,7 +1977,7 @@ DispatchNamespace *string
 
 The dispatch namespace the Durable Object script belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#dispatch_namespace WorkerVersion#dispatch_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#dispatch_namespace WorkerVersion#dispatch_namespace}
 
 ---
 
@@ -1991,7 +1991,7 @@ Entrypoint *string
 
 Entrypoint to invoke on the target Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#entrypoint WorkerVersion#entrypoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#entrypoint WorkerVersion#entrypoint}
 
 ---
 
@@ -2005,7 +2005,7 @@ Environment *string
 
 The environment of the script_name to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#environment WorkerVersion#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#environment WorkerVersion#environment}
 
 ---
 
@@ -2019,7 +2019,7 @@ Format *string
 
 Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format). Available values: "raw", "pkcs8", "spki", "jwk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#format WorkerVersion#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#format WorkerVersion#format}
 
 ---
 
@@ -2033,7 +2033,7 @@ Id *string
 
 Identifier of the D1 database to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#id WorkerVersion#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#id WorkerVersion#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2050,7 +2050,7 @@ Identity *string
 
 Enables Gateway identity for the binding. Requires network_id to be "cf1:network" and cannot be combined with tunnel_id. Available values: "runtime-email-alpha".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#identity WorkerVersion#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#identity WorkerVersion#identity}
 
 ---
 
@@ -2064,7 +2064,7 @@ IndexName *string
 
 Name of the Vectorize index to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#index_name WorkerVersion#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#index_name WorkerVersion#index_name}
 
 ---
 
@@ -2080,7 +2080,7 @@ The user-chosen instance name.
 
 Must exist at deploy time. The worker can search, chat, update, and manage items/jobs on this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#instance_name WorkerVersion#instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#instance_name WorkerVersion#instance_name}
 
 ---
 
@@ -2094,7 +2094,7 @@ Json *string
 
 JSON data to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#json WorkerVersion#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#json WorkerVersion#json}
 
 ---
 
@@ -2108,7 +2108,7 @@ Jurisdiction *string
 
 The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp", "fedramp-high", "us".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#jurisdiction WorkerVersion#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#jurisdiction WorkerVersion#jurisdiction}
 
 ---
 
@@ -2122,7 +2122,7 @@ KeyBase64 *string
 
 Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#key_base64 WorkerVersion#key_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#key_base64 WorkerVersion#key_base64}
 
 ---
 
@@ -2136,7 +2136,7 @@ KeyJwk *string
 
 Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#key_jwk WorkerVersion#key_jwk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#key_jwk WorkerVersion#key_jwk}
 
 ---
 
@@ -2152,7 +2152,7 @@ The namespace the instance belongs to.
 
 Defaults to "default" if omitted. Customers who don't use namespaces can simply omit this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#namespace WorkerVersion#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#namespace WorkerVersion#namespace}
 
 ---
 
@@ -2166,7 +2166,7 @@ NamespaceId *string
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#namespace_id WorkerVersion#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#namespace_id WorkerVersion#namespace_id}
 
 ---
 
@@ -2180,7 +2180,7 @@ NetworkId *string
 
 Identifier of the network to bind to. Only "cf1:network" is currently supported. Mutually exclusive with tunnel_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#network_id WorkerVersion#network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#network_id WorkerVersion#network_id}
 
 ---
 
@@ -2196,7 +2196,7 @@ The old name of the inherited binding.
 
 If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#old_name WorkerVersion#old_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#old_name WorkerVersion#old_name}
 
 ---
 
@@ -2210,7 +2210,7 @@ Outbound WorkerVersionBindingsOutbound
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#outbound WorkerVersion#outbound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#outbound WorkerVersion#outbound}
 
 ---
 
@@ -2224,7 +2224,7 @@ Part *string
 
 The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#part WorkerVersion#part}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#part WorkerVersion#part}
 
 ---
 
@@ -2238,7 +2238,7 @@ Pipeline *string
 
 Name of the Pipeline to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#pipeline WorkerVersion#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#pipeline WorkerVersion#pipeline}
 
 ---
 
@@ -2252,7 +2252,7 @@ QueueName *string
 
 Name of the Queue to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#queue_name WorkerVersion#queue_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#queue_name WorkerVersion#queue_name}
 
 ---
 
@@ -2268,7 +2268,7 @@ Retry policy for calls made to the Durable Object through this binding.
 
 Omitted or null properties use the runtime defaults. These limits are upper bounds and do not enable retries for otherwise ineligible calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#retry WorkerVersion#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#retry WorkerVersion#retry}
 
 ---
 
@@ -2282,7 +2282,7 @@ ScriptName *string
 
 The script where the Durable Object is defined, if it is external to this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#script_name WorkerVersion#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#script_name WorkerVersion#script_name}
 
 ---
 
@@ -2296,7 +2296,7 @@ SecretName *string
 
 Name of the secret in the store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#secret_name WorkerVersion#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#secret_name WorkerVersion#secret_name}
 
 ---
 
@@ -2310,7 +2310,7 @@ Service *string
 
 Name of Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#service WorkerVersion#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#service WorkerVersion#service}
 
 ---
 
@@ -2324,7 +2324,7 @@ ServiceId *string
 
 Identifier of the VPC service to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#service_id WorkerVersion#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#service_id WorkerVersion#service_id}
 
 ---
 
@@ -2338,7 +2338,7 @@ Simple WorkerVersionBindingsSimple
 
 The rate limit configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#simple WorkerVersion#simple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#simple WorkerVersion#simple}
 
 ---
 
@@ -2352,7 +2352,7 @@ StoreId *string
 
 ID of the store containing the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#store_id WorkerVersion#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#store_id WorkerVersion#store_id}
 
 ---
 
@@ -2366,7 +2366,7 @@ Stream *string
 
 ID of a K2 stream owned by the account deploying the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#stream WorkerVersion#stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#stream WorkerVersion#stream}
 
 ---
 
@@ -2380,7 +2380,7 @@ Text *string
 
 The text value to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#text WorkerVersion#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#text WorkerVersion#text}
 
 ---
 
@@ -2394,7 +2394,7 @@ TunnelId *string
 
 UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#tunnel_id WorkerVersion#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#tunnel_id WorkerVersion#tunnel_id}
 
 ---
 
@@ -2408,7 +2408,7 @@ Usages *[]*string
 
 Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#usages WorkerVersion#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#usages WorkerVersion#usages}
 
 ---
 
@@ -2424,7 +2424,7 @@ Identifier for the version to inherit the binding from, which can be the version
 
 Defaults to inheriting the binding from the latest version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#version_id WorkerVersion#version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#version_id WorkerVersion#version_id}
 
 ---
 
@@ -2438,7 +2438,7 @@ WorkflowName *string
 
 Name of the Workflow to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#workflow_name WorkerVersion#workflow_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#workflow_name WorkerVersion#workflow_name}
 
 ---
 
@@ -2447,11 +2447,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutbound.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionBindingsOutbound {
 	Params: interface{},
-	Worker: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionBindingsOutboundWorker,
+	Worker: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionBindingsOutboundWorker,
 }
 ```
 
@@ -2474,7 +2474,7 @@ Params interface{}
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#params WorkerVersion#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#params WorkerVersion#params}
 
 ---
 
@@ -2488,7 +2488,7 @@ Worker WorkerVersionBindingsOutboundWorker
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#worker WorkerVersion#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#worker WorkerVersion#worker}
 
 ---
 
@@ -2497,7 +2497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutboundParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionBindingsOutboundParams {
 	Name: *string,
@@ -2522,7 +2522,7 @@ Name *string
 
 Name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -2531,7 +2531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutboundWorker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionBindingsOutboundWorker {
 	Entrypoint: *string,
@@ -2560,7 +2560,7 @@ Entrypoint *string
 
 Entrypoint to invoke on the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#entrypoint WorkerVersion#entrypoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#entrypoint WorkerVersion#entrypoint}
 
 ---
 
@@ -2574,7 +2574,7 @@ Environment *string
 
 Environment of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#environment WorkerVersion#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#environment WorkerVersion#environment}
 
 ---
 
@@ -2588,7 +2588,7 @@ Service *string
 
 Name of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#service WorkerVersion#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#service WorkerVersion#service}
 
 ---
 
@@ -2597,7 +2597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionBindingsRetry {
 	MaxAttempts: *f64,
@@ -2626,7 +2626,7 @@ Maximum number of retries after the initial request, not the total number of att
 
 Defaults to 4. Zero disables retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#max_attempts WorkerVersion#max_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#max_attempts WorkerVersion#max_attempts}
 
 ---
 
@@ -2642,7 +2642,7 @@ Retry timeout in milliseconds, measured from the start of the call.
 
 No retry starts after it expires, and a retry still running when it expires is cancelled. This is not a request timeout; it does not limit the initial request, which is still subject to any timeouts set by your Worker. Defaults to 10000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#timeout_ms WorkerVersion#timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#timeout_ms WorkerVersion#timeout_ms}
 
 ---
 
@@ -2651,7 +2651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsSimple.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionBindingsSimple {
 	Limit: *f64,
@@ -2680,7 +2680,7 @@ Limit *f64
 
 The limit (requests per period).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#limit WorkerVersion#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#limit WorkerVersion#limit}
 
 ---
 
@@ -2694,7 +2694,7 @@ Period *f64
 
 The period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#period WorkerVersion#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#period WorkerVersion#period}
 
 ---
 
@@ -2710,7 +2710,7 @@ Duration in seconds to apply the mitigation action after the rate limit is excee
 
 Valid values are 0 (disabled), 10, or multiples of 60 up to 86400. Must be greater than or equal to the period when non-zero.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#mitigation_timeout WorkerVersion#mitigation_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#mitigation_timeout WorkerVersion#mitigation_timeout}
 
 ---
 
@@ -2719,7 +2719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionCacheOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionCacheOptions {
 	CrossVersionCache: interface{},
@@ -2750,7 +2750,7 @@ This is independent of `enabled`. It can stay true
 while caching is off, so the preference survives turning
 caching off and back on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#cross_version_cache WorkerVersion#cross_version_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#cross_version_cache WorkerVersion#cross_version_cache}
 
 ---
 
@@ -2764,7 +2764,7 @@ Enabled interface{}
 
 Whether caching is enabled for this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#enabled WorkerVersion#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#enabled WorkerVersion#enabled}
 
 ---
 
@@ -2773,7 +2773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionConfig {
 	Connection: interface{},
@@ -2785,22 +2785,22 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	WorkerId: *string,
-	Annotations: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionAnnotations,
-	Assets: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionAssets,
+	Annotations: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionAnnotations,
+	Assets: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionAssets,
 	Bindings: interface{},
-	CacheOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionCacheOptions,
+	CacheOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionCacheOptions,
 	CompatibilityDate: *string,
 	CompatibilityFlags: *[]*string,
 	Containers: interface{},
 	Deploy: interface{},
 	Exports: interface{},
 	Include: *string,
-	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionLimits,
+	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionLimits,
 	MainModule: *string,
-	Migrations: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionMigrations,
+	Migrations: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionMigrations,
 	Modules: interface{},
 	PackageDependencies: interface{},
-	Placement: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionPlacement,
+	Placement: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionPlacement,
 	UsageModel: *string,
 }
 ```
@@ -2918,7 +2918,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#account_id WorkerVersion#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#account_id WorkerVersion#account_id}
 
 ---
 
@@ -2932,7 +2932,7 @@ WorkerId *string
 
 Identifier for the Worker, which can be ID or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
 
 ---
 
@@ -2946,7 +2946,7 @@ Annotations WorkerVersionAnnotations
 
 Metadata about the version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#annotations WorkerVersion#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#annotations WorkerVersion#annotations}
 
 ---
 
@@ -2964,7 +2964,7 @@ Configuration for assets within a Worker.
 [`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files should be
 included as modules named `_headers` and `_redirects` with content type `text/plain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#assets WorkerVersion#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#assets WorkerVersion#assets}
 
 ---
 
@@ -2978,7 +2978,7 @@ Bindings interface{}
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#bindings WorkerVersion#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#bindings WorkerVersion#bindings}
 
 ---
 
@@ -2997,7 +2997,7 @@ the platform provisions a `cloudflare.app` zone for the Worker.
 A `type: worker` entry in the `exports` map can override this
 value for a single entrypoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#cache_options WorkerVersion#cache_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#cache_options WorkerVersion#cache_options}
 
 ---
 
@@ -3013,7 +3013,7 @@ Date indicating targeted support in the Workers runtime.
 
 Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
 
 ---
 
@@ -3029,7 +3029,7 @@ Flags that enable or disable certain features in the Workers runtime.
 
 Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
 
 ---
 
@@ -3045,7 +3045,7 @@ List of containers attached to a Worker.
 
 Containers can only be attached to Durable Object classes of this Worker script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#containers WorkerVersion#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#containers WorkerVersion#containers}
 
 ---
 
@@ -3059,7 +3059,7 @@ Deploy interface{}
 
 If true, a deployment will be created that sends 100% of traffic to the new version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#deploy WorkerVersion#deploy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#deploy WorkerVersion#deploy}
 
 ---
 
@@ -3078,7 +3078,7 @@ omitted, so only live exports (`created` and
 `expecting-transfer`) are returned. `exports` and `migrations`
 are mutually exclusive on upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#exports WorkerVersion#exports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#exports WorkerVersion#exports}
 
 ---
 
@@ -3094,7 +3094,7 @@ Whether to include the `modules` property of the version in the response, which 
 
 Available values: "modules".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#include WorkerVersion#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#include WorkerVersion#include}
 
 ---
 
@@ -3108,7 +3108,7 @@ Limits WorkerVersionLimits
 
 Resource limits enforced at runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#limits WorkerVersion#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#limits WorkerVersion#limits}
 
 ---
 
@@ -3122,7 +3122,7 @@ MainModule *string
 
 The name of the main module in the `modules` array (e.g. the name of the module that exports a `fetch` handler).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#main_module WorkerVersion#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#main_module WorkerVersion#main_module}
 
 ---
 
@@ -3136,7 +3136,7 @@ Migrations WorkerVersionMigrations
 
 Migrations for Durable Objects associated with the version. Migrations are applied when the version is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#migrations WorkerVersion#migrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#migrations WorkerVersion#migrations}
 
 ---
 
@@ -3155,7 +3155,7 @@ This includes [`_headers`](https://developers.cloudflare.com/workers/static-asse
 [Static Assets](https://developers.cloudflare.com/workers/static-assets/). `_headers` and `_redirects` files should be
 included as modules named `_headers` and `_redirects` with content type `text/plain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#modules WorkerVersion#modules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#modules WorkerVersion#modules}
 
 ---
 
@@ -3169,7 +3169,7 @@ PackageDependencies interface{}
 
 The list of npm packages that were installed and used when this Worker version was built.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#package_dependencies WorkerVersion#package_dependencies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#package_dependencies WorkerVersion#package_dependencies}
 
 ---
 
@@ -3183,7 +3183,7 @@ Placement WorkerVersionPlacement
 
 Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode='smart' for Smart Placement, or one of region/hostname/host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#placement WorkerVersion#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#placement WorkerVersion#placement}
 
 ---
 
@@ -3197,7 +3197,7 @@ UsageModel *string
 
 Usage model for the version. Available values: "standard", "bundled", "unbound".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
 
 ---
 
@@ -3206,7 +3206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionContainers {
 	ClassName: *string,
@@ -3231,7 +3231,7 @@ ClassName *string
 
 Select which Durable Object class should get this container attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#class_name WorkerVersion#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#class_name WorkerVersion#class_name}
 
 ---
 
@@ -3240,11 +3240,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExports.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionExports {
 	Type: *string,
-	Cache: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.workerVersion.WorkerVersionExportsCache,
+	Cache: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.workerVersion.WorkerVersionExportsCache,
 	RenamedTo: *string,
 	State: *string,
 	Storage: *string,
@@ -3277,7 +3277,7 @@ Type *string
 
 The kind of export. Available values: "worker", "durable-object".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#type WorkerVersion#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#type WorkerVersion#type}
 
 ---
 
@@ -3291,7 +3291,7 @@ Cache WorkerVersionExportsCache
 
 Cache override for this entrypoint. It applies only to `type: worker` entries and overrides the Worker's global `cache_options.enabled` for that entrypoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#cache WorkerVersion#cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#cache WorkerVersion#cache}
 
 ---
 
@@ -3309,7 +3309,7 @@ The
 target must appear as a live (`created`) entry in the same
 `exports` map. Write-only: never present in GET responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#renamed_to WorkerVersion#renamed_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#renamed_to WorkerVersion#renamed_to}
 
 ---
 
@@ -3334,7 +3334,7 @@ received from another script via the two-phase transfer flow;
 it carries `storage` and `transfer_from`.
 Available values: "created", "deleted", "renamed", "transferred", "expecting-transfer".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#state WorkerVersion#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#state WorkerVersion#state}
 
 ---
 
@@ -3354,7 +3354,7 @@ for live Durable Object entries (`created` and
 `legacy-kv` selects the legacy key-value storage.
 Available values: "sqlite", "legacy-kv".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#storage WorkerVersion#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#storage WorkerVersion#storage}
 
 ---
 
@@ -3373,7 +3373,7 @@ namespace on this script is materialised from the source
 script's data via the pending-transfer flow. Present on reads
 for `expecting-transfer` entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#transfer_from WorkerVersion#transfer_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#transfer_from WorkerVersion#transfer_from}
 
 ---
 
@@ -3392,7 +3392,7 @@ reference a script in the same account; cross-dispatch-namespace
 transfers are rejected. Write-only: never present in GET
 responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#transferred_to WorkerVersion#transferred_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#transferred_to WorkerVersion#transferred_to}
 
 ---
 
@@ -3401,7 +3401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsCache.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionExportsCache {
 	Enabled: interface{},
@@ -3426,7 +3426,7 @@ Enabled interface{}
 
 Whether caching is enabled for this entrypoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#enabled WorkerVersion#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#enabled WorkerVersion#enabled}
 
 ---
 
@@ -3435,7 +3435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionExportsReconciliation {
 
@@ -3448,7 +3448,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionExportsReconciliationInfo {
 
@@ -3461,7 +3461,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationRenamed.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionExportsReconciliationRenamed {
 
@@ -3474,7 +3474,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationTransferPending.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionExportsReconciliationTransferPending {
 
@@ -3487,7 +3487,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationTransferred.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionExportsReconciliationTransferred {
 
@@ -3500,7 +3500,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationWarnings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionExportsReconciliationWarnings {
 
@@ -3513,7 +3513,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionLimits {
 	CpuMs: *f64,
@@ -3540,7 +3540,7 @@ CpuMs *f64
 
 CPU time limit in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#cpu_ms WorkerVersion#cpu_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#cpu_ms WorkerVersion#cpu_ms}
 
 ---
 
@@ -3554,7 +3554,7 @@ Subrequests *f64
 
 Subrequest limit per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#subrequests WorkerVersion#subrequests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#subrequests WorkerVersion#subrequests}
 
 ---
 
@@ -3563,7 +3563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionMigrations {
 	DeletedClasses: *[]*string,
@@ -3602,7 +3602,7 @@ DeletedClasses *[]*string
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
 
 ---
 
@@ -3616,7 +3616,7 @@ NewClasses *[]*string
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
 
 ---
 
@@ -3630,7 +3630,7 @@ NewSqliteClasses *[]*string
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
 
 ---
 
@@ -3644,7 +3644,7 @@ NewTag *string
 
 Tag to set as the latest migration tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#new_tag WorkerVersion#new_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#new_tag WorkerVersion#new_tag}
 
 ---
 
@@ -3660,7 +3660,7 @@ Tag used to verify against the latest migration tag for this Worker.
 
 If they don't match, the upload is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#old_tag WorkerVersion#old_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#old_tag WorkerVersion#old_tag}
 
 ---
 
@@ -3674,7 +3674,7 @@ RenamedClasses interface{}
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
 
 ---
 
@@ -3688,7 +3688,7 @@ Steps interface{}
 
 Migrations to apply in order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#steps WorkerVersion#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#steps WorkerVersion#steps}
 
 ---
 
@@ -3702,7 +3702,7 @@ TransferredClasses interface{}
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
 
 ---
 
@@ -3711,7 +3711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionMigrationsRenamedClasses {
 	From: *string,
@@ -3723,8 +3723,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -3736,7 +3736,7 @@ From *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -3748,7 +3748,7 @@ To *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -3757,7 +3757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionMigrationsSteps {
 	DeletedClasses: *[]*string,
@@ -3790,7 +3790,7 @@ DeletedClasses *[]*string
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
 
 ---
 
@@ -3804,7 +3804,7 @@ NewClasses *[]*string
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
 
 ---
 
@@ -3818,7 +3818,7 @@ NewSqliteClasses *[]*string
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
 
 ---
 
@@ -3832,7 +3832,7 @@ RenamedClasses interface{}
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
 
 ---
 
@@ -3846,7 +3846,7 @@ TransferredClasses interface{}
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
 
 ---
 
@@ -3855,7 +3855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionMigrationsStepsRenamedClasses {
 	From: *string,
@@ -3867,8 +3867,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -3880,7 +3880,7 @@ From *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -3892,7 +3892,7 @@ To *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -3901,7 +3901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionMigrationsStepsTransferredClasses {
 	From: *string,
@@ -3914,9 +3914,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.fromScript">FromScript</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.fromScript">FromScript</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -3928,7 +3928,7 @@ From *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -3940,7 +3940,7 @@ FromScript *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from_script WorkerVersion#from_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from_script WorkerVersion#from_script}.
 
 ---
 
@@ -3952,7 +3952,7 @@ To *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -3961,7 +3961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionMigrationsTransferredClasses {
 	From: *string,
@@ -3974,9 +3974,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerve
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.fromScript">FromScript</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.fromScript">FromScript</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -3988,7 +3988,7 @@ From *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -4000,7 +4000,7 @@ FromScript *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#from_script WorkerVersion#from_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#from_script WorkerVersion#from_script}.
 
 ---
 
@@ -4012,7 +4012,7 @@ To *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -4021,7 +4021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionModules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionModules {
 	ContentType: *string,
@@ -4052,7 +4052,7 @@ ContentType *string
 
 The content type of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#content_type WorkerVersion#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#content_type WorkerVersion#content_type}
 
 ---
 
@@ -4066,7 +4066,7 @@ Name *string
 
 The name of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -4080,7 +4080,7 @@ ContentBase64 *string
 
 The base64-encoded module content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#content_base64 WorkerVersion#content_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#content_base64 WorkerVersion#content_base64}
 
 ---
 
@@ -4094,7 +4094,7 @@ ContentFile *string
 
 The file path of the module content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#content_file WorkerVersion#content_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#content_file WorkerVersion#content_file}
 
 ---
 
@@ -4103,7 +4103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionPackageDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionPackageDependencies {
 	InstalledVersion: *string,
@@ -4132,7 +4132,7 @@ InstalledVersion *string
 
 The exact version that was resolved and installed by the package manager.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#installed_version WorkerVersion#installed_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#installed_version WorkerVersion#installed_version}
 
 ---
 
@@ -4146,7 +4146,7 @@ Name *string
 
 The npm package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -4160,7 +4160,7 @@ PackageJsonVersion *string
 
 The version constraint as written in package.json.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#package_json_version WorkerVersion#package_json_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#package_json_version WorkerVersion#package_json_version}
 
 ---
 
@@ -4169,7 +4169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionPlacement {
 	Host: *string,
@@ -4202,7 +4202,7 @@ Host *string
 
 TCP host and port for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#host WorkerVersion#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#host WorkerVersion#host}
 
 ---
 
@@ -4216,7 +4216,7 @@ Hostname *string
 
 HTTP hostname for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#hostname WorkerVersion#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#hostname WorkerVersion#hostname}
 
 ---
 
@@ -4230,7 +4230,7 @@ Mode *string
 
 Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Available values: "smart", "targeted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#mode WorkerVersion#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#mode WorkerVersion#mode}
 
 ---
 
@@ -4244,7 +4244,7 @@ Region *string
 
 Cloud region for targeted placement in format 'provider:region'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#region WorkerVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#region WorkerVersion#region}
 
 ---
 
@@ -4258,7 +4258,7 @@ Target interface{}
 
 Array of placement targets (currently limited to single target).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#target WorkerVersion#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#target WorkerVersion#target}
 
 ---
 
@@ -4267,7 +4267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionPlacementTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 &workerversion.WorkerVersionPlacementTarget {
 	Host: *string,
@@ -4296,7 +4296,7 @@ Host *string
 
 TCP host:port for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#host WorkerVersion#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#host WorkerVersion#host}
 
 ---
 
@@ -4310,7 +4310,7 @@ Hostname *string
 
 HTTP hostname for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#hostname WorkerVersion#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#hostname WorkerVersion#hostname}
 
 ---
 
@@ -4324,7 +4324,7 @@ Region *string
 
 Cloud region in format 'provider:region'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker_version#region WorkerVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker_version#region WorkerVersion#region}
 
 ---
 
@@ -4335,7 +4335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionAnnotationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionAnnotationsOutputReference
 ```
@@ -4653,7 +4653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionAssetsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionAssetsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionAssetsConfigOutputReference
 ```
@@ -5018,7 +5018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionAssetsOutputReference
 ```
@@ -5378,7 +5378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionBindingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionBindingsList
 ```
@@ -5538,7 +5538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutboundOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionBindingsOutboundOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionBindingsOutboundOutputReference
 ```
@@ -5871,7 +5871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutboundParamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionBindingsOutboundParamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionBindingsOutboundParamsList
 ```
@@ -6031,7 +6031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutboundParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionBindingsOutboundParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionBindingsOutboundParamsOutputReference
 ```
@@ -6320,7 +6320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutboundWorkerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionBindingsOutboundWorkerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionBindingsOutboundWorkerOutputReference
 ```
@@ -6656,7 +6656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionBindingsOutputReference
 ```
@@ -8253,7 +8253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionBindingsRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionBindingsRetryOutputReference
 ```
@@ -8560,7 +8560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsSimpleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionBindingsSimpleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionBindingsSimpleOutputReference
 ```
@@ -8882,7 +8882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionCacheOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionCacheOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionCacheOptionsOutputReference
 ```
@@ -9189,7 +9189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionContainersList
 ```
@@ -9349,7 +9349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionContainersOutputReference
 ```
@@ -9638,7 +9638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsCacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsCacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionExportsCacheOutputReference
 ```
@@ -9909,7 +9909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsMap(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionExportsMap
 ```
@@ -10056,7 +10056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) WorkerVersionExportsOutputReference
 ```
@@ -10523,7 +10523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionExportsReconciliationInfoList
 ```
@@ -10672,7 +10672,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionExportsReconciliationInfoOutputReference
 ```
@@ -10994,7 +10994,7 @@ func InternalValue() WorkerVersionExportsReconciliationInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionExportsReconciliationOutputReference
 ```
@@ -11342,7 +11342,7 @@ func InternalValue() WorkerVersionExportsReconciliation
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationRenamedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationRenamedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionExportsReconciliationRenamedList
 ```
@@ -11491,7 +11491,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationRenamedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationRenamedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionExportsReconciliationRenamedOutputReference
 ```
@@ -11780,7 +11780,7 @@ func InternalValue() WorkerVersionExportsReconciliationRenamed
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationTransferPendingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationTransferPendingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionExportsReconciliationTransferPendingList
 ```
@@ -11929,7 +11929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationTransferPendingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationTransferPendingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionExportsReconciliationTransferPendingOutputReference
 ```
@@ -12218,7 +12218,7 @@ func InternalValue() WorkerVersionExportsReconciliationTransferPending
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationTransferredList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationTransferredList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionExportsReconciliationTransferredList
 ```
@@ -12367,7 +12367,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationTransferredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationTransferredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionExportsReconciliationTransferredOutputReference
 ```
@@ -12667,7 +12667,7 @@ func InternalValue() WorkerVersionExportsReconciliationTransferred
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationWarningsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationWarningsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionExportsReconciliationWarningsList
 ```
@@ -12816,7 +12816,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionExportsReconciliationWarningsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionExportsReconciliationWarningsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionExportsReconciliationWarningsOutputReference
 ```
@@ -13127,7 +13127,7 @@ func InternalValue() WorkerVersionExportsReconciliationWarnings
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionLimitsOutputReference
 ```
@@ -13434,7 +13434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionMigrationsOutputReference
 ```
@@ -13954,7 +13954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClassesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsRenamedClassesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionMigrationsRenamedClassesList
 ```
@@ -14114,7 +14114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClassesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsRenamedClassesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionMigrationsRenamedClassesOutputReference
 ```
@@ -14439,7 +14439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionMigrationsStepsList
 ```
@@ -14599,7 +14599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionMigrationsStepsOutputReference
 ```
@@ -15037,7 +15037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClassesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsStepsRenamedClassesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionMigrationsStepsRenamedClassesList
 ```
@@ -15197,7 +15197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClassesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsStepsRenamedClassesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionMigrationsStepsRenamedClassesOutputReference
 ```
@@ -15522,7 +15522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClassesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsStepsTransferredClassesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionMigrationsStepsTransferredClassesList
 ```
@@ -15682,7 +15682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClassesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsStepsTransferredClassesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionMigrationsStepsTransferredClassesOutputReference
 ```
@@ -16036,7 +16036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClassesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsTransferredClassesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionMigrationsTransferredClassesList
 ```
@@ -16196,7 +16196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClassesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionMigrationsTransferredClassesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionMigrationsTransferredClassesOutputReference
 ```
@@ -16550,7 +16550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionModulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionModulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionModulesList
 ```
@@ -16710,7 +16710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionModulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionModulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionModulesOutputReference
 ```
@@ -17090,7 +17090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionPackageDependenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionPackageDependenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionPackageDependenciesList
 ```
@@ -17250,7 +17250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionPackageDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionPackageDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionPackageDependenciesOutputReference
 ```
@@ -17583,7 +17583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerVersionPlacementOutputReference
 ```
@@ -17990,7 +17990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionPlacementTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionPlacementTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerVersionPlacementTargetList
 ```
@@ -18150,7 +18150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionPlacementTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workerversion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workerversion"
 
 workerversion.NewWorkerVersionPlacementTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerVersionPlacementTargetOutputReference
 ```

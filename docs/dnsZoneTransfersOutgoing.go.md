@@ -4,12 +4,12 @@
 
 ### DnsZoneTransfersOutgoing <a name="DnsZoneTransfersOutgoing" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.NewDnsZoneTransfersOutgoing(scope Construct, id *string, config DnsZoneTransfersOutgoingConfig) DnsZoneTransfersOutgoing
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersoutgoing"
 
 dnszonetransfersoutgoing.DnsZoneTransfersOutgoing_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DnsZoneTransfersOutgoing t
 
 The id of the existing DnsZoneTransfersOutgoing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_outgoing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_outgoing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransfersoutgoing"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransfersoutgoing"
 
 &dnszonetransfersoutgoing.DnsZoneTransfersOutgoingConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonet
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.name">Name</a></code> | <code>*string</code> | Zone name. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.peers">Peers</a></code> | <code>*[]*string</code> | A list of peer tags. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}. |
 
 ---
 
@@ -923,7 +923,7 @@ Name *string
 
 Zone name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_outgoing#name DnsZoneTransfersOutgoing#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_outgoing#name DnsZoneTransfersOutgoing#name}
 
 ---
 
@@ -937,7 +937,7 @@ Peers *[]*string
 
 A list of peer tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_outgoing#peers DnsZoneTransfersOutgoing#peers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_outgoing#peers DnsZoneTransfersOutgoing#peers}
 
 ---
 
@@ -949,7 +949,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}.
 
 ---
 

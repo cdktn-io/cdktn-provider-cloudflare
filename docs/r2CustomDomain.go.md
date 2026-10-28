@@ -4,12 +4,12 @@
 
 ### R2CustomDomain <a name="R2CustomDomain" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2customdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2customdomain"
 
 r2customdomain.NewR2CustomDomain(scope Construct, id *string, config R2CustomDomainConfig) R2CustomDomain
 ```
@@ -421,7 +421,7 @@ func ResetMinTls()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2customdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2customdomain"
 
 r2customdomain.R2CustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2customdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2customdomain"
 
 r2customdomain.R2CustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ r2customdomain.R2CustomDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2customdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2customdomain"
 
 r2customdomain.R2CustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ r2customdomain.R2CustomDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2customdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2customdomain"
 
 r2customdomain.R2CustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the R2CustomDomain to import.
 
 The id of the existing R2CustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2customdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2customdomain"
 
 &r2customdomain.R2CustomDomainConfig {
 	Connection: interface{},
@@ -1031,7 +1031,7 @@ AccountId *string
 
 Cloudflare account ID that owns the R2 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
 
 ---
 
@@ -1045,7 +1045,7 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
 
 ---
 
@@ -1059,7 +1059,7 @@ Domain *string
 
 Name of the custom domain to be added.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
 
 ---
 
@@ -1073,7 +1073,7 @@ Enabled interface{}
 
 Whether to enable public bucket access at the custom domain. If undefined, the domain will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
 
 ---
 
@@ -1087,7 +1087,7 @@ ZoneId *string
 
 Zone ID of the custom domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
 
 ---
 
@@ -1101,7 +1101,7 @@ Ciphers *[]*string
 
 An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#ciphers R2CustomDomain#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#ciphers R2CustomDomain#ciphers}
 
 ---
 
@@ -1115,7 +1115,7 @@ Jurisdiction *string
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
 
 ---
 
@@ -1132,7 +1132,7 @@ Minimum TLS Version the custom domain will accept for incoming connections.
 If not set, defaults to 1.0.
 Available values: "1.0", "1.1", "1.2", "1.3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
 
 ---
 
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2customdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2customdomain"
 
 &r2customdomain.R2CustomDomainStatus {
 
@@ -1156,7 +1156,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2custom
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2customdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/r2customdomain"
 
 r2customdomain.NewR2CustomDomainStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2CustomDomainStatusOutputReference
 ```

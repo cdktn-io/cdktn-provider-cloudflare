@@ -4,12 +4,12 @@
 
 ### AccountDnsSettingsInternalView <a name="AccountDnsSettingsInternalView" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/accountdnssettingsinternalview"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/accountdnssettingsinternalview"
 
 accountdnssettingsinternalview.NewAccountDnsSettingsInternalView(scope Construct, id *string, config AccountDnsSettingsInternalViewConfig) AccountDnsSettingsInternalView
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/accountdnssettingsinternalview"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/accountdnssettingsinternalview"
 
 accountdnssettingsinternalview.AccountDnsSettingsInternalView_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/accountdnssettingsinternalview"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/accountdnssettingsinternalview"
 
 accountdnssettingsinternalview.AccountDnsSettingsInternalView_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ accountdnssettingsinternalview.AccountDnsSettingsInternalView_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/accountdnssettingsinternalview"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/accountdnssettingsinternalview"
 
 accountdnssettingsinternalview.AccountDnsSettingsInternalView_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ accountdnssettingsinternalview.AccountDnsSettingsInternalView_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/accountdnssettingsinternalview"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/accountdnssettingsinternalview"
 
 accountdnssettingsinternalview.AccountDnsSettingsInternalView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the AccountDnsSettingsInternal
 
 The id of the existing AccountDnsSettingsInternalView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/account_dns_settings_internal_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings_internal_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/accountdnssettingsinternalview"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/accountdnssettingsinternalview"
 
 &accountdnssettingsinternalview.AccountDnsSettingsInternalViewConfig {
 	Connection: interface{},
@@ -901,7 +901,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
 
 ---
 
@@ -915,7 +915,7 @@ Name *string
 
 The name of the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
 
 ---
 
@@ -929,7 +929,7 @@ Zones *[]*string
 
 The list of zones linked to this view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DlsPrefixBinding <a name="DlsPrefixBinding" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dls_prefix_binding cloudflare_dls_prefix_binding}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dls_prefix_binding cloudflare_dls_prefix_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dlsprefixbinding"
 
 dlsprefixbinding.NewDlsPrefixBinding(scope Construct, id *string, config DlsPrefixBindingConfig) DlsPrefixBinding
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dlsprefixbinding"
 
 dlsprefixbinding.DlsPrefixBinding_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dlsprefixbinding"
 
 dlsprefixbinding.DlsPrefixBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ dlsprefixbinding.DlsPrefixBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dlsprefixbinding"
 
 dlsprefixbinding.DlsPrefixBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ dlsprefixbinding.DlsPrefixBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dlsprefixbinding"
 
 dlsprefixbinding.DlsPrefixBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DlsPrefixBinding to import
 
 The id of the existing DlsPrefixBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dls_prefix_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dls_prefix_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dlsprefixbinding"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dlsprefixbinding"
 
 &dlsprefixbinding.DlsPrefixBindingConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ AccountId *string
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dls_prefix_binding#account_id DlsPrefixBinding#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dls_prefix_binding#account_id DlsPrefixBinding#account_id}
 
 ---
 
@@ -917,7 +917,7 @@ Cidr *string
 
 IP prefix in CIDR notation to bind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dls_prefix_binding#cidr DlsPrefixBinding#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dls_prefix_binding#cidr DlsPrefixBinding#cidr}
 
 ---
 
@@ -931,7 +931,7 @@ PrefixId *string
 
 The ID of the parent IP prefix that contains the CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dls_prefix_binding#prefix_id DlsPrefixBinding#prefix_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dls_prefix_binding#prefix_id DlsPrefixBinding#prefix_id}
 
 ---
 
@@ -945,7 +945,7 @@ RegionKey *string
 
 Region key from managed regions (e.g., "us", "eu").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dls_prefix_binding#region_key DlsPrefixBinding#region_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dls_prefix_binding#region_key DlsPrefixBinding#region_key}
 
 ---
 

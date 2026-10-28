@@ -4,12 +4,12 @@
 
 ### AuthenticatedOriginPullsHostnameCertificate <a name="AuthenticatedOriginPullsHostnameCertificate" id="@cdktn/provider-cloudflare.authenticatedOriginPullsHostnameCertificate.AuthenticatedOriginPullsHostnameCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.authenticatedOriginPullsHostnameCertificate.AuthenticatedOriginPullsHostnameCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/authenticatedoriginpullshostnamecertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/authenticatedoriginpullshostnamecertificate"
 
 authenticatedoriginpullshostnamecertificate.NewAuthenticatedOriginPullsHostnameCertificate(scope Construct, id *string, config AuthenticatedOriginPullsHostnameCertificateConfig) AuthenticatedOriginPullsHostnameCertificate
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.authenticatedOriginPullsHostnameCertificate.AuthenticatedOriginPullsHostnameCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/authenticatedoriginpullshostnamecertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/authenticatedoriginpullshostnamecertificate"
 
 authenticatedoriginpullshostnamecertificate.AuthenticatedOriginPullsHostnameCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.authenticatedOriginPullsHostnameCertificate.AuthenticatedOriginPullsHostnameCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/authenticatedoriginpullshostnamecertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/authenticatedoriginpullshostnamecertificate"
 
 authenticatedoriginpullshostnamecertificate.AuthenticatedOriginPullsHostnameCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ authenticatedoriginpullshostnamecertificate.AuthenticatedOriginPullsHostnameCert
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.authenticatedOriginPullsHostnameCertificate.AuthenticatedOriginPullsHostnameCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/authenticatedoriginpullshostnamecertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/authenticatedoriginpullshostnamecertificate"
 
 authenticatedoriginpullshostnamecertificate.AuthenticatedOriginPullsHostnameCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ authenticatedoriginpullshostnamecertificate.AuthenticatedOriginPullsHostnameCert
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.authenticatedOriginPullsHostnameCertificate.AuthenticatedOriginPullsHostnameCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/authenticatedoriginpullshostnamecertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/authenticatedoriginpullshostnamecertificate"
 
 authenticatedoriginpullshostnamecertificate.AuthenticatedOriginPullsHostnameCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the AuthenticatedOriginPullsHo
 
 The id of the existing AuthenticatedOriginPullsHostnameCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/authenticated_origin_pulls_hostname_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/authenticated_origin_pulls_hostname_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.authenticatedOriginPullsHostnameCertificate.AuthenticatedOriginPullsHostnameCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/authenticatedoriginpullshostnamecertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/authenticatedoriginpullshostnamecertificate"
 
 &authenticatedoriginpullshostnamecertificate.AuthenticatedOriginPullsHostnameCertificateConfig {
 	Connection: interface{},
@@ -945,7 +945,7 @@ Certificate *string
 
 The hostname certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/authenticated_origin_pulls_hostname_certificate#certificate AuthenticatedOriginPullsHostnameCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/authenticated_origin_pulls_hostname_certificate#certificate AuthenticatedOriginPullsHostnameCertificate#certificate}
 
 ---
 
@@ -959,7 +959,7 @@ PrivateKey *string
 
 The hostname certificate's private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/authenticated_origin_pulls_hostname_certificate#private_key AuthenticatedOriginPullsHostnameCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/authenticated_origin_pulls_hostname_certificate#private_key AuthenticatedOriginPullsHostnameCertificate#private_key}
 
 ---
 
@@ -973,7 +973,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/authenticated_origin_pulls_hostname_certificate#zone_id AuthenticatedOriginPullsHostnameCertificate#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/authenticated_origin_pulls_hostname_certificate#zone_id AuthenticatedOriginPullsHostnameCertificate#zone_id}
 
 ---
 

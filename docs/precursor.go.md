@@ -4,12 +4,12 @@
 
 ### Precursor <a name="Precursor" id="@cdktn/provider-cloudflare.precursor.Precursor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor cloudflare_precursor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor cloudflare_precursor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.precursor.Precursor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 precursor.NewPrecursor(scope Construct, id *string, config PrecursorConfig) Precursor
 ```
@@ -427,7 +427,7 @@ func ResetEnforcementRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.precursor.Precursor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 precursor.Precursor_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.precursor.Precursor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 precursor.Precursor_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ precursor.Precursor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.precursor.Precursor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 precursor.Precursor_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ precursor.Precursor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.precursor.Precursor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 precursor.Precursor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the Precursor to import.
 
 The id of the existing Precursor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.precursor.PrecursorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 &precursor.PrecursorConfig {
 	Connection: interface{},
@@ -906,7 +906,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor#zone_id Precursor#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#zone_id Precursor#zone_id}
 
 ---
 
@@ -922,7 +922,7 @@ The zone-level Precursor enforcement mode applied to requests that do not match 
 
 Available values: "off", "min-friction", "max-security".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor#default_mode Precursor#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#default_mode Precursor#default_mode}
 
 ---
 
@@ -936,7 +936,7 @@ EnforcementRules interface{}
 
 The ordered list of enforcement rules for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
 
 ---
 
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 &precursor.PrecursorEnforcementRules {
 	Expression: *string,
@@ -976,7 +976,7 @@ Expression *string
 
 The filter expression that determines which requests the rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor#expression Precursor#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#expression Precursor#expression}
 
 ---
 
@@ -990,7 +990,7 @@ Mode *string
 
 The override mode Precursor applies to requests matching an enforcement rule. Unlike `default_mode`, this cannot be `off`. Available values: "min-friction", "max-security".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor#mode Precursor#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#mode Precursor#mode}
 
 ---
 
@@ -1004,7 +1004,7 @@ Description *string
 
 An informative description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor#description Precursor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#description Precursor#description}
 
 ---
 
@@ -1018,7 +1018,7 @@ Enabled interface{}
 
 Whether the rule is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/precursor#enabled Precursor#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#enabled Precursor#enabled}
 
 ---
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 precursor.NewPrecursorEnforcementRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrecursorEnforcementRulesList
 ```
@@ -1189,7 +1189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/precursor"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/precursor"
 
 precursor.NewPrecursorEnforcementRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrecursorEnforcementRulesOutputReference
 ```

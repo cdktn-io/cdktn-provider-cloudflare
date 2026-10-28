@@ -4,12 +4,12 @@
 
 ### PagesDomain <a name="PagesDomain" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pages_domain cloudflare_pages_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/pages_domain cloudflare_pages_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 pagesdomain.NewPagesDomain(scope Construct, id *string, config PagesDomainConfig) PagesDomain
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 pagesdomain.PagesDomain_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 pagesdomain.PagesDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ pagesdomain.PagesDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 pagesdomain.PagesDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ pagesdomain.PagesDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 pagesdomain.PagesDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the PagesDomain to import.
 
 The id of the existing PagesDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 &pagesdomain.PagesDomainConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/pages_domain#account_id PagesDomain#account_id}
 
 ---
 
@@ -970,7 +970,7 @@ Name *string
 
 Fully qualified domain name for the Pages project, such as `example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pages_domain#name PagesDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/pages_domain#name PagesDomain#name}
 
 ---
 
@@ -986,7 +986,7 @@ Name of the Pages project.
 
 Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/pages_domain#project_name PagesDomain#project_name}
 
 ---
 
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomainValidationData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 &pagesdomain.PagesDomainValidationData {
 
@@ -1008,7 +1008,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdom
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomainVerificationData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 &pagesdomain.PagesDomainVerificationData {
 
@@ -1023,7 +1023,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdom
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomainValidationDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 pagesdomain.NewPagesDomainValidationDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesDomainValidationDataOutputReference
 ```
@@ -1327,7 +1327,7 @@ func InternalValue() PagesDomainValidationData
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomainVerificationDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pagesdomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pagesdomain"
 
 pagesdomain.NewPagesDomainVerificationDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesDomainVerificationDataOutputReference
 ```

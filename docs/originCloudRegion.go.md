@@ -4,12 +4,12 @@
 
 ### OriginCloudRegion <a name="OriginCloudRegion" id="@cdktn/provider-cloudflare.originCloudRegion.OriginCloudRegion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_cloud_region cloudflare_origin_cloud_region}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_cloud_region cloudflare_origin_cloud_region}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.originCloudRegion.OriginCloudRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origincloudregion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origincloudregion"
 
 origincloudregion.NewOriginCloudRegion(scope Construct, id *string, config OriginCloudRegionConfig) OriginCloudRegion
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.originCloudRegion.OriginCloudRegion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origincloudregion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origincloudregion"
 
 origincloudregion.OriginCloudRegion_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.originCloudRegion.OriginCloudRegion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origincloudregion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origincloudregion"
 
 origincloudregion.OriginCloudRegion_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ origincloudregion.OriginCloudRegion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.originCloudRegion.OriginCloudRegion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origincloudregion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origincloudregion"
 
 origincloudregion.OriginCloudRegion_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ origincloudregion.OriginCloudRegion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.originCloudRegion.OriginCloudRegion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origincloudregion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origincloudregion"
 
 origincloudregion.OriginCloudRegion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OriginCloudRegion to impor
 
 The id of the existing OriginCloudRegion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_cloud_region#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_cloud_region#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.originCloudRegion.OriginCloudRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/origincloudregion"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/origincloudregion"
 
 &origincloudregion.OriginCloudRegionConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ Origin IP address (IPv4 or IPv6).
 
 For the single PUT endpoint (`PUT /origin/cloud_regions/{origin_ip}`), this field must match the path parameter or the request will be rejected with a 400 error. For the batch PUT endpoint, this field identifies which mapping to upsert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_cloud_region#origin_ip OriginCloudRegion#origin_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_cloud_region#origin_ip OriginCloudRegion#origin_ip}
 
 ---
 
@@ -930,7 +930,7 @@ Region *string
 
 Cloud vendor region identifier. Must be a valid region for the specified vendor as returned by the supported_regions endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_cloud_region#region OriginCloudRegion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_cloud_region#region OriginCloudRegion#region}
 
 ---
 
@@ -944,7 +944,7 @@ Vendor *string
 
 Cloud vendor hosting the origin. Must be one of the supported vendors. Available values: "aws", "azure", "gcp", "oci".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_cloud_region#vendor OriginCloudRegion#vendor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_cloud_region#vendor OriginCloudRegion#vendor}
 
 ---
 
@@ -958,7 +958,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/origin_cloud_region#zone_id OriginCloudRegion#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_cloud_region#zone_id OriginCloudRegion#zone_id}
 
 ---
 

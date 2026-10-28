@@ -4,12 +4,12 @@
 
 ### DataCloudflareShareRecipients <a name="DataCloudflareShareRecipients" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipients"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_recipients cloudflare_share_recipients}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_recipients cloudflare_share_recipients}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipients.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.NewDataCloudflareShareRecipients(scope Construct, id *string, config DataCloudflareShareRecipientsConfig) DataCloudflareShareRecipients
 ```
@@ -312,7 +312,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipients.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.DataCloudflareShareRecipients_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipients.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.DataCloudflareShareRecipients_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datacloudflaresharerecipients.DataCloudflareShareRecipients_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipients.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.DataCloudflareShareRecipients_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datacloudflaresharerecipients.DataCloudflareShareRecipients_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipients.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.DataCloudflareShareRecipients_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareShareRecipie
 
 The id of the existing DataCloudflareShareRecipients that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_recipients#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_recipients#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipientsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 &datacloudflaresharerecipients.DataCloudflareShareRecipientsConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ AccountId *string
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_recipients#account_id DataCloudflareShareRecipients#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_recipients#account_id DataCloudflareShareRecipients#account_id}
 
 ---
 
@@ -807,7 +807,7 @@ ShareId *string
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_recipients#share_id DataCloudflareShareRecipients#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_recipients#share_id DataCloudflareShareRecipients#share_id}
 
 ---
 
@@ -821,7 +821,7 @@ IncludeResources interface{}
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_recipients#include_resources DataCloudflareShareRecipients#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_recipients#include_resources DataCloudflareShareRecipients#include_resources}
 
 ---
 
@@ -835,7 +835,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_recipients#max_items DataCloudflareShareRecipients#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_recipients#max_items DataCloudflareShareRecipients#max_items}
 
 ---
 
@@ -844,7 +844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipientsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 &datacloudflaresharerecipients.DataCloudflareShareRecipientsResult {
 
@@ -857,7 +857,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipientsResultResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 &datacloudflaresharerecipients.DataCloudflareShareRecipientsResultResources {
 
@@ -872,7 +872,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipientsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.NewDataCloudflareShareRecipientsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareShareRecipientsResultList
 ```
@@ -1021,7 +1021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipientsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.NewDataCloudflareShareRecipientsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareShareRecipientsResultOutputReference
 ```
@@ -1354,7 +1354,7 @@ func InternalValue() DataCloudflareShareRecipientsResult
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipientsResultResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.NewDataCloudflareShareRecipientsResultResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareShareRecipientsResultResourcesList
 ```
@@ -1503,7 +1503,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipients.DataCloudflareShareRecipientsResultResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresharerecipients"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaresharerecipients"
 
 datacloudflaresharerecipients.NewDataCloudflareShareRecipientsResultResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareShareRecipientsResultResourcesOutputReference
 ```

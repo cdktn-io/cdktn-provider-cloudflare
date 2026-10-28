@@ -4,12 +4,12 @@
 
 ### ZeroTrustCasbIntegration <a name="ZeroTrustCasbIntegration" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration cloudflare_zero_trust_casb_integration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration cloudflare_zero_trust_casb_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegration(scope Construct, id *string, config ZeroTrustCasbIntegrationConfig) ZeroTrustCasbIntegration
 ```
@@ -541,7 +541,7 @@ func ResetUseCases()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.ZeroTrustCasbIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.ZeroTrustCasbIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ zerotrustcasbintegration.ZeroTrustCasbIntegration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.ZeroTrustCasbIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -601,7 +601,7 @@ zerotrustcasbintegration.ZeroTrustCasbIntegration_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.ZeroTrustCasbIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -630,7 +630,7 @@ The construct id used in the generated config for the ZeroTrustCasbIntegration t
 
 The id of the existing ZeroTrustCasbIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1116,12 +1116,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationAnthropic {
-	AnthropicAdminApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKey,
-	AnthropicComplianceApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicComplianceApiKey,
-	AnthropicWorkspaceApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiKey,
+	AnthropicAdminApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKey,
+	AnthropicComplianceApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicComplianceApiKey,
+	AnthropicWorkspaceApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiKey,
 }
 ```
 
@@ -1145,7 +1145,7 @@ AnthropicAdminApiKey ZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKey
 
 Authenticate with an Anthropic Admin API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#anthropic_admin_api_key ZeroTrustCasbIntegration#anthropic_admin_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#anthropic_admin_api_key ZeroTrustCasbIntegration#anthropic_admin_api_key}
 
 ---
 
@@ -1159,7 +1159,7 @@ AnthropicComplianceApiKey ZeroTrustCasbIntegrationAnthropicAnthropicComplianceAp
 
 Authenticate with an Anthropic Compliance API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#anthropic_compliance_api_key ZeroTrustCasbIntegration#anthropic_compliance_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#anthropic_compliance_api_key ZeroTrustCasbIntegration#anthropic_compliance_api_key}
 
 ---
 
@@ -1173,7 +1173,7 @@ AnthropicWorkspaceApiKey ZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiK
 
 Authenticate with an Anthropic Workspace API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#anthropic_workspace_api_key ZeroTrustCasbIntegration#anthropic_workspace_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#anthropic_workspace_api_key ZeroTrustCasbIntegration#anthropic_workspace_api_key}
 
 ---
 
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKey {
 	ApiKey: *string,
@@ -1209,7 +1209,7 @@ ApiKey *string
 
 Anthropic Admin API key. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#api_key ZeroTrustCasbIntegration#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#api_key ZeroTrustCasbIntegration#api_key}
 
 ---
 
@@ -1223,7 +1223,7 @@ TenantId *string
 
 Organization ID. Auto-extracted from the key if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
 
 ---
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicComplianceApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationAnthropicAnthropicComplianceApiKey {
 	ComplianceApiKey: *string,
@@ -1259,7 +1259,7 @@ ComplianceApiKey *string
 
 Anthropic Compliance API key. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#compliance_api_key ZeroTrustCasbIntegration#compliance_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#compliance_api_key ZeroTrustCasbIntegration#compliance_api_key}
 
 ---
 
@@ -1273,7 +1273,7 @@ TenantId *string
 
 Organization ID. Auto-extracted from the key if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
 
 ---
 
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiKey {
 	ApiKey: *string,
@@ -1309,7 +1309,7 @@ ApiKey *string
 
 Anthropic Workspace API key. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#api_key ZeroTrustCasbIntegration#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#api_key ZeroTrustCasbIntegration#api_key}
 
 ---
 
@@ -1323,7 +1323,7 @@ TenantId *string
 
 Workspace ID, found in the Anthropic Console URL after /workspaces/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#tenant_id ZeroTrustCasbIntegration#tenant_id}
 
 ---
 
@@ -1332,10 +1332,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAws.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationAws {
-	AwsIamRole: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAwsAwsIamRole,
+	AwsIamRole: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAwsAwsIamRole,
 }
 ```
 
@@ -1357,7 +1357,7 @@ AwsIamRole ZeroTrustCasbIntegrationAwsAwsIamRole
 
 Authenticate by delegating to a cross-account IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#aws_iam_role ZeroTrustCasbIntegration#aws_iam_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#aws_iam_role ZeroTrustCasbIntegration#aws_iam_role}
 
 ---
 
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAwsAwsIamRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationAwsAwsIamRole {
 	ExternalId: *string,
@@ -1393,7 +1393,7 @@ ExternalId *string
 
 External ID required when assuming the IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#external_id ZeroTrustCasbIntegration#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#external_id ZeroTrustCasbIntegration#external_id}
 
 ---
 
@@ -1407,7 +1407,7 @@ RoleArn *string
 
 ARN of the cross-account IAM role Cloudflare will assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#role_arn ZeroTrustCasbIntegration#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#role_arn ZeroTrustCasbIntegration#role_arn}
 
 ---
 
@@ -1416,10 +1416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationBox.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationBox {
-	BoxServerAuthentication: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationBoxBoxServerAuthentication,
+	BoxServerAuthentication: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationBoxBoxServerAuthentication,
 }
 ```
 
@@ -1443,7 +1443,7 @@ Authenticate with Box server authentication.
 
 Before creating the integration, add the Cloudflare CASB application in Box Admin Console > Integrations > Platform Apps Manager > Server Authentication Apps using client ID `puaghckpy0578r8p6f3g0rf860unup4r`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#box_server_authentication ZeroTrustCasbIntegration#box_server_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#box_server_authentication ZeroTrustCasbIntegration#box_server_authentication}
 
 ---
 
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationBoxBoxServerAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationBoxBoxServerAuthentication {
 	EnterpriseId: *string,
@@ -1477,7 +1477,7 @@ EnterpriseId *string
 
 Box Enterprise ID from Admin Console > Accounts & Billing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#enterprise_id ZeroTrustCasbIntegration#enterprise_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#enterprise_id ZeroTrustCasbIntegration#enterprise_id}
 
 ---
 
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationConfig {
 	Connection: interface{},
@@ -1499,13 +1499,13 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrus
 	AccountId: *string,
 	Name: *string,
 	Paused: interface{},
-	Anthropic: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropic,
-	Aws: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAws,
-	Box: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationBox,
+	Anthropic: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropic,
+	Aws: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAws,
+	Box: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationBox,
 	DlpProfiles: *[]*string,
-	GoogleCloudPlatform: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleCloudPlatform,
-	GoogleWorkspace: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleWorkspace,
-	Openai: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenai,
+	GoogleCloudPlatform: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleCloudPlatform,
+	GoogleWorkspace: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleWorkspace,
+	Openai: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenai,
 	Permissions: *[]*string,
 	UseCases: *[]*string,
 }
@@ -1617,7 +1617,7 @@ AccountId *string
 
 Cloudflare account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#account_id ZeroTrustCasbIntegration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#account_id ZeroTrustCasbIntegration#account_id}
 
 ---
 
@@ -1631,7 +1631,7 @@ Name *string
 
 Name of the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#name ZeroTrustCasbIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#name ZeroTrustCasbIntegration#name}
 
 ---
 
@@ -1645,7 +1645,7 @@ Paused interface{}
 
 Whether the integration is paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#paused ZeroTrustCasbIntegration#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#paused ZeroTrustCasbIntegration#paused}
 
 ---
 
@@ -1659,7 +1659,7 @@ Anthropic ZeroTrustCasbIntegrationAnthropic
 
 Anthropic integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#anthropic ZeroTrustCasbIntegration#anthropic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#anthropic ZeroTrustCasbIntegration#anthropic}
 
 ---
 
@@ -1673,7 +1673,7 @@ Aws ZeroTrustCasbIntegrationAws
 
 AWS integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#aws ZeroTrustCasbIntegration#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#aws ZeroTrustCasbIntegration#aws}
 
 ---
 
@@ -1687,7 +1687,7 @@ Box ZeroTrustCasbIntegrationBox
 
 Box integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#box ZeroTrustCasbIntegration#box}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#box ZeroTrustCasbIntegration#box}
 
 ---
 
@@ -1701,7 +1701,7 @@ DlpProfiles *[]*string
 
 DLP profile IDs to associate with the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#dlp_profiles ZeroTrustCasbIntegration#dlp_profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#dlp_profiles ZeroTrustCasbIntegration#dlp_profiles}
 
 ---
 
@@ -1715,7 +1715,7 @@ GoogleCloudPlatform ZeroTrustCasbIntegrationGoogleCloudPlatform
 
 Google Cloud Platform integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#google_cloud_platform ZeroTrustCasbIntegration#google_cloud_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#google_cloud_platform ZeroTrustCasbIntegration#google_cloud_platform}
 
 ---
 
@@ -1729,7 +1729,7 @@ GoogleWorkspace ZeroTrustCasbIntegrationGoogleWorkspace
 
 Google Workspace integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#google_workspace ZeroTrustCasbIntegration#google_workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#google_workspace ZeroTrustCasbIntegration#google_workspace}
 
 ---
 
@@ -1743,7 +1743,7 @@ Openai ZeroTrustCasbIntegrationOpenai
 
 OpenAI integration configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#openai ZeroTrustCasbIntegration#openai}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#openai ZeroTrustCasbIntegration#openai}
 
 ---
 
@@ -1757,7 +1757,7 @@ Permissions *[]*string
 
 Permission scopes granted to the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#permissions ZeroTrustCasbIntegration#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#permissions ZeroTrustCasbIntegration#permissions}
 
 ---
 
@@ -1771,7 +1771,7 @@ UseCases *[]*string
 
 Use cases to enroll the integration in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#use_cases ZeroTrustCasbIntegration#use_cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#use_cases ZeroTrustCasbIntegration#use_cases}
 
 ---
 
@@ -1780,10 +1780,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleCloudPlatform.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationGoogleCloudPlatform {
-	GoogleCloudPlatformServiceAccount: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleCloudPlatformGoogleCloudPlatformServiceAccount,
+	GoogleCloudPlatformServiceAccount: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleCloudPlatformGoogleCloudPlatformServiceAccount,
 }
 ```
 
@@ -1805,7 +1805,7 @@ GoogleCloudPlatformServiceAccount ZeroTrustCasbIntegrationGoogleCloudPlatformGoo
 
 Authenticate with a service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#google_cloud_platform_service_account ZeroTrustCasbIntegration#google_cloud_platform_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#google_cloud_platform_service_account ZeroTrustCasbIntegration#google_cloud_platform_service_account}
 
 ---
 
@@ -1814,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleCloudPlatformGoogleCloudPlatformServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationGoogleCloudPlatformGoogleCloudPlatformServiceAccount {
 	ServiceAccountKeyJson: *string,
@@ -1841,7 +1841,7 @@ Contents of a Google service account JSON key file.
 
 This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#service_account_key_json ZeroTrustCasbIntegration#service_account_key_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#service_account_key_json ZeroTrustCasbIntegration#service_account_key_json}
 
 ---
 
@@ -1850,10 +1850,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationGoogleWorkspace {
-	GoogleDomainWideDelegationServiceAccount: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleWorkspaceGoogleDomainWideDelegationServiceAccount,
+	GoogleDomainWideDelegationServiceAccount: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleWorkspaceGoogleDomainWideDelegationServiceAccount,
 }
 ```
 
@@ -1875,7 +1875,7 @@ GoogleDomainWideDelegationServiceAccount ZeroTrustCasbIntegrationGoogleWorkspace
 
 Authenticate with a service account granted domain-wide delegation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#google_domain_wide_delegation_service_account ZeroTrustCasbIntegration#google_domain_wide_delegation_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#google_domain_wide_delegation_service_account ZeroTrustCasbIntegration#google_domain_wide_delegation_service_account}
 
 ---
 
@@ -1884,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleWorkspaceGoogleDomainWideDelegationServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationGoogleWorkspaceGoogleDomainWideDelegationServiceAccount {
 	AdministratorEmail: *string,
@@ -1911,7 +1911,7 @@ AdministratorEmail *string
 
 A Google Workspace super administrator email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#administrator_email ZeroTrustCasbIntegration#administrator_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#administrator_email ZeroTrustCasbIntegration#administrator_email}
 
 ---
 
@@ -1927,7 +1927,7 @@ Contents of a Google service account JSON key file.
 
 This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#service_account_key_json ZeroTrustCasbIntegration#service_account_key_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#service_account_key_json ZeroTrustCasbIntegration#service_account_key_json}
 
 ---
 
@@ -1936,11 +1936,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenai.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationOpenai {
-	ChatgptComplianceApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKey,
-	ChatgptStandardApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiChatgptStandardApiKey,
+	ChatgptComplianceApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKey,
+	ChatgptStandardApiKey: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiChatgptStandardApiKey,
 }
 ```
 
@@ -1963,7 +1963,7 @@ ChatgptComplianceApiKey ZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKey
 
 Authenticate with an OpenAI Compliance API key. Requires an Enterprise plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#chatgpt_compliance_api_key ZeroTrustCasbIntegration#chatgpt_compliance_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#chatgpt_compliance_api_key ZeroTrustCasbIntegration#chatgpt_compliance_api_key}
 
 ---
 
@@ -1977,7 +1977,7 @@ ChatgptStandardApiKey ZeroTrustCasbIntegrationOpenaiChatgptStandardApiKey
 
 Authenticate with an OpenAI Admin API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#chatgpt_standard_api_key ZeroTrustCasbIntegration#chatgpt_standard_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#chatgpt_standard_api_key ZeroTrustCasbIntegration#chatgpt_standard_api_key}
 
 ---
 
@@ -1986,7 +1986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKey {
 	AdminApiKey: *string,
@@ -2021,7 +2021,7 @@ AdminApiKey *string
 
 OpenAI Admin API key with api.management.read access. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#admin_api_key ZeroTrustCasbIntegration#admin_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#admin_api_key ZeroTrustCasbIntegration#admin_api_key}
 
 ---
 
@@ -2035,7 +2035,7 @@ ComplianceApiKey *string
 
 OpenAI Compliance API key for audit logs. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#compliance_api_key ZeroTrustCasbIntegration#compliance_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#compliance_api_key ZeroTrustCasbIntegration#compliance_api_key}
 
 ---
 
@@ -2049,7 +2049,7 @@ OrganizationId *string
 
 OpenAI Organization ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#organization_id ZeroTrustCasbIntegration#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#organization_id ZeroTrustCasbIntegration#organization_id}
 
 ---
 
@@ -2063,7 +2063,7 @@ WorkspaceId *string
 
 OpenAI Workspace ID for compliance data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#workspace_id ZeroTrustCasbIntegration#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#workspace_id ZeroTrustCasbIntegration#workspace_id}
 
 ---
 
@@ -2077,7 +2077,7 @@ ProjectApiKey *string
 
 OpenAI Project API key, used for DLP. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#project_api_key ZeroTrustCasbIntegration#project_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#project_api_key ZeroTrustCasbIntegration#project_api_key}
 
 ---
 
@@ -2091,7 +2091,7 @@ ProjectId *string
 
 OpenAI Project ID, used for DLP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#project_id ZeroTrustCasbIntegration#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#project_id ZeroTrustCasbIntegration#project_id}
 
 ---
 
@@ -2100,7 +2100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiChatgptStandardApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 &zerotrustcasbintegration.ZeroTrustCasbIntegrationOpenaiChatgptStandardApiKey {
 	AdminApiKey: *string,
@@ -2131,7 +2131,7 @@ AdminApiKey *string
 
 OpenAI Admin API key with api.management.read access. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#admin_api_key ZeroTrustCasbIntegration#admin_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#admin_api_key ZeroTrustCasbIntegration#admin_api_key}
 
 ---
 
@@ -2145,7 +2145,7 @@ OrganizationId *string
 
 OpenAI Organization ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#organization_id ZeroTrustCasbIntegration#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#organization_id ZeroTrustCasbIntegration#organization_id}
 
 ---
 
@@ -2159,7 +2159,7 @@ ProjectApiKey *string
 
 OpenAI Project API key, used for DLP. This value is write-only and is never persisted to Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#project_api_key ZeroTrustCasbIntegration#project_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#project_api_key ZeroTrustCasbIntegration#project_api_key}
 
 ---
 
@@ -2173,7 +2173,7 @@ ProjectId *string
 
 OpenAI Project ID, used for DLP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#project_id ZeroTrustCasbIntegration#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#project_id ZeroTrustCasbIntegration#project_id}
 
 ---
 
@@ -2184,7 +2184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationAnthropicAnthropicAdminApiKeyOutputReference
 ```
@@ -2486,7 +2486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicComplianceApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationAnthropicAnthropicComplianceApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationAnthropicAnthropicComplianceApiKeyOutputReference
 ```
@@ -2788,7 +2788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationAnthropicAnthropicWorkspaceApiKeyOutputReference
 ```
@@ -3083,7 +3083,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAnthropicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationAnthropicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationAnthropicOutputReference
 ```
@@ -3458,7 +3458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAwsAwsIamRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationAwsAwsIamRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationAwsAwsIamRoleOutputReference
 ```
@@ -3751,7 +3751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationAwsOutputReference
 ```
@@ -4042,7 +4042,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationBoxBoxServerAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationBoxBoxServerAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationBoxBoxServerAuthenticationOutputReference
 ```
@@ -4313,7 +4313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationBoxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationBoxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationBoxOutputReference
 ```
@@ -4604,7 +4604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleCloudPlatformGoogleCloudPlatformServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationGoogleCloudPlatformGoogleCloudPlatformServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationGoogleCloudPlatformGoogleCloudPlatformServiceAccountOutputReference
 ```
@@ -4877,7 +4877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleCloudPlatformOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationGoogleCloudPlatformOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationGoogleCloudPlatformOutputReference
 ```
@@ -5168,7 +5168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleWorkspaceGoogleDomainWideDelegationServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationGoogleWorkspaceGoogleDomainWideDelegationServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationGoogleWorkspaceGoogleDomainWideDelegationServiceAccountOutputReference
 ```
@@ -5463,7 +5463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationGoogleWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationGoogleWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationGoogleWorkspaceOutputReference
 ```
@@ -5754,7 +5754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationOpenaiChatgptComplianceApiKeyOutputReference
 ```
@@ -6155,7 +6155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiChatgptStandardApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationOpenaiChatgptStandardApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationOpenaiChatgptStandardApiKeyOutputReference
 ```
@@ -6510,7 +6510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustCasbIntegration.ZeroTrustCasbIntegrationOpenaiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbintegration"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbintegration"
 
 zerotrustcasbintegration.NewZeroTrustCasbIntegrationOpenaiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustCasbIntegrationOpenaiOutputReference
 ```

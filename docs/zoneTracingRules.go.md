@@ -4,12 +4,12 @@
 
 ### ZoneTracingRules <a name="ZoneTracingRules" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules cloudflare_zone_tracing_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules cloudflare_zone_tracing_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 zonetracingrules.NewZoneTracingRules(scope Construct, id *string, config ZoneTracingRulesConfig) ZoneTracingRules
 ```
@@ -413,7 +413,7 @@ func PutRules(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 zonetracingrules.ZoneTracingRules_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 zonetracingrules.ZoneTracingRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ zonetracingrules.ZoneTracingRules_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 zonetracingrules.ZoneTracingRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ zonetracingrules.ZoneTracingRules_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 zonetracingrules.ZoneTracingRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the ZoneTracingRules to import
 
 The id of the existing ZoneTracingRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 &zonetracingrules.ZoneTracingRulesConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ Rules interface{}
 
 Trace rules in evaluation order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#rules ZoneTracingRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#rules ZoneTracingRules#rules}
 
 ---
 
@@ -882,7 +882,7 @@ ZoneId *string
 
 Specify the zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#zone_id ZoneTracingRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#zone_id ZoneTracingRules#zone_id}
 
 ---
 
@@ -891,11 +891,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 &zonetracingrules.ZoneTracingRulesRules {
 	Action: *string,
-	ActionParameters: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16.zoneTracingRules.ZoneTracingRulesRulesActionParameters,
+	ActionParameters: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.zoneTracingRules.ZoneTracingRulesRulesActionParameters,
 	Description: *string,
 	Enabled: interface{},
 	Expression: *string,
@@ -907,9 +907,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetrac
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.property.action">Action</a></code> | <code>*string</code> | Available values: "set_trace_settings". |
-| <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.property.actionParameters">ActionParameters</a></code> | <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRulesActionParameters">ZoneTracingRulesRulesActionParameters</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#action_parameters ZoneTracingRules#action_parameters}. |
-| <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#description ZoneTracingRules#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#enabled ZoneTracingRules#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.property.actionParameters">ActionParameters</a></code> | <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRulesActionParameters">ZoneTracingRulesRulesActionParameters</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#action_parameters ZoneTracingRules#action_parameters}. |
+| <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#description ZoneTracingRules#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#enabled ZoneTracingRules#enabled}. |
 | <code><a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRules.property.expression">Expression</a></code> | <code>*string</code> | A Rules language expression that selects requests. |
 
 ---
@@ -924,7 +924,7 @@ Action *string
 
 Available values: "set_trace_settings".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#action ZoneTracingRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#action ZoneTracingRules#action}
 
 ---
 
@@ -936,7 +936,7 @@ ActionParameters ZoneTracingRulesRulesActionParameters
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRulesActionParameters">ZoneTracingRulesRulesActionParameters</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#action_parameters ZoneTracingRules#action_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#action_parameters ZoneTracingRules#action_parameters}.
 
 ---
 
@@ -948,7 +948,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#description ZoneTracingRules#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#description ZoneTracingRules#description}.
 
 ---
 
@@ -960,7 +960,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#enabled ZoneTracingRules#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#enabled ZoneTracingRules#enabled}.
 
 ---
 
@@ -974,7 +974,7 @@ Expression *string
 
 A Rules language expression that selects requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#expression ZoneTracingRules#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#expression ZoneTracingRules#expression}
 
 ---
 
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRulesActionParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 &zonetracingrules.ZoneTracingRulesRulesActionParameters {
 	SamplingRatio: *f64,
@@ -1008,7 +1008,7 @@ SamplingRatio *f64
 
 The ratio of requests sampled for tracing, from 0 to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_tracing_rules#sampling_ratio ZoneTracingRules#sampling_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_tracing_rules#sampling_ratio ZoneTracingRules#sampling_ratio}
 
 ---
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRulesActionParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 zonetracingrules.NewZoneTracingRulesRulesActionParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneTracingRulesRulesActionParametersOutputReference
 ```
@@ -1290,7 +1290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 zonetracingrules.NewZoneTracingRulesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneTracingRulesRulesList
 ```
@@ -1450,7 +1450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneTracingRules.ZoneTracingRulesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonetracingrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonetracingrules"
 
 zonetracingrules.NewZoneTracingRulesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZoneTracingRulesRulesOutputReference
 ```

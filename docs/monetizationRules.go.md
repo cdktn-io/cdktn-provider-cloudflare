@@ -4,12 +4,12 @@
 
 ### MonetizationRules <a name="MonetizationRules" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules cloudflare_monetization_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules cloudflare_monetization_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 monetizationrules.NewMonetizationRules(scope Construct, id *string, config MonetizationRulesConfig) MonetizationRules
 ```
@@ -413,7 +413,7 @@ func PutRules(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 monetizationrules.MonetizationRules_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 monetizationrules.MonetizationRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ monetizationrules.MonetizationRules_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 monetizationrules.MonetizationRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ monetizationrules.MonetizationRules_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 monetizationrules.MonetizationRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the MonetizationRules to impor
 
 The id of the existing MonetizationRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 &monetizationrules.MonetizationRulesConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ Full desired Payment Required ruleset.
 
 An empty array clears all payment rules. The ruleset may contain at most 40 unique wallet addresses; address comparison is case-insensitive. Every address must pass wallet screening before deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#rules MonetizationRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#rules MonetizationRules#rules}
 
 ---
 
@@ -884,7 +884,7 @@ ZoneId *string
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#zone_id MonetizationRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#zone_id MonetizationRules#zone_id}
 
 ---
 
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 &monetizationrules.MonetizationRulesRules {
 	Address: *string,
@@ -913,8 +913,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetiza
 | <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.address">Address</a></code> | <code>*string</code> | 0x-prefixed 20-byte hexadecimal Ethereum address. |
 | <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.expression">Expression</a></code> | <code>*string</code> | Wirefilter expression identifying the requests that require payment. Forwarded verbatim to the Rulesets API, which validates its syntax. |
 | <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.scheme">Scheme</a></code> | <code>*string</code> | X402 payment scheme. |
-| <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#description MonetizationRules#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#enabled MonetizationRules#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#description MonetizationRules#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#enabled MonetizationRules#enabled}. |
 | <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.id">Id</a></code> | <code>*string</code> | Optional on input. |
 | <code><a href="#@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRules.property.price">Price</a></code> | <code>*string</code> | Price in the smallest indivisible unit of the configured payment token, encoded as a decimal string. |
 
@@ -932,7 +932,7 @@ Address *string
 
 Mixed-case addresses must carry a valid EIP-55 checksum; all-lowercase or all-uppercase addresses are also accepted. The address must pass wallet screening whenever its rule is deployed or patched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#address MonetizationRules#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#address MonetizationRules#address}
 
 ---
 
@@ -946,7 +946,7 @@ Expression *string
 
 Wirefilter expression identifying the requests that require payment. Forwarded verbatim to the Rulesets API, which validates its syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#expression MonetizationRules#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#expression MonetizationRules#expression}
 
 ---
 
@@ -963,7 +963,7 @@ X402 payment scheme.
 "exact" requires the specified payment amount; "upto" permits a payment up to the specified amount. Both fixed-price schemes require the price field.
 Available values: "exact", "upto", "origin_controlled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#scheme MonetizationRules#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#scheme MonetizationRules#scheme}
 
 ---
 
@@ -975,7 +975,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#description MonetizationRules#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#description MonetizationRules#description}.
 
 ---
 
@@ -987,7 +987,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#enabled MonetizationRules#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#enabled MonetizationRules#enabled}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Optional on input.
 
 Include the ID of an existing payment rule to update it in place, preserving its stable identity across the full-ruleset replacement; omit it to create a new rule. An ID that does not match an existing payment rule in the zone is rejected. Rules omitted from the request are deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#id MonetizationRules#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#id MonetizationRules#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 Must be a canonical decimal integer in [1000, 100000000]: no leading zeros, and a bare JSON number is rejected. The price is required for the fixed-price schemes ("exact" and "upto") and must be at least 1000, the smallest amount the payment facilitator can settle ($0.001 for a 6-decimal token such as USDC), and at most 100000000 ($100 for a 6-decimal token). When the scheme is "origin_controlled" the origin server sets pricing dynamically and the rule carries no price: the field must be omitted — any provided value, including "0", is rejected because it would not be enforced. Responses always encode this as a string and omit it for "origin_controlled" rules; the pattern matches exactly the set of values the server accepts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/monetization_rules#price MonetizationRules#price}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/monetization_rules#price MonetizationRules#price}
 
 ---
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 monetizationrules.NewMonetizationRulesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonetizationRulesRulesList
 ```
@@ -1193,7 +1193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.monetizationRules.MonetizationRulesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/monetizationrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/monetizationrules"
 
 monetizationrules.NewMonetizationRulesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonetizationRulesRulesOutputReference
 ```

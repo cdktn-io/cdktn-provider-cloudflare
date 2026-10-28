@@ -4,12 +4,12 @@
 
 ### UniversalSslSetting <a name="UniversalSslSetting" id="@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/universalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/universalsslsetting"
 
 universalsslsetting.NewUniversalSslSetting(scope Construct, id *string, config UniversalSslSettingConfig) UniversalSslSetting
 ```
@@ -407,7 +407,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/universalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/universalsslsetting"
 
 universalsslsetting.UniversalSslSetting_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/universalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/universalsslsetting"
 
 universalsslsetting.UniversalSslSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ universalsslsetting.UniversalSslSetting_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/universalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/universalsslsetting"
 
 universalsslsetting.UniversalSslSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ universalsslsetting.UniversalSslSetting_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/universalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/universalsslsetting"
 
 universalsslsetting.UniversalSslSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the UniversalSslSetting to imp
 
 The id of the existing UniversalSslSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/universal_ssl_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/universal_ssl_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/universalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/universalsslsetting"
 
 &universalsslsetting.UniversalSslSettingConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/universal_ssl_setting#zone_id UniversalSslSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/universal_ssl_setting#zone_id UniversalSslSetting#zone_id}
 
 ---
 
@@ -890,7 +890,7 @@ Similarly, any HTTP redirect to HTTPS at the origin while the Cloudflare proxy i
 
 If you do not have a valid custom or advanced certificate at Cloudflare's edge and are unsure if any of the above Cloudflare settings are enabled, or if any HTTP redirects exist at your origin, we advise leaving Universal SSL enabled for your domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/universal_ssl_setting#enabled UniversalSslSetting#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/universal_ssl_setting#enabled UniversalSslSetting#enabled}
 
 ---
 

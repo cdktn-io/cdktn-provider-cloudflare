@@ -4,12 +4,12 @@
 
 ### StreamDownload <a name="StreamDownload" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_download cloudflare_stream_download}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_download cloudflare_stream_download}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 streamdownload.NewStreamDownload(scope Construct, id *string, config StreamDownloadConfig) StreamDownload
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 streamdownload.StreamDownload_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 streamdownload.StreamDownload_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ streamdownload.StreamDownload_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 streamdownload.StreamDownload_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ streamdownload.StreamDownload_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 streamdownload.StreamDownload_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the StreamDownload to import.
 
 The id of the existing StreamDownload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_download#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_download#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudio.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 &streamdownload.StreamDownloadAudio {
 
@@ -768,7 +768,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdo
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 &streamdownload.StreamDownloadConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_download#account_id StreamDownload#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_download#account_id StreamDownload#account_id}
 
 ---
 
@@ -893,7 +893,7 @@ Identifier *string
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_download#identifier StreamDownload#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_download#identifier StreamDownload#identifier}
 
 ---
 
@@ -902,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 &streamdownload.StreamDownloadDefault {
 
@@ -917,7 +917,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdo
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 streamdownload.NewStreamDownloadAudioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamDownloadAudioOutputReference
 ```
@@ -1199,7 +1199,7 @@ func InternalValue() StreamDownloadAudio
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamdownload"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamdownload"
 
 streamdownload.NewStreamDownloadDefaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamDownloadDefaultOutputReference
 ```
