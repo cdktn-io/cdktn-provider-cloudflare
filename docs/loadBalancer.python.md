@@ -4,7 +4,7 @@
 
 ### LoadBalancer <a name="LoadBalancer" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer cloudflare_load_balancer}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer cloudflare_load_balancer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer"></a>
 
@@ -31,6 +31,7 @@ loadBalancer.LoadBalancer(
   enabled: bool | IResolvable = None,
   location_strategy: LoadBalancerLocationStrategy = None,
   networks: typing.List[str] = None,
+  pool_sets: IResolvable | typing.List[LoadBalancerPoolSets] = None,
   pop_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   proxied: bool | IResolvable = None,
   random_steering: LoadBalancerRandomSteering = None,
@@ -58,13 +59,14 @@ loadBalancer.LoadBalancer(
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.defaultPools">default_pools</a></code> | <code>typing.List[str]</code> | A list of pool IDs ordered by their failover priority. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.fallbackPool">fallback_pool</a></code> | <code>str</code> | The pool ID to use when all other pools are detected as unhealthy. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.name">name</a></code> | <code>str</code> | The DNS hostname to associate with your Load Balancer. |
-| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.adaptiveRouting">adaptive_routing</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a></code> | Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.countryPools">country_pools</a></code> | <code>cdktn.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.description">description</a></code> | <code>str</code> | Object description. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable (the default) this load balancer. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.locationStrategy">location_strategy</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a></code> | Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.networks">networks</a></code> | <code>typing.List[str]</code> | List of networks where Load Balancer or Pool is enabled. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.poolSets">pool_sets</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]</code> | An optional list of pool sets, evaluated in array order with first match wins. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.popPools">pop_pools</a></code> | <code>cdktn.IResolvable \| typing.Mapping[typing.List[str]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.proxied">proxied</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the hostname should be gray clouded (false) or orange clouded (true). |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.randomSteering">random_steering</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a></code> | Configures pool weights. |
@@ -146,7 +148,7 @@ A list of pool IDs ordered by their failover priority.
 
 Pools defined here are used by default, or when region_pools are not configured for a given region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The pool ID to use when all other pools are detected as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
 
 ---
 
@@ -168,7 +170,7 @@ The DNS hostname to associate with your Load Balancer.
 
 If this hostname already exists as a DNS record in Cloudflare's DNS, the Load Balancer will take precedence and the DNS record will not be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#name LoadBalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#name LoadBalancer#name}
 
 ---
 
@@ -176,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}.
 
 ---
 
@@ -188,7 +190,7 @@ Controls features that modify the routing of requests to pools and origins in re
 
 For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
 
 ---
 
@@ -200,7 +202,7 @@ A mapping of country codes to a list of pool IDs (ordered by their failover prio
 
 Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
 
 ---
 
@@ -210,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Object description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#description LoadBalancer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#description LoadBalancer#description}
 
 ---
 
@@ -220,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable (the default) this load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#enabled LoadBalancer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#enabled LoadBalancer#enabled}
 
 ---
 
@@ -230,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
 
 ---
 
@@ -240,7 +242,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of networks where Load Balancer or Pool is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#networks LoadBalancer#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#networks LoadBalancer#networks}
+
+---
+
+##### `pool_sets`<sup>Optional</sup> <a name="pool_sets" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.poolSets"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]
+
+An optional list of pool sets, evaluated in array order with first match wins.
+
+Pool sets are independent from the standard steering fields (`region_pools` / `country_pools` / `pop_pools` / `default_pools` / `steering_policy` / `random_steering` / `fallback_pool` / `rules`). On a PATCH, an empty array (`pool_sets: []`) clears all pool sets, while omitting the field leaves existing pool sets unchanged.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_sets LoadBalancer#pool_sets}
 
 ---
 
@@ -252,7 +266,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
 
 ---
 
@@ -262,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether the hostname should be gray clouded (false) or orange clouded (true).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#proxied LoadBalancer#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#proxied LoadBalancer#proxied}
 
 ---
 
@@ -276,7 +290,7 @@ Configures pool weights.
 * `steering_policy="least_outstanding_requests"`: Use pool weights to scale each pool's outstanding requests.
 * `steering_policy="least_connections"`: Use pool weights to scale each pool's open connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
 
 ---
 
@@ -288,7 +302,7 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
 
 ---
 
@@ -298,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 BETA Field Not General Access: A list of rules for this load balancer to execute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#rules LoadBalancer#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#rules LoadBalancer#rules}
 
 ---
 
@@ -311,7 +325,7 @@ Specifies the type of session affinity the load balancer should use unless speci
 The supported types are: - `"cookie"`: On the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy, then a new origin server is calculated and used. - `"ip_cookie"`: Behaves the same as `"cookie"` except the initial origin selection is stable and based on the client's ip address. - `"header"`: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see `session_affinity_attributes.headers`) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of `session_affinity_ttl` seconds or the origin server is unhealthy, then a new origin server is calculated and used. See `headers` in `session_affinity_attributes` for additional required configuration.
 Available values: "none", "cookie", "ip_cookie", "header".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
 
 ---
 
@@ -321,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configures attributes for session affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
 
 ---
 
@@ -333,7 +347,7 @@ Time, in seconds, until a client's session expires after being created.
 
 Once the expiry time has been reached, subsequent requests may get sent to a different origin server. The accepted ranges per `session_affinity` policy are: - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800]. - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
 
 ---
 
@@ -353,7 +367,7 @@ Steering Policy for this load balancer.
 * `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
 
 ---
 
@@ -365,7 +379,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 This only applies to gray-clouded (unproxied) load balancers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 
 ---
 
@@ -399,6 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.putAdaptiveRouting">put_adaptive_routing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.putLocationStrategy">put_location_strategy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.putPoolSets">put_pool_sets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.putRandomSteering">put_random_steering</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.putRules">put_rules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.putSessionAffinityAttributes">put_session_affinity_attributes</a></code> | *No description.* |
@@ -408,6 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetLocationStrategy">reset_location_strategy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetNetworks">reset_networks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetPoolSets">reset_pool_sets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetPopPools">reset_pop_pools</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetProxied">reset_proxied</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetRandomSteering">reset_random_steering</a></code> | *No description.* |
@@ -785,7 +801,7 @@ Extends zero-downtime failover of requests to healthy origins from alternate poo
 
 When set false (the default) zero-downtime failover will only occur between origins within the same pool. See `session_affinity_attributes` for control over when sessions are broken or reassigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
 
 ---
 
@@ -808,7 +824,7 @@ Determines the authoritative location when ECS is not preferred, does not exist 
 * `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
   Available values: "pop", "resolver_ip".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#mode LoadBalancer#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#mode LoadBalancer#mode}
 
 ---
 
@@ -824,7 +840,21 @@ Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritat
 * `"geo"`: Prefer ECS only when `steering_policy="geo"`.
   Available values: "always", "never", "proximity", "geo".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+
+---
+
+##### `put_pool_sets` <a name="put_pool_sets" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.putPoolSets"></a>
+
+```python
+def put_pool_sets(
+  value: IResolvable | typing.List[LoadBalancerPoolSets]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.putPoolSets.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]
 
 ---
 
@@ -843,7 +873,7 @@ def put_random_steering(
 
 The default weight for pools in the load balancer that are not specified in the pool_weights map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
 
 ---
 
@@ -853,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
 
 ---
 
@@ -892,7 +922,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
 
 ---
 
@@ -904,7 +934,7 @@ Configures the names of HTTP headers to base session affinity on when header `se
 
 At least one HTTP header name must be provided. To specify the exact cookies to be used, include an item in the following format: `"cookie:<cookie-name-1>,<cookie-name-2>"` (example) where everything after the colon is a comma-separated list of cookie names. Providing only `"cookie"` will result in all cookies being used. The default max number of HTTP header names that can be provided depends on your plan: 5 for Enterprise, 1 for all other plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#headers LoadBalancer#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#headers LoadBalancer#headers}
 
 ---
 
@@ -916,7 +946,7 @@ When header `session_affinity` is enabled, this option can be used to specify ho
 
 The supported values are: - `"true"`: Load balancing requests must contain *all* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created. - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
 
 ---
 
@@ -929,7 +959,7 @@ Configures the SameSite attribute on session affinity cookie.
 Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
 Available values: "Auto", "Lax", "None", "Strict".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
 
 ---
 
@@ -942,7 +972,7 @@ Configures the Secure attribute on session affinity cookie.
 Value "Always" indicates the Secure attribute will be set in the Set-Cookie header, "Never" indicates the Secure attribute will not be set, and "Auto" will set the Secure attribute depending if Always Use HTTPS is enabled.
 Available values: "Auto", "Always", "Never".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#secure LoadBalancer#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#secure LoadBalancer#secure}
 
 ---
 
@@ -955,7 +985,7 @@ Configures the zero-downtime failover between origins within a pool when session
 This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - `"none"`: No failover takes place for sessions pinned to the origin (default). - `"temporary"`: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - `"sticky"`: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
 Available values: "none", "temporary", "sticky".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
 
 ---
 
@@ -993,6 +1023,12 @@ def reset_location_strategy() -> None
 
 ```python
 def reset_networks() -> None
+```
+
+##### `reset_pool_sets` <a name="reset_pool_sets" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetPoolSets"></a>
+
+```python
+def reset_pool_sets() -> None
 ```
 
 ##### `reset_pop_pools` <a name="reset_pop_pools" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.resetPopPools"></a>
@@ -1169,7 +1205,7 @@ The construct id used in the generated config for the LoadBalancer to import.
 
 The id of the existing LoadBalancer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1204,6 +1240,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.locationStrategy">location_strategy</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference">LoadBalancerLocationStrategyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.poolSets">pool_sets</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList">LoadBalancerPoolSetsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.randomSteering">random_steering</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference">LoadBalancerRandomSteeringOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.rules">rules</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesList">LoadBalancerRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinityAttributes">session_affinity_attributes</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference">LoadBalancerSessionAffinityAttributesOutputReference</a></code> | *No description.* |
@@ -1217,6 +1254,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.locationStrategyInput">location_strategy_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.networksInput">networks_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.poolSetsInput">pool_sets_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.popPoolsInput">pop_pools_input</a></code> | <code>cdktn.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.proxiedInput">proxied_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.randomSteeringInput">random_steering_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a></code> | *No description.* |
@@ -1438,6 +1476,16 @@ modified_on: str
 
 ---
 
+##### `pool_sets`<sup>Required</sup> <a name="pool_sets" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.poolSets"></a>
+
+```python
+pool_sets: LoadBalancerPoolSetsList
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList">LoadBalancerPoolSetsList</a>
+
+---
+
 ##### `random_steering`<sup>Required</sup> <a name="random_steering" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.randomSteering"></a>
 
 ```python
@@ -1565,6 +1613,16 @@ networks_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `pool_sets_input`<sup>Optional</sup> <a name="pool_sets_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancer.property.poolSetsInput"></a>
+
+```python
+pool_sets_input: IResolvable | typing.List[LoadBalancerPoolSets]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]
 
 ---
 
@@ -1880,7 +1938,7 @@ Extends zero-downtime failover of requests to healthy origins from alternate poo
 
 When set false (the default) zero-downtime failover will only occur between origins within the same pool. See `session_affinity_attributes` for control over when sessions are broken or reassigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
 
 ---
 
@@ -1909,6 +1967,7 @@ loadBalancer.LoadBalancerConfig(
   enabled: bool | IResolvable = None,
   location_strategy: LoadBalancerLocationStrategy = None,
   networks: typing.List[str] = None,
+  pool_sets: IResolvable | typing.List[LoadBalancerPoolSets] = None,
   pop_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   proxied: bool | IResolvable = None,
   random_steering: LoadBalancerRandomSteering = None,
@@ -1936,13 +1995,14 @@ loadBalancer.LoadBalancerConfig(
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.defaultPools">default_pools</a></code> | <code>typing.List[str]</code> | A list of pool IDs ordered by their failover priority. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.fallbackPool">fallback_pool</a></code> | <code>str</code> | The pool ID to use when all other pools are detected as unhealthy. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.name">name</a></code> | <code>str</code> | The DNS hostname to associate with your Load Balancer. |
-| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.adaptiveRouting">adaptive_routing</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a></code> | Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.countryPools">country_pools</a></code> | <code>cdktn.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.description">description</a></code> | <code>str</code> | Object description. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable (the default) this load balancer. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.locationStrategy">location_strategy</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a></code> | Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.networks">networks</a></code> | <code>typing.List[str]</code> | List of networks where Load Balancer or Pool is enabled. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.poolSets">pool_sets</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]</code> | An optional list of pool sets, evaluated in array order with first match wins. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.popPools">pop_pools</a></code> | <code>cdktn.IResolvable \| typing.Mapping[typing.List[str]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.proxied">proxied</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the hostname should be gray clouded (false) or orange clouded (true). |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.randomSteering">random_steering</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a></code> | Configures pool weights. |
@@ -2038,7 +2098,7 @@ A list of pool IDs ordered by their failover priority.
 
 Pools defined here are used by default, or when region_pools are not configured for a given region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
 
 ---
 
@@ -2052,7 +2112,7 @@ fallback_pool: str
 
 The pool ID to use when all other pools are detected as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
 
 ---
 
@@ -2068,7 +2128,7 @@ The DNS hostname to associate with your Load Balancer.
 
 If this hostname already exists as a DNS record in Cloudflare's DNS, the Load Balancer will take precedence and the DNS record will not be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#name LoadBalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#name LoadBalancer#name}
 
 ---
 
@@ -2080,7 +2140,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}.
 
 ---
 
@@ -2096,7 +2156,7 @@ Controls features that modify the routing of requests to pools and origins in re
 
 For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
 
 ---
 
@@ -2112,7 +2172,7 @@ A mapping of country codes to a list of pool IDs (ordered by their failover prio
 
 Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
 
 ---
 
@@ -2126,7 +2186,7 @@ description: str
 
 Object description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#description LoadBalancer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#description LoadBalancer#description}
 
 ---
 
@@ -2140,7 +2200,7 @@ enabled: bool | IResolvable
 
 Whether to enable (the default) this load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#enabled LoadBalancer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#enabled LoadBalancer#enabled}
 
 ---
 
@@ -2154,7 +2214,7 @@ location_strategy: LoadBalancerLocationStrategy
 
 Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
 
 ---
 
@@ -2168,7 +2228,23 @@ networks: typing.List[str]
 
 List of networks where Load Balancer or Pool is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#networks LoadBalancer#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#networks LoadBalancer#networks}
+
+---
+
+##### `pool_sets`<sup>Optional</sup> <a name="pool_sets" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.poolSets"></a>
+
+```python
+pool_sets: IResolvable | typing.List[LoadBalancerPoolSets]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]
+
+An optional list of pool sets, evaluated in array order with first match wins.
+
+Pool sets are independent from the standard steering fields (`region_pools` / `country_pools` / `pop_pools` / `default_pools` / `steering_policy` / `random_steering` / `fallback_pool` / `rules`). On a PATCH, an empty array (`pool_sets: []`) clears all pool sets, while omitting the field leaves existing pool sets unchanged.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_sets LoadBalancer#pool_sets}
 
 ---
 
@@ -2184,7 +2260,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
 
 ---
 
@@ -2198,7 +2274,7 @@ proxied: bool | IResolvable
 
 Whether the hostname should be gray clouded (false) or orange clouded (true).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#proxied LoadBalancer#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#proxied LoadBalancer#proxied}
 
 ---
 
@@ -2216,7 +2292,7 @@ Configures pool weights.
 * `steering_policy="least_outstanding_requests"`: Use pool weights to scale each pool's outstanding requests.
 * `steering_policy="least_connections"`: Use pool weights to scale each pool's open connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
 
 ---
 
@@ -2232,7 +2308,7 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
 
 ---
 
@@ -2246,7 +2322,7 @@ rules: IResolvable | typing.List[LoadBalancerRules]
 
 BETA Field Not General Access: A list of rules for this load balancer to execute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#rules LoadBalancer#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#rules LoadBalancer#rules}
 
 ---
 
@@ -2263,7 +2339,7 @@ Specifies the type of session affinity the load balancer should use unless speci
 The supported types are: - `"cookie"`: On the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy, then a new origin server is calculated and used. - `"ip_cookie"`: Behaves the same as `"cookie"` except the initial origin selection is stable and based on the client's ip address. - `"header"`: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see `session_affinity_attributes.headers`) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of `session_affinity_ttl` seconds or the origin server is unhealthy, then a new origin server is calculated and used. See `headers` in `session_affinity_attributes` for additional required configuration.
 Available values: "none", "cookie", "ip_cookie", "header".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
 
 ---
 
@@ -2277,7 +2353,7 @@ session_affinity_attributes: LoadBalancerSessionAffinityAttributes
 
 Configures attributes for session affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
 
 ---
 
@@ -2293,7 +2369,7 @@ Time, in seconds, until a client's session expires after being created.
 
 Once the expiry time has been reached, subsequent requests may get sent to a different origin server. The accepted ranges per `session_affinity` policy are: - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800]. - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
 
 ---
 
@@ -2317,7 +2393,7 @@ Steering Policy for this load balancer.
 * `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
 
 ---
 
@@ -2333,7 +2409,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 This only applies to gray-clouded (unproxied) load balancers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 
 ---
 
@@ -2373,7 +2449,7 @@ Determines the authoritative location when ECS is not preferred, does not exist 
 * `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
   Available values: "pop", "resolver_ip".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#mode LoadBalancer#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#mode LoadBalancer#mode}
 
 ---
 
@@ -2393,7 +2469,423 @@ Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritat
 * `"geo"`: Prefer ECS only when `steering_policy="geo"`.
   Available values: "always", "never", "proximity", "geo".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+
+---
+
+### LoadBalancerPoolSets <a name="LoadBalancerPoolSets" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSets(
+  disabled: bool | IResolvable = None,
+  fixed_response: LoadBalancerPoolSetsFixedResponse = None,
+  match: LoadBalancerPoolSetsMatch = None,
+  name: str = None,
+  overrides: LoadBalancerPoolSetsOverrides = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Disable this specific pool set. It will no longer be evaluated. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.fixedResponse">fixed_response</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse">LoadBalancerPoolSetsFixedResponse</a></code> | A collection of fields used to directly respond to the client instead of routing to a pool. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.match">match</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch">LoadBalancerPoolSetsMatch</a></code> | Determines which requests a pool set applies to. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.name">name</a></code> | <code>str</code> | A human-readable name for this pool set. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.overrides">overrides</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides">LoadBalancerPoolSetsOverrides</a></code> | The behavior a pool set applies when its `match` succeeds. |
+
+---
+
+##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.disabled"></a>
+
+```python
+disabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Disable this specific pool set. It will no longer be evaluated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
+
+---
+
+##### `fixed_response`<sup>Optional</sup> <a name="fixed_response" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.fixedResponse"></a>
+
+```python
+fixed_response: LoadBalancerPoolSetsFixedResponse
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse">LoadBalancerPoolSetsFixedResponse</a>
+
+A collection of fields used to directly respond to the client instead of routing to a pool.
+
+When supplied on a rule, that rule stops further rule evaluation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
+
+---
+
+##### `match`<sup>Optional</sup> <a name="match" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.match"></a>
+
+```python
+match: LoadBalancerPoolSetsMatch
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch">LoadBalancerPoolSetsMatch</a>
+
+Determines which requests a pool set applies to.
+
+Set `topology` to match by location or `default: true` to match all requests; the two are mutually exclusive. A pool set with no `match` matches all requests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#match LoadBalancer#match}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+A human-readable name for this pool set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#name LoadBalancer#name}
+
+---
+
+##### `overrides`<sup>Optional</sup> <a name="overrides" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets.property.overrides"></a>
+
+```python
+overrides: LoadBalancerPoolSetsOverrides
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides">LoadBalancerPoolSetsOverrides</a>
+
+The behavior a pool set applies when its `match` succeeds.
+
+A strict subset of a rule's `overrides`: a pool set replaces the topology wholesale with a flat pool list (`pools`), so only the declarative pool-routing fields plus `fallback_pool` and `steering_policy` are settable. All fields are optional.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
+
+---
+
+### LoadBalancerPoolSetsFixedResponse <a name="LoadBalancerPoolSetsFixedResponse" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsFixedResponse(
+  content_type: str = None,
+  location: str = None,
+  message_body: str = None,
+  status_code: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.property.contentType">content_type</a></code> | <code>str</code> | The http 'Content-Type' header to include in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.property.location">location</a></code> | <code>str</code> | The http 'Location' header to include in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.property.messageBody">message_body</a></code> | <code>str</code> | Text to include as the http body. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | The http status code to respond with. |
+
+---
+
+##### `content_type`<sup>Optional</sup> <a name="content_type" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.property.contentType"></a>
+
+```python
+content_type: str
+```
+
+- *Type:* str
+
+The http 'Content-Type' header to include in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
+
+---
+
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.property.location"></a>
+
+```python
+location: str
+```
+
+- *Type:* str
+
+The http 'Location' header to include in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#location LoadBalancer#location}
+
+---
+
+##### `message_body`<sup>Optional</sup> <a name="message_body" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.property.messageBody"></a>
+
+```python
+message_body: str
+```
+
+- *Type:* str
+
+Text to include as the http body.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
+
+---
+
+##### `status_code`<sup>Optional</sup> <a name="status_code" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse.property.statusCode"></a>
+
+```python
+status_code: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The http status code to respond with.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
+
+---
+
+### LoadBalancerPoolSetsMatch <a name="LoadBalancerPoolSetsMatch" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsMatch(
+  default: bool | IResolvable = None,
+  topology: LoadBalancerPoolSetsMatchTopology = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch.property.default">default</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, matches every request. Cannot be combined with `topology`. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch.property.topology">topology</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology">LoadBalancerPoolSetsMatchTopology</a></code> | Matches requests by location. |
+
+---
+
+##### `default`<sup>Optional</sup> <a name="default" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch.property.default"></a>
+
+```python
+default: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+When true, matches every request. Cannot be combined with `topology`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default LoadBalancer#default}
+
+---
+
+##### `topology`<sup>Optional</sup> <a name="topology" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch.property.topology"></a>
+
+```python
+topology: LoadBalancerPoolSetsMatchTopology
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology">LoadBalancerPoolSetsMatchTopology</a>
+
+Matches requests by location.
+
+Set any combination of `pops`, `countries`, and `regions` (at least one is required); a request matches when its value appears in any populated list (e.g. `regions: ["WNAM"]` with `countries: ["US"]` matches a request in either WNAM or the US).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#topology LoadBalancer#topology}
+
+---
+
+### LoadBalancerPoolSetsMatchTopology <a name="LoadBalancerPoolSetsMatchTopology" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsMatchTopology(
+  countries: typing.List[str] = None,
+  pops: typing.List[str] = None,
+  regions: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology.property.countries">countries</a></code> | <code>typing.List[str]</code> | A list of ISO 3166-1 alpha-2 country codes. Matches when the request's country is in this list. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology.property.pops">pops</a></code> | <code>typing.List[str]</code> | A list of Cloudflare PoP codes. Matches when the request's PoP is in this list. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology.property.regions">regions</a></code> | <code>typing.List[str]</code> | A list of Cloudflare region codes (e.g. `WNAM`, `ENAM`, `WEU`). Matches when the request's region is in this list. |
+
+---
+
+##### `countries`<sup>Optional</sup> <a name="countries" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology.property.countries"></a>
+
+```python
+countries: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of ISO 3166-1 alpha-2 country codes. Matches when the request's country is in this list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#countries LoadBalancer#countries}
+
+---
+
+##### `pops`<sup>Optional</sup> <a name="pops" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology.property.pops"></a>
+
+```python
+pops: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of Cloudflare PoP codes. Matches when the request's PoP is in this list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pops LoadBalancer#pops}
+
+---
+
+##### `regions`<sup>Optional</sup> <a name="regions" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology.property.regions"></a>
+
+```python
+regions: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of Cloudflare region codes (e.g. `WNAM`, `ENAM`, `WEU`). Matches when the request's region is in this list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#regions LoadBalancer#regions}
+
+---
+
+### LoadBalancerPoolSetsOverrides <a name="LoadBalancerPoolSetsOverrides" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsOverrides(
+  fallback_pool: str = None,
+  pool_default_weight: typing.Union[int, float] = None,
+  pools: typing.List[str] = None,
+  pool_weights: typing.Mapping[typing.Union[int, float]] = None,
+  steering_policy: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.fallbackPool">fallback_pool</a></code> | <code>str</code> | The pool ID to use when all other pools are detected as unhealthy. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.poolDefaultWeight">pool_default_weight</a></code> | <code>typing.Union[int, float]</code> | The default weight for pools not listed in `pool_weights`. The declarative alternative to `random_steering.default_weight`; mutually exclusive with `random_steering`. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.pools">pools</a></code> | <code>typing.List[str]</code> | A flat, ordered list of pool IDs to route the matched audience to. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.poolWeights">pool_weights</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | A mapping of pool IDs to custom weights, relative to the other pools. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.steeringPolicy">steering_policy</a></code> | <code>str</code> | Steering Policy for this load balancer. |
+
+---
+
+##### `fallback_pool`<sup>Optional</sup> <a name="fallback_pool" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.fallbackPool"></a>
+
+```python
+fallback_pool: str
+```
+
+- *Type:* str
+
+The pool ID to use when all other pools are detected as unhealthy.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+
+---
+
+##### `pool_default_weight`<sup>Optional</sup> <a name="pool_default_weight" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.poolDefaultWeight"></a>
+
+```python
+pool_default_weight: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The default weight for pools not listed in `pool_weights`. The declarative alternative to `random_steering.default_weight`; mutually exclusive with `random_steering`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_default_weight LoadBalancer#pool_default_weight}
+
+---
+
+##### `pools`<sup>Optional</sup> <a name="pools" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.pools"></a>
+
+```python
+pools: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A flat, ordered list of pool IDs to route the matched audience to.
+
+Replaces the resolved topology with exactly these pools. Mutually exclusive with `fixed_response`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pools LoadBalancer#pools}
+
+---
+
+##### `pool_weights`<sup>Optional</sup> <a name="pool_weights" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.poolWeights"></a>
+
+```python
+pool_weights: typing.Mapping[typing.Union[int, float]]
+```
+
+- *Type:* typing.Mapping[typing.Union[int, float]]
+
+A mapping of pool IDs to custom weights, relative to the other pools.
+
+The declarative alternative to `random_steering.pool_weights`; mutually exclusive with `random_steering`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+
+---
+
+##### `steering_policy`<sup>Optional</sup> <a name="steering_policy" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides.property.steeringPolicy"></a>
+
+```python
+steering_policy: str
+```
+
+- *Type:* str
+
+Steering Policy for this load balancer.
+
+* `"off"`: Use `default_pools`.
+* `"geo"`: Use `region_pools`/`country_pools`/`pop_pools`. For non-proxied requests, the country for `country_pools` is determined by `location_strategy`.
+* `"random"`: Select a pool randomly.
+* `"dynamic_latency"`: Use round trip time to select the closest pool in default_pools (requires pool health checks).
+* `"proximity"`: Use the pools' latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by `location_strategy` for non-proxied requests.
+* `"least_outstanding_requests"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of outstanding requests. Pools with more pending requests are weighted proportionately less relative to others.
+* `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
+* `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
+  Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
 
 ---
 
@@ -2429,7 +2921,7 @@ default_weight: typing.Union[int, float]
 
 The default weight for pools in the load balancer that are not specified in the pool_weights map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
 
 ---
 
@@ -2443,7 +2935,7 @@ pool_weights: typing.Mapping[typing.Union[int, float]]
 
 A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
 
 ---
 
@@ -2491,7 +2983,7 @@ The condition expressions to evaluate.
 
 If the condition evaluates to true, the overrides or fixed_response in this rule will be applied. An empty condition is always true. For more details on condition expressions, please see https://developers.cloudflare.com/load-balancing/understand-basics/load-balancing-rules/expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#condition LoadBalancer#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#condition LoadBalancer#condition}
 
 ---
 
@@ -2505,7 +2997,7 @@ disabled: bool | IResolvable
 
 Disable this specific rule. It will no longer be evaluated by this load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#disabled LoadBalancer#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
 
 ---
 
@@ -2521,7 +3013,7 @@ A collection of fields used to directly respond to the eyeball instead of routin
 
 If a fixed_response is supplied the rule will be marked as terminates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
 
 ---
 
@@ -2535,7 +3027,7 @@ name: str
 
 Name of this rule. Only used for human readability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#name LoadBalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#name LoadBalancer#name}
 
 ---
 
@@ -2551,7 +3043,7 @@ A collection of overrides to apply to the load balancer when this rule's conditi
 
 All fields are optional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#overrides LoadBalancer#overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
 
 ---
 
@@ -2565,9 +3057,9 @@ priority: typing.Union[int, float]
 
 The order in which rules should be executed in relation to each other.
 
-Lower values are executed first. Values do not need to be sequential. If no value is provided for any rule the array order of the rules field will be used to assign a priority.
+Lower values are executed first. Values do not need to be sequential. If all priorities are omitted or zero, the API assigns priorities based on the array order of the rules field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#priority LoadBalancer#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#priority LoadBalancer#priority}
 
 ---
 
@@ -2581,7 +3073,7 @@ terminates: bool | IResolvable
 
 If this rule's condition is true, this causes rule evaluation to stop after processing this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#terminates LoadBalancer#terminates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#terminates LoadBalancer#terminates}
 
 ---
 
@@ -2621,7 +3113,7 @@ content_type: str
 
 The http 'Content-Type' header to include in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#content_type LoadBalancer#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
 
 ---
 
@@ -2635,7 +3127,7 @@ location: str
 
 The http 'Location' header to include in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#location LoadBalancer#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#location LoadBalancer#location}
 
 ---
 
@@ -2649,7 +3141,7 @@ message_body: str
 
 Text to include as the http body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#message_body LoadBalancer#message_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
 
 ---
 
@@ -2663,7 +3155,7 @@ status_code: typing.Union[int, float]
 
 The http status code to respond with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#status_code LoadBalancer#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
 
 ---
 
@@ -2701,7 +3193,7 @@ loadBalancer.LoadBalancerRulesOverrides(
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.fallbackPool">fallback_pool</a></code> | <code>str</code> | The pool ID to use when all other pools are detected as unhealthy. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.locationStrategy">location_strategy</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a></code> | Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.popPools">pop_pools</a></code> | <code>cdktn.IResolvable \| typing.Mapping[typing.List[str]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
-| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.randomSteering">random_steering</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a></code> | Configures pool weights. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.randomSteering">random_steering</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a></code> | Configures pool weights for a rule override. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.regionPools">region_pools</a></code> | <code>cdktn.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.sessionAffinity">session_affinity</a></code> | <code>str</code> | Specifies the type of session affinity the load balancer should use unless specified as `"none"`. |
 | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.sessionAffinityAttributes">session_affinity_attributes</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a></code> | Configures attributes for session affinity. |
@@ -2723,7 +3215,7 @@ Controls features that modify the routing of requests to pools and origins in re
 
 For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
 
 ---
 
@@ -2739,7 +3231,7 @@ A mapping of country codes to a list of pool IDs (ordered by their failover prio
 
 Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
 
 ---
 
@@ -2755,7 +3247,7 @@ A list of pool IDs ordered by their failover priority.
 
 Pools defined here are used by default, or when region_pools are not configured for a given region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
 
 ---
 
@@ -2769,7 +3261,7 @@ fallback_pool: str
 
 The pool ID to use when all other pools are detected as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
 
 ---
 
@@ -2783,7 +3275,7 @@ location_strategy: LoadBalancerRulesOverridesLocationStrategy
 
 Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
 
 ---
 
@@ -2799,7 +3291,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
 
 ---
 
@@ -2811,13 +3303,15 @@ random_steering: LoadBalancerRulesOverridesRandomSteering
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a>
 
-Configures pool weights.
+Configures pool weights for a rule override.
+
+An omitted default_weight inherits the load balancer's default weight.
 
 * `steering_policy="random"`: A random pool is selected with probability proportional to pool weights.
 * `steering_policy="least_outstanding_requests"`: Use pool weights to scale each pool's outstanding requests.
 * `steering_policy="least_connections"`: Use pool weights to scale each pool's open connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
 
 ---
 
@@ -2833,7 +3327,7 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
 
 ---
 
@@ -2850,7 +3344,7 @@ Specifies the type of session affinity the load balancer should use unless speci
 The supported types are: - `"cookie"`: On the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy, then a new origin server is calculated and used. - `"ip_cookie"`: Behaves the same as `"cookie"` except the initial origin selection is stable and based on the client's ip address. - `"header"`: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see `session_affinity_attributes.headers`) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of `session_affinity_ttl` seconds or the origin server is unhealthy, then a new origin server is calculated and used. See `headers` in `session_affinity_attributes` for additional required configuration.
 Available values: "none", "cookie", "ip_cookie", "header".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
 
 ---
 
@@ -2864,7 +3358,7 @@ session_affinity_attributes: LoadBalancerRulesOverridesSessionAffinityAttributes
 
 Configures attributes for session affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
 
 ---
 
@@ -2880,7 +3374,7 @@ Time, in seconds, until a client's session expires after being created.
 
 Once the expiry time has been reached, subsequent requests may get sent to a different origin server. The accepted ranges per `session_affinity` policy are: - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800]. - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
 
 ---
 
@@ -2904,7 +3398,7 @@ Steering Policy for this load balancer.
 * `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
 
 ---
 
@@ -2920,7 +3414,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 This only applies to gray-clouded (unproxied) load balancers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 
 ---
 
@@ -2956,7 +3450,7 @@ Extends zero-downtime failover of requests to healthy origins from alternate poo
 
 When set false (the default) zero-downtime failover will only occur between origins within the same pool. See `session_affinity_attributes` for control over when sessions are broken or reassigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
 
 ---
 
@@ -2996,7 +3490,7 @@ Determines the authoritative location when ECS is not preferred, does not exist 
 * `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
   Available values: "pop", "resolver_ip".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#mode LoadBalancer#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#mode LoadBalancer#mode}
 
 ---
 
@@ -3016,7 +3510,7 @@ Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritat
 * `"geo"`: Prefer ECS only when `steering_policy="geo"`.
   Available values: "always", "never", "proximity", "geo".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
 
 ---
 
@@ -3052,7 +3546,9 @@ default_weight: typing.Union[int, float]
 
 The default weight for pools in the load balancer that are not specified in the pool_weights map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+An omitted value inherits the load balancer's default weight.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
 
 ---
 
@@ -3066,7 +3562,7 @@ pool_weights: typing.Mapping[typing.Union[int, float]]
 
 A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
 
 ---
 
@@ -3112,7 +3608,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
 
 ---
 
@@ -3128,7 +3624,7 @@ Configures the names of HTTP headers to base session affinity on when header `se
 
 At least one HTTP header name must be provided. To specify the exact cookies to be used, include an item in the following format: `"cookie:<cookie-name-1>,<cookie-name-2>"` (example) where everything after the colon is a comma-separated list of cookie names. Providing only `"cookie"` will result in all cookies being used. The default max number of HTTP header names that can be provided depends on your plan: 5 for Enterprise, 1 for all other plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#headers LoadBalancer#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#headers LoadBalancer#headers}
 
 ---
 
@@ -3144,7 +3640,7 @@ When header `session_affinity` is enabled, this option can be used to specify ho
 
 The supported values are: - `"true"`: Load balancing requests must contain *all* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created. - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
 
 ---
 
@@ -3161,7 +3657,7 @@ Configures the SameSite attribute on session affinity cookie.
 Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
 Available values: "Auto", "Lax", "None", "Strict".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
 
 ---
 
@@ -3178,7 +3674,7 @@ Configures the Secure attribute on session affinity cookie.
 Value "Always" indicates the Secure attribute will be set in the Set-Cookie header, "Never" indicates the Secure attribute will not be set, and "Auto" will set the Secure attribute depending if Always Use HTTPS is enabled.
 Available values: "Auto", "Always", "Never".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#secure LoadBalancer#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#secure LoadBalancer#secure}
 
 ---
 
@@ -3195,7 +3691,7 @@ Configures the zero-downtime failover between origins within a pool when session
 This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - `"none"`: No failover takes place for sessions pinned to the origin (default). - `"temporary"`: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - `"sticky"`: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
 Available values: "none", "temporary", "sticky".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
 
 ---
 
@@ -3241,7 +3737,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
 
 ---
 
@@ -3257,7 +3753,7 @@ Configures the names of HTTP headers to base session affinity on when header `se
 
 At least one HTTP header name must be provided. To specify the exact cookies to be used, include an item in the following format: `"cookie:<cookie-name-1>,<cookie-name-2>"` (example) where everything after the colon is a comma-separated list of cookie names. Providing only `"cookie"` will result in all cookies being used. The default max number of HTTP header names that can be provided depends on your plan: 5 for Enterprise, 1 for all other plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#headers LoadBalancer#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#headers LoadBalancer#headers}
 
 ---
 
@@ -3273,7 +3769,7 @@ When header `session_affinity` is enabled, this option can be used to specify ho
 
 The supported values are: - `"true"`: Load balancing requests must contain *all* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created. - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
 
 ---
 
@@ -3290,7 +3786,7 @@ Configures the SameSite attribute on session affinity cookie.
 Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
 Available values: "Auto", "Lax", "None", "Strict".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
 
 ---
 
@@ -3307,7 +3803,7 @@ Configures the Secure attribute on session affinity cookie.
 Value "Always" indicates the Secure attribute will be set in the Set-Cookie header, "Never" indicates the Secure attribute will not be set, and "Auto" will set the Secure attribute depending if Always Use HTTPS is enabled.
 Available values: "Auto", "Always", "Never".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#secure LoadBalancer#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#secure LoadBalancer#secure}
 
 ---
 
@@ -3324,7 +3820,7 @@ Configures the zero-downtime failover between origins within a pool when session
 This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - `"none"`: No failover takes place for sessions pinned to the origin (default). - `"temporary"`: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - `"sticky"`: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
 Available values: "none", "temporary", "sticky".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
 
 ---
 
@@ -3961,6 +4457,2319 @@ internal_value: IResolvable | LoadBalancerLocationStrategy
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a>
+
+---
+
+
+### LoadBalancerPoolSetsFixedResponseOutputReference <a name="LoadBalancerPoolSetsFixedResponseOutputReference" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resetContentType">reset_content_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resetLocation">reset_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resetMessageBody">reset_message_body</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resetStatusCode">reset_status_code</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_content_type` <a name="reset_content_type" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resetContentType"></a>
+
+```python
+def reset_content_type() -> None
+```
+
+##### `reset_location` <a name="reset_location" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resetLocation"></a>
+
+```python
+def reset_location() -> None
+```
+
+##### `reset_message_body` <a name="reset_message_body" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resetMessageBody"></a>
+
+```python
+def reset_message_body() -> None
+```
+
+##### `reset_status_code` <a name="reset_status_code" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.resetStatusCode"></a>
+
+```python
+def reset_status_code() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.contentTypeInput">content_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.messageBodyInput">message_body_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.statusCodeInput">status_code_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.messageBody">message_body</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse">LoadBalancerPoolSetsFixedResponse</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `content_type_input`<sup>Optional</sup> <a name="content_type_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.contentTypeInput"></a>
+
+```python
+content_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.locationInput"></a>
+
+```python
+location_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `message_body_input`<sup>Optional</sup> <a name="message_body_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.messageBodyInput"></a>
+
+```python
+message_body_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `status_code_input`<sup>Optional</sup> <a name="status_code_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.statusCodeInput"></a>
+
+```python
+status_code_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.contentType"></a>
+
+```python
+content_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.location"></a>
+
+```python
+location: str
+```
+
+- *Type:* str
+
+---
+
+##### `message_body`<sup>Required</sup> <a name="message_body" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.messageBody"></a>
+
+```python
+message_body: str
+```
+
+- *Type:* str
+
+---
+
+##### `status_code`<sup>Required</sup> <a name="status_code" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.statusCode"></a>
+
+```python
+status_code: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LoadBalancerPoolSetsFixedResponse
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse">LoadBalancerPoolSetsFixedResponse</a>
+
+---
+
+
+### LoadBalancerPoolSetsList <a name="LoadBalancerPoolSetsList" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> LoadBalancerPoolSetsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[LoadBalancerPoolSets]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>]
+
+---
+
+
+### LoadBalancerPoolSetsMatchOutputReference <a name="LoadBalancerPoolSetsMatchOutputReference" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsMatchOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.putTopology">put_topology</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.resetDefault">reset_default</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.resetTopology">reset_topology</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_topology` <a name="put_topology" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.putTopology"></a>
+
+```python
+def put_topology(
+  countries: typing.List[str] = None,
+  pops: typing.List[str] = None,
+  regions: typing.List[str] = None
+) -> None
+```
+
+###### `countries`<sup>Optional</sup> <a name="countries" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.putTopology.parameter.countries"></a>
+
+- *Type:* typing.List[str]
+
+A list of ISO 3166-1 alpha-2 country codes. Matches when the request's country is in this list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#countries LoadBalancer#countries}
+
+---
+
+###### `pops`<sup>Optional</sup> <a name="pops" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.putTopology.parameter.pops"></a>
+
+- *Type:* typing.List[str]
+
+A list of Cloudflare PoP codes. Matches when the request's PoP is in this list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pops LoadBalancer#pops}
+
+---
+
+###### `regions`<sup>Optional</sup> <a name="regions" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.putTopology.parameter.regions"></a>
+
+- *Type:* typing.List[str]
+
+A list of Cloudflare region codes (e.g. `WNAM`, `ENAM`, `WEU`). Matches when the request's region is in this list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#regions LoadBalancer#regions}
+
+---
+
+##### `reset_default` <a name="reset_default" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.resetDefault"></a>
+
+```python
+def reset_default() -> None
+```
+
+##### `reset_topology` <a name="reset_topology" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.resetTopology"></a>
+
+```python
+def reset_topology() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.topology">topology</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference">LoadBalancerPoolSetsMatchTopologyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.defaultInput">default_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.topologyInput">topology_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology">LoadBalancerPoolSetsMatchTopology</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.default">default</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch">LoadBalancerPoolSetsMatch</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `topology`<sup>Required</sup> <a name="topology" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.topology"></a>
+
+```python
+topology: LoadBalancerPoolSetsMatchTopologyOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference">LoadBalancerPoolSetsMatchTopologyOutputReference</a>
+
+---
+
+##### `default_input`<sup>Optional</sup> <a name="default_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.defaultInput"></a>
+
+```python
+default_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `topology_input`<sup>Optional</sup> <a name="topology_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.topologyInput"></a>
+
+```python
+topology_input: IResolvable | LoadBalancerPoolSetsMatchTopology
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology">LoadBalancerPoolSetsMatchTopology</a>
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.default"></a>
+
+```python
+default: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LoadBalancerPoolSetsMatch
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch">LoadBalancerPoolSetsMatch</a>
+
+---
+
+
+### LoadBalancerPoolSetsMatchTopologyOutputReference <a name="LoadBalancerPoolSetsMatchTopologyOutputReference" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resetCountries">reset_countries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resetPops">reset_pops</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resetRegions">reset_regions</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_countries` <a name="reset_countries" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resetCountries"></a>
+
+```python
+def reset_countries() -> None
+```
+
+##### `reset_pops` <a name="reset_pops" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resetPops"></a>
+
+```python
+def reset_pops() -> None
+```
+
+##### `reset_regions` <a name="reset_regions" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.resetRegions"></a>
+
+```python
+def reset_regions() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.countriesInput">countries_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.popsInput">pops_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.regionsInput">regions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.countries">countries</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.pops">pops</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.regions">regions</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology">LoadBalancerPoolSetsMatchTopology</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `countries_input`<sup>Optional</sup> <a name="countries_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.countriesInput"></a>
+
+```python
+countries_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `pops_input`<sup>Optional</sup> <a name="pops_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.popsInput"></a>
+
+```python
+pops_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `regions_input`<sup>Optional</sup> <a name="regions_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.regionsInput"></a>
+
+```python
+regions_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `countries`<sup>Required</sup> <a name="countries" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.countries"></a>
+
+```python
+countries: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `pops`<sup>Required</sup> <a name="pops" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.pops"></a>
+
+```python
+pops: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `regions`<sup>Required</sup> <a name="regions" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.regions"></a>
+
+```python
+regions: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LoadBalancerPoolSetsMatchTopology
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology">LoadBalancerPoolSetsMatchTopology</a>
+
+---
+
+
+### LoadBalancerPoolSetsOutputReference <a name="LoadBalancerPoolSetsOutputReference" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putFixedResponse">put_fixed_response</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putMatch">put_match</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putOverrides">put_overrides</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetDisabled">reset_disabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetFixedResponse">reset_fixed_response</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetMatch">reset_match</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetOverrides">reset_overrides</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_fixed_response` <a name="put_fixed_response" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putFixedResponse"></a>
+
+```python
+def put_fixed_response(
+  content_type: str = None,
+  location: str = None,
+  message_body: str = None,
+  status_code: typing.Union[int, float] = None
+) -> None
+```
+
+###### `content_type`<sup>Optional</sup> <a name="content_type" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putFixedResponse.parameter.contentType"></a>
+
+- *Type:* str
+
+The http 'Content-Type' header to include in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
+
+---
+
+###### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putFixedResponse.parameter.location"></a>
+
+- *Type:* str
+
+The http 'Location' header to include in the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#location LoadBalancer#location}
+
+---
+
+###### `message_body`<sup>Optional</sup> <a name="message_body" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putFixedResponse.parameter.messageBody"></a>
+
+- *Type:* str
+
+Text to include as the http body.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
+
+---
+
+###### `status_code`<sup>Optional</sup> <a name="status_code" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putFixedResponse.parameter.statusCode"></a>
+
+- *Type:* typing.Union[int, float]
+
+The http status code to respond with.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
+
+---
+
+##### `put_match` <a name="put_match" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putMatch"></a>
+
+```python
+def put_match(
+  default: bool | IResolvable = None,
+  topology: LoadBalancerPoolSetsMatchTopology = None
+) -> None
+```
+
+###### `default`<sup>Optional</sup> <a name="default" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putMatch.parameter.default"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+When true, matches every request. Cannot be combined with `topology`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default LoadBalancer#default}
+
+---
+
+###### `topology`<sup>Optional</sup> <a name="topology" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putMatch.parameter.topology"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology">LoadBalancerPoolSetsMatchTopology</a>
+
+Matches requests by location.
+
+Set any combination of `pops`, `countries`, and `regions` (at least one is required); a request matches when its value appears in any populated list (e.g. `regions: ["WNAM"]` with `countries: ["US"]` matches a request in either WNAM or the US).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#topology LoadBalancer#topology}
+
+---
+
+##### `put_overrides` <a name="put_overrides" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putOverrides"></a>
+
+```python
+def put_overrides(
+  fallback_pool: str = None,
+  pool_default_weight: typing.Union[int, float] = None,
+  pools: typing.List[str] = None,
+  pool_weights: typing.Mapping[typing.Union[int, float]] = None,
+  steering_policy: str = None
+) -> None
+```
+
+###### `fallback_pool`<sup>Optional</sup> <a name="fallback_pool" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putOverrides.parameter.fallbackPool"></a>
+
+- *Type:* str
+
+The pool ID to use when all other pools are detected as unhealthy.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+
+---
+
+###### `pool_default_weight`<sup>Optional</sup> <a name="pool_default_weight" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putOverrides.parameter.poolDefaultWeight"></a>
+
+- *Type:* typing.Union[int, float]
+
+The default weight for pools not listed in `pool_weights`. The declarative alternative to `random_steering.default_weight`; mutually exclusive with `random_steering`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_default_weight LoadBalancer#pool_default_weight}
+
+---
+
+###### `pools`<sup>Optional</sup> <a name="pools" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putOverrides.parameter.pools"></a>
+
+- *Type:* typing.List[str]
+
+A flat, ordered list of pool IDs to route the matched audience to.
+
+Replaces the resolved topology with exactly these pools. Mutually exclusive with `fixed_response`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pools LoadBalancer#pools}
+
+---
+
+###### `pool_weights`<sup>Optional</sup> <a name="pool_weights" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putOverrides.parameter.poolWeights"></a>
+
+- *Type:* typing.Mapping[typing.Union[int, float]]
+
+A mapping of pool IDs to custom weights, relative to the other pools.
+
+The declarative alternative to `random_steering.pool_weights`; mutually exclusive with `random_steering`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+
+---
+
+###### `steering_policy`<sup>Optional</sup> <a name="steering_policy" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.putOverrides.parameter.steeringPolicy"></a>
+
+- *Type:* str
+
+Steering Policy for this load balancer.
+
+* `"off"`: Use `default_pools`.
+* `"geo"`: Use `region_pools`/`country_pools`/`pop_pools`. For non-proxied requests, the country for `country_pools` is determined by `location_strategy`.
+* `"random"`: Select a pool randomly.
+* `"dynamic_latency"`: Use round trip time to select the closest pool in default_pools (requires pool health checks).
+* `"proximity"`: Use the pools' latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by `location_strategy` for non-proxied requests.
+* `"least_outstanding_requests"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of outstanding requests. Pools with more pending requests are weighted proportionately less relative to others.
+* `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
+* `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
+  Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+
+---
+
+##### `reset_disabled` <a name="reset_disabled" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetDisabled"></a>
+
+```python
+def reset_disabled() -> None
+```
+
+##### `reset_fixed_response` <a name="reset_fixed_response" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetFixedResponse"></a>
+
+```python
+def reset_fixed_response() -> None
+```
+
+##### `reset_match` <a name="reset_match" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetMatch"></a>
+
+```python
+def reset_match() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_overrides` <a name="reset_overrides" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.resetOverrides"></a>
+
+```python
+def reset_overrides() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.fixedResponse">fixed_response</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference">LoadBalancerPoolSetsFixedResponseOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.match">match</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference">LoadBalancerPoolSetsMatchOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.overrides">overrides</a></code> | <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference">LoadBalancerPoolSetsOverridesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.fixedResponseInput">fixed_response_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse">LoadBalancerPoolSetsFixedResponse</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.matchInput">match_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch">LoadBalancerPoolSetsMatch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.overridesInput">overrides_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides">LoadBalancerPoolSetsOverrides</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `fixed_response`<sup>Required</sup> <a name="fixed_response" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.fixedResponse"></a>
+
+```python
+fixed_response: LoadBalancerPoolSetsFixedResponseOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference">LoadBalancerPoolSetsFixedResponseOutputReference</a>
+
+---
+
+##### `match`<sup>Required</sup> <a name="match" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.match"></a>
+
+```python
+match: LoadBalancerPoolSetsMatchOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference">LoadBalancerPoolSetsMatchOutputReference</a>
+
+---
+
+##### `overrides`<sup>Required</sup> <a name="overrides" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.overrides"></a>
+
+```python
+overrides: LoadBalancerPoolSetsOverridesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference">LoadBalancerPoolSetsOverridesOutputReference</a>
+
+---
+
+##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.disabledInput"></a>
+
+```python
+disabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `fixed_response_input`<sup>Optional</sup> <a name="fixed_response_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.fixedResponseInput"></a>
+
+```python
+fixed_response_input: IResolvable | LoadBalancerPoolSetsFixedResponse
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse">LoadBalancerPoolSetsFixedResponse</a>
+
+---
+
+##### `match_input`<sup>Optional</sup> <a name="match_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.matchInput"></a>
+
+```python
+match_input: IResolvable | LoadBalancerPoolSetsMatch
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch">LoadBalancerPoolSetsMatch</a>
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `overrides_input`<sup>Optional</sup> <a name="overrides_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.overridesInput"></a>
+
+```python
+overrides_input: IResolvable | LoadBalancerPoolSetsOverrides
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides">LoadBalancerPoolSetsOverrides</a>
+
+---
+
+##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.disabled"></a>
+
+```python
+disabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LoadBalancerPoolSets
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets">LoadBalancerPoolSets</a>
+
+---
+
+
+### LoadBalancerPoolSetsOverridesOutputReference <a name="LoadBalancerPoolSetsOverridesOutputReference" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import load_balancer
+
+loadBalancer.LoadBalancerPoolSetsOverridesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetFallbackPool">reset_fallback_pool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetPoolDefaultWeight">reset_pool_default_weight</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetPools">reset_pools</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetPoolWeights">reset_pool_weights</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetSteeringPolicy">reset_steering_policy</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_fallback_pool` <a name="reset_fallback_pool" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetFallbackPool"></a>
+
+```python
+def reset_fallback_pool() -> None
+```
+
+##### `reset_pool_default_weight` <a name="reset_pool_default_weight" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetPoolDefaultWeight"></a>
+
+```python
+def reset_pool_default_weight() -> None
+```
+
+##### `reset_pools` <a name="reset_pools" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetPools"></a>
+
+```python
+def reset_pools() -> None
+```
+
+##### `reset_pool_weights` <a name="reset_pool_weights" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetPoolWeights"></a>
+
+```python
+def reset_pool_weights() -> None
+```
+
+##### `reset_steering_policy` <a name="reset_steering_policy" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.resetSteeringPolicy"></a>
+
+```python
+def reset_steering_policy() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.fallbackPoolInput">fallback_pool_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolDefaultWeightInput">pool_default_weight_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolsInput">pools_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolWeightsInput">pool_weights_input</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.steeringPolicyInput">steering_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.fallbackPool">fallback_pool</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolDefaultWeight">pool_default_weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.pools">pools</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolWeights">pool_weights</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.steeringPolicy">steering_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides">LoadBalancerPoolSetsOverrides</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `fallback_pool_input`<sup>Optional</sup> <a name="fallback_pool_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.fallbackPoolInput"></a>
+
+```python
+fallback_pool_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `pool_default_weight_input`<sup>Optional</sup> <a name="pool_default_weight_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolDefaultWeightInput"></a>
+
+```python
+pool_default_weight_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `pools_input`<sup>Optional</sup> <a name="pools_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolsInput"></a>
+
+```python
+pools_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `pool_weights_input`<sup>Optional</sup> <a name="pool_weights_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolWeightsInput"></a>
+
+```python
+pool_weights_input: typing.Mapping[typing.Union[int, float]]
+```
+
+- *Type:* typing.Mapping[typing.Union[int, float]]
+
+---
+
+##### `steering_policy_input`<sup>Optional</sup> <a name="steering_policy_input" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.steeringPolicyInput"></a>
+
+```python
+steering_policy_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `fallback_pool`<sup>Required</sup> <a name="fallback_pool" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.fallbackPool"></a>
+
+```python
+fallback_pool: str
+```
+
+- *Type:* str
+
+---
+
+##### `pool_default_weight`<sup>Required</sup> <a name="pool_default_weight" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolDefaultWeight"></a>
+
+```python
+pool_default_weight: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `pools`<sup>Required</sup> <a name="pools" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.pools"></a>
+
+```python
+pools: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `pool_weights`<sup>Required</sup> <a name="pool_weights" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.poolWeights"></a>
+
+```python
+pool_weights: typing.Mapping[typing.Union[int, float]]
+```
+
+- *Type:* typing.Mapping[typing.Union[int, float]]
+
+---
+
+##### `steering_policy`<sup>Required</sup> <a name="steering_policy" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.steeringPolicy"></a>
+
+```python
+steering_policy: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LoadBalancerPoolSetsOverrides
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides">LoadBalancerPoolSetsOverrides</a>
 
 ---
 
@@ -5131,7 +7940,7 @@ def put_fixed_response(
 
 The http 'Content-Type' header to include in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#content_type LoadBalancer#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
 
 ---
 
@@ -5141,7 +7950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The http 'Location' header to include in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#location LoadBalancer#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#location LoadBalancer#location}
 
 ---
 
@@ -5151,7 +7960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Text to include as the http body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#message_body LoadBalancer#message_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
 
 ---
 
@@ -5161,7 +7970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The http status code to respond with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#status_code LoadBalancer#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
 
 ---
 
@@ -5193,7 +8002,7 @@ Controls features that modify the routing of requests to pools and origins in re
 
 For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
 
 ---
 
@@ -5205,7 +8014,7 @@ A mapping of country codes to a list of pool IDs (ordered by their failover prio
 
 Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
 
 ---
 
@@ -5217,7 +8026,7 @@ A list of pool IDs ordered by their failover priority.
 
 Pools defined here are used by default, or when region_pools are not configured for a given region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
 
 ---
 
@@ -5227,7 +8036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The pool ID to use when all other pools are detected as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
 
 ---
 
@@ -5237,7 +8046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
 
 ---
 
@@ -5249,7 +8058,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
 
 ---
 
@@ -5257,13 +8066,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a>
 
-Configures pool weights.
+Configures pool weights for a rule override.
+
+An omitted default_weight inherits the load balancer's default weight.
 
 * `steering_policy="random"`: A random pool is selected with probability proportional to pool weights.
 * `steering_policy="least_outstanding_requests"`: Use pool weights to scale each pool's outstanding requests.
 * `steering_policy="least_connections"`: Use pool weights to scale each pool's open connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
 
 ---
 
@@ -5275,7 +8086,7 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
 
 ---
 
@@ -5288,7 +8099,7 @@ Specifies the type of session affinity the load balancer should use unless speci
 The supported types are: - `"cookie"`: On the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy, then a new origin server is calculated and used. - `"ip_cookie"`: Behaves the same as `"cookie"` except the initial origin selection is stable and based on the client's ip address. - `"header"`: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see `session_affinity_attributes.headers`) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of `session_affinity_ttl` seconds or the origin server is unhealthy, then a new origin server is calculated and used. See `headers` in `session_affinity_attributes` for additional required configuration.
 Available values: "none", "cookie", "ip_cookie", "header".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
 
 ---
 
@@ -5298,7 +8109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configures attributes for session affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
 
 ---
 
@@ -5310,7 +8121,7 @@ Time, in seconds, until a client's session expires after being created.
 
 Once the expiry time has been reached, subsequent requests may get sent to a different origin server. The accepted ranges per `session_affinity` policy are: - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800]. - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
 
 ---
 
@@ -5330,7 +8141,7 @@ Steering Policy for this load balancer.
 * `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
 
 ---
 
@@ -5342,7 +8153,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 This only applies to gray-clouded (unproxied) load balancers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 
 ---
 
@@ -6484,7 +9295,7 @@ Extends zero-downtime failover of requests to healthy origins from alternate poo
 
 When set false (the default) zero-downtime failover will only occur between origins within the same pool. See `session_affinity_attributes` for control over when sessions are broken or reassigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
 
 ---
 
@@ -6507,7 +9318,7 @@ Determines the authoritative location when ECS is not preferred, does not exist 
 * `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
   Available values: "pop", "resolver_ip".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#mode LoadBalancer#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#mode LoadBalancer#mode}
 
 ---
 
@@ -6523,7 +9334,7 @@ Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritat
 * `"geo"`: Prefer ECS only when `steering_policy="geo"`.
   Available values: "always", "never", "proximity", "geo".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
 
 ---
 
@@ -6542,7 +9353,9 @@ def put_random_steering(
 
 The default weight for pools in the load balancer that are not specified in the pool_weights map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+An omitted value inherits the load balancer's default weight.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
 
 ---
 
@@ -6552,7 +9365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
 
 ---
 
@@ -6577,7 +9390,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
 
 ---
 
@@ -6589,7 +9402,7 @@ Configures the names of HTTP headers to base session affinity on when header `se
 
 At least one HTTP header name must be provided. To specify the exact cookies to be used, include an item in the following format: `"cookie:<cookie-name-1>,<cookie-name-2>"` (example) where everything after the colon is a comma-separated list of cookie names. Providing only `"cookie"` will result in all cookies being used. The default max number of HTTP header names that can be provided depends on your plan: 5 for Enterprise, 1 for all other plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#headers LoadBalancer#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#headers LoadBalancer#headers}
 
 ---
 
@@ -6601,7 +9414,7 @@ When header `session_affinity` is enabled, this option can be used to specify ho
 
 The supported values are: - `"true"`: Load balancing requests must contain *all* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created. - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
 
 ---
 
@@ -6614,7 +9427,7 @@ Configures the SameSite attribute on session affinity cookie.
 Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
 Available values: "Auto", "Lax", "None", "Strict".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
 
 ---
 
@@ -6627,7 +9440,7 @@ Configures the Secure attribute on session affinity cookie.
 Value "Always" indicates the Secure attribute will be set in the Set-Cookie header, "Never" indicates the Secure attribute will not be set, and "Auto" will set the Secure attribute depending if Always Use HTTPS is enabled.
 Available values: "Auto", "Always", "Never".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#secure LoadBalancer#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#secure LoadBalancer#secure}
 
 ---
 
@@ -6640,7 +9453,7 @@ Configures the zero-downtime failover between origins within a pool when session
 This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - `"none"`: No failover takes place for sessions pinned to the origin (default). - `"temporary"`: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - `"sticky"`: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
 Available values: "none", "temporary", "sticky".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
 
 ---
 

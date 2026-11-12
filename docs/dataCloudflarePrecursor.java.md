@@ -4,7 +4,7 @@
 
 ### DataCloudflarePrecursor <a name="DataCloudflarePrecursor" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor cloudflare_precursor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor cloudflare_precursor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
 
 ---
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataCloudflarePrecursor to
 
 The id of the existing DataCloudflarePrecursor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -477,9 +477,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.defaultMode">defaultMode</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.enforcementRules">enforcementRules</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList">DataCloudflarePrecursorEnforcementRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.rules">rules</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList">DataCloudflarePrecursorRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.showInterstitial">showInterstitial</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -607,26 +608,6 @@ public TerraformProvider getProvider();
 
 ---
 
-##### `defaultMode`<sup>Required</sup> <a name="defaultMode" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.defaultMode"></a>
-
-```java
-public java.lang.String getDefaultMode();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `enforcementRules`<sup>Required</sup> <a name="enforcementRules" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.enforcementRules"></a>
-
-```java
-public DataCloudflarePrecursorEnforcementRulesList getEnforcementRules();
-```
-
-- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList">DataCloudflarePrecursorEnforcementRulesList</a>
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.id"></a>
 
 ```java
@@ -634,6 +615,36 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `rules`<sup>Required</sup> <a name="rules" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.rules"></a>
+
+```java
+public DataCloudflarePrecursorRulesList getRules();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList">DataCloudflarePrecursorRulesList</a>
+
+---
+
+##### `showInterstitial`<sup>Required</sup> <a name="showInterstitial" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.showInterstitial"></a>
+
+```java
+public IResolvable getShowInterstitial();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -791,43 +802,43 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
 
 ---
 
-### DataCloudflarePrecursorEnforcementRules <a name="DataCloudflarePrecursorEnforcementRules" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRules"></a>
+### DataCloudflarePrecursorRules <a name="DataCloudflarePrecursorRules" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRules"></a>
 
-#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRules.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRules.Initializer"></a>
 
 ```java
-import io.cdktn.providers.cloudflare.data_cloudflare_precursor.DataCloudflarePrecursorEnforcementRules;
+import io.cdktn.providers.cloudflare.data_cloudflare_precursor.DataCloudflarePrecursorRules;
 
-DataCloudflarePrecursorEnforcementRules.builder()
+DataCloudflarePrecursorRules.builder()
     .build();
 ```
 
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataCloudflarePrecursorEnforcementRulesList <a name="DataCloudflarePrecursorEnforcementRulesList" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList"></a>
+### DataCloudflarePrecursorRulesList <a name="DataCloudflarePrecursorRulesList" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer"></a>
 
 ```java
-import io.cdktn.providers.cloudflare.data_cloudflare_precursor.DataCloudflarePrecursorEnforcementRulesList;
+import io.cdktn.providers.cloudflare.data_cloudflare_precursor.DataCloudflarePrecursorRulesList;
 
-new DataCloudflarePrecursorEnforcementRulesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+new DataCloudflarePrecursorRulesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* io.cdktn.cdktn.IInterpolatingParent
 
@@ -835,7 +846,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
@@ -843,7 +854,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* java.lang.Boolean
 
@@ -855,15 +866,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.allWithMapKey"></a>
 
 ```java
 public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
@@ -873,19 +884,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.computeFqn"></a>
 
 ```java
 public java.lang.String computeFqn()
 ```
 
-##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.resolve"></a>
 
 ```java
 public java.lang.Object resolve(IResolveContext _context)
@@ -893,13 +904,13 @@ public java.lang.Object resolve(IResolveContext _context)
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.resolve.parameter._context"></a>
 
 - *Type:* io.cdktn.cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.toString"></a>
 
 ```java
 public java.lang.String toString()
@@ -909,13 +920,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.get"></a>
 
 ```java
-public DataCloudflarePrecursorEnforcementRulesOutputReference get(java.lang.Number index)
+public DataCloudflarePrecursorRulesOutputReference get(java.lang.Number index)
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.get.parameter.index"></a>
 
 - *Type:* java.lang.Number
 
@@ -928,12 +939,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.property.creationStack"></a>
 
 ```java
 public java.util.List<java.lang.String> getCreationStack();
@@ -947,7 +958,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.property.fqn"></a>
 
 ```java
 public java.lang.String getFqn();
@@ -958,26 +969,26 @@ public java.lang.String getFqn();
 ---
 
 
-### DataCloudflarePrecursorEnforcementRulesOutputReference <a name="DataCloudflarePrecursorEnforcementRulesOutputReference" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference"></a>
+### DataCloudflarePrecursorRulesOutputReference <a name="DataCloudflarePrecursorRulesOutputReference" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer"></a>
 
 ```java
-import io.cdktn.providers.cloudflare.data_cloudflare_precursor.DataCloudflarePrecursorEnforcementRulesOutputReference;
+import io.cdktn.providers.cloudflare.data_cloudflare_precursor.DataCloudflarePrecursorRulesOutputReference;
 
-new DataCloudflarePrecursorEnforcementRulesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+new DataCloudflarePrecursorRulesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* io.cdktn.cdktn.IInterpolatingParent
 
@@ -985,7 +996,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
@@ -993,7 +1004,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* java.lang.Number
 
@@ -1001,7 +1012,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* java.lang.Boolean
 
@@ -1013,149 +1024,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.computeFqn"></a>
 
 ```java
 public java.lang.String computeFqn()
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getAnyMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanAttribute"></a>
 
 ```java
 public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getListAttribute"></a>
 
 ```java
 public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberAttribute"></a>
 
 ```java
 public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberListAttribute"></a>
 
 ```java
 public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringAttribute"></a>
 
 ```java
 public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.interpolationForAttribute"></a>
 
 ```java
 public IResolvable interpolationForAttribute(java.lang.String property)
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.resolve"></a>
 
 ```java
 public java.lang.Object resolve(IResolveContext _context)
@@ -1163,13 +1174,13 @@ public java.lang.Object resolve(IResolveContext _context)
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.resolve.parameter._context"></a>
 
 - *Type:* io.cdktn.cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.toString"></a>
 
 ```java
 public java.lang.String toString()
@@ -1184,18 +1195,18 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.enabled">enabled</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRules">DataCloudflarePrecursorEnforcementRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.enabled">enabled</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.showInterstitial">showInterstitial</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRules">DataCloudflarePrecursorRules</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.creationStack"></a>
 
 ```java
 public java.util.List<java.lang.String> getCreationStack();
@@ -1209,7 +1220,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.fqn"></a>
 
 ```java
 public java.lang.String getFqn();
@@ -1219,7 +1230,7 @@ public java.lang.String getFqn();
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.description"></a>
 
 ```java
 public java.lang.String getDescription();
@@ -1229,7 +1240,7 @@ public java.lang.String getDescription();
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.enabled"></a>
 
 ```java
 public IResolvable getEnabled();
@@ -1239,7 +1250,7 @@ public IResolvable getEnabled();
 
 ---
 
-##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.expression"></a>
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.expression"></a>
 
 ```java
 public java.lang.String getExpression();
@@ -1249,7 +1260,7 @@ public java.lang.String getExpression();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.id"></a>
 
 ```java
 public java.lang.String getId();
@@ -1259,23 +1270,23 @@ public java.lang.String getId();
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.mode"></a>
+##### `showInterstitial`<sup>Required</sup> <a name="showInterstitial" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.showInterstitial"></a>
 
 ```java
-public java.lang.String getMode();
+public IResolvable getShowInterstitial();
 ```
 
-- *Type:* java.lang.String
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.internalValue"></a>
 
 ```java
-public DataCloudflarePrecursorEnforcementRules getInternalValue();
+public DataCloudflarePrecursorRules getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRules">DataCloudflarePrecursorEnforcementRules</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRules">DataCloudflarePrecursorRules</a>
 
 ---
 

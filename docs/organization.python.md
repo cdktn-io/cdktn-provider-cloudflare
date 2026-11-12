@@ -4,7 +4,7 @@
 
 ### Organization <a name="Organization" id="@cdktn/provider-cloudflare.organization.Organization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization cloudflare_organization}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization cloudflare_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.organization.Organization.Initializer"></a>
 
@@ -23,6 +23,7 @@ organization.Organization(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   parent: OrganizationParent = None,
+  parent_id: str = None,
   profile: OrganizationProfile = None
 )
 ```
@@ -38,9 +39,10 @@ organization.Organization(
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#parent Organization#parent}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.profile">profile</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#profile Organization#profile}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.name">name</a></code> | <code>str</code> | The Organization name, limited to 65 UTF-8 bytes. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent Organization#parent}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.parentId">parent_id</a></code> | <code>str</code> | The current parent Organization ID. A different value is rejected; this endpoint cannot move an Organization. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.profile">profile</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a></code> | Optional profile fields, each limited to 1,000 UTF-8 bytes. An empty profile is ignored. |
 
 ---
 
@@ -108,7 +110,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#name Organization#name}.
+The Organization name, limited to 65 UTF-8 bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#name Organization#name}
 
 ---
 
@@ -116,7 +120,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#parent Organization#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent Organization#parent}.
+
+---
+
+##### `parent_id`<sup>Optional</sup> <a name="parent_id" id="@cdktn/provider-cloudflare.organization.Organization.Initializer.parameter.parentId"></a>
+
+- *Type:* str
+
+The current parent Organization ID. A different value is rejected; this endpoint cannot move an Organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent_id Organization#parent_id}
 
 ---
 
@@ -124,7 +138,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#profile Organization#profile}.
+Optional profile fields, each limited to 1,000 UTF-8 bytes. An empty profile is ignored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#profile Organization#profile}
 
 ---
 
@@ -159,6 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.putParent">put_parent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.putProfile">put_profile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.resetParent">reset_parent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.resetParentId">reset_parent_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.resetProfile">reset_profile</a></code> | *No description.* |
 
 ---
@@ -523,7 +540,7 @@ def put_parent(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#id Organization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#id Organization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -534,51 +551,51 @@ If you experience problems setting this value it might not be settable. Please t
 
 ```python
 def put_profile(
-  business_address: str,
-  business_email: str,
-  business_name: str,
-  business_phone: str,
-  external_metadata: str
+  business_address: str = None,
+  business_email: str = None,
+  business_name: str = None,
+  business_phone: str = None,
+  external_metadata: str = None
 ) -> None
 ```
 
-###### `business_address`<sup>Required</sup> <a name="business_address" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.businessAddress"></a>
+###### `business_address`<sup>Optional</sup> <a name="business_address" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.businessAddress"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_address Organization#business_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_address Organization#business_address}.
 
 ---
 
-###### `business_email`<sup>Required</sup> <a name="business_email" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.businessEmail"></a>
+###### `business_email`<sup>Optional</sup> <a name="business_email" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.businessEmail"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_email Organization#business_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_email Organization#business_email}.
 
 ---
 
-###### `business_name`<sup>Required</sup> <a name="business_name" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.businessName"></a>
+###### `business_name`<sup>Optional</sup> <a name="business_name" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.businessName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_name Organization#business_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_name Organization#business_name}.
 
 ---
 
-###### `business_phone`<sup>Required</sup> <a name="business_phone" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.businessPhone"></a>
+###### `business_phone`<sup>Optional</sup> <a name="business_phone" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.businessPhone"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_phone Organization#business_phone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_phone Organization#business_phone}.
 
 ---
 
-###### `external_metadata`<sup>Required</sup> <a name="external_metadata" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.externalMetadata"></a>
+###### `external_metadata`<sup>Optional</sup> <a name="external_metadata" id="@cdktn/provider-cloudflare.organization.Organization.putProfile.parameter.externalMetadata"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#external_metadata Organization#external_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#external_metadata Organization#external_metadata}.
 
 ---
 
@@ -586,6 +603,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def reset_parent() -> None
+```
+
+##### `reset_parent_id` <a name="reset_parent_id" id="@cdktn/provider-cloudflare.organization.Organization.resetParentId"></a>
+
+```python
+def reset_parent_id() -> None
 ```
 
 ##### `reset_profile` <a name="reset_profile" id="@cdktn/provider-cloudflare.organization.Organization.resetProfile"></a>
@@ -708,7 +731,7 @@ The construct id used in the generated config for the Organization to import.
 
 The id of the existing Organization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,9 +767,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference">OrganizationParentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.profile">profile</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference">OrganizationProfileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.parentIdInput">parent_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.parentInput">parent_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.profileInput">profile_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.parentId">parent_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -952,6 +977,16 @@ name_input: str
 
 ---
 
+##### `parent_id_input`<sup>Optional</sup> <a name="parent_id_input" id="@cdktn/provider-cloudflare.organization.Organization.property.parentIdInput"></a>
+
+```python
+parent_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `parent_input`<sup>Optional</sup> <a name="parent_input" id="@cdktn/provider-cloudflare.organization.Organization.property.parentInput"></a>
 
 ```python
@@ -976,6 +1011,16 @@ profile_input: IResolvable | OrganizationProfile
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `parent_id`<sup>Required</sup> <a name="parent_id" id="@cdktn/provider-cloudflare.organization.Organization.property.parentId"></a>
+
+```python
+parent_id: str
 ```
 
 - *Type:* str
@@ -1019,6 +1064,7 @@ organization.OrganizationConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   parent: OrganizationParent = None,
+  parent_id: str = None,
   profile: OrganizationProfile = None
 )
 ```
@@ -1034,9 +1080,10 @@ organization.OrganizationConfig(
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#parent Organization#parent}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.profile">profile</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#profile Organization#profile}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.name">name</a></code> | <code>str</code> | The Organization name, limited to 65 UTF-8 bytes. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent Organization#parent}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.parentId">parent_id</a></code> | <code>str</code> | The current parent Organization ID. A different value is rejected; this endpoint cannot move an Organization. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.profile">profile</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a></code> | Optional profile fields, each limited to 1,000 UTF-8 bytes. An empty profile is ignored. |
 
 ---
 
@@ -1118,7 +1165,9 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#name Organization#name}.
+The Organization name, limited to 65 UTF-8 bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#name Organization#name}
 
 ---
 
@@ -1130,7 +1179,21 @@ parent: OrganizationParent
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#parent Organization#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent Organization#parent}.
+
+---
+
+##### `parent_id`<sup>Optional</sup> <a name="parent_id" id="@cdktn/provider-cloudflare.organization.OrganizationConfig.property.parentId"></a>
+
+```python
+parent_id: str
+```
+
+- *Type:* str
+
+The current parent Organization ID. A different value is rejected; this endpoint cannot move an Organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent_id Organization#parent_id}
 
 ---
 
@@ -1142,7 +1205,9 @@ profile: OrganizationProfile
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#profile Organization#profile}.
+Optional profile fields, each limited to 1,000 UTF-8 bytes. An empty profile is ignored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#profile Organization#profile}
 
 ---
 
@@ -1184,7 +1249,7 @@ organization.OrganizationParent(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#id Organization#id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#id Organization#id}. |
 
 ---
 
@@ -1196,7 +1261,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#id Organization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#id Organization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1211,11 +1276,11 @@ If you experience problems setting this value it might not be settable. Please t
 from cdktn_provider_cloudflare import organization
 
 organization.OrganizationProfile(
-  business_address: str,
-  business_email: str,
-  business_name: str,
-  business_phone: str,
-  external_metadata: str
+  business_address: str = None,
+  business_email: str = None,
+  business_name: str = None,
+  business_phone: str = None,
+  external_metadata: str = None
 )
 ```
 
@@ -1223,15 +1288,15 @@ organization.OrganizationProfile(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessAddress">business_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_address Organization#business_address}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessEmail">business_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_email Organization#business_email}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessName">business_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_name Organization#business_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessPhone">business_phone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_phone Organization#business_phone}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.externalMetadata">external_metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#external_metadata Organization#external_metadata}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessAddress">business_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_address Organization#business_address}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessEmail">business_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_email Organization#business_email}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessName">business_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_name Organization#business_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessPhone">business_phone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_phone Organization#business_phone}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.externalMetadata">external_metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#external_metadata Organization#external_metadata}. |
 
 ---
 
-##### `business_address`<sup>Required</sup> <a name="business_address" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessAddress"></a>
+##### `business_address`<sup>Optional</sup> <a name="business_address" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessAddress"></a>
 
 ```python
 business_address: str
@@ -1239,11 +1304,11 @@ business_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_address Organization#business_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_address Organization#business_address}.
 
 ---
 
-##### `business_email`<sup>Required</sup> <a name="business_email" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessEmail"></a>
+##### `business_email`<sup>Optional</sup> <a name="business_email" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessEmail"></a>
 
 ```python
 business_email: str
@@ -1251,11 +1316,11 @@ business_email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_email Organization#business_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_email Organization#business_email}.
 
 ---
 
-##### `business_name`<sup>Required</sup> <a name="business_name" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessName"></a>
+##### `business_name`<sup>Optional</sup> <a name="business_name" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessName"></a>
 
 ```python
 business_name: str
@@ -1263,11 +1328,11 @@ business_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_name Organization#business_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_name Organization#business_name}.
 
 ---
 
-##### `business_phone`<sup>Required</sup> <a name="business_phone" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessPhone"></a>
+##### `business_phone`<sup>Optional</sup> <a name="business_phone" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessPhone"></a>
 
 ```python
 business_phone: str
@@ -1275,11 +1340,11 @@ business_phone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_phone Organization#business_phone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_phone Organization#business_phone}.
 
 ---
 
-##### `external_metadata`<sup>Required</sup> <a name="external_metadata" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.externalMetadata"></a>
+##### `external_metadata`<sup>Optional</sup> <a name="external_metadata" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.externalMetadata"></a>
 
 ```python
 external_metadata: str
@@ -1287,7 +1352,7 @@ external_metadata: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#external_metadata Organization#external_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#external_metadata Organization#external_metadata}.
 
 ---
 
@@ -1528,9 +1593,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.areChildAccountsAccessibleByOrgMembers">are_child_accounts_accessible_by_org_members</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.hierarchyTags">hierarchy_tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.managedBy">managed_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.tenantFlags">tenant_flags</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaTenantFlagsOutputReference">OrganizationMetaTenantFlagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.tenantType">tenant_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMeta">OrganizationMeta</a></code> | *No description.* |
 
 ---
@@ -1556,6 +1623,16 @@ fqn: str
 ```
 
 - *Type:* str
+
+---
+
+##### `are_child_accounts_accessible_by_org_members`<sup>Required</sup> <a name="are_child_accounts_accessible_by_org_members" id="@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.areChildAccountsAccessibleByOrgMembers"></a>
+
+```python
+are_child_accounts_accessible_by_org_members: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1586,6 +1663,16 @@ tenant_flags: OrganizationMetaTenantFlagsOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaTenantFlagsOutputReference">OrganizationMetaTenantFlagsOutputReference</a>
+
+---
+
+##### `tenant_type`<sup>Required</sup> <a name="tenant_type" id="@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.tenantType"></a>
+
+```python
+tenant_type: str
+```
+
+- *Type:* str
 
 ---
 
@@ -2197,7 +2284,6 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | *No description.* |
@@ -2222,16 +2308,6 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.name"></a>
-
-```python
-name: str
 ```
 
 - *Type:* str
@@ -2322,6 +2398,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessAddress">reset_business_address</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessEmail">reset_business_email</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessName">reset_business_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessPhone">reset_business_phone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetExternalMetadata">reset_external_metadata</a></code> | *No description.* |
 
 ---
 
@@ -2496,6 +2577,36 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `reset_business_address` <a name="reset_business_address" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessAddress"></a>
+
+```python
+def reset_business_address() -> None
+```
+
+##### `reset_business_email` <a name="reset_business_email" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessEmail"></a>
+
+```python
+def reset_business_email() -> None
+```
+
+##### `reset_business_name` <a name="reset_business_name" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessName"></a>
+
+```python
+def reset_business_name() -> None
+```
+
+##### `reset_business_phone` <a name="reset_business_phone" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessPhone"></a>
+
+```python
+def reset_business_phone() -> None
+```
+
+##### `reset_external_metadata` <a name="reset_external_metadata" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetExternalMetadata"></a>
+
+```python
+def reset_external_metadata() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

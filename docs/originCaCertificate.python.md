@@ -4,7 +4,7 @@
 
 ### OriginCaCertificate <a name="OriginCaCertificate" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer"></a>
 
@@ -24,7 +24,8 @@ originCaCertificate.OriginCaCertificate(
   csr: str,
   hostnames: typing.List[str],
   request_type: str,
-  requested_validity: typing.Union[int, float] = None
+  requested_validity: typing.Union[int, float] = None,
+  zone_id: str = None
 )
 ```
 
@@ -43,6 +44,7 @@ originCaCertificate.OriginCaCertificate(
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.hostnames">hostnames</a></code> | <code>typing.List[str]</code> | Array of hostnames or wildcard names bound to the certificate. |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.requestType">request_type</a></code> | <code>str</code> | Signature type desired on certificate ("origin-rsa" (rsa), "origin-ecc" (ecdsa), or "keyless-certificate" (for Keyless SSL servers). Available values: "origin-rsa", "origin-ecc", "keyless-certificate". |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.requestedValidity">requested_validity</a></code> | <code>typing.Union[int, float]</code> | The number of days for which the certificate should be valid. Available values: 7, 30, 90, 365, 730, 1095, 5475. |
+| <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier of the zone whose keyless servers the certificate is for. Required when `request_type` is `keyless-certificate`; ignored otherwise. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The Certificate Signing Request (CSR). Must be newline-encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
 
 ---
 
@@ -124,7 +126,7 @@ Array of hostnames or wildcard names bound to the certificate.
 
 Hostnames must be fully qualified domain names (FQDNs) belonging to zones on your account (e.g., `example.com` or `sub.example.com`). Wildcards are supported only as a `*.` prefix for a single level (e.g., `*.example.com`). Double wildcards (`*.*.example.com`) and interior wildcards (`foo.*.example.com`) are not allowed. The wildcard suffix must be a multi-label domain (`*.example.com` is valid, but `*.com` is not). Unicode/IDN hostnames are accepted and automatically converted to punycode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Signature type desired on certificate ("origin-rsa" (rsa), "origin-ecc" (ecdsa), or "keyless-certificate" (for Keyless SSL servers). Available values: "origin-rsa", "origin-ecc", "keyless-certificate".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
 
 ---
 
@@ -144,7 +146,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of days for which the certificate should be valid. Available values: 7, 30, 90, 365, 730, 1095, 5475.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier of the zone whose keyless servers the certificate is for. Required when `request_type` is `keyless-certificate`; ignored otherwise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#zone_id OriginCaCertificate#zone_id}
 
 ---
 
@@ -177,6 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetRequestedValidity">reset_requested_validity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -534,6 +547,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_requested_validity() -> None
 ```
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -648,7 +667,7 @@ The construct id used in the generated config for the OriginCaCertificate to imp
 
 The id of the existing OriginCaCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -681,14 +700,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.certificate">certificate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.revokedAt">revoked_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.csrInput">csr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.hostnamesInput">hostnames_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.requestedValidityInput">requested_validity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.requestTypeInput">request_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.csr">csr</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.hostnames">hostnames</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.requestedValidity">requested_validity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.requestType">request_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -864,6 +886,16 @@ id: str
 
 ---
 
+##### `revoked_at`<sup>Required</sup> <a name="revoked_at" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.revokedAt"></a>
+
+```python
+revoked_at: str
+```
+
+- *Type:* str
+
+---
+
 ##### `csr_input`<sup>Optional</sup> <a name="csr_input" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.csrInput"></a>
 
 ```python
@@ -898,6 +930,16 @@ requested_validity_input: typing.Union[int, float]
 
 ```python
 request_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `zone_id_input`<sup>Optional</sup> <a name="zone_id_input" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.zoneIdInput"></a>
+
+```python
+zone_id_input: str
 ```
 
 - *Type:* str
@@ -944,6 +986,16 @@ request_type: str
 
 ---
 
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificate.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -982,7 +1034,8 @@ originCaCertificate.OriginCaCertificateConfig(
   csr: str,
   hostnames: typing.List[str],
   request_type: str,
-  requested_validity: typing.Union[int, float] = None
+  requested_validity: typing.Union[int, float] = None,
+  zone_id: str = None
 )
 ```
 
@@ -1001,6 +1054,7 @@ originCaCertificate.OriginCaCertificateConfig(
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.hostnames">hostnames</a></code> | <code>typing.List[str]</code> | Array of hostnames or wildcard names bound to the certificate. |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.requestType">request_type</a></code> | <code>str</code> | Signature type desired on certificate ("origin-rsa" (rsa), "origin-ecc" (ecdsa), or "keyless-certificate" (for Keyless SSL servers). Available values: "origin-rsa", "origin-ecc", "keyless-certificate". |
 | <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.requestedValidity">requested_validity</a></code> | <code>typing.Union[int, float]</code> | The number of days for which the certificate should be valid. Available values: 7, 30, 90, 365, 730, 1095, 5475. |
+| <code><a href="#@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier of the zone whose keyless servers the certificate is for. Required when `request_type` is `keyless-certificate`; ignored otherwise. |
 
 ---
 
@@ -1084,7 +1138,7 @@ csr: str
 
 The Certificate Signing Request (CSR). Must be newline-encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
 
 ---
 
@@ -1100,7 +1154,7 @@ Array of hostnames or wildcard names bound to the certificate.
 
 Hostnames must be fully qualified domain names (FQDNs) belonging to zones on your account (e.g., `example.com` or `sub.example.com`). Wildcards are supported only as a `*.` prefix for a single level (e.g., `*.example.com`). Double wildcards (`*.*.example.com`) and interior wildcards (`foo.*.example.com`) are not allowed. The wildcard suffix must be a multi-label domain (`*.example.com` is valid, but `*.com` is not). Unicode/IDN hostnames are accepted and automatically converted to punycode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
 
 ---
 
@@ -1114,7 +1168,7 @@ request_type: str
 
 Signature type desired on certificate ("origin-rsa" (rsa), "origin-ecc" (ecdsa), or "keyless-certificate" (for Keyless SSL servers). Available values: "origin-rsa", "origin-ecc", "keyless-certificate".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
 
 ---
 
@@ -1128,7 +1182,21 @@ requested_validity: typing.Union[int, float]
 
 The number of days for which the certificate should be valid. Available values: 7, 30, 90, 365, 730, 1095, 5475.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier of the zone whose keyless servers the certificate is for. Required when `request_type` is `keyless-certificate`; ignored otherwise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate#zone_id OriginCaCertificate#zone_id}
 
 ---
 

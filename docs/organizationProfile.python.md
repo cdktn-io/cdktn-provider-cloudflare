@@ -4,7 +4,7 @@
 
 ### OrganizationProfileA <a name="OrganizationProfileA" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile cloudflare_organization_profile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile cloudflare_organization_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer"></a>
 
@@ -21,12 +21,12 @@ organizationProfile.OrganizationProfileA(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  business_address: str,
-  business_email: str,
-  business_name: str,
-  business_phone: str,
-  external_metadata: str,
-  organization_id: str
+  organization_id: str,
+  business_address: str = None,
+  business_email: str = None,
+  business_name: str = None,
+  business_phone: str = None,
+  external_metadata: str = None
 )
 ```
 
@@ -41,12 +41,12 @@ organizationProfile.OrganizationProfileA(
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessAddress">business_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessEmail">business_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessName">business_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessPhone">business_phone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.externalMetadata">external_metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessAddress">business_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessEmail">business_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessName">business_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessPhone">business_phone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.externalMetadata">external_metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}. |
 
 ---
 
@@ -110,51 +110,51 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `business_address`<sup>Required</sup> <a name="business_address" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessAddress"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}.
-
----
-
-##### `business_email`<sup>Required</sup> <a name="business_email" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessEmail"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}.
-
----
-
-##### `business_name`<sup>Required</sup> <a name="business_name" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessName"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}.
-
----
-
-##### `business_phone`<sup>Required</sup> <a name="business_phone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessPhone"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}.
-
----
-
-##### `external_metadata`<sup>Required</sup> <a name="external_metadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.externalMetadata"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}.
-
----
-
 ##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.organizationId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}.
+
+---
+
+##### `business_address`<sup>Optional</sup> <a name="business_address" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessAddress"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}.
+
+---
+
+##### `business_email`<sup>Optional</sup> <a name="business_email" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessEmail"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}.
+
+---
+
+##### `business_name`<sup>Optional</sup> <a name="business_name" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}.
+
+---
+
+##### `business_phone`<sup>Optional</sup> <a name="business_phone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessPhone"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}.
+
+---
+
+##### `external_metadata`<sup>Optional</sup> <a name="external_metadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.externalMetadata"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}.
 
 ---
 
@@ -186,6 +186,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessAddress">reset_business_address</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessEmail">reset_business_email</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessName">reset_business_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessPhone">reset_business_phone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetExternalMetadata">reset_external_metadata</a></code> | *No description.* |
 
 ---
 
@@ -537,6 +542,36 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_business_address` <a name="reset_business_address" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessAddress"></a>
+
+```python
+def reset_business_address() -> None
+```
+
+##### `reset_business_email` <a name="reset_business_email" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessEmail"></a>
+
+```python
+def reset_business_email() -> None
+```
+
+##### `reset_business_name` <a name="reset_business_name" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessName"></a>
+
+```python
+def reset_business_name() -> None
+```
+
+##### `reset_business_phone` <a name="reset_business_phone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessPhone"></a>
+
+```python
+def reset_business_phone() -> None
+```
+
+##### `reset_external_metadata` <a name="reset_external_metadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetExternalMetadata"></a>
+
+```python
+def reset_external_metadata() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -651,7 +686,7 @@ The construct id used in the generated config for the OrganizationProfileA to im
 
 The id of the existing OrganizationProfileA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -993,12 +1028,12 @@ organizationProfile.OrganizationProfileAConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  business_address: str,
-  business_email: str,
-  business_name: str,
-  business_phone: str,
-  external_metadata: str,
-  organization_id: str
+  organization_id: str,
+  business_address: str = None,
+  business_email: str = None,
+  business_name: str = None,
+  business_phone: str = None,
+  external_metadata: str = None
 )
 ```
 
@@ -1013,12 +1048,12 @@ organizationProfile.OrganizationProfileAConfig(
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessAddress">business_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessEmail">business_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessName">business_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessPhone">business_phone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.externalMetadata">external_metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessAddress">business_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessEmail">business_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessName">business_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessPhone">business_phone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.externalMetadata">external_metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}. |
 
 ---
 
@@ -1092,66 +1127,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `business_address`<sup>Required</sup> <a name="business_address" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessAddress"></a>
-
-```python
-business_address: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}.
-
----
-
-##### `business_email`<sup>Required</sup> <a name="business_email" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessEmail"></a>
-
-```python
-business_email: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}.
-
----
-
-##### `business_name`<sup>Required</sup> <a name="business_name" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessName"></a>
-
-```python
-business_name: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}.
-
----
-
-##### `business_phone`<sup>Required</sup> <a name="business_phone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessPhone"></a>
-
-```python
-business_phone: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}.
-
----
-
-##### `external_metadata`<sup>Required</sup> <a name="external_metadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.externalMetadata"></a>
-
-```python
-external_metadata: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}.
-
----
-
 ##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.organizationId"></a>
 
 ```python
@@ -1160,7 +1135,67 @@ organization_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}.
+
+---
+
+##### `business_address`<sup>Optional</sup> <a name="business_address" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessAddress"></a>
+
+```python
+business_address: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}.
+
+---
+
+##### `business_email`<sup>Optional</sup> <a name="business_email" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessEmail"></a>
+
+```python
+business_email: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}.
+
+---
+
+##### `business_name`<sup>Optional</sup> <a name="business_name" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessName"></a>
+
+```python
+business_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}.
+
+---
+
+##### `business_phone`<sup>Optional</sup> <a name="business_phone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessPhone"></a>
+
+```python
+business_phone: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}.
+
+---
+
+##### `external_metadata`<sup>Optional</sup> <a name="external_metadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.externalMetadata"></a>
+
+```python
+external_metadata: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}.
 
 ---
 

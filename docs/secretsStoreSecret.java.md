@@ -4,7 +4,7 @@
 
 ### SecretsStoreSecret <a name="SecretsStoreSecret" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret cloudflare_secrets_store_secret}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret cloudflare_secrets_store_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer"></a>
 
@@ -21,10 +21,10 @@ SecretsStoreSecret.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .name(java.lang.String)
-    .scopes(java.util.List<java.lang.String>)
     .storeId(java.lang.String)
     .value(java.lang.String)
 //  .comment(java.lang.String)
+//  .scopes(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -41,10 +41,10 @@ SecretsStoreSecret.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the secret. |
-| <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | The list of services that can use this secret. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.storeId">storeId</a></code> | <code>java.lang.String</code> | Store Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | The value of the secret. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Freeform text describing the secret. |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | The list of services that can use this secret, or null when the secret inherits its store's scopes. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#account_id SecretsStoreSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#account_id SecretsStoreSecret#account_id}
 
 ---
 
@@ -124,19 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#name SecretsStoreSecret#name}
-
----
-
-##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.scopes"></a>
-
-- *Type:* java.util.List<java.lang.String>
-
-The list of services that can use this secret.
-
-Valid values are `workers`, `ai_gateway`, `dex`, and `access`. Must be listed in alphabetical order.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#scopes SecretsStoreSecret#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#name SecretsStoreSecret#name}
 
 ---
 
@@ -146,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Store Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#store_id SecretsStoreSecret#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#store_id SecretsStoreSecret#store_id}
 
 ---
 
@@ -158,7 +146,7 @@ The value of the secret.
 
 Maximum 64 KiB (65,536 bytes). Note that this is 'write only' - no API response will provide this value, it is only used to create/modify secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#value SecretsStoreSecret#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#value SecretsStoreSecret#value}
 
 ---
 
@@ -168,7 +156,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Freeform text describing the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#comment SecretsStoreSecret#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#comment SecretsStoreSecret#comment}
+
+---
+
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer.parameter.scopes"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+The list of services that can use this secret, or null when the secret inherits its store's scopes.
+
+Set it to null in a patch to inherit again. An empty list lets no service use the secret. Explicit scopes must be listed in alphabetical order.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#scopes SecretsStoreSecret#scopes}
 
 ---
 
@@ -201,6 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.resetScopes">resetScopes</a></code> | *No description.* |
 
 ---
 
@@ -521,6 +522,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetComment()
 ```
 
+##### `resetScopes` <a name="resetScopes" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.resetScopes"></a>
+
+```java
+public void resetScopes()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -624,7 +631,7 @@ The construct id used in the generated config for the SecretsStoreSecret to impo
 
 The id of the existing SecretsStoreSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1012,10 +1019,10 @@ SecretsStoreSecretConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .name(java.lang.String)
-    .scopes(java.util.List<java.lang.String>)
     .storeId(java.lang.String)
     .value(java.lang.String)
 //  .comment(java.lang.String)
+//  .scopes(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -1032,10 +1039,10 @@ SecretsStoreSecretConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the secret. |
-| <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | The list of services that can use this secret. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.storeId">storeId</a></code> | <code>java.lang.String</code> | Store Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.value">value</a></code> | <code>java.lang.String</code> | The value of the secret. |
 | <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Freeform text describing the secret. |
+| <code><a href="#@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | The list of services that can use this secret, or null when the secret inherits its store's scopes. |
 
 ---
 
@@ -1119,7 +1126,7 @@ public java.lang.String getAccountId();
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#account_id SecretsStoreSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#account_id SecretsStoreSecret#account_id}
 
 ---
 
@@ -1133,23 +1140,7 @@ public java.lang.String getName();
 
 The name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#name SecretsStoreSecret#name}
-
----
-
-##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.scopes"></a>
-
-```java
-public java.util.List<java.lang.String> getScopes();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The list of services that can use this secret.
-
-Valid values are `workers`, `ai_gateway`, `dex`, and `access`. Must be listed in alphabetical order.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#scopes SecretsStoreSecret#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#name SecretsStoreSecret#name}
 
 ---
 
@@ -1163,7 +1154,7 @@ public java.lang.String getStoreId();
 
 Store Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#store_id SecretsStoreSecret#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#store_id SecretsStoreSecret#store_id}
 
 ---
 
@@ -1179,7 +1170,7 @@ The value of the secret.
 
 Maximum 64 KiB (65,536 bytes). Note that this is 'write only' - no API response will provide this value, it is only used to create/modify secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#value SecretsStoreSecret#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#value SecretsStoreSecret#value}
 
 ---
 
@@ -1193,7 +1184,23 @@ public java.lang.String getComment();
 
 Freeform text describing the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret#comment SecretsStoreSecret#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#comment SecretsStoreSecret#comment}
+
+---
+
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecretConfig.property.scopes"></a>
+
+```java
+public java.util.List<java.lang.String> getScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The list of services that can use this secret, or null when the secret inherits its store's scopes.
+
+Set it to null in a patch to inherit again. An empty list lets no service use the secret. Explicit scopes must be listed in alphabetical order.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret#scopes SecretsStoreSecret#scopes}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ArgoTieredCaching <a name="ArgoTieredCaching" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer"></a>
 
@@ -35,7 +35,7 @@ ArgoTieredCaching.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Enables Tiered Caching. Available values: "on", "off". |
+| <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Enables or disables Tiered Cache. Available values: "on", "off". |
 | <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 
 ---
@@ -104,9 +104,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Enables Tiered Caching. Available values: "on", "off".
+Enables or disables Tiered Cache. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
 
 ---
 
@@ -565,7 +565,7 @@ The construct id used in the generated config for the ArgoTieredCaching to impor
 
 The id of the existing ArgoTieredCaching that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ ArgoTieredCachingConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCachingConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCachingConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCachingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCachingConfig.property.value">value</a></code> | <code>java.lang.String</code> | Enables Tiered Caching. Available values: "on", "off". |
+| <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCachingConfig.property.value">value</a></code> | <code>java.lang.String</code> | Enables or disables Tiered Cache. Available values: "on", "off". |
 | <code><a href="#@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCachingConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 
 ---
@@ -951,9 +951,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Enables Tiered Caching. Available values: "on", "off".
+Enables or disables Tiered Cache. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
 
 ---
 
@@ -967,7 +967,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
 
 ---
 

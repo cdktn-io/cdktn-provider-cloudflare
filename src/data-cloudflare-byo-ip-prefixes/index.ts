@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefixes
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefixes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareByoIpPrefixesConfig extends cdktn.TerraformMetaAr
   /**
   * Identifier of a Cloudflare account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefixes#account_id DataCloudflareByoIpPrefixes#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefixes#account_id DataCloudflareByoIpPrefixes#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefixes#max_items DataCloudflareByoIpPrefixes#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefixes#max_items DataCloudflareByoIpPrefixes#max_items}
   */
   readonly maxItems?: number;
 }
@@ -99,6 +99,16 @@ export class DataCloudflareByoIpPrefixesResultOutputReference extends cdktn.Comp
   // asn - computed: true, optional: false, required: false
   public get asn() {
     return this.getNumberAttribute('asn');
+  }
+
+  // asn_ownership_validation_state - computed: true, optional: false, required: false
+  public get asnOwnershipValidationState() {
+    return this.getStringAttribute('asn_ownership_validation_state');
+  }
+
+  // aspa_validation_state - computed: true, optional: false, required: false
+  public get aspaValidationState() {
+    return this.getStringAttribute('aspa_validation_state');
   }
 
   // cidr - computed: true, optional: false, required: false
@@ -187,7 +197,7 @@ export class DataCloudflareByoIpPrefixesResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes}
 */
 export class DataCloudflareByoIpPrefixes extends cdktn.TerraformDataSource {
 
@@ -203,7 +213,7 @@ export class DataCloudflareByoIpPrefixes extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareByoIpPrefixes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareByoIpPrefixes to import
-  * @param importFromId The id of the existing DataCloudflareByoIpPrefixes that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefixes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareByoIpPrefixes that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefixes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareByoIpPrefixes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -215,7 +225,7 @@ export class DataCloudflareByoIpPrefixes extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +236,7 @@ export class DataCloudflareByoIpPrefixes extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_byo_ip_prefixes',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

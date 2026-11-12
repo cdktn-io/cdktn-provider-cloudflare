@@ -4,7 +4,7 @@
 
 ### BotManagement <a name="BotManagement" id="@cdktn/provider-cloudflare.botManagement.BotManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management cloudflare_bot_management}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management cloudflare_bot_management}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.botManagement.BotManagement.Initializer"></a>
 
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.putAiAgents">PutAiAgents</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.resetAiAgents">ResetAiAgents</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.resetAiBotsMigrationOptOut">ResetAiBotsMigrationOptOut</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.resetAiBotsProtection">ResetAiBotsProtection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.resetAisearch">ResetAisearch</a></code> | *No description.* |
@@ -407,6 +409,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutAiAgents` <a name="PutAiAgents" id="@cdktn/provider-cloudflare.botManagement.BotManagement.putAiAgents"></a>
+
+```csharp
+private void PutAiAgents(BotManagementAiAgents Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-cloudflare.botManagement.BotManagement.putAiAgents.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents">BotManagementAiAgents</a>
+
+---
+
+##### `ResetAiAgents` <a name="ResetAiAgents" id="@cdktn/provider-cloudflare.botManagement.BotManagement.resetAiAgents"></a>
+
+```csharp
+private void ResetAiAgents()
+```
+
 ##### `ResetAiBotsMigrationOptOut` <a name="ResetAiBotsMigrationOptOut" id="@cdktn/provider-cloudflare.botManagement.BotManagement.resetAiBotsMigrationOptOut"></a>
 
 ```csharp
@@ -636,7 +656,7 @@ The construct id used in the generated config for the BotManagement to import.
 
 The id of the existing BotManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -666,9 +686,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.aiAgents">AiAgents</a></code> | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference">BotManagementAiAgentsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.staleZoneConfiguration">StaleZoneConfiguration</a></code> | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementStaleZoneConfigurationOutputReference">BotManagementStaleZoneConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.usingLatestModel">UsingLatestModel</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.aiAgentsInput">AiAgentsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents">BotManagementAiAgents</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.aiBotsMigrationOptOutInput">AiBotsMigrationOptOutInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.aiBotsProtectionInput">AiBotsProtectionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagement.property.aisearchInput">AisearchInput</a></code> | <code>string</code> | *No description.* |
@@ -858,6 +880,16 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AiAgents`<sup>Required</sup> <a name="AiAgents" id="@cdktn/provider-cloudflare.botManagement.BotManagement.property.aiAgents"></a>
+
+```csharp
+public BotManagementAiAgentsOutputReference AiAgents { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference">BotManagementAiAgentsOutputReference</a>
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-cloudflare.botManagement.BotManagement.property.id"></a>
 
 ```csharp
@@ -885,6 +917,16 @@ public IResolvable UsingLatestModel { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable
+
+---
+
+##### `AiAgentsInput`<sup>Optional</sup> <a name="AiAgentsInput" id="@cdktn/provider-cloudflare.botManagement.BotManagement.property.aiAgentsInput"></a>
+
+```csharp
+public IResolvable|BotManagementAiAgents AiAgentsInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents">BotManagementAiAgents</a>
 
 ---
 
@@ -1348,6 +1390,104 @@ public string TfResourceType { get; }
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### BotManagementAiAgents <a name="BotManagementAiAgents" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new BotManagementAiAgents {
+    string AnthropicAgent = null,
+    string GoogleAgent = null,
+    string Instinct = null,
+    string Muse = null,
+    string OpenaiAgent = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.anthropicAgent">AnthropicAgent</a></code> | <code>string</code> | Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages". |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.googleAgent">GoogleAgent</a></code> | <code>string</code> | Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages". |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.instinct">Instinct</a></code> | <code>string</code> | Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages". |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.muse">Muse</a></code> | <code>string</code> | Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages". |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.openaiAgent">OpenaiAgent</a></code> | <code>string</code> | Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages". |
+
+---
+
+##### `AnthropicAgent`<sup>Optional</sup> <a name="AnthropicAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.anthropicAgent"></a>
+
+```csharp
+public string AnthropicAgent { get; set; }
+```
+
+- *Type:* string
+
+Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#anthropic_agent BotManagement#anthropic_agent}
+
+---
+
+##### `GoogleAgent`<sup>Optional</sup> <a name="GoogleAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.googleAgent"></a>
+
+```csharp
+public string GoogleAgent { get; set; }
+```
+
+- *Type:* string
+
+Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#google_agent BotManagement#google_agent}
+
+---
+
+##### `Instinct`<sup>Optional</sup> <a name="Instinct" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.instinct"></a>
+
+```csharp
+public string Instinct { get; set; }
+```
+
+- *Type:* string
+
+Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#instinct BotManagement#instinct}
+
+---
+
+##### `Muse`<sup>Optional</sup> <a name="Muse" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.muse"></a>
+
+```csharp
+public string Muse { get; set; }
+```
+
+- *Type:* string
+
+Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#muse BotManagement#muse}
+
+---
+
+##### `OpenaiAgent`<sup>Optional</sup> <a name="OpenaiAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents.property.openaiAgent"></a>
+
+```csharp
+public string OpenaiAgent { get; set; }
+```
+
+- *Type:* string
+
+Action to apply to one supported personal AI agent. Available values: "disabled", "block", "only_on_ad_pages".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#openai_agent BotManagement#openai_agent}
+
+---
+
 ### BotManagementConfig <a name="BotManagementConfig" id="@cdktn/provider-cloudflare.botManagement.BotManagementConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.botManagement.BotManagementConfig.Initializer"></a>
@@ -1364,6 +1504,7 @@ new BotManagementConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string ZoneId,
+    BotManagementAiAgents AiAgents = null,
     bool|IResolvable AiBotsMigrationOptOut = null,
     string AiBotsProtection = null,
     string Aisearch = null,
@@ -1400,6 +1541,7 @@ new BotManagementConfig {
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementConfig.property.aiAgents">AiAgents</a></code> | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents">BotManagementAiAgents</a></code> | Configure blocking behavior for supported personal AI agents. |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementConfig.property.aiBotsMigrationOptOut">AiBotsMigrationOptOut</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Temporary migration flag tracking zones opted out of AI bots managed-rule updates. |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementConfig.property.aiBotsProtection">AiBotsProtection</a></code> | <code>string</code> | Enable rule to block AI Scrapers and Crawlers. Available values: "block", "disabled", "only_on_ad_pages". |
 | <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementConfig.property.aisearch">Aisearch</a></code> | <code>string</code> | Configure robots.txt policy for AI search bots. Available values: "disabled", "block", "only_on_ad_pages". |
@@ -1504,7 +1646,21 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#zone_id BotManagement#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#zone_id BotManagement#zone_id}
+
+---
+
+##### `AiAgents`<sup>Optional</sup> <a name="AiAgents" id="@cdktn/provider-cloudflare.botManagement.BotManagementConfig.property.aiAgents"></a>
+
+```csharp
+public BotManagementAiAgents AiAgents { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents">BotManagementAiAgents</a>
+
+Configure blocking behavior for supported personal AI agents.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#ai_agents BotManagement#ai_agents}
 
 ---
 
@@ -1518,7 +1674,7 @@ public bool|IResolvable AiBotsMigrationOptOut { get; set; }
 
 Temporary migration flag tracking zones opted out of AI bots managed-rule updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#ai_bots_migration_opt_out BotManagement#ai_bots_migration_opt_out}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#ai_bots_migration_opt_out BotManagement#ai_bots_migration_opt_out}
 
 ---
 
@@ -1532,7 +1688,7 @@ public string AiBotsProtection { get; set; }
 
 Enable rule to block AI Scrapers and Crawlers. Available values: "block", "disabled", "only_on_ad_pages".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#ai_bots_protection BotManagement#ai_bots_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#ai_bots_protection BotManagement#ai_bots_protection}
 
 ---
 
@@ -1546,7 +1702,7 @@ public string Aisearch { get; set; }
 
 Configure robots.txt policy for AI search bots. Available values: "disabled", "block", "only_on_ad_pages".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#aisearch BotManagement#aisearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#aisearch BotManagement#aisearch}
 
 ---
 
@@ -1560,7 +1716,7 @@ public string AiTraining { get; set; }
 
 Configure robots.txt policy for AI model training bots. Available values: "disabled", "disallow", "block", "only_on_ad_pages".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#ai_training BotManagement#ai_training}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#ai_training BotManagement#ai_training}
 
 ---
 
@@ -1574,7 +1730,7 @@ public string AiUser { get; set; }
 
 Configure robots.txt policy for AI assistant and agent bots. Available values: "disabled", "block", "only_on_ad_pages".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#ai_user BotManagement#ai_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#ai_user BotManagement#ai_user}
 
 ---
 
@@ -1588,7 +1744,7 @@ public bool|IResolvable AutoUpdateModel { get; set; }
 
 Automatically update to the newest bot detection models created by Cloudflare as they are released. [Learn more.](https://developers.cloudflare.com/bots/reference/machine-learning-models#model-versions-and-release-notes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
 
 ---
 
@@ -1602,7 +1758,7 @@ public bool|IResolvable BmCookieEnabled { get; set; }
 
 Indicates that the bot management cookie can be placed on end user devices accessing the site. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#bm_cookie_enabled BotManagement#bm_cookie_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#bm_cookie_enabled BotManagement#bm_cookie_enabled}
 
 ---
 
@@ -1618,7 +1774,7 @@ Enable Bot Preference Sync for this zone.
 
 When enabled, Cloudflare can serve robots.txt content derived from the zone's AI Search, AI User, and AI Training preferences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#bot_preference_sync_enabled BotManagement#bot_preference_sync_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#bot_preference_sync_enabled BotManagement#bot_preference_sync_enabled}
 
 ---
 
@@ -1632,7 +1788,7 @@ public string CfRobotsVariant { get; set; }
 
 Specifies the Robots Access Control License variant to use. Available values: "off", "policy_only".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#cf_robots_variant BotManagement#cf_robots_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#cf_robots_variant BotManagement#cf_robots_variant}
 
 ---
 
@@ -1649,7 +1805,7 @@ Enable rule to block content bots.
 When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 Available values: "block", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#content_bots_protection BotManagement#content_bots_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#content_bots_protection BotManagement#content_bots_protection}
 
 ---
 
@@ -1663,7 +1819,7 @@ public string CrawlerProtection { get; set; }
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze. Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#crawler_protection BotManagement#crawler_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#crawler_protection BotManagement#crawler_protection}
 
 ---
 
@@ -1677,7 +1833,7 @@ public bool|IResolvable EnableJs { get; set; }
 
 Use lightweight, invisible JavaScript detections to improve Bot Management. [Learn more about JavaScript Detections](https://developers.cloudflare.com/bots/reference/javascript-detections/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#enable_js BotManagement#enable_js}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#enable_js BotManagement#enable_js}
 
 ---
 
@@ -1691,7 +1847,7 @@ public bool|IResolvable FightMode { get; set; }
 
 Whether to enable Bot Fight Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
 
 ---
 
@@ -1705,7 +1861,7 @@ public bool|IResolvable IsRobotsTxtManaged { get; set; }
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#is_robots_txt_managed BotManagement#is_robots_txt_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#is_robots_txt_managed BotManagement#is_robots_txt_managed}
 
 ---
 
@@ -1719,7 +1875,7 @@ public bool|IResolvable JsdApiResultsEnabled { get; set; }
 
 Whether to use JavaScript Detection results submitted through the API for this zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#jsd_api_results_enabled BotManagement#jsd_api_results_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#jsd_api_results_enabled BotManagement#jsd_api_results_enabled}
 
 ---
 
@@ -1733,7 +1889,7 @@ public bool|IResolvable OptimizeWordpress { get; set; }
 
 Whether to optimize Super Bot Fight Mode protections for Wordpress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
 
 ---
 
@@ -1747,7 +1903,7 @@ public string SbfmDefinitelyAutomated { get; set; }
 
 Super Bot Fight Mode (SBFM) action to take on definitely automated requests. Available values: "allow", "block", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
 
 ---
 
@@ -1761,7 +1917,7 @@ public string SbfmLikelyAutomated { get; set; }
 
 Super Bot Fight Mode (SBFM) action to take on likely automated requests. Available values: "allow", "block", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
 
 ---
 
@@ -1778,7 +1934,7 @@ Super Bot Fight Mode (SBFM) to enable static resource protection.
 Enable if static resources on your application need bot protection.
 Note: Static resource protection can also result in legitimate traffic being blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
 
 ---
 
@@ -1792,7 +1948,7 @@ public string SbfmVerifiedBots { get; set; }
 
 Super Bot Fight Mode (SBFM) action to take on verified bots requests. Available values: "allow", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
 
 ---
 
@@ -1806,7 +1962,7 @@ public bool|IResolvable SuppressSessionScore { get; set; }
 
 Whether to disable tracking the highest bot score for a session in the Bot Management cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
 
 ---
 
@@ -1824,6 +1980,400 @@ new BotManagementStaleZoneConfiguration {
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### BotManagementAiAgentsOutputReference <a name="BotManagementAiAgentsOutputReference" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Cloudflare;
+
+new BotManagementAiAgentsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetAnthropicAgent">ResetAnthropicAgent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetGoogleAgent">ResetGoogleAgent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetInstinct">ResetInstinct</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetMuse">ResetMuse</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetOpenaiAgent">ResetOpenaiAgent</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAnthropicAgent` <a name="ResetAnthropicAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetAnthropicAgent"></a>
+
+```csharp
+private void ResetAnthropicAgent()
+```
+
+##### `ResetGoogleAgent` <a name="ResetGoogleAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetGoogleAgent"></a>
+
+```csharp
+private void ResetGoogleAgent()
+```
+
+##### `ResetInstinct` <a name="ResetInstinct" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetInstinct"></a>
+
+```csharp
+private void ResetInstinct()
+```
+
+##### `ResetMuse` <a name="ResetMuse" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetMuse"></a>
+
+```csharp
+private void ResetMuse()
+```
+
+##### `ResetOpenaiAgent` <a name="ResetOpenaiAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.resetOpenaiAgent"></a>
+
+```csharp
+private void ResetOpenaiAgent()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.anthropicAgentInput">AnthropicAgentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.googleAgentInput">GoogleAgentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.instinctInput">InstinctInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.museInput">MuseInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.openaiAgentInput">OpenaiAgentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.anthropicAgent">AnthropicAgent</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.googleAgent">GoogleAgent</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.instinct">Instinct</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.muse">Muse</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.openaiAgent">OpenaiAgent</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents">BotManagementAiAgents</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AnthropicAgentInput`<sup>Optional</sup> <a name="AnthropicAgentInput" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.anthropicAgentInput"></a>
+
+```csharp
+public string AnthropicAgentInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `GoogleAgentInput`<sup>Optional</sup> <a name="GoogleAgentInput" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.googleAgentInput"></a>
+
+```csharp
+public string GoogleAgentInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InstinctInput`<sup>Optional</sup> <a name="InstinctInput" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.instinctInput"></a>
+
+```csharp
+public string InstinctInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MuseInput`<sup>Optional</sup> <a name="MuseInput" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.museInput"></a>
+
+```csharp
+public string MuseInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OpenaiAgentInput`<sup>Optional</sup> <a name="OpenaiAgentInput" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.openaiAgentInput"></a>
+
+```csharp
+public string OpenaiAgentInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AnthropicAgent`<sup>Required</sup> <a name="AnthropicAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.anthropicAgent"></a>
+
+```csharp
+public string AnthropicAgent { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `GoogleAgent`<sup>Required</sup> <a name="GoogleAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.googleAgent"></a>
+
+```csharp
+public string GoogleAgent { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Instinct`<sup>Required</sup> <a name="Instinct" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.instinct"></a>
+
+```csharp
+public string Instinct { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Muse`<sup>Required</sup> <a name="Muse" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.muse"></a>
+
+```csharp
+public string Muse { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OpenaiAgent`<sup>Required</sup> <a name="OpenaiAgent" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.openaiAgent"></a>
+
+```csharp
+public string OpenaiAgent { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|BotManagementAiAgents InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents">BotManagementAiAgents</a>
+
+---
+
 
 ### BotManagementStaleZoneConfigurationOutputReference <a name="BotManagementStaleZoneConfigurationOutputReference" id="@cdktn/provider-cloudflare.botManagement.BotManagementStaleZoneConfigurationOutputReference"></a>
 

@@ -4,7 +4,7 @@
 
 ### Share <a name="Share" id="@cdktn/provider-cloudflare.share.Share"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share cloudflare_share}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share cloudflare_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.Share.Initializer"></a>
 
@@ -74,10 +74,16 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.putExcludedRecipients">putExcludedRecipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.putRecipients">putRecipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.putResources">putResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.resetExcludedRecipients">resetExcludedRecipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.resetIncludeRecipientCounts">resetIncludeRecipientCounts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.resetIncludeResources">resetIncludeResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.resetIncludeTagsFrom">resetIncludeTagsFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.resetRecipients">resetRecipients</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
@@ -390,6 +396,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putExcludedRecipients` <a name="putExcludedRecipients" id="@cdktn/provider-cloudflare.share.Share.putExcludedRecipients"></a>
+
+```typescript
+public putExcludedRecipients(value: IResolvable | ShareExcludedRecipients[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.share.Share.putExcludedRecipients.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a>[]
+
+---
+
 ##### `putRecipients` <a name="putRecipients" id="@cdktn/provider-cloudflare.share.Share.putRecipients"></a>
 
 ```typescript
@@ -414,6 +432,12 @@ public putResources(value: IResolvable | ShareResources[]): void
 
 ---
 
+##### `resetExcludedRecipients` <a name="resetExcludedRecipients" id="@cdktn/provider-cloudflare.share.Share.resetExcludedRecipients"></a>
+
+```typescript
+public resetExcludedRecipients(): void
+```
+
 ##### `resetIncludeRecipientCounts` <a name="resetIncludeRecipientCounts" id="@cdktn/provider-cloudflare.share.Share.resetIncludeRecipientCounts"></a>
 
 ```typescript
@@ -424,6 +448,30 @@ public resetIncludeRecipientCounts(): void
 
 ```typescript
 public resetIncludeResources(): void
+```
+
+##### `resetIncludeTagsFrom` <a name="resetIncludeTagsFrom" id="@cdktn/provider-cloudflare.share.Share.resetIncludeTagsFrom"></a>
+
+```typescript
+public resetIncludeTagsFrom(): void
+```
+
+##### `resetRecipients` <a name="resetRecipients" id="@cdktn/provider-cloudflare.share.Share.resetRecipients"></a>
+
+```typescript
+public resetRecipients(): void
+```
+
+##### `resetResources` <a name="resetResources" id="@cdktn/provider-cloudflare.share.Share.resetResources"></a>
+
+```typescript
+public resetResources(): void
+```
+
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-cloudflare.share.Share.resetTags"></a>
+
+```typescript
+public resetTags(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -529,7 +577,7 @@ The construct id used in the generated config for the Share to import.
 
 The id of the existing Share that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,6 +613,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.created">created</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.disassociatedRecipientCount">disassociatedRecipientCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.disassociatingRecipientCount">disassociatingRecipientCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.excludedRecipients">excludedRecipients</a></code> | <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList">ShareExcludedRecipientsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.kind">kind</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.modified">modified</a></code> | <code>string</code> | *No description.* |
@@ -574,15 +623,20 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.targetType">targetType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.excludedRecipientsInput">excludedRecipientsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeRecipientCountsInput">includeRecipientCountsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeResourcesInput">includeResourcesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeTagsFromInput">includeTagsFromInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.recipientsInput">recipientsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.resourcesInput">resourcesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeRecipientCounts">includeRecipientCounts</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeResources">includeResources</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.includeTagsFrom">includeTagsFrom</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.Share.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.Share.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -788,6 +842,16 @@ public readonly disassociatingRecipientCount: number;
 
 ---
 
+##### `excludedRecipients`<sup>Required</sup> <a name="excludedRecipients" id="@cdktn/provider-cloudflare.share.Share.property.excludedRecipients"></a>
+
+```typescript
+public readonly excludedRecipients: ShareExcludedRecipientsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList">ShareExcludedRecipientsList</a>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.share.Share.property.id"></a>
 
 ```typescript
@@ -878,6 +942,16 @@ public readonly accountIdInput: string;
 
 ---
 
+##### `excludedRecipientsInput`<sup>Optional</sup> <a name="excludedRecipientsInput" id="@cdktn/provider-cloudflare.share.Share.property.excludedRecipientsInput"></a>
+
+```typescript
+public readonly excludedRecipientsInput: IResolvable | ShareExcludedRecipients[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a>[]
+
+---
+
 ##### `includeRecipientCountsInput`<sup>Optional</sup> <a name="includeRecipientCountsInput" id="@cdktn/provider-cloudflare.share.Share.property.includeRecipientCountsInput"></a>
 
 ```typescript
@@ -895,6 +969,16 @@ public readonly includeResourcesInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `includeTagsFromInput`<sup>Optional</sup> <a name="includeTagsFromInput" id="@cdktn/provider-cloudflare.share.Share.property.includeTagsFromInput"></a>
+
+```typescript
+public readonly includeTagsFromInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -928,6 +1012,16 @@ public readonly resourcesInput: IResolvable | ShareResources[];
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-cloudflare.share.Share.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.share.Share.property.accountId"></a>
 
 ```typescript
@@ -958,6 +1052,16 @@ public readonly includeResources: boolean | IResolvable;
 
 ---
 
+##### `includeTagsFrom`<sup>Required</sup> <a name="includeTagsFrom" id="@cdktn/provider-cloudflare.share.Share.property.includeTagsFrom"></a>
+
+```typescript
+public readonly includeTagsFrom: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.share.Share.property.name"></a>
 
 ```typescript
@@ -965,6 +1069,16 @@ public readonly name: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-cloudflare.share.Share.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -1011,10 +1125,13 @@ const shareConfig: share.ShareConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.name">name</a></code> | <code>string</code> | The name of the share. |
-| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.recipients">recipients</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#recipients Share#recipients}. |
-| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.resources">resources</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#resources Share#resources}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.excludedRecipients">excludedRecipients</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a>[]</code> | Accounts to exclude from an organization-targeted share. |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.includeRecipientCounts">includeRecipientCounts</a></code> | <code>boolean \| cdktn.IResolvable</code> | Include recipient counts in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.includeResources">includeResources</a></code> | <code>boolean \| cdktn.IResolvable</code> | Include resources in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.includeTagsFrom">includeTagsFrom</a></code> | <code>string</code> | Include share tags in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.recipients">recipients</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#recipients Share#recipients}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.resources">resources</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#resources Share#resources}. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Tags associated with the share. |
 
 ---
 
@@ -1098,7 +1215,7 @@ public readonly accountId: string;
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#account_id Share#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#account_id Share#account_id}
 
 ---
 
@@ -1112,31 +1229,23 @@ public readonly name: string;
 
 The name of the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#name Share#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#name Share#name}
 
 ---
 
-##### `recipients`<sup>Required</sup> <a name="recipients" id="@cdktn/provider-cloudflare.share.ShareConfig.property.recipients"></a>
+##### `excludedRecipients`<sup>Optional</sup> <a name="excludedRecipients" id="@cdktn/provider-cloudflare.share.ShareConfig.property.excludedRecipients"></a>
 
 ```typescript
-public readonly recipients: IResolvable | ShareRecipients[];
+public readonly excludedRecipients: IResolvable | ShareExcludedRecipients[];
 ```
 
-- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#recipients Share#recipients}.
+Accounts to exclude from an organization-targeted share.
 
----
+Only allowed when `recipients` contains no account entries. The share owner cannot be excluded. Duplicate entries are ignored.
 
-##### `resources`<sup>Required</sup> <a name="resources" id="@cdktn/provider-cloudflare.share.ShareConfig.property.resources"></a>
-
-```typescript
-public readonly resources: IResolvable | ShareResources[];
-```
-
-- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>[]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#resources Share#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#excluded_recipients Share#excluded_recipients}
 
 ---
 
@@ -1150,7 +1259,7 @@ public readonly includeRecipientCounts: boolean | IResolvable;
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#include_recipient_counts Share#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#include_recipient_counts Share#include_recipient_counts}
 
 ---
 
@@ -1164,7 +1273,94 @@ public readonly includeResources: boolean | IResolvable;
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#include_resources Share#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#include_resources Share#include_resources}
+
+---
+
+##### `includeTagsFrom`<sup>Optional</sup> <a name="includeTagsFrom" id="@cdktn/provider-cloudflare.share.ShareConfig.property.includeTagsFrom"></a>
+
+```typescript
+public readonly includeTagsFrom: string;
+```
+
+- *Type:* string
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#include_tags_from Share#include_tags_from}
+
+---
+
+##### `recipients`<sup>Optional</sup> <a name="recipients" id="@cdktn/provider-cloudflare.share.ShareConfig.property.recipients"></a>
+
+```typescript
+public readonly recipients: IResolvable | ShareRecipients[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareRecipients">ShareRecipients</a>[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#recipients Share#recipients}.
+
+---
+
+##### `resources`<sup>Optional</sup> <a name="resources" id="@cdktn/provider-cloudflare.share.ShareConfig.property.resources"></a>
+
+```typescript
+public readonly resources: IResolvable | ShareResources[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareResources">ShareResources</a>[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#resources Share#resources}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-cloudflare.share.ShareConfig.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Tags associated with the share.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#tags Share#tags}
+
+---
+
+### ShareExcludedRecipients <a name="ShareExcludedRecipients" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipients"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipients.Initializer"></a>
+
+```typescript
+import { share } from '@cdktn/provider-cloudflare'
+
+const shareExcludedRecipients: share.ShareExcludedRecipients = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients.property.accountId">accountId</a></code> | <code>string</code> | The account to exclude from the organization-targeted share. |
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipients.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+The account to exclude from the organization-targeted share.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#account_id Share#account_id}
 
 ---
 
@@ -1197,7 +1393,7 @@ public readonly organizationId: string;
 
 Organization identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#organization_id Share#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#organization_id Share#organization_id}
 
 ---
 
@@ -1211,7 +1407,7 @@ public readonly recipientAccountId: string;
 
 The account that will receive the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#recipient_account_id Share#recipient_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#recipient_account_id Share#recipient_account_id}
 
 ---
 
@@ -1230,8 +1426,8 @@ const shareResources: share.ShareResources = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareResources.property.meta">meta</a></code> | <code>string</code> | Resource Metadata. |
-| <code><a href="#@cdktn/provider-cloudflare.share.ShareResources.property.resourceAccountId">resourceAccountId</a></code> | <code>string</code> | Account identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.share.ShareResources.property.resourceId">resourceId</a></code> | <code>string</code> | Share Resource identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareResources.property.resourceAccountId">resourceAccountId</a></code> | <code>string</code> | The account that owns the resource. Must match the `account_id` in the path. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareResources.property.resourceId">resourceId</a></code> | <code>string</code> | Identifier assigned by the service that owns the shared resource. |
 | <code><a href="#@cdktn/provider-cloudflare.share.ShareResources.property.resourceType">resourceType</a></code> | <code>string</code> | Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant". |
 
 ---
@@ -1246,7 +1442,7 @@ public readonly meta: string;
 
 Resource Metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#meta Share#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#meta Share#meta}
 
 ---
 
@@ -1258,9 +1454,9 @@ public readonly resourceAccountId: string;
 
 - *Type:* string
 
-Account identifier.
+The account that owns the resource. Must match the `account_id` in the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#resource_account_id Share#resource_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#resource_account_id Share#resource_account_id}
 
 ---
 
@@ -1272,9 +1468,9 @@ public readonly resourceId: string;
 
 - *Type:* string
 
-Share Resource identifier.
+Identifier assigned by the service that owns the shared resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#resource_id Share#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#resource_id Share#resource_id}
 
 ---
 
@@ -1288,11 +1484,460 @@ public readonly resourceType: string;
 
 Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share#resource_type Share#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share#resource_type Share#resource_type}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ShareExcludedRecipientsList <a name="ShareExcludedRecipientsList" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.Initializer"></a>
+
+```typescript
+import { share } from '@cdktn/provider-cloudflare'
+
+new share.ShareExcludedRecipientsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.get"></a>
+
+```typescript
+public get(index: number): ShareExcludedRecipientsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ShareExcludedRecipients[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a>[]
+
+---
+
+
+### ShareExcludedRecipientsOutputReference <a name="ShareExcludedRecipientsOutputReference" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer"></a>
+
+```typescript
+import { share } from '@cdktn/provider-cloudflare'
+
+new share.ShareExcludedRecipientsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.accountIdInput"></a>
+
+```typescript
+public readonly accountIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.share.ShareExcludedRecipientsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ShareExcludedRecipients;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.share.ShareExcludedRecipients">ShareExcludedRecipients</a>
+
+---
+
 
 ### ShareRecipientsList <a name="ShareRecipientsList" id="@cdktn/provider-cloudflare.share.ShareRecipientsList"></a>
 

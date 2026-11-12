@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/bot_management
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/bot_management
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,9 +15,83 @@ export interface DataCloudflareBotManagementConfig extends cdktn.TerraformMetaAr
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/bot_management#zone_id DataCloudflareBotManagement#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/bot_management#zone_id DataCloudflareBotManagement#zone_id}
   */
   readonly zoneId?: string;
+}
+export interface DataCloudflareBotManagementAiAgents {
+}
+
+export function dataCloudflareBotManagementAiAgentsToTerraform(struct?: DataCloudflareBotManagementAiAgents): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareBotManagementAiAgentsToHclTerraform(struct?: DataCloudflareBotManagementAiAgents): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareBotManagementAiAgentsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareBotManagementAiAgents | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareBotManagementAiAgents | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // anthropic_agent - computed: true, optional: false, required: false
+  public get anthropicAgent() {
+    return this.getStringAttribute('anthropic_agent');
+  }
+
+  // google_agent - computed: true, optional: false, required: false
+  public get googleAgent() {
+    return this.getStringAttribute('google_agent');
+  }
+
+  // instinct - computed: true, optional: false, required: false
+  public get instinct() {
+    return this.getStringAttribute('instinct');
+  }
+
+  // muse - computed: true, optional: false, required: false
+  public get muse() {
+    return this.getStringAttribute('muse');
+  }
+
+  // openai_agent - computed: true, optional: false, required: false
+  public get openaiAgent() {
+    return this.getStringAttribute('openai_agent');
+  }
 }
 export interface DataCloudflareBotManagementStaleZoneConfiguration {
 }
@@ -105,7 +179,7 @@ export class DataCloudflareBotManagementStaleZoneConfigurationOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/bot_management cloudflare_bot_management}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/bot_management cloudflare_bot_management}
 */
 export class DataCloudflareBotManagement extends cdktn.TerraformDataSource {
 
@@ -121,7 +195,7 @@ export class DataCloudflareBotManagement extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareBotManagement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareBotManagement to import
-  * @param importFromId The id of the existing DataCloudflareBotManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/bot_management#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareBotManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/bot_management#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareBotManagement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -133,7 +207,7 @@ export class DataCloudflareBotManagement extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/bot_management cloudflare_bot_management} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -144,7 +218,7 @@ export class DataCloudflareBotManagement extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_bot_management',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -161,6 +235,12 @@ export class DataCloudflareBotManagement extends cdktn.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // ai_agents - computed: true, optional: false, required: false
+  private _aiAgents = new DataCloudflareBotManagementAiAgentsOutputReference(this, "ai_agents");
+  public get aiAgents() {
+    return this._aiAgents;
+  }
 
   // ai_bots_migration_opt_out - computed: true, optional: false, required: false
   public get aiBotsMigrationOptOut() {
