@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#filter DataCloudflareOrganization#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#filter DataCloudflareOrganization#filter}
   */
   readonly filter?: DataCloudflareOrganizationFilter;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}
   */
   readonly organizationId?: string;
 }
@@ -26,14 +26,14 @@ export interface DataCloudflareOrganizationFilterContaining {
   * Filter the list of organizations to the ones that contain this particular
   * account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#account DataCloudflareOrganization#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#account DataCloudflareOrganization#account}
   */
   readonly account?: string;
   /**
   * Filter the list of organizations to the ones that contain this particular
   * organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#organization DataCloudflareOrganization#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#organization DataCloudflareOrganization#organization}
   */
   readonly organization?: string;
   /**
@@ -45,7 +45,7 @@ export interface DataCloudflareOrganizationFilterContaining {
   * therein. An organization "containing" a user simply means the user is managed by
   * that organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#user DataCloudflareOrganization#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#user DataCloudflareOrganization#user}
   */
   readonly user?: string;
 }
@@ -195,26 +195,123 @@ export class DataCloudflareOrganizationFilterContainingOutputReference extends c
     return this._user;
   }
 }
+export interface DataCloudflareOrganizationFilterMember {
+  /**
+  * Filter organizations to those where the given user, by email, is an active member of
+  * that exact organization. This does not include hierarchy-derived access.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#email DataCloudflareOrganization#email}
+  */
+  readonly email?: string;
+}
+
+export function dataCloudflareOrganizationFilterMemberToTerraform(struct?: DataCloudflareOrganizationFilterMember | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    email: cdktn.stringToTerraform(struct!.email),
+  }
+}
+
+
+export function dataCloudflareOrganizationFilterMemberToHclTerraform(struct?: DataCloudflareOrganizationFilterMember | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    email: {
+      value: cdktn.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataCloudflareOrganizationFilterMemberOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareOrganizationFilterMember | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareOrganizationFilterMember | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+    }
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+}
 export interface DataCloudflareOrganizationFilterName {
   /**
   * (case-insensitive) Filter the list of organizations to where the name contains a particular
   * string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#contains DataCloudflareOrganization#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#contains DataCloudflareOrganization#contains}
   */
   readonly contains?: string;
   /**
   * (case-insensitive) Filter the list of organizations to where the name ends with a particular
   * string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#ends_with DataCloudflareOrganization#ends_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#ends_with DataCloudflareOrganization#ends_with}
   */
   readonly endsWith?: string;
   /**
   * (case-insensitive) Filter the list of organizations to where the name starts with a
   * particular string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#starts_with DataCloudflareOrganization#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#starts_with DataCloudflareOrganization#starts_with}
   */
   readonly startsWith?: string;
 }
@@ -372,7 +469,7 @@ export interface DataCloudflareOrganizationFilterParent {
   * "null" is a valid value to provide for this parameter. It means "where
   * an organization has no parent (i.e. it is a 'root' organization)."
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#id DataCloudflareOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#id DataCloudflareOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -469,27 +566,47 @@ export class DataCloudflareOrganizationFilterParentOutputReference extends cdktn
 }
 export interface DataCloudflareOrganizationFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#containing DataCloudflareOrganization#containing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#containing DataCloudflareOrganization#containing}
   */
   readonly containing?: DataCloudflareOrganizationFilterContaining;
+  /**
+  * Sort direction for the `order_by` field. Defaults to `asc` when `order_by` is
+  * specified.
+  * Available values: "asc", "desc".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#direction DataCloudflareOrganization#direction}
+  */
+  readonly direction?: string;
   /**
   * Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements
   * by repeating the query value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#id DataCloudflareOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#id DataCloudflareOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#name DataCloudflareOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#member DataCloudflareOrganization#member}
+  */
+  readonly member?: DataCloudflareOrganizationFilterMember;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#name DataCloudflareOrganization#name}
   */
   readonly name?: DataCloudflareOrganizationFilterName;
   /**
+  * Field to order results by. Currently supported values: `name`.
+  * When not specified, results are ordered by hierarchy.
+  * Available values: "name".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#order_by DataCloudflareOrganization#order_by}
+  */
+  readonly orderBy?: string;
+  /**
   * The amount of items to return. Defaults to 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#page_size DataCloudflareOrganization#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#page_size DataCloudflareOrganization#page_size}
   */
   readonly pageSize?: number;
   /**
@@ -499,11 +616,11 @@ export interface DataCloudflareOrganizationFilter {
   * Parameters used to filter the retrieved list must remain in subsequent
   * requests with a page token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#page_token DataCloudflareOrganization#page_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#page_token DataCloudflareOrganization#page_token}
   */
   readonly pageToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#parent DataCloudflareOrganization#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#parent DataCloudflareOrganization#parent}
   */
   readonly parent?: DataCloudflareOrganizationFilterParent;
 }
@@ -515,8 +632,11 @@ export function dataCloudflareOrganizationFilterToTerraform(struct?: DataCloudfl
   }
   return {
     containing: dataCloudflareOrganizationFilterContainingToTerraform(struct!.containing),
+    direction: cdktn.stringToTerraform(struct!.direction),
     id: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.id),
+    member: dataCloudflareOrganizationFilterMemberToTerraform(struct!.member),
     name: dataCloudflareOrganizationFilterNameToTerraform(struct!.name),
+    order_by: cdktn.stringToTerraform(struct!.orderBy),
     page_size: cdktn.numberToTerraform(struct!.pageSize),
     page_token: cdktn.stringToTerraform(struct!.pageToken),
     parent: dataCloudflareOrganizationFilterParentToTerraform(struct!.parent),
@@ -536,17 +656,35 @@ export function dataCloudflareOrganizationFilterToHclTerraform(struct?: DataClou
       type: "struct",
       storageClassType: "DataCloudflareOrganizationFilterContaining",
     },
+    direction: {
+      value: cdktn.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     id: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.id),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
+    member: {
+      value: dataCloudflareOrganizationFilterMemberToHclTerraform(struct!.member),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataCloudflareOrganizationFilterMember",
+    },
     name: {
       value: dataCloudflareOrganizationFilterNameToHclTerraform(struct!.name),
       isBlock: true,
       type: "struct",
       storageClassType: "DataCloudflareOrganizationFilterName",
+    },
+    order_by: {
+      value: cdktn.stringToHclTerraform(struct!.orderBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     page_size: {
       value: cdktn.numberToHclTerraform(struct!.pageSize),
@@ -594,13 +732,25 @@ export class DataCloudflareOrganizationFilterOutputReference extends cdktn.Compl
       hasAnyValues = true;
       internalValueResult.containing = this._containing?.internalValue;
     }
+    if (this._direction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.direction = this._direction;
+    }
     if (this._id !== undefined) {
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
+    if (this._member?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.member = this._member?.internalValue;
+    }
     if (this._name?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name?.internalValue;
+    }
+    if (this._orderBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.orderBy = this._orderBy;
     }
     if (this._pageSize !== undefined) {
       hasAnyValues = true;
@@ -622,8 +772,11 @@ export class DataCloudflareOrganizationFilterOutputReference extends cdktn.Compl
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._containing.internalValue = undefined;
+      this._direction = undefined;
       this._id = undefined;
+      this._member.internalValue = undefined;
       this._name.internalValue = undefined;
+      this._orderBy = undefined;
       this._pageSize = undefined;
       this._pageToken = undefined;
       this._parent.internalValue = undefined;
@@ -636,8 +789,11 @@ export class DataCloudflareOrganizationFilterOutputReference extends cdktn.Compl
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._containing.internalValue = value.containing;
+      this._direction = value.direction;
       this._id = value.id;
+      this._member.internalValue = value.member;
       this._name.internalValue = value.name;
+      this._orderBy = value.orderBy;
       this._pageSize = value.pageSize;
       this._pageToken = value.pageToken;
       this._parent.internalValue = value.parent;
@@ -660,6 +816,22 @@ export class DataCloudflareOrganizationFilterOutputReference extends cdktn.Compl
     return this._containing.internalValue;
   }
 
+  // direction - computed: false, optional: true, required: false
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  public resetDirection() {
+    this._direction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
   // id - computed: false, optional: true, required: false
   private _id?: string[]; 
   public get id() {
@@ -676,6 +848,22 @@ export class DataCloudflareOrganizationFilterOutputReference extends cdktn.Compl
     return this._id;
   }
 
+  // member - computed: false, optional: true, required: false
+  private _member = new DataCloudflareOrganizationFilterMemberOutputReference(this, "member");
+  public get member() {
+    return this._member;
+  }
+  public putMember(value: DataCloudflareOrganizationFilterMember) {
+    this._member.internalValue = value;
+  }
+  public resetMember() {
+    this._member.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memberInput() {
+    return this._member.internalValue;
+  }
+
   // name - computed: false, optional: true, required: false
   private _name = new DataCloudflareOrganizationFilterNameOutputReference(this, "name");
   public get name() {
@@ -690,6 +878,22 @@ export class DataCloudflareOrganizationFilterOutputReference extends cdktn.Compl
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name.internalValue;
+  }
+
+  // order_by - computed: false, optional: true, required: false
+  private _orderBy?: string; 
+  public get orderBy() {
+    return this.getStringAttribute('order_by');
+  }
+  public set orderBy(value: string) {
+    this._orderBy = value;
+  }
+  public resetOrderBy() {
+    this._orderBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderByInput() {
+    return this._orderBy;
   }
 
   // page_size - computed: false, optional: true, required: false
@@ -878,6 +1082,11 @@ export class DataCloudflareOrganizationMetaOutputReference extends cdktn.Complex
     }
   }
 
+  // are_child_accounts_accessible_by_org_members - computed: true, optional: false, required: false
+  public get areChildAccountsAccessibleByOrgMembers() {
+    return this.getBooleanAttribute('are_child_accounts_accessible_by_org_members');
+  }
+
   // hierarchy_tags - computed: true, optional: false, required: false
   public get hierarchyTags() {
     return this.getListAttribute('hierarchy_tags');
@@ -892,6 +1101,11 @@ export class DataCloudflareOrganizationMetaOutputReference extends cdktn.Complex
   private _tenantFlags = new DataCloudflareOrganizationMetaTenantFlagsOutputReference(this, "tenant_flags");
   public get tenantFlags() {
     return this._tenantFlags;
+  }
+
+  // tenant_type - computed: true, optional: false, required: false
+  public get tenantType() {
+    return this.getStringAttribute('tenant_type');
   }
 }
 export interface DataCloudflareOrganizationParent {
@@ -1029,7 +1243,7 @@ export class DataCloudflareOrganizationProfileOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization cloudflare_organization}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization cloudflare_organization}
 */
 export class DataCloudflareOrganization extends cdktn.TerraformDataSource {
 
@@ -1045,7 +1259,7 @@ export class DataCloudflareOrganization extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareOrganization to import
-  * @param importFromId The id of the existing DataCloudflareOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1057,7 +1271,7 @@ export class DataCloudflareOrganization extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization cloudflare_organization} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization cloudflare_organization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1068,7 +1282,7 @@ export class DataCloudflareOrganization extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

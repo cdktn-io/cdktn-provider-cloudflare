@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/accounts
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/accounts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,21 +16,140 @@ export interface DataCloudflareAccountsConfig extends cdktn.TerraformMetaArgumen
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
   */
   readonly direction?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
   */
   readonly maxItems?: number;
   /**
   * Name of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
   */
   readonly name?: string;
+}
+export interface DataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuota {
+}
+
+export function dataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuotaToTerraform(struct?: DataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuota): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuotaToHclTerraform(struct?: DataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuota): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuotaOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuota | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuota | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // available - computed: true, optional: false, required: false
+  public get available() {
+    return this.getNumberAttribute('available');
+  }
+
+  // current - computed: true, optional: false, required: false
+  public get current() {
+    return this.getNumberAttribute('current');
+  }
+
+  // maximum - computed: true, optional: false, required: false
+  public get maximum() {
+    return this.getNumberAttribute('maximum');
+  }
+}
+export interface DataCloudflareAccountsResultLegacyFlags {
+}
+
+export function dataCloudflareAccountsResultLegacyFlagsToTerraform(struct?: DataCloudflareAccountsResultLegacyFlags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareAccountsResultLegacyFlagsToHclTerraform(struct?: DataCloudflareAccountsResultLegacyFlags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareAccountsResultLegacyFlagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareAccountsResultLegacyFlags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareAccountsResultLegacyFlags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enterprise_zone_quota - computed: true, optional: false, required: false
+  private _enterpriseZoneQuota = new DataCloudflareAccountsResultLegacyFlagsEnterpriseZoneQuotaOutputReference(this, "enterprise_zone_quota");
+  public get enterpriseZoneQuota() {
+    return this._enterpriseZoneQuota;
+  }
 }
 export interface DataCloudflareAccountsResultManagedBy {
 }
@@ -89,6 +208,16 @@ export class DataCloudflareAccountsResultManagedByOutputReference extends cdktn.
   // parent_org_name - computed: true, optional: false, required: false
   public get parentOrgName() {
     return this.getStringAttribute('parent_org_name');
+  }
+
+  // root_org_id - computed: true, optional: false, required: false
+  public get rootOrgId() {
+    return this.getStringAttribute('root_org_id');
+  }
+
+  // should_display_parent_orgs - computed: true, optional: false, required: false
+  public get shouldDisplayParentOrgs() {
+    return this.getBooleanAttribute('should_display_parent_orgs');
   }
 }
 export interface DataCloudflareAccountsResultSettings {
@@ -211,6 +340,12 @@ export class DataCloudflareAccountsResultOutputReference extends cdktn.ComplexOb
     return this.getStringAttribute('id');
   }
 
+  // legacy_flags - computed: true, optional: false, required: false
+  private _legacyFlags = new DataCloudflareAccountsResultLegacyFlagsOutputReference(this, "legacy_flags");
+  public get legacyFlags() {
+    return this._legacyFlags;
+  }
+
   // managed_by - computed: true, optional: false, required: false
   private _managedBy = new DataCloudflareAccountsResultManagedByOutputReference(this, "managed_by");
   public get managedBy() {
@@ -254,7 +389,7 @@ export class DataCloudflareAccountsResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/accounts cloudflare_accounts}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/accounts cloudflare_accounts}
 */
 export class DataCloudflareAccounts extends cdktn.TerraformDataSource {
 
@@ -270,7 +405,7 @@ export class DataCloudflareAccounts extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareAccounts resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccounts to import
-  * @param importFromId The id of the existing DataCloudflareAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccounts to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -282,7 +417,7 @@ export class DataCloudflareAccounts extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/accounts cloudflare_accounts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/accounts cloudflare_accounts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +428,7 @@ export class DataCloudflareAccounts extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_accounts',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

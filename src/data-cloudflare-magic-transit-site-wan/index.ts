@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_wan
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_wan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareMagicTransitSiteWanConfig extends cdktn.Terraform
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_wan#account_id DataCloudflareMagicTransitSiteWan#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_wan#account_id DataCloudflareMagicTransitSiteWan#account_id}
   */
   readonly accountId: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_wan#site_id DataCloudflareMagicTransitSiteWan#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_wan#site_id DataCloudflareMagicTransitSiteWan#site_id}
   */
   readonly siteId: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_wan#wan_id DataCloudflareMagicTransitSiteWan#wan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_wan#wan_id DataCloudflareMagicTransitSiteWan#wan_id}
   */
   readonly wanId: string;
 }
@@ -94,10 +94,15 @@ export class DataCloudflareMagicTransitSiteWanStaticAddressingOutputReference ex
   public get secondaryAddress() {
     return this.getStringAttribute('secondary_address');
   }
+
+  // secondary_gateway_address - computed: true, optional: false, required: false
+  public get secondaryGatewayAddress() {
+    return this.getStringAttribute('secondary_gateway_address');
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan}
 */
 export class DataCloudflareMagicTransitSiteWan extends cdktn.TerraformDataSource {
 
@@ -113,7 +118,7 @@ export class DataCloudflareMagicTransitSiteWan extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataCloudflareMagicTransitSiteWan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMagicTransitSiteWan to import
-  * @param importFromId The id of the existing DataCloudflareMagicTransitSiteWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMagicTransitSiteWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMagicTransitSiteWan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -125,7 +130,7 @@ export class DataCloudflareMagicTransitSiteWan extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -136,7 +141,7 @@ export class DataCloudflareMagicTransitSiteWan extends cdktn.TerraformDataSource
       terraformResourceType: 'cloudflare_magic_transit_site_wan',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -197,6 +202,16 @@ export class DataCloudflareMagicTransitSiteWan extends cdktn.TerraformDataSource
   // priority - computed: true, optional: false, required: false
   public get priority() {
     return this.getNumberAttribute('priority');
+  }
+
+  // provisioned_download_kbps - computed: true, optional: false, required: false
+  public get provisionedDownloadKbps() {
+    return this.getNumberAttribute('provisioned_download_kbps');
+  }
+
+  // provisioned_upload_kbps - computed: true, optional: false, required: false
+  public get provisionedUploadKbps() {
+    return this.getNumberAttribute('provisioned_upload_kbps');
   }
 
   // site_id - computed: false, optional: false, required: true

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_gateway
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/ai_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareAiGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_gateway#account_id DataCloudflareAiGateway#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/ai_gateway#account_id DataCloudflareAiGateway#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_gateway#filter DataCloudflareAiGateway#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/ai_gateway#filter DataCloudflareAiGateway#filter}
   */
   readonly filter?: DataCloudflareAiGatewayFilter;
   /**
   * Unique identifier of the AI Gateway within the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_gateway#id DataCloudflareAiGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/ai_gateway#id DataCloudflareAiGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -199,7 +199,7 @@ export interface DataCloudflareAiGatewayFilter {
   /**
   * Search by id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_gateway#search DataCloudflareAiGateway#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/ai_gateway#search DataCloudflareAiGateway#search}
   */
   readonly search?: string;
 }
@@ -370,6 +370,11 @@ export class DataCloudflareAiGatewayGuardrailsPromptOutputReference extends cdkt
     return this.getStringAttribute('s13');
   }
 
+  // s14 - computed: true, optional: false, required: false
+  public get s14() {
+    return this.getStringAttribute('s14');
+  }
+
   // s2 - computed: true, optional: false, required: false
   public get s2() {
     return this.getStringAttribute('s2');
@@ -487,6 +492,11 @@ export class DataCloudflareAiGatewayGuardrailsResponseOutputReference extends cd
   // s13 - computed: true, optional: false, required: false
   public get s13() {
     return this.getStringAttribute('s13');
+  }
+
+  // s14 - computed: true, optional: false, required: false
+  public get s14() {
+    return this.getStringAttribute('s14');
   }
 
   // s2 - computed: true, optional: false, required: false
@@ -1192,7 +1202,7 @@ export class DataCloudflareAiGatewayStripeOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_gateway cloudflare_ai_gateway}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/ai_gateway cloudflare_ai_gateway}
 */
 export class DataCloudflareAiGateway extends cdktn.TerraformDataSource {
 
@@ -1208,7 +1218,7 @@ export class DataCloudflareAiGateway extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareAiGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAiGateway to import
-  * @param importFromId The id of the existing DataCloudflareAiGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAiGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/ai_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAiGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1220,7 +1230,7 @@ export class DataCloudflareAiGateway extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_gateway cloudflare_ai_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/ai_gateway cloudflare_ai_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1231,7 +1241,7 @@ export class DataCloudflareAiGateway extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_ai_gateway',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1301,6 +1311,16 @@ export class DataCloudflareAiGateway extends cdktn.TerraformDataSource {
   private _dlp = new DataCloudflareAiGatewayDlpOutputReference(this, "dlp");
   public get dlp() {
     return this._dlp;
+  }
+
+  // fedramp_level - computed: true, optional: false, required: false
+  public get fedrampLevel() {
+    return this.getStringAttribute('fedramp_level');
+  }
+
+  // fedramp_mode - computed: true, optional: false, required: false
+  public get fedrampMode() {
+    return this.getStringAttribute('fedramp_mode');
   }
 
   // filter - computed: false, optional: true, required: false

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +15,114 @@ export interface R2DataCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
   * Use this to identify the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
   */
   readonly accountId: string;
   /**
   * Specifies the R2 bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
   */
   readonly bucketName: string;
+  /**
+  * Contains request to store catalog credentials.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#credential R2DataCatalog#credential}
+  */
+  readonly credential?: R2DataCatalogCredential;
+}
+export interface R2DataCatalogCredential {
+  /**
+  * Provides the Cloudflare API token for accessing R2.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#token R2DataCatalog#token}
+  */
+  readonly token: string;
+}
+
+export function r2DataCatalogCredentialToTerraform(struct?: R2DataCatalogCredential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    token: cdktn.stringToTerraform(struct!.token),
+  }
+}
+
+
+export function r2DataCatalogCredentialToHclTerraform(struct?: R2DataCatalogCredential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    token: {
+      value: cdktn.stringToHclTerraform(struct!.token),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class R2DataCatalogCredentialOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): R2DataCatalogCredential | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._token !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.token = this._token;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: R2DataCatalogCredential | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._token = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._token = value.token;
+    }
+  }
+
+  // token - computed: false, optional: false, required: true
+  private _token?: string; 
+  public get token() {
+    return this.getStringAttribute('token');
+  }
+  public set token(value: string) {
+    this._token = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenInput() {
+    return this._token;
+  }
 }
 export interface R2DataCatalogMaintenanceConfigCompaction {
 }
@@ -216,7 +315,7 @@ export class R2DataCatalogMaintenanceConfigOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}
 */
 export class R2DataCatalog extends cdktn.TerraformResource {
 
@@ -232,7 +331,7 @@ export class R2DataCatalog extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a R2DataCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2DataCatalog to import
-  * @param importFromId The id of the existing R2DataCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2DataCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2DataCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -244,7 +343,7 @@ export class R2DataCatalog extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog cloudflare_r2_data_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -255,7 +354,7 @@ export class R2DataCatalog extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_r2_data_catalog',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -268,6 +367,7 @@ export class R2DataCatalog extends cdktn.TerraformResource {
     });
     this._accountId = config.accountId;
     this._bucketName = config.bucketName;
+    this._credential.internalValue = config.credential;
   }
 
   // ==========
@@ -305,6 +405,22 @@ export class R2DataCatalog extends cdktn.TerraformResource {
     return this._bucketName;
   }
 
+  // credential - computed: false, optional: true, required: false
+  private _credential = new R2DataCatalogCredentialOutputReference(this, "credential");
+  public get credential() {
+    return this._credential;
+  }
+  public putCredential(value: R2DataCatalogCredential) {
+    this._credential.internalValue = value;
+  }
+  public resetCredential() {
+    this._credential.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get credentialInput() {
+    return this._credential.internalValue;
+  }
+
   // credential_status - computed: true, optional: false, required: false
   public get credentialStatus() {
     return this.getStringAttribute('credential_status');
@@ -313,6 +429,11 @@ export class R2DataCatalog extends cdktn.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // jurisdiction - computed: true, optional: false, required: false
+  public get jurisdiction() {
+    return this.getStringAttribute('jurisdiction');
   }
 
   // maintenance_config - computed: true, optional: false, required: false
@@ -339,6 +460,7 @@ export class R2DataCatalog extends cdktn.TerraformResource {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
       bucket_name: cdktn.stringToTerraform(this._bucketName),
+      credential: r2DataCatalogCredentialToTerraform(this._credential.internalValue),
     };
   }
 
@@ -355,6 +477,12 @@ export class R2DataCatalog extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      credential: {
+        value: r2DataCatalogCredentialToHclTerraform(this._credential.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "R2DataCatalogCredential",
       },
     };
 
