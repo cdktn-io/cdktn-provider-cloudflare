@@ -4,7 +4,7 @@
 
 ### OrganizationProfileA <a name="OrganizationProfileA" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile cloudflare_organization_profile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile cloudflare_organization_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer"></a>
 
@@ -19,12 +19,12 @@ OrganizationProfileA.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .businessAddress(java.lang.String)
-    .businessEmail(java.lang.String)
-    .businessName(java.lang.String)
-    .businessPhone(java.lang.String)
-    .externalMetadata(java.lang.String)
     .organizationId(java.lang.String)
+//  .businessAddress(java.lang.String)
+//  .businessEmail(java.lang.String)
+//  .businessName(java.lang.String)
+//  .businessPhone(java.lang.String)
+//  .externalMetadata(java.lang.String)
     .build();
 ```
 
@@ -39,12 +39,12 @@ OrganizationProfileA.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessAddress">businessAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessEmail">businessEmail</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessName">businessName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessPhone">businessPhone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.externalMetadata">externalMetadata</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.organizationId">organizationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.organizationId">organizationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessAddress">businessAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessEmail">businessEmail</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessName">businessName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessPhone">businessPhone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.externalMetadata">externalMetadata</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}. |
 
 ---
 
@@ -108,51 +108,51 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `businessAddress`<sup>Required</sup> <a name="businessAddress" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessAddress"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}.
-
----
-
-##### `businessEmail`<sup>Required</sup> <a name="businessEmail" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessEmail"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}.
-
----
-
-##### `businessName`<sup>Required</sup> <a name="businessName" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessName"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}.
-
----
-
-##### `businessPhone`<sup>Required</sup> <a name="businessPhone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessPhone"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}.
-
----
-
-##### `externalMetadata`<sup>Required</sup> <a name="externalMetadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.externalMetadata"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}.
-
----
-
 ##### `organizationId`<sup>Required</sup> <a name="organizationId" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.organizationId"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}.
+
+---
+
+##### `businessAddress`<sup>Optional</sup> <a name="businessAddress" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessAddress"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}.
+
+---
+
+##### `businessEmail`<sup>Optional</sup> <a name="businessEmail" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessEmail"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}.
+
+---
+
+##### `businessName`<sup>Optional</sup> <a name="businessName" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessName"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}.
+
+---
+
+##### `businessPhone`<sup>Optional</sup> <a name="businessPhone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.businessPhone"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}.
+
+---
+
+##### `externalMetadata`<sup>Optional</sup> <a name="externalMetadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.Initializer.parameter.externalMetadata"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}.
 
 ---
 
@@ -184,6 +184,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessAddress">resetBusinessAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessEmail">resetBusinessEmail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessName">resetBusinessName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessPhone">resetBusinessPhone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetExternalMetadata">resetExternalMetadata</a></code> | *No description.* |
 
 ---
 
@@ -498,6 +503,36 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetBusinessAddress` <a name="resetBusinessAddress" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessAddress"></a>
+
+```java
+public void resetBusinessAddress()
+```
+
+##### `resetBusinessEmail` <a name="resetBusinessEmail" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessEmail"></a>
+
+```java
+public void resetBusinessEmail()
+```
+
+##### `resetBusinessName` <a name="resetBusinessName" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessName"></a>
+
+```java
+public void resetBusinessName()
+```
+
+##### `resetBusinessPhone` <a name="resetBusinessPhone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetBusinessPhone"></a>
+
+```java
+public void resetBusinessPhone()
+```
+
+##### `resetExternalMetadata` <a name="resetExternalMetadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileA.resetExternalMetadata"></a>
+
+```java
+public void resetExternalMetadata()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -601,7 +636,7 @@ The construct id used in the generated config for the OrganizationProfileA to im
 
 The id of the existing OrganizationProfileA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,12 +978,12 @@ OrganizationProfileAConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .businessAddress(java.lang.String)
-    .businessEmail(java.lang.String)
-    .businessName(java.lang.String)
-    .businessPhone(java.lang.String)
-    .externalMetadata(java.lang.String)
     .organizationId(java.lang.String)
+//  .businessAddress(java.lang.String)
+//  .businessEmail(java.lang.String)
+//  .businessName(java.lang.String)
+//  .businessPhone(java.lang.String)
+//  .externalMetadata(java.lang.String)
     .build();
 ```
 
@@ -963,12 +998,12 @@ OrganizationProfileAConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessAddress">businessAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessEmail">businessEmail</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessName">businessName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessPhone">businessPhone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.externalMetadata">externalMetadata</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}. |
-| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.organizationId">organizationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.organizationId">organizationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessAddress">businessAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessEmail">businessEmail</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessName">businessName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessPhone">businessPhone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}. |
+| <code><a href="#@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.externalMetadata">externalMetadata</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}. |
 
 ---
 
@@ -1042,66 +1077,6 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `businessAddress`<sup>Required</sup> <a name="businessAddress" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessAddress"></a>
-
-```java
-public java.lang.String getBusinessAddress();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}.
-
----
-
-##### `businessEmail`<sup>Required</sup> <a name="businessEmail" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessEmail"></a>
-
-```java
-public java.lang.String getBusinessEmail();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}.
-
----
-
-##### `businessName`<sup>Required</sup> <a name="businessName" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessName"></a>
-
-```java
-public java.lang.String getBusinessName();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}.
-
----
-
-##### `businessPhone`<sup>Required</sup> <a name="businessPhone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessPhone"></a>
-
-```java
-public java.lang.String getBusinessPhone();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}.
-
----
-
-##### `externalMetadata`<sup>Required</sup> <a name="externalMetadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.externalMetadata"></a>
-
-```java
-public java.lang.String getExternalMetadata();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}.
-
----
-
 ##### `organizationId`<sup>Required</sup> <a name="organizationId" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.organizationId"></a>
 
 ```java
@@ -1110,7 +1085,67 @@ public java.lang.String getOrganizationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}.
+
+---
+
+##### `businessAddress`<sup>Optional</sup> <a name="businessAddress" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessAddress"></a>
+
+```java
+public java.lang.String getBusinessAddress();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}.
+
+---
+
+##### `businessEmail`<sup>Optional</sup> <a name="businessEmail" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessEmail"></a>
+
+```java
+public java.lang.String getBusinessEmail();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}.
+
+---
+
+##### `businessName`<sup>Optional</sup> <a name="businessName" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessName"></a>
+
+```java
+public java.lang.String getBusinessName();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}.
+
+---
+
+##### `businessPhone`<sup>Optional</sup> <a name="businessPhone" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.businessPhone"></a>
+
+```java
+public java.lang.String getBusinessPhone();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}.
+
+---
+
+##### `externalMetadata`<sup>Optional</sup> <a name="externalMetadata" id="@cdktn/provider-cloudflare.organizationProfile.OrganizationProfileAConfig.property.externalMetadata"></a>
+
+```java
+public java.lang.String getExternalMetadata();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}.
 
 ---
 

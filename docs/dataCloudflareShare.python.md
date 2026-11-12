@@ -4,7 +4,7 @@
 
 ### DataCloudflareShare <a name="DataCloudflareShare" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share cloudflare_share}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share cloudflare_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer"></a>
 
@@ -25,6 +25,7 @@ dataCloudflareShare.DataCloudflareShare(
   filter: DataCloudflareShareFilter = None,
   include_recipient_counts: bool | IResolvable = None,
   include_resources: bool | IResolvable = None,
+  include_tags_from: str = None,
   share_id: str = None
 )
 ```
@@ -41,9 +42,10 @@ dataCloudflareShare.DataCloudflareShare(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#filter DataCloudflareShare#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#filter DataCloudflareShare#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.includeRecipientCounts">include_recipient_counts</a></code> | <code>bool \| cdktn.IResolvable</code> | Include recipient counts in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.includeResources">include_resources</a></code> | <code>bool \| cdktn.IResolvable</code> | Include resources in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.includeTagsFrom">include_tags_from</a></code> | <code>str</code> | Include share tags in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.shareId">share_id</a></code> | <code>str</code> | Share identifier tag. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#account_id DataCloudflareShare#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#account_id DataCloudflareShare#account_id}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#filter DataCloudflareShare#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#filter DataCloudflareShare#filter}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#include_recipient_counts DataCloudflareShare#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_recipient_counts DataCloudflareShare#include_recipient_counts}
 
 ---
 
@@ -142,7 +144,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#include_resources DataCloudflareShare#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_resources DataCloudflareShare#include_resources}
+
+---
+
+##### `include_tags_from`<sup>Optional</sup> <a name="include_tags_from" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer.parameter.includeTagsFrom"></a>
+
+- *Type:* str
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_tags_from DataCloudflareShare#include_tags_from}
 
 ---
 
@@ -152,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#share_id DataCloudflareShare#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#share_id DataCloudflareShare#share_id}
 
 ---
 
@@ -182,6 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetIncludeRecipientCounts">reset_include_recipient_counts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetIncludeResources">reset_include_resources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetIncludeTagsFrom">reset_include_tags_from</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetShareId">reset_share_id</a></code> | *No description.* |
 
 ---
@@ -431,6 +447,7 @@ def interpolation_for_attribute(
 ```python
 def put_filter(
   direction: str = None,
+  include_tags_from: str = None,
   kind: str = None,
   order: str = None,
   resource_types: typing.List[str] = None,
@@ -446,7 +463,20 @@ def put_filter(
 
 Direction to sort objects. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#direction DataCloudflareShare#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#direction DataCloudflareShare#direction}
+
+---
+
+###### `include_tags_from`<sup>Optional</sup> <a name="include_tags_from" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.putFilter.parameter.includeTagsFrom"></a>
+
+- *Type:* str
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_tags_from DataCloudflareShare#include_tags_from}
 
 ---
 
@@ -456,7 +486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter shares by kind. Available values: "sent", "received".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#kind DataCloudflareShare#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#kind DataCloudflareShare#kind}
 
 ---
 
@@ -466,7 +496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Order shares by values in the given field. Available values: "name", "created".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#order DataCloudflareShare#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#order DataCloudflareShare#order}
 
 ---
 
@@ -476,7 +506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter share resources by resource_types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#resource_types DataCloudflareShare#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#resource_types DataCloudflareShare#resource_types}
 
 ---
 
@@ -486,7 +516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter shares by status. Available values: "active", "deleting", "deleted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#status DataCloudflareShare#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#status DataCloudflareShare#status}
 
 ---
 
@@ -498,7 +528,7 @@ Filter shares by tag.
 
 Each value is either `key=value` (matches shares whose tags contain that key/value pair) or `key` alone (matches shares that have any value for that key). May be repeated; multiple `tag` parameters are ANDed together. Maximum 20 `tag` parameters per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#tag DataCloudflareShare#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#tag DataCloudflareShare#tag}
 
 ---
 
@@ -508,7 +538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter shares by target_type. Available values: "account", "organization".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#target_type DataCloudflareShare#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#target_type DataCloudflareShare#target_type}
 
 ---
 
@@ -528,6 +558,12 @@ def reset_include_recipient_counts() -> None
 
 ```python
 def reset_include_resources() -> None
+```
+
+##### `reset_include_tags_from` <a name="reset_include_tags_from" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetIncludeTagsFrom"></a>
+
+```python
+def reset_include_tags_from() -> None
 ```
 
 ##### `reset_share_id` <a name="reset_share_id" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetShareId"></a>
@@ -650,7 +686,7 @@ The construct id used in the generated config for the DataCloudflareShare to imp
 
 The id of the existing DataCloudflareShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,15 +728,18 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.organizationId">organization_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareResourcesList">DataCloudflareShareResourcesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.tags">tags</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.targetType">target_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.filterInput">filter_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeRecipientCountsInput">include_recipient_counts_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeResourcesInput">include_resources_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeTagsFromInput">include_tags_from_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.shareIdInput">share_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeRecipientCounts">include_recipient_counts</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeResources">include_resources</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeTagsFrom">include_tags_from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.shareId">share_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -967,6 +1006,16 @@ status: str
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.tags"></a>
+
+```python
+tags: StringMap
+```
+
+- *Type:* cdktn.StringMap
+
+---
+
 ##### `target_type`<sup>Required</sup> <a name="target_type" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.targetType"></a>
 
 ```python
@@ -1017,6 +1066,16 @@ include_resources_input: bool | IResolvable
 
 ---
 
+##### `include_tags_from_input`<sup>Optional</sup> <a name="include_tags_from_input" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeTagsFromInput"></a>
+
+```python
+include_tags_from_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `share_id_input`<sup>Optional</sup> <a name="share_id_input" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.shareIdInput"></a>
 
 ```python
@@ -1054,6 +1113,16 @@ include_resources: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `include_tags_from`<sup>Required</sup> <a name="include_tags_from" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeTagsFrom"></a>
+
+```python
+include_tags_from: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1106,6 +1175,7 @@ dataCloudflareShare.DataCloudflareShareConfig(
   filter: DataCloudflareShareFilter = None,
   include_recipient_counts: bool | IResolvable = None,
   include_resources: bool | IResolvable = None,
+  include_tags_from: str = None,
   share_id: str = None
 )
 ```
@@ -1122,9 +1192,10 @@ dataCloudflareShare.DataCloudflareShareConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#filter DataCloudflareShare#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#filter DataCloudflareShare#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.includeRecipientCounts">include_recipient_counts</a></code> | <code>bool \| cdktn.IResolvable</code> | Include recipient counts in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.includeResources">include_resources</a></code> | <code>bool \| cdktn.IResolvable</code> | Include resources in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.includeTagsFrom">include_tags_from</a></code> | <code>str</code> | Include share tags in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.shareId">share_id</a></code> | <code>str</code> | Share identifier tag. |
 
 ---
@@ -1209,7 +1280,7 @@ account_id: str
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#account_id DataCloudflareShare#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#account_id DataCloudflareShare#account_id}
 
 ---
 
@@ -1221,7 +1292,7 @@ filter: DataCloudflareShareFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#filter DataCloudflareShare#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#filter DataCloudflareShare#filter}.
 
 ---
 
@@ -1235,7 +1306,7 @@ include_recipient_counts: bool | IResolvable
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#include_recipient_counts DataCloudflareShare#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_recipient_counts DataCloudflareShare#include_recipient_counts}
 
 ---
 
@@ -1249,7 +1320,24 @@ include_resources: bool | IResolvable
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#include_resources DataCloudflareShare#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_resources DataCloudflareShare#include_resources}
+
+---
+
+##### `include_tags_from`<sup>Optional</sup> <a name="include_tags_from" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.includeTagsFrom"></a>
+
+```python
+include_tags_from: str
+```
+
+- *Type:* str
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_tags_from DataCloudflareShare#include_tags_from}
 
 ---
 
@@ -1263,7 +1351,7 @@ share_id: str
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#share_id DataCloudflareShare#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#share_id DataCloudflareShare#share_id}
 
 ---
 
@@ -1276,6 +1364,7 @@ from cdktn_provider_cloudflare import data_cloudflare_share
 
 dataCloudflareShare.DataCloudflareShareFilter(
   direction: str = None,
+  include_tags_from: str = None,
   kind: str = None,
   order: str = None,
   resource_types: typing.List[str] = None,
@@ -1290,6 +1379,7 @@ dataCloudflareShare.DataCloudflareShareFilter(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.direction">direction</a></code> | <code>str</code> | Direction to sort objects. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.includeTagsFrom">include_tags_from</a></code> | <code>str</code> | Include share tags in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.kind">kind</a></code> | <code>str</code> | Filter shares by kind. Available values: "sent", "received". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.order">order</a></code> | <code>str</code> | Order shares by values in the given field. Available values: "name", "created". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.resourceTypes">resource_types</a></code> | <code>typing.List[str]</code> | Filter share resources by resource_types. |
@@ -1309,7 +1399,24 @@ direction: str
 
 Direction to sort objects. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#direction DataCloudflareShare#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#direction DataCloudflareShare#direction}
+
+---
+
+##### `include_tags_from`<sup>Optional</sup> <a name="include_tags_from" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.includeTagsFrom"></a>
+
+```python
+include_tags_from: str
+```
+
+- *Type:* str
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_tags_from DataCloudflareShare#include_tags_from}
 
 ---
 
@@ -1323,7 +1430,7 @@ kind: str
 
 Filter shares by kind. Available values: "sent", "received".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#kind DataCloudflareShare#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#kind DataCloudflareShare#kind}
 
 ---
 
@@ -1337,7 +1444,7 @@ order: str
 
 Order shares by values in the given field. Available values: "name", "created".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#order DataCloudflareShare#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#order DataCloudflareShare#order}
 
 ---
 
@@ -1351,7 +1458,7 @@ resource_types: typing.List[str]
 
 Filter share resources by resource_types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#resource_types DataCloudflareShare#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#resource_types DataCloudflareShare#resource_types}
 
 ---
 
@@ -1365,7 +1472,7 @@ status: str
 
 Filter shares by status. Available values: "active", "deleting", "deleted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#status DataCloudflareShare#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#status DataCloudflareShare#status}
 
 ---
 
@@ -1381,7 +1488,7 @@ Filter shares by tag.
 
 Each value is either `key=value` (matches shares whose tags contain that key/value pair) or `key` alone (matches shares that have any value for that key). May be repeated; multiple `tag` parameters are ANDed together. Maximum 20 `tag` parameters per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#tag DataCloudflareShare#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#tag DataCloudflareShare#tag}
 
 ---
 
@@ -1395,7 +1502,7 @@ target_type: str
 
 Filter shares by target_type. Available values: "account", "organization".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#target_type DataCloudflareShare#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#target_type DataCloudflareShare#target_type}
 
 ---
 
@@ -1466,6 +1573,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetDirection">reset_direction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetIncludeTagsFrom">reset_include_tags_from</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetKind">reset_kind</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetOrder">reset_order</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetResourceTypes">reset_resource_types</a></code> | *No description.* |
@@ -1653,6 +1761,12 @@ Returns a reversible string representation.
 def reset_direction() -> None
 ```
 
+##### `reset_include_tags_from` <a name="reset_include_tags_from" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetIncludeTagsFrom"></a>
+
+```python
+def reset_include_tags_from() -> None
+```
+
 ##### `reset_kind` <a name="reset_kind" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetKind"></a>
 
 ```python
@@ -1697,6 +1811,7 @@ def reset_target_type() -> None
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.includeTagsFromInput">include_tags_from_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.orderInput">order_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.resourceTypesInput">resource_types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1704,6 +1819,7 @@ def reset_target_type() -> None
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.tagInput">tag_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.targetTypeInput">target_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.includeTagsFrom">include_tags_from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.order">order</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.resourceTypes">resource_types</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1742,6 +1858,16 @@ fqn: str
 
 ```python
 direction_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `include_tags_from_input`<sup>Optional</sup> <a name="include_tags_from_input" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.includeTagsFromInput"></a>
+
+```python
+include_tags_from_input: str
 ```
 
 - *Type:* str
@@ -1812,6 +1938,16 @@ target_type_input: str
 
 ```python
 direction: str
+```
+
+- *Type:* str
+
+---
+
+##### `include_tags_from`<sup>Required</sup> <a name="include_tags_from" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.includeTagsFrom"></a>
+
+```python
+include_tags_from: str
 ```
 
 - *Type:* str

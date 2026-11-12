@@ -4,7 +4,7 @@
 
 ### DataCloudflareShare <a name="DataCloudflareShare" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share cloudflare_share}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share cloudflare_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetFilter">ResetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetIncludeRecipientCounts">ResetIncludeRecipientCounts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetIncludeResources">ResetIncludeResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetIncludeTagsFrom">ResetIncludeTagsFrom</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetShareId">ResetShareId</a></code> | *No description.* |
 
 ---
@@ -319,6 +320,12 @@ func ResetIncludeRecipientCounts()
 func ResetIncludeResources()
 ```
 
+##### `ResetIncludeTagsFrom` <a name="ResetIncludeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetIncludeTagsFrom"></a>
+
+```go
+func ResetIncludeTagsFrom()
+```
+
 ##### `ResetShareId` <a name="ResetShareId" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.resetShareId"></a>
 
 ```go
@@ -428,7 +435,7 @@ The construct id used in the generated config for the DataCloudflareShare to imp
 
 The id of the existing DataCloudflareShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -470,15 +477,18 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.organizationId">OrganizationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareResourcesList">DataCloudflareShareResourcesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.tags">Tags</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.targetType">TargetType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.filterInput">FilterInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeRecipientCountsInput">IncludeRecipientCountsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeResourcesInput">IncludeResourcesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeTagsFromInput">IncludeTagsFromInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.shareIdInput">ShareIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeRecipientCounts">IncludeRecipientCounts</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeResources">IncludeResources</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeTagsFrom">IncludeTagsFrom</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.shareId">ShareId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -745,6 +755,16 @@ func Status() *string
 
 ---
 
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.tags"></a>
+
+```go
+func Tags() StringMap
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
+
+---
+
 ##### `TargetType`<sup>Required</sup> <a name="TargetType" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.targetType"></a>
 
 ```go
@@ -795,6 +815,16 @@ func IncludeResourcesInput() interface{}
 
 ---
 
+##### `IncludeTagsFromInput`<sup>Optional</sup> <a name="IncludeTagsFromInput" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeTagsFromInput"></a>
+
+```go
+func IncludeTagsFromInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ShareIdInput`<sup>Optional</sup> <a name="ShareIdInput" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.shareIdInput"></a>
 
 ```go
@@ -832,6 +862,16 @@ func IncludeResources() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `IncludeTagsFrom`<sup>Required</sup> <a name="IncludeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShare.property.includeTagsFrom"></a>
+
+```go
+func IncludeTagsFrom() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -884,6 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dataclou
 	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.dataCloudflareShare.DataCloudflareShareFilter,
 	IncludeRecipientCounts: interface{},
 	IncludeResources: interface{},
+	IncludeTagsFrom: *string,
 	ShareId: *string,
 }
 ```
@@ -900,9 +941,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#filter DataCloudflareShare#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#filter DataCloudflareShare#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.includeRecipientCounts">IncludeRecipientCounts</a></code> | <code>interface{}</code> | Include recipient counts in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.includeResources">IncludeResources</a></code> | <code>interface{}</code> | Include resources in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.includeTagsFrom">IncludeTagsFrom</a></code> | <code>*string</code> | Include share tags in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.shareId">ShareId</a></code> | <code>*string</code> | Share identifier tag. |
 
 ---
@@ -987,7 +1029,7 @@ AccountId *string
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#account_id DataCloudflareShare#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#account_id DataCloudflareShare#account_id}
 
 ---
 
@@ -999,7 +1041,7 @@ Filter DataCloudflareShareFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter">DataCloudflareShareFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#filter DataCloudflareShare#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#filter DataCloudflareShare#filter}.
 
 ---
 
@@ -1013,7 +1055,7 @@ IncludeRecipientCounts interface{}
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#include_recipient_counts DataCloudflareShare#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_recipient_counts DataCloudflareShare#include_recipient_counts}
 
 ---
 
@@ -1027,7 +1069,24 @@ IncludeResources interface{}
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#include_resources DataCloudflareShare#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_resources DataCloudflareShare#include_resources}
+
+---
+
+##### `IncludeTagsFrom`<sup>Optional</sup> <a name="IncludeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareConfig.property.includeTagsFrom"></a>
+
+```go
+IncludeTagsFrom *string
+```
+
+- *Type:* *string
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_tags_from DataCloudflareShare#include_tags_from}
 
 ---
 
@@ -1041,7 +1100,7 @@ ShareId *string
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#share_id DataCloudflareShare#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#share_id DataCloudflareShare#share_id}
 
 ---
 
@@ -1054,6 +1113,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dataclou
 
 &datacloudflareshare.DataCloudflareShareFilter {
 	Direction: *string,
+	IncludeTagsFrom: *string,
 	Kind: *string,
 	Order: *string,
 	ResourceTypes: *[]*string,
@@ -1068,6 +1128,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dataclou
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.direction">Direction</a></code> | <code>*string</code> | Direction to sort objects. Available values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.includeTagsFrom">IncludeTagsFrom</a></code> | <code>*string</code> | Include share tags in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.kind">Kind</a></code> | <code>*string</code> | Filter shares by kind. Available values: "sent", "received". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.order">Order</a></code> | <code>*string</code> | Order shares by values in the given field. Available values: "name", "created". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Filter share resources by resource_types. |
@@ -1087,7 +1148,24 @@ Direction *string
 
 Direction to sort objects. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#direction DataCloudflareShare#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#direction DataCloudflareShare#direction}
+
+---
+
+##### `IncludeTagsFrom`<sup>Optional</sup> <a name="IncludeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilter.property.includeTagsFrom"></a>
+
+```go
+IncludeTagsFrom *string
+```
+
+- *Type:* *string
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#include_tags_from DataCloudflareShare#include_tags_from}
 
 ---
 
@@ -1101,7 +1179,7 @@ Kind *string
 
 Filter shares by kind. Available values: "sent", "received".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#kind DataCloudflareShare#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#kind DataCloudflareShare#kind}
 
 ---
 
@@ -1115,7 +1193,7 @@ Order *string
 
 Order shares by values in the given field. Available values: "name", "created".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#order DataCloudflareShare#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#order DataCloudflareShare#order}
 
 ---
 
@@ -1129,7 +1207,7 @@ ResourceTypes *[]*string
 
 Filter share resources by resource_types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#resource_types DataCloudflareShare#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#resource_types DataCloudflareShare#resource_types}
 
 ---
 
@@ -1143,7 +1221,7 @@ Status *string
 
 Filter shares by status. Available values: "active", "deleting", "deleted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#status DataCloudflareShare#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#status DataCloudflareShare#status}
 
 ---
 
@@ -1159,7 +1237,7 @@ Filter shares by tag.
 
 Each value is either `key=value` (matches shares whose tags contain that key/value pair) or `key` alone (matches shares that have any value for that key). May be repeated; multiple `tag` parameters are ANDed together. Maximum 20 `tag` parameters per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#tag DataCloudflareShare#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#tag DataCloudflareShare#tag}
 
 ---
 
@@ -1173,7 +1251,7 @@ TargetType *string
 
 Filter shares by target_type. Available values: "account", "organization".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share#target_type DataCloudflareShare#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share#target_type DataCloudflareShare#target_type}
 
 ---
 
@@ -1243,6 +1321,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetDirection">ResetDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetIncludeTagsFrom">ResetIncludeTagsFrom</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetKind">ResetKind</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetOrder">ResetOrder</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetResourceTypes">ResetResourceTypes</a></code> | *No description.* |
@@ -1408,6 +1487,12 @@ Returns a reversible string representation.
 func ResetDirection()
 ```
 
+##### `ResetIncludeTagsFrom` <a name="ResetIncludeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetIncludeTagsFrom"></a>
+
+```go
+func ResetIncludeTagsFrom()
+```
+
 ##### `ResetKind` <a name="ResetKind" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.resetKind"></a>
 
 ```go
@@ -1452,6 +1537,7 @@ func ResetTargetType()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.directionInput">DirectionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.includeTagsFromInput">IncludeTagsFromInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.kindInput">KindInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.orderInput">OrderInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.resourceTypesInput">ResourceTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -1459,6 +1545,7 @@ func ResetTargetType()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.tagInput">TagInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.targetTypeInput">TargetTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.direction">Direction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.includeTagsFrom">IncludeTagsFrom</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.kind">Kind</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.order">Order</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | *No description.* |
@@ -1497,6 +1584,16 @@ func Fqn() *string
 
 ```go
 func DirectionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IncludeTagsFromInput`<sup>Optional</sup> <a name="IncludeTagsFromInput" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.includeTagsFromInput"></a>
+
+```go
+func IncludeTagsFromInput() *string
 ```
 
 - *Type:* *string
@@ -1567,6 +1664,16 @@ func TargetTypeInput() *string
 
 ```go
 func Direction() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IncludeTagsFrom`<sup>Required</sup> <a name="IncludeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShare.DataCloudflareShareFilterOutputReference.property.includeTagsFrom"></a>
+
+```go
+func IncludeTagsFrom() *string
 ```
 
 - *Type:* *string

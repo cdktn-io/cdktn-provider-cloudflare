@@ -4,7 +4,7 @@
 
 ### DataCloudflareShares <a name="DataCloudflareShares" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares cloudflare_shares}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares cloudflare_shares}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer"></a>
 
@@ -23,6 +23,7 @@ DataCloudflareShares.Builder.create(Construct scope, java.lang.String id)
 //  .direction(java.lang.String)
 //  .includeRecipientCounts(java.lang.Boolean|IResolvable)
 //  .includeResources(java.lang.Boolean|IResolvable)
+//  .includeTagsFrom(java.lang.String)
 //  .kind(java.lang.String)
 //  .maxItems(java.lang.Number)
 //  .order(java.lang.String)
@@ -48,6 +49,7 @@ DataCloudflareShares.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer.parameter.direction">direction</a></code> | <code>java.lang.String</code> | Direction to sort objects. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer.parameter.includeRecipientCounts">includeRecipientCounts</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include recipient counts in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer.parameter.includeResources">includeResources</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include resources in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer.parameter.includeTagsFrom">includeTagsFrom</a></code> | <code>java.lang.String</code> | Include share tags in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | Filter shares by kind. Available values: "sent", "received". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer.parameter.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer.parameter.order">order</a></code> | <code>java.lang.String</code> | Order shares by values in the given field. Available values: "name", "created". |
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#account_id DataCloudflareShares#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#account_id DataCloudflareShares#account_id}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Direction to sort objects. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#direction DataCloudflareShares#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#direction DataCloudflareShares#direction}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#include_recipient_counts DataCloudflareShares#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#include_recipient_counts DataCloudflareShares#include_recipient_counts}
 
 ---
 
@@ -154,7 +156,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#include_resources DataCloudflareShares#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#include_resources DataCloudflareShares#include_resources}
+
+---
+
+##### `includeTagsFrom`<sup>Optional</sup> <a name="includeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer.parameter.includeTagsFrom"></a>
+
+- *Type:* java.lang.String
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#include_tags_from DataCloudflareShares#include_tags_from}
 
 ---
 
@@ -164,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter shares by kind. Available values: "sent", "received".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#kind DataCloudflareShares#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#kind DataCloudflareShares#kind}
 
 ---
 
@@ -174,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#max_items DataCloudflareShares#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#max_items DataCloudflareShares#max_items}
 
 ---
 
@@ -184,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Order shares by values in the given field. Available values: "name", "created".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#order DataCloudflareShares#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#order DataCloudflareShares#order}
 
 ---
 
@@ -194,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter share resources by resource_types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#resource_types DataCloudflareShares#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#resource_types DataCloudflareShares#resource_types}
 
 ---
 
@@ -204,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter shares by status. Available values: "active", "deleting", "deleted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#status DataCloudflareShares#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#status DataCloudflareShares#status}
 
 ---
 
@@ -216,7 +231,7 @@ Filter shares by tag.
 
 Each value is either `key=value` (matches shares whose tags contain that key/value pair) or `key` alone (matches shares that have any value for that key). May be repeated; multiple `tag` parameters are ANDed together. Maximum 20 `tag` parameters per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#tag DataCloudflareShares#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#tag DataCloudflareShares#tag}
 
 ---
 
@@ -226,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter shares by target_type. Available values: "account", "organization".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#target_type DataCloudflareShares#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#target_type DataCloudflareShares#target_type}
 
 ---
 
@@ -255,6 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetDirection">resetDirection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetIncludeRecipientCounts">resetIncludeRecipientCounts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetIncludeResources">resetIncludeResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetIncludeTagsFrom">resetIncludeTagsFrom</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetKind">resetKind</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetOrder">resetOrder</a></code> | *No description.* |
@@ -496,6 +512,12 @@ public void resetIncludeRecipientCounts()
 public void resetIncludeResources()
 ```
 
+##### `resetIncludeTagsFrom` <a name="resetIncludeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetIncludeTagsFrom"></a>
+
+```java
+public void resetIncludeTagsFrom()
+```
+
 ##### `resetKind` <a name="resetKind" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.resetKind"></a>
 
 ```java
@@ -641,7 +663,7 @@ The construct id used in the generated config for the DataCloudflareShares to im
 
 The id of the existing DataCloudflareShares that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -674,6 +696,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.includeRecipientCountsInput">includeRecipientCountsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.includeResourcesInput">includeResourcesInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.includeTagsFromInput">includeTagsFromInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.kindInput">kindInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.maxItemsInput">maxItemsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.orderInput">orderInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -685,6 +708,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.includeRecipientCounts">includeRecipientCounts</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.includeResources">includeResources</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.includeTagsFrom">includeTagsFrom</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.kind">kind</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.order">order</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -867,6 +891,16 @@ public java.lang.Boolean|IResolvable getIncludeResourcesInput();
 
 ---
 
+##### `includeTagsFromInput`<sup>Optional</sup> <a name="includeTagsFromInput" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.includeTagsFromInput"></a>
+
+```java
+public java.lang.String getIncludeTagsFromInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `kindInput`<sup>Optional</sup> <a name="kindInput" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.kindInput"></a>
 
 ```java
@@ -974,6 +1008,16 @@ public java.lang.Boolean|IResolvable getIncludeResources();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `includeTagsFrom`<sup>Required</sup> <a name="includeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.property.includeTagsFrom"></a>
+
+```java
+public java.lang.String getIncludeTagsFrom();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1086,6 +1130,7 @@ DataCloudflareSharesConfig.builder()
 //  .direction(java.lang.String)
 //  .includeRecipientCounts(java.lang.Boolean|IResolvable)
 //  .includeResources(java.lang.Boolean|IResolvable)
+//  .includeTagsFrom(java.lang.String)
 //  .kind(java.lang.String)
 //  .maxItems(java.lang.Number)
 //  .order(java.lang.String)
@@ -1111,6 +1156,7 @@ DataCloudflareSharesConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesConfig.property.direction">direction</a></code> | <code>java.lang.String</code> | Direction to sort objects. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesConfig.property.includeRecipientCounts">includeRecipientCounts</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include recipient counts in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesConfig.property.includeResources">includeResources</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include resources in the response. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesConfig.property.includeTagsFrom">includeTagsFrom</a></code> | <code>java.lang.String</code> | Include share tags in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | Filter shares by kind. Available values: "sent", "received". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesConfig.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesConfig.property.order">order</a></code> | <code>java.lang.String</code> | Order shares by values in the given field. Available values: "name", "created". |
@@ -1201,7 +1247,7 @@ public java.lang.String getAccountId();
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#account_id DataCloudflareShares#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#account_id DataCloudflareShares#account_id}
 
 ---
 
@@ -1215,7 +1261,7 @@ public java.lang.String getDirection();
 
 Direction to sort objects. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#direction DataCloudflareShares#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#direction DataCloudflareShares#direction}
 
 ---
 
@@ -1229,7 +1275,7 @@ public java.lang.Boolean|IResolvable getIncludeRecipientCounts();
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#include_recipient_counts DataCloudflareShares#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#include_recipient_counts DataCloudflareShares#include_recipient_counts}
 
 ---
 
@@ -1243,7 +1289,24 @@ public java.lang.Boolean|IResolvable getIncludeResources();
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#include_resources DataCloudflareShares#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#include_resources DataCloudflareShares#include_resources}
+
+---
+
+##### `includeTagsFrom`<sup>Optional</sup> <a name="includeTagsFrom" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesConfig.property.includeTagsFrom"></a>
+
+```java
+public java.lang.String getIncludeTagsFrom();
+```
+
+- *Type:* java.lang.String
+
+Include share tags in the response.
+
+`api` reads tags from the tag service; `mirror` reads a local, eventually consistent replica. If the tag lookup fails, the response omits `tags`.
+Available values: "api", "mirror".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#include_tags_from DataCloudflareShares#include_tags_from}
 
 ---
 
@@ -1257,7 +1320,7 @@ public java.lang.String getKind();
 
 Filter shares by kind. Available values: "sent", "received".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#kind DataCloudflareShares#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#kind DataCloudflareShares#kind}
 
 ---
 
@@ -1271,7 +1334,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#max_items DataCloudflareShares#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#max_items DataCloudflareShares#max_items}
 
 ---
 
@@ -1285,7 +1348,7 @@ public java.lang.String getOrder();
 
 Order shares by values in the given field. Available values: "name", "created".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#order DataCloudflareShares#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#order DataCloudflareShares#order}
 
 ---
 
@@ -1299,7 +1362,7 @@ public java.util.List<java.lang.String> getResourceTypes();
 
 Filter share resources by resource_types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#resource_types DataCloudflareShares#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#resource_types DataCloudflareShares#resource_types}
 
 ---
 
@@ -1313,7 +1376,7 @@ public java.lang.String getStatus();
 
 Filter shares by status. Available values: "active", "deleting", "deleted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#status DataCloudflareShares#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#status DataCloudflareShares#status}
 
 ---
 
@@ -1329,7 +1392,7 @@ Filter shares by tag.
 
 Each value is either `key=value` (matches shares whose tags contain that key/value pair) or `key` alone (matches shares that have any value for that key). May be repeated; multiple `tag` parameters are ANDed together. Maximum 20 `tag` parameters per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#tag DataCloudflareShares#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#tag DataCloudflareShares#tag}
 
 ---
 
@@ -1343,7 +1406,7 @@ public java.lang.String getTargetType();
 
 Filter shares by target_type. Available values: "account", "organization".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares#target_type DataCloudflareShares#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares#target_type DataCloudflareShares#target_type}
 
 ---
 
@@ -1764,6 +1827,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResultOutputReference.property.organizationId">organizationId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResultOutputReference.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResultResourcesList">DataCloudflareSharesResultResourcesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResultOutputReference.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResultOutputReference.property.tags">tags</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResultOutputReference.property.targetType">targetType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResultOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResult">DataCloudflareSharesResult</a></code> | *No description.* |
 
@@ -1930,6 +1994,16 @@ public java.lang.String getStatus();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareSharesResultOutputReference.property.tags"></a>
+
+```java
+public StringMap getTags();
+```
+
+- *Type:* io.cdktn.cdktn.StringMap
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareByoIpPrefix <a name="DataCloudflareByoIpPrefix" id="@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareByoIpPrefix 
 
 The id of the existing DataCloudflareByoIpPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -426,6 +426,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.advertisedModifiedAt">advertisedModifiedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.approved">approved</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.asn">asn</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.asnOwnershipValidationState">asnOwnershipValidationState</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.aspaValidationState">aspaValidationState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.cidr">cidr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.delegateLoaCreation">delegateLoaCreation</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -605,6 +607,26 @@ public readonly asn: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `asnOwnershipValidationState`<sup>Required</sup> <a name="asnOwnershipValidationState" id="@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.asnOwnershipValidationState"></a>
+
+```typescript
+public readonly asnOwnershipValidationState: string;
+```
+
+- *Type:* string
+
+---
+
+##### `aspaValidationState`<sup>Required</sup> <a name="aspaValidationState" id="@cdktn/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix.property.aspaValidationState"></a>
+
+```typescript
+public readonly aspaValidationState: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -904,7 +926,7 @@ public readonly prefixId: string;
 
 Identifier of an IP Prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefix#prefix_id DataCloudflareByoIpPrefix#prefix_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefix#prefix_id DataCloudflareByoIpPrefix#prefix_id}
 
 ---
 
@@ -918,7 +940,7 @@ public readonly accountId: string;
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefix#account_id DataCloudflareByoIpPrefix#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefix#account_id DataCloudflareByoIpPrefix#account_id}
 
 ---
 

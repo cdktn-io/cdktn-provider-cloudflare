@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktn/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -41,11 +41,11 @@ account.Account(
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.name">name</a></code> | <code>str</code> | Account name. |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.name">name</a></code> | <code>str</code> | Account name, limited to 65 UTF-8 bytes. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.managedBy">managed_by</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.standalone">standalone</a></code> | <code>bool \| cdktn.IResolvable</code> | Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`. |
-| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.type">type</a></code> | <code>str</code> | Available values: "standard", "enterprise". |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.type">type</a></code> | <code>str</code> | the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise". |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | Information related to the tenant unit. |
 
 ---
@@ -114,9 +114,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Account name.
+Account name, limited to 65 UTF-8 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Parent container details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#managed_by Account#managed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#standalone Account#standalone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#standalone Account#standalone}
 
 ---
 
@@ -154,9 +154,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Available values: "standard", "enterprise".
+the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -168,7 +168,7 @@ Information related to the tenant unit.
 
 Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -580,7 +580,7 @@ def put_settings(
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -590,7 +590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -608,7 +608,7 @@ def put_unit(
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -759,7 +759,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,6 +791,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.property.legacyFlags">legacy_flags</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference">AccountLegacyFlagsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.managedBy">managed_by</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference">AccountManagedByOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettingsOutputReference">AccountSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnitOutputReference">AccountUnitOutputReference</a></code> | *No description.* |
@@ -965,6 +966,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `legacy_flags`<sup>Required</sup> <a name="legacy_flags" id="@cdktn/provider-cloudflare.account.Account.property.legacyFlags"></a>
+
+```python
+legacy_flags: AccountLegacyFlagsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference">AccountLegacyFlagsOutputReference</a>
 
 ---
 
@@ -1143,11 +1154,11 @@ account.AccountConfig(
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.name">name</a></code> | <code>str</code> | Account name. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.name">name</a></code> | <code>str</code> | Account name, limited to 65 UTF-8 bytes. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.managedBy">managed_by</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.standalone">standalone</a></code> | <code>bool \| cdktn.IResolvable</code> | Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`. |
-| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.type">type</a></code> | <code>str</code> | Available values: "standard", "enterprise". |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.type">type</a></code> | <code>str</code> | the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise". |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | Information related to the tenant unit. |
 
 ---
@@ -1230,9 +1241,9 @@ name: str
 
 - *Type:* str
 
-Account name.
+Account name, limited to 65 UTF-8 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -1246,7 +1257,7 @@ managed_by: AccountManagedBy
 
 Parent container details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#managed_by Account#managed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -1260,7 +1271,7 @@ settings: AccountSettings
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -1274,7 +1285,7 @@ standalone: bool | IResolvable
 
 Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#standalone Account#standalone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#standalone Account#standalone}
 
 ---
 
@@ -1286,9 +1297,9 @@ type: str
 
 - *Type:* str
 
-Available values: "standard", "enterprise".
+the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -1304,9 +1315,31 @@ Information related to the tenant unit.
 
 Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#unit Account#unit}
 
 ---
+
+### AccountLegacyFlags <a name="AccountLegacyFlags" id="@cdktn/provider-cloudflare.account.AccountLegacyFlags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.account.AccountLegacyFlags.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import account
+
+account.AccountLegacyFlags()
+```
+
+
+### AccountLegacyFlagsEnterpriseZoneQuota <a name="AccountLegacyFlagsEnterpriseZoneQuota" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import account
+
+account.AccountLegacyFlagsEnterpriseZoneQuota()
+```
+
 
 ### AccountManagedBy <a name="AccountManagedBy" id="@cdktn/provider-cloudflare.account.AccountManagedBy"></a>
 
@@ -1351,7 +1384,7 @@ abuse_contact_email: str
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -1365,7 +1398,7 @@ enforce_twofactor: bool | IResolvable
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -1399,7 +1432,7 @@ id: str
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1407,6 +1440,598 @@ If you experience problems setting this value it might not be settable. Please t
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AccountLegacyFlagsEnterpriseZoneQuotaOutputReference <a name="AccountLegacyFlagsEnterpriseZoneQuotaOutputReference" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import account
+
+account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.available">available</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.current">current</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.maximum">maximum</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota">AccountLegacyFlagsEnterpriseZoneQuota</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `available`<sup>Required</sup> <a name="available" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.available"></a>
+
+```python
+available: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `current`<sup>Required</sup> <a name="current" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.current"></a>
+
+```python
+current: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `maximum`<sup>Required</sup> <a name="maximum" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.maximum"></a>
+
+```python
+maximum: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AccountLegacyFlagsEnterpriseZoneQuota
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota">AccountLegacyFlagsEnterpriseZoneQuota</a>
+
+---
+
+
+### AccountLegacyFlagsOutputReference <a name="AccountLegacyFlagsOutputReference" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import account
+
+account.AccountLegacyFlagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.enterpriseZoneQuota">enterprise_zone_quota</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference">AccountLegacyFlagsEnterpriseZoneQuotaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlags">AccountLegacyFlags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `enterprise_zone_quota`<sup>Required</sup> <a name="enterprise_zone_quota" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.enterpriseZoneQuota"></a>
+
+```python
+enterprise_zone_quota: AccountLegacyFlagsEnterpriseZoneQuotaOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference">AccountLegacyFlagsEnterpriseZoneQuotaOutputReference</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AccountLegacyFlags
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlags">AccountLegacyFlags</a>
+
+---
+
 
 ### AccountManagedByOutputReference <a name="AccountManagedByOutputReference" id="@cdktn/provider-cloudflare.account.AccountManagedByOutputReference"></a>
 
@@ -1645,6 +2270,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.parentOrgId">parent_org_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.parentOrgName">parent_org_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.rootOrgId">root_org_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.shouldDisplayParentOrgs">should_display_parent_orgs</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | *No description.* |
 
 ---
@@ -1690,6 +2317,26 @@ parent_org_name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `root_org_id`<sup>Required</sup> <a name="root_org_id" id="@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.rootOrgId"></a>
+
+```python
+root_org_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `should_display_parent_orgs`<sup>Required</sup> <a name="should_display_parent_orgs" id="@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.shouldDisplayParentOrgs"></a>
+
+```python
+should_display_parent_orgs: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
 
 ---
 

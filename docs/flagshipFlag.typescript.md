@@ -4,7 +4,7 @@
 
 ### FlagshipFlag <a name="FlagshipFlag" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag cloudflare_flagship_flag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag cloudflare_flagship_flag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.putRules">putRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetMetadata">resetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetType">resetType</a></code> | *No description.* |
 
 ---
@@ -407,6 +408,12 @@ public putRules(value: IResolvable | FlagshipFlagRules[]): void
 public resetDescription(): void
 ```
 
+##### `resetMetadata` <a name="resetMetadata" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetMetadata"></a>
+
+```typescript
+public resetMetadata(): void
+```
+
 ##### `resetType` <a name="resetType" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.resetType"></a>
 
 ```typescript
@@ -516,7 +523,7 @@ The construct id used in the generated config for the FlagshipFlag to import.
 
 The id of the existing FlagshipFlag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -556,6 +563,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.metadataInput">metadataInput</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.rulesInput">rulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules">FlagshipFlagRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.variationsInput">variationsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -565,6 +573,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.metadata">metadata</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.variations">variations</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -812,6 +821,16 @@ public readonly keyInput: string;
 
 ---
 
+##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.metadataInput"></a>
+
+```typescript
+public readonly metadataInput: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
 ##### `rulesInput`<sup>Optional</sup> <a name="rulesInput" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.rulesInput"></a>
 
 ```typescript
@@ -902,6 +921,16 @@ public readonly key: string;
 
 ---
 
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.metadata"></a>
+
+```typescript
+public readonly metadata: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
 ##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlag.property.type"></a>
 
 ```typescript
@@ -971,6 +1000,7 @@ const flagshipFlagConfig: flagshipFlag.FlagshipFlagConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules">FlagshipFlagRules</a>[]</code> | Targeting rules evaluated in ascending `priority`; |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.variations">variations</a></code> | <code>{[ key: string ]: string}</code> | Map of variation name to value. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.description">description</a></code> | <code>string</code> | Optional operator-facing description. It does not affect flag evaluation. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: any}</code> | Key-value metadata associated with the flag. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.type">type</a></code> | <code>string</code> | Deprecated compatibility field. |
 
 ---
@@ -1055,7 +1085,7 @@ public readonly accountId: string;
 
 Cloudflare account ID that owns the Flagship app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#account_id FlagshipFlag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#account_id FlagshipFlag#account_id}
 
 ---
 
@@ -1069,7 +1099,7 @@ public readonly appId: string;
 
 Flagship app ID returned when the app was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#app_id FlagshipFlag#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#app_id FlagshipFlag#app_id}
 
 ---
 
@@ -1083,7 +1113,7 @@ public readonly defaultVariation: string;
 
 Variation served when no rule matches or the flag is disabled. Must be a key in `variations`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#default_variation FlagshipFlag#default_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#default_variation FlagshipFlag#default_variation}
 
 ---
 
@@ -1097,7 +1127,7 @@ public readonly enabled: boolean | IResolvable;
 
 When false, the flag bypasses all rules and always serves `default_variation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#enabled FlagshipFlag#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#enabled FlagshipFlag#enabled}
 
 ---
 
@@ -1111,7 +1141,7 @@ public readonly key: string;
 
 Unique identifier for the flag within an app. Used in all evaluation and SDK calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#key FlagshipFlag#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#key FlagshipFlag#key}
 
 ---
 
@@ -1127,7 +1157,7 @@ Targeting rules evaluated in ascending `priority`;
 
 the first matching rule wins. An empty array means the flag always serves `default_variation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#rules FlagshipFlag#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#rules FlagshipFlag#rules}
 
 ---
 
@@ -1143,7 +1173,7 @@ Map of variation name to value.
 
 All values must be the same type (boolean, string, number, or JSON object/array). Each serialized value must be 10KB or smaller.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#variations FlagshipFlag#variations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#variations FlagshipFlag#variations}
 
 ---
 
@@ -1157,7 +1187,23 @@ public readonly description: string;
 
 Optional operator-facing description. It does not affect flag evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#description FlagshipFlag#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#description FlagshipFlag#description}
+
+---
+
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagConfig.property.metadata"></a>
+
+```typescript
+public readonly metadata: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+Key-value metadata associated with the flag.
+
+`null` or an empty object clears existing metadata; omission semantics depend on the endpoint (PUT clears it, PATCH preserves it).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#metadata FlagshipFlag#metadata}
 
 ---
 
@@ -1174,7 +1220,7 @@ Deprecated compatibility field.
 Omit it; the API ignores this value and infers the type from the flag's variations.
 Available values: "boolean", "string", "number", "json".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#type FlagshipFlag#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#type FlagshipFlag#type}
 
 ---
 
@@ -1195,7 +1241,7 @@ const flagshipFlagRules: flagshipFlag.FlagshipFlagRules = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.conditions">conditions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions">FlagshipFlagRulesConditions</a>[]</code> | Conditions the context must satisfy for this rule to match. An empty array matches all contexts. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.priority">priority</a></code> | <code>number</code> | Evaluation order; lower numbers are evaluated first. Must be unique across the flag's rules. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.serveVariation">serveVariation</a></code> | <code>string</code> | Variation served when this rule matches. Must be a key in `variations`. |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.rollout">rollout</a></code> | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesRollout">FlagshipFlagRulesRollout</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRules.property.rollout">rollout</a></code> | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesRollout">FlagshipFlagRulesRollout</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}. |
 
 ---
 
@@ -1209,7 +1255,7 @@ public readonly conditions: IResolvable | FlagshipFlagRulesConditions[];
 
 Conditions the context must satisfy for this rule to match. An empty array matches all contexts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#conditions FlagshipFlag#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#conditions FlagshipFlag#conditions}
 
 ---
 
@@ -1223,7 +1269,7 @@ public readonly priority: number;
 
 Evaluation order; lower numbers are evaluated first. Must be unique across the flag's rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#priority FlagshipFlag#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#priority FlagshipFlag#priority}
 
 ---
 
@@ -1237,7 +1283,7 @@ public readonly serveVariation: string;
 
 Variation served when this rule matches. Must be a key in `variations`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#serve_variation FlagshipFlag#serve_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#serve_variation FlagshipFlag#serve_variation}
 
 ---
 
@@ -1249,7 +1295,7 @@ public readonly rollout: FlagshipFlagRulesRollout;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesRollout">FlagshipFlagRulesRollout</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}.
 
 ---
 
@@ -1267,8 +1313,8 @@ const flagshipFlagRulesConditions: flagshipFlag.FlagshipFlagRulesConditions = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}. |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.clauses">clauses</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses">FlagshipFlagRulesConditionsClauses</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.clauses">clauses</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses">FlagshipFlagRulesConditionsClauses</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.logicalOperator">logicalOperator</a></code> | <code>string</code> | Available values: "AND", "OR". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.operator">operator</a></code> | <code>string</code> | Available values: "equals", "not_equals", "greater_than", "less_than", "greater_than_or_equals", "less_than_or_equals", "contains", "starts_with", "ends_with", "in", "not_in", "has", "not_has". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditions.property.value">value</a></code> | <code>string</code> | Value to compare against the context attribute. |
@@ -1283,7 +1329,7 @@ public readonly attribute: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}.
 
 ---
 
@@ -1295,7 +1341,7 @@ public readonly clauses: IResolvable | FlagshipFlagRulesConditionsClauses[];
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses">FlagshipFlagRulesConditionsClauses</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}.
 
 ---
 
@@ -1309,7 +1355,7 @@ public readonly logicalOperator: string;
 
 Available values: "AND", "OR".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#logical_operator FlagshipFlag#logical_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#logical_operator FlagshipFlag#logical_operator}
 
 ---
 
@@ -1323,7 +1369,7 @@ public readonly operator: string;
 
 Available values: "equals", "not_equals", "greater_than", "less_than", "greater_than_or_equals", "less_than_or_equals", "contains", "starts_with", "ends_with", "in", "not_in", "has", "not_has".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#operator FlagshipFlag#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#operator FlagshipFlag#operator}
 
 ---
 
@@ -1339,7 +1385,7 @@ Value to compare against the context attribute.
 
 Must be an array for `in` and `not_in`; numeric and ISO-8601 datetime strings are accepted by the ordering operators.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#value FlagshipFlag#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#value FlagshipFlag#value}
 
 ---
 
@@ -1357,8 +1403,8 @@ const flagshipFlagRulesConditionsClauses: flagshipFlag.FlagshipFlagRulesConditio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}. |
-| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.clauses">clauses</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses">FlagshipFlagRulesConditionsClauses</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}. |
+| <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.clauses">clauses</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses">FlagshipFlagRulesConditionsClauses</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}. |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.logicalOperator">logicalOperator</a></code> | <code>string</code> | Available values: "AND", "OR". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.operator">operator</a></code> | <code>string</code> | Available values: "equals", "not_equals", "greater_than", "less_than", "greater_than_or_equals", "less_than_or_equals", "contains", "starts_with", "ends_with", "in", "not_in", "has", "not_has". |
 | <code><a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses.property.value">value</a></code> | <code>string</code> | Value to compare against the context attribute. |
@@ -1373,7 +1419,7 @@ public readonly attribute: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}.
 
 ---
 
@@ -1385,7 +1431,7 @@ public readonly clauses: IResolvable | FlagshipFlagRulesConditionsClauses[];
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.flagshipFlag.FlagshipFlagRulesConditionsClauses">FlagshipFlagRulesConditionsClauses</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#clauses FlagshipFlag#clauses}.
 
 ---
 
@@ -1399,7 +1445,7 @@ public readonly logicalOperator: string;
 
 Available values: "AND", "OR".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#logical_operator FlagshipFlag#logical_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#logical_operator FlagshipFlag#logical_operator}
 
 ---
 
@@ -1413,7 +1459,7 @@ public readonly operator: string;
 
 Available values: "equals", "not_equals", "greater_than", "less_than", "greater_than_or_equals", "less_than_or_equals", "contains", "starts_with", "ends_with", "in", "not_in", "has", "not_has".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#operator FlagshipFlag#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#operator FlagshipFlag#operator}
 
 ---
 
@@ -1429,7 +1475,7 @@ Value to compare against the context attribute.
 
 Must be an array for `in` and `not_in`; numeric and ISO-8601 datetime strings are accepted by the ordering operators.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#value FlagshipFlag#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#value FlagshipFlag#value}
 
 ---
 
@@ -1464,7 +1510,7 @@ Percentage of matching traffic (0–100, up to 2 decimal places) served this var
 
 For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#percentage FlagshipFlag#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#percentage FlagshipFlag#percentage}
 
 ---
 
@@ -1478,7 +1524,7 @@ public readonly attribute: string;
 
 Context attribute used for sticky bucketing. Defaults to `targetingKey`. If absent at evaluation time, bucketing is random per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}
 
 ---
 

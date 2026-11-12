@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccount <a name="DataCloudflareAccount" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataCloudflareAccount to i
 
 The id of the existing DataCloudflareAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -445,6 +445,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountFilterOutputReference">DataCloudflareAccountFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.legacyFlags">LegacyFlags</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference">DataCloudflareAccountLegacyFlagsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.managedBy">ManagedBy</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference">DataCloudflareAccountManagedByOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountSettingsOutputReference">DataCloudflareAccountSettingsOutputReference</a></code> | *No description.* |
@@ -607,6 +608,16 @@ func Id() *string
 
 ---
 
+##### `LegacyFlags`<sup>Required</sup> <a name="LegacyFlags" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.legacyFlags"></a>
+
+```go
+func LegacyFlags() DataCloudflareAccountLegacyFlagsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference">DataCloudflareAccountLegacyFlagsOutputReference</a>
+
+---
+
 ##### `ManagedBy`<sup>Required</sup> <a name="ManagedBy" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccount.property.managedBy"></a>
 
 ```go
@@ -729,7 +740,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountFilter">DataCloudflareAccountFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account#filter DataCloudflareAccount#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountFilter">DataCloudflareAccountFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account#filter DataCloudflareAccount#filter}. |
 
 ---
 
@@ -813,7 +824,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account#account_id DataCloudflareAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account#account_id DataCloudflareAccount#account_id}
 
 ---
 
@@ -825,7 +836,7 @@ Filter DataCloudflareAccountFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountFilter">DataCloudflareAccountFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account#filter DataCloudflareAccount#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account#filter DataCloudflareAccount#filter}.
 
 ---
 
@@ -861,7 +872,7 @@ Direction *string
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account#direction DataCloudflareAccount#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account#direction DataCloudflareAccount#direction}
 
 ---
 
@@ -875,9 +886,35 @@ Name *string
 
 Name of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account#name DataCloudflareAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account#name DataCloudflareAccount#name}
 
 ---
+
+### DataCloudflareAccountLegacyFlags <a name="DataCloudflareAccountLegacyFlags" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlags.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareaccount"
+
+&datacloudflareaccount.DataCloudflareAccountLegacyFlags {
+
+}
+```
+
+
+### DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota <a name="DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareaccount"
+
+&datacloudflareaccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota {
+
+}
+```
+
 
 ### DataCloudflareAccountManagedBy <a name="DataCloudflareAccountManagedBy" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedBy"></a>
 
@@ -1214,6 +1251,548 @@ func InternalValue() interface{}
 ---
 
 
+### DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference <a name="DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareaccount"
+
+datacloudflareaccount.NewDataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.available">Available</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.current">Current</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.maximum">Maximum</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota">DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Available`<sup>Required</sup> <a name="Available" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.available"></a>
+
+```go
+func Available() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Current`<sup>Required</sup> <a name="Current" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.current"></a>
+
+```go
+func Current() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Maximum`<sup>Required</sup> <a name="Maximum" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.maximum"></a>
+
+```go
+func Maximum() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota">DataCloudflareAccountLegacyFlagsEnterpriseZoneQuota</a>
+
+---
+
+
+### DataCloudflareAccountLegacyFlagsOutputReference <a name="DataCloudflareAccountLegacyFlagsOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareaccount"
+
+datacloudflareaccount.NewDataCloudflareAccountLegacyFlagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountLegacyFlagsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.property.enterpriseZoneQuota">EnterpriseZoneQuota</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference">DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlags">DataCloudflareAccountLegacyFlags</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EnterpriseZoneQuota`<sup>Required</sup> <a name="EnterpriseZoneQuota" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.property.enterpriseZoneQuota"></a>
+
+```go
+func EnterpriseZoneQuota() DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference">DataCloudflareAccountLegacyFlagsEnterpriseZoneQuotaOutputReference</a>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlagsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareAccountLegacyFlags
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountLegacyFlags">DataCloudflareAccountLegacyFlags</a>
+
+---
+
+
 ### DataCloudflareAccountManagedByOutputReference <a name="DataCloudflareAccountManagedByOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.Initializer"></a>
@@ -1426,6 +2005,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.property.parentOrgId">ParentOrgId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.property.parentOrgName">ParentOrgName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.property.rootOrgId">RootOrgId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.property.shouldDisplayParentOrgs">ShouldDisplayParentOrgs</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedBy">DataCloudflareAccountManagedBy</a></code> | *No description.* |
 
 ---
@@ -1471,6 +2052,26 @@ func ParentOrgName() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `RootOrgId`<sup>Required</sup> <a name="RootOrgId" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.property.rootOrgId"></a>
+
+```go
+func RootOrgId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ShouldDisplayParentOrgs`<sup>Required</sup> <a name="ShouldDisplayParentOrgs" id="@cdktn/provider-cloudflare.dataCloudflareAccount.DataCloudflareAccountManagedByOutputReference.property.shouldDisplayParentOrgs"></a>
+
+```go
+func ShouldDisplayParentOrgs() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 

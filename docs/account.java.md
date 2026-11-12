@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktn/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -39,11 +39,11 @@ Account.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Account name. |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Account name, limited to 65 UTF-8 bytes. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.managedBy">managedBy</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.standalone">standalone</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`. |
-| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Available values: "standard", "enterprise". |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise". |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.Initializer.parameter.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | Information related to the tenant unit. |
 
 ---
@@ -112,9 +112,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Account name.
+Account name, limited to 65 UTF-8 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Parent container details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#managed_by Account#managed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#standalone Account#standalone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#standalone Account#standalone}
 
 ---
 
@@ -152,9 +152,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Available values: "standard", "enterprise".
+the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -166,7 +166,7 @@ Information related to the tenant unit.
 
 Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -689,7 +689,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,6 +721,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.Account.property.legacyFlags">legacyFlags</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference">AccountLegacyFlagsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.managedBy">managedBy</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference">AccountManagedByOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettingsOutputReference">AccountSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.Account.property.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnitOutputReference">AccountUnitOutputReference</a></code> | *No description.* |
@@ -895,6 +896,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `legacyFlags`<sup>Required</sup> <a name="legacyFlags" id="@cdktn/provider-cloudflare.account.Account.property.legacyFlags"></a>
+
+```java
+public AccountLegacyFlagsOutputReference getLegacyFlags();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference">AccountLegacyFlagsOutputReference</a>
 
 ---
 
@@ -1073,11 +1084,11 @@ AccountConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Account name. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Account name, limited to 65 UTF-8 bytes. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.managedBy">managedBy</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.standalone">standalone</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`. |
-| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.type">type</a></code> | <code>java.lang.String</code> | Available values: "standard", "enterprise". |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.type">type</a></code> | <code>java.lang.String</code> | the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise". |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountConfig.property.unit">unit</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | Information related to the tenant unit. |
 
 ---
@@ -1160,9 +1171,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Account name.
+Account name, limited to 65 UTF-8 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -1176,7 +1187,7 @@ public AccountManagedBy getManagedBy();
 
 Parent container details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#managed_by Account#managed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -1190,7 +1201,7 @@ public AccountSettings getSettings();
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -1204,7 +1215,7 @@ public java.lang.Boolean|IResolvable getStandalone();
 
 Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#standalone Account#standalone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#standalone Account#standalone}
 
 ---
 
@@ -1216,9 +1227,9 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Available values: "standard", "enterprise".
+the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -1234,9 +1245,33 @@ Information related to the tenant unit.
 
 Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#unit Account#unit}
 
 ---
+
+### AccountLegacyFlags <a name="AccountLegacyFlags" id="@cdktn/provider-cloudflare.account.AccountLegacyFlags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.account.AccountLegacyFlags.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.account.AccountLegacyFlags;
+
+AccountLegacyFlags.builder()
+    .build();
+```
+
+
+### AccountLegacyFlagsEnterpriseZoneQuota <a name="AccountLegacyFlagsEnterpriseZoneQuota" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota;
+
+AccountLegacyFlagsEnterpriseZoneQuota.builder()
+    .build();
+```
+
 
 ### AccountManagedBy <a name="AccountManagedBy" id="@cdktn/provider-cloudflare.account.AccountManagedBy"></a>
 
@@ -1282,7 +1317,7 @@ public java.lang.String getAbuseContactEmail();
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -1296,7 +1331,7 @@ public java.lang.Boolean|IResolvable getEnforceTwofactor();
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -1330,7 +1365,7 @@ public java.lang.String getId();
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1338,6 +1373,548 @@ If you experience problems setting this value it might not be settable. Please t
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AccountLegacyFlagsEnterpriseZoneQuotaOutputReference <a name="AccountLegacyFlagsEnterpriseZoneQuotaOutputReference" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference;
+
+new AccountLegacyFlagsEnterpriseZoneQuotaOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.available">available</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.current">current</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.maximum">maximum</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota">AccountLegacyFlagsEnterpriseZoneQuota</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `available`<sup>Required</sup> <a name="available" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.available"></a>
+
+```java
+public java.lang.Number getAvailable();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `current`<sup>Required</sup> <a name="current" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.current"></a>
+
+```java
+public java.lang.Number getCurrent();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maximum`<sup>Required</sup> <a name="maximum" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.maximum"></a>
+
+```java
+public java.lang.Number getMaximum();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference.property.internalValue"></a>
+
+```java
+public AccountLegacyFlagsEnterpriseZoneQuota getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuota">AccountLegacyFlagsEnterpriseZoneQuota</a>
+
+---
+
+
+### AccountLegacyFlagsOutputReference <a name="AccountLegacyFlagsOutputReference" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.account.AccountLegacyFlagsOutputReference;
+
+new AccountLegacyFlagsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.enterpriseZoneQuota">enterpriseZoneQuota</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference">AccountLegacyFlagsEnterpriseZoneQuotaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlags">AccountLegacyFlags</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `enterpriseZoneQuota`<sup>Required</sup> <a name="enterpriseZoneQuota" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.enterpriseZoneQuota"></a>
+
+```java
+public AccountLegacyFlagsEnterpriseZoneQuotaOutputReference getEnterpriseZoneQuota();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlagsEnterpriseZoneQuotaOutputReference">AccountLegacyFlagsEnterpriseZoneQuotaOutputReference</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.account.AccountLegacyFlagsOutputReference.property.internalValue"></a>
+
+```java
+public AccountLegacyFlags getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.account.AccountLegacyFlags">AccountLegacyFlags</a>
+
+---
+
 
 ### AccountManagedByOutputReference <a name="AccountManagedByOutputReference" id="@cdktn/provider-cloudflare.account.AccountManagedByOutputReference"></a>
 
@@ -1551,6 +2128,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.parentOrgId">parentOrgId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.parentOrgName">parentOrgName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.rootOrgId">rootOrgId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.shouldDisplayParentOrgs">shouldDisplayParentOrgs</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | *No description.* |
 
 ---
@@ -1596,6 +2175,26 @@ public java.lang.String getParentOrgName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `rootOrgId`<sup>Required</sup> <a name="rootOrgId" id="@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.rootOrgId"></a>
+
+```java
+public java.lang.String getRootOrgId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `shouldDisplayParentOrgs`<sup>Required</sup> <a name="shouldDisplayParentOrgs" id="@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.property.shouldDisplayParentOrgs"></a>
+
+```java
+public IResolvable getShouldDisplayParentOrgs();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 

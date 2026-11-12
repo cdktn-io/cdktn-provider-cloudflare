@@ -4,7 +4,7 @@
 
 ### ZeroTrustDnsLocation <a name="ZeroTrustDnsLocation" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer"></a>
 
@@ -22,6 +22,7 @@ ZeroTrustDnsLocation.Builder.create(Construct scope, java.lang.String id)
     .accountId(java.lang.String)
     .name(java.lang.String)
 //  .clientDefault(java.lang.Boolean|IResolvable)
+//  .dns64Enabled(java.lang.Boolean|IResolvable)
 //  .dnsDestinationIpsId(java.lang.String)
 //  .ecsSupport(java.lang.Boolean|IResolvable)
 //  .endpoints(ZeroTrustDnsLocationEndpoints)
@@ -44,6 +45,7 @@ ZeroTrustDnsLocation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Specify the Cloudflare account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specify the location name. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.clientDefault">clientDefault</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicate whether this location is the default location. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.dns64Enabled">dns64Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable DNS64 synthesis for DNS queries matched to this location. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.dnsDestinationIpsId">dnsDestinationIpsId</a></code> | <code>java.lang.String</code> | Specify the identifier of the pair of IPv4 addresses assigned to this location. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.ecsSupport">ecsSupport</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicate whether the location must resolve EDNS queries. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints">ZeroTrustDnsLocationEndpoints</a></code> | Configure the destination endpoints for this location. |
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Specify the Cloudflare account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specify the location name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
 
 ---
 
@@ -138,7 +140,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicate whether this location is the default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+
+---
+
+##### `dns64Enabled`<sup>Optional</sup> <a name="dns64Enabled" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.dns64Enabled"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Enable DNS64 synthesis for DNS queries matched to this location.
+
+When updating a location, omitting this field resets it to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#dns64_enabled ZeroTrustDnsLocation#dns64_enabled}
 
 ---
 
@@ -150,7 +164,7 @@ Specify the identifier of the pair of IPv4 addresses assigned to this location.
 
 When creating a location, if this field is absent or set to null, the pair of shared IPv4 addresses (0e4a32c6-6fb8-4858-9296-98f51631e8e6) is auto-assigned. When updating a location, if this field is absent or set to null, the pre-assigned pair remains unchanged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
 
 ---
 
@@ -160,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicate whether the location must resolve EDNS queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
 
 ---
 
@@ -170,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configure the destination endpoints for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
 
 ---
 
@@ -182,7 +196,7 @@ Controls how DNS response TTLs are capped for this location relative to the acco
 
 Omitting `max_ttl` on update resets it to `inherit`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#max_ttl ZeroTrustDnsLocation#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#max_ttl ZeroTrustDnsLocation#max_ttl}
 
 ---
 
@@ -194,7 +208,7 @@ Specify the list of network ranges from which requests at this location originat
 
 The list takes effect only if it is non-empty and the IPv4 endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -230,6 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putMaxTtl">putMaxTtl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putNetworks">putNetworks</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.resetClientDefault">resetClientDefault</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.resetDns64Enabled">resetDns64Enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.resetDnsDestinationIpsId">resetDnsDestinationIpsId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.resetEcsSupport">resetEcsSupport</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.resetEndpoints">resetEndpoints</a></code> | *No description.* |
@@ -591,6 +606,12 @@ public void putNetworks(IResolvable|java.util.List<ZeroTrustDnsLocationNetworks>
 public void resetClientDefault()
 ```
 
+##### `resetDns64Enabled` <a name="resetDns64Enabled" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.resetDns64Enabled"></a>
+
+```java
+public void resetDns64Enabled()
+```
+
 ##### `resetDnsDestinationIpsId` <a name="resetDnsDestinationIpsId" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.resetDnsDestinationIpsId"></a>
 
 ```java
@@ -724,7 +745,7 @@ The construct id used in the generated config for the ZeroTrustDnsLocation to im
 
 The id of the existing ZeroTrustDnsLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,6 +788,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.clientDefaultInput">clientDefaultInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.dns64EnabledInput">dns64EnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.dnsDestinationIpsIdInput">dnsDestinationIpsIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.ecsSupportInput">ecsSupportInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.endpointsInput">endpointsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints">ZeroTrustDnsLocationEndpoints</a></code> | *No description.* |
@@ -775,6 +797,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.networksInput">networksInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationNetworks">ZeroTrustDnsLocationNetworks</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.clientDefault">clientDefault</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.dns64Enabled">dns64Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.dnsDestinationIpsId">dnsDestinationIpsId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.ecsSupport">ecsSupport</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1053,6 +1076,16 @@ public java.lang.Boolean|IResolvable getClientDefaultInput();
 
 ---
 
+##### `dns64EnabledInput`<sup>Optional</sup> <a name="dns64EnabledInput" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.dns64EnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDns64EnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `dnsDestinationIpsIdInput`<sup>Optional</sup> <a name="dnsDestinationIpsIdInput" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.dnsDestinationIpsIdInput"></a>
 
 ```java
@@ -1133,6 +1166,16 @@ public java.lang.Boolean|IResolvable getClientDefault();
 
 ---
 
+##### `dns64Enabled`<sup>Required</sup> <a name="dns64Enabled" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.dns64Enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDns64Enabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `dnsDestinationIpsId`<sup>Required</sup> <a name="dnsDestinationIpsId" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.property.dnsDestinationIpsId"></a>
 
 ```java
@@ -1201,6 +1244,7 @@ ZeroTrustDnsLocationConfig.builder()
     .accountId(java.lang.String)
     .name(java.lang.String)
 //  .clientDefault(java.lang.Boolean|IResolvable)
+//  .dns64Enabled(java.lang.Boolean|IResolvable)
 //  .dnsDestinationIpsId(java.lang.String)
 //  .ecsSupport(java.lang.Boolean|IResolvable)
 //  .endpoints(ZeroTrustDnsLocationEndpoints)
@@ -1223,6 +1267,7 @@ ZeroTrustDnsLocationConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Specify the Cloudflare account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specify the location name. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.clientDefault">clientDefault</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicate whether this location is the default location. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.dns64Enabled">dns64Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable DNS64 synthesis for DNS queries matched to this location. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.dnsDestinationIpsId">dnsDestinationIpsId</a></code> | <code>java.lang.String</code> | Specify the identifier of the pair of IPv4 addresses assigned to this location. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.ecsSupport">ecsSupport</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicate whether the location must resolve EDNS queries. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints">ZeroTrustDnsLocationEndpoints</a></code> | Configure the destination endpoints for this location. |
@@ -1311,7 +1356,7 @@ public java.lang.String getAccountId();
 
 Specify the Cloudflare account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
 
 ---
 
@@ -1325,7 +1370,7 @@ public java.lang.String getName();
 
 Specify the location name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
 
 ---
 
@@ -1339,7 +1384,23 @@ public java.lang.Boolean|IResolvable getClientDefault();
 
 Indicate whether this location is the default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+
+---
+
+##### `dns64Enabled`<sup>Optional</sup> <a name="dns64Enabled" id="@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.dns64Enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDns64Enabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Enable DNS64 synthesis for DNS queries matched to this location.
+
+When updating a location, omitting this field resets it to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#dns64_enabled ZeroTrustDnsLocation#dns64_enabled}
 
 ---
 
@@ -1355,7 +1416,7 @@ Specify the identifier of the pair of IPv4 addresses assigned to this location.
 
 When creating a location, if this field is absent or set to null, the pair of shared IPv4 addresses (0e4a32c6-6fb8-4858-9296-98f51631e8e6) is auto-assigned. When updating a location, if this field is absent or set to null, the pre-assigned pair remains unchanged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
 
 ---
 
@@ -1369,7 +1430,7 @@ public java.lang.Boolean|IResolvable getEcsSupport();
 
 Indicate whether the location must resolve EDNS queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
 
 ---
 
@@ -1383,7 +1444,7 @@ public ZeroTrustDnsLocationEndpoints getEndpoints();
 
 Configure the destination endpoints for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
 
 ---
 
@@ -1399,7 +1460,7 @@ Controls how DNS response TTLs are capped for this location relative to the acco
 
 Omitting `max_ttl` on update resets it to `inherit`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#max_ttl ZeroTrustDnsLocation#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#max_ttl ZeroTrustDnsLocation#max_ttl}
 
 ---
 
@@ -1415,7 +1476,7 @@ Specify the list of network ranges from which requests at this location originat
 
 The list takes effect only if it is non-empty and the IPv4 endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1438,10 +1499,10 @@ ZeroTrustDnsLocationEndpoints.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.doh">doh</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDoh">ZeroTrustDnsLocationEndpointsDoh</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.dot">dot</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDot">ZeroTrustDnsLocationEndpointsDot</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv4">ipv4</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv4">ZeroTrustDnsLocationEndpointsIpv4</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv6">ipv6</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6">ZeroTrustDnsLocationEndpointsIpv6</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.doh">doh</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDoh">ZeroTrustDnsLocationEndpointsDoh</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.dot">dot</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDot">ZeroTrustDnsLocationEndpointsDot</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv4">ipv4</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv4">ZeroTrustDnsLocationEndpointsIpv4</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv6">ipv6</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6">ZeroTrustDnsLocationEndpointsIpv6</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}. |
 
 ---
 
@@ -1453,7 +1514,7 @@ public ZeroTrustDnsLocationEndpointsDoh getDoh();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDoh">ZeroTrustDnsLocationEndpointsDoh</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}.
 
 ---
 
@@ -1465,7 +1526,7 @@ public ZeroTrustDnsLocationEndpointsDot getDot();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDot">ZeroTrustDnsLocationEndpointsDot</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}.
 
 ---
 
@@ -1477,7 +1538,7 @@ public ZeroTrustDnsLocationEndpointsIpv4 getIpv4();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv4">ZeroTrustDnsLocationEndpointsIpv4</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}.
 
 ---
 
@@ -1489,7 +1550,7 @@ public ZeroTrustDnsLocationEndpointsIpv6 getIpv6();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6">ZeroTrustDnsLocationEndpointsIpv6</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}.
 
 ---
 
@@ -1527,7 +1588,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Indicate whether the DOH endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -1543,7 +1604,7 @@ Specify the list of allowed source IP network ranges for this endpoint.
 
 When the list is empty, the endpoint allows all source IPs. The list takes effect only if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1557,7 +1618,7 @@ public java.lang.Boolean|IResolvable getRequireToken();
 
 Specify whether the DOH endpoint requires user identity authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#require_token ZeroTrustDnsLocation#require_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#require_token ZeroTrustDnsLocation#require_token}
 
 ---
 
@@ -1591,7 +1652,7 @@ public java.lang.String getNetwork();
 
 Specify the IP address or IP CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 
@@ -1627,7 +1688,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Indicate whether the DOT endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -1643,7 +1704,7 @@ Specify the list of allowed source IP network ranges for this endpoint.
 
 When the list is empty, the endpoint allows all source IPs. The list takes effect only if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1677,7 +1738,7 @@ public java.lang.String getNetwork();
 
 Specify the IP address or IP CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 
@@ -1711,7 +1772,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Indicate whether the IPv4 endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -1747,7 +1808,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Indicate whether the IPV6 endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -1763,7 +1824,7 @@ Specify the list of allowed source IPv6 network ranges for this endpoint.
 
 When the list is empty, the endpoint allows all source IPs. The list takes effect only if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1797,7 +1858,7 @@ public java.lang.String getNetwork();
 
 Specify the IPv6 address or IPv6 CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 
@@ -1833,7 +1894,7 @@ public java.lang.String getMode();
 
 `inherit` uses the account `max_ttl_secs`. `override` uses this location's `ttl_secs`. `disabled` leaves returned TTLs unchanged. Available values: "inherit", "override", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#mode ZeroTrustDnsLocation#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#mode ZeroTrustDnsLocation#mode}
 
 ---
 
@@ -1849,7 +1910,7 @@ Location-specific cap on DNS response TTLs, in seconds.
 
 Required when `mode` is `override`. Must be omitted when `mode` is `inherit` or `disabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#ttl_secs ZeroTrustDnsLocation#ttl_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#ttl_secs ZeroTrustDnsLocation#ttl_secs}
 
 ---
 
@@ -1883,7 +1944,7 @@ public java.lang.String getNetwork();
 
 Specify the IPv4 address or IPv4 CIDR. Limit IPv4 CIDRs to a maximum of /24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 

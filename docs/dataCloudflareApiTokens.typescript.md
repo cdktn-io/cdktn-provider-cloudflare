@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiTokens <a name="DataCloudflareApiTokens" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_tokens cloudflare_api_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/api_tokens cloudflare_api_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareApiTokens to
 
 The id of the existing DataCloudflareApiTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +765,7 @@ public readonly direction: string;
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
 
 ---
 
@@ -779,7 +779,7 @@ public readonly includeExpired: boolean | IResolvable;
 
 When true, includes recently-expired tokens in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_tokens#include_expired DataCloudflareApiTokens#include_expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/api_tokens#include_expired DataCloudflareApiTokens#include_expired}
 
 ---
 
@@ -793,7 +793,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
 
 ---
 
@@ -1786,6 +1786,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultOutputReference.property.provisionerId">provisionerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultOutputReference.property.provisionerType">provisionerType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultOutputReference.property.tokenPrefix">tokenPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultOutputReference.property.tokenSuffix">tokenSuffix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResult">DataCloudflareApiTokensResult</a></code> | *No description.* |
 
 ---
@@ -1938,6 +1940,26 @@ public readonly provisionerType: string;
 
 ```typescript
 public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenPrefix`<sup>Required</sup> <a name="tokenPrefix" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultOutputReference.property.tokenPrefix"></a>
+
+```typescript
+public readonly tokenPrefix: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenSuffix`<sup>Required</sup> <a name="tokenSuffix" id="@cdktn/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensResultOutputReference.property.tokenSuffix"></a>
+
+```typescript
+public readonly tokenSuffix: string;
 ```
 
 - *Type:* string

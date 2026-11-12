@@ -4,7 +4,7 @@
 
 ### DataCloudflareOrganization <a name="DataCloudflareOrganization" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization cloudflare_organization}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization cloudflare_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataCloudflareOrganization.DataCloudflareOrganization(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter">DataCloudflareOrganizationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#filter DataCloudflareOrganization#filter}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer.parameter.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter">DataCloudflareOrganizationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#filter DataCloudflareOrganization#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer.parameter.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter">DataCloudflareOrganizationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#filter DataCloudflareOrganization#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#filter DataCloudflareOrganization#filter}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}.
 
 ---
 
@@ -391,8 +391,11 @@ def interpolation_for_attribute(
 ```python
 def put_filter(
   containing: DataCloudflareOrganizationFilterContaining = None,
+  direction: str = None,
   id: typing.List[str] = None,
+  member: DataCloudflareOrganizationFilterMember = None,
   name: DataCloudflareOrganizationFilterName = None,
+  order_by: str = None,
   page_size: typing.Union[int, float] = None,
   page_token: str = None,
   parent: DataCloudflareOrganizationFilterParent = None
@@ -403,7 +406,17 @@ def put_filter(
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining">DataCloudflareOrganizationFilterContaining</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#containing DataCloudflareOrganization#containing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#containing DataCloudflareOrganization#containing}.
+
+---
+
+###### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.putFilter.parameter.direction"></a>
+
+- *Type:* str
+
+Sort direction for the `order_by` field. Defaults to `asc` when `order_by` is specified. Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#direction DataCloudflareOrganization#direction}
 
 ---
 
@@ -413,10 +426,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements by repeating the query value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#id DataCloudflareOrganization#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#id DataCloudflareOrganization#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+###### `member`<sup>Optional</sup> <a name="member" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.putFilter.parameter.member"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember">DataCloudflareOrganizationFilterMember</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#member DataCloudflareOrganization#member}.
 
 ---
 
@@ -424,7 +445,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterName">DataCloudflareOrganizationFilterName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#name DataCloudflareOrganization#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#name DataCloudflareOrganization#name}.
+
+---
+
+###### `order_by`<sup>Optional</sup> <a name="order_by" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.putFilter.parameter.orderBy"></a>
+
+- *Type:* str
+
+Field to order results by. Currently supported values: `name`. When not specified, results are ordered by hierarchy. Available values: "name".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#order_by DataCloudflareOrganization#order_by}
 
 ---
 
@@ -434,7 +465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The amount of items to return. Defaults to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#page_size DataCloudflareOrganization#page_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#page_size DataCloudflareOrganization#page_size}
 
 ---
 
@@ -447,7 +478,7 @@ An opaque token returned from the last list response that when provided will ret
 Parameters used to filter the retrieved list must remain in subsequent
 requests with a page token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#page_token DataCloudflareOrganization#page_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#page_token DataCloudflareOrganization#page_token}
 
 ---
 
@@ -455,7 +486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParent">DataCloudflareOrganizationFilterParent</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#parent DataCloudflareOrganization#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#parent DataCloudflareOrganization#parent}.
 
 ---
 
@@ -585,7 +616,7 @@ The construct id used in the generated config for the DataCloudflareOrganization
 
 The id of the existing DataCloudflareOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,8 +930,8 @@ dataCloudflareOrganization.DataCloudflareOrganizationConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter">DataCloudflareOrganizationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#filter DataCloudflareOrganization#filter}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationConfig.property.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter">DataCloudflareOrganizationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#filter DataCloudflareOrganization#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationConfig.property.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}. |
 
 ---
 
@@ -982,7 +1013,7 @@ filter: DataCloudflareOrganizationFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter">DataCloudflareOrganizationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#filter DataCloudflareOrganization#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#filter DataCloudflareOrganization#filter}.
 
 ---
 
@@ -994,7 +1025,7 @@ organization_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#organization_id DataCloudflareOrganization#organization_id}.
 
 ---
 
@@ -1007,8 +1038,11 @@ from cdktn_provider_cloudflare import data_cloudflare_organization
 
 dataCloudflareOrganization.DataCloudflareOrganizationFilter(
   containing: DataCloudflareOrganizationFilterContaining = None,
+  direction: str = None,
   id: typing.List[str] = None,
+  member: DataCloudflareOrganizationFilterMember = None,
   name: DataCloudflareOrganizationFilterName = None,
+  order_by: str = None,
   page_size: typing.Union[int, float] = None,
   page_token: str = None,
   parent: DataCloudflareOrganizationFilterParent = None
@@ -1019,12 +1053,15 @@ dataCloudflareOrganization.DataCloudflareOrganizationFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.containing">containing</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining">DataCloudflareOrganizationFilterContaining</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#containing DataCloudflareOrganization#containing}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.containing">containing</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining">DataCloudflareOrganizationFilterContaining</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#containing DataCloudflareOrganization#containing}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.direction">direction</a></code> | <code>str</code> | Sort direction for the `order_by` field. Defaults to `asc` when `order_by` is specified. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.id">id</a></code> | <code>typing.List[str]</code> | Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements by repeating the query value. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterName">DataCloudflareOrganizationFilterName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#name DataCloudflareOrganization#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.member">member</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember">DataCloudflareOrganizationFilterMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#member DataCloudflareOrganization#member}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterName">DataCloudflareOrganizationFilterName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#name DataCloudflareOrganization#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.orderBy">order_by</a></code> | <code>str</code> | Field to order results by. Currently supported values: `name`. When not specified, results are ordered by hierarchy. Available values: "name". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | The amount of items to return. Defaults to 10. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.pageToken">page_token</a></code> | <code>str</code> | An opaque token returned from the last list response that when provided will retrieve the next page. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParent">DataCloudflareOrganizationFilterParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#parent DataCloudflareOrganization#parent}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParent">DataCloudflareOrganizationFilterParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#parent DataCloudflareOrganization#parent}. |
 
 ---
 
@@ -1036,7 +1073,21 @@ containing: DataCloudflareOrganizationFilterContaining
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining">DataCloudflareOrganizationFilterContaining</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#containing DataCloudflareOrganization#containing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#containing DataCloudflareOrganization#containing}.
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+Sort direction for the `order_by` field. Defaults to `asc` when `order_by` is specified. Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#direction DataCloudflareOrganization#direction}
 
 ---
 
@@ -1050,10 +1101,22 @@ id: typing.List[str]
 
 Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements by repeating the query value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#id DataCloudflareOrganization#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#id DataCloudflareOrganization#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `member`<sup>Optional</sup> <a name="member" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.member"></a>
+
+```python
+member: DataCloudflareOrganizationFilterMember
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember">DataCloudflareOrganizationFilterMember</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#member DataCloudflareOrganization#member}.
 
 ---
 
@@ -1065,7 +1128,21 @@ name: DataCloudflareOrganizationFilterName
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterName">DataCloudflareOrganizationFilterName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#name DataCloudflareOrganization#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#name DataCloudflareOrganization#name}.
+
+---
+
+##### `order_by`<sup>Optional</sup> <a name="order_by" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.property.orderBy"></a>
+
+```python
+order_by: str
+```
+
+- *Type:* str
+
+Field to order results by. Currently supported values: `name`. When not specified, results are ordered by hierarchy. Available values: "name".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#order_by DataCloudflareOrganization#order_by}
 
 ---
 
@@ -1079,7 +1156,7 @@ page_size: typing.Union[int, float]
 
 The amount of items to return. Defaults to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#page_size DataCloudflareOrganization#page_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#page_size DataCloudflareOrganization#page_size}
 
 ---
 
@@ -1096,7 +1173,7 @@ An opaque token returned from the last list response that when provided will ret
 Parameters used to filter the retrieved list must remain in subsequent
 requests with a page token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#page_token DataCloudflareOrganization#page_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#page_token DataCloudflareOrganization#page_token}
 
 ---
 
@@ -1108,7 +1185,7 @@ parent: DataCloudflareOrganizationFilterParent
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParent">DataCloudflareOrganizationFilterParent</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#parent DataCloudflareOrganization#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#parent DataCloudflareOrganization#parent}.
 
 ---
 
@@ -1146,7 +1223,7 @@ account: str
 
 Filter the list of organizations to the ones that contain this particular account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#account DataCloudflareOrganization#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#account DataCloudflareOrganization#account}
 
 ---
 
@@ -1160,7 +1237,7 @@ organization: str
 
 Filter the list of organizations to the ones that contain this particular organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#organization DataCloudflareOrganization#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#organization DataCloudflareOrganization#organization}
 
 ---
 
@@ -1179,7 +1256,43 @@ representation of any authorization or privilege to manage any resources
 therein. An organization "containing" a user simply means the user is managed by
 that organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#user DataCloudflareOrganization#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#user DataCloudflareOrganization#user}
+
+---
+
+### DataCloudflareOrganizationFilterMember <a name="DataCloudflareOrganizationFilterMember" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_organization
+
+dataCloudflareOrganization.DataCloudflareOrganizationFilterMember(
+  email: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember.property.email">email</a></code> | <code>str</code> | Filter organizations to those where the given user, by email, is an active member of that exact organization. |
+
+---
+
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember.property.email"></a>
+
+```python
+email: str
+```
+
+- *Type:* str
+
+Filter organizations to those where the given user, by email, is an active member of that exact organization.
+
+This does not include hierarchy-derived access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#email DataCloudflareOrganization#email}
 
 ---
 
@@ -1217,7 +1330,7 @@ contains: str
 
 (case-insensitive) Filter the list of organizations to where the name contains a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#contains DataCloudflareOrganization#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#contains DataCloudflareOrganization#contains}
 
 ---
 
@@ -1231,7 +1344,7 @@ ends_with: str
 
 (case-insensitive) Filter the list of organizations to where the name ends with a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#ends_with DataCloudflareOrganization#ends_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#ends_with DataCloudflareOrganization#ends_with}
 
 ---
 
@@ -1245,7 +1358,7 @@ starts_with: str
 
 (case-insensitive) Filter the list of organizations to where the name starts with a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#starts_with DataCloudflareOrganization#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#starts_with DataCloudflareOrganization#starts_with}
 
 ---
 
@@ -1282,7 +1395,7 @@ Filter the list of organizations to the ones that are a sub-organization of the 
 "null" is a valid value to provide for this parameter. It means "where
 an organization has no parent (i.e. it is a 'root' organization)."
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#id DataCloudflareOrganization#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#id DataCloudflareOrganization#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1692,6 +1805,309 @@ internal_value: IResolvable | DataCloudflareOrganizationFilterContaining
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining">DataCloudflareOrganizationFilterContaining</a>
+
+---
+
+
+### DataCloudflareOrganizationFilterMemberOutputReference <a name="DataCloudflareOrganizationFilterMemberOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_organization
+
+dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.resetEmail">reset_email</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_email` <a name="reset_email" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.resetEmail"></a>
+
+```python
+def reset_email() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.email">email</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember">DataCloudflareOrganizationFilterMember</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `email_input`<sup>Optional</sup> <a name="email_input" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.emailInput"></a>
+
+```python
+email_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.email"></a>
+
+```python
+email: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | DataCloudflareOrganizationFilterMember
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember">DataCloudflareOrganizationFilterMember</a>
 
 ---
 
@@ -2111,11 +2527,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.putContaining">put_containing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.putMember">put_member</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.putName">put_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.putParent">put_parent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetContaining">reset_containing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetDirection">reset_direction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetMember">reset_member</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetOrderBy">reset_order_by</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetPageSize">reset_page_size</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetPageToken">reset_page_token</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetParent">reset_parent</a></code> | *No description.* |
@@ -2310,7 +2730,7 @@ def put_containing(
 
 Filter the list of organizations to the ones that contain this particular account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#account DataCloudflareOrganization#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#account DataCloudflareOrganization#account}
 
 ---
 
@@ -2320,7 +2740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter the list of organizations to the ones that contain this particular organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#organization DataCloudflareOrganization#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#organization DataCloudflareOrganization#organization}
 
 ---
 
@@ -2335,7 +2755,27 @@ representation of any authorization or privilege to manage any resources
 therein. An organization "containing" a user simply means the user is managed by
 that organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#user DataCloudflareOrganization#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#user DataCloudflareOrganization#user}
+
+---
+
+##### `put_member` <a name="put_member" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.putMember"></a>
+
+```python
+def put_member(
+  email: str = None
+) -> None
+```
+
+###### `email`<sup>Optional</sup> <a name="email" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.putMember.parameter.email"></a>
+
+- *Type:* str
+
+Filter organizations to those where the given user, by email, is an active member of that exact organization.
+
+This does not include hierarchy-derived access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#email DataCloudflareOrganization#email}
 
 ---
 
@@ -2355,7 +2795,7 @@ def put_name(
 
 (case-insensitive) Filter the list of organizations to where the name contains a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#contains DataCloudflareOrganization#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#contains DataCloudflareOrganization#contains}
 
 ---
 
@@ -2365,7 +2805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 (case-insensitive) Filter the list of organizations to where the name ends with a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#ends_with DataCloudflareOrganization#ends_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#ends_with DataCloudflareOrganization#ends_with}
 
 ---
 
@@ -2375,7 +2815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 (case-insensitive) Filter the list of organizations to where the name starts with a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#starts_with DataCloudflareOrganization#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#starts_with DataCloudflareOrganization#starts_with}
 
 ---
 
@@ -2396,7 +2836,7 @@ Filter the list of organizations to the ones that are a sub-organization of the 
 "null" is a valid value to provide for this parameter. It means "where
 an organization has no parent (i.e. it is a 'root' organization)."
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organization#id DataCloudflareOrganization#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organization#id DataCloudflareOrganization#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2409,16 +2849,34 @@ If you experience problems setting this value it might not be settable. Please t
 def reset_containing() -> None
 ```
 
+##### `reset_direction` <a name="reset_direction" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetDirection"></a>
+
+```python
+def reset_direction() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
+##### `reset_member` <a name="reset_member" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetMember"></a>
+
+```python
+def reset_member() -> None
+```
+
 ##### `reset_name` <a name="reset_name" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetName"></a>
 
 ```python
 def reset_name() -> None
+```
+
+##### `reset_order_by` <a name="reset_order_by" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetOrderBy"></a>
+
+```python
+def reset_order_by() -> None
 ```
 
 ##### `reset_page_size` <a name="reset_page_size" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.resetPageSize"></a>
@@ -2447,15 +2905,21 @@ def reset_parent() -> None
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.containing">containing</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContainingOutputReference">DataCloudflareOrganizationFilterContainingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.member">member</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference">DataCloudflareOrganizationFilterMemberOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterNameOutputReference">DataCloudflareOrganizationFilterNameOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParentOutputReference">DataCloudflareOrganizationFilterParentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.containingInput">containing_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining">DataCloudflareOrganizationFilterContaining</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.idInput">id_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.memberInput">member_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember">DataCloudflareOrganizationFilterMember</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.nameInput">name_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterName">DataCloudflareOrganizationFilterName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.orderByInput">order_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.pageSizeInput">page_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.pageTokenInput">page_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.parentInput">parent_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParent">DataCloudflareOrganizationFilterParent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.id">id</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.orderBy">order_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.pageToken">page_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter">DataCloudflareOrganizationFilter</a></code> | *No description.* |
@@ -2496,6 +2960,16 @@ containing: DataCloudflareOrganizationFilterContainingOutputReference
 
 ---
 
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.member"></a>
+
+```python
+member: DataCloudflareOrganizationFilterMemberOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMemberOutputReference">DataCloudflareOrganizationFilterMemberOutputReference</a>
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.name"></a>
 
 ```python
@@ -2526,6 +3000,16 @@ containing_input: IResolvable | DataCloudflareOrganizationFilterContaining
 
 ---
 
+##### `direction_input`<sup>Optional</sup> <a name="direction_input" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.directionInput"></a>
+
+```python
+direction_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.idInput"></a>
 
 ```python
@@ -2536,6 +3020,16 @@ id_input: typing.List[str]
 
 ---
 
+##### `member_input`<sup>Optional</sup> <a name="member_input" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.memberInput"></a>
+
+```python
+member_input: IResolvable | DataCloudflareOrganizationFilterMember
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterMember">DataCloudflareOrganizationFilterMember</a>
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.nameInput"></a>
 
 ```python
@@ -2543,6 +3037,16 @@ name_input: IResolvable | DataCloudflareOrganizationFilterName
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterName">DataCloudflareOrganizationFilterName</a>
+
+---
+
+##### `order_by_input`<sup>Optional</sup> <a name="order_by_input" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.orderByInput"></a>
+
+```python
+order_by_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -2576,6 +3080,16 @@ parent_input: IResolvable | DataCloudflareOrganizationFilterParent
 
 ---
 
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.id"></a>
 
 ```python
@@ -2583,6 +3097,16 @@ id: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `order_by`<sup>Required</sup> <a name="order_by" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.property.orderBy"></a>
+
+```python
+order_by: str
+```
+
+- *Type:* str
 
 ---
 
@@ -3155,9 +3679,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.areChildAccountsAccessibleByOrgMembers">are_child_accounts_accessible_by_org_members</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.hierarchyTags">hierarchy_tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.managedBy">managed_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.tenantFlags">tenant_flags</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaTenantFlagsOutputReference">DataCloudflareOrganizationMetaTenantFlagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.tenantType">tenant_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMeta">DataCloudflareOrganizationMeta</a></code> | *No description.* |
 
 ---
@@ -3183,6 +3709,16 @@ fqn: str
 ```
 
 - *Type:* str
+
+---
+
+##### `are_child_accounts_accessible_by_org_members`<sup>Required</sup> <a name="are_child_accounts_accessible_by_org_members" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.areChildAccountsAccessibleByOrgMembers"></a>
+
+```python
+are_child_accounts_accessible_by_org_members: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -3213,6 +3749,16 @@ tenant_flags: DataCloudflareOrganizationMetaTenantFlagsOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaTenantFlagsOutputReference">DataCloudflareOrganizationMetaTenantFlagsOutputReference</a>
+
+---
+
+##### `tenant_type`<sup>Required</sup> <a name="tenant_type" id="@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.property.tenantType"></a>
+
+```python
+tenant_type: str
+```
+
+- *Type:* str
 
 ---
 

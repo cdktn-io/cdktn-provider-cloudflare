@@ -4,7 +4,7 @@
 
 ### MagicTransitSiteLan <a name="MagicTransitSiteLan" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.putNat">PutNat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.putRemoteSubnets">PutRemoteSubnets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.putRoutedSubnets">PutRoutedSubnets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.putStaticAddressing">PutStaticAddressing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetBondId">ResetBondId</a></code> | *No description.* |
@@ -84,6 +85,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetNat">ResetNat</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetPhysport">ResetPhysport</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetRemoteSubnets">ResetRemoteSubnets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetRoutedSubnets">ResetRoutedSubnets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetStaticAddressing">ResetStaticAddressing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetVlanTag">ResetVlanTag</a></code> | *No description.* |
@@ -411,6 +413,18 @@ func PutNat(value MagicTransitSiteLanNat)
 
 ---
 
+##### `PutRemoteSubnets` <a name="PutRemoteSubnets" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.putRemoteSubnets"></a>
+
+```go
+func PutRemoteSubnets(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.putRemoteSubnets.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutRoutedSubnets` <a name="PutRoutedSubnets" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.putRoutedSubnets"></a>
 
 ```go
@@ -475,6 +489,12 @@ func ResetNat()
 
 ```go
 func ResetPhysport()
+```
+
+##### `ResetRemoteSubnets` <a name="ResetRemoteSubnets" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetRemoteSubnets"></a>
+
+```go
+func ResetRemoteSubnets()
 ```
 
 ##### `ResetRoutedSubnets` <a name="ResetRoutedSubnets" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.resetRoutedSubnets"></a>
@@ -598,7 +618,7 @@ The construct id used in the generated config for the MagicTransitSiteLan to imp
 
 The id of the existing MagicTransitSiteLan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -630,6 +650,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.nat">Nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNatOutputReference">MagicTransitSiteLanNatOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.remoteSubnets">RemoteSubnets</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList">MagicTransitSiteLanRemoteSubnetsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.routedSubnets">RoutedSubnets</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsList">MagicTransitSiteLanRoutedSubnetsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.staticAddressing">StaticAddressing</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingOutputReference">MagicTransitSiteLanStaticAddressingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -640,6 +661,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.natInput">NatInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.physportInput">PhysportInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.remoteSubnetsInput">RemoteSubnetsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.routedSubnetsInput">RoutedSubnetsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.siteIdInput">SiteIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.staticAddressingInput">StaticAddressingInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -818,6 +840,16 @@ func Nat() MagicTransitSiteLanNatOutputReference
 
 ---
 
+##### `RemoteSubnets`<sup>Required</sup> <a name="RemoteSubnets" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.remoteSubnets"></a>
+
+```go
+func RemoteSubnets() MagicTransitSiteLanRemoteSubnetsList
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList">MagicTransitSiteLanRemoteSubnetsList</a>
+
+---
+
 ##### `RoutedSubnets`<sup>Required</sup> <a name="RoutedSubnets" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.routedSubnets"></a>
 
 ```go
@@ -915,6 +947,16 @@ func PhysportInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `RemoteSubnetsInput`<sup>Optional</sup> <a name="RemoteSubnetsInput" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.property.remoteSubnetsInput"></a>
+
+```go
+func RemoteSubnetsInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1092,6 +1134,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magictra
 	Name: *string,
 	Nat: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.magicTransitSiteLan.MagicTransitSiteLanNat,
 	Physport: *f64,
+	RemoteSubnets: interface{},
 	RoutedSubnets: interface{},
 	StaticAddressing: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing,
 	VlanTag: *f64,
@@ -1111,14 +1154,15 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magictra
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.siteId">SiteId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.bondId">BondId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.bondId">BondId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.haLink">HaLink</a></code> | <code>interface{}</code> | mark true to use this LAN for HA probing. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.isBreakout">IsBreakout</a></code> | <code>interface{}</code> | mark true to use this LAN for source-based breakout traffic. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.isPrioritized">IsPrioritized</a></code> | <code>interface{}</code> | mark true to use this LAN for source-based prioritized traffic. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.nat">Nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.physport">Physport</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.routedSubnets">RoutedSubnets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.nat">Nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.physport">Physport</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.remoteSubnets">RemoteSubnets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#remote_subnets MagicTransitSiteLan#remote_subnets}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.routedSubnets">RoutedSubnets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.staticAddressing">StaticAddressing</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing">MagicTransitSiteLanStaticAddressing</a></code> | If the site is not configured in high availability mode, this configuration is optional (if omitted, use DHCP). |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.vlanTag">VlanTag</a></code> | <code>*f64</code> | VLAN ID. Use zero for untagged. |
 
@@ -1204,7 +1248,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#account_id MagicTransitSiteLan#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#account_id MagicTransitSiteLan#account_id}
 
 ---
 
@@ -1218,7 +1262,7 @@ SiteId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#site_id MagicTransitSiteLan#site_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#site_id MagicTransitSiteLan#site_id}
 
 ---
 
@@ -1230,7 +1274,7 @@ BondId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}.
 
 ---
 
@@ -1246,7 +1290,7 @@ mark true to use this LAN for HA probing.
 
 only works for site with HA turned on. only one LAN can be set as the ha_link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#ha_link MagicTransitSiteLan#ha_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#ha_link MagicTransitSiteLan#ha_link}
 
 ---
 
@@ -1260,7 +1304,7 @@ IsBreakout interface{}
 
 mark true to use this LAN for source-based breakout traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#is_breakout MagicTransitSiteLan#is_breakout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#is_breakout MagicTransitSiteLan#is_breakout}
 
 ---
 
@@ -1274,7 +1318,7 @@ IsPrioritized interface{}
 
 mark true to use this LAN for source-based prioritized traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#is_prioritized MagicTransitSiteLan#is_prioritized}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#is_prioritized MagicTransitSiteLan#is_prioritized}
 
 ---
 
@@ -1286,7 +1330,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}.
 
 ---
 
@@ -1298,7 +1342,7 @@ Nat MagicTransitSiteLanNat
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
 
 ---
 
@@ -1310,7 +1354,19 @@ Physport *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}.
+
+---
+
+##### `RemoteSubnets`<sup>Optional</sup> <a name="RemoteSubnets" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.remoteSubnets"></a>
+
+```go
+RemoteSubnets interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#remote_subnets MagicTransitSiteLan#remote_subnets}.
 
 ---
 
@@ -1322,7 +1378,7 @@ RoutedSubnets interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}.
 
 ---
 
@@ -1338,7 +1394,7 @@ If the site is not configured in high availability mode, this configuration is o
 
 However, if in high availability mode, static_address is required along with secondary and virtual address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#static_addressing MagicTransitSiteLan#static_addressing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#static_addressing MagicTransitSiteLan#static_addressing}
 
 ---
 
@@ -1352,7 +1408,7 @@ VlanTag *f64
 
 VLAN ID. Use zero for untagged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#vlan_tag MagicTransitSiteLan#vlan_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#vlan_tag MagicTransitSiteLan#vlan_tag}
 
 ---
 
@@ -1386,7 +1442,57 @@ StaticPrefix *string
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#static_prefix MagicTransitSiteLan#static_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#static_prefix MagicTransitSiteLan#static_prefix}
+
+---
+
+### MagicTransitSiteLanRemoteSubnets <a name="MagicTransitSiteLanRemoteSubnets" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnets"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnets.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magictransitsitelan"
+
+&magictransitsitelan.MagicTransitSiteLanRemoteSubnets {
+	LocalAliasPrefix: *string,
+	RemotePrefix: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnets.property.localAliasPrefix">LocalAliasPrefix</a></code> | <code>*string</code> | A valid CIDR notation representing an IP range. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnets.property.remotePrefix">RemotePrefix</a></code> | <code>*string</code> | A valid CIDR notation representing an IP range. |
+
+---
+
+##### `LocalAliasPrefix`<sup>Required</sup> <a name="LocalAliasPrefix" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnets.property.localAliasPrefix"></a>
+
+```go
+LocalAliasPrefix *string
+```
+
+- *Type:* *string
+
+A valid CIDR notation representing an IP range.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#local_alias_prefix MagicTransitSiteLan#local_alias_prefix}
+
+---
+
+##### `RemotePrefix`<sup>Required</sup> <a name="RemotePrefix" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnets.property.remotePrefix"></a>
+
+```go
+RemotePrefix *string
+```
+
+- *Type:* *string
+
+A valid CIDR notation representing an IP range.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#remote_prefix MagicTransitSiteLan#remote_prefix}
 
 ---
 
@@ -1410,7 +1516,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magictra
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets.property.nextHop">NextHop</a></code> | <code>*string</code> | A valid IPv4 address. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets.property.prefix">Prefix</a></code> | <code>*string</code> | A valid CIDR notation representing an IP range. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets.property.nat">Nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNat">MagicTransitSiteLanRoutedSubnetsNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets.property.nat">Nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNat">MagicTransitSiteLanRoutedSubnetsNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
 
 ---
 
@@ -1424,7 +1530,7 @@ NextHop *string
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#next_hop MagicTransitSiteLan#next_hop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#next_hop MagicTransitSiteLan#next_hop}
 
 ---
 
@@ -1438,7 +1544,7 @@ Prefix *string
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#prefix MagicTransitSiteLan#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#prefix MagicTransitSiteLan#prefix}
 
 ---
 
@@ -1450,7 +1556,7 @@ Nat MagicTransitSiteLanRoutedSubnetsNat
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNat">MagicTransitSiteLanRoutedSubnetsNat</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
 
 ---
 
@@ -1484,7 +1590,7 @@ StaticPrefix *string
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#static_prefix MagicTransitSiteLan#static_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#static_prefix MagicTransitSiteLan#static_prefix}
 
 ---
 
@@ -1509,8 +1615,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magictra
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.address">Address</a></code> | <code>*string</code> | A valid CIDR notation representing an IP range. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.dhcpRelay">DhcpRelay</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelay">MagicTransitSiteLanStaticAddressingDhcpRelay</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dhcp_relay MagicTransitSiteLan#dhcp_relay}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.dhcpServer">DhcpServer</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer">MagicTransitSiteLanStaticAddressingDhcpServer</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dhcp_server MagicTransitSiteLan#dhcp_server}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.dhcpRelay">DhcpRelay</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelay">MagicTransitSiteLanStaticAddressingDhcpRelay</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dhcp_relay MagicTransitSiteLan#dhcp_relay}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.dhcpServer">DhcpServer</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer">MagicTransitSiteLanStaticAddressingDhcpServer</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dhcp_server MagicTransitSiteLan#dhcp_server}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.secondaryAddress">SecondaryAddress</a></code> | <code>*string</code> | A valid CIDR notation representing an IP range. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.virtualAddress">VirtualAddress</a></code> | <code>*string</code> | A valid CIDR notation representing an IP range. |
 
@@ -1526,7 +1632,7 @@ Address *string
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#address MagicTransitSiteLan#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#address MagicTransitSiteLan#address}
 
 ---
 
@@ -1538,7 +1644,7 @@ DhcpRelay MagicTransitSiteLanStaticAddressingDhcpRelay
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelay">MagicTransitSiteLanStaticAddressingDhcpRelay</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dhcp_relay MagicTransitSiteLan#dhcp_relay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dhcp_relay MagicTransitSiteLan#dhcp_relay}.
 
 ---
 
@@ -1550,7 +1656,7 @@ DhcpServer MagicTransitSiteLanStaticAddressingDhcpServer
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer">MagicTransitSiteLanStaticAddressingDhcpServer</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dhcp_server MagicTransitSiteLan#dhcp_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dhcp_server MagicTransitSiteLan#dhcp_server}.
 
 ---
 
@@ -1564,7 +1670,7 @@ SecondaryAddress *string
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#secondary_address MagicTransitSiteLan#secondary_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#secondary_address MagicTransitSiteLan#secondary_address}
 
 ---
 
@@ -1578,7 +1684,7 @@ VirtualAddress *string
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#virtual_address MagicTransitSiteLan#virtual_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#virtual_address MagicTransitSiteLan#virtual_address}
 
 ---
 
@@ -1612,7 +1718,7 @@ ServerAddresses *[]*string
 
 List of DHCP server IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#server_addresses MagicTransitSiteLan#server_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#server_addresses MagicTransitSiteLan#server_addresses}
 
 ---
 
@@ -1641,7 +1747,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magictra
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dhcpPoolEnd">DhcpPoolEnd</a></code> | <code>*string</code> | A valid IPv4 address. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dhcpPoolStart">DhcpPoolStart</a></code> | <code>*string</code> | A valid IPv4 address. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dnsServer">DnsServer</a></code> | <code>*string</code> | A valid IPv4 address. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dnsServers">DnsServers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dnsServers">DnsServers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.reservations">Reservations</a></code> | <code>*map[string]*string</code> | Mapping of MAC addresses to IP addresses. |
 
 ---
@@ -1656,7 +1762,7 @@ DhcpOptions interface{}
 
 Optional list of custom DHCP options to include in DHCP responses. Only valid when DHCP server is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dhcp_options MagicTransitSiteLan#dhcp_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dhcp_options MagicTransitSiteLan#dhcp_options}
 
 ---
 
@@ -1670,7 +1776,7 @@ DhcpPoolEnd *string
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dhcp_pool_end MagicTransitSiteLan#dhcp_pool_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dhcp_pool_end MagicTransitSiteLan#dhcp_pool_end}
 
 ---
 
@@ -1684,7 +1790,7 @@ DhcpPoolStart *string
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dhcp_pool_start MagicTransitSiteLan#dhcp_pool_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dhcp_pool_start MagicTransitSiteLan#dhcp_pool_start}
 
 ---
 
@@ -1698,7 +1804,7 @@ DnsServer *string
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dns_server MagicTransitSiteLan#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dns_server MagicTransitSiteLan#dns_server}
 
 ---
 
@@ -1710,7 +1816,7 @@ DnsServers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}.
 
 ---
 
@@ -1724,7 +1830,7 @@ Reservations *map[string]*string
 
 Mapping of MAC addresses to IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#reservations MagicTransitSiteLan#reservations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#reservations MagicTransitSiteLan#reservations}
 
 ---
 
@@ -1764,7 +1870,7 @@ DHCP option number (1-254).
 
 Options 0 and 255 are reserved by RFC 2132. Options 3, 6, and 51 are not allowed because they conflict with connector-managed configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#code MagicTransitSiteLan#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#code MagicTransitSiteLan#code}
 
 ---
 
@@ -1781,7 +1887,7 @@ The type of the option value.
 text: a string (max 255 bytes). hex: colon-separated hex bytes (e.g. "01:04:aa:bb:cc", max 255 bytes). ip: an IPv4 address (e.g. "10.20.30.40"). byte: an unsigned integer 0-255 (1 byte). short: an unsigned integer 0-65535 (2 bytes). integer: an unsigned integer 0-4294967295 (4 bytes).
 Available values: "text", "hex", "ip", "byte", "short", "integer".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#type MagicTransitSiteLan#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#type MagicTransitSiteLan#type}
 
 ---
 
@@ -1795,7 +1901,7 @@ Value *string
 
 The option value, interpreted according to the type field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan#value MagicTransitSiteLan#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan#value MagicTransitSiteLan#value}
 
 ---
 
@@ -2069,6 +2175,477 @@ func StaticPrefix() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNatOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### MagicTransitSiteLanRemoteSubnetsList <a name="MagicTransitSiteLanRemoteSubnetsList" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magictransitsitelan"
+
+magictransitsitelan.NewMagicTransitSiteLanRemoteSubnetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MagicTransitSiteLanRemoteSubnetsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.get"></a>
+
+```go
+func Get(index *f64) MagicTransitSiteLanRemoteSubnetsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### MagicTransitSiteLanRemoteSubnetsOutputReference <a name="MagicTransitSiteLanRemoteSubnetsOutputReference" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/magictransitsitelan"
+
+magictransitsitelan.NewMagicTransitSiteLanRemoteSubnetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MagicTransitSiteLanRemoteSubnetsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.localAliasPrefixInput">LocalAliasPrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.remotePrefixInput">RemotePrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.localAliasPrefix">LocalAliasPrefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.remotePrefix">RemotePrefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LocalAliasPrefixInput`<sup>Optional</sup> <a name="LocalAliasPrefixInput" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.localAliasPrefixInput"></a>
+
+```go
+func LocalAliasPrefixInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RemotePrefixInput`<sup>Optional</sup> <a name="RemotePrefixInput" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.remotePrefixInput"></a>
+
+```go
+func RemotePrefixInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LocalAliasPrefix`<sup>Required</sup> <a name="LocalAliasPrefix" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.localAliasPrefix"></a>
+
+```go
+func LocalAliasPrefix() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RemotePrefix`<sup>Required</sup> <a name="RemotePrefix" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.remotePrefix"></a>
+
+```go
+func RemotePrefix() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

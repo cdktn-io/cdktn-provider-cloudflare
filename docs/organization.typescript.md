@@ -4,7 +4,7 @@
 
 ### Organization <a name="Organization" id="@cdktn/provider-cloudflare.organization.Organization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization cloudflare_organization}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization cloudflare_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.organization.Organization.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.putParent">putParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.putProfile">putProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.resetParent">resetParent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.resetParentId">resetParentId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.resetProfile">resetProfile</a></code> | *No description.* |
 
 ---
@@ -420,6 +421,12 @@ public putProfile(value: OrganizationProfile): void
 public resetParent(): void
 ```
 
+##### `resetParentId` <a name="resetParentId" id="@cdktn/provider-cloudflare.organization.Organization.resetParentId"></a>
+
+```typescript
+public resetParentId(): void
+```
+
 ##### `resetProfile` <a name="resetProfile" id="@cdktn/provider-cloudflare.organization.Organization.resetProfile"></a>
 
 ```typescript
@@ -529,7 +536,7 @@ The construct id used in the generated config for the Organization to import.
 
 The id of the existing Organization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,9 +572,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference">OrganizationParentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.profile">profile</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference">OrganizationProfileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.parentIdInput">parentIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.parentInput">parentInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.profileInput">profileInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.Organization.property.parentId">parentId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -773,6 +782,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `parentIdInput`<sup>Optional</sup> <a name="parentIdInput" id="@cdktn/provider-cloudflare.organization.Organization.property.parentIdInput"></a>
+
+```typescript
+public readonly parentIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `parentInput`<sup>Optional</sup> <a name="parentInput" id="@cdktn/provider-cloudflare.organization.Organization.property.parentInput"></a>
 
 ```typescript
@@ -797,6 +816,16 @@ public readonly profileInput: IResolvable | OrganizationProfile;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `parentId`<sup>Required</sup> <a name="parentId" id="@cdktn/provider-cloudflare.organization.Organization.property.parentId"></a>
+
+```typescript
+public readonly parentId: string;
 ```
 
 - *Type:* string
@@ -844,9 +873,10 @@ const organizationConfig: organization.OrganizationConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#parent Organization#parent}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.profile">profile</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#profile Organization#profile}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.name">name</a></code> | <code>string</code> | The Organization name, limited to 65 UTF-8 bytes. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent Organization#parent}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.parentId">parentId</a></code> | <code>string</code> | The current parent Organization ID. A different value is rejected; this endpoint cannot move an Organization. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationConfig.property.profile">profile</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a></code> | Optional profile fields, each limited to 1,000 UTF-8 bytes. An empty profile is ignored. |
 
 ---
 
@@ -928,7 +958,9 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#name Organization#name}.
+The Organization name, limited to 65 UTF-8 bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#name Organization#name}
 
 ---
 
@@ -940,7 +972,21 @@ public readonly parent: OrganizationParent;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#parent Organization#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent Organization#parent}.
+
+---
+
+##### `parentId`<sup>Optional</sup> <a name="parentId" id="@cdktn/provider-cloudflare.organization.OrganizationConfig.property.parentId"></a>
+
+```typescript
+public readonly parentId: string;
+```
+
+- *Type:* string
+
+The current parent Organization ID. A different value is rejected; this endpoint cannot move an Organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent_id Organization#parent_id}
 
 ---
 
@@ -952,7 +998,9 @@ public readonly profile: OrganizationProfile;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile">OrganizationProfile</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#profile Organization#profile}.
+Optional profile fields, each limited to 1,000 UTF-8 bytes. An empty profile is ignored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#profile Organization#profile}
 
 ---
 
@@ -992,7 +1040,7 @@ const organizationParent: organization.OrganizationParent = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#id Organization#id}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParent.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#id Organization#id}. |
 
 ---
 
@@ -1004,7 +1052,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#id Organization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#id Organization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1025,15 +1073,15 @@ const organizationProfile: organization.OrganizationProfile = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessAddress">businessAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_address Organization#business_address}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessEmail">businessEmail</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_email Organization#business_email}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessName">businessName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_name Organization#business_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessPhone">businessPhone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_phone Organization#business_phone}. |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.externalMetadata">externalMetadata</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#external_metadata Organization#external_metadata}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessAddress">businessAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_address Organization#business_address}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessEmail">businessEmail</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_email Organization#business_email}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessName">businessName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_name Organization#business_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessPhone">businessPhone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_phone Organization#business_phone}. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfile.property.externalMetadata">externalMetadata</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#external_metadata Organization#external_metadata}. |
 
 ---
 
-##### `businessAddress`<sup>Required</sup> <a name="businessAddress" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessAddress"></a>
+##### `businessAddress`<sup>Optional</sup> <a name="businessAddress" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessAddress"></a>
 
 ```typescript
 public readonly businessAddress: string;
@@ -1041,11 +1089,11 @@ public readonly businessAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_address Organization#business_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_address Organization#business_address}.
 
 ---
 
-##### `businessEmail`<sup>Required</sup> <a name="businessEmail" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessEmail"></a>
+##### `businessEmail`<sup>Optional</sup> <a name="businessEmail" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessEmail"></a>
 
 ```typescript
 public readonly businessEmail: string;
@@ -1053,11 +1101,11 @@ public readonly businessEmail: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_email Organization#business_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_email Organization#business_email}.
 
 ---
 
-##### `businessName`<sup>Required</sup> <a name="businessName" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessName"></a>
+##### `businessName`<sup>Optional</sup> <a name="businessName" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessName"></a>
 
 ```typescript
 public readonly businessName: string;
@@ -1065,11 +1113,11 @@ public readonly businessName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_name Organization#business_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_name Organization#business_name}.
 
 ---
 
-##### `businessPhone`<sup>Required</sup> <a name="businessPhone" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessPhone"></a>
+##### `businessPhone`<sup>Optional</sup> <a name="businessPhone" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.businessPhone"></a>
 
 ```typescript
 public readonly businessPhone: string;
@@ -1077,11 +1125,11 @@ public readonly businessPhone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#business_phone Organization#business_phone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#business_phone Organization#business_phone}.
 
 ---
 
-##### `externalMetadata`<sup>Required</sup> <a name="externalMetadata" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.externalMetadata"></a>
+##### `externalMetadata`<sup>Optional</sup> <a name="externalMetadata" id="@cdktn/provider-cloudflare.organization.OrganizationProfile.property.externalMetadata"></a>
 
 ```typescript
 public readonly externalMetadata: string;
@@ -1089,7 +1137,7 @@ public readonly externalMetadata: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#external_metadata Organization#external_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#external_metadata Organization#external_metadata}.
 
 ---
 
@@ -1305,9 +1353,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.areChildAccountsAccessibleByOrgMembers">areChildAccountsAccessibleByOrgMembers</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.hierarchyTags">hierarchyTags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.managedBy">managedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.tenantFlags">tenantFlags</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaTenantFlagsOutputReference">OrganizationMetaTenantFlagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.tenantType">tenantType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationMeta">OrganizationMeta</a></code> | *No description.* |
 
 ---
@@ -1333,6 +1383,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `areChildAccountsAccessibleByOrgMembers`<sup>Required</sup> <a name="areChildAccountsAccessibleByOrgMembers" id="@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.areChildAccountsAccessibleByOrgMembers"></a>
+
+```typescript
+public readonly areChildAccountsAccessibleByOrgMembers: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1363,6 +1423,16 @@ public readonly tenantFlags: OrganizationMetaTenantFlagsOutputReference;
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.organization.OrganizationMetaTenantFlagsOutputReference">OrganizationMetaTenantFlagsOutputReference</a>
+
+---
+
+##### `tenantType`<sup>Required</sup> <a name="tenantType" id="@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference.property.tenantType"></a>
+
+```typescript
+public readonly tenantType: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1924,7 +1994,6 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.organization.OrganizationParent">OrganizationParent</a></code> | *No description.* |
@@ -1949,16 +2018,6 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
-```
-
-- *Type:* string
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference.property.name"></a>
-
-```typescript
-public readonly name: string;
 ```
 
 - *Type:* string
@@ -2046,6 +2105,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessAddress">resetBusinessAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessEmail">resetBusinessEmail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessName">resetBusinessName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessPhone">resetBusinessPhone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetExternalMetadata">resetExternalMetadata</a></code> | *No description.* |
 
 ---
 
@@ -2198,6 +2262,36 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetBusinessAddress` <a name="resetBusinessAddress" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessAddress"></a>
+
+```typescript
+public resetBusinessAddress(): void
+```
+
+##### `resetBusinessEmail` <a name="resetBusinessEmail" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessEmail"></a>
+
+```typescript
+public resetBusinessEmail(): void
+```
+
+##### `resetBusinessName` <a name="resetBusinessName" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessName"></a>
+
+```typescript
+public resetBusinessName(): void
+```
+
+##### `resetBusinessPhone` <a name="resetBusinessPhone" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetBusinessPhone"></a>
+
+```typescript
+public resetBusinessPhone(): void
+```
+
+##### `resetExternalMetadata` <a name="resetExternalMetadata" id="@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference.resetExternalMetadata"></a>
+
+```typescript
+public resetExternalMetadata(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

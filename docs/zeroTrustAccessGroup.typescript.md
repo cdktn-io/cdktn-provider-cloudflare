@@ -4,7 +4,7 @@
 
 ### ZeroTrustAccessGroup <a name="ZeroTrustAccessGroup" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroup.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the ZeroTrustAccessGroup to im
 
 The id of the existing ZeroTrustAccessGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly include: IResolvable | ZeroTrustAccessGroupInclude[];
 
 Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#include ZeroTrustAccessGroup#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#include ZeroTrustAccessGroup#include}
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly name: string;
 
 The name of the Access group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly accountId: string;
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -1078,7 +1078,7 @@ Rules evaluated with a NOT logical operator.
 
 To match a policy, a user cannot meet any of the Exclude rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#exclude ZeroTrustAccessGroup#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#exclude ZeroTrustAccessGroup#exclude}
 
 ---
 
@@ -1092,7 +1092,7 @@ public readonly isDefault: boolean | IResolvable;
 
 Whether this is the default group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#is_default ZeroTrustAccessGroup#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#is_default ZeroTrustAccessGroup#is_default}
 
 ---
 
@@ -1108,7 +1108,7 @@ Rules evaluated with an AND logical operator.
 
 To match a policy, a user must meet all of the Require rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#require ZeroTrustAccessGroup#require}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#require ZeroTrustAccessGroup#require}
 
 ---
 
@@ -1122,7 +1122,7 @@ public readonly zoneId: string;
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#zone_id ZeroTrustAccessGroup#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#zone_id ZeroTrustAccessGroup#zone_id}
 
 ---
 
@@ -1141,31 +1141,32 @@ const zeroTrustAccessGroupExclude: zeroTrustAccessGroup.ZeroTrustAccessGroupExcl
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAnyValidServiceToken">ZeroTrustAccessGroupExcludeAnyValidServiceToken</a></code> | An empty object which matches on all service tokens. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.authContext">authContext</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthContext">ZeroTrustAccessGroupExcludeAuthContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.authMethod">authMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethod">ZeroTrustAccessGroupExcludeAuthMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.azureAd">azureAd</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAzureAd">ZeroTrustAccessGroupExcludeAzureAd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.certificate">certificate</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCertificate">ZeroTrustAccessGroupExcludeCertificate</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.cloudflareAccountMember">cloudflareAccountMember</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCloudflareAccountMember">ZeroTrustAccessGroupExcludeCloudflareAccountMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.commonName">commonName</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCommonName">ZeroTrustAccessGroupExcludeCommonName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.devicePosture">devicePosture</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeDevicePosture">ZeroTrustAccessGroupExcludeDevicePosture</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.email">email</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmail">ZeroTrustAccessGroupExcludeEmail</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.emailDomain">emailDomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailDomain">ZeroTrustAccessGroupExcludeEmailDomain</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.emailList">emailList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailListStruct">ZeroTrustAccessGroupExcludeEmailListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.authContext">authContext</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthContext">ZeroTrustAccessGroupExcludeAuthContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.authMethod">authMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethod">ZeroTrustAccessGroupExcludeAuthMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.azureAd">azureAd</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAzureAd">ZeroTrustAccessGroupExcludeAzureAd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.certificate">certificate</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCertificate">ZeroTrustAccessGroupExcludeCertificate</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.cloudflareAccountMember">cloudflareAccountMember</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCloudflareAccountMember">ZeroTrustAccessGroupExcludeCloudflareAccountMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.commonName">commonName</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCommonName">ZeroTrustAccessGroupExcludeCommonName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.devicePosture">devicePosture</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeDevicePosture">ZeroTrustAccessGroupExcludeDevicePosture</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.email">email</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmail">ZeroTrustAccessGroupExcludeEmail</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.emailDomain">emailDomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailDomain">ZeroTrustAccessGroupExcludeEmailDomain</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.emailList">emailList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailListStruct">ZeroTrustAccessGroupExcludeEmailListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.everyone">everyone</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEveryone">ZeroTrustAccessGroupExcludeEveryone</a></code> | An empty object which matches on all users. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeExternalEvaluation">ZeroTrustAccessGroupExcludeExternalEvaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.geo">geo</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGeo">ZeroTrustAccessGroupExcludeGeo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.githubOrganization">githubOrganization</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganization">ZeroTrustAccessGroupExcludeGithubOrganization</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.group">group</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGroup">ZeroTrustAccessGroupExcludeGroup</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.gsuite">gsuite</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuite">ZeroTrustAccessGroupExcludeGsuite</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.ip">ip</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIp">ZeroTrustAccessGroupExcludeIp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.ipList">ipList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIpListStruct">ZeroTrustAccessGroupExcludeIpListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.linkedAppToken">linkedAppToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeLinkedAppToken">ZeroTrustAccessGroupExcludeLinkedAppToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.loginMethod">loginMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeLoginMethod">ZeroTrustAccessGroupExcludeLoginMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOidc">ZeroTrustAccessGroupExcludeOidc</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOkta">ZeroTrustAccessGroupExcludeOkta</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSaml">ZeroTrustAccessGroupExcludeSaml</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken">ZeroTrustAccessGroupExcludeServiceToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeUserRiskScore">ZeroTrustAccessGroupExcludeUserRiskScore</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeExternalEvaluation">ZeroTrustAccessGroupExcludeExternalEvaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.geo">geo</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGeo">ZeroTrustAccessGroupExcludeGeo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.githubOrganization">githubOrganization</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganization">ZeroTrustAccessGroupExcludeGithubOrganization</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.group">group</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGroup">ZeroTrustAccessGroupExcludeGroup</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.gsuite">gsuite</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuite">ZeroTrustAccessGroupExcludeGsuite</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.ip">ip</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIp">ZeroTrustAccessGroupExcludeIp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.ipList">ipList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIpListStruct">ZeroTrustAccessGroupExcludeIpListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.linkedAppToken">linkedAppToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeLinkedAppToken">ZeroTrustAccessGroupExcludeLinkedAppToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.loginMethod">loginMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeLoginMethod">ZeroTrustAccessGroupExcludeLoginMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOidc">ZeroTrustAccessGroupExcludeOidc</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOkta">ZeroTrustAccessGroupExcludeOkta</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSaml">ZeroTrustAccessGroupExcludeSaml</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken">ZeroTrustAccessGroupExcludeServiceToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.serviceTokenTag">serviceTokenTag</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag">ZeroTrustAccessGroupExcludeServiceTokenTag</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token_tag ZeroTrustAccessGroup#service_token_tag}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeUserRiskScore">ZeroTrustAccessGroupExcludeUserRiskScore</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}. |
 
 ---
 
@@ -1179,7 +1180,7 @@ public readonly anyValidServiceToken: ZeroTrustAccessGroupExcludeAnyValidService
 
 An empty object which matches on all service tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
 
 ---
 
@@ -1191,7 +1192,7 @@ public readonly authContext: ZeroTrustAccessGroupExcludeAuthContext;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthContext">ZeroTrustAccessGroupExcludeAuthContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}.
 
 ---
 
@@ -1203,7 +1204,7 @@ public readonly authMethod: ZeroTrustAccessGroupExcludeAuthMethod;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethod">ZeroTrustAccessGroupExcludeAuthMethod</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}.
 
 ---
 
@@ -1215,7 +1216,7 @@ public readonly azureAd: ZeroTrustAccessGroupExcludeAzureAd;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAzureAd">ZeroTrustAccessGroupExcludeAzureAd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}.
 
 ---
 
@@ -1227,7 +1228,7 @@ public readonly certificate: ZeroTrustAccessGroupExcludeCertificate;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCertificate">ZeroTrustAccessGroupExcludeCertificate</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}.
 
 ---
 
@@ -1239,7 +1240,7 @@ public readonly cloudflareAccountMember: ZeroTrustAccessGroupExcludeCloudflareAc
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCloudflareAccountMember">ZeroTrustAccessGroupExcludeCloudflareAccountMember</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}.
 
 ---
 
@@ -1251,7 +1252,7 @@ public readonly commonName: ZeroTrustAccessGroupExcludeCommonName;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCommonName">ZeroTrustAccessGroupExcludeCommonName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}.
 
 ---
 
@@ -1263,7 +1264,7 @@ public readonly devicePosture: ZeroTrustAccessGroupExcludeDevicePosture;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeDevicePosture">ZeroTrustAccessGroupExcludeDevicePosture</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}.
 
 ---
 
@@ -1275,7 +1276,7 @@ public readonly email: ZeroTrustAccessGroupExcludeEmail;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmail">ZeroTrustAccessGroupExcludeEmail</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}.
 
 ---
 
@@ -1287,7 +1288,7 @@ public readonly emailDomain: ZeroTrustAccessGroupExcludeEmailDomain;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailDomain">ZeroTrustAccessGroupExcludeEmailDomain</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}.
 
 ---
 
@@ -1299,7 +1300,7 @@ public readonly emailList: ZeroTrustAccessGroupExcludeEmailListStruct;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailListStruct">ZeroTrustAccessGroupExcludeEmailListStruct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}.
 
 ---
 
@@ -1313,7 +1314,7 @@ public readonly everyone: ZeroTrustAccessGroupExcludeEveryone;
 
 An empty object which matches on all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
 
 ---
 
@@ -1325,7 +1326,7 @@ public readonly externalEvaluation: ZeroTrustAccessGroupExcludeExternalEvaluatio
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeExternalEvaluation">ZeroTrustAccessGroupExcludeExternalEvaluation</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}.
 
 ---
 
@@ -1337,7 +1338,7 @@ public readonly geo: ZeroTrustAccessGroupExcludeGeo;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGeo">ZeroTrustAccessGroupExcludeGeo</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}.
 
 ---
 
@@ -1349,7 +1350,7 @@ public readonly githubOrganization: ZeroTrustAccessGroupExcludeGithubOrganizatio
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganization">ZeroTrustAccessGroupExcludeGithubOrganization</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}.
 
 ---
 
@@ -1361,7 +1362,7 @@ public readonly group: ZeroTrustAccessGroupExcludeGroup;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGroup">ZeroTrustAccessGroupExcludeGroup</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}.
 
 ---
 
@@ -1373,7 +1374,7 @@ public readonly gsuite: ZeroTrustAccessGroupExcludeGsuite;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuite">ZeroTrustAccessGroupExcludeGsuite</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}.
 
 ---
 
@@ -1385,7 +1386,7 @@ public readonly ip: ZeroTrustAccessGroupExcludeIp;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIp">ZeroTrustAccessGroupExcludeIp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}.
 
 ---
 
@@ -1397,7 +1398,7 @@ public readonly ipList: ZeroTrustAccessGroupExcludeIpListStruct;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIpListStruct">ZeroTrustAccessGroupExcludeIpListStruct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}.
 
 ---
 
@@ -1409,7 +1410,7 @@ public readonly linkedAppToken: ZeroTrustAccessGroupExcludeLinkedAppToken;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeLinkedAppToken">ZeroTrustAccessGroupExcludeLinkedAppToken</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}.
 
 ---
 
@@ -1421,7 +1422,7 @@ public readonly loginMethod: ZeroTrustAccessGroupExcludeLoginMethod;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeLoginMethod">ZeroTrustAccessGroupExcludeLoginMethod</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}.
 
 ---
 
@@ -1433,7 +1434,7 @@ public readonly oidc: ZeroTrustAccessGroupExcludeOidc;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOidc">ZeroTrustAccessGroupExcludeOidc</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}.
 
 ---
 
@@ -1445,7 +1446,7 @@ public readonly okta: ZeroTrustAccessGroupExcludeOkta;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOkta">ZeroTrustAccessGroupExcludeOkta</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}.
 
 ---
 
@@ -1457,7 +1458,7 @@ public readonly saml: ZeroTrustAccessGroupExcludeSaml;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSaml">ZeroTrustAccessGroupExcludeSaml</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}.
 
 ---
 
@@ -1469,7 +1470,19 @@ public readonly serviceToken: ZeroTrustAccessGroupExcludeServiceToken;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken">ZeroTrustAccessGroupExcludeServiceToken</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}.
+
+---
+
+##### `serviceTokenTag`<sup>Optional</sup> <a name="serviceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.property.serviceTokenTag"></a>
+
+```typescript
+public readonly serviceTokenTag: ZeroTrustAccessGroupExcludeServiceTokenTag;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag">ZeroTrustAccessGroupExcludeServiceTokenTag</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token_tag ZeroTrustAccessGroup#service_token_tag}.
 
 ---
 
@@ -1481,7 +1494,7 @@ public readonly userRiskScore: ZeroTrustAccessGroupExcludeUserRiskScore;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeUserRiskScore">ZeroTrustAccessGroupExcludeUserRiskScore</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}.
 
 ---
 
@@ -1526,7 +1539,7 @@ public readonly acId: string;
 
 The ACID of an Authentication context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
 
 ---
 
@@ -1540,7 +1553,7 @@ public readonly id: string;
 
 The ID of an Authentication context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1557,7 +1570,7 @@ public readonly identityProviderId: string;
 
 The ID of your Azure identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -1589,7 +1602,7 @@ public readonly authMethod: string;
 
 The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
 
 ---
 
@@ -1622,7 +1635,7 @@ public readonly id: string;
 
 The ID of an Azure group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1639,7 +1652,7 @@ public readonly identityProviderId: string;
 
 The ID of your Azure identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -1682,7 +1695,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -1714,7 +1727,7 @@ public readonly commonName: string;
 
 The common name to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
 
 ---
 
@@ -1747,7 +1760,7 @@ public readonly integrationUid: string;
 
 The ID of a device posture integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
 
 ---
 
@@ -1761,7 +1774,7 @@ public readonly accountId: string;
 
 The ID of the account that owns the device posture integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -1793,7 +1806,7 @@ public readonly email: string;
 
 The email of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
 
 ---
 
@@ -1825,7 +1838,7 @@ public readonly domain: string;
 
 The email domain to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
 
 ---
 
@@ -1857,7 +1870,7 @@ public readonly id: string;
 
 The ID of a previously created email list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1904,7 +1917,7 @@ public readonly evaluateUrl: string;
 
 The API endpoint containing your business logic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
 
 ---
 
@@ -1918,7 +1931,7 @@ public readonly keysUrl: string;
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
 
 ---
 
@@ -1950,7 +1963,7 @@ public readonly countryCode: string;
 
 The country code that should be matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
 
 ---
 
@@ -1984,7 +1997,7 @@ public readonly identityProviderId: string;
 
 The ID of your Github identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -1998,7 +2011,7 @@ public readonly name: string;
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
 
 ---
 
@@ -2012,7 +2025,7 @@ public readonly team: string;
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
 
 ---
 
@@ -2044,7 +2057,7 @@ public readonly id: string;
 
 The ID of a previously created Access group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2080,7 +2093,7 @@ public readonly email: string;
 
 The email of the Google Workspace group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
 
 ---
 
@@ -2094,7 +2107,7 @@ public readonly identityProviderId: string;
 
 The ID of your Google Workspace identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -2126,7 +2139,7 @@ public readonly ip: string;
 
 An IPv4 or IPv6 CIDR block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
 
 ---
 
@@ -2158,7 +2171,7 @@ public readonly id: string;
 
 The ID of a previously created IP list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2193,7 +2206,7 @@ public readonly appUid: string;
 
 The ID of an Access OIDC SaaS application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
 
 ---
 
@@ -2225,7 +2238,7 @@ public readonly id: string;
 
 The ID of an identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2262,7 +2275,7 @@ public readonly claimName: string;
 
 The name of the OIDC claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
 
 ---
 
@@ -2276,7 +2289,7 @@ public readonly claimValue: string;
 
 The OIDC claim value to look for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
 
 ---
 
@@ -2290,7 +2303,7 @@ public readonly identityProviderId: string;
 
 The ID of your OIDC identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -2323,7 +2336,7 @@ public readonly identityProviderId: string;
 
 The ID of your Okta identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -2337,7 +2350,7 @@ public readonly name: string;
 
 The name of the Okta group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
 
 ---
 
@@ -2371,7 +2384,7 @@ public readonly attributeName: string;
 
 The name of the SAML attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
 
 ---
 
@@ -2385,7 +2398,7 @@ public readonly attributeValue: string;
 
 The SAML attribute value to look for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
 
 ---
 
@@ -2399,7 +2412,7 @@ public readonly identityProviderId: string;
 
 The ID of your SAML identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -2431,7 +2444,54 @@ public readonly tokenId: string;
 
 The ID of a Service Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+
+---
+
+### ZeroTrustAccessGroupExcludeServiceTokenTag <a name="ZeroTrustAccessGroupExcludeServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag.Initializer"></a>
+
+```typescript
+import { zeroTrustAccessGroup } from '@cdktn/provider-cloudflare'
+
+const zeroTrustAccessGroupExcludeServiceTokenTag: zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag.property.key">key</a></code> | <code>string</code> | The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag.property.value">value</a></code> | <code>string</code> | The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#key ZeroTrustAccessGroup#key}
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#value ZeroTrustAccessGroup#value}
 
 ---
 
@@ -2463,7 +2523,7 @@ public readonly userRiskScore: string[];
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}
 
 ---
 
@@ -2482,31 +2542,32 @@ const zeroTrustAccessGroupInclude: zeroTrustAccessGroup.ZeroTrustAccessGroupIncl
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAnyValidServiceToken">ZeroTrustAccessGroupIncludeAnyValidServiceToken</a></code> | An empty object which matches on all service tokens. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.authContext">authContext</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthContext">ZeroTrustAccessGroupIncludeAuthContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.authMethod">authMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthMethod">ZeroTrustAccessGroupIncludeAuthMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.azureAd">azureAd</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAzureAd">ZeroTrustAccessGroupIncludeAzureAd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.certificate">certificate</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCertificate">ZeroTrustAccessGroupIncludeCertificate</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.cloudflareAccountMember">cloudflareAccountMember</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCloudflareAccountMember">ZeroTrustAccessGroupIncludeCloudflareAccountMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.commonName">commonName</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCommonName">ZeroTrustAccessGroupIncludeCommonName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.devicePosture">devicePosture</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeDevicePosture">ZeroTrustAccessGroupIncludeDevicePosture</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.email">email</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmail">ZeroTrustAccessGroupIncludeEmail</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.emailDomain">emailDomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailDomain">ZeroTrustAccessGroupIncludeEmailDomain</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.emailList">emailList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailListStruct">ZeroTrustAccessGroupIncludeEmailListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.authContext">authContext</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthContext">ZeroTrustAccessGroupIncludeAuthContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.authMethod">authMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthMethod">ZeroTrustAccessGroupIncludeAuthMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.azureAd">azureAd</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAzureAd">ZeroTrustAccessGroupIncludeAzureAd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.certificate">certificate</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCertificate">ZeroTrustAccessGroupIncludeCertificate</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.cloudflareAccountMember">cloudflareAccountMember</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCloudflareAccountMember">ZeroTrustAccessGroupIncludeCloudflareAccountMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.commonName">commonName</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCommonName">ZeroTrustAccessGroupIncludeCommonName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.devicePosture">devicePosture</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeDevicePosture">ZeroTrustAccessGroupIncludeDevicePosture</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.email">email</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmail">ZeroTrustAccessGroupIncludeEmail</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.emailDomain">emailDomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailDomain">ZeroTrustAccessGroupIncludeEmailDomain</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.emailList">emailList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailListStruct">ZeroTrustAccessGroupIncludeEmailListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.everyone">everyone</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEveryone">ZeroTrustAccessGroupIncludeEveryone</a></code> | An empty object which matches on all users. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeExternalEvaluation">ZeroTrustAccessGroupIncludeExternalEvaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.geo">geo</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGeo">ZeroTrustAccessGroupIncludeGeo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.githubOrganization">githubOrganization</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGithubOrganization">ZeroTrustAccessGroupIncludeGithubOrganization</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.group">group</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGroup">ZeroTrustAccessGroupIncludeGroup</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.gsuite">gsuite</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGsuite">ZeroTrustAccessGroupIncludeGsuite</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.ip">ip</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIp">ZeroTrustAccessGroupIncludeIp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.ipList">ipList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIpListStruct">ZeroTrustAccessGroupIncludeIpListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.linkedAppToken">linkedAppToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeLinkedAppToken">ZeroTrustAccessGroupIncludeLinkedAppToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.loginMethod">loginMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeLoginMethod">ZeroTrustAccessGroupIncludeLoginMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOidc">ZeroTrustAccessGroupIncludeOidc</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOkta">ZeroTrustAccessGroupIncludeOkta</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSaml">ZeroTrustAccessGroupIncludeSaml</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken">ZeroTrustAccessGroupIncludeServiceToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeUserRiskScore">ZeroTrustAccessGroupIncludeUserRiskScore</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeExternalEvaluation">ZeroTrustAccessGroupIncludeExternalEvaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.geo">geo</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGeo">ZeroTrustAccessGroupIncludeGeo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.githubOrganization">githubOrganization</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGithubOrganization">ZeroTrustAccessGroupIncludeGithubOrganization</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.group">group</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGroup">ZeroTrustAccessGroupIncludeGroup</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.gsuite">gsuite</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGsuite">ZeroTrustAccessGroupIncludeGsuite</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.ip">ip</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIp">ZeroTrustAccessGroupIncludeIp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.ipList">ipList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIpListStruct">ZeroTrustAccessGroupIncludeIpListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.linkedAppToken">linkedAppToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeLinkedAppToken">ZeroTrustAccessGroupIncludeLinkedAppToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.loginMethod">loginMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeLoginMethod">ZeroTrustAccessGroupIncludeLoginMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOidc">ZeroTrustAccessGroupIncludeOidc</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOkta">ZeroTrustAccessGroupIncludeOkta</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSaml">ZeroTrustAccessGroupIncludeSaml</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken">ZeroTrustAccessGroupIncludeServiceToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.serviceTokenTag">serviceTokenTag</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag">ZeroTrustAccessGroupIncludeServiceTokenTag</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token_tag ZeroTrustAccessGroup#service_token_tag}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeUserRiskScore">ZeroTrustAccessGroupIncludeUserRiskScore</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}. |
 
 ---
 
@@ -2520,7 +2581,7 @@ public readonly anyValidServiceToken: ZeroTrustAccessGroupIncludeAnyValidService
 
 An empty object which matches on all service tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
 
 ---
 
@@ -2532,7 +2593,7 @@ public readonly authContext: ZeroTrustAccessGroupIncludeAuthContext;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthContext">ZeroTrustAccessGroupIncludeAuthContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}.
 
 ---
 
@@ -2544,7 +2605,7 @@ public readonly authMethod: ZeroTrustAccessGroupIncludeAuthMethod;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthMethod">ZeroTrustAccessGroupIncludeAuthMethod</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}.
 
 ---
 
@@ -2556,7 +2617,7 @@ public readonly azureAd: ZeroTrustAccessGroupIncludeAzureAd;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAzureAd">ZeroTrustAccessGroupIncludeAzureAd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}.
 
 ---
 
@@ -2568,7 +2629,7 @@ public readonly certificate: ZeroTrustAccessGroupIncludeCertificate;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCertificate">ZeroTrustAccessGroupIncludeCertificate</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}.
 
 ---
 
@@ -2580,7 +2641,7 @@ public readonly cloudflareAccountMember: ZeroTrustAccessGroupIncludeCloudflareAc
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCloudflareAccountMember">ZeroTrustAccessGroupIncludeCloudflareAccountMember</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}.
 
 ---
 
@@ -2592,7 +2653,7 @@ public readonly commonName: ZeroTrustAccessGroupIncludeCommonName;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCommonName">ZeroTrustAccessGroupIncludeCommonName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}.
 
 ---
 
@@ -2604,7 +2665,7 @@ public readonly devicePosture: ZeroTrustAccessGroupIncludeDevicePosture;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeDevicePosture">ZeroTrustAccessGroupIncludeDevicePosture</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}.
 
 ---
 
@@ -2616,7 +2677,7 @@ public readonly email: ZeroTrustAccessGroupIncludeEmail;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmail">ZeroTrustAccessGroupIncludeEmail</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}.
 
 ---
 
@@ -2628,7 +2689,7 @@ public readonly emailDomain: ZeroTrustAccessGroupIncludeEmailDomain;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailDomain">ZeroTrustAccessGroupIncludeEmailDomain</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}.
 
 ---
 
@@ -2640,7 +2701,7 @@ public readonly emailList: ZeroTrustAccessGroupIncludeEmailListStruct;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailListStruct">ZeroTrustAccessGroupIncludeEmailListStruct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}.
 
 ---
 
@@ -2654,7 +2715,7 @@ public readonly everyone: ZeroTrustAccessGroupIncludeEveryone;
 
 An empty object which matches on all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
 
 ---
 
@@ -2666,7 +2727,7 @@ public readonly externalEvaluation: ZeroTrustAccessGroupIncludeExternalEvaluatio
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeExternalEvaluation">ZeroTrustAccessGroupIncludeExternalEvaluation</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}.
 
 ---
 
@@ -2678,7 +2739,7 @@ public readonly geo: ZeroTrustAccessGroupIncludeGeo;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGeo">ZeroTrustAccessGroupIncludeGeo</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}.
 
 ---
 
@@ -2690,7 +2751,7 @@ public readonly githubOrganization: ZeroTrustAccessGroupIncludeGithubOrganizatio
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGithubOrganization">ZeroTrustAccessGroupIncludeGithubOrganization</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}.
 
 ---
 
@@ -2702,7 +2763,7 @@ public readonly group: ZeroTrustAccessGroupIncludeGroup;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGroup">ZeroTrustAccessGroupIncludeGroup</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}.
 
 ---
 
@@ -2714,7 +2775,7 @@ public readonly gsuite: ZeroTrustAccessGroupIncludeGsuite;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGsuite">ZeroTrustAccessGroupIncludeGsuite</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}.
 
 ---
 
@@ -2726,7 +2787,7 @@ public readonly ip: ZeroTrustAccessGroupIncludeIp;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIp">ZeroTrustAccessGroupIncludeIp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}.
 
 ---
 
@@ -2738,7 +2799,7 @@ public readonly ipList: ZeroTrustAccessGroupIncludeIpListStruct;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIpListStruct">ZeroTrustAccessGroupIncludeIpListStruct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}.
 
 ---
 
@@ -2750,7 +2811,7 @@ public readonly linkedAppToken: ZeroTrustAccessGroupIncludeLinkedAppToken;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeLinkedAppToken">ZeroTrustAccessGroupIncludeLinkedAppToken</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}.
 
 ---
 
@@ -2762,7 +2823,7 @@ public readonly loginMethod: ZeroTrustAccessGroupIncludeLoginMethod;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeLoginMethod">ZeroTrustAccessGroupIncludeLoginMethod</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}.
 
 ---
 
@@ -2774,7 +2835,7 @@ public readonly oidc: ZeroTrustAccessGroupIncludeOidc;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOidc">ZeroTrustAccessGroupIncludeOidc</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}.
 
 ---
 
@@ -2786,7 +2847,7 @@ public readonly okta: ZeroTrustAccessGroupIncludeOkta;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOkta">ZeroTrustAccessGroupIncludeOkta</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}.
 
 ---
 
@@ -2798,7 +2859,7 @@ public readonly saml: ZeroTrustAccessGroupIncludeSaml;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSaml">ZeroTrustAccessGroupIncludeSaml</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}.
 
 ---
 
@@ -2810,7 +2871,19 @@ public readonly serviceToken: ZeroTrustAccessGroupIncludeServiceToken;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken">ZeroTrustAccessGroupIncludeServiceToken</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}.
+
+---
+
+##### `serviceTokenTag`<sup>Optional</sup> <a name="serviceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.property.serviceTokenTag"></a>
+
+```typescript
+public readonly serviceTokenTag: ZeroTrustAccessGroupIncludeServiceTokenTag;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag">ZeroTrustAccessGroupIncludeServiceTokenTag</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token_tag ZeroTrustAccessGroup#service_token_tag}.
 
 ---
 
@@ -2822,7 +2895,7 @@ public readonly userRiskScore: ZeroTrustAccessGroupIncludeUserRiskScore;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeUserRiskScore">ZeroTrustAccessGroupIncludeUserRiskScore</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}.
 
 ---
 
@@ -2867,7 +2940,7 @@ public readonly acId: string;
 
 The ACID of an Authentication context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
 
 ---
 
@@ -2881,7 +2954,7 @@ public readonly id: string;
 
 The ID of an Authentication context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2898,7 +2971,7 @@ public readonly identityProviderId: string;
 
 The ID of your Azure identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -2930,7 +3003,7 @@ public readonly authMethod: string;
 
 The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
 
 ---
 
@@ -2963,7 +3036,7 @@ public readonly id: string;
 
 The ID of an Azure group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2980,7 +3053,7 @@ public readonly identityProviderId: string;
 
 The ID of your Azure identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -3023,7 +3096,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -3055,7 +3128,7 @@ public readonly commonName: string;
 
 The common name to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
 
 ---
 
@@ -3088,7 +3161,7 @@ public readonly integrationUid: string;
 
 The ID of a device posture integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
 
 ---
 
@@ -3102,7 +3175,7 @@ public readonly accountId: string;
 
 The ID of the account that owns the device posture integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -3134,7 +3207,7 @@ public readonly email: string;
 
 The email of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
 
 ---
 
@@ -3166,7 +3239,7 @@ public readonly domain: string;
 
 The email domain to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
 
 ---
 
@@ -3198,7 +3271,7 @@ public readonly id: string;
 
 The ID of a previously created email list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3245,7 +3318,7 @@ public readonly evaluateUrl: string;
 
 The API endpoint containing your business logic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
 
 ---
 
@@ -3259,7 +3332,7 @@ public readonly keysUrl: string;
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
 
 ---
 
@@ -3291,7 +3364,7 @@ public readonly countryCode: string;
 
 The country code that should be matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
 
 ---
 
@@ -3325,7 +3398,7 @@ public readonly identityProviderId: string;
 
 The ID of your Github identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -3339,7 +3412,7 @@ public readonly name: string;
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
 
 ---
 
@@ -3353,7 +3426,7 @@ public readonly team: string;
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
 
 ---
 
@@ -3385,7 +3458,7 @@ public readonly id: string;
 
 The ID of a previously created Access group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3421,7 +3494,7 @@ public readonly email: string;
 
 The email of the Google Workspace group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
 
 ---
 
@@ -3435,7 +3508,7 @@ public readonly identityProviderId: string;
 
 The ID of your Google Workspace identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -3467,7 +3540,7 @@ public readonly ip: string;
 
 An IPv4 or IPv6 CIDR block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
 
 ---
 
@@ -3499,7 +3572,7 @@ public readonly id: string;
 
 The ID of a previously created IP list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3534,7 +3607,7 @@ public readonly appUid: string;
 
 The ID of an Access OIDC SaaS application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
 
 ---
 
@@ -3566,7 +3639,7 @@ public readonly id: string;
 
 The ID of an identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3603,7 +3676,7 @@ public readonly claimName: string;
 
 The name of the OIDC claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
 
 ---
 
@@ -3617,7 +3690,7 @@ public readonly claimValue: string;
 
 The OIDC claim value to look for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
 
 ---
 
@@ -3631,7 +3704,7 @@ public readonly identityProviderId: string;
 
 The ID of your OIDC identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -3664,7 +3737,7 @@ public readonly identityProviderId: string;
 
 The ID of your Okta identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -3678,7 +3751,7 @@ public readonly name: string;
 
 The name of the Okta group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
 
 ---
 
@@ -3712,7 +3785,7 @@ public readonly attributeName: string;
 
 The name of the SAML attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
 
 ---
 
@@ -3726,7 +3799,7 @@ public readonly attributeValue: string;
 
 The SAML attribute value to look for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
 
 ---
 
@@ -3740,7 +3813,7 @@ public readonly identityProviderId: string;
 
 The ID of your SAML identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -3772,7 +3845,54 @@ public readonly tokenId: string;
 
 The ID of a Service Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+
+---
+
+### ZeroTrustAccessGroupIncludeServiceTokenTag <a name="ZeroTrustAccessGroupIncludeServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag.Initializer"></a>
+
+```typescript
+import { zeroTrustAccessGroup } from '@cdktn/provider-cloudflare'
+
+const zeroTrustAccessGroupIncludeServiceTokenTag: zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag.property.key">key</a></code> | <code>string</code> | The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag.property.value">value</a></code> | <code>string</code> | The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#key ZeroTrustAccessGroup#key}
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#value ZeroTrustAccessGroup#value}
 
 ---
 
@@ -3804,7 +3924,7 @@ public readonly userRiskScore: string[];
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}
 
 ---
 
@@ -3823,31 +3943,32 @@ const zeroTrustAccessGroupRequire: zeroTrustAccessGroup.ZeroTrustAccessGroupRequ
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAnyValidServiceToken">ZeroTrustAccessGroupRequireAnyValidServiceToken</a></code> | An empty object which matches on all service tokens. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.authContext">authContext</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthContext">ZeroTrustAccessGroupRequireAuthContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.authMethod">authMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthMethod">ZeroTrustAccessGroupRequireAuthMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.azureAd">azureAd</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAzureAd">ZeroTrustAccessGroupRequireAzureAd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.certificate">certificate</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCertificate">ZeroTrustAccessGroupRequireCertificate</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.cloudflareAccountMember">cloudflareAccountMember</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCloudflareAccountMember">ZeroTrustAccessGroupRequireCloudflareAccountMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.commonName">commonName</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCommonName">ZeroTrustAccessGroupRequireCommonName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.devicePosture">devicePosture</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireDevicePosture">ZeroTrustAccessGroupRequireDevicePosture</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.email">email</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmail">ZeroTrustAccessGroupRequireEmail</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.emailDomain">emailDomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailDomain">ZeroTrustAccessGroupRequireEmailDomain</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.emailList">emailList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailListStruct">ZeroTrustAccessGroupRequireEmailListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.authContext">authContext</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthContext">ZeroTrustAccessGroupRequireAuthContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.authMethod">authMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthMethod">ZeroTrustAccessGroupRequireAuthMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.azureAd">azureAd</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAzureAd">ZeroTrustAccessGroupRequireAzureAd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.certificate">certificate</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCertificate">ZeroTrustAccessGroupRequireCertificate</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.cloudflareAccountMember">cloudflareAccountMember</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCloudflareAccountMember">ZeroTrustAccessGroupRequireCloudflareAccountMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.commonName">commonName</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCommonName">ZeroTrustAccessGroupRequireCommonName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.devicePosture">devicePosture</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireDevicePosture">ZeroTrustAccessGroupRequireDevicePosture</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.email">email</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmail">ZeroTrustAccessGroupRequireEmail</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.emailDomain">emailDomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailDomain">ZeroTrustAccessGroupRequireEmailDomain</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.emailList">emailList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailListStruct">ZeroTrustAccessGroupRequireEmailListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.everyone">everyone</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEveryone">ZeroTrustAccessGroupRequireEveryone</a></code> | An empty object which matches on all users. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireExternalEvaluation">ZeroTrustAccessGroupRequireExternalEvaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.geo">geo</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGeo">ZeroTrustAccessGroupRequireGeo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.githubOrganization">githubOrganization</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGithubOrganization">ZeroTrustAccessGroupRequireGithubOrganization</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.group">group</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGroup">ZeroTrustAccessGroupRequireGroup</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.gsuite">gsuite</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGsuite">ZeroTrustAccessGroupRequireGsuite</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.ip">ip</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIp">ZeroTrustAccessGroupRequireIp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.ipList">ipList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIpListStruct">ZeroTrustAccessGroupRequireIpListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.linkedAppToken">linkedAppToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireLinkedAppToken">ZeroTrustAccessGroupRequireLinkedAppToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.loginMethod">loginMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireLoginMethod">ZeroTrustAccessGroupRequireLoginMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOidc">ZeroTrustAccessGroupRequireOidc</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOkta">ZeroTrustAccessGroupRequireOkta</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSaml">ZeroTrustAccessGroupRequireSaml</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken">ZeroTrustAccessGroupRequireServiceToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireUserRiskScore">ZeroTrustAccessGroupRequireUserRiskScore</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireExternalEvaluation">ZeroTrustAccessGroupRequireExternalEvaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.geo">geo</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGeo">ZeroTrustAccessGroupRequireGeo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.githubOrganization">githubOrganization</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGithubOrganization">ZeroTrustAccessGroupRequireGithubOrganization</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.group">group</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGroup">ZeroTrustAccessGroupRequireGroup</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.gsuite">gsuite</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGsuite">ZeroTrustAccessGroupRequireGsuite</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.ip">ip</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIp">ZeroTrustAccessGroupRequireIp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.ipList">ipList</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIpListStruct">ZeroTrustAccessGroupRequireIpListStruct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.linkedAppToken">linkedAppToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireLinkedAppToken">ZeroTrustAccessGroupRequireLinkedAppToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.loginMethod">loginMethod</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireLoginMethod">ZeroTrustAccessGroupRequireLoginMethod</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOidc">ZeroTrustAccessGroupRequireOidc</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOkta">ZeroTrustAccessGroupRequireOkta</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSaml">ZeroTrustAccessGroupRequireSaml</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken">ZeroTrustAccessGroupRequireServiceToken</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.serviceTokenTag">serviceTokenTag</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag">ZeroTrustAccessGroupRequireServiceTokenTag</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token_tag ZeroTrustAccessGroup#service_token_tag}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireUserRiskScore">ZeroTrustAccessGroupRequireUserRiskScore</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}. |
 
 ---
 
@@ -3861,7 +3982,7 @@ public readonly anyValidServiceToken: ZeroTrustAccessGroupRequireAnyValidService
 
 An empty object which matches on all service tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
 
 ---
 
@@ -3873,7 +3994,7 @@ public readonly authContext: ZeroTrustAccessGroupRequireAuthContext;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthContext">ZeroTrustAccessGroupRequireAuthContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}.
 
 ---
 
@@ -3885,7 +4006,7 @@ public readonly authMethod: ZeroTrustAccessGroupRequireAuthMethod;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthMethod">ZeroTrustAccessGroupRequireAuthMethod</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}.
 
 ---
 
@@ -3897,7 +4018,7 @@ public readonly azureAd: ZeroTrustAccessGroupRequireAzureAd;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAzureAd">ZeroTrustAccessGroupRequireAzureAd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}.
 
 ---
 
@@ -3909,7 +4030,7 @@ public readonly certificate: ZeroTrustAccessGroupRequireCertificate;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCertificate">ZeroTrustAccessGroupRequireCertificate</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}.
 
 ---
 
@@ -3921,7 +4042,7 @@ public readonly cloudflareAccountMember: ZeroTrustAccessGroupRequireCloudflareAc
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCloudflareAccountMember">ZeroTrustAccessGroupRequireCloudflareAccountMember</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#cloudflare_account_member ZeroTrustAccessGroup#cloudflare_account_member}.
 
 ---
 
@@ -3933,7 +4054,7 @@ public readonly commonName: ZeroTrustAccessGroupRequireCommonName;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCommonName">ZeroTrustAccessGroupRequireCommonName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}.
 
 ---
 
@@ -3945,7 +4066,7 @@ public readonly devicePosture: ZeroTrustAccessGroupRequireDevicePosture;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireDevicePosture">ZeroTrustAccessGroupRequireDevicePosture</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}.
 
 ---
 
@@ -3957,7 +4078,7 @@ public readonly email: ZeroTrustAccessGroupRequireEmail;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmail">ZeroTrustAccessGroupRequireEmail</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}.
 
 ---
 
@@ -3969,7 +4090,7 @@ public readonly emailDomain: ZeroTrustAccessGroupRequireEmailDomain;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailDomain">ZeroTrustAccessGroupRequireEmailDomain</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}.
 
 ---
 
@@ -3981,7 +4102,7 @@ public readonly emailList: ZeroTrustAccessGroupRequireEmailListStruct;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailListStruct">ZeroTrustAccessGroupRequireEmailListStruct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}.
 
 ---
 
@@ -3995,7 +4116,7 @@ public readonly everyone: ZeroTrustAccessGroupRequireEveryone;
 
 An empty object which matches on all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
 
 ---
 
@@ -4007,7 +4128,7 @@ public readonly externalEvaluation: ZeroTrustAccessGroupRequireExternalEvaluatio
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireExternalEvaluation">ZeroTrustAccessGroupRequireExternalEvaluation</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}.
 
 ---
 
@@ -4019,7 +4140,7 @@ public readonly geo: ZeroTrustAccessGroupRequireGeo;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGeo">ZeroTrustAccessGroupRequireGeo</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}.
 
 ---
 
@@ -4031,7 +4152,7 @@ public readonly githubOrganization: ZeroTrustAccessGroupRequireGithubOrganizatio
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGithubOrganization">ZeroTrustAccessGroupRequireGithubOrganization</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}.
 
 ---
 
@@ -4043,7 +4164,7 @@ public readonly group: ZeroTrustAccessGroupRequireGroup;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGroup">ZeroTrustAccessGroupRequireGroup</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}.
 
 ---
 
@@ -4055,7 +4176,7 @@ public readonly gsuite: ZeroTrustAccessGroupRequireGsuite;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGsuite">ZeroTrustAccessGroupRequireGsuite</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}.
 
 ---
 
@@ -4067,7 +4188,7 @@ public readonly ip: ZeroTrustAccessGroupRequireIp;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIp">ZeroTrustAccessGroupRequireIp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}.
 
 ---
 
@@ -4079,7 +4200,7 @@ public readonly ipList: ZeroTrustAccessGroupRequireIpListStruct;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIpListStruct">ZeroTrustAccessGroupRequireIpListStruct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}.
 
 ---
 
@@ -4091,7 +4212,7 @@ public readonly linkedAppToken: ZeroTrustAccessGroupRequireLinkedAppToken;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireLinkedAppToken">ZeroTrustAccessGroupRequireLinkedAppToken</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}.
 
 ---
 
@@ -4103,7 +4224,7 @@ public readonly loginMethod: ZeroTrustAccessGroupRequireLoginMethod;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireLoginMethod">ZeroTrustAccessGroupRequireLoginMethod</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}.
 
 ---
 
@@ -4115,7 +4236,7 @@ public readonly oidc: ZeroTrustAccessGroupRequireOidc;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOidc">ZeroTrustAccessGroupRequireOidc</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}.
 
 ---
 
@@ -4127,7 +4248,7 @@ public readonly okta: ZeroTrustAccessGroupRequireOkta;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOkta">ZeroTrustAccessGroupRequireOkta</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}.
 
 ---
 
@@ -4139,7 +4260,7 @@ public readonly saml: ZeroTrustAccessGroupRequireSaml;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSaml">ZeroTrustAccessGroupRequireSaml</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}.
 
 ---
 
@@ -4151,7 +4272,19 @@ public readonly serviceToken: ZeroTrustAccessGroupRequireServiceToken;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken">ZeroTrustAccessGroupRequireServiceToken</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}.
+
+---
+
+##### `serviceTokenTag`<sup>Optional</sup> <a name="serviceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.property.serviceTokenTag"></a>
+
+```typescript
+public readonly serviceTokenTag: ZeroTrustAccessGroupRequireServiceTokenTag;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag">ZeroTrustAccessGroupRequireServiceTokenTag</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#service_token_tag ZeroTrustAccessGroup#service_token_tag}.
 
 ---
 
@@ -4163,7 +4296,7 @@ public readonly userRiskScore: ZeroTrustAccessGroupRequireUserRiskScore;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireUserRiskScore">ZeroTrustAccessGroupRequireUserRiskScore</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}.
 
 ---
 
@@ -4208,7 +4341,7 @@ public readonly acId: string;
 
 The ACID of an Authentication context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
 
 ---
 
@@ -4222,7 +4355,7 @@ public readonly id: string;
 
 The ID of an Authentication context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4239,7 +4372,7 @@ public readonly identityProviderId: string;
 
 The ID of your Azure identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -4271,7 +4404,7 @@ public readonly authMethod: string;
 
 The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
 
 ---
 
@@ -4304,7 +4437,7 @@ public readonly id: string;
 
 The ID of an Azure group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4321,7 +4454,7 @@ public readonly identityProviderId: string;
 
 The ID of your Azure identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -4364,7 +4497,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -4396,7 +4529,7 @@ public readonly commonName: string;
 
 The common name to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
 
 ---
 
@@ -4429,7 +4562,7 @@ public readonly integrationUid: string;
 
 The ID of a device posture integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
 
 ---
 
@@ -4443,7 +4576,7 @@ public readonly accountId: string;
 
 The ID of the account that owns the device posture integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -4475,7 +4608,7 @@ public readonly email: string;
 
 The email of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
 
 ---
 
@@ -4507,7 +4640,7 @@ public readonly domain: string;
 
 The email domain to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
 
 ---
 
@@ -4539,7 +4672,7 @@ public readonly id: string;
 
 The ID of a previously created email list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4586,7 +4719,7 @@ public readonly evaluateUrl: string;
 
 The API endpoint containing your business logic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
 
 ---
 
@@ -4600,7 +4733,7 @@ public readonly keysUrl: string;
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
 
 ---
 
@@ -4632,7 +4765,7 @@ public readonly countryCode: string;
 
 The country code that should be matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
 
 ---
 
@@ -4666,7 +4799,7 @@ public readonly identityProviderId: string;
 
 The ID of your Github identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -4680,7 +4813,7 @@ public readonly name: string;
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
 
 ---
 
@@ -4694,7 +4827,7 @@ public readonly team: string;
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
 
 ---
 
@@ -4726,7 +4859,7 @@ public readonly id: string;
 
 The ID of a previously created Access group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4762,7 +4895,7 @@ public readonly email: string;
 
 The email of the Google Workspace group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
 
 ---
 
@@ -4776,7 +4909,7 @@ public readonly identityProviderId: string;
 
 The ID of your Google Workspace identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -4808,7 +4941,7 @@ public readonly ip: string;
 
 An IPv4 or IPv6 CIDR block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
 
 ---
 
@@ -4840,7 +4973,7 @@ public readonly id: string;
 
 The ID of a previously created IP list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4875,7 +5008,7 @@ public readonly appUid: string;
 
 The ID of an Access OIDC SaaS application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
 
 ---
 
@@ -4907,7 +5040,7 @@ public readonly id: string;
 
 The ID of an identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4944,7 +5077,7 @@ public readonly claimName: string;
 
 The name of the OIDC claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
 
 ---
 
@@ -4958,7 +5091,7 @@ public readonly claimValue: string;
 
 The OIDC claim value to look for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
 
 ---
 
@@ -4972,7 +5105,7 @@ public readonly identityProviderId: string;
 
 The ID of your OIDC identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -5005,7 +5138,7 @@ public readonly identityProviderId: string;
 
 The ID of your Okta identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -5019,7 +5152,7 @@ public readonly name: string;
 
 The name of the Okta group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
 
 ---
 
@@ -5053,7 +5186,7 @@ public readonly attributeName: string;
 
 The name of the SAML attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
 
 ---
 
@@ -5067,7 +5200,7 @@ public readonly attributeValue: string;
 
 The SAML attribute value to look for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
 
 ---
 
@@ -5081,7 +5214,7 @@ public readonly identityProviderId: string;
 
 The ID of your SAML identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 
 ---
 
@@ -5113,7 +5246,54 @@ public readonly tokenId: string;
 
 The ID of a Service Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+
+---
+
+### ZeroTrustAccessGroupRequireServiceTokenTag <a name="ZeroTrustAccessGroupRequireServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag.Initializer"></a>
+
+```typescript
+import { zeroTrustAccessGroup } from '@cdktn/provider-cloudflare'
+
+const zeroTrustAccessGroupRequireServiceTokenTag: zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag.property.key">key</a></code> | <code>string</code> | The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag.property.value">value</a></code> | <code>string</code> | The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#key ZeroTrustAccessGroup#key}
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#value ZeroTrustAccessGroup#value}
 
 ---
 
@@ -5145,7 +5325,7 @@ public readonly userRiskScore: string[];
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_group#user_risk_score ZeroTrustAccessGroup#user_risk_score}
 
 ---
 
@@ -11834,6 +12014,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.putOkta">putOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.putSaml">putSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.putServiceToken">putServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.putServiceTokenTag">putServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.putUserRiskScore">putUserRiskScore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetAnyValidServiceToken">resetAnyValidServiceToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetAuthContext">resetAuthContext</a></code> | *No description.* |
@@ -11860,6 +12041,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetOkta">resetOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetSaml">resetSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetServiceToken">resetServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetServiceTokenTag">resetServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetUserRiskScore">resetUserRiskScore</a></code> | *No description.* |
 
 ---
@@ -12314,6 +12496,18 @@ public putServiceToken(value: ZeroTrustAccessGroupExcludeServiceToken): void
 
 ---
 
+##### `putServiceTokenTag` <a name="putServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.putServiceTokenTag"></a>
+
+```typescript
+public putServiceTokenTag(value: ZeroTrustAccessGroupExcludeServiceTokenTag): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.putServiceTokenTag.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag">ZeroTrustAccessGroupExcludeServiceTokenTag</a>
+
+---
+
 ##### `putUserRiskScore` <a name="putUserRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.putUserRiskScore"></a>
 
 ```typescript
@@ -12476,6 +12670,12 @@ public resetSaml(): void
 public resetServiceToken(): void
 ```
 
+##### `resetServiceTokenTag` <a name="resetServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetServiceTokenTag"></a>
+
+```typescript
+public resetServiceTokenTag(): void
+```
+
 ##### `resetUserRiskScore` <a name="resetUserRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.resetUserRiskScore"></a>
 
 ```typescript
@@ -12514,6 +12714,7 @@ public resetUserRiskScore(): void
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOktaOutputReference">ZeroTrustAccessGroupExcludeOktaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSamlOutputReference">ZeroTrustAccessGroupExcludeSamlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenOutputReference">ZeroTrustAccessGroupExcludeServiceTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.serviceTokenTag">serviceTokenTag</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference">ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeUserRiskScoreOutputReference">ZeroTrustAccessGroupExcludeUserRiskScoreOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.anyValidServiceTokenInput">anyValidServiceTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAnyValidServiceToken">ZeroTrustAccessGroupExcludeAnyValidServiceToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.authContextInput">authContextInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthContext">ZeroTrustAccessGroupExcludeAuthContext</a></code> | *No description.* |
@@ -12540,6 +12741,7 @@ public resetUserRiskScore(): void
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.oktaInput">oktaInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOkta">ZeroTrustAccessGroupExcludeOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.samlInput">samlInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSaml">ZeroTrustAccessGroupExcludeSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.serviceTokenInput">serviceTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken">ZeroTrustAccessGroupExcludeServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.serviceTokenTagInput">serviceTokenTagInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag">ZeroTrustAccessGroupExcludeServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.userRiskScoreInput">userRiskScoreInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeUserRiskScore">ZeroTrustAccessGroupExcludeUserRiskScore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude">ZeroTrustAccessGroupExclude</a></code> | *No description.* |
 
@@ -12819,6 +13021,16 @@ public readonly serviceToken: ZeroTrustAccessGroupExcludeServiceTokenOutputRefer
 
 ---
 
+##### `serviceTokenTag`<sup>Required</sup> <a name="serviceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.serviceTokenTag"></a>
+
+```typescript
+public readonly serviceTokenTag: ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference">ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference</a>
+
+---
+
 ##### `userRiskScore`<sup>Required</sup> <a name="userRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.userRiskScore"></a>
 
 ```typescript
@@ -13076,6 +13288,16 @@ public readonly serviceTokenInput: IResolvable | ZeroTrustAccessGroupExcludeServ
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken">ZeroTrustAccessGroupExcludeServiceToken</a>
+
+---
+
+##### `serviceTokenTagInput`<sup>Optional</sup> <a name="serviceTokenTagInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.property.serviceTokenTagInput"></a>
+
+```typescript
+public readonly serviceTokenTagInput: IResolvable | ZeroTrustAccessGroupExcludeServiceTokenTag;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag">ZeroTrustAccessGroupExcludeServiceTokenTag</a>
 
 ---
 
@@ -13682,6 +13904,299 @@ public readonly internalValue: IResolvable | ZeroTrustAccessGroupExcludeServiceT
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken">ZeroTrustAccessGroupExcludeServiceToken</a>
+
+---
+
+
+### ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference <a name="ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.Initializer"></a>
+
+```typescript
+import { zeroTrustAccessGroup } from '@cdktn/provider-cloudflare'
+
+new zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag">ZeroTrustAccessGroupExcludeServiceTokenTag</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.keyInput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTagOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ZeroTrustAccessGroupExcludeServiceTokenTag;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenTag">ZeroTrustAccessGroupExcludeServiceTokenTag</a>
 
 ---
 
@@ -20640,6 +21155,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.putOkta">putOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.putSaml">putSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.putServiceToken">putServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.putServiceTokenTag">putServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.putUserRiskScore">putUserRiskScore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetAnyValidServiceToken">resetAnyValidServiceToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetAuthContext">resetAuthContext</a></code> | *No description.* |
@@ -20666,6 +21182,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetOkta">resetOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetSaml">resetSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetServiceToken">resetServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetServiceTokenTag">resetServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetUserRiskScore">resetUserRiskScore</a></code> | *No description.* |
 
 ---
@@ -21120,6 +21637,18 @@ public putServiceToken(value: ZeroTrustAccessGroupIncludeServiceToken): void
 
 ---
 
+##### `putServiceTokenTag` <a name="putServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.putServiceTokenTag"></a>
+
+```typescript
+public putServiceTokenTag(value: ZeroTrustAccessGroupIncludeServiceTokenTag): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.putServiceTokenTag.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag">ZeroTrustAccessGroupIncludeServiceTokenTag</a>
+
+---
+
 ##### `putUserRiskScore` <a name="putUserRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.putUserRiskScore"></a>
 
 ```typescript
@@ -21282,6 +21811,12 @@ public resetSaml(): void
 public resetServiceToken(): void
 ```
 
+##### `resetServiceTokenTag` <a name="resetServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetServiceTokenTag"></a>
+
+```typescript
+public resetServiceTokenTag(): void
+```
+
 ##### `resetUserRiskScore` <a name="resetUserRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.resetUserRiskScore"></a>
 
 ```typescript
@@ -21320,6 +21855,7 @@ public resetUserRiskScore(): void
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOktaOutputReference">ZeroTrustAccessGroupIncludeOktaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSamlOutputReference">ZeroTrustAccessGroupIncludeSamlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenOutputReference">ZeroTrustAccessGroupIncludeServiceTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.serviceTokenTag">serviceTokenTag</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference">ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeUserRiskScoreOutputReference">ZeroTrustAccessGroupIncludeUserRiskScoreOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.anyValidServiceTokenInput">anyValidServiceTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAnyValidServiceToken">ZeroTrustAccessGroupIncludeAnyValidServiceToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.authContextInput">authContextInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthContext">ZeroTrustAccessGroupIncludeAuthContext</a></code> | *No description.* |
@@ -21346,6 +21882,7 @@ public resetUserRiskScore(): void
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.oktaInput">oktaInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOkta">ZeroTrustAccessGroupIncludeOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.samlInput">samlInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSaml">ZeroTrustAccessGroupIncludeSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.serviceTokenInput">serviceTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken">ZeroTrustAccessGroupIncludeServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.serviceTokenTagInput">serviceTokenTagInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag">ZeroTrustAccessGroupIncludeServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.userRiskScoreInput">userRiskScoreInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeUserRiskScore">ZeroTrustAccessGroupIncludeUserRiskScore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude">ZeroTrustAccessGroupInclude</a></code> | *No description.* |
 
@@ -21625,6 +22162,16 @@ public readonly serviceToken: ZeroTrustAccessGroupIncludeServiceTokenOutputRefer
 
 ---
 
+##### `serviceTokenTag`<sup>Required</sup> <a name="serviceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.serviceTokenTag"></a>
+
+```typescript
+public readonly serviceTokenTag: ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference">ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference</a>
+
+---
+
 ##### `userRiskScore`<sup>Required</sup> <a name="userRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.userRiskScore"></a>
 
 ```typescript
@@ -21882,6 +22429,16 @@ public readonly serviceTokenInput: IResolvable | ZeroTrustAccessGroupIncludeServ
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken">ZeroTrustAccessGroupIncludeServiceToken</a>
+
+---
+
+##### `serviceTokenTagInput`<sup>Optional</sup> <a name="serviceTokenTagInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.property.serviceTokenTagInput"></a>
+
+```typescript
+public readonly serviceTokenTagInput: IResolvable | ZeroTrustAccessGroupIncludeServiceTokenTag;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag">ZeroTrustAccessGroupIncludeServiceTokenTag</a>
 
 ---
 
@@ -22488,6 +23045,299 @@ public readonly internalValue: IResolvable | ZeroTrustAccessGroupIncludeServiceT
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken">ZeroTrustAccessGroupIncludeServiceToken</a>
+
+---
+
+
+### ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference <a name="ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.Initializer"></a>
+
+```typescript
+import { zeroTrustAccessGroup } from '@cdktn/provider-cloudflare'
+
+new zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag">ZeroTrustAccessGroupIncludeServiceTokenTag</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.keyInput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ZeroTrustAccessGroupIncludeServiceTokenTag;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenTag">ZeroTrustAccessGroupIncludeServiceTokenTag</a>
 
 ---
 
@@ -29446,6 +30296,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.putOkta">putOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.putSaml">putSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.putServiceToken">putServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.putServiceTokenTag">putServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.putUserRiskScore">putUserRiskScore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetAnyValidServiceToken">resetAnyValidServiceToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetAuthContext">resetAuthContext</a></code> | *No description.* |
@@ -29472,6 +30323,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetOkta">resetOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetSaml">resetSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetServiceToken">resetServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetServiceTokenTag">resetServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetUserRiskScore">resetUserRiskScore</a></code> | *No description.* |
 
 ---
@@ -29926,6 +30778,18 @@ public putServiceToken(value: ZeroTrustAccessGroupRequireServiceToken): void
 
 ---
 
+##### `putServiceTokenTag` <a name="putServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.putServiceTokenTag"></a>
+
+```typescript
+public putServiceTokenTag(value: ZeroTrustAccessGroupRequireServiceTokenTag): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.putServiceTokenTag.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag">ZeroTrustAccessGroupRequireServiceTokenTag</a>
+
+---
+
 ##### `putUserRiskScore` <a name="putUserRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.putUserRiskScore"></a>
 
 ```typescript
@@ -30088,6 +30952,12 @@ public resetSaml(): void
 public resetServiceToken(): void
 ```
 
+##### `resetServiceTokenTag` <a name="resetServiceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetServiceTokenTag"></a>
+
+```typescript
+public resetServiceTokenTag(): void
+```
+
 ##### `resetUserRiskScore` <a name="resetUserRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.resetUserRiskScore"></a>
 
 ```typescript
@@ -30126,6 +30996,7 @@ public resetUserRiskScore(): void
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOktaOutputReference">ZeroTrustAccessGroupRequireOktaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSamlOutputReference">ZeroTrustAccessGroupRequireSamlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.serviceToken">serviceToken</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenOutputReference">ZeroTrustAccessGroupRequireServiceTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.serviceTokenTag">serviceTokenTag</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference">ZeroTrustAccessGroupRequireServiceTokenTagOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.userRiskScore">userRiskScore</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireUserRiskScoreOutputReference">ZeroTrustAccessGroupRequireUserRiskScoreOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.anyValidServiceTokenInput">anyValidServiceTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAnyValidServiceToken">ZeroTrustAccessGroupRequireAnyValidServiceToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.authContextInput">authContextInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthContext">ZeroTrustAccessGroupRequireAuthContext</a></code> | *No description.* |
@@ -30152,6 +31023,7 @@ public resetUserRiskScore(): void
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.oktaInput">oktaInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOkta">ZeroTrustAccessGroupRequireOkta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.samlInput">samlInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSaml">ZeroTrustAccessGroupRequireSaml</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.serviceTokenInput">serviceTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken">ZeroTrustAccessGroupRequireServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.serviceTokenTagInput">serviceTokenTagInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag">ZeroTrustAccessGroupRequireServiceTokenTag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.userRiskScoreInput">userRiskScoreInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireUserRiskScore">ZeroTrustAccessGroupRequireUserRiskScore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire">ZeroTrustAccessGroupRequire</a></code> | *No description.* |
 
@@ -30431,6 +31303,16 @@ public readonly serviceToken: ZeroTrustAccessGroupRequireServiceTokenOutputRefer
 
 ---
 
+##### `serviceTokenTag`<sup>Required</sup> <a name="serviceTokenTag" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.serviceTokenTag"></a>
+
+```typescript
+public readonly serviceTokenTag: ZeroTrustAccessGroupRequireServiceTokenTagOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference">ZeroTrustAccessGroupRequireServiceTokenTagOutputReference</a>
+
+---
+
 ##### `userRiskScore`<sup>Required</sup> <a name="userRiskScore" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.userRiskScore"></a>
 
 ```typescript
@@ -30688,6 +31570,16 @@ public readonly serviceTokenInput: IResolvable | ZeroTrustAccessGroupRequireServ
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken">ZeroTrustAccessGroupRequireServiceToken</a>
+
+---
+
+##### `serviceTokenTagInput`<sup>Optional</sup> <a name="serviceTokenTagInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.property.serviceTokenTagInput"></a>
+
+```typescript
+public readonly serviceTokenTagInput: IResolvable | ZeroTrustAccessGroupRequireServiceTokenTag;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag">ZeroTrustAccessGroupRequireServiceTokenTag</a>
 
 ---
 
@@ -31294,6 +32186,299 @@ public readonly internalValue: IResolvable | ZeroTrustAccessGroupRequireServiceT
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken">ZeroTrustAccessGroupRequireServiceToken</a>
+
+---
+
+
+### ZeroTrustAccessGroupRequireServiceTokenTagOutputReference <a name="ZeroTrustAccessGroupRequireServiceTokenTagOutputReference" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.Initializer"></a>
+
+```typescript
+import { zeroTrustAccessGroup } from '@cdktn/provider-cloudflare'
+
+new zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag">ZeroTrustAccessGroupRequireServiceTokenTag</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.keyInput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTagOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ZeroTrustAccessGroupRequireServiceTokenTag;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenTag">ZeroTrustAccessGroupRequireServiceTokenTag</a>
 
 ---
 

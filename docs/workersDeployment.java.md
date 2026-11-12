@@ -4,7 +4,7 @@
 
 ### WorkersDeployment <a name="WorkersDeployment" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment cloudflare_workers_deployment}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer"></a>
 
@@ -24,6 +24,7 @@ WorkersDeployment.Builder.create(Construct scope, java.lang.String id)
     .strategy(java.lang.String)
     .versions(IResolvable|java.util.List<WorkersDeploymentVersions>)
 //  .annotations(WorkersDeploymentAnnotations)
+//  .codeUpdateStrategy(WorkersDeploymentCodeUpdateStrategy)
 //  .force(java.lang.Boolean|IResolvable)
     .build();
 ```
@@ -41,9 +42,10 @@ WorkersDeployment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.scriptName">scriptName</a></code> | <code>java.lang.String</code> | Name of the script. |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.strategy">strategy</a></code> | <code>java.lang.String</code> | Available values: "percentage". |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.strategy">strategy</a></code> | <code>java.lang.String</code> | Strategy for routing traffic across the listed versions. `percentage` splits traffic according to each version's `percentage`. Available values: "percentage". |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.versions">versions</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>></code> | Worker versions included in this deployment. |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Metadata attached to the deployment. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.codeUpdateStrategy">codeUpdateStrategy</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a></code> | Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies. |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.force">force</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, the deployment will be created even if normally blocked by something such rolling back to an older version when a secret has changed. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 
 ---
 
@@ -132,9 +134,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Available values: "percentage".
+Strategy for routing traffic across the listed versions. `percentage` splits traffic according to each version's `percentage`. Available values: "percentage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
 
 ---
 
@@ -152,7 +154,19 @@ Each object must contain a `version_id` UUID and a `percentage`; percentages acr
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+Metadata attached to the deployment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}
+
+---
+
+##### `codeUpdateStrategy`<sup>Optional</sup> <a name="codeUpdateStrategy" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.codeUpdateStrategy"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a>
+
+Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#code_update_strategy WorkersDeployment#code_update_strategy}
 
 ---
 
@@ -162,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If set to true, the deployment will be created even if normally blocked by something such rolling back to an older version when a secret has changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#force WorkersDeployment#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#force WorkersDeployment#force}
 
 ---
 
@@ -195,8 +209,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.putAnnotations">putAnnotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.putCodeUpdateStrategy">putCodeUpdateStrategy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.putVersions">putVersions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetAnnotations">resetAnnotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetCodeUpdateStrategy">resetCodeUpdateStrategy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetForce">resetForce</a></code> | *No description.* |
 
 ---
@@ -524,6 +540,18 @@ public void putAnnotations(WorkersDeploymentAnnotations value)
 
 ---
 
+##### `putCodeUpdateStrategy` <a name="putCodeUpdateStrategy" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.putCodeUpdateStrategy"></a>
+
+```java
+public void putCodeUpdateStrategy(WorkersDeploymentCodeUpdateStrategy value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.putCodeUpdateStrategy.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a>
+
+---
+
 ##### `putVersions` <a name="putVersions" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.putVersions"></a>
 
 ```java
@@ -540,6 +568,12 @@ public void putVersions(IResolvable|java.util.List<WorkersDeploymentVersions> va
 
 ```java
 public void resetAnnotations()
+```
+
+##### `resetCodeUpdateStrategy` <a name="resetCodeUpdateStrategy" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetCodeUpdateStrategy"></a>
+
+```java
+public void resetCodeUpdateStrategy()
 ```
 
 ##### `resetForce` <a name="resetForce" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetForce"></a>
@@ -651,7 +685,7 @@ The construct id used in the generated config for the WorkersDeployment to impor
 
 The id of the existing WorkersDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,12 +717,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference">WorkersDeploymentAnnotationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.authorEmail">authorEmail</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.codeUpdateStrategy">codeUpdateStrategy</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference">WorkersDeploymentCodeUpdateStrategyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.versions">versions</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList">WorkersDeploymentVersionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.annotationsInput">annotationsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.codeUpdateStrategyInput">codeUpdateStrategyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.forceInput">forceInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.scriptNameInput">scriptNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.strategyInput">strategyInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -862,6 +898,16 @@ public java.lang.String getAuthorEmail();
 
 ---
 
+##### `codeUpdateStrategy`<sup>Required</sup> <a name="codeUpdateStrategy" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.codeUpdateStrategy"></a>
+
+```java
+public WorkersDeploymentCodeUpdateStrategyOutputReference getCodeUpdateStrategy();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference">WorkersDeploymentCodeUpdateStrategyOutputReference</a>
+
+---
+
 ##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.createdOn"></a>
 
 ```java
@@ -919,6 +965,16 @@ public IResolvable|WorkersDeploymentAnnotations getAnnotationsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
+
+---
+
+##### `codeUpdateStrategyInput`<sup>Optional</sup> <a name="codeUpdateStrategyInput" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.property.codeUpdateStrategyInput"></a>
+
+```java
+public IResolvable|WorkersDeploymentCodeUpdateStrategy getCodeUpdateStrategyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a>
 
 ---
 
@@ -1052,7 +1108,62 @@ public java.lang.String getWorkersMessage();
 
 Human-readable message about the deployment. Truncated to 1000 bytes if longer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
+
+---
+
+### WorkersDeploymentCodeUpdateStrategy <a name="WorkersDeploymentCodeUpdateStrategy" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.workers_deployment.WorkersDeploymentCodeUpdateStrategy;
+
+WorkersDeploymentCodeUpdateStrategy.builder()
+    .mode(java.lang.String)
+//  .maxDelay(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy.property.mode">mode</a></code> | <code>java.lang.String</code> | For `mode: immediate`: Apply Durable Object code updates immediately. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy.property.maxDelay">maxDelay</a></code> | <code>java.lang.Number</code> | For `mode: deferred`: Set the maximum number of seconds to wait before forcing the update. |
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+For `mode: immediate`: Apply Durable Object code updates immediately.
+
+For `mode: deferred`: Allow active Durable Objects to hibernate before updating their code.
+Available values: "immediate", "deferred".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#mode WorkersDeployment#mode}
+
+---
+
+##### `maxDelay`<sup>Optional</sup> <a name="maxDelay" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy.property.maxDelay"></a>
+
+```java
+public java.lang.Number getMaxDelay();
+```
+
+- *Type:* java.lang.Number
+
+For `mode: deferred`: Set the maximum number of seconds to wait before forcing the update.
+
+When omitted, the default maximum delay applies.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#max_delay WorkersDeployment#max_delay}
 
 ---
 
@@ -1076,6 +1187,7 @@ WorkersDeploymentConfig.builder()
     .strategy(java.lang.String)
     .versions(IResolvable|java.util.List<WorkersDeploymentVersions>)
 //  .annotations(WorkersDeploymentAnnotations)
+//  .codeUpdateStrategy(WorkersDeploymentCodeUpdateStrategy)
 //  .force(java.lang.Boolean|IResolvable)
     .build();
 ```
@@ -1093,9 +1205,10 @@ WorkersDeploymentConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.scriptName">scriptName</a></code> | <code>java.lang.String</code> | Name of the script. |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.strategy">strategy</a></code> | <code>java.lang.String</code> | Available values: "percentage". |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.strategy">strategy</a></code> | <code>java.lang.String</code> | Strategy for routing traffic across the listed versions. `percentage` splits traffic according to each version's `percentage`. Available values: "percentage". |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.versions">versions</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>></code> | Worker versions included in this deployment. |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Metadata attached to the deployment. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.codeUpdateStrategy">codeUpdateStrategy</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a></code> | Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies. |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.force">force</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, the deployment will be created even if normally blocked by something such rolling back to an older version when a secret has changed. |
 
 ---
@@ -1180,7 +1293,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
 
 ---
 
@@ -1194,7 +1307,7 @@ public java.lang.String getScriptName();
 
 Name of the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 
 ---
 
@@ -1206,9 +1319,9 @@ public java.lang.String getStrategy();
 
 - *Type:* java.lang.String
 
-Available values: "percentage".
+Strategy for routing traffic across the listed versions. `percentage` splits traffic according to each version's `percentage`. Available values: "percentage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
 
 ---
 
@@ -1234,7 +1347,23 @@ public WorkersDeploymentAnnotations getAnnotations();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+Metadata attached to the deployment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}
+
+---
+
+##### `codeUpdateStrategy`<sup>Optional</sup> <a name="codeUpdateStrategy" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.codeUpdateStrategy"></a>
+
+```java
+public WorkersDeploymentCodeUpdateStrategy getCodeUpdateStrategy();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a>
+
+Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#code_update_strategy WorkersDeployment#code_update_strategy}
 
 ---
 
@@ -1248,7 +1377,7 @@ public java.lang.Boolean|IResolvable getForce();
 
 If set to true, the deployment will be created even if normally blocked by something such rolling back to an older version when a secret has changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#force WorkersDeployment#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#force WorkersDeployment#force}
 
 ---
 
@@ -1284,7 +1413,7 @@ public java.lang.Number getPercentage();
 
 Percentage of traffic served by this version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}
 
 ---
 
@@ -1298,7 +1427,7 @@ public java.lang.String getVersionId();
 
 Identifier of the Worker Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}
 
 ---
 
@@ -1589,6 +1718,306 @@ public IResolvable|WorkersDeploymentAnnotations getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
+
+---
+
+
+### WorkersDeploymentCodeUpdateStrategyOutputReference <a name="WorkersDeploymentCodeUpdateStrategyOutputReference" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.workers_deployment.WorkersDeploymentCodeUpdateStrategyOutputReference;
+
+new WorkersDeploymentCodeUpdateStrategyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.resetMaxDelay">resetMaxDelay</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetMaxDelay` <a name="resetMaxDelay" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.resetMaxDelay"></a>
+
+```java
+public void resetMaxDelay()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.maxDelayInput">maxDelayInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.maxDelay">maxDelay</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `maxDelayInput`<sup>Optional</sup> <a name="maxDelayInput" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.maxDelayInput"></a>
+
+```java
+public java.lang.Number getMaxDelayInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.modeInput"></a>
+
+```java
+public java.lang.String getModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `maxDelay`<sup>Required</sup> <a name="maxDelay" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.maxDelay"></a>
+
+```java
+public java.lang.Number getMaxDelay();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkersDeploymentCodeUpdateStrategy getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentCodeUpdateStrategy">WorkersDeploymentCodeUpdateStrategy</a>
 
 ---
 

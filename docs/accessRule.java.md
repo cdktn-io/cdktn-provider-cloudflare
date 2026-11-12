@@ -4,7 +4,7 @@
 
 ### AccessRule <a name="AccessRule" id="@cdktn/provider-cloudflare.accessRule.AccessRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule cloudflare_access_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule cloudflare_access_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accessRule.AccessRule.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The rule configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#configuration AccessRule#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#configuration AccessRule#configuration}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#mode AccessRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#mode AccessRule#mode}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#account_id AccessRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#account_id AccessRule#account_id}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An informative summary of the rule, typically used as a reminder or explanation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#notes AccessRule#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#notes AccessRule#notes}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#zone_id AccessRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
 
 ---
 
@@ -635,7 +635,7 @@ The construct id used in the generated config for the AccessRule to import.
 
 The id of the existing AccessRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1117,7 +1117,7 @@ public AccessRuleConfiguration getConfiguration();
 
 The rule configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#configuration AccessRule#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#configuration AccessRule#configuration}
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.String getMode();
 
 The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#mode AccessRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#mode AccessRule#mode}
 
 ---
 
@@ -1145,7 +1145,7 @@ public java.lang.String getAccountId();
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#account_id AccessRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#account_id AccessRule#account_id}
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.String getNotes();
 
 An informative summary of the rule, typically used as a reminder or explanation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#notes AccessRule#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#notes AccessRule#notes}
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.lang.String getZoneId();
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#zone_id AccessRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
 
 ---
 
@@ -1194,8 +1194,8 @@ AccessRuleConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.accessRule.AccessRuleConfiguration.property.target">target</a></code> | <code>java.lang.String</code> | The configuration target. |
-| <code><a href="#@cdktn/provider-cloudflare.accessRule.AccessRuleConfiguration.property.value">value</a></code> | <code>java.lang.String</code> | The IP address to match. This address will be compared to the IP address of incoming requests. |
+| <code><a href="#@cdktn/provider-cloudflare.accessRule.AccessRuleConfiguration.property.target">target</a></code> | <code>java.lang.String</code> | For `target: ip`: The configuration target. |
+| <code><a href="#@cdktn/provider-cloudflare.accessRule.AccessRuleConfiguration.property.value">value</a></code> | <code>java.lang.String</code> | For `target: ip`: The IP address to match. |
 
 ---
 
@@ -1207,12 +1207,20 @@ public java.lang.String getTarget();
 
 - *Type:* java.lang.String
 
-The configuration target.
+For `target: ip`: The configuration target.
 
 You must set the target to `ip` when specifying an IP address in the rule.
+
+For `target: ip6`: The configuration target. You must set the target to `ip6` when specifying an IPv6 address in the rule.
+
+For `target: ip_range`: The configuration target. You must set the target to `ip_range` when specifying an IP address range in the rule.
+
+For `target: asn`: The configuration target. You must set the target to `asn` when specifying an Autonomous System Number (ASN) in the rule.
+
+For `target: country`: The configuration target. You must set the target to `country` when specifying a country code in the rule.
 Available values: "ip", "ip6", "ip_range", "asn", "country".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#target AccessRule#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#target AccessRule#target}
 
 ---
 
@@ -1224,9 +1232,19 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-The IP address to match. This address will be compared to the IP address of incoming requests.
+For `target: ip`: The IP address to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/access_rule#value AccessRule#value}
+This address will be compared to the IP address of incoming requests.
+
+For `target: ip6`: The IPv6 address to match.
+
+For `target: ip_range`: The IP address range to match. You can only use prefix lengths `/16` and `/24` for IPv4 ranges, and prefix lengths `/32`, `/48`, and `/64` for IPv6 ranges.
+
+For `target: asn`: The AS number to match.
+
+For `target: country`: The two-letter ISO-3166-1 alpha-2 code to match. For more information, refer to [IP Access rules: Parameters](https://developers.cloudflare.com/waf/tools/ip-access-rules/parameters/#country).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/access_rule#value AccessRule#value}
 
 ---
 

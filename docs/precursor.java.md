@@ -4,7 +4,7 @@
 
 ### Precursor <a name="Precursor" id="@cdktn/provider-cloudflare.precursor.Precursor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor cloudflare_precursor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor cloudflare_precursor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.precursor.Precursor.Initializer"></a>
 
@@ -20,8 +20,9 @@ Precursor.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .zoneId(java.lang.String)
-//  .defaultMode(java.lang.String)
-//  .enforcementRules(IResolvable|java.util.List<PrecursorEnforcementRules>)
+//  .mode(java.lang.String)
+//  .rules(IResolvable|java.util.List<PrecursorRules>)
+//  .showInterstitial(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -37,8 +38,9 @@ Precursor.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.defaultMode">defaultMode</a></code> | <code>java.lang.String</code> | The zone-level Precursor enforcement mode applied to requests that do not match a more specific enforcement rule. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.enforcementRules">enforcementRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>></code> | The ordered list of enforcement rules for the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | Controls Precursor detection for the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.rules">rules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>></code> | The ordered list of Precursor rules for the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.showInterstitial">showInterstitial</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Precursor shows an interstitial when it takes action on a request. |
 
 ---
 
@@ -108,29 +110,42 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#zone_id Precursor#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#zone_id Precursor#zone_id}
 
 ---
 
-##### `defaultMode`<sup>Optional</sup> <a name="defaultMode" id="@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.defaultMode"></a>
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.mode"></a>
 
 - *Type:* java.lang.String
 
-The zone-level Precursor enforcement mode applied to requests that do not match a more specific enforcement rule.
+Controls Precursor detection for the zone.
 
-Available values: "off", "min-friction", "max-security".
+`off` disables detection,
+`monitor` records detections without affecting bot scores, and `arm`
+allows detections to affect bot scores.
+Available values: "off", "monitor", "arm".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#default_mode Precursor#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#mode Precursor#mode}
 
 ---
 
-##### `enforcementRules`<sup>Optional</sup> <a name="enforcementRules" id="@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.enforcementRules"></a>
+##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.rules"></a>
 
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>>
 
-The ordered list of enforcement rules for the zone.
+The ordered list of Precursor rules for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#rules Precursor#rules}
+
+---
+
+##### `showInterstitial`<sup>Optional</sup> <a name="showInterstitial" id="@cdktn/provider-cloudflare.precursor.Precursor.Initializer.parameter.showInterstitial"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether Precursor shows an interstitial when it takes action on a request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#show_interstitial Precursor#show_interstitial}
 
 ---
 
@@ -162,9 +177,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.putEnforcementRules">putEnforcementRules</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.resetDefaultMode">resetDefaultMode</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.resetEnforcementRules">resetEnforcementRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.putRules">putRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.resetMode">resetMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.resetRules">resetRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.resetShowInterstitial">resetShowInterstitial</a></code> | *No description.* |
 
 ---
 
@@ -479,28 +495,34 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putEnforcementRules` <a name="putEnforcementRules" id="@cdktn/provider-cloudflare.precursor.Precursor.putEnforcementRules"></a>
+##### `putRules` <a name="putRules" id="@cdktn/provider-cloudflare.precursor.Precursor.putRules"></a>
 
 ```java
-public void putEnforcementRules(IResolvable|java.util.List<PrecursorEnforcementRules> value)
+public void putRules(IResolvable|java.util.List<PrecursorRules> value)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.precursor.Precursor.putEnforcementRules.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.precursor.Precursor.putRules.parameter.value"></a>
 
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>>
 
 ---
 
-##### `resetDefaultMode` <a name="resetDefaultMode" id="@cdktn/provider-cloudflare.precursor.Precursor.resetDefaultMode"></a>
+##### `resetMode` <a name="resetMode" id="@cdktn/provider-cloudflare.precursor.Precursor.resetMode"></a>
 
 ```java
-public void resetDefaultMode()
+public void resetMode()
 ```
 
-##### `resetEnforcementRules` <a name="resetEnforcementRules" id="@cdktn/provider-cloudflare.precursor.Precursor.resetEnforcementRules"></a>
+##### `resetRules` <a name="resetRules" id="@cdktn/provider-cloudflare.precursor.Precursor.resetRules"></a>
 
 ```java
-public void resetEnforcementRules()
+public void resetRules()
+```
+
+##### `resetShowInterstitial` <a name="resetShowInterstitial" id="@cdktn/provider-cloudflare.precursor.Precursor.resetShowInterstitial"></a>
+
+```java
+public void resetShowInterstitial()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -606,7 +628,7 @@ The construct id used in the generated config for the Precursor to import.
 
 The id of the existing Precursor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,12 +658,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.enforcementRules">enforcementRules</a></code> | <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList">PrecursorEnforcementRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.defaultModeInput">defaultModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.enforcementRulesInput">enforcementRulesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.rules">rules</a></code> | <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList">PrecursorRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.rulesInput">rulesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.showInterstitialInput">showInterstitialInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.defaultMode">defaultMode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.showInterstitial">showInterstitial</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.Precursor.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -788,16 +812,6 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `enforcementRules`<sup>Required</sup> <a name="enforcementRules" id="@cdktn/provider-cloudflare.precursor.Precursor.property.enforcementRules"></a>
-
-```java
-public PrecursorEnforcementRulesList getEnforcementRules();
-```
-
-- *Type:* <a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList">PrecursorEnforcementRulesList</a>
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.precursor.Precursor.property.id"></a>
 
 ```java
@@ -808,23 +822,43 @@ public java.lang.String getId();
 
 ---
 
-##### `defaultModeInput`<sup>Optional</sup> <a name="defaultModeInput" id="@cdktn/provider-cloudflare.precursor.Precursor.property.defaultModeInput"></a>
+##### `rules`<sup>Required</sup> <a name="rules" id="@cdktn/provider-cloudflare.precursor.Precursor.property.rules"></a>
 
 ```java
-public java.lang.String getDefaultModeInput();
+public PrecursorRulesList getRules();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList">PrecursorRulesList</a>
+
+---
+
+##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-cloudflare.precursor.Precursor.property.modeInput"></a>
+
+```java
+public java.lang.String getModeInput();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `enforcementRulesInput`<sup>Optional</sup> <a name="enforcementRulesInput" id="@cdktn/provider-cloudflare.precursor.Precursor.property.enforcementRulesInput"></a>
+##### `rulesInput`<sup>Optional</sup> <a name="rulesInput" id="@cdktn/provider-cloudflare.precursor.Precursor.property.rulesInput"></a>
 
 ```java
-public IResolvable|java.util.List<PrecursorEnforcementRules> getEnforcementRulesInput();
+public IResolvable|java.util.List<PrecursorRules> getRulesInput();
 ```
 
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>>
+
+---
+
+##### `showInterstitialInput`<sup>Optional</sup> <a name="showInterstitialInput" id="@cdktn/provider-cloudflare.precursor.Precursor.property.showInterstitialInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getShowInterstitialInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -838,13 +872,23 @@ public java.lang.String getZoneIdInput();
 
 ---
 
-##### `defaultMode`<sup>Required</sup> <a name="defaultMode" id="@cdktn/provider-cloudflare.precursor.Precursor.property.defaultMode"></a>
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.precursor.Precursor.property.mode"></a>
 
 ```java
-public java.lang.String getDefaultMode();
+public java.lang.String getMode();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `showInterstitial`<sup>Required</sup> <a name="showInterstitial" id="@cdktn/provider-cloudflare.precursor.Precursor.property.showInterstitial"></a>
+
+```java
+public java.lang.Boolean|IResolvable getShowInterstitial();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -894,8 +938,9 @@ PrecursorConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .zoneId(java.lang.String)
-//  .defaultMode(java.lang.String)
-//  .enforcementRules(IResolvable|java.util.List<PrecursorEnforcementRules>)
+//  .mode(java.lang.String)
+//  .rules(IResolvable|java.util.List<PrecursorRules>)
+//  .showInterstitial(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -911,8 +956,9 @@ PrecursorConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.defaultMode">defaultMode</a></code> | <code>java.lang.String</code> | The zone-level Precursor enforcement mode applied to requests that do not match a more specific enforcement rule. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.enforcementRules">enforcementRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>></code> | The ordered list of enforcement rules for the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | Controls Precursor detection for the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.rules">rules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>></code> | The ordered list of Precursor rules for the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.showInterstitial">showInterstitial</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Precursor shows an interstitial when it takes action on a request. |
 
 ---
 
@@ -996,50 +1042,67 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#zone_id Precursor#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#zone_id Precursor#zone_id}
 
 ---
 
-##### `defaultMode`<sup>Optional</sup> <a name="defaultMode" id="@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.defaultMode"></a>
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.mode"></a>
 
 ```java
-public java.lang.String getDefaultMode();
+public java.lang.String getMode();
 ```
 
 - *Type:* java.lang.String
 
-The zone-level Precursor enforcement mode applied to requests that do not match a more specific enforcement rule.
+Controls Precursor detection for the zone.
 
-Available values: "off", "min-friction", "max-security".
+`off` disables detection,
+`monitor` records detections without affecting bot scores, and `arm`
+allows detections to affect bot scores.
+Available values: "off", "monitor", "arm".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#default_mode Precursor#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#mode Precursor#mode}
 
 ---
 
-##### `enforcementRules`<sup>Optional</sup> <a name="enforcementRules" id="@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.enforcementRules"></a>
+##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.rules"></a>
 
 ```java
-public IResolvable|java.util.List<PrecursorEnforcementRules> getEnforcementRules();
+public IResolvable|java.util.List<PrecursorRules> getRules();
 ```
 
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>>
 
-The ordered list of enforcement rules for the zone.
+The ordered list of Precursor rules for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#rules Precursor#rules}
 
 ---
 
-### PrecursorEnforcementRules <a name="PrecursorEnforcementRules" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.Initializer"></a>
+##### `showInterstitial`<sup>Optional</sup> <a name="showInterstitial" id="@cdktn/provider-cloudflare.precursor.PrecursorConfig.property.showInterstitial"></a>
 
 ```java
-import io.cdktn.providers.cloudflare.precursor.PrecursorEnforcementRules;
+public java.lang.Boolean|IResolvable getShowInterstitial();
+```
 
-PrecursorEnforcementRules.builder()
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether Precursor shows an interstitial when it takes action on a request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#show_interstitial Precursor#show_interstitial}
+
+---
+
+### PrecursorRules <a name="PrecursorRules" id="@cdktn/provider-cloudflare.precursor.PrecursorRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.precursor.PrecursorRules.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.precursor.PrecursorRules;
+
+PrecursorRules.builder()
     .expression(java.lang.String)
-    .mode(java.lang.String)
+    .showInterstitial(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .enabled(java.lang.Boolean|IResolvable)
     .build();
@@ -1049,14 +1112,14 @@ PrecursorEnforcementRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.property.expression">expression</a></code> | <code>java.lang.String</code> | The filter expression that determines which requests the rule matches. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.property.mode">mode</a></code> | <code>java.lang.String</code> | The override mode Precursor applies to requests matching an enforcement rule. Unlike `default_mode`, this cannot be `off`. Available values: "min-friction", "max-security". |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.property.description">description</a></code> | <code>java.lang.String</code> | An informative description of the rule. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the rule is active. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules.property.expression">expression</a></code> | <code>java.lang.String</code> | The filter expression that determines which requests the rule matches. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules.property.showInterstitial">showInterstitial</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Precursor shows an interstitial when it takes action on a request. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules.property.description">description</a></code> | <code>java.lang.String</code> | An informative description of the rule. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the rule is active. |
 
 ---
 
-##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.property.expression"></a>
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-cloudflare.precursor.PrecursorRules.property.expression"></a>
 
 ```java
 public java.lang.String getExpression();
@@ -1066,25 +1129,25 @@ public java.lang.String getExpression();
 
 The filter expression that determines which requests the rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#expression Precursor#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#expression Precursor#expression}
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.property.mode"></a>
+##### `showInterstitial`<sup>Required</sup> <a name="showInterstitial" id="@cdktn/provider-cloudflare.precursor.PrecursorRules.property.showInterstitial"></a>
 
 ```java
-public java.lang.String getMode();
+public java.lang.Boolean|IResolvable getShowInterstitial();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-The override mode Precursor applies to requests matching an enforcement rule. Unlike `default_mode`, this cannot be `off`. Available values: "min-friction", "max-security".
+Whether Precursor shows an interstitial when it takes action on a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#mode Precursor#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#show_interstitial Precursor#show_interstitial}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-cloudflare.precursor.PrecursorRules.property.description"></a>
 
 ```java
 public java.lang.String getDescription();
@@ -1094,11 +1157,11 @@ public java.lang.String getDescription();
 
 An informative description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#description Precursor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#description Precursor#description}
 
 ---
 
-##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules.property.enabled"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.precursor.PrecursorRules.property.enabled"></a>
 
 ```java
 public java.lang.Boolean|IResolvable getEnabled();
@@ -1108,31 +1171,31 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the rule is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#enabled Precursor#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#enabled Precursor#enabled}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### PrecursorEnforcementRulesList <a name="PrecursorEnforcementRulesList" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList"></a>
+### PrecursorRulesList <a name="PrecursorRulesList" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.Initializer"></a>
 
 ```java
-import io.cdktn.providers.cloudflare.precursor.PrecursorEnforcementRulesList;
+import io.cdktn.providers.cloudflare.precursor.PrecursorRulesList;
 
-new PrecursorEnforcementRulesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+new PrecursorRulesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* io.cdktn.cdktn.IInterpolatingParent
 
@@ -1140,7 +1203,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
@@ -1148,7 +1211,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* java.lang.Boolean
 
@@ -1160,15 +1223,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.allWithMapKey"></a>
 
 ```java
 public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
@@ -1178,19 +1241,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.computeFqn"></a>
 
 ```java
 public java.lang.String computeFqn()
 ```
 
-##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.resolve"></a>
 
 ```java
 public java.lang.Object resolve(IResolveContext _context)
@@ -1198,13 +1261,13 @@ public java.lang.Object resolve(IResolveContext _context)
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.resolve.parameter._context"></a>
 
 - *Type:* io.cdktn.cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.toString"></a>
 
 ```java
 public java.lang.String toString()
@@ -1214,13 +1277,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.get"></a>
 
 ```java
-public PrecursorEnforcementRulesOutputReference get(java.lang.Number index)
+public PrecursorRulesOutputReference get(java.lang.Number index)
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.get.parameter.index"></a>
 
 - *Type:* java.lang.Number
 
@@ -1233,13 +1296,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.property.creationStack"></a>
 
 ```java
 public java.util.List<java.lang.String> getCreationStack();
@@ -1253,7 +1316,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.property.fqn"></a>
 
 ```java
 public java.lang.String getFqn();
@@ -1263,37 +1326,37 @@ public java.lang.String getFqn();
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesList.property.internalValue"></a>
 
 ```java
-public IResolvable|java.util.List<PrecursorEnforcementRules> getInternalValue();
+public IResolvable|java.util.List<PrecursorRules> getInternalValue();
 ```
 
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>>
 
 ---
 
 
-### PrecursorEnforcementRulesOutputReference <a name="PrecursorEnforcementRulesOutputReference" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference"></a>
+### PrecursorRulesOutputReference <a name="PrecursorRulesOutputReference" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer"></a>
 
 ```java
-import io.cdktn.providers.cloudflare.precursor.PrecursorEnforcementRulesOutputReference;
+import io.cdktn.providers.cloudflare.precursor.PrecursorRulesOutputReference;
 
-new PrecursorEnforcementRulesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+new PrecursorRulesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* io.cdktn.cdktn.IInterpolatingParent
 
@@ -1301,7 +1364,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
@@ -1309,7 +1372,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* java.lang.Number
 
@@ -1317,7 +1380,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* java.lang.Boolean
 
@@ -1329,151 +1392,151 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.computeFqn"></a>
 
 ```java
 public java.lang.String computeFqn()
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getAnyMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getBooleanAttribute"></a>
 
 ```java
 public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getBooleanMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getListAttribute"></a>
 
 ```java
 public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberAttribute"></a>
 
 ```java
 public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberListAttribute"></a>
 
 ```java
 public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getStringAttribute"></a>
 
 ```java
 public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getStringMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.interpolationForAttribute"></a>
 
 ```java
 public IResolvable interpolationForAttribute(java.lang.String property)
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.resolve"></a>
 
 ```java
 public java.lang.Object resolve(IResolveContext _context)
@@ -1481,13 +1544,13 @@ public java.lang.Object resolve(IResolveContext _context)
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.resolve.parameter._context"></a>
 
 - *Type:* io.cdktn.cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.toString"></a>
 
 ```java
 public java.lang.String toString()
@@ -1497,13 +1560,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.resetDescription"></a>
 
 ```java
 public void resetDescription()
 ```
 
-##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.resetEnabled"></a>
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.resetEnabled"></a>
 
 ```java
 public void resetEnabled()
@@ -1514,22 +1577,22 @@ public void resetEnabled()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.expressionInput">expressionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.expressionInput">expressionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.showInterstitialInput">showInterstitialInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.showInterstitial">showInterstitial</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.creationStack"></a>
 
 ```java
 public java.util.List<java.lang.String> getCreationStack();
@@ -1543,7 +1606,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.fqn"></a>
 
 ```java
 public java.lang.String getFqn();
@@ -1553,7 +1616,7 @@ public java.lang.String getFqn();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.id"></a>
 
 ```java
 public java.lang.String getId();
@@ -1563,7 +1626,7 @@ public java.lang.String getId();
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.descriptionInput"></a>
 
 ```java
 public java.lang.String getDescriptionInput();
@@ -1573,7 +1636,7 @@ public java.lang.String getDescriptionInput();
 
 ---
 
-##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.enabledInput"></a>
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.enabledInput"></a>
 
 ```java
 public java.lang.Boolean|IResolvable getEnabledInput();
@@ -1583,7 +1646,7 @@ public java.lang.Boolean|IResolvable getEnabledInput();
 
 ---
 
-##### `expressionInput`<sup>Optional</sup> <a name="expressionInput" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.expressionInput"></a>
+##### `expressionInput`<sup>Optional</sup> <a name="expressionInput" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.expressionInput"></a>
 
 ```java
 public java.lang.String getExpressionInput();
@@ -1593,17 +1656,17 @@ public java.lang.String getExpressionInput();
 
 ---
 
-##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.modeInput"></a>
+##### `showInterstitialInput`<sup>Optional</sup> <a name="showInterstitialInput" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.showInterstitialInput"></a>
 
 ```java
-public java.lang.String getModeInput();
+public java.lang.Boolean|IResolvable getShowInterstitialInput();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.description"></a>
 
 ```java
 public java.lang.String getDescription();
@@ -1613,7 +1676,7 @@ public java.lang.String getDescription();
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.enabled"></a>
 
 ```java
 public java.lang.Boolean|IResolvable getEnabled();
@@ -1623,7 +1686,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 ---
 
-##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.expression"></a>
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.expression"></a>
 
 ```java
 public java.lang.String getExpression();
@@ -1633,23 +1696,23 @@ public java.lang.String getExpression();
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.mode"></a>
+##### `showInterstitial`<sup>Required</sup> <a name="showInterstitial" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.showInterstitial"></a>
 
 ```java
-public java.lang.String getMode();
+public java.lang.Boolean|IResolvable getShowInterstitial();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference.property.internalValue"></a>
 
 ```java
-public IResolvable|PrecursorEnforcementRules getInternalValue();
+public IResolvable|PrecursorRules getInternalValue();
 ```
 
-- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules">PrecursorEnforcementRules</a>
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.precursor.PrecursorRules">PrecursorRules</a>
 
 ---
 

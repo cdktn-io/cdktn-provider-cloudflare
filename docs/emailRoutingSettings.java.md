@@ -4,7 +4,7 @@
 
 ### EmailRoutingSettings <a name="EmailRoutingSettings" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer"></a>
 
@@ -36,7 +36,7 @@ EmailRoutingSettings.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.supportSubaddress">supportSubaddress</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.supportSubaddress">supportSubaddress</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules. When omitted, preserves the existing setting. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
 
 ---
 
@@ -114,9 +114,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
+Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules. When omitted, preserves the existing setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
 
 ---
 
@@ -572,7 +572,7 @@ The construct id used in the generated config for the EmailRoutingSettings to im
 
 The id of the existing EmailRoutingSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,7 +931,7 @@ EmailRoutingSettingsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.supportSubaddress">supportSubaddress</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.supportSubaddress">supportSubaddress</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules. When omitted, preserves the existing setting. |
 
 ---
 
@@ -1015,7 +1015,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
 
 ---
 
@@ -1027,9 +1027,9 @@ public java.lang.Boolean|IResolvable getSupportSubaddress();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
+Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules. When omitted, preserves the existing setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
 
 ---
 

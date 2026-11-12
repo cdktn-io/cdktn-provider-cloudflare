@@ -4,7 +4,7 @@
 
 ### AccountDnsSettings <a name="AccountDnsSettings" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ When enabled, forces all proxied DNS records in the account to behave as DNS-onl
 
 Note that this account-level override does not modify the records themselves; it only affects how they are served at the edge. See more on [Enforce DNS-only](https://developers.cloudflare.com/dns/proxy-status/enforce-dns-only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#enforce_dns_only AccountDnsSettings#enforce_dns_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#enforce_dns_only AccountDnsSettings#enforce_dns_only}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Default settings for new zones created in this account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}
 
 ---
 
@@ -523,7 +523,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ```python
 def put_zone_defaults(
   flatten_all_cnames: bool | IResolvable = None,
-  foundation_dns: bool | IResolvable = None,
   internal_dns: AccountDnsSettingsZoneDefaultsInternalDns = None,
   multi_provider: bool | IResolvable = None,
   nameservers: AccountDnsSettingsZoneDefaultsNameservers = None,
@@ -542,17 +541,7 @@ Whether to flatten all CNAME records in the zone.
 
 Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#flatten_all_cnames AccountDnsSettings#flatten_all_cnames}
-
----
-
-###### `foundation_dns`<sup>Optional</sup> <a name="foundation_dns" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.putZoneDefaults.parameter.foundationDns"></a>
-
-- *Type:* bool | cdktn.IResolvable
-
-Whether to enable Foundation DNS Advanced Nameservers on the zone.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#foundation_dns AccountDnsSettings#foundation_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#flatten_all_cnames AccountDnsSettings#flatten_all_cnames}
 
 ---
 
@@ -562,7 +551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Settings for this internal zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#internal_dns AccountDnsSettings#internal_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#internal_dns AccountDnsSettings#internal_dns}
 
 ---
 
@@ -572,7 +561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable multi-provider DNS, which causes Cloudflare to activate the zone even when non-Cloudflare NS records exist, and to respect NS records at the zone apex during outbound zone transfers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#multi_provider AccountDnsSettings#multi_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#multi_provider AccountDnsSettings#multi_provider}
 
 ---
 
@@ -582,7 +571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Settings determining the nameservers through which the zone should be available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#nameservers AccountDnsSettings#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#nameservers AccountDnsSettings#nameservers}
 
 ---
 
@@ -592,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The time to live (TTL) of the zone's nameserver (NS) records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#ns_ttl AccountDnsSettings#ns_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#ns_ttl AccountDnsSettings#ns_ttl}
 
 ---
 
@@ -602,7 +591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Allows a Secondary DNS zone to use (proxied) override records and CNAME flattening at the zone apex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#secondary_overrides AccountDnsSettings#secondary_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#secondary_overrides AccountDnsSettings#secondary_overrides}
 
 ---
 
@@ -612,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Components of the zone's SOA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#soa AccountDnsSettings#soa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#soa AccountDnsSettings#soa}
 
 ---
 
@@ -622,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether the zone mode is a regular or CDN/DNS only zone. Available values: "standard", "cdn_only", "dns_only".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#zone_mode AccountDnsSettings#zone_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#zone_mode AccountDnsSettings#zone_mode}
 
 ---
 
@@ -752,7 +741,7 @@ The construct id used in the generated config for the AccountDnsSettings to impo
 
 The id of the existing AccountDnsSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1131,7 +1120,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
 
 ---
 
@@ -1147,7 +1136,7 @@ When enabled, forces all proxied DNS records in the account to behave as DNS-onl
 
 Note that this account-level override does not modify the records themselves; it only affects how they are served at the edge. See more on [Enforce DNS-only](https://developers.cloudflare.com/dns/proxy-status/enforce-dns-only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#enforce_dns_only AccountDnsSettings#enforce_dns_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#enforce_dns_only AccountDnsSettings#enforce_dns_only}
 
 ---
 
@@ -1161,7 +1150,7 @@ zone_defaults: AccountDnsSettingsZoneDefaults
 
 Default settings for new zones created in this account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}
 
 ---
 
@@ -1174,7 +1163,6 @@ from cdktn_provider_cloudflare import account_dns_settings
 
 accountDnsSettings.AccountDnsSettingsZoneDefaults(
   flatten_all_cnames: bool | IResolvable = None,
-  foundation_dns: bool | IResolvable = None,
   internal_dns: AccountDnsSettingsZoneDefaultsInternalDns = None,
   multi_provider: bool | IResolvable = None,
   nameservers: AccountDnsSettingsZoneDefaultsNameservers = None,
@@ -1190,7 +1178,6 @@ accountDnsSettings.AccountDnsSettingsZoneDefaults(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults.property.flattenAllCnames">flatten_all_cnames</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to flatten all CNAME records in the zone. |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults.property.foundationDns">foundation_dns</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable Foundation DNS Advanced Nameservers on the zone. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults.property.internalDns">internal_dns</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsInternalDns">AccountDnsSettingsZoneDefaultsInternalDns</a></code> | Settings for this internal zone. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults.property.multiProvider">multi_provider</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable multi-provider DNS, which causes Cloudflare to activate the zone even when non-Cloudflare NS records exist, and to respect NS records at the zone apex during outbound zone transfers. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults.property.nameservers">nameservers</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers">AccountDnsSettingsZoneDefaultsNameservers</a></code> | Settings determining the nameservers through which the zone should be available. |
@@ -1213,21 +1200,7 @@ Whether to flatten all CNAME records in the zone.
 
 Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#flatten_all_cnames AccountDnsSettings#flatten_all_cnames}
-
----
-
-##### `foundation_dns`<sup>Optional</sup> <a name="foundation_dns" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults.property.foundationDns"></a>
-
-```python
-foundation_dns: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
-
-Whether to enable Foundation DNS Advanced Nameservers on the zone.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#foundation_dns AccountDnsSettings#foundation_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#flatten_all_cnames AccountDnsSettings#flatten_all_cnames}
 
 ---
 
@@ -1241,7 +1214,7 @@ internal_dns: AccountDnsSettingsZoneDefaultsInternalDns
 
 Settings for this internal zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#internal_dns AccountDnsSettings#internal_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#internal_dns AccountDnsSettings#internal_dns}
 
 ---
 
@@ -1255,7 +1228,7 @@ multi_provider: bool | IResolvable
 
 Whether to enable multi-provider DNS, which causes Cloudflare to activate the zone even when non-Cloudflare NS records exist, and to respect NS records at the zone apex during outbound zone transfers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#multi_provider AccountDnsSettings#multi_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#multi_provider AccountDnsSettings#multi_provider}
 
 ---
 
@@ -1269,7 +1242,7 @@ nameservers: AccountDnsSettingsZoneDefaultsNameservers
 
 Settings determining the nameservers through which the zone should be available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#nameservers AccountDnsSettings#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#nameservers AccountDnsSettings#nameservers}
 
 ---
 
@@ -1283,7 +1256,7 @@ ns_ttl: typing.Union[int, float]
 
 The time to live (TTL) of the zone's nameserver (NS) records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#ns_ttl AccountDnsSettings#ns_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#ns_ttl AccountDnsSettings#ns_ttl}
 
 ---
 
@@ -1297,7 +1270,7 @@ secondary_overrides: bool | IResolvable
 
 Allows a Secondary DNS zone to use (proxied) override records and CNAME flattening at the zone apex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#secondary_overrides AccountDnsSettings#secondary_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#secondary_overrides AccountDnsSettings#secondary_overrides}
 
 ---
 
@@ -1311,7 +1284,7 @@ soa: AccountDnsSettingsZoneDefaultsSoa
 
 Components of the zone's SOA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#soa AccountDnsSettings#soa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#soa AccountDnsSettings#soa}
 
 ---
 
@@ -1325,7 +1298,7 @@ zone_mode: str
 
 Whether the zone mode is a regular or CDN/DNS only zone. Available values: "standard", "cdn_only", "dns_only".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#zone_mode AccountDnsSettings#zone_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#zone_mode AccountDnsSettings#zone_mode}
 
 ---
 
@@ -1359,7 +1332,7 @@ reference_zone_id: str
 
 The ID of the zone to fallback to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#reference_zone_id AccountDnsSettings#reference_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#reference_zone_id AccountDnsSettings#reference_zone_id}
 
 ---
 
@@ -1379,7 +1352,7 @@ accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers.property.type">type</a></code> | <code>str</code> | Nameserver type Available values: "cloudflare.standard", "cloudflare.standard.random", "custom.account", "custom.tenant". |
+| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers.property.type">type</a></code> | <code>str</code> | Nameserver type Available values: "cloudflare.standard", "cloudflare.advanced", "cloudflare.standard.random", "custom.account", "custom.tenant". |
 
 ---
 
@@ -1391,9 +1364,9 @@ type: str
 
 - *Type:* str
 
-Nameserver type Available values: "cloudflare.standard", "cloudflare.standard.random", "custom.account", "custom.tenant".
+Nameserver type Available values: "cloudflare.standard", "cloudflare.advanced", "cloudflare.standard.random", "custom.account", "custom.tenant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#type AccountDnsSettings#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#type AccountDnsSettings#type}
 
 ---
 
@@ -1439,7 +1412,7 @@ expire: typing.Union[int, float]
 
 Time in seconds of being unable to query the primary server after which secondary servers should stop serving the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#expire AccountDnsSettings#expire}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#expire AccountDnsSettings#expire}
 
 ---
 
@@ -1453,7 +1426,7 @@ min_ttl: typing.Union[int, float]
 
 The time to live (TTL) for negative caching of records within the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#min_ttl AccountDnsSettings#min_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#min_ttl AccountDnsSettings#min_ttl}
 
 ---
 
@@ -1467,7 +1440,7 @@ mname: str
 
 The primary nameserver, which may be used for outbound zone transfers. If null, a Cloudflare-assigned value will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#mname AccountDnsSettings#mname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#mname AccountDnsSettings#mname}
 
 ---
 
@@ -1481,7 +1454,7 @@ refresh: typing.Union[int, float]
 
 Time in seconds after which secondary servers should re-check the SOA record to see if the zone has been updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#refresh AccountDnsSettings#refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#refresh AccountDnsSettings#refresh}
 
 ---
 
@@ -1495,7 +1468,7 @@ retry: typing.Union[int, float]
 
 Time in seconds after which secondary servers should retry queries after the primary server was unresponsive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#retry AccountDnsSettings#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#retry AccountDnsSettings#retry}
 
 ---
 
@@ -1509,7 +1482,7 @@ rname: str
 
 The email address of the zone administrator, with the first label representing the local part of the email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#rname AccountDnsSettings#rname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#rname AccountDnsSettings#rname}
 
 ---
 
@@ -1523,7 +1496,7 @@ ttl: typing.Union[int, float]
 
 The time to live (TTL) of the SOA record itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#ttl AccountDnsSettings#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#ttl AccountDnsSettings#ttl}
 
 ---
 
@@ -2192,7 +2165,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.putNameservers">put_nameservers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.putSoa">put_soa</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.resetFlattenAllCnames">reset_flatten_all_cnames</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.resetFoundationDns">reset_foundation_dns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.resetInternalDns">reset_internal_dns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.resetMultiProvider">reset_multi_provider</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.resetNameservers">reset_nameservers</a></code> | *No description.* |
@@ -2389,7 +2361,7 @@ def put_internal_dns(
 
 The ID of the zone to fallback to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#reference_zone_id AccountDnsSettings#reference_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#reference_zone_id AccountDnsSettings#reference_zone_id}
 
 ---
 
@@ -2405,9 +2377,9 @@ def put_nameservers(
 
 - *Type:* str
 
-Nameserver type Available values: "cloudflare.standard", "cloudflare.standard.random", "custom.account", "custom.tenant".
+Nameserver type Available values: "cloudflare.standard", "cloudflare.advanced", "cloudflare.standard.random", "custom.account", "custom.tenant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#type AccountDnsSettings#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#type AccountDnsSettings#type}
 
 ---
 
@@ -2431,7 +2403,7 @@ def put_soa(
 
 Time in seconds of being unable to query the primary server after which secondary servers should stop serving the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#expire AccountDnsSettings#expire}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#expire AccountDnsSettings#expire}
 
 ---
 
@@ -2441,7 +2413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The time to live (TTL) for negative caching of records within the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#min_ttl AccountDnsSettings#min_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#min_ttl AccountDnsSettings#min_ttl}
 
 ---
 
@@ -2451,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The primary nameserver, which may be used for outbound zone transfers. If null, a Cloudflare-assigned value will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#mname AccountDnsSettings#mname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#mname AccountDnsSettings#mname}
 
 ---
 
@@ -2461,7 +2433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Time in seconds after which secondary servers should re-check the SOA record to see if the zone has been updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#refresh AccountDnsSettings#refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#refresh AccountDnsSettings#refresh}
 
 ---
 
@@ -2471,7 +2443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Time in seconds after which secondary servers should retry queries after the primary server was unresponsive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#retry AccountDnsSettings#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#retry AccountDnsSettings#retry}
 
 ---
 
@@ -2481,7 +2453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The email address of the zone administrator, with the first label representing the local part of the email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#rname AccountDnsSettings#rname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#rname AccountDnsSettings#rname}
 
 ---
 
@@ -2491,7 +2463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The time to live (TTL) of the SOA record itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings#ttl AccountDnsSettings#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account_dns_settings#ttl AccountDnsSettings#ttl}
 
 ---
 
@@ -2499,12 +2471,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def reset_flatten_all_cnames() -> None
-```
-
-##### `reset_foundation_dns` <a name="reset_foundation_dns" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.resetFoundationDns"></a>
-
-```python
-def reset_foundation_dns() -> None
 ```
 
 ##### `reset_internal_dns` <a name="reset_internal_dns" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.resetInternalDns"></a>
@@ -2560,7 +2526,6 @@ def reset_zone_mode() -> None
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.nameservers">nameservers</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameserversOutputReference">AccountDnsSettingsZoneDefaultsNameserversOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.soa">soa</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference">AccountDnsSettingsZoneDefaultsSoaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.flattenAllCnamesInput">flatten_all_cnames_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.foundationDnsInput">foundation_dns_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.internalDnsInput">internal_dns_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsInternalDns">AccountDnsSettingsZoneDefaultsInternalDns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.multiProviderInput">multi_provider_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.nameserversInput">nameservers_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers">AccountDnsSettingsZoneDefaultsNameservers</a></code> | *No description.* |
@@ -2569,7 +2534,6 @@ def reset_zone_mode() -> None
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.soaInput">soa_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoa">AccountDnsSettingsZoneDefaultsSoa</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.zoneModeInput">zone_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.flattenAllCnames">flatten_all_cnames</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.foundationDns">foundation_dns</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.multiProvider">multi_provider</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.nsTtl">ns_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.secondaryOverrides">secondary_overrides</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -2636,16 +2600,6 @@ soa: AccountDnsSettingsZoneDefaultsSoaOutputReference
 
 ```python
 flatten_all_cnames_input: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
-
----
-
-##### `foundation_dns_input`<sup>Optional</sup> <a name="foundation_dns_input" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.foundationDnsInput"></a>
-
-```python
-foundation_dns_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
@@ -2726,16 +2680,6 @@ zone_mode_input: str
 
 ```python
 flatten_all_cnames: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
-
----
-
-##### `foundation_dns`<sup>Required</sup> <a name="foundation_dns" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.property.foundationDns"></a>
-
-```python
-foundation_dns: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable

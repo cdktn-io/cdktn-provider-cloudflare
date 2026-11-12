@@ -4,7 +4,7 @@
 
 ### DataCloudflarePrecursor <a name="DataCloudflarePrecursor" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor cloudflare_precursor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor cloudflare_precursor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflarePrecursor to
 
 The id of the existing DataCloudflarePrecursor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -415,9 +415,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.defaultMode">DefaultMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.enforcementRules">EnforcementRules</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList">DataCloudflarePrecursorEnforcementRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.rules">Rules</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList">DataCloudflarePrecursorRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.showInterstitial">ShowInterstitial</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.zoneId">ZoneId</a></code> | <code>string</code> | *No description.* |
 
@@ -545,26 +546,6 @@ public TerraformProvider Provider { get; }
 
 ---
 
-##### `DefaultMode`<sup>Required</sup> <a name="DefaultMode" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.defaultMode"></a>
-
-```csharp
-public string DefaultMode { get; }
-```
-
-- *Type:* string
-
----
-
-##### `EnforcementRules`<sup>Required</sup> <a name="EnforcementRules" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.enforcementRules"></a>
-
-```csharp
-public DataCloudflarePrecursorEnforcementRulesList EnforcementRules { get; }
-```
-
-- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList">DataCloudflarePrecursorEnforcementRulesList</a>
-
----
-
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.id"></a>
 
 ```csharp
@@ -572,6 +553,36 @@ public string Id { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.mode"></a>
+
+```csharp
+public string Mode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Rules`<sup>Required</sup> <a name="Rules" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.rules"></a>
+
+```csharp
+public DataCloudflarePrecursorRulesList Rules { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList">DataCloudflarePrecursorRulesList</a>
+
+---
+
+##### `ShowInterstitial`<sup>Required</sup> <a name="ShowInterstitial" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursor.property.showInterstitial"></a>
+
+```csharp
+public IResolvable ShowInterstitial { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable
 
 ---
 
@@ -729,18 +740,18 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor#zone_id DataCloudflarePrecursor#zone_id}
 
 ---
 
-### DataCloudflarePrecursorEnforcementRules <a name="DataCloudflarePrecursorEnforcementRules" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRules"></a>
+### DataCloudflarePrecursorRules <a name="DataCloudflarePrecursorRules" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRules"></a>
 
-#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRules.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRules.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Cloudflare;
 
-new DataCloudflarePrecursorEnforcementRules {
+new DataCloudflarePrecursorRules {
 
 };
 ```
@@ -748,25 +759,25 @@ new DataCloudflarePrecursorEnforcementRules {
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataCloudflarePrecursorEnforcementRulesList <a name="DataCloudflarePrecursorEnforcementRulesList" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList"></a>
+### DataCloudflarePrecursorRulesList <a name="DataCloudflarePrecursorRulesList" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Cloudflare;
 
-new DataCloudflarePrecursorEnforcementRulesList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+new DataCloudflarePrecursorRulesList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.terraformResource"></a>
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* Io.Cdktn.IInterpolatingParent
 
@@ -774,7 +785,7 @@ The parent resource.
 
 ---
 
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.terraformAttribute"></a>
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -782,7 +793,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.Initializer.parameter.wrapsSet"></a>
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -794,15 +805,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.allWithMapKey"></a>
 
 ```csharp
 private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
@@ -812,19 +823,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.computeFqn"></a>
 
 ```csharp
 private string ComputeFqn()
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.resolve"></a>
 
 ```csharp
 private object Resolve(IResolveContext Context)
@@ -832,13 +843,13 @@ private object Resolve(IResolveContext Context)
 
 Produce the Token's value at resolution time.
 
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.resolve.parameter._context"></a>
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.resolve.parameter._context"></a>
 
 - *Type:* Io.Cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.toString"></a>
 
 ```csharp
 private string ToString()
@@ -848,13 +859,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.get"></a>
 
 ```csharp
-private DataCloudflarePrecursorEnforcementRulesOutputReference Get(double Index)
+private DataCloudflarePrecursorRulesOutputReference Get(double Index)
 ```
 
-###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.get.parameter.index"></a>
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.get.parameter.index"></a>
 
 - *Type:* double
 
@@ -867,12 +878,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.property.creationStack"></a>
 
 ```csharp
 public string[] CreationStack { get; }
@@ -886,7 +897,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesList.property.fqn"></a>
 
 ```csharp
 public string Fqn { get; }
@@ -897,26 +908,26 @@ public string Fqn { get; }
 ---
 
 
-### DataCloudflarePrecursorEnforcementRulesOutputReference <a name="DataCloudflarePrecursorEnforcementRulesOutputReference" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference"></a>
+### DataCloudflarePrecursorRulesOutputReference <a name="DataCloudflarePrecursorRulesOutputReference" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Cloudflare;
 
-new DataCloudflarePrecursorEnforcementRulesOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+new DataCloudflarePrecursorRulesOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* Io.Cdktn.IInterpolatingParent
 
@@ -924,7 +935,7 @@ The parent resource.
 
 ---
 
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -932,7 +943,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* double
 
@@ -940,7 +951,7 @@ the index of this item in the list.
 
 ---
 
-##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -952,149 +963,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.computeFqn"></a>
 
 ```csharp
 private string ComputeFqn()
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getAnyMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanAttribute"></a>
 
 ```csharp
 private IResolvable GetBooleanAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getListAttribute"></a>
 
 ```csharp
 private string[] GetListAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberAttribute"></a>
 
 ```csharp
 private double GetNumberAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberListAttribute"></a>
 
 ```csharp
 private double[] GetNumberListAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringAttribute"></a>
 
 ```csharp
 private string GetStringAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.interpolationForAttribute"></a>
 
 ```csharp
 private IResolvable InterpolationForAttribute(string Property)
 ```
 
-###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.resolve"></a>
 
 ```csharp
 private object Resolve(IResolveContext Context)
@@ -1102,13 +1113,13 @@ private object Resolve(IResolveContext Context)
 
 Produce the Token's value at resolution time.
 
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.resolve.parameter._context"></a>
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.resolve.parameter._context"></a>
 
 - *Type:* Io.Cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.toString"></a>
 
 ```csharp
 private string ToString()
@@ -1123,18 +1134,18 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.enabled">Enabled</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRules">DataCloudflarePrecursorEnforcementRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.enabled">Enabled</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.showInterstitial">ShowInterstitial</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRules">DataCloudflarePrecursorRules</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.creationStack"></a>
 
 ```csharp
 public string[] CreationStack { get; }
@@ -1148,7 +1159,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.fqn"></a>
 
 ```csharp
 public string Fqn { get; }
@@ -1158,7 +1169,7 @@ public string Fqn { get; }
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.description"></a>
 
 ```csharp
 public string Description { get; }
@@ -1168,7 +1179,7 @@ public string Description { get; }
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.enabled"></a>
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.enabled"></a>
 
 ```csharp
 public IResolvable Enabled { get; }
@@ -1178,7 +1189,7 @@ public IResolvable Enabled { get; }
 
 ---
 
-##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.expression"></a>
+##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.expression"></a>
 
 ```csharp
 public string Expression { get; }
@@ -1188,7 +1199,7 @@ public string Expression { get; }
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.id"></a>
 
 ```csharp
 public string Id { get; }
@@ -1198,23 +1209,23 @@ public string Id { get; }
 
 ---
 
-##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.mode"></a>
+##### `ShowInterstitial`<sup>Required</sup> <a name="ShowInterstitial" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.showInterstitial"></a>
 
 ```csharp
-public string Mode { get; }
+public IResolvable ShowInterstitial { get; }
 ```
 
-- *Type:* string
+- *Type:* Io.Cdktn.IResolvable
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRulesOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRulesOutputReference.property.internalValue"></a>
 
 ```csharp
-public DataCloudflarePrecursorEnforcementRules InternalValue { get; }
+public DataCloudflarePrecursorRules InternalValue { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorEnforcementRules">DataCloudflarePrecursorEnforcementRules</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflarePrecursor.DataCloudflarePrecursorRules">DataCloudflarePrecursorRules</a>
 
 ---
 

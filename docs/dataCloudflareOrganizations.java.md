@@ -4,7 +4,7 @@
 
 ### DataCloudflareOrganizations <a name="DataCloudflareOrganizations" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations cloudflare_organizations}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations cloudflare_organizations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer"></a>
 
@@ -20,9 +20,12 @@ DataCloudflareOrganizations.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .containing(DataCloudflareOrganizationsContaining)
+//  .direction(java.lang.String)
 //  .id(java.util.List<java.lang.String>)
 //  .maxItems(java.lang.Number)
+//  .member(DataCloudflareOrganizationsMember)
 //  .name(DataCloudflareOrganizationsName)
+//  .orderBy(java.lang.String)
 //  .pageSize(java.lang.Number)
 //  .pageToken(java.lang.String)
 //  .parent(DataCloudflareOrganizationsParent)
@@ -40,13 +43,16 @@ DataCloudflareOrganizations.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.containing">containing</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContaining">DataCloudflareOrganizationsContaining</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#containing DataCloudflareOrganizations#containing}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.containing">containing</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContaining">DataCloudflareOrganizationsContaining</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#containing DataCloudflareOrganizations#containing}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.direction">direction</a></code> | <code>java.lang.String</code> | Sort direction for the `order_by` field. Defaults to `asc` when `order_by` is specified. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.id">id</a></code> | <code>java.util.List<java.lang.String></code> | Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements by repeating the query value. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsName">DataCloudflareOrganizationsName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#name DataCloudflareOrganizations#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.member">member</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#member DataCloudflareOrganizations#member}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsName">DataCloudflareOrganizationsName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#name DataCloudflareOrganizations#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.orderBy">orderBy</a></code> | <code>java.lang.String</code> | Field to order results by. Currently supported values: `name`. When not specified, results are ordered by hierarchy. Available values: "name". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.pageSize">pageSize</a></code> | <code>java.lang.Number</code> | The amount of items to return. Defaults to 10. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.pageToken">pageToken</a></code> | <code>java.lang.String</code> | An opaque token returned from the last list response that when provided will retrieve the next page. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsParent">DataCloudflareOrganizationsParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#parent DataCloudflareOrganizations#parent}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsParent">DataCloudflareOrganizationsParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#parent DataCloudflareOrganizations#parent}. |
 
 ---
 
@@ -114,7 +120,17 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContaining">DataCloudflareOrganizationsContaining</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#containing DataCloudflareOrganizations#containing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#containing DataCloudflareOrganizations#containing}.
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.direction"></a>
+
+- *Type:* java.lang.String
+
+Sort direction for the `order_by` field. Defaults to `asc` when `order_by` is specified. Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#direction DataCloudflareOrganizations#direction}
 
 ---
 
@@ -124,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements by repeating the query value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#id DataCloudflareOrganizations#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#id DataCloudflareOrganizations#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +153,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#max_items DataCloudflareOrganizations#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#max_items DataCloudflareOrganizations#max_items}
+
+---
+
+##### `member`<sup>Optional</sup> <a name="member" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.member"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#member DataCloudflareOrganizations#member}.
 
 ---
 
@@ -145,7 +169,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsName">DataCloudflareOrganizationsName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#name DataCloudflareOrganizations#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#name DataCloudflareOrganizations#name}.
+
+---
+
+##### `orderBy`<sup>Optional</sup> <a name="orderBy" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.Initializer.parameter.orderBy"></a>
+
+- *Type:* java.lang.String
+
+Field to order results by. Currently supported values: `name`. When not specified, results are ordered by hierarchy. Available values: "name".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#order_by DataCloudflareOrganizations#order_by}
 
 ---
 
@@ -155,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The amount of items to return. Defaults to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#page_size DataCloudflareOrganizations#page_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#page_size DataCloudflareOrganizations#page_size}
 
 ---
 
@@ -168,7 +202,7 @@ An opaque token returned from the last list response that when provided will ret
 Parameters used to filter the retrieved list must remain in subsequent
 requests with a page token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#page_token DataCloudflareOrganizations#page_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#page_token DataCloudflareOrganizations#page_token}
 
 ---
 
@@ -176,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsParent">DataCloudflareOrganizationsParent</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#parent DataCloudflareOrganizations#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#parent DataCloudflareOrganizations#parent}.
 
 ---
 
@@ -203,12 +237,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.putContaining">putContaining</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.putMember">putMember</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.putName">putName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.putParent">putParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetContaining">resetContaining</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetDirection">resetDirection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetMaxItems">resetMaxItems</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetMember">resetMember</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetOrderBy">resetOrderBy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetPageSize">resetPageSize</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetPageToken">resetPageToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetParent">resetParent</a></code> | *No description.* |
@@ -440,6 +478,18 @@ public void putContaining(DataCloudflareOrganizationsContaining value)
 
 ---
 
+##### `putMember` <a name="putMember" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.putMember"></a>
+
+```java
+public void putMember(DataCloudflareOrganizationsMember value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.putMember.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a>
+
+---
+
 ##### `putName` <a name="putName" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.putName"></a>
 
 ```java
@@ -470,6 +520,12 @@ public void putParent(DataCloudflareOrganizationsParent value)
 public void resetContaining()
 ```
 
+##### `resetDirection` <a name="resetDirection" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetDirection"></a>
+
+```java
+public void resetDirection()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetId"></a>
 
 ```java
@@ -482,10 +538,22 @@ public void resetId()
 public void resetMaxItems()
 ```
 
+##### `resetMember` <a name="resetMember" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetMember"></a>
+
+```java
+public void resetMember()
+```
+
 ##### `resetName` <a name="resetName" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetName"></a>
 
 ```java
 public void resetName()
+```
+
+##### `resetOrderBy` <a name="resetOrderBy" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetOrderBy"></a>
+
+```java
+public void resetOrderBy()
 ```
 
 ##### `resetPageSize` <a name="resetPageSize" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.resetPageSize"></a>
@@ -609,7 +677,7 @@ The construct id used in the generated config for the DataCloudflareOrganization
 
 The id of the existing DataCloudflareOrganizations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,18 +706,24 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.containing">containing</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContainingOutputReference">DataCloudflareOrganizationsContainingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.member">member</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference">DataCloudflareOrganizationsMemberOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsNameOutputReference">DataCloudflareOrganizationsNameOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsParentOutputReference">DataCloudflareOrganizationsParentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.result">result</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultList">DataCloudflareOrganizationsResultList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.containingInput">containingInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContaining">DataCloudflareOrganizationsContaining</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.idInput">idInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.maxItemsInput">maxItemsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.memberInput">memberInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.nameInput">nameInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsName">DataCloudflareOrganizationsName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.orderByInput">orderByInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.pageSizeInput">pageSizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.pageTokenInput">pageTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.parentInput">parentInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsParent">DataCloudflareOrganizationsParent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.id">id</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.orderBy">orderBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.pageSize">pageSize</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.pageToken">pageToken</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -787,6 +861,16 @@ public DataCloudflareOrganizationsContainingOutputReference getContaining();
 
 ---
 
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.member"></a>
+
+```java
+public DataCloudflareOrganizationsMemberOutputReference getMember();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference">DataCloudflareOrganizationsMemberOutputReference</a>
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.name"></a>
 
 ```java
@@ -827,6 +911,16 @@ public IResolvable|DataCloudflareOrganizationsContaining getContainingInput();
 
 ---
 
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.idInput"></a>
 
 ```java
@@ -847,6 +941,16 @@ public java.lang.Number getMaxItemsInput();
 
 ---
 
+##### `memberInput`<sup>Optional</sup> <a name="memberInput" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.memberInput"></a>
+
+```java
+public IResolvable|DataCloudflareOrganizationsMember getMemberInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a>
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.nameInput"></a>
 
 ```java
@@ -854,6 +958,16 @@ public IResolvable|DataCloudflareOrganizationsName getNameInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsName">DataCloudflareOrganizationsName</a>
+
+---
+
+##### `orderByInput`<sup>Optional</sup> <a name="orderByInput" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.orderByInput"></a>
+
+```java
+public java.lang.String getOrderByInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -887,6 +1001,16 @@ public IResolvable|DataCloudflareOrganizationsParent getParentInput();
 
 ---
 
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.id"></a>
 
 ```java
@@ -904,6 +1028,16 @@ public java.lang.Number getMaxItems();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `orderBy`<sup>Required</sup> <a name="orderBy" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizations.property.orderBy"></a>
+
+```java
+public java.lang.String getOrderBy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -963,9 +1097,12 @@ DataCloudflareOrganizationsConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .containing(DataCloudflareOrganizationsContaining)
+//  .direction(java.lang.String)
 //  .id(java.util.List<java.lang.String>)
 //  .maxItems(java.lang.Number)
+//  .member(DataCloudflareOrganizationsMember)
 //  .name(DataCloudflareOrganizationsName)
+//  .orderBy(java.lang.String)
 //  .pageSize(java.lang.Number)
 //  .pageToken(java.lang.String)
 //  .parent(DataCloudflareOrganizationsParent)
@@ -983,13 +1120,16 @@ DataCloudflareOrganizationsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.containing">containing</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContaining">DataCloudflareOrganizationsContaining</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#containing DataCloudflareOrganizations#containing}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.containing">containing</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContaining">DataCloudflareOrganizationsContaining</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#containing DataCloudflareOrganizations#containing}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.direction">direction</a></code> | <code>java.lang.String</code> | Sort direction for the `order_by` field. Defaults to `asc` when `order_by` is specified. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.id">id</a></code> | <code>java.util.List<java.lang.String></code> | Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements by repeating the query value. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsName">DataCloudflareOrganizationsName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#name DataCloudflareOrganizations#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.member">member</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#member DataCloudflareOrganizations#member}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.name">name</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsName">DataCloudflareOrganizationsName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#name DataCloudflareOrganizations#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.orderBy">orderBy</a></code> | <code>java.lang.String</code> | Field to order results by. Currently supported values: `name`. When not specified, results are ordered by hierarchy. Available values: "name". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.pageSize">pageSize</a></code> | <code>java.lang.Number</code> | The amount of items to return. Defaults to 10. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.pageToken">pageToken</a></code> | <code>java.lang.String</code> | An opaque token returned from the last list response that when provided will retrieve the next page. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsParent">DataCloudflareOrganizationsParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#parent DataCloudflareOrganizations#parent}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.parent">parent</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsParent">DataCloudflareOrganizationsParent</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#parent DataCloudflareOrganizations#parent}. |
 
 ---
 
@@ -1071,7 +1211,21 @@ public DataCloudflareOrganizationsContaining getContaining();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContaining">DataCloudflareOrganizationsContaining</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#containing DataCloudflareOrganizations#containing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#containing DataCloudflareOrganizations#containing}.
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Sort direction for the `order_by` field. Defaults to `asc` when `order_by` is specified. Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#direction DataCloudflareOrganizations#direction}
 
 ---
 
@@ -1085,7 +1239,7 @@ public java.util.List<java.lang.String> getId();
 
 Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements by repeating the query value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#id DataCloudflareOrganizations#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#id DataCloudflareOrganizations#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1102,7 +1256,19 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#max_items DataCloudflareOrganizations#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#max_items DataCloudflareOrganizations#max_items}
+
+---
+
+##### `member`<sup>Optional</sup> <a name="member" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.member"></a>
+
+```java
+public DataCloudflareOrganizationsMember getMember();
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#member DataCloudflareOrganizations#member}.
 
 ---
 
@@ -1114,7 +1280,21 @@ public DataCloudflareOrganizationsName getName();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsName">DataCloudflareOrganizationsName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#name DataCloudflareOrganizations#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#name DataCloudflareOrganizations#name}.
+
+---
+
+##### `orderBy`<sup>Optional</sup> <a name="orderBy" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsConfig.property.orderBy"></a>
+
+```java
+public java.lang.String getOrderBy();
+```
+
+- *Type:* java.lang.String
+
+Field to order results by. Currently supported values: `name`. When not specified, results are ordered by hierarchy. Available values: "name".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#order_by DataCloudflareOrganizations#order_by}
 
 ---
 
@@ -1128,7 +1308,7 @@ public java.lang.Number getPageSize();
 
 The amount of items to return. Defaults to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#page_size DataCloudflareOrganizations#page_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#page_size DataCloudflareOrganizations#page_size}
 
 ---
 
@@ -1145,7 +1325,7 @@ An opaque token returned from the last list response that when provided will ret
 Parameters used to filter the retrieved list must remain in subsequent
 requests with a page token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#page_token DataCloudflareOrganizations#page_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#page_token DataCloudflareOrganizations#page_token}
 
 ---
 
@@ -1157,7 +1337,7 @@ public DataCloudflareOrganizationsParent getParent();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsParent">DataCloudflareOrganizationsParent</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#parent DataCloudflareOrganizations#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#parent DataCloudflareOrganizations#parent}.
 
 ---
 
@@ -1195,7 +1375,7 @@ public java.lang.String getAccount();
 
 Filter the list of organizations to the ones that contain this particular account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#account DataCloudflareOrganizations#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#account DataCloudflareOrganizations#account}
 
 ---
 
@@ -1209,7 +1389,7 @@ public java.lang.String getOrganization();
 
 Filter the list of organizations to the ones that contain this particular organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#organization DataCloudflareOrganizations#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#organization DataCloudflareOrganizations#organization}
 
 ---
 
@@ -1228,7 +1408,43 @@ representation of any authorization or privilege to manage any resources
 therein. An organization "containing" a user simply means the user is managed by
 that organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#user DataCloudflareOrganizations#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#user DataCloudflareOrganizations#user}
+
+---
+
+### DataCloudflareOrganizationsMember <a name="DataCloudflareOrganizationsMember" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.data_cloudflare_organizations.DataCloudflareOrganizationsMember;
+
+DataCloudflareOrganizationsMember.builder()
+//  .email(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember.property.email">email</a></code> | <code>java.lang.String</code> | Filter organizations to those where the given user, by email, is an active member of that exact organization. |
+
+---
+
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember.property.email"></a>
+
+```java
+public java.lang.String getEmail();
+```
+
+- *Type:* java.lang.String
+
+Filter organizations to those where the given user, by email, is an active member of that exact organization.
+
+This does not include hierarchy-derived access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#email DataCloudflareOrganizations#email}
 
 ---
 
@@ -1266,7 +1482,7 @@ public java.lang.String getContains();
 
 (case-insensitive) Filter the list of organizations to where the name contains a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#contains DataCloudflareOrganizations#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#contains DataCloudflareOrganizations#contains}
 
 ---
 
@@ -1280,7 +1496,7 @@ public java.lang.String getEndsWith();
 
 (case-insensitive) Filter the list of organizations to where the name ends with a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#ends_with DataCloudflareOrganizations#ends_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#ends_with DataCloudflareOrganizations#ends_with}
 
 ---
 
@@ -1294,7 +1510,7 @@ public java.lang.String getStartsWith();
 
 (case-insensitive) Filter the list of organizations to where the name starts with a particular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations#starts_with DataCloudflareOrganizations#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations#starts_with DataCloudflareOrganizations#starts_with}
 
 ---
 
@@ -1704,6 +1920,284 @@ public IResolvable|DataCloudflareOrganizationsContaining getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsContaining">DataCloudflareOrganizationsContaining</a>
+
+---
+
+
+### DataCloudflareOrganizationsMemberOutputReference <a name="DataCloudflareOrganizationsMemberOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.cloudflare.data_cloudflare_organizations.DataCloudflareOrganizationsMemberOutputReference;
+
+new DataCloudflareOrganizationsMemberOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.resetEmail">resetEmail</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEmail` <a name="resetEmail" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.resetEmail"></a>
+
+```java
+public void resetEmail()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `emailInput`<sup>Optional</sup> <a name="emailInput" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.emailInput"></a>
+
+```java
+public java.lang.String getEmailInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.email"></a>
+
+```java
+public java.lang.String getEmail();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMemberOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|DataCloudflareOrganizationsMember getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsMember">DataCloudflareOrganizationsMember</a>
 
 ---
 
@@ -2663,9 +3157,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.areChildAccountsAccessibleByOrgMembers">areChildAccountsAccessibleByOrgMembers</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.hierarchyTags">hierarchyTags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.managedBy">managedBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.tenantFlags">tenantFlags</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference">DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.tenantType">tenantType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMeta">DataCloudflareOrganizationsResultMeta</a></code> | *No description.* |
 
 ---
@@ -2691,6 +3187,16 @@ public java.lang.String getFqn();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `areChildAccountsAccessibleByOrgMembers`<sup>Required</sup> <a name="areChildAccountsAccessibleByOrgMembers" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.areChildAccountsAccessibleByOrgMembers"></a>
+
+```java
+public IResolvable getAreChildAccountsAccessibleByOrgMembers();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -2721,6 +3227,16 @@ public DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference getTenant
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference">DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference</a>
+
+---
+
+##### `tenantType`<sup>Required</sup> <a name="tenantType" id="@cdktn/provider-cloudflare.dataCloudflareOrganizations.DataCloudflareOrganizationsResultMetaOutputReference.property.tenantType"></a>
+
+```java
+public java.lang.String getTenantType();
+```
+
+- *Type:* java.lang.String
 
 ---
 

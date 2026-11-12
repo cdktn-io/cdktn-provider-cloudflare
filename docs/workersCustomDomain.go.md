@@ -4,7 +4,7 @@
 
 ### WorkersCustomDomain <a name="WorkersCustomDomain" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.Initializer"></a>
 
@@ -74,7 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetEnvironment">ResetEnvironment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetPreviewsEnabled">ResetPreviewsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetZoneId">ResetZoneId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetZoneName">ResetZoneName</a></code> | *No description.* |
 
@@ -389,10 +391,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetEnabled` <a name="ResetEnabled" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetEnabled"></a>
+
+```go
+func ResetEnabled()
+```
+
 ##### `ResetEnvironment` <a name="ResetEnvironment" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetEnvironment"></a>
 
 ```go
 func ResetEnvironment()
+```
+
+##### `ResetPreviewsEnabled` <a name="ResetPreviewsEnabled" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetPreviewsEnabled"></a>
+
+```go
+func ResetPreviewsEnabled()
 ```
 
 ##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetZoneId"></a>
@@ -510,7 +524,7 @@ The construct id used in the generated config for the WorkersCustomDomain to imp
 
 The id of the existing WorkersCustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -543,14 +557,18 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.certId">CertId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.environmentInput">EnvironmentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.hostnameInput">HostnameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.previewsEnabledInput">PreviewsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.serviceInput">ServiceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.zoneNameInput">ZoneNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.environment">Environment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.hostname">Hostname</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.previewsEnabled">PreviewsEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.service">Service</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.zoneName">ZoneName</a></code> | <code>*string</code> | *No description.* |
@@ -729,6 +747,16 @@ func AccountIdInput() *string
 
 ---
 
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.enabledInput"></a>
+
+```go
+func EnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `EnvironmentInput`<sup>Optional</sup> <a name="EnvironmentInput" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.environmentInput"></a>
 
 ```go
@@ -746,6 +774,16 @@ func HostnameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PreviewsEnabledInput`<sup>Optional</sup> <a name="PreviewsEnabledInput" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.previewsEnabledInput"></a>
+
+```go
+func PreviewsEnabledInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -789,6 +827,16 @@ func AccountId() *string
 
 ---
 
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.enabled"></a>
+
+```go
+func Enabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Environment`<sup>Required</sup> <a name="Environment" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.environment"></a>
 
 ```go
@@ -806,6 +854,16 @@ func Hostname() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PreviewsEnabled`<sup>Required</sup> <a name="PreviewsEnabled" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.property.previewsEnabled"></a>
+
+```go
+func PreviewsEnabled() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -877,7 +935,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersc
 	AccountId: *string,
 	Hostname: *string,
 	Service: *string,
+	Enabled: interface{},
 	Environment: *string,
+	PreviewsEnabled: interface{},
 	ZoneId: *string,
 	ZoneName: *string,
 }
@@ -897,7 +957,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersc
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.hostname">Hostname</a></code> | <code>*string</code> | Hostname of the domain. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.service">Service</a></code> | <code>*string</code> | Name of the Worker associated with the domain. Requests to the configured hostname will be routed to this Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether the configured hostname is routable for the domain. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.environment">Environment</a></code> | <code>*string</code> | Worker environment associated with the domain. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.previewsEnabled">PreviewsEnabled</a></code> | <code>interface{}</code> | Whether previews are routable for the domain. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | ID of the zone containing the domain hostname. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.zoneName">ZoneName</a></code> | <code>*string</code> | Name of the zone containing the domain hostname. |
 
@@ -983,7 +1045,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
 
 ---
 
@@ -999,7 +1061,7 @@ Hostname of the domain.
 
 Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
 
 ---
 
@@ -1013,7 +1075,23 @@ Service *string
 
 Name of the Worker associated with the domain. Requests to the configured hostname will be routed to this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
+
+---
+
+##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.enabled"></a>
+
+```go
+Enabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether the configured hostname is routable for the domain.
+
+If disabled, then requests to the configured hostname will not be routed to the configured Worker. If disabled, then preview routing must be enabled, and only subdomains of the configured hostname will be routable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#enabled WorkersCustomDomain#enabled}
 
 ---
 
@@ -1027,7 +1105,23 @@ Environment *string
 
 Worker environment associated with the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
+
+---
+
+##### `PreviewsEnabled`<sup>Optional</sup> <a name="PreviewsEnabled" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.previewsEnabled"></a>
+
+```go
+PreviewsEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether previews are routable for the domain.
+
+If enabled, previews will be routable as subdomains of the configured hostname. For example, if the configured hostname is `app.example.com`, then requests to `my-feature.app.example.com` will be routed to the preview with slug `my-feature`, if such a preview exists. If preview routing is disabled, then hostname routing must be enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#previews_enabled WorkersCustomDomain#previews_enabled}
 
 ---
 
@@ -1041,7 +1135,7 @@ ZoneId *string
 
 ID of the zone containing the domain hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
 
 ---
 
@@ -1055,7 +1149,7 @@ ZoneName *string
 
 Name of the zone containing the domain hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain#zone_name WorkersCustomDomain#zone_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain#zone_name WorkersCustomDomain#zone_name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TotalTls <a name="TotalTls" id="@cdktn/provider-cloudflare.totalTls.TotalTls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/total_tls cloudflare_total_tls}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/total_tls cloudflare_total_tls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.totalTls.TotalTls.Initializer"></a>
 
@@ -40,7 +40,7 @@ totalTls.TotalTls(
 | <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTls.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTls.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, Total TLS will order a hostname specific TLS certificate for any proxied A, AAAA, or CNAME record in your zone. |
 | <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTls.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTls.Initializer.parameter.certificateAuthority">certificate_authority</a></code> | <code>str</code> | The Certificate Authority that Total TLS certificates will be issued through. Available values: "google", "lets_encrypt", "ssl_com". |
+| <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTls.Initializer.parameter.certificateAuthority">certificate_authority</a></code> | <code>str</code> | The Certificate Authority that Total TLS certificates will be issued through. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 If enabled, Total TLS will order a hostname specific TLS certificate for any proxied A, AAAA, or CNAME record in your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/total_tls#enabled TotalTls#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/total_tls#enabled TotalTls#enabled}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/total_tls#zone_id TotalTls#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
 
 ---
 
@@ -128,9 +128,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The Certificate Authority that Total TLS certificates will be issued through. Available values: "google", "lets_encrypt", "ssl_com".
+The Certificate Authority that Total TLS certificates will be issued through.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
+Not returned in responses when Total TLS is disabled.
+Available values: "google", "lets_encrypt", "ssl_com".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
 
 ---
 
@@ -634,7 +637,7 @@ The construct id used in the generated config for the TotalTls to import.
 
 The id of the existing TotalTls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +954,7 @@ totalTls.TotalTlsConfig(
 | <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTlsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTlsConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, Total TLS will order a hostname specific TLS certificate for any proxied A, AAAA, or CNAME record in your zone. |
 | <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTlsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTlsConfig.property.certificateAuthority">certificate_authority</a></code> | <code>str</code> | The Certificate Authority that Total TLS certificates will be issued through. Available values: "google", "lets_encrypt", "ssl_com". |
+| <code><a href="#@cdktn/provider-cloudflare.totalTls.TotalTlsConfig.property.certificateAuthority">certificate_authority</a></code> | <code>str</code> | The Certificate Authority that Total TLS certificates will be issued through. |
 
 ---
 
@@ -1035,7 +1038,7 @@ enabled: bool | IResolvable
 
 If enabled, Total TLS will order a hostname specific TLS certificate for any proxied A, AAAA, or CNAME record in your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/total_tls#enabled TotalTls#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/total_tls#enabled TotalTls#enabled}
 
 ---
 
@@ -1049,7 +1052,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/total_tls#zone_id TotalTls#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
 
 ---
 
@@ -1061,9 +1064,12 @@ certificate_authority: str
 
 - *Type:* str
 
-The Certificate Authority that Total TLS certificates will be issued through. Available values: "google", "lets_encrypt", "ssl_com".
+The Certificate Authority that Total TLS certificates will be issued through.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
+Not returned in responses when Total TLS is disabled.
+Available values: "google", "lets_encrypt", "ssl_com".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
 
 ---
 

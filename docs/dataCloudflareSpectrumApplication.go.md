@@ -4,7 +4,7 @@
 
 ### DataCloudflareSpectrumApplication <a name="DataCloudflareSpectrumApplication" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataCloudflareSpectrumAppl
 
 The id of the existing DataCloudflareSpectrumApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/spectrum_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -461,6 +461,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.originDns">OriginDns</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationOriginDnsOutputReference">DataCloudflareSpectrumApplicationOriginDnsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.originPort">OriginPort</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.AnyMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.originWorkerId">OriginWorkerId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.originWorkerName">OriginWorkerName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.originWorkerStatus">OriginWorkerStatus</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.protocol">Protocol</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.proxyProtocol">ProxyProtocol</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.tls">Tls</a></code> | <code>*string</code> | *No description.* |
@@ -716,6 +718,26 @@ func OriginWorkerId() *string
 
 ---
 
+##### `OriginWorkerName`<sup>Required</sup> <a name="OriginWorkerName" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.originWorkerName"></a>
+
+```go
+func OriginWorkerName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OriginWorkerStatus`<sup>Required</sup> <a name="OriginWorkerStatus" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.originWorkerStatus"></a>
+
+```go
+func OriginWorkerStatus() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.property.protocol"></a>
 
 ```go
@@ -869,7 +891,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.appId">AppId</a></code> | <code>*string</code> | App identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Zone identifier. |
 
 ---
@@ -954,7 +976,7 @@ AppId *string
 
 App identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
 
 ---
 
@@ -966,7 +988,7 @@ Filter DataCloudflareSpectrumApplicationFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}.
 
 ---
 
@@ -980,7 +1002,7 @@ ZoneId *string
 
 Zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
 
 ---
 
@@ -1042,7 +1064,7 @@ Direction *string
 
 Sets the direction by which results are ordered. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_application#direction DataCloudflareSpectrumApplication#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/spectrum_application#direction DataCloudflareSpectrumApplication#direction}
 
 ---
 
@@ -1056,7 +1078,7 @@ Order *string
 
 Application field by which results are ordered. Available values: "protocol", "app_id", "created_on", "modified_on", "dns".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/spectrum_application#order DataCloudflareSpectrumApplication#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/spectrum_application#order DataCloudflareSpectrumApplication#order}
 
 ---
 

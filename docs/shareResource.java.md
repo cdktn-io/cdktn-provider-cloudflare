@@ -4,7 +4,7 @@
 
 ### ShareResource <a name="ShareResource" id="@cdktn/provider-cloudflare.shareResource.ShareResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource cloudflare_share_resource}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource cloudflare_share_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer"></a>
 
@@ -41,8 +41,8 @@ ShareResource.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.meta">meta</a></code> | <code>java.lang.String</code> | Resource Metadata. |
-| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceAccountId">resourceAccountId</a></code> | <code>java.lang.String</code> | Account identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Share Resource identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceAccountId">resourceAccountId</a></code> | <code>java.lang.String</code> | The account that owns the resource. Must match the `account_id` in the path. |
+| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Identifier assigned by the service that owns the shared resource. |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.resourceType">resourceType</a></code> | <code>java.lang.String</code> | Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant". |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResource.Initializer.parameter.shareId">shareId</a></code> | <code>java.lang.String</code> | Share identifier tag. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#account_id ShareResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#account_id ShareResource#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Resource Metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#meta ShareResource#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#meta ShareResource#meta}
 
 ---
 
@@ -132,9 +132,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Account identifier.
+The account that owns the resource. Must match the `account_id` in the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
 
 ---
 
@@ -142,9 +142,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Share Resource identifier.
+Identifier assigned by the service that owns the shared resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_id ShareResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#resource_id ShareResource#resource_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_type ShareResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#resource_type ShareResource#resource_type}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#share_id ShareResource#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#share_id ShareResource#share_id}
 
 ---
 
@@ -613,7 +613,7 @@ The construct id used in the generated config for the ShareResource to import.
 
 The id of the existing ShareResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,8 +1032,8 @@ ShareResourceConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.meta">meta</a></code> | <code>java.lang.String</code> | Resource Metadata. |
-| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceAccountId">resourceAccountId</a></code> | <code>java.lang.String</code> | Account identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Share Resource identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceAccountId">resourceAccountId</a></code> | <code>java.lang.String</code> | The account that owns the resource. Must match the `account_id` in the path. |
+| <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Identifier assigned by the service that owns the shared resource. |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.resourceType">resourceType</a></code> | <code>java.lang.String</code> | Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant". |
 | <code><a href="#@cdktn/provider-cloudflare.shareResource.ShareResourceConfig.property.shareId">shareId</a></code> | <code>java.lang.String</code> | Share identifier tag. |
 
@@ -1119,7 +1119,7 @@ public java.lang.String getAccountId();
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#account_id ShareResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#account_id ShareResource#account_id}
 
 ---
 
@@ -1133,7 +1133,7 @@ public java.lang.String getMeta();
 
 Resource Metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#meta ShareResource#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#meta ShareResource#meta}
 
 ---
 
@@ -1145,9 +1145,9 @@ public java.lang.String getResourceAccountId();
 
 - *Type:* java.lang.String
 
-Account identifier.
+The account that owns the resource. Must match the `account_id` in the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#resource_account_id ShareResource#resource_account_id}
 
 ---
 
@@ -1159,9 +1159,9 @@ public java.lang.String getResourceId();
 
 - *Type:* java.lang.String
 
-Share Resource identifier.
+Identifier assigned by the service that owns the shared resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_id ShareResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#resource_id ShareResource#resource_id}
 
 ---
 
@@ -1175,7 +1175,7 @@ public java.lang.String getResourceType();
 
 Resource Type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant", "trust-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#resource_type ShareResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#resource_type ShareResource#resource_type}
 
 ---
 
@@ -1189,7 +1189,7 @@ public java.lang.String getShareId();
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_resource#share_id ShareResource#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_resource#share_id ShareResource#share_id}
 
 ---
 

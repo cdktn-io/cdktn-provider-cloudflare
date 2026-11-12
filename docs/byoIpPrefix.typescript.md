@@ -4,7 +4,7 @@
 
 ### ByoIpPrefix <a name="ByoIpPrefix" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the ByoIpPrefix to import.
 
 The id of the existing ByoIpPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -543,6 +543,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.advertised">advertised</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.advertisedModifiedAt">advertisedModifiedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.approved">approved</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.asnOwnershipValidationState">asnOwnershipValidationState</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.aspaValidationState">aspaValidationState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.irrValidationState">irrValidationState</a></code> | <code>string</code> | *No description.* |
@@ -733,6 +735,26 @@ public readonly advertisedModifiedAt: string;
 
 ```typescript
 public readonly approved: string;
+```
+
+- *Type:* string
+
+---
+
+##### `asnOwnershipValidationState`<sup>Required</sup> <a name="asnOwnershipValidationState" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.asnOwnershipValidationState"></a>
+
+```typescript
+public readonly asnOwnershipValidationState: string;
+```
+
+- *Type:* string
+
+---
+
+##### `aspaValidationState`<sup>Required</sup> <a name="aspaValidationState" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.property.aspaValidationState"></a>
+
+```typescript
+public readonly aspaValidationState: string;
 ```
 
 - *Type:* string
@@ -1079,7 +1101,7 @@ public readonly accountId: string;
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
 
 ---
 
@@ -1093,7 +1115,9 @@ public readonly asn: number;
 
 Autonomous System Number (ASN) the prefix will be advertised under.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
+Use 13335 for Cloudflare's ASN, or your own ASN as an integer without the AS prefix. The IRR route and RPKI ROA must authorize this ASN.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
 
 ---
 
@@ -1107,7 +1131,7 @@ public readonly cidr: string;
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
 
 ---
 
@@ -1121,7 +1145,7 @@ public readonly delegateLoaCreation: boolean | IResolvable;
 
 Whether Cloudflare is allowed to generate the LOA document on behalf of the prefix owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix#delegate_loa_creation ByoIpPrefix#delegate_loa_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/byo_ip_prefix#delegate_loa_creation ByoIpPrefix#delegate_loa_creation}
 
 ---
 
@@ -1135,7 +1159,7 @@ public readonly description: string;
 
 Description of the prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
 
 ---
 
@@ -1149,7 +1173,7 @@ public readonly loaDocumentId: string;
 
 Identifier for the uploaded LOA document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
 
 ---
 

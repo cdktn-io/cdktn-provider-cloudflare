@@ -4,7 +4,7 @@
 
 ### Ruleset <a name="Ruleset" id="@cdktn/provider-cloudflare.ruleset.Ruleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset cloudflare_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset cloudflare_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.Ruleset.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the Ruleset to import.
 
 The id of the existing Ruleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly kind: string;
 
 The kind of the ruleset. Available values: "managed", "custom", "root", "zone".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#kind Ruleset#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#kind Ruleset#kind}
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly name: string;
 
 The human-readable name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -1053,7 +1053,7 @@ The phase of the ruleset.
 
 Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#phase Ruleset#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#phase Ruleset#phase}
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly accountId: string;
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#account_id Ruleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#account_id Ruleset#account_id}
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly description: string;
 
 An informative description of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly rules: IResolvable | RulesetRules[];
 
 The list of rules in the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly zoneId: string;
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#zone_id Ruleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
 
 ---
 
@@ -1151,7 +1151,7 @@ The action to perform when the rule matches.
 
 Available values: "block", "challenge", "compress_response", "ddos_dynamic", "execute", "force_connection_close", "js_challenge", "log", "log_custom_field", "managed_challenge", "redirect", "rewrite", "route", "score", "serve_error", "set_cache_control", "set_cache_settings", "set_cache_tags", "set_config", "skip".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -1165,7 +1165,7 @@ public readonly expression: string;
 
 The expression defining which traffic will match the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -1179,7 +1179,7 @@ public readonly actionParameters: RulesetRulesActionParameters;
 
 The parameters configuring the rule's action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
 
 ---
 
@@ -1193,7 +1193,7 @@ public readonly description: string;
 
 An informative description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -1207,7 +1207,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the rule should be executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -1221,7 +1221,7 @@ public readonly exposedCredentialCheck: RulesetRulesExposedCredentialCheck;
 
 Configuration for exposed credential checking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
 
 ---
 
@@ -1235,7 +1235,7 @@ public readonly logging: RulesetRulesLogging;
 
 An object configuring the rule's logging behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#logging Ruleset#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#logging Ruleset#logging}
 
 ---
 
@@ -1249,7 +1249,7 @@ public readonly ratelimit: RulesetRulesRatelimit;
 
 An object configuring the rule's rate limit behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
 
 ---
 
@@ -1263,7 +1263,7 @@ public readonly ref: string;
 
 The reference of the rule (the rule's ID by default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#ref Ruleset#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#ref Ruleset#ref}
 
 ---
 
@@ -1361,6 +1361,8 @@ const rulesetRulesActionParameters: ruleset.RulesetRulesActionParameters = { ...
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.uri">uri</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | A URI rewrite. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.values">values</a></code> | <code>string[]</code> | The cache tag values for set_cache_tags action. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.vary">vary</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersVary">RulesetRulesActionParametersVary</a></code> | Controls how cached responses vary based on request headers. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.webmcpEnabled">webmcpEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to serve the WebMCP bridge script, which exposes the page's tools to browser AI agents. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.webmcpPacks">webmcpPacks</a></code> | <code>string[]</code> | Bundled WebMCP tool packs to activate for matching requests. |
 
 ---
 
@@ -1374,7 +1376,7 @@ public readonly additionalCacheablePorts: number[];
 
 A list of additional ports that caching should be enabled on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
 
 ---
 
@@ -1388,7 +1390,7 @@ public readonly algorithms: IResolvable | RulesetRulesActionParametersAlgorithms
 
 Custom order for compression algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#algorithms Ruleset#algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
 
 ---
 
@@ -1402,7 +1404,7 @@ public readonly assetName: string;
 
 The name of a custom asset to serve as the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#asset_name Ruleset#asset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#asset_name Ruleset#asset_name}
 
 ---
 
@@ -1416,7 +1418,7 @@ public readonly automaticHttpsRewrites: boolean | IResolvable;
 
 Whether to enable Automatic HTTPS Rewrites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
 
 ---
 
@@ -1430,7 +1432,7 @@ public readonly autominify: RulesetRulesActionParametersAutominify;
 
 Which file extensions to minify automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#autominify Ruleset#autominify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#autominify Ruleset#autominify}
 
 ---
 
@@ -1444,7 +1446,7 @@ public readonly bic: boolean | IResolvable;
 
 Whether to enable Browser Integrity Check (BIC).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#bic Ruleset#bic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#bic Ruleset#bic}
 
 ---
 
@@ -1460,7 +1462,7 @@ How long client browsers should cache the response.
 
 Cloudflare cache purge will not purge content cached on client browsers, so high browser TTLs may lead to stale content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
 
 ---
 
@@ -1476,7 +1478,7 @@ Whether the request's response from the origin is eligible for caching.
 
 Caching itself will still depend on the cache control header and your other caching configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cache Ruleset#cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cache Ruleset#cache}
 
 ---
 
@@ -1490,7 +1492,7 @@ public readonly cacheKey: RulesetRulesActionParametersCacheKey;
 
 Which components of the request are included in or excluded from the cache key Cloudflare uses to store the response in cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cache_key Ruleset#cache_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
 
 ---
 
@@ -1504,7 +1506,7 @@ public readonly cacheReserve: RulesetRulesActionParametersCacheReserve;
 
 Settings to determine whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
 
 ---
 
@@ -1518,7 +1520,7 @@ public readonly content: string;
 
 The response content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -1532,7 +1534,7 @@ public readonly contentConverter: boolean | IResolvable;
 
 Whether to enable content conversion (e.g., HTML to Markdown).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#content_converter Ruleset#content_converter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#content_converter Ruleset#content_converter}
 
 ---
 
@@ -1546,7 +1548,7 @@ public readonly contentType: string;
 
 The content type header to set with the error response. Available values: "application/json", "text/html", "text/plain", "text/xml".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -1560,7 +1562,7 @@ public readonly cookieFields: IResolvable | RulesetRulesActionParametersCookieFi
 
 The cookie fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
 
 ---
 
@@ -1574,7 +1576,7 @@ public readonly disableApps: boolean | IResolvable;
 
 Whether to disable Cloudflare Apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
 
 ---
 
@@ -1588,7 +1590,7 @@ public readonly disableRum: boolean | IResolvable;
 
 Whether to disable Real User Monitoring (RUM).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
 
 ---
 
@@ -1602,7 +1604,7 @@ public readonly disableZaraz: boolean | IResolvable;
 
 Whether to disable Zaraz.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
 
 ---
 
@@ -1616,7 +1618,7 @@ public readonly edgeTtl: RulesetRulesActionParametersEdgeTtl;
 
 How long the Cloudflare edge network should cache the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
 
 ---
 
@@ -1630,7 +1632,7 @@ public readonly emailObfuscation: boolean | IResolvable;
 
 Whether to enable Email Obfuscation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
 
 ---
 
@@ -1644,7 +1646,7 @@ public readonly expression: string;
 
 An expression to generate cache tags for set_cache_tags action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -1658,7 +1660,7 @@ public readonly fonts: boolean | IResolvable;
 
 Whether to enable Cloudflare Fonts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#fonts Ruleset#fonts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#fonts Ruleset#fonts}
 
 ---
 
@@ -1672,7 +1674,7 @@ public readonly fromList: RulesetRulesActionParametersFromListStruct;
 
 A redirect based on a bulk list lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#from_list Ruleset#from_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#from_list Ruleset#from_list}
 
 ---
 
@@ -1686,7 +1688,7 @@ public readonly fromValue: RulesetRulesActionParametersFromValue;
 
 A redirect based on the request properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#from_value Ruleset#from_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#from_value Ruleset#from_value}
 
 ---
 
@@ -1700,7 +1702,7 @@ public readonly headers: IResolvable | {[ key: string ]: RulesetRulesActionParam
 
 A map of headers to rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#headers Ruleset#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#headers Ruleset#headers}
 
 ---
 
@@ -1714,7 +1716,7 @@ public readonly hostHeader: string;
 
 A value to rewrite the HTTP host header to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#host_header Ruleset#host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#host_header Ruleset#host_header}
 
 ---
 
@@ -1728,7 +1730,7 @@ public readonly hotlinkProtection: boolean | IResolvable;
 
 Whether to enable Hotlink Protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
 
 ---
 
@@ -1742,7 +1744,7 @@ public readonly id: string;
 
 The ID of the ruleset to execute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1759,7 +1761,7 @@ public readonly immutable: RulesetRulesActionParametersImmutable;
 
 Set the immutable cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#immutable Ruleset#immutable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#immutable Ruleset#immutable}
 
 ---
 
@@ -1773,7 +1775,7 @@ public readonly increment: number;
 
 A delta to change the score by, which can be either positive or negative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#increment Ruleset#increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#increment Ruleset#increment}
 
 ---
 
@@ -1787,7 +1789,7 @@ public readonly matchedData: RulesetRulesActionParametersMatchedData;
 
 The configuration to use for matched data logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#matched_data Ruleset#matched_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
 
 ---
 
@@ -1801,7 +1803,7 @@ public readonly maxAge: RulesetRulesActionParametersMaxAge;
 
 Set the max-age cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#max_age Ruleset#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#max_age Ruleset#max_age}
 
 ---
 
@@ -1815,7 +1817,7 @@ public readonly mirage: boolean | IResolvable;
 
 Whether to enable Mirage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#mirage Ruleset#mirage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#mirage Ruleset#mirage}
 
 ---
 
@@ -1829,7 +1831,7 @@ public readonly mustRevalidate: RulesetRulesActionParametersMustRevalidate;
 
 Set the must-revalidate cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#must_revalidate Ruleset#must_revalidate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#must_revalidate Ruleset#must_revalidate}
 
 ---
 
@@ -1843,7 +1845,7 @@ public readonly mustUnderstand: RulesetRulesActionParametersMustUnderstand;
 
 Set the must-understand cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#must_understand Ruleset#must_understand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#must_understand Ruleset#must_understand}
 
 ---
 
@@ -1857,7 +1859,7 @@ public readonly noCache: RulesetRulesActionParametersNoCache;
 
 Set the no-cache cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#no_cache Ruleset#no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#no_cache Ruleset#no_cache}
 
 ---
 
@@ -1871,7 +1873,7 @@ public readonly noStore: RulesetRulesActionParametersNoStore;
 
 Set the no-store cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#no_store Ruleset#no_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#no_store Ruleset#no_store}
 
 ---
 
@@ -1885,7 +1887,7 @@ public readonly noTransform: RulesetRulesActionParametersNoTransform;
 
 Set the no-transform cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#no_transform Ruleset#no_transform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#no_transform Ruleset#no_transform}
 
 ---
 
@@ -1899,7 +1901,7 @@ public readonly operation: string;
 
 The operation to perform for set_cache_tags action. Available values: "set", "add", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -1913,7 +1915,7 @@ public readonly opportunisticEncryption: boolean | IResolvable;
 
 Whether to enable Opportunistic Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
 
 ---
 
@@ -1927,7 +1929,7 @@ public readonly origin: RulesetRulesActionParametersOrigin;
 
 An origin to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#origin Ruleset#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#origin Ruleset#origin}
 
 ---
 
@@ -1941,7 +1943,7 @@ public readonly originCacheControl: boolean | IResolvable;
 
 Whether Cloudflare will aim to strictly adhere to RFC 7234.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
 
 ---
 
@@ -1955,7 +1957,7 @@ public readonly originErrorPagePassthru: boolean | IResolvable;
 
 Whether to generate Cloudflare error pages for issues from the origin server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
 
 ---
 
@@ -1969,7 +1971,7 @@ public readonly originRangeRequests: RulesetRulesActionParametersOriginRangeRequ
 
 Controls whether Cloudflare fetches a large asset from the origin as a series of range requests instead of one whole-body request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#origin_range_requests Ruleset#origin_range_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#origin_range_requests Ruleset#origin_range_requests}
 
 ---
 
@@ -1983,7 +1985,7 @@ public readonly overrides: RulesetRulesActionParametersOverrides;
 
 A set of overrides to apply to the target ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#overrides Ruleset#overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#overrides Ruleset#overrides}
 
 ---
 
@@ -2000,7 +2002,7 @@ A list of phases to skip the execution of.
 This option is incompatible with the rulesets option.
 Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#phases Ruleset#phases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#phases Ruleset#phases}
 
 ---
 
@@ -2014,7 +2016,7 @@ public readonly polish: string;
 
 The Polish level to configure. Available values: "off", "lossless", "lossy", "webp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#polish Ruleset#polish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#polish Ruleset#polish}
 
 ---
 
@@ -2028,7 +2030,7 @@ public readonly private: RulesetRulesActionParametersPrivate;
 
 Set the private cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#private Ruleset#private}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#private Ruleset#private}
 
 ---
 
@@ -2042,7 +2044,7 @@ public readonly products: string[];
 
 A list of legacy security products to skip the execution of. Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#products Ruleset#products}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#products Ruleset#products}
 
 ---
 
@@ -2056,7 +2058,7 @@ public readonly proxyRevalidate: RulesetRulesActionParametersProxyRevalidate;
 
 Set the proxy-revalidate cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#proxy_revalidate Ruleset#proxy_revalidate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#proxy_revalidate Ruleset#proxy_revalidate}
 
 ---
 
@@ -2070,7 +2072,7 @@ public readonly public: RulesetRulesActionParametersPublic;
 
 Set the public cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#public Ruleset#public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#public Ruleset#public}
 
 ---
 
@@ -2084,7 +2086,7 @@ public readonly rawResponseFields: IResolvable | RulesetRulesActionParametersRaw
 
 The raw response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
 
 ---
 
@@ -2100,7 +2102,7 @@ A timeout value between two successive read operations to use for your origin se
 
 Historically, the timeout value between two read options from Cloudflare to an origin server is 100 seconds. If you are attempting to reduce HTTP 524 errors because of timeouts from an origin server, try increasing this timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
 
 ---
 
@@ -2114,7 +2116,7 @@ public readonly redirectsForAiTraining: boolean | IResolvable;
 
 Whether to redirect verified AI training crawlers to canonical URLs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#redirects_for_ai_training Ruleset#redirects_for_ai_training}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#redirects_for_ai_training Ruleset#redirects_for_ai_training}
 
 ---
 
@@ -2128,7 +2130,7 @@ public readonly requestBodyBuffering: string;
 
 The request body buffering mode to configure. Available values: "none", "standard", "full".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
 
 ---
 
@@ -2142,7 +2144,7 @@ public readonly requestFields: IResolvable | RulesetRulesActionParametersRequest
 
 The raw request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#request_fields Ruleset#request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
 
 ---
 
@@ -2158,7 +2160,7 @@ Whether Cloudflare should respect strong ETag (entity tag) headers.
 
 If false, Cloudflare converts strong ETag headers to weak ETag headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
 
 ---
 
@@ -2172,7 +2174,7 @@ public readonly response: RulesetRulesActionParametersResponse;
 
 The response to show when the block is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#response Ruleset#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#response Ruleset#response}
 
 ---
 
@@ -2186,7 +2188,7 @@ public readonly responseBodyBuffering: string;
 
 The response body buffering mode to configure. Available values: "none", "standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
 
 ---
 
@@ -2200,7 +2202,7 @@ public readonly responseFields: IResolvable | RulesetRulesActionParametersRespon
 
 The transformed response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#response_fields Ruleset#response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
 
 ---
 
@@ -2214,7 +2216,7 @@ public readonly rocketLoader: boolean | IResolvable;
 
 Whether to enable Rocket Loader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
 
 ---
 
@@ -2230,7 +2232,7 @@ A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execu
 
 This option is incompatible with the ruleset option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -2244,7 +2246,7 @@ public readonly ruleset: string;
 
 A ruleset to skip the execution of. This option is incompatible with the rulesets option. Available values: "current".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#ruleset Ruleset#ruleset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
 
 ---
 
@@ -2260,7 +2262,7 @@ A list of ruleset IDs to skip the execution of.
 
 This option is incompatible with the ruleset and phases options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#rulesets Ruleset#rulesets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
 
 ---
 
@@ -2274,7 +2276,7 @@ public readonly securityLevel: string;
 
 The Security Level to configure. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#security_level Ruleset#security_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#security_level Ruleset#security_level}
 
 ---
 
@@ -2288,7 +2290,7 @@ public readonly serverSideExcludes: boolean | IResolvable;
 
 Whether to enable Server-Side Excludes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
 
 ---
 
@@ -2302,7 +2304,7 @@ public readonly serveStale: RulesetRulesActionParametersServeStale;
 
 When to serve stale content from cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
 
 ---
 
@@ -2316,7 +2318,7 @@ public readonly sMaxage: RulesetRulesActionParametersSMaxage;
 
 Set the s-maxage cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#s_maxage Ruleset#s_maxage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#s_maxage Ruleset#s_maxage}
 
 ---
 
@@ -2330,7 +2332,7 @@ public readonly sni: RulesetRulesActionParametersSni;
 
 A Server Name Indication (SNI) override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#sni Ruleset#sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#sni Ruleset#sni}
 
 ---
 
@@ -2344,7 +2346,7 @@ public readonly ssl: string;
 
 The SSL level to configure. Available values: "off", "flexible", "full", "strict", "origin_pull".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#ssl Ruleset#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#ssl Ruleset#ssl}
 
 ---
 
@@ -2358,7 +2360,7 @@ public readonly staleIfError: RulesetRulesActionParametersStaleIfError;
 
 Set the stale-if-error cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#stale_if_error Ruleset#stale_if_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#stale_if_error Ruleset#stale_if_error}
 
 ---
 
@@ -2372,7 +2374,7 @@ public readonly staleWhileRevalidate: RulesetRulesActionParametersStaleWhileReva
 
 Set the stale-while-revalidate cache control directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#stale_while_revalidate Ruleset#stale_while_revalidate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#stale_while_revalidate Ruleset#stale_while_revalidate}
 
 ---
 
@@ -2386,7 +2388,7 @@ public readonly statusCode: number;
 
 The status code to use for the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -2400,7 +2402,7 @@ public readonly stripEtags: boolean | IResolvable;
 
 Whether to strip the ETag header from the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#strip_etags Ruleset#strip_etags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#strip_etags Ruleset#strip_etags}
 
 ---
 
@@ -2414,7 +2416,7 @@ public readonly stripLastModified: boolean | IResolvable;
 
 Whether to strip the Last-Modified header from the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#strip_last_modified Ruleset#strip_last_modified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#strip_last_modified Ruleset#strip_last_modified}
 
 ---
 
@@ -2428,7 +2430,7 @@ public readonly stripSetCookie: boolean | IResolvable;
 
 Whether to strip the Set-Cookie header from the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#strip_set_cookie Ruleset#strip_set_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#strip_set_cookie Ruleset#strip_set_cookie}
 
 ---
 
@@ -2442,7 +2444,7 @@ public readonly sxg: boolean | IResolvable;
 
 Whether to enable Signed Exchanges (SXG).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#sxg Ruleset#sxg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#sxg Ruleset#sxg}
 
 ---
 
@@ -2456,7 +2458,7 @@ public readonly transformedRequestFields: IResolvable | RulesetRulesActionParame
 
 The transformed request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
 
 ---
 
@@ -2470,7 +2472,7 @@ public readonly uri: RulesetRulesActionParametersUri;
 
 A URI rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#uri Ruleset#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#uri Ruleset#uri}
 
 ---
 
@@ -2484,7 +2486,7 @@ public readonly values: string[];
 
 The cache tag values for set_cache_tags action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#values Ruleset#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#values Ruleset#values}
 
 ---
 
@@ -2500,7 +2502,37 @@ Controls how cached responses vary based on request headers.
 
 `default` is required and applies to any Vary response header that does not have a per-header override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#vary Ruleset#vary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#vary Ruleset#vary}
+
+---
+
+##### `webmcpEnabled`<sup>Optional</sup> <a name="webmcpEnabled" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.webmcpEnabled"></a>
+
+```typescript
+public readonly webmcpEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Whether to serve the WebMCP bridge script, which exposes the page's tools to browser AI agents.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#webmcp_enabled Ruleset#webmcp_enabled}
+
+---
+
+##### `webmcpPacks`<sup>Optional</sup> <a name="webmcpPacks" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.webmcpPacks"></a>
+
+```typescript
+public readonly webmcpPacks: string[];
+```
+
+- *Type:* string[]
+
+Bundled WebMCP tool packs to activate for matching requests.
+
+An empty list disables all packs. Omitting this parameter leaves the pack selection unchanged. Does not enable the WebMCP bridge itself.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#webmcp_packs Ruleset#webmcp_packs}
 
 ---
 
@@ -2532,7 +2564,7 @@ public readonly name: string;
 
 Name of the compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -2566,7 +2598,7 @@ public readonly css: boolean | IResolvable;
 
 Whether to minify CSS files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#css Ruleset#css}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#css Ruleset#css}
 
 ---
 
@@ -2580,7 +2612,7 @@ public readonly html: boolean | IResolvable;
 
 Whether to minify HTML files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#html Ruleset#html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#html Ruleset#html}
 
 ---
 
@@ -2594,7 +2626,7 @@ public readonly js: boolean | IResolvable;
 
 Whether to minify JavaScript files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#js Ruleset#js}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#js Ruleset#js}
 
 ---
 
@@ -2627,7 +2659,7 @@ public readonly mode: string;
 
 The browser TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -2641,7 +2673,7 @@ public readonly default: number;
 
 The browser TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -2676,7 +2708,7 @@ public readonly cacheByDeviceType: boolean | IResolvable;
 
 Whether to separate cached content based on the visitor's device type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
 
 ---
 
@@ -2690,7 +2722,7 @@ public readonly cacheDeceptionArmor: boolean | IResolvable;
 
 Whether to protect from web cache deception attacks, while allowing static assets to be cached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
 
 ---
 
@@ -2704,7 +2736,7 @@ public readonly customKey: RulesetRulesActionParametersCacheKeyCustomKey;
 
 Which components of the request are included or excluded from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#custom_key Ruleset#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#custom_key Ruleset#custom_key}
 
 ---
 
@@ -2718,7 +2750,7 @@ public readonly ignoreQueryStringsOrder: boolean | IResolvable;
 
 Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
 
 ---
 
@@ -2754,7 +2786,7 @@ public readonly cookie: RulesetRulesActionParametersCacheKeyCustomKeyCookie;
 
 Which cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cookie Ruleset#cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cookie Ruleset#cookie}
 
 ---
 
@@ -2768,7 +2800,7 @@ public readonly header: RulesetRulesActionParametersCacheKeyCustomKeyHeader;
 
 Which headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#header Ruleset#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#header Ruleset#header}
 
 ---
 
@@ -2782,7 +2814,7 @@ public readonly host: RulesetRulesActionParametersCacheKeyCustomKeyHost;
 
 How to use the host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -2796,7 +2828,7 @@ public readonly queryString: RulesetRulesActionParametersCacheKeyCustomKeyQueryS
 
 Which query string parameters to include in or exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#query_string Ruleset#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#query_string Ruleset#query_string}
 
 ---
 
@@ -2810,7 +2842,7 @@ public readonly user: RulesetRulesActionParametersCacheKeyCustomKeyUser;
 
 How to use characteristics of the request user agent in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#user Ruleset#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#user Ruleset#user}
 
 ---
 
@@ -2845,7 +2877,7 @@ A list of cookies to check for the presence of.
 
 The presence of these cookies is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -2859,7 +2891,7 @@ public readonly include: string[];
 
 A list of cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -2896,7 +2928,7 @@ A list of headers to check for the presence of.
 
 The presence of these headers is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -2912,7 +2944,7 @@ A mapping of header names to a list of values.
 
 If a header is present in the request and contains any of the values provided, its value is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#contains Ruleset#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#contains Ruleset#contains}
 
 ---
 
@@ -2926,7 +2958,7 @@ public readonly excludeOrigin: boolean | IResolvable;
 
 Whether to exclude the origin header in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
 
 ---
 
@@ -2940,7 +2972,7 @@ public readonly include: string[];
 
 A list of headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -2972,7 +3004,7 @@ public readonly resolved: boolean | IResolvable;
 
 Whether to use the resolved host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#resolved Ruleset#resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#resolved Ruleset#resolved}
 
 ---
 
@@ -3005,7 +3037,7 @@ public readonly exclude: RulesetRulesActionParametersCacheKeyCustomKeyQueryStrin
 
 Which query string parameters to exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#exclude Ruleset#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#exclude Ruleset#exclude}
 
 ---
 
@@ -3019,7 +3051,7 @@ public readonly include: RulesetRulesActionParametersCacheKeyCustomKeyQueryStrin
 
 Which query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -3052,7 +3084,7 @@ public readonly all: boolean | IResolvable;
 
 Whether to exclude all query string parameters from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -3066,7 +3098,7 @@ public readonly list: string[];
 
 A list of query string parameters to exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#list Ruleset#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -3099,7 +3131,7 @@ public readonly all: boolean | IResolvable;
 
 Whether to include all query string parameters in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -3113,7 +3145,7 @@ public readonly list: string[];
 
 A list of query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#list Ruleset#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -3147,7 +3179,7 @@ public readonly deviceType: boolean | IResolvable;
 
 Whether to use the user agent's device type in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#device_type Ruleset#device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#device_type Ruleset#device_type}
 
 ---
 
@@ -3161,7 +3193,7 @@ public readonly geo: boolean | IResolvable;
 
 Whether to use the user agents's country in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#geo Ruleset#geo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#geo Ruleset#geo}
 
 ---
 
@@ -3175,7 +3207,7 @@ public readonly lang: boolean | IResolvable;
 
 Whether to use the user agent's language in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#lang Ruleset#lang}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#lang Ruleset#lang}
 
 ---
 
@@ -3210,7 +3242,7 @@ Whether Cache Reserve is enabled.
 
 If this is true and a request meets eligibility criteria, Cloudflare will write the resource to Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#eligible Ruleset#eligible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#eligible Ruleset#eligible}
 
 ---
 
@@ -3224,7 +3256,7 @@ public readonly minimumFileSize: number;
 
 The minimum file size eligible for storage in Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
 
 ---
 
@@ -3256,7 +3288,7 @@ public readonly name: string;
 
 The name of the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -3290,7 +3322,7 @@ public readonly mode: string;
 
 The edge TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -3304,7 +3336,7 @@ public readonly default: number;
 
 The edge TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -3318,7 +3350,7 @@ public readonly statusCodeTtl: IResolvable | RulesetRulesActionParametersEdgeTtl
 
 A list of TTLs to apply to specific status codes or status code ranges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
 
 ---
 
@@ -3354,7 +3386,7 @@ The time to cache the response for (in seconds).
 
 A value of 0 is equivalent to setting the cache control header with the value "no-cache". A value of -1 is equivalent to setting the cache control header with the value of "no-store".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3368,7 +3400,7 @@ public readonly statusCode: number;
 
 A single status code to apply the TTL to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -3382,7 +3414,7 @@ public readonly statusCodeRange: RulesetRulesActionParametersEdgeTtlStatusCodeTt
 
 A range of status codes to apply the TTL to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
 
 ---
 
@@ -3415,7 +3447,7 @@ public readonly from: number;
 
 The lower bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#from Ruleset#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#from Ruleset#from}
 
 ---
 
@@ -3429,7 +3461,7 @@ public readonly to: number;
 
 The upper bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#to Ruleset#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#to Ruleset#to}
 
 ---
 
@@ -3462,7 +3494,7 @@ public readonly key: string;
 
 An expression that evaluates to the list lookup key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#key Ruleset#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#key Ruleset#key}
 
 ---
 
@@ -3476,7 +3508,7 @@ public readonly name: string;
 
 The name of the list to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -3510,7 +3542,7 @@ public readonly targetUrl: RulesetRulesActionParametersFromValueTargetUrl;
 
 A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#target_url Ruleset#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#target_url Ruleset#target_url}
 
 ---
 
@@ -3524,7 +3556,7 @@ public readonly preserveQueryString: boolean | IResolvable;
 
 Whether to keep the query string of the original request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
 
 ---
 
@@ -3538,7 +3570,7 @@ public readonly statusCode: number;
 
 The status code to use for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -3571,7 +3603,7 @@ public readonly expression: string;
 
 An expression that evaluates to a URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -3585,7 +3617,7 @@ public readonly value: string;
 
 A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3619,7 +3651,7 @@ public readonly operation: string;
 
 The operation to perform on the header. Available values: "add", "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3633,7 +3665,7 @@ public readonly expression: string;
 
 An expression that evaluates to a value for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -3647,7 +3679,7 @@ public readonly value: string;
 
 A static value for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3680,7 +3712,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3694,7 +3726,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -3726,7 +3758,7 @@ public readonly publicKey: string;
 
 The public key to encrypt matched data logs with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#public_key Ruleset#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#public_key Ruleset#public_key}
 
 ---
 
@@ -3760,7 +3792,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3774,7 +3806,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -3788,7 +3820,7 @@ public readonly value: number;
 
 The value for the directive in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3821,7 +3853,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3835,7 +3867,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -3868,7 +3900,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3882,7 +3914,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -3916,7 +3948,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3930,7 +3962,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -3944,7 +3976,7 @@ public readonly qualifiers: string[];
 
 The qualifiers for the directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
 
 ---
 
@@ -3977,7 +4009,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3991,7 +4023,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4024,7 +4056,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4038,7 +4070,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4071,7 +4103,7 @@ public readonly host: string;
 
 A resolved host to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -4085,7 +4117,7 @@ public readonly port: number;
 
 A destination port to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#port Ruleset#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#port Ruleset#port}
 
 ---
 
@@ -4117,7 +4149,7 @@ public readonly mode: string;
 
 Whether to use range requests. `default` is the behaviour the zone gets without this rule. Available values: "on", "off", "default".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -4153,7 +4185,7 @@ public readonly action: string;
 
 An action to override all rules with. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -4167,7 +4199,7 @@ public readonly categories: IResolvable | RulesetRulesActionParametersOverridesC
 
 A list of category-level overrides. This option has the second-highest precedence after rule-level overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#categories Ruleset#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#categories Ruleset#categories}
 
 ---
 
@@ -4181,7 +4213,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether to enable execution of all rules. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4195,7 +4227,7 @@ public readonly rules: IResolvable | RulesetRulesActionParametersOverridesRules[
 
 A list of rule-level overrides. This option has the highest precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -4212,7 +4244,7 @@ A sensitivity level to set for all rules.
 This option has lower precedence than rule and category overrides and is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -4247,7 +4279,7 @@ public readonly category: string;
 
 The name of the category to override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#category Ruleset#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#category Ruleset#category}
 
 ---
 
@@ -4261,7 +4293,7 @@ public readonly action: string;
 
 The action to override rules in the category with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -4275,7 +4307,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether to enable execution of rules in the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4292,7 +4324,7 @@ The sensitivity level to use for rules in the category.
 This option is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -4328,7 +4360,7 @@ public readonly id: string;
 
 The ID of the rule to override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4345,7 +4377,7 @@ public readonly action: string;
 
 The action to override the rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -4359,7 +4391,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether to enable execution of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4373,7 +4405,7 @@ public readonly scoreThreshold: number;
 
 The score threshold to use for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
 
 ---
 
@@ -4390,7 +4422,7 @@ The sensitivity level to use for the rule.
 This option is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -4424,7 +4456,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4438,7 +4470,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4452,7 +4484,7 @@ public readonly qualifiers: string[];
 
 The qualifiers for the directive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
 
 ---
 
@@ -4485,7 +4517,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4499,7 +4531,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4532,7 +4564,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4546,7 +4578,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4579,7 +4611,7 @@ public readonly name: string;
 
 The name of the response header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4593,7 +4625,7 @@ public readonly preserveDuplicates: boolean | IResolvable;
 
 Whether to log duplicate values of the same header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 
 ---
 
@@ -4625,7 +4657,7 @@ public readonly name: string;
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4659,7 +4691,7 @@ public readonly content: string;
 
 The content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -4673,7 +4705,7 @@ public readonly contentType: string;
 
 The type of the content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -4687,7 +4719,7 @@ public readonly statusCode: number;
 
 The status code to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -4720,7 +4752,7 @@ public readonly name: string;
 
 The name of the response header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4734,7 +4766,7 @@ public readonly preserveDuplicates: boolean | IResolvable;
 
 Whether to log duplicate values of the same header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 
 ---
 
@@ -4766,7 +4798,7 @@ public readonly disableStaleWhileUpdating: boolean | IResolvable;
 
 Whether Cloudflare should disable serving stale content while getting the latest content from the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
 
 ---
 
@@ -4800,7 +4832,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4814,7 +4846,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4828,7 +4860,7 @@ public readonly value: number;
 
 The value for the directive in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4860,7 +4892,7 @@ public readonly value: string;
 
 A value to override the SNI to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4894,7 +4926,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4908,7 +4940,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4922,7 +4954,7 @@ public readonly value: number;
 
 The value for the directive in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4956,7 +4988,7 @@ public readonly operation: string;
 
 The operation to perform. Available values: "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -4970,7 +5002,7 @@ public readonly cloudflareOnly: boolean | IResolvable;
 
 Whether to apply the directive only to Cloudflare's cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4984,7 +5016,7 @@ public readonly value: number;
 
 The value for the directive in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5016,7 +5048,7 @@ public readonly name: string;
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -5049,7 +5081,7 @@ public readonly path: RulesetRulesActionParametersUriPath;
 
 A URI path rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#path Ruleset#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#path Ruleset#path}
 
 ---
 
@@ -5063,7 +5095,7 @@ public readonly query: RulesetRulesActionParametersUriQuery;
 
 A URI query rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#query Ruleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#query Ruleset#query}
 
 ---
 
@@ -5096,7 +5128,7 @@ public readonly expression: string;
 
 An expression that evaluates to a value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -5110,7 +5142,7 @@ public readonly value: string;
 
 A value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5143,7 +5175,7 @@ public readonly expression: string;
 
 An expression that evaluates to a value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -5157,7 +5189,7 @@ public readonly value: string;
 
 A value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -5190,7 +5222,7 @@ public readonly default: RulesetRulesActionParametersVaryDefault;
 
 Controls how response Vary headers without a per-header override contribute to the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -5204,7 +5236,7 @@ public readonly headers: IResolvable | {[ key: string ]: RulesetRulesActionParam
 
 A mapping of lowercase request header names to their vary configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#headers Ruleset#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#headers Ruleset#headers}
 
 ---
 
@@ -5236,7 +5268,7 @@ public readonly action: string;
 
 How the header value is treated when building the cache key. Available values: "bypass", "passthrough", "normalize".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -5270,7 +5302,7 @@ public readonly action: string;
 
 How the header value is treated when building the cache key. Available values: "bypass", "passthrough", "normalize".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -5284,7 +5316,7 @@ public readonly languages: string[];
 
 The set of languages to normalize against. Only valid for the `accept-language` header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#languages Ruleset#languages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#languages Ruleset#languages}
 
 ---
 
@@ -5298,7 +5330,7 @@ public readonly mediaTypes: string[];
 
 The set of media types to normalize against. Only valid for the `accept` header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#media_types Ruleset#media_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#media_types Ruleset#media_types}
 
 ---
 
@@ -5331,7 +5363,7 @@ public readonly passwordExpression: string;
 
 An expression that selects the password used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#password_expression Ruleset#password_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#password_expression Ruleset#password_expression}
 
 ---
 
@@ -5345,7 +5377,7 @@ public readonly usernameExpression: string;
 
 An expression that selects the user ID used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#username_expression Ruleset#username_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#username_expression Ruleset#username_expression}
 
 ---
 
@@ -5377,7 +5409,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether to generate a log when the rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -5416,7 +5448,7 @@ public readonly characteristics: string[];
 
 Characteristics of the request on which the rate limit counter will be incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#characteristics Ruleset#characteristics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#characteristics Ruleset#characteristics}
 
 ---
 
@@ -5430,7 +5462,7 @@ public readonly period: number;
 
 Period in seconds over which the counter is being incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#period Ruleset#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#period Ruleset#period}
 
 ---
 
@@ -5446,7 +5478,7 @@ An expression that defines when the rate limit counter should be incremented.
 
 It defaults to the same as the rule's expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
 
 ---
 
@@ -5460,7 +5492,7 @@ public readonly mitigationTimeout: number;
 
 Period of time in seconds after which the action will be disabled following its first execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
 
 ---
 
@@ -5474,7 +5506,7 @@ public readonly requestsPerPeriod: number;
 
 The threshold of requests per period after which the action will be executed for the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
 
 ---
 
@@ -5488,7 +5520,7 @@ public readonly requestsToOrigin: boolean | IResolvable;
 
 Whether counting is only performed when an origin is reached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
 
 ---
 
@@ -5502,7 +5534,7 @@ public readonly scorePerPeriod: number;
 
 The score threshold per period for which the action will be executed the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
 
 ---
 
@@ -5516,7 +5548,7 @@ public readonly scoreResponseHeaderName: string;
 
 A response header name provided by the origin, which contains the score to increment rate limit counter with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
 
 ---
 
@@ -16202,6 +16234,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetUri">resetUri</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetValues">resetValues</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetVary">resetVary</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetWebmcpEnabled">resetWebmcpEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetWebmcpPacks">resetWebmcpPacks</a></code> | *No description.* |
 
 ---
 
@@ -17267,6 +17301,18 @@ public resetValues(): void
 public resetVary(): void
 ```
 
+##### `resetWebmcpEnabled` <a name="resetWebmcpEnabled" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetWebmcpEnabled"></a>
+
+```typescript
+public resetWebmcpEnabled(): void
+```
+
+##### `resetWebmcpPacks` <a name="resetWebmcpPacks" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetWebmcpPacks"></a>
+
+```typescript
+public resetWebmcpPacks(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -17390,6 +17436,8 @@ public resetVary(): void
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uriInput">uriInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.varyInput">varyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersVary">RulesetRulesActionParametersVary</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.webmcpEnabledInput">webmcpEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.webmcpPacksInput">webmcpPacksInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.additionalCacheablePorts">additionalCacheablePorts</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.assetName">assetName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewrites">automaticHttpsRewrites</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -17434,6 +17482,8 @@ public resetVary(): void
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripSetCookie">stripSetCookie</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxg">sxg</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.webmcpEnabled">webmcpEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.webmcpPacks">webmcpPacks</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a></code> | *No description.* |
 
 ---
@@ -18622,6 +18672,26 @@ public readonly varyInput: IResolvable | RulesetRulesActionParametersVary;
 
 ---
 
+##### `webmcpEnabledInput`<sup>Optional</sup> <a name="webmcpEnabledInput" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.webmcpEnabledInput"></a>
+
+```typescript
+public readonly webmcpEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `webmcpPacksInput`<sup>Optional</sup> <a name="webmcpPacksInput" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.webmcpPacksInput"></a>
+
+```typescript
+public readonly webmcpPacksInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `additionalCacheablePorts`<sup>Required</sup> <a name="additionalCacheablePorts" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.additionalCacheablePorts"></a>
 
 ```typescript
@@ -19056,6 +19126,26 @@ public readonly sxg: boolean | IResolvable;
 
 ```typescript
 public readonly values: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `webmcpEnabled`<sup>Required</sup> <a name="webmcpEnabled" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.webmcpEnabled"></a>
+
+```typescript
+public readonly webmcpEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `webmcpPacks`<sup>Required</sup> <a name="webmcpPacks" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.webmcpPacks"></a>
+
+```typescript
+public readonly webmcpPacks: string[];
 ```
 
 - *Type:* string[]

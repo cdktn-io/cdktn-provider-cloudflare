@@ -4,7 +4,7 @@
 
 ### EmailSecurityBlockSender <a name="EmailSecurityBlockSender" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer"></a>
 
@@ -25,7 +25,8 @@ emailSecurityBlockSender.EmailSecurityBlockSender(
   is_regex: bool | IResolvable,
   pattern: str,
   pattern_type: str,
-  comments: str = None
+  comments: str = None,
+  expires_at: str = None
 )
 ```
 
@@ -44,7 +45,8 @@ emailSecurityBlockSender.EmailSecurityBlockSender(
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer.parameter.isRegex">is_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether `pattern` is a regular expression instead of a literal value. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer.parameter.pattern">pattern</a></code> | <code>str</code> | The pattern value to match. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer.parameter.patternType">pattern_type</a></code> | <code>str</code> | Type of pattern matching. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer.parameter.comments">comments</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer.parameter.comments">comments</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer.parameter.expiresAt">expires_at</a></code> | <code>str</code> | Timestamp at which the pattern expires. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether `pattern` is a regular expression instead of a literal value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}
 
 ---
 
@@ -136,7 +138,7 @@ The pattern value to match.
 
 The format depends on `pattern_type`: a valid email address for EMAIL (e.g. `user@example.com`), a valid domain name for DOMAIN (e.g. `example.com`), or a plain IPv4 or IPv6 address or CIDR block for IP (e.g. `1.2.3.4`, `1.2.3.0/24`, `2606:4700:4700::1111`, or `2606:4700:4700::/48`); the API rejects private or unique-local, loopback, link-local, unspecified, and IPv4 broadcast addresses, including their IPv4-mapped IPv6 equivalents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}
 
 ---
 
@@ -152,7 +154,7 @@ Type of pattern matching.
 * UNKNOWN: deprecated; you cannot use this when creating or updating policies, but it may appear on existing entries.
   Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
 
 ---
 
@@ -160,7 +162,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
+
+---
+
+##### `expires_at`<sup>Optional</sup> <a name="expires_at" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer.parameter.expiresAt"></a>
+
+- *Type:* str
+
+Timestamp at which the pattern expires.
+
+After this time, Email Security ignores the pattern. The value must lie in the future. Send `null` to clear the expiration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#expires_at EmailSecurityBlockSender#expires_at}
 
 ---
 
@@ -193,6 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.resetComments">reset_comments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.resetExpiresAt">reset_expires_at</a></code> | *No description.* |
 
 ---
 
@@ -550,6 +565,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_comments() -> None
 ```
 
+##### `reset_expires_at` <a name="reset_expires_at" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.resetExpiresAt"></a>
+
+```python
+def reset_expires_at() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -664,7 +685,7 @@ The construct id used in the generated config for the EmailSecurityBlockSender t
 
 The id of the existing EmailSecurityBlockSender that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,11 +721,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.modifiedAt">modified_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.commentsInput">comments_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.expiresAtInput">expires_at_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.isRegexInput">is_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.patternInput">pattern_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.patternTypeInput">pattern_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.comments">comments</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.expiresAt">expires_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.isRegex">is_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.patternType">pattern_type</a></code> | <code>str</code> | *No description.* |
@@ -913,6 +936,16 @@ comments_input: str
 
 ---
 
+##### `expires_at_input`<sup>Optional</sup> <a name="expires_at_input" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.expiresAtInput"></a>
+
+```python
+expires_at_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `is_regex_input`<sup>Optional</sup> <a name="is_regex_input" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.isRegexInput"></a>
 
 ```python
@@ -957,6 +990,16 @@ account_id: str
 
 ```python
 comments: str
+```
+
+- *Type:* str
+
+---
+
+##### `expires_at`<sup>Required</sup> <a name="expires_at" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.property.expiresAt"></a>
+
+```python
+expires_at: str
 ```
 
 - *Type:* str
@@ -1032,7 +1075,8 @@ emailSecurityBlockSender.EmailSecurityBlockSenderConfig(
   is_regex: bool | IResolvable,
   pattern: str,
   pattern_type: str,
-  comments: str = None
+  comments: str = None,
+  expires_at: str = None
 )
 ```
 
@@ -1051,7 +1095,8 @@ emailSecurityBlockSender.EmailSecurityBlockSenderConfig(
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.isRegex">is_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether `pattern` is a regular expression instead of a literal value. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.pattern">pattern</a></code> | <code>str</code> | The pattern value to match. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.patternType">pattern_type</a></code> | <code>str</code> | Type of pattern matching. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.comments">comments</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.comments">comments</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.expiresAt">expires_at</a></code> | <code>str</code> | Timestamp at which the pattern expires. |
 
 ---
 
@@ -1135,7 +1180,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
 
 ---
 
@@ -1149,7 +1194,7 @@ is_regex: bool | IResolvable
 
 Whether `pattern` is a regular expression instead of a literal value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}
 
 ---
 
@@ -1165,7 +1210,7 @@ The pattern value to match.
 
 The format depends on `pattern_type`: a valid email address for EMAIL (e.g. `user@example.com`), a valid domain name for DOMAIN (e.g. `example.com`), or a plain IPv4 or IPv6 address or CIDR block for IP (e.g. `1.2.3.4`, `1.2.3.0/24`, `2606:4700:4700::1111`, or `2606:4700:4700::/48`); the API rejects private or unique-local, loopback, link-local, unspecified, and IPv4 broadcast addresses, including their IPv4-mapped IPv6 equivalents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}
 
 ---
 
@@ -1185,7 +1230,7 @@ Type of pattern matching.
 * UNKNOWN: deprecated; you cannot use this when creating or updating policies, but it may appear on existing entries.
   Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
 
 ---
 
@@ -1197,7 +1242,23 @@ comments: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
+
+---
+
+##### `expires_at`<sup>Optional</sup> <a name="expires_at" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.expiresAt"></a>
+
+```python
+expires_at: str
+```
+
+- *Type:* str
+
+Timestamp at which the pattern expires.
+
+After this time, Email Security ignores the pattern. The value must lie in the future. Send `null` to clear the expiration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender#expires_at EmailSecurityBlockSender#expires_at}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Workflow <a name="Workflow" id="@cdktn/provider-cloudflare.workflow.Workflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow cloudflare_workflow}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow cloudflare_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.Workflow.Initializer"></a>
 
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putSchedules">putSchedules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetConcurrency">resetConcurrency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetDefaultRetention">resetDefaultRetention</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetJurisdiction">resetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetLimits">resetLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetSchedules">resetSchedules</a></code> | *No description.* |
 
@@ -454,6 +455,12 @@ public resetConcurrency(): void
 public resetDefaultRetention(): void
 ```
 
+##### `resetJurisdiction` <a name="resetJurisdiction" id="@cdktn/provider-cloudflare.workflow.Workflow.resetJurisdiction"></a>
+
+```typescript
+public resetJurisdiction(): void
+```
+
 ##### `resetLimits` <a name="resetLimits" id="@cdktn/provider-cloudflare.workflow.Workflow.resetLimits"></a>
 
 ```typescript
@@ -569,7 +576,7 @@ The construct id used in the generated config for the Workflow to import.
 
 The id of the existing Workflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -617,12 +624,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.classNameInput">classNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.concurrencyInput">concurrencyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.defaultRetentionInput">defaultRetentionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.jurisdictionInput">jurisdictionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.limitsInput">limitsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.schedulesInput">schedulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.scriptNameInput">scriptNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.workflowNameInput">workflowNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.className">className</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.jurisdiction">jurisdiction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.scriptName">scriptName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.workflowName">workflowName</a></code> | <code>string</code> | *No description.* |
 
@@ -950,6 +959,16 @@ public readonly defaultRetentionInput: IResolvable | WorkflowDefaultRetention;
 
 ---
 
+##### `jurisdictionInput`<sup>Optional</sup> <a name="jurisdictionInput" id="@cdktn/provider-cloudflare.workflow.Workflow.property.jurisdictionInput"></a>
+
+```typescript
+public readonly jurisdictionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `limitsInput`<sup>Optional</sup> <a name="limitsInput" id="@cdktn/provider-cloudflare.workflow.Workflow.property.limitsInput"></a>
 
 ```typescript
@@ -1004,6 +1023,16 @@ public readonly accountId: string;
 
 ```typescript
 public readonly className: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jurisdiction`<sup>Required</sup> <a name="jurisdiction" id="@cdktn/provider-cloudflare.workflow.Workflow.property.jurisdiction"></a>
+
+```typescript
+public readonly jurisdiction: string;
 ```
 
 - *Type:* string
@@ -1080,7 +1109,7 @@ Maximum number of instances of this workflow that can run concurrently.
 
 Additional instances are queued and started as running instances complete. Must not exceed the account concurrency limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#limit Workflow#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#limit Workflow#limit}
 
 ---
 
@@ -1105,14 +1134,15 @@ const workflowConfig: workflow.WorkflowConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#account_id Workflow#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">className</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#class_name Workflow#class_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#script_name Workflow#script_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">workflowName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.concurrency">concurrency</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#concurrency Workflow#concurrency}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#account_id Workflow#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">className</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#class_name Workflow#class_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#script_name Workflow#script_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">workflowName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.concurrency">concurrency</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#concurrency Workflow#concurrency}. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.defaultRetention">defaultRetention</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowDefaultRetention">WorkflowDefaultRetention</a></code> | Default retention applied to instances of this version when they do not set their own retention. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#limits Workflow#limits}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.schedules">schedules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#schedules Workflow#schedules}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.jurisdiction">jurisdiction</a></code> | <code>string</code> | Jurisdiction where instances of this workflow run and store data. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#limits Workflow#limits}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.schedules">schedules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#schedules Workflow#schedules}. |
 
 ---
 
@@ -1194,7 +1224,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#account_id Workflow#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#account_id Workflow#account_id}.
 
 ---
 
@@ -1206,7 +1236,7 @@ public readonly className: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#class_name Workflow#class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#class_name Workflow#class_name}.
 
 ---
 
@@ -1218,7 +1248,7 @@ public readonly scriptName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#script_name Workflow#script_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#script_name Workflow#script_name}.
 
 ---
 
@@ -1230,7 +1260,7 @@ public readonly workflowName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
 
 ---
 
@@ -1242,7 +1272,7 @@ public readonly concurrency: WorkflowConcurrency;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowConcurrency">WorkflowConcurrency</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#concurrency Workflow#concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#concurrency Workflow#concurrency}.
 
 ---
 
@@ -1256,7 +1286,24 @@ public readonly defaultRetention: WorkflowDefaultRetention;
 
 Default retention applied to instances of this version when they do not set their own retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#default_retention Workflow#default_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#default_retention Workflow#default_retention}
+
+---
+
+##### `jurisdiction`<sup>Optional</sup> <a name="jurisdiction" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.jurisdiction"></a>
+
+```typescript
+public readonly jurisdiction: string;
+```
+
+- *Type:* string
+
+Jurisdiction where instances of this workflow run and store data.
+
+Can only be set when the workflow is created and cannot be changed afterwards; omit it to keep the existing jurisdiction.
+Available values: "eu", "fedramp", "us".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#jurisdiction Workflow#jurisdiction}
 
 ---
 
@@ -1268,7 +1315,7 @@ public readonly limits: WorkflowLimits;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#limits Workflow#limits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#limits Workflow#limits}.
 
 ---
 
@@ -1280,7 +1327,7 @@ public readonly schedules: IResolvable | WorkflowSchedules[];
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules">WorkflowSchedules</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#schedules Workflow#schedules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#schedules Workflow#schedules}.
 
 ---
 
@@ -1313,7 +1360,7 @@ public readonly errorRetention: {[ key: string ]: any};
 
 Specifies the duration in milliseconds or as a string like '5 minutes'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#error_retention Workflow#error_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#error_retention Workflow#error_retention}
 
 ---
 
@@ -1327,7 +1374,7 @@ public readonly successRetention: {[ key: string ]: any};
 
 Specifies the duration in milliseconds or as a string like '5 minutes'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#success_retention Workflow#success_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#success_retention Workflow#success_retention}
 
 ---
 
@@ -1345,7 +1392,7 @@ const workflowLimits: workflow.WorkflowLimits = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">steps</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#steps Workflow#steps}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">steps</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#steps Workflow#steps}. |
 
 ---
 
@@ -1357,7 +1404,7 @@ public readonly steps: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#steps Workflow#steps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#steps Workflow#steps}.
 
 ---
 
@@ -1375,7 +1422,7 @@ const workflowSchedules: workflow.WorkflowSchedules = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules.property.cron">cron</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#cron Workflow#cron}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowSchedules.property.cron">cron</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#cron Workflow#cron}. |
 
 ---
 
@@ -1387,7 +1434,7 @@ public readonly cron: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow#cron Workflow#cron}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow#cron Workflow#cron}.
 
 ---
 

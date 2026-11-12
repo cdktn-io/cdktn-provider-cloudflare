@@ -4,7 +4,7 @@
 
 ### R2DataCatalog <a name="R2DataCatalog" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.Initializer"></a>
 
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.putCredential">putCredential</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.resetCredential">resetCredential</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +388,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putCredential` <a name="putCredential" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.putCredential"></a>
+
+```typescript
+public putCredential(value: R2DataCatalogCredential): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.putCredential.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential">R2DataCatalogCredential</a>
+
+---
+
+##### `resetCredential` <a name="resetCredential" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.resetCredential"></a>
+
+```typescript
+public resetCredential(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +509,7 @@ The construct id used in the generated config for the R2DataCatalog to import.
 
 The id of the existing R2DataCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -520,13 +540,16 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.credential">credential</a></code> | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference">R2DataCatalogCredentialOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.credentialStatus">credentialStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.jurisdiction">jurisdiction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.maintenanceConfig">maintenanceConfig</a></code> | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogMaintenanceConfigOutputReference">R2DataCatalogMaintenanceConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.bucketNameInput">bucketNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.credentialInput">credentialInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential">R2DataCatalogCredential</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.bucketName">bucketName</a></code> | <code>string</code> | *No description.* |
 
@@ -684,6 +707,16 @@ public readonly bucket: string;
 
 ---
 
+##### `credential`<sup>Required</sup> <a name="credential" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.credential"></a>
+
+```typescript
+public readonly credential: R2DataCatalogCredentialOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference">R2DataCatalogCredentialOutputReference</a>
+
+---
+
 ##### `credentialStatus`<sup>Required</sup> <a name="credentialStatus" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.credentialStatus"></a>
 
 ```typescript
@@ -698,6 +731,16 @@ public readonly credentialStatus: string;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jurisdiction`<sup>Required</sup> <a name="jurisdiction" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.jurisdiction"></a>
+
+```typescript
+public readonly jurisdiction: string;
 ```
 
 - *Type:* string
@@ -751,6 +794,16 @@ public readonly bucketNameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `credentialInput`<sup>Optional</sup> <a name="credentialInput" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.property.credentialInput"></a>
+
+```typescript
+public readonly credentialInput: IResolvable | R2DataCatalogCredential;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential">R2DataCatalogCredential</a>
 
 ---
 
@@ -817,6 +870,7 @@ const r2DataCatalogConfig: r2DataCatalog.R2DataCatalogConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.accountId">accountId</a></code> | <code>string</code> | Use this to identify the account. |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.bucketName">bucketName</a></code> | <code>string</code> | Specifies the R2 bucket name. |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.credential">credential</a></code> | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential">R2DataCatalogCredential</a></code> | Contains request to store catalog credentials. |
 
 ---
 
@@ -900,7 +954,7 @@ public readonly accountId: string;
 
 Use this to identify the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
 
 ---
 
@@ -914,7 +968,53 @@ public readonly bucketName: string;
 
 Specifies the R2 bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
+
+---
+
+##### `credential`<sup>Optional</sup> <a name="credential" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.credential"></a>
+
+```typescript
+public readonly credential: R2DataCatalogCredential;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential">R2DataCatalogCredential</a>
+
+Contains request to store catalog credentials.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#credential R2DataCatalog#credential}
+
+---
+
+### R2DataCatalogCredential <a name="R2DataCatalogCredential" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential.Initializer"></a>
+
+```typescript
+import { r2DataCatalog } from '@cdktn/provider-cloudflare'
+
+const r2DataCatalogCredential: r2DataCatalog.R2DataCatalogCredential = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential.property.token">token</a></code> | <code>string</code> | Provides the Cloudflare API token for accessing R2. |
+
+---
+
+##### `token`<sup>Required</sup> <a name="token" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential.property.token"></a>
+
+```typescript
+public readonly token: string;
+```
+
+- *Type:* string
+
+Provides the Cloudflare API token for accessing R2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/r2_data_catalog#token R2DataCatalog#token}
 
 ---
 
@@ -952,6 +1052,277 @@ const r2DataCatalogMaintenanceConfigSnapshotExpiration: r2DataCatalog.R2DataCata
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### R2DataCatalogCredentialOutputReference <a name="R2DataCatalogCredentialOutputReference" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.Initializer"></a>
+
+```typescript
+import { r2DataCatalog } from '@cdktn/provider-cloudflare'
+
+new r2DataCatalog.R2DataCatalogCredentialOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.token">token</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential">R2DataCatalogCredential</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenInput`<sup>Optional</sup> <a name="tokenInput" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.tokenInput"></a>
+
+```typescript
+public readonly tokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `token`<sup>Required</sup> <a name="token" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.token"></a>
+
+```typescript
+public readonly token: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredentialOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | R2DataCatalogCredential;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogCredential">R2DataCatalogCredential</a>
+
+---
+
 
 ### R2DataCatalogMaintenanceConfigCompactionOutputReference <a name="R2DataCatalogMaintenanceConfigCompactionOutputReference" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogMaintenanceConfigCompactionOutputReference"></a>
 
